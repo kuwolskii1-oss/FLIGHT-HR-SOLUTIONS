@@ -1,0 +1,318 @@
+{
+  "notes": "Home page content following the Home brief in 07 section 5 and the choreography table in 08 section 8.3. Chapter order is fixed by the content brief. Every market figure used is tagged [F] in 06 section 1; figures tagged [S] or [V] are not used. British English, no dashes, one label per call-to-action intent.",
+  "clientToConfirm": [
+    "Hero headline chosen from 07 section 2.5: 'Your engines. Independently managed.' Confirm this over 'Every shop visit under control.'",
+    "Engine and aircraft sourcing is shown as the third situation and as a separate Assets line (07 section 2.3, option 1). Confirm that this is an official service line and the name of the line.",
+    "The company is described as based in Zug 'a short drive from Zurich Airport'. Confirm whether '30 minutes from Zurich Airport' may be used instead, and whether the Bahnhofplatz address is a visitable office or by appointment.",
+    "No response-time promise, no free-first-call promise and no savings figure are used anywhere on this page. Supply approved figures if any should appear.",
+    "Counters the brief wanted (engines managed, shop visits overseen, countries) are not shown because no verified numbers exist. Supply them if they should appear.",
+    "No case notes, testimonials or client names are used. Supply anonymised, client-approved cases for the Results section described in 08 section 8.3 row 6."
+  ],
+  "hero": {
+    "headline": "Your engines. Independently managed.",
+    "sub": "We manage shop visits, protect engine value through leases and transitions, and source engines for airlines, lessors, MROs and government operators.",
+    "metaLine": ["Zug, Switzerland", "Founded 2024", "CFM56", "LEAP", "V2500", "PW4000", "APU and turboprop"],
+    "ctas": [
+      { "label": "Talk to us", "href": "/contact", "kind": "primary" },
+      { "label": "Send us a workscope", "href": "/contact#workscope", "kind": "secondary" },
+      { "label": "How a managed shop visit works", "href": "#process", "kind": "link" }
+    ],
+    "source": "Headline: 07-recommendations-and-brief.md section 2.5. Ownership basis for 'independently': 01-company-profile.md section 2 (sole shareholder is the managing director). Services in the sub line: 01 section 4.2 and 4.3, 02 section 4."
+  },
+  "chapters": [
+    {
+      "id": "company",
+      "label": "The company",
+      "kicker": "Founded in Zug, 2024",
+      "title": "Independent engine management from Zug, Switzerland",
+      "body": "Flight Hour Solution is an independent jet-engine management consultancy. We work for airlines, lessors, MROs and government operators across five engine families and seventeen models.",
+      "tags": ["Founded 2024", "Zug, Switzerland", "17 engine models"],
+      "source": "01-company-profile.md section 1 (registered seat Zug, register entry 26 September 2024) and section 4.2 (client types); 02-website-content-inventory.md section 4 (engine families and models)."
+    },
+    {
+      "id": "purchase",
+      "label": "The purchase",
+      "kicker": "Several million per visit",
+      "title": "A shop visit is a multi-million-dollar purchase",
+      "body": "An engine needs three to five shop visits in its life. A performance restoration costs several million US dollars. We treat each as a purchase.",
+      "tags": ["3 to 5 shop visits per engine life", "CFM56 repair costs +50 to 75% since 2019", "TAT up 35% legacy, 150% new-generation"],
+      "source": "06-market-context-and-seo.md section 1.2: MTU, an engine typically needs 3 to 5 shop visits over its life [F]; Magnetic Group, CFM56 repair costs +50 to 75% since 2019 [F]; the phrase 'typically several million US dollars per visit' is the wording 06 section 1.2 permits. Section 1.3: Bain, turnaround times +35% for legacy and +150% for new-generation engines against pre-pandemic [F]."
+    },
+    {
+      "id": "workscope",
+      "label": "The workscope",
+      "kicker": "Value through the lease",
+      "title": "Workscope discipline protects value on both sides",
+      "body": "Reserve clauses and redelivery conditions are the most disputed lease terms. We set each workscope against the lease, the LLP plan and the records.",
+      "tags": ["Maintenance reserves", "Redelivery conditions", "LLP back-to-birth"],
+      "source": "06-market-context-and-seo.md section 1.7: Acumen, maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes; disputes centre on LLP valuations, deferred defects, incomplete back-to-birth records and fair wear and tear [F]. Deliverables: 02 section 4."
+    },
+    {
+      "id": "evidence",
+      "label": "The evidence",
+      "kicker": "An independent second opinion",
+      "title": "An independent read of the data and records",
+      "body": "We give a second opinion on ECM and EHM trends, borescope video and test-cell results. Records get the same scrutiny, back to birth.",
+      "tags": ["ECM / EHM review", "Borescope and test cell", "Records audit"],
+      "source": "02-website-content-inventory.md section 4 (Fleet ECM/EHM Monitoring Programs, Borescope Video Analysis, Test Result Analysis, LLP Back to Birth Trace Audit, Technical Documentation Audit); 06 section 1.8 (the independent interpreter of OEM and MRO data as the defensible role)."
+    },
+    {
+      "id": "base",
+      "label": "The base",
+      "kicker": "On site, worldwide",
+      "title": "Based in Zug. On site at the shop.",
+      "body": "Flight Hour Solution works from Zug, Switzerland, a short drive from Zurich Airport. Table inspections, test-cell runs and redeliveries are attended in person, worldwide.",
+      "tags": ["Zug, Switzerland", "Swiss Aerospace Cluster", "Worldwide on site"],
+      "source": "01-company-profile.md section 1 (registered seat Zug) and section 4.2 (Swiss Aerospace Cluster directory: 'we support airlines, lessors, MROs and governmental operators worldwide'); 06 section 1.10 (Zug framing, Zurich engine-MRO cluster). Membership: 01 section 5 (verified)."
+    }
+  ],
+  "proof": {
+    "stats": [
+      {
+        "value": "2024",
+        "unit": "",
+        "label": "Founded in Zug, Switzerland",
+        "source": "01-company-profile.md section 1 and section 3: statutes dated 4 September 2024, entered in the Zug commercial register on 26 September 2024 (SOGC)."
+      },
+      {
+        "value": "5",
+        "unit": "families",
+        "label": "Engine families covered",
+        "source": "02-website-content-inventory.md section 4 (Capabilities), grouped as in the content schema: CFM56, LEAP, V2500, PW4000, APU and turboprop."
+      },
+      {
+        "value": "17",
+        "unit": "models",
+        "label": "Engine and APU models covered",
+        "source": "02-website-content-inventory.md section 4: CFM56-3, -5, -7; LEAP-1A, -1B, -1C; V2500-A1, -A5, -D5; PW4000-94, -100, -112; APU 131-9A, -9B, -9D; TPE331/T76; TFE731 (TPE331/T76 counted as one entry)."
+      }
+    ],
+    "memberships": ["Swiss Aerospace Cluster"],
+    "source": "01-company-profile.md section 5: Swiss Aerospace Cluster membership verified (directory entry and welcome post, 26 November 2025).",
+    "clientToConfirm": [
+      "ISO 9001 certification (claimed on LinkedIn, 28 May 2026): certification body, certificate number, scope and expiry before it is added to the proof strip.",
+      "Aviation Suppliers Association membership (claimed on LinkedIn, 15 July 2026): membership number and directory link before it is added.",
+      "The model count of 17 treats TPE331/T76 as one entry; confirm whether the T76 should be counted separately (18)."
+    ]
+  },
+  "situations": {
+    "title": "Three situations we are hired for",
+    "items": [
+      {
+        "title": "A shop visit is coming",
+        "text": "An engine is coming off wing and the shop's workscope, quote or invoice needs an independent check. We manage the visit from induction planning to redelivery.",
+        "href": "/services/shop-visit-management"
+      },
+      {
+        "title": "A lease is ending or an engine is changing hands",
+        "text": "Redelivery conditions, maintenance reserves, LLP status and back-to-birth records decide what the transition costs. We work on either side of the lease, or between the two.",
+        "href": "/services/lease-return-and-asset-management"
+      },
+      {
+        "title": "You need an engine, or need to sell one",
+        "text": "Through our Assets line we source and market engines and aircraft. Every brokered asset is declared as such and kept apart from advisory work.",
+        "href": "/assets"
+      }
+    ],
+    "source": "07-recommendations-and-brief.md section 5 (Home brief: shop visit, lease transition, sourcing) and section 2.3 (Advisory and Assets lines); 01 section 4.3 (LinkedIn: sourcing, technical advisory and engine sales support)."
+  },
+  "services": {
+    "title": "What we do",
+    "intro": "Eight services, one method: know the engine, set the workscope, check every line before it is paid.",
+    "rows": [
+      {
+        "title": "Shop visit management",
+        "text": "Full or overview management from induction to redelivery: workscope review, table inspection, borescope and test-cell overview, invoice review and scrap review.",
+        "href": "/services/shop-visit-management",
+        "meta": ["CFM56", "LEAP", "V2500", "PW4000"]
+      },
+      {
+        "title": "Workscope and removal planning",
+        "text": "Workscope compilation and review, removal timing against LLP limits and ECM margins, maintenance cost forecasting and slot planning for the fleet.",
+        "href": "/services/workscope-and-removal-planning",
+        "meta": ["Workscope", "LLP", "Forecasting"]
+      },
+      {
+        "title": "Lease return and asset management",
+        "text": "Redelivery support for lessee or lessor, maintenance reserve calculations and claim analysis, LLP back-to-birth trace audits and post-shop-visit documentation audits.",
+        "href": "/services/lease-return-and-asset-management",
+        "meta": ["Redelivery", "Reserves", "Records"]
+      },
+      {
+        "title": "Contracts, MRO and supply chain",
+        "text": "Engine overhaul and repair contract negotiation, purchase and lease contract negotiation, warranty management, material sourcing support and insurance claims support.",
+        "href": "/services/contracts-mro-and-supply-chain",
+        "meta": ["Negotiation", "Warranty", "Material"]
+      },
+      {
+        "title": "Predictive maintenance and analytics",
+        "text": "Fleet ECM and EHM monitoring programmes, on-wing performance review and troubleshooting advisory, borescope video analysis and test-result analysis.",
+        "href": "/services/predictive-maintenance-and-analytics",
+        "meta": ["ECM / EHM", "Borescope", "Test cell"]
+      },
+      {
+        "title": "Technical due diligence",
+        "text": "Engine evaluation and selection, teardown valuations, technical documentation audits and records review for buyers, lenders and investors.",
+        "href": "/services/technical-due-diligence",
+        "meta": ["Valuation", "Records", "Lenders"]
+      },
+      {
+        "title": "Military and government",
+        "text": "Shop visit management, maintenance reserve calculations, contract negotiation and post-repair documentation audits for governmental and military operators.",
+        "href": "/services/military-and-government",
+        "meta": ["Sustainment", "Contracting", "Readiness"]
+      },
+      {
+        "title": "Training and knowledge transfer",
+        "text": "Training for powerplant, procurement and asset teams on shop visits, workscopes, invoices and lease returns, built from the same methods we use on engagements.",
+        "href": "/services/training-and-knowledge-transfer",
+        "meta": ["Powerplant", "Procurement", "Asset teams"]
+      }
+    ],
+    "source": "02-website-content-inventory.md section 4 (service taxonomy, verbatim deliverables); 01-company-profile.md section 1 (registered purpose includes training and knowledge transfer) and section 4.2 (Swiss Aerospace Cluster core competences).",
+    "clientToConfirm": [
+      "Training and knowledge transfer: confirm the offer exists in practice and its formats (07 section 4 marks it 'confirm').",
+      "Military and government: confirm what programme types and client categories may be named (07 section 12, decision 7)."
+    ]
+  },
+  "engines": {
+    "title": "Engines we manage",
+    "intro": "Five families, seventeen models, from the CFM56 to the Honeywell 131-9 APU. Each family page sets out visit types, cost drivers and what we do.",
+    "rows": [
+      {
+        "title": "CFM56",
+        "text": "Still on around 70 per cent of the narrowbody fleet with the V2500. Repair costs up 50 to 75 per cent since 2019.",
+        "href": "/engines/cfm56",
+        "meta": ["CFM56-3", "CFM56-5", "CFM56-7"]
+      },
+      {
+        "title": "LEAP",
+        "text": "Fuel-nozzle fixes on the 1A and the HPT durability kit on the 1B make embodiment and LLP sequencing the live workscope questions.",
+        "href": "/engines/leap",
+        "meta": ["LEAP-1A", "LEAP-1B", "LEAP-1C"]
+      },
+      {
+        "title": "V2500",
+        "text": "Shop-visit project durations rose 9 per cent in the first half of 2026. Slot timing and workscope depth decide the bill.",
+        "href": "/engines/v2500",
+        "meta": ["V2500-A1", "V2500-A5", "V2500-D5"]
+      },
+      {
+        "title": "PW4000",
+        "text": "PW4000-100 values have grown strongly since 2023 and a full overhaul runs 120 days or more. Few visits, large tickets.",
+        "href": "/engines/pw4000",
+        "meta": ["PW4000-94", "PW4000-100", "PW4000-112"]
+      },
+      {
+        "title": "APU and turboprop",
+        "text": "Honeywell 131-9 APUs, TPE331 and T76 turboprops and the TFE731: the same workscope, invoice and records discipline at a smaller ticket.",
+        "href": "/engines/apu-and-turboprop",
+        "meta": ["APU 131-9A/-9B/-9D", "TPE331/T76", "TFE731"]
+      }
+    ],
+    "source": "Models: 02-website-content-inventory.md section 4. CFM56: 06 section 1.2, Magnetic Group, around 70% of the global narrowbody fleet still on CFM56/V2500 (June 2025) and CFM56 repair costs +50 to 75% since 2019 [F]. LEAP: 06 section 1.4, IBA H2 2026, LEAP-1A fuel-nozzle coking with reverse-bleed fix and LEAP-1B HPT durability kit certified H1 2026 [F]. V2500: 06 section 1.2, Air Cargo Week (EngineStands data), V2500 project durations +9% in H1 2026 [F]. PW4000: 06 section 1.5, IBA H2 2026, PW4000-100 strong value growth since 2023 [F]; 06 section 1.2, Acumen, PW4000 full overhaul 120+ days [F]."
+  },
+  "process": {
+    "title": "How a managed shop visit works",
+    "intro": "Five steps, one file. Every decision is recorded against the workscope so the invoice, the records and the lease agree at the end.",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Induction planning",
+        "text": "Removal reason and technical status reviewed, records and LLP status checked, slot and transport confirmed. A preliminary workscope is drafted against the lease and the planning guide before the engine reaches the shop."
+      },
+      {
+        "n": "02",
+        "title": "Workscope",
+        "text": "The shop's proposed workscope is compared line by line with the planning guide, the lease conditions and the LLP stub lives. Only what the engine needs is agreed, in writing, before disassembly."
+      },
+      {
+        "n": "03",
+        "title": "Table inspection",
+        "text": "Attended in person once the engine is stripped. Each finding is photographed and recorded, repair or replace is decided part by part, and scrap is reviewed for material value."
+      },
+      {
+        "n": "04",
+        "title": "Repair approvals and invoice review",
+        "text": "Repair quotes and material choices, new or used serviceable, are approved against the agreed workscope. The invoice is then reconciled against that workscope and the recorded findings before it is paid."
+      },
+      {
+        "n": "05",
+        "title": "Test cell and redelivery",
+        "text": "Test-cell results are reviewed against the acceptance limits, the post-shop-visit documentation is audited and warranty items are logged. The engine is redelivered with a records pack ready for the next lease or transition."
+      }
+    ],
+    "source": "Steps and deliverables: 02-website-content-inventory.md section 4 (Shop Visit Management: workscope compilation and review, dirty condition and table inspection, test cell overview, invoice review, scrap review and material value extraction, post-shop visit documentation audit, warranty management); 06 section 1.7 (what shop visit management is expected to contain); 05 section 6 (managed shop visit timeline pattern)."
+  },
+  "independence": {
+    "title": "Not owned by an MRO, lessor or OEM",
+    "text": "Flight Hour Solution is owned by its managing director, not by an MRO, a lessor or an engine manufacturer. On advisory work we act for the client alone. When we source or broker an engine or aircraft we say so, under a separate Assets line. An advisory client is never offered an asset we are marketing without that disclosure.",
+    "href": "/about#independence",
+    "source": "01-company-profile.md section 2 (Hubert Nowosad sole shareholder and managing director since July 2025, SOGC); 07 section 2.3, option 1 (two labelled lines with a written conflicts policy); 06 section 5.1, item 3.",
+    "clientToConfirm": [
+      "Confirm that no commissions or referral fees are received from MROs, OEMs, lessors or parts suppliers on advisory work (07 section 2.2).",
+      "Approve the written conflicts policy that the About page will carry and the name of the second line (Assets)."
+    ]
+  },
+  "people": {
+    "title": "Who does the work",
+    "intro": "Engagements are led by Hubert Nowosad, managing director, drawing on the team's experience in engine shops and airline engineering.",
+    "href": "/about#team",
+    "source": "01-company-profile.md section 2 (managing director; Aero Norway background from a public LinkedIn post, role unverified).",
+    "clientToConfirm": [
+      "Confirm Hubert Nowosad as the public face with photo, title and bio, and which former employers may be named (Aero Norway, roughly 2018 to 2022, role and title unverified).",
+      "Team experience is stated without a years figure, per the copy rules. Confirm which other team members may be named."
+    ]
+  },
+  "insights": {
+    "title": "Latest insights",
+    "href": "/insights"
+  },
+  "closing": {
+    "headline": "Send us the workscope before you sign it",
+    "sub": "Tell us the engine, the shop and the date. We will tell you where an independent review earns its fee.",
+    "ctas": [
+      { "label": "Talk to us", "href": "/contact", "kind": "primary" },
+      { "label": "Send us a workscope", "href": "/contact#workscope", "kind": "secondary" }
+    ]
+  },
+  "faq": [
+    {
+      "q": "What does shop visit management include?",
+      "a": "Induction planning, workscope compilation and review, attendance at the table inspection, borescope and test-cell overview, repair and material approvals, invoice review, scrap review and a post-shop-visit documentation audit. It can be run as full management or as an overview of a visit your own team runs."
+    },
+    {
+      "q": "Is Flight Hour Solution independent of MROs, lessors and engine manufacturers?",
+      "a": "Yes. The company is owned by its managing director and is not owned by an MRO, a lessor or an OEM. When it sources or brokers an engine or aircraft, that is declared and kept separate from advisory work."
+    },
+    {
+      "q": "Which engine families do you cover?",
+      "a": "CFM56-3, -5 and -7; LEAP-1A, -1B and -1C; V2500-A1, -A5 and -D5; PW4000-94, -100 and -112; Honeywell APU 131-9A, -9B and -9D; and the TPE331, T76 and TFE731."
+    },
+    {
+      "q": "When should we involve you in a shop visit?",
+      "a": "Before the workscope is agreed with the shop, ideally at removal planning. We can also join at the table inspection or at the invoice stage, but the largest decisions are made in the workscope."
+    },
+    {
+      "q": "Where do you work?",
+      "a": "From Zug, Switzerland, and on site wherever the engine is: at the shop for table inspections, at the test cell and at redelivery. Clients are airlines, lessors, MROs and government operators worldwide."
+    }
+  ],
+  "sources": [
+    "01-company-profile.md section 1: legal name Flight Hour Solution GmbH, registered seat Zug, statutes 4 September 2024, register entry 26 September 2024 (Zefix, SOGC).",
+    "01-company-profile.md section 2: Hubert Nowosad, managing director and sole shareholder since July 2025 (SOGC); Aero Norway background unverified.",
+    "01-company-profile.md section 4.2: Swiss Aerospace Cluster directory text ('support airlines, lessors, MROs and governmental operators worldwide') and core competences including training and knowledge transfer.",
+    "01-company-profile.md section 4.3: LinkedIn 2026, engine sourcing, technical advisory and engine sales support; aircraft dry-lease sourcing.",
+    "01-company-profile.md section 5: Swiss Aerospace Cluster membership verified; ISO 9001 and Aviation Suppliers Association membership claimed, not shown.",
+    "02-website-content-inventory.md section 4: service taxonomy (shop visit management, workscope compilation and review, table inspection, borescope video analysis, test result analysis, LLP back-to-birth trace audit, maintenance reserve calculations and claim analysis, contract negotiation, invoice review, scrap review, warranty management, ECM/EHM monitoring, teardown valuations) and the 17 engine and APU models in five families.",
+    "06-market-context-and-seo.md section 1.2: MTU, an engine typically needs 3 to 5 shop visits over its life [F]; Magnetic Group (June 2025), around 70% of the global narrowbody fleet still on CFM56/V2500 and CFM56 repair costs +50 to 75% since 2019 [F]; Air Cargo Week (EngineStands data, 17 July 2026), V2500 project durations +9% in H1 2026 [F]; Acumen (15 June 2026), PW4000 full overhaul 120+ days [F]; copy implication permitting 'typically several million US dollars per visit'.",
+    "06-market-context-and-seo.md section 1.3: Bain (17 July 2024), turnaround times +35% or more for legacy engines and +150% or more for new-generation engines against pre-pandemic [F].",
+    "06-market-context-and-seo.md section 1.4: IBA H2 2026, LEAP-1A fuel-nozzle coking with reverse-bleed fix and LEAP-1B HPT durability kit certified H1 2026 [F].",
+    "06-market-context-and-seo.md section 1.5: IBA H2 2026, CF6-80E and PW4000-100 strong value growth since 2023 [F].",
+    "06-market-context-and-seo.md section 1.7: Acumen, maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes [F]; competitor definitions of what shop visit management contains.",
+    "06-market-context-and-seo.md section 1.8: the independent interpreter of OEM and MRO data as the defensible role; section 1.10: Zug framing (central Europe, Zurich Airport and Zurich engine-MRO cluster).",
+    "06-market-context-and-seo.md section 5.1 (value propositions 2, 3, 5, 7, 8) and section 5.2 (claims to avoid).",
+    "07-recommendations-and-brief.md section 2.3 (Advisory and Assets lines), section 2.5 (hero headline options), section 5 (Home page brief).",
+    "08-locomotive-design-blueprint.md section 8.3 (home page choreography) and section 8.4 (component rules for stats, rows and metadata labels)."
+  ]
+}

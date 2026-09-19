@@ -1,0 +1,112 @@
+/* Flight Hour Solution design tokens. Generated from docs/research/08-locomotive-design-blueprint.md section 8.2.
+ * Fluid values run from a 390 px to a 1440 px viewport (Utopia method). Do not hand-edit the clamp() maths;
+ * regenerate with the script in docs/research/data/locomotive/tools if the scale changes. */
+
+:root {
+  /* colour */
+  --color-navy: #1c205c;
+  --color-navy-deep: #0c1022;
+  --color-ink: #12152e;
+  --color-paper: #f4f1eb;
+  --color-white: #ffffff;
+  --color-orange: #ee7203;
+  --color-orange-text: #a84e00;
+  --color-muted: #545872;
+  --color-muted-dark: #a9acc6;
+  --color-line: rgb(18 21 46 / 0.16);
+  --color-line-dark: rgb(255 255 255 / 0.22);
+  --color-data: #2f6a9e;
+  --color-error: #9b2c1f;
+  --color-success: #1f6b45;
+
+  /* type */
+  --font-sans: "IBM Plex Sans", "Plex Sans Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "Plex Mono Fallback", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --step--2: clamp(0.750rem, 0.727rem + 0.095vw, 0.812rem);
+  --step--1: clamp(0.875rem, 0.840rem + 0.143vw, 0.969rem);
+  --step-0: clamp(1.062rem, 1.016rem + 0.190vw, 1.188rem);
+  --step-1: clamp(1.275rem, 1.161rem + 0.469vw, 1.583rem);
+  --step-2: clamp(1.530rem, 1.315rem + 0.884vw, 2.110rem);
+  --step-3: clamp(1.836rem, 1.473rem + 1.488vw, 2.813rem);
+  --step-4: clamp(2.203rem, 1.629rem + 2.356vw, 3.749rem);
+  --step-5: clamp(2.644rem, 1.769rem + 3.587vw, 4.998rem);
+  --step-6: clamp(3.173rem, 1.876rem + 5.317vw, 6.662rem);
+  --step-display: clamp(3.500rem, 1.364rem + 8.762vw, 9.250rem);
+  --leading-display: 1.02;
+  --leading-heading: 1.1;
+  --leading-sub: 1.25;
+  --leading-body: 1.45;
+  --leading-caption: 1.4;
+  --tracking-display: -0.02em;
+  --tracking-caps: 0.06em;
+
+  /* space */
+  --space-micro: clamp(0.500rem, 0.407rem + 0.381vw, 0.750rem);
+  --space-tiny: clamp(1.000rem, 0.907rem + 0.381vw, 1.250rem);
+  --space-small: clamp(1.500rem, 1.314rem + 0.762vw, 2.000rem);
+  --space-medium: clamp(2.000rem, 1.814rem + 0.762vw, 2.500rem);
+  --space-large: clamp(3.000rem, 2.257rem + 3.048vw, 5.000rem);
+  --space-big: clamp(4.000rem, 2.700rem + 5.333vw, 7.500rem);
+  --space-huge: clamp(6.000rem, 4.514rem + 6.095vw, 10.000rem);
+  --space-enormous: clamp(8.000rem, 5.400rem + 10.667vw, 15.000rem);
+  --gutter: clamp(0.75rem, 0.5rem + 0.762vw, 1.25rem);
+  --margin: clamp(1.25rem, 0.786rem + 1.905vw, 2.5rem);
+  --measure: 65ch;
+  --header-height: 4.5rem;
+
+  /* motion */
+  --duration-micro: 150ms;
+  --duration-ui: 300ms;
+  --duration-reveal: 600ms;
+  --duration-hero: 900ms;
+  --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  /* radius */
+  --radius-control: 4px;
+}
+
+/* Section themes. Sections set data-theme; components read the semantic tokens. */
+[data-theme="light"] {
+  --bg: var(--color-paper);
+  --bg-raised: var(--color-white);
+  --fg: var(--color-ink);
+  --fg-muted: var(--color-muted);
+  --line: var(--color-line);
+  --accent: var(--color-orange);
+  --accent-text: var(--color-orange-text);
+  --focus: var(--color-orange);
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: var(--color-navy);
+  --bg-raised: var(--color-navy-deep);
+  --fg: var(--color-white);
+  --fg-muted: var(--color-muted-dark);
+  --line: var(--color-line-dark);
+  --accent: var(--color-orange);
+  --accent-text: var(--color-orange);
+  --focus: var(--color-white);
+  color-scheme: dark;
+}
+
+[data-theme="deep"] {
+  --bg: var(--color-navy-deep);
+  --bg-raised: var(--color-navy);
+  --fg: var(--color-white);
+  --fg-muted: var(--color-muted-dark);
+  --line: var(--color-line-dark);
+  --accent: var(--color-orange);
+  --accent-text: var(--color-orange);
+  --focus: var(--color-white);
+  color-scheme: dark;
+}
+
+@media (min-width: 1600px) {
+  :root { font-size: 106.25%; }
+}
+@media (min-width: 2000px) {
+  :root { font-size: 112.5%; }
+}

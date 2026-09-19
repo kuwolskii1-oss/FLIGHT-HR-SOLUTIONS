@@ -1,0 +1,8 @@
+
+# Website build (site/app): dependencies and build output are not committed
+site/app/node_modules/
+site/app/dist/
+site/app/.output/
+site/app/.tanstack/
+site/app/.wrangler/
+site/app/.vinxi/
