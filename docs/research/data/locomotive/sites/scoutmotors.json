@@ -1,0 +1,1603 @@
+{
+ "label": "scoutmotors",
+ "url": "https://www.scoutmotors.com/",
+ "capturedAt": "2026-09-19T15:36:10.916Z",
+ "desktop": {
+  "title": "Scout Motors",
+  "lang": "en",
+  "generator": "Astro v6.4.6",
+  "description": "We're designing, engineering, and building the next generation of electric trucks and rugged SUVs for the doers, makers, and explorers. The new Scout® Traveler™ and Terra™ models are here, born from the original legend, retooled for a new era.",
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 17887,
+  "domNodes": 768,
+  "textEls": 142,
+  "fonts": [
+   "scout-sans-regular normal normal",
+   "scout-sans-medium normal normal",
+   "scout-sans-semicond-bold normal normal",
+   "scout-sans-wide-medium normal normal",
+   "scout-ibm-plex-mono 400 normal",
+   "scout-ibm-plex-mono 500 normal",
+   "Source Sans Pro 400 normal"
+  ],
+  "fontFamilies": [
+   [
+    "scout-ibm-plex-mono",
+    43
+   ],
+   [
+    "scout-sans-regular",
+    42
+   ],
+   [
+    "scout-sans-medium",
+    38
+   ],
+   [
+    "scout-sans-wide-medium",
+    17
+   ],
+   [
+    "scout-sans-semicond-bold",
+    2
+   ]
+  ],
+  "fontSizes": [
+   [
+    "14px",
+    26
+   ],
+   [
+    "20px",
+    26
+   ],
+   [
+    "16px",
+    20
+   ],
+   [
+    "72px",
+    14
+   ],
+   [
+    "10px",
+    12
+   ],
+   [
+    "11px",
+    12
+   ],
+   [
+    "12px",
+    9
+   ],
+   [
+    "0px",
+    8
+   ],
+   [
+    "270px",
+    7
+   ],
+   [
+    "28px",
+    4
+   ],
+   [
+    "504px",
+    2
+   ],
+   [
+    "32px",
+    2
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    113
+   ],
+   [
+    "500",
+    29
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.25",
+    32
+   ],
+   [
+    "1",
+    29
+   ],
+   [
+    "1.2",
+    26
+   ],
+   [
+    "1.5",
+    19
+   ],
+   [
+    "0.9",
+    14
+   ],
+   [
+    "1.1",
+    9
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.02em",
+    31
+   ],
+   [
+    "-0.04em",
+    2
+   ],
+   [
+    "-Infinityem",
+    2
+   ]
+  ],
+  "uppercaseShare": 32,
+  "maxFontPx": 504,
+  "maxFontText": "RESERVE",
+  "maxFontVwRatio": 35,
+  "textColors": [
+   [
+    "rgb(255, 255, 255)",
+    48
+   ],
+   [
+    "rgb(28, 28, 26)",
+    44
+   ],
+   [
+    "rgb(1, 1, 1)",
+    16
+   ],
+   [
+    "rgb(234, 234, 234)",
+    8
+   ],
+   [
+    "rgb(82, 82, 82)",
+    8
+   ],
+   [
+    "rgb(88, 88, 86)",
+    7
+   ],
+   [
+    "rgb(17, 35, 47)",
+    5
+   ],
+   [
+    "rgb(132, 158, 174)",
+    4
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(237, 233, 232)",
+    1360
+   ],
+   [
+    "rgb(255, 255, 255)",
+    251
+   ],
+   [
+    "rgb(255, 84, 50)",
+    183
+   ],
+   [
+    "rgb(12, 14, 28)",
+    130
+   ],
+   [
+    "rgb(0, 0, 0)",
+    128
+   ],
+   [
+    "rgb(17, 35, 47)",
+    65
+   ],
+   [
+    "rgba(0, 0, 0, 0.1)",
+    20
+   ],
+   [
+    "rgb(234, 234, 234)",
+    17
+   ],
+   [
+    "color(srgb 1 1 1 / 0.1)",
+    6
+   ],
+   [
+    "rgb(240, 240, 240)",
+    6
+   ]
+  ],
+  "bodyBg": "rgb(255, 255, 255)",
+  "radii": [
+   [
+    "4px",
+    16
+   ],
+   [
+    "2px",
+    14
+   ],
+   [
+    "3px",
+    12
+   ],
+   [
+    "8px",
+    10
+   ],
+   [
+    "9999px",
+    2
+   ],
+   [
+    "6px",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "1270px",
+    2
+   ],
+   [
+    "1440px",
+    1
+   ],
+   [
+    "1240px",
+    1
+   ],
+   [
+    "1272px",
+    1
+   ],
+   [
+    "1024px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "Scouts always come back.",
+   "size": 72,
+   "weight": "400",
+   "family": "scout-sans-wide-medium",
+   "lh": 0.9,
+   "ls": "-1.44px",
+   "transform": "none",
+   "color": "rgb(255, 255, 255)",
+   "top": 733
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Scouts always come back.",
+    "size": 72,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 0.9,
+    "ls": "-1.44px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 733
+   },
+   {
+    "tag": "H2",
+    "text": "An off-road icon reborn.",
+    "size": 72,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 0.9,
+    "ls": "-1.44px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 305
+   },
+   {
+    "tag": "H2",
+    "text": "The one that started it all.",
+    "size": 72,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 0.9,
+    "ls": "-1.44px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 285
+   },
+   {
+    "tag": "H2",
+    "text": "An Icon From Day One",
+    "size": 270,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 1,
+    "ls": "-5.4px",
+    "transform": "capitalize",
+    "color": "rgb(17, 35, 47)",
+    "top": 5148
+   },
+   {
+    "tag": "H2",
+    "text": "For The Scout In All Of Us.",
+    "size": 270,
+    "weight": "400",
+    "family": "scout-sans-medium",
+    "lh": 0.83,
+    "ls": "-5.4px",
+    "transform": "capitalize",
+    "color": "rgb(255, 255, 255)",
+    "top": 11266
+   },
+   {
+    "tag": "H2",
+    "text": "Experience the reveal event.",
+    "size": 72,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 0.9,
+    "ls": "-1.44px",
+    "transform": "none",
+    "color": "rgb(28, 28, 26)",
+    "top": 12727
+   },
+   {
+    "tag": "H2",
+    "text": "The duo that does it all.",
+    "size": 72,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 0.9,
+    "ls": "-1.44px",
+    "transform": "none",
+    "color": "rgb(28, 28, 26)",
+    "top": 14157
+   },
+   {
+    "tag": "H3",
+    "text": "Traveler",
+    "size": 28,
+    "weight": "400",
+    "family": "scout-sans-medium",
+    "lh": 1.1,
+    "ls": "-0.56px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 14384
+   },
+   {
+    "tag": "H3",
+    "text": "Terra",
+    "size": 28,
+    "weight": "400",
+    "family": "scout-sans-medium",
+    "lh": 1.1,
+    "ls": "-0.56px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 14440
+   },
+   {
+    "tag": "H2",
+    "text": "In it for the long haul.",
+    "size": 72,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 0.9,
+    "ls": "-1.44px",
+    "transform": "none",
+    "color": "rgb(28, 28, 26)",
+    "top": 15120
+   },
+   {
+    "tag": "H2",
+    "text": "Legal notes",
+    "size": 16,
+    "weight": "400",
+    "family": "scout-sans-regular",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 15653
+   },
+   {
+    "tag": "H2",
+    "text": "Be one of the pioneers. Stay Connected.",
+    "size": 20,
+    "weight": "400",
+    "family": "scout-sans-medium",
+    "lh": 1.25,
+    "ls": "-0.4px",
+    "transform": "none",
+    "color": "rgb(28, 28, 26)",
+    "top": 16414
+   },
+   {
+    "tag": "H3",
+    "text": "",
+    "size": 32,
+    "weight": "500",
+    "family": "scout-sans-medium",
+    "lh": 1.1,
+    "ls": "-0.64px",
+    "transform": "none",
+    "color": "rgb(28, 28, 26)",
+    "top": 363
+   },
+   {
+    "tag": "H3",
+    "text": "",
+    "size": 32,
+    "weight": "500",
+    "family": "scout-sans-medium",
+    "lh": 1.1,
+    "ls": "-0.64px",
+    "transform": "none",
+    "color": "rgb(28, 28, 26)",
+    "top": 228
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 16,
+    "lh": 1.25,
+    "family": "scout-sans-regular",
+    "color": "rgb(255, 255, 255)",
+    "measure": 411
+   },
+   {
+    "size": 16,
+    "lh": 1.25,
+    "family": "scout-sans-regular",
+    "color": "rgb(255, 255, 255)",
+    "measure": 411
+   },
+   {
+    "size": 16,
+    "lh": 1.25,
+    "family": "scout-sans-regular",
+    "color": "rgb(28, 28, 26)",
+    "measure": 250
+   },
+   {
+    "size": 14,
+    "lh": 1.25,
+    "family": "scout-sans-regular",
+    "color": "rgb(234, 234, 234)",
+    "measure": 380
+   },
+   {
+    "size": 16,
+    "lh": 1.25,
+    "family": "scout-sans-regular",
+    "color": "rgb(88, 88, 86)",
+    "measure": 410
+   }
+  ],
+  "navLinks": [
+   "TRAVELER SUV",
+   "TERRA TRUCK",
+   "Our story",
+   "Community hub",
+   "Scout Supply",
+   "Newsroom",
+   "Events",
+   "South Carolina resources",
+   "Careers",
+   "Support",
+   "Contact us",
+   "Learn more about Traveler",
+   "Learn more about Terra"
+  ],
+  "buttons": [
+   "SKIP TO MAIN CONTENT",
+   "TRAVELER SUV",
+   "TERRA TRUCK",
+   "RESERVE",
+   "Sign in",
+   "Reserve Now",
+   "OUR STORY",
+   "SUBSCRIBE",
+   "RESERVE NOW"
+  ],
+  "burger": true,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": true,
+   "marquee": true,
+   "preloader": true,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 4,
+   "fixed": 14,
+   "horizontalScroll": true,
+   "themeSwitch": false,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 14,
+   "videos": 3,
+   "autoplayVideos": 0,
+   "canvases": 2,
+   "inlineSvg": 21,
+   "iframes": 5,
+   "images": 52,
+   "imgFormats": {
+    "other": 2,
+    "jpg": 34,
+    "svg": 9,
+    "webp": 7
+   },
+   "langSwitch": true,
+   "darkFirstView": false
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": true,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "recaptcha": 2,
+   "ogl": 3,
+   "gtm": 1,
+   "_astro": 12,
+   "gtag": 1
+  },
+  "scripts": [
+   "cdn.amplitude.com/libs/analytics-browser-2.11.4-min.js.gz",
+   "www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js",
+   "www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js",
+   "www.gstatic.com/recaptcha/releases/zqB-6Xpbd3lCIvi7Tr2D0pob/recaptcha__en.js",
+   "bat.bing.com/bat.js",
+   "collector-48509.us.tvsquared.com/tv2track.js",
+   "collector-53273.us.tvsquared.com/tv2track.js",
+   "www.redditstatic.com/ads/pixel.js",
+   "www.googletagmanager.com/gtm.js?id=GTM-MXZLWJSB",
+   "www.scoutmotors.com/_astro/Layout.astro_astro_type_script_index_0_lang.BKVl7LIi.js",
+   "consent.trustarc.com/v2/notice/zzhplz",
+   "www.googletagmanager.com/gtag/js?id=G-EWMT52PYQP",
+   "bat.bing.com/p/action/211065069.js",
+   "js.stripe.com/v3",
+   "www.scoutmotors.com/_astro/Menu.astro_astro_type_script_index_0_lang.B_ktvTvj.js",
+   "www.scoutmotors.com/_astro/SequenceKey.astro_astro_type_script_index_0_lang.DczDvNK_.js",
+   "www.scoutmotors.com/_astro/Sequence.astro_astro_type_script_index_0_lang.DyXeImS2.js",
+   "www.scoutmotors.com/_astro/SplitLines.astro_astro_type_script_index_0_lang.DSCWsfYU.js",
+   "www.scoutmotors.com/_astro/Viewfinder.astro_astro_type_script_index_0_lang.CtcGOqxS.js",
+   "www.scoutmotors.com/_astro/HomeTreadmill.astro_astro_type_script_index_0_lang._-VMC2CF.js",
+   "www.scoutmotors.com/_astro/HomeCamp.astro_astro_type_script_index_0_lang.C7niMLk8.js",
+   "www.scoutmotors.com/_astro/ProductTile.astro_astro_type_script_index_0_lang.GO_pSEzN.js",
+   "js.adsrvr.org/up_loader.1.1.0.js",
+   "www.scoutmotors.com/_astro/Layout.astro_astro_type_script_index_1_lang.DJQHYyPz.js",
+   "www.scoutmotors.com/_astro/Layout.astro_astro_type_script_index_2_lang.CcxHyqW1.js"
+  ],
+  "css": {
+   "media": [
+    [
+     "(max-width: 998px)",
+     62
+    ],
+    [
+     "(max-width: 699px)",
+     56
+    ],
+    [
+     "(max-width: 699px), (hover: none)",
+     49
+    ],
+    [
+     "(min-width: 700px) and (hover: hover)",
+     37
+    ],
+    [
+     "(min-width: 1000px)",
+     29
+    ],
+    [
+     "(min-width: 700px)",
+     24
+    ],
+    [
+     "(hover: hover)",
+     14
+    ],
+    [
+     "(max-width: 1199px)",
+     11
+    ],
+    [
+     "(prefers-reduced-motion)",
+     7
+    ],
+    [
+     "(min-width: 1200px)",
+     7
+    ],
+    [
+     "(min-aspect-ratio: 1 / 1)",
+     5
+    ],
+    [
+     "(max-aspect-ratio: 1 / 1)",
+     5
+    ],
+    [
+     "(orientation: landscape)",
+     4
+    ],
+    [
+     "print",
+     3
+    ]
+   ],
+   "durations": [
+    [
+     "0.3s",
+     29
+    ],
+    [
+     "0.4s",
+     28
+    ],
+    [
+     "0.15s",
+     10
+    ],
+    [
+     "0.6s",
+     10
+    ],
+    [
+     "1s",
+     9
+    ],
+    [
+     "0.2s",
+     8
+    ],
+    [
+     "2s",
+     5
+    ],
+    [
+     "0.5s",
+     5
+    ],
+    [
+     "0.8s",
+     5
+    ],
+    [
+     "auto",
+     4
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.38, 0.005, 0.215, 1)",
+     41
+    ],
+    [
+     "cubic-bezier(0.4, 0, 0.2, 1)",
+     23
+    ],
+    [
+     "linear",
+     12
+    ],
+    [
+     "cubic-bezier(0.23, 1, 0.32, 1)",
+     5
+    ],
+    [
+     "ease-in-out",
+     3
+    ],
+    [
+     "inherit",
+     3
+    ],
+    [
+     "var(--cinematic-key-reveal-ease)",
+     2
+    ],
+    [
+     "ease-out",
+     2
+    ]
+   ],
+   "fontFaces": [
+    "scout-sans-regular  ",
+    "scout-sans-medium  ",
+    "scout-sans-semicond-bold  ",
+    "scout-sans-wide-medium  ",
+    "scout-ibm-plex-mono 400 ",
+    "scout-ibm-plex-mono 500 ",
+    "Source Sans Pro 400 normal"
+   ],
+   "keyframes": 18,
+   "clampFontSizes": 53,
+   "vwFontSizes": 63,
+   "sheets": 5,
+   "blocked": 0,
+   "rootVarCount": 51,
+   "rootVarsSample": {
+    "--swiper-theme-color": "#007aff",
+    "--swiper-navigation-size": "44px",
+    "--grid-columns": "12",
+    "--grid-gutter": ".25rem",
+    "--grid-margin": "clamp(1rem, -.5rem + 7.5vw, 6.25rem)",
+    "--color": "#010101",
+    "--color-bg": "#ffffff",
+    "--outline-color": "var(--color)",
+    "--container-margin": "clamp(1rem, -.5rem + 7.5vw, 6.25rem)",
+    "--container-large-margin": "clamp(1rem, .43rem + 2.86vw, 3rem)",
+    "--container-full-margin": "16px",
+    "--force-animation-duration": "0s",
+    "--button-width": "auto",
+    "--button-radius": "2px",
+    "--button-font-size": "12px",
+    "--button-gap": "25px",
+    "--button-color": "#ffffff",
+    "--button-stroke-color": "transparent",
+    "--button-color-active": "#010101",
+    "--header-max-width": "1240px",
+    "--header-shrink-duration": ".2s",
+    "--menu-item-radius": "6px",
+    "--menu-animation-duration": "0s",
+    "--toaster-width": "432px",
+    "--toastify-color-success": "#467517",
+    "--toastify-z-index": "99",
+    "--tc-bg-color": "#ffffff",
+    "--tc-btn-shadow-color": "#00000033",
+    "--tc-gradient-hover-color": "linear-gradient(360deg, #2025a7 -4.26%, #000579 97.87%)",
+    "--tc-link-color": "rgba(29, 78, 216, 1)",
+    "--tc-main-color": "#000579",
+    "--tc-repop-bg-color": "#e9e9ff",
+    "--tc-repop-color": "#5C2F88",
+    "--tc-text-color": "#1e293b"
+   }
+  },
+  "perf": {
+   "requests": 215,
+   "kb": 11787,
+   "byTypeKB": {
+    "img": 11781,
+    "video": 4
+   },
+   "dcl": 5248,
+   "load": 11708,
+   "ttfb": 3320
+  },
+  "status": 200,
+  "cookieDismissed": "button:has-text(\"Accept all\")",
+  "errors": [],
+  "scriptSignatures": {
+   "gsap": 1
+  },
+  "scriptsChecked": 10
+ },
+ "mobile": {
+  "title": "Scout Motors",
+  "lang": "en",
+  "generator": "Astro v6.4.6",
+  "description": "We're designing, engineering, and building the next generation of electric trucks and rugged SUVs for the doers, makers, and explorers. The new Scout® Traveler™ and Terra™ models are here, born from the original legend, retooled for a new era.",
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 15226,
+  "domNodes": 766,
+  "textEls": 135,
+  "fonts": [
+   "scout-sans-regular normal normal",
+   "scout-sans-medium normal normal",
+   "scout-sans-semicond-bold normal normal",
+   "scout-sans-wide-medium normal normal",
+   "scout-ibm-plex-mono 400 normal",
+   "scout-ibm-plex-mono 500 normal",
+   "Source Sans Pro 400 normal"
+  ],
+  "fontFamilies": [
+   [
+    "scout-sans-regular",
+    39
+   ],
+   [
+    "scout-ibm-plex-mono",
+    38
+   ],
+   [
+    "scout-sans-medium",
+    38
+   ],
+   [
+    "scout-sans-wide-medium",
+    18
+   ],
+   [
+    "scout-sans-semicond-bold",
+    2
+   ]
+  ],
+  "fontSizes": [
+   [
+    "16px",
+    44
+   ],
+   [
+    "14px",
+    31
+   ],
+   [
+    "42px",
+    14
+   ],
+   [
+    "11px",
+    12
+   ],
+   [
+    "0px",
+    7
+   ],
+   [
+    "10px",
+    6
+   ],
+   [
+    "12px",
+    5
+   ],
+   [
+    "98px",
+    4
+   ],
+   [
+    "80px",
+    4
+   ],
+   [
+    "20px",
+    4
+   ],
+   [
+    "338px",
+    2
+   ],
+   [
+    "28px",
+    2
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    109
+   ],
+   [
+    "500",
+    26
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.25",
+    31
+   ],
+   [
+    "1.1",
+    28
+   ],
+   [
+    "1.2",
+    25
+   ],
+   [
+    "1.5",
+    18
+   ],
+   [
+    "0.9",
+    14
+   ],
+   [
+    "1",
+    7
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.02em",
+    18
+   ],
+   [
+    "-0.033em",
+    2
+   ],
+   [
+    "-Infinityem",
+    2
+   ]
+  ],
+  "uppercaseShare": 30,
+  "maxFontPx": 338,
+  "maxFontText": "RESERVE",
+  "maxFontVwRatio": 86.6,
+  "textColors": [
+   [
+    "rgb(255, 255, 255)",
+    43
+   ],
+   [
+    "rgb(28, 28, 26)",
+    42
+   ],
+   [
+    "rgb(1, 1, 1)",
+    16
+   ],
+   [
+    "rgb(234, 234, 234)",
+    8
+   ],
+   [
+    "rgb(82, 82, 82)",
+    8
+   ],
+   [
+    "rgb(88, 88, 86)",
+    7
+   ],
+   [
+    "rgb(17, 35, 47)",
+    5
+   ],
+   [
+    "rgb(132, 158, 174)",
+    4
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(237, 233, 232)",
+    306
+   ],
+   [
+    "rgb(255, 255, 255)",
+    66
+   ],
+   [
+    "rgb(255, 84, 50)",
+    40
+   ],
+   [
+    "rgb(0, 0, 0)",
+    33
+   ],
+   [
+    "rgb(12, 14, 28)",
+    33
+   ],
+   [
+    "rgb(17, 35, 47)",
+    19
+   ],
+   [
+    "rgb(234, 234, 234)",
+    19
+   ],
+   [
+    "rgb(240, 240, 240)",
+    6
+   ],
+   [
+    "color(srgb 1 1 1 / 0.1)",
+    4
+   ],
+   [
+    "rgb(28, 28, 26)",
+    4
+   ]
+  ],
+  "bodyBg": "rgb(255, 255, 255)",
+  "radii": [
+   [
+    "4px",
+    16
+   ],
+   [
+    "2px",
+    13
+   ],
+   [
+    "3px",
+    12
+   ],
+   [
+    "8px",
+    6
+   ],
+   [
+    "12px",
+    2
+   ],
+   [
+    "6px",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "1270px",
+    2
+   ],
+   [
+    "1440px",
+    1
+   ],
+   [
+    "780px",
+    1
+   ],
+   [
+    "1272px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "Scouts always come back.",
+   "size": 42,
+   "weight": "400",
+   "family": "scout-sans-wide-medium",
+   "lh": 0.9,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(255, 255, 255)",
+   "top": 666
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Scouts always come back.",
+    "size": 42,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 0.9,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 666
+   },
+   {
+    "tag": "H2",
+    "text": "An off-road icon reborn.",
+    "size": 42,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 0.9,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 582
+   },
+   {
+    "tag": "H2",
+    "text": "The one that started it all.",
+    "size": 42,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 0.9,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 522
+   },
+   {
+    "tag": "H2",
+    "text": "An Icon From Day One",
+    "size": 98,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 1,
+    "ls": "-1.95px",
+    "transform": "capitalize",
+    "color": "rgb(17, 35, 47)",
+    "top": 4853
+   },
+   {
+    "tag": "H2",
+    "text": "For The Scout In All Of Us.",
+    "size": 80,
+    "weight": "400",
+    "family": "scout-sans-medium",
+    "lh": 0.82,
+    "ls": "-1.599px",
+    "transform": "capitalize",
+    "color": "rgb(255, 255, 255)",
+    "top": 10115
+   },
+   {
+    "tag": "H2",
+    "text": "Experience the reveal event.",
+    "size": 42,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 0.9,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(28, 28, 26)",
+    "top": 10843
+   },
+   {
+    "tag": "H2",
+    "text": "The duo that does it all.",
+    "size": 42,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 0.9,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(28, 28, 26)",
+    "top": 11595
+   },
+   {
+    "tag": "H3",
+    "text": "Traveler",
+    "size": 20,
+    "weight": "400",
+    "family": "scout-sans-medium",
+    "lh": 1.1,
+    "ls": "-0.40568px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 11737
+   },
+   {
+    "tag": "H3",
+    "text": "Terra",
+    "size": 20,
+    "weight": "400",
+    "family": "scout-sans-medium",
+    "lh": 1.1,
+    "ls": "-0.40568px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 11979
+   },
+   {
+    "tag": "H2",
+    "text": "In it for the long haul.",
+    "size": 42,
+    "weight": "400",
+    "family": "scout-sans-wide-medium",
+    "lh": 0.9,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(28, 28, 26)",
+    "top": 12375
+   },
+   {
+    "tag": "H2",
+    "text": "Legal notes",
+    "size": 16,
+    "weight": "400",
+    "family": "scout-sans-regular",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 12904
+   },
+   {
+    "tag": "H2",
+    "text": "Be one of the pioneers. Stay Connected.",
+    "size": 16,
+    "weight": "400",
+    "family": "scout-sans-medium",
+    "lh": 1.25,
+    "ls": "-0.32568px",
+    "transform": "none",
+    "color": "rgb(28, 28, 26)",
+    "top": 14180
+   },
+   {
+    "tag": "H3",
+    "text": "",
+    "size": 28,
+    "weight": "500",
+    "family": "scout-sans-medium",
+    "lh": 1.1,
+    "ls": "-0.56568px",
+    "transform": "none",
+    "color": "rgb(28, 28, 26)",
+    "top": 1447
+   },
+   {
+    "tag": "H3",
+    "text": "",
+    "size": 28,
+    "weight": "500",
+    "family": "scout-sans-medium",
+    "lh": 1.1,
+    "ls": "-0.56568px",
+    "transform": "none",
+    "color": "rgb(28, 28, 26)",
+    "top": 1100
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 16,
+    "lh": 1.25,
+    "family": "scout-sans-regular",
+    "color": "rgb(255, 255, 255)",
+    "measure": 320
+   },
+   {
+    "size": 16,
+    "lh": 1.25,
+    "family": "scout-sans-regular",
+    "color": "rgb(255, 255, 255)",
+    "measure": 320
+   },
+   {
+    "size": 16,
+    "lh": 1.25,
+    "family": "scout-sans-regular",
+    "color": "rgb(28, 28, 26)",
+    "measure": 342
+   },
+   {
+    "size": 14,
+    "lh": 1.25,
+    "family": "scout-sans-regular",
+    "color": "rgb(234, 234, 234)",
+    "measure": 300
+   },
+   {
+    "size": 16,
+    "lh": 1.25,
+    "family": "scout-sans-regular",
+    "color": "rgb(88, 88, 86)",
+    "measure": 360
+   }
+  ],
+  "navLinks": [],
+  "buttons": [
+   "SKIP TO MAIN CONTENT",
+   "RESERVE",
+   "TRAVELER SUV",
+   "TERRA TRUCK",
+   "OUR STORY",
+   "SUBSCRIBE",
+   "RESERVE NOW"
+  ],
+  "burger": true,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": true,
+   "marquee": true,
+   "preloader": true,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 4,
+   "fixed": 14,
+   "horizontalScroll": true,
+   "themeSwitch": false,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 13,
+   "videos": 3,
+   "autoplayVideos": 0,
+   "canvases": 2,
+   "inlineSvg": 21,
+   "iframes": 3,
+   "images": 52,
+   "imgFormats": {
+    "other": 2,
+    "jpg": 34,
+    "svg": 9,
+    "webp": 7
+   },
+   "langSwitch": true,
+   "darkFirstView": false
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": true,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "recaptcha": 2,
+   "ogl": 3,
+   "gtm": 1,
+   "_astro": 12,
+   "gtag": 1
+  },
+  "scripts": [
+   "cdn.amplitude.com/libs/analytics-browser-2.11.4-min.js.gz",
+   "www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js",
+   "www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js",
+   "www.gstatic.com/recaptcha/releases/zqB-6Xpbd3lCIvi7Tr2D0pob/recaptcha__en.js",
+   "bat.bing.com/bat.js",
+   "collector-48509.us.tvsquared.com/tv2track.js",
+   "collector-53273.us.tvsquared.com/tv2track.js",
+   "www.redditstatic.com/ads/pixel.js",
+   "www.googletagmanager.com/gtm.js?id=GTM-MXZLWJSB",
+   "www.scoutmotors.com/_astro/Layout.astro_astro_type_script_index_0_lang.BKVl7LIi.js",
+   "consent.trustarc.com/v2/notice/zzhplz",
+   "www.googletagmanager.com/gtag/js?id=G-EWMT52PYQP",
+   "bat.bing.com/p/action/211065069.js",
+   "js.stripe.com/v3",
+   "www.scoutmotors.com/_astro/Menu.astro_astro_type_script_index_0_lang.B_ktvTvj.js",
+   "www.scoutmotors.com/_astro/SequenceKey.astro_astro_type_script_index_0_lang.DczDvNK_.js",
+   "www.scoutmotors.com/_astro/Sequence.astro_astro_type_script_index_0_lang.DyXeImS2.js",
+   "www.scoutmotors.com/_astro/SplitLines.astro_astro_type_script_index_0_lang.DSCWsfYU.js",
+   "www.scoutmotors.com/_astro/Viewfinder.astro_astro_type_script_index_0_lang.CtcGOqxS.js",
+   "www.scoutmotors.com/_astro/HomeTreadmill.astro_astro_type_script_index_0_lang._-VMC2CF.js",
+   "www.scoutmotors.com/_astro/HomeCamp.astro_astro_type_script_index_0_lang.C7niMLk8.js",
+   "www.scoutmotors.com/_astro/ProductTile.astro_astro_type_script_index_0_lang.GO_pSEzN.js",
+   "js.adsrvr.org/up_loader.1.1.0.js",
+   "www.scoutmotors.com/_astro/Layout.astro_astro_type_script_index_1_lang.DJQHYyPz.js",
+   "www.scoutmotors.com/_astro/Layout.astro_astro_type_script_index_2_lang.CcxHyqW1.js"
+  ],
+  "css": {
+   "media": [
+    [
+     "(max-width: 998px)",
+     62
+    ],
+    [
+     "(max-width: 699px)",
+     56
+    ],
+    [
+     "(max-width: 699px), (hover: none)",
+     49
+    ],
+    [
+     "(min-width: 700px) and (hover: hover)",
+     37
+    ],
+    [
+     "(min-width: 1000px)",
+     29
+    ],
+    [
+     "(min-width: 700px)",
+     24
+    ],
+    [
+     "(hover: hover)",
+     14
+    ],
+    [
+     "(max-width: 1199px)",
+     11
+    ],
+    [
+     "(prefers-reduced-motion)",
+     7
+    ],
+    [
+     "(min-width: 1200px)",
+     7
+    ],
+    [
+     "(min-aspect-ratio: 1 / 1)",
+     5
+    ],
+    [
+     "(max-aspect-ratio: 1 / 1)",
+     5
+    ],
+    [
+     "(orientation: landscape)",
+     4
+    ],
+    [
+     "print",
+     3
+    ]
+   ],
+   "durations": [
+    [
+     "0.3s",
+     29
+    ],
+    [
+     "0.4s",
+     28
+    ],
+    [
+     "0.15s",
+     10
+    ],
+    [
+     "0.6s",
+     10
+    ],
+    [
+     "1s",
+     9
+    ],
+    [
+     "0.2s",
+     8
+    ],
+    [
+     "2s",
+     5
+    ],
+    [
+     "0.5s",
+     5
+    ],
+    [
+     "0.8s",
+     5
+    ],
+    [
+     "auto",
+     4
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.38, 0.005, 0.215, 1)",
+     41
+    ],
+    [
+     "cubic-bezier(0.4, 0, 0.2, 1)",
+     23
+    ],
+    [
+     "linear",
+     12
+    ],
+    [
+     "cubic-bezier(0.23, 1, 0.32, 1)",
+     5
+    ],
+    [
+     "ease-in-out",
+     3
+    ],
+    [
+     "inherit",
+     3
+    ],
+    [
+     "var(--cinematic-key-reveal-ease)",
+     2
+    ],
+    [
+     "ease-out",
+     2
+    ]
+   ],
+   "fontFaces": [
+    "scout-sans-regular  ",
+    "scout-sans-medium  ",
+    "scout-sans-semicond-bold  ",
+    "scout-sans-wide-medium  ",
+    "scout-ibm-plex-mono 400 ",
+    "scout-ibm-plex-mono 500 ",
+    "Source Sans Pro 400 normal"
+   ],
+   "keyframes": 18,
+   "clampFontSizes": 53,
+   "vwFontSizes": 63,
+   "sheets": 5,
+   "blocked": 0,
+   "rootVarCount": 51,
+   "rootVarsSample": {
+    "--swiper-theme-color": "#007aff",
+    "--swiper-navigation-size": "44px",
+    "--grid-columns": "12",
+    "--grid-gutter": ".25rem",
+    "--grid-margin": "clamp(1rem, -.5rem + 7.5vw, 6.25rem)",
+    "--color": "#010101",
+    "--color-bg": "#ffffff",
+    "--outline-color": "var(--color)",
+    "--container-margin": "clamp(1rem, -.5rem + 7.5vw, 6.25rem)",
+    "--container-large-margin": "clamp(1rem, .43rem + 2.86vw, 3rem)",
+    "--container-full-margin": "16px",
+    "--force-animation-duration": "0s",
+    "--button-width": "auto",
+    "--button-radius": "2px",
+    "--button-font-size": "12px",
+    "--button-gap": "25px",
+    "--button-color": "#ffffff",
+    "--button-stroke-color": "transparent",
+    "--button-color-active": "#010101",
+    "--header-max-width": "1240px",
+    "--header-shrink-duration": ".2s",
+    "--menu-item-radius": "6px",
+    "--menu-animation-duration": "0s",
+    "--toaster-width": "432px",
+    "--toastify-color-success": "#467517",
+    "--toastify-z-index": "99",
+    "--tc-bg-color": "#ffffff",
+    "--tc-btn-shadow-color": "#00000033",
+    "--tc-gradient-hover-color": "linear-gradient(360deg, #2025a7 -4.26%, #000579 97.87%)",
+    "--tc-link-color": "rgba(29, 78, 216, 1)",
+    "--tc-main-color": "#000579",
+    "--tc-repop-bg-color": "#e9e9ff",
+    "--tc-repop-color": "#5C2F88",
+    "--tc-text-color": "#1e293b"
+   }
+  },
+  "perf": {
+   "requests": 107,
+   "kb": 3193,
+   "byTypeKB": {
+    "img": 3193
+   },
+   "dcl": 2957,
+   "load": 0,
+   "ttfb": 1384
+  },
+  "status": 200,
+  "cookieDismissed": "button:has-text(\"Accept all\")",
+  "errors": []
+ },
+ "seconds": 78
+}

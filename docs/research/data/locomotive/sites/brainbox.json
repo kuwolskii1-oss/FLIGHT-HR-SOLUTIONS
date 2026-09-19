@@ -1,0 +1,1618 @@
+{
+ "label": "brainbox",
+ "url": "https://brainboxai.com",
+ "capturedAt": "2026-09-19T15:24:49.439Z",
+ "desktop": {
+  "title": "BrainBox AI | AI Building management platform for HVAC optimization",
+  "lang": "en",
+  "generator": "HubSpot",
+  "description": "All-in-one platform to control & optimize your buildings. Achieve portfolio energy efficiency and sustainability with the most advanced AI technologies.",
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 8197,
+  "domNodes": 1223,
+  "textEls": 202,
+  "fonts": [
+   "Atlas Grotesk 300 normal",
+   "Atlas Grotesk 300 italic",
+   "Atlas Grotesk 400 normal",
+   "Atlas Grotesk 700 normal"
+  ],
+  "fontFamilies": [
+   [
+    "Atlas Grotesk",
+    198
+   ],
+   [
+    "Helvetica Neue",
+    4
+   ]
+  ],
+  "fontSizes": [
+   [
+    "16px",
+    73
+   ],
+   [
+    "12px",
+    28
+   ],
+   [
+    "20px",
+    22
+   ],
+   [
+    "24px",
+    20
+   ],
+   [
+    "36px",
+    19
+   ],
+   [
+    "64px",
+    14
+   ],
+   [
+    "56px",
+    8
+   ],
+   [
+    "28px",
+    7
+   ],
+   [
+    "44px",
+    4
+   ],
+   [
+    "15px",
+    2
+   ],
+   [
+    "110px",
+    2
+   ],
+   [
+    "13px",
+    2
+   ],
+   [
+    "14px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "300",
+    188
+   ],
+   [
+    "700",
+    10
+   ],
+   [
+    "400",
+    4
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1",
+    56
+   ],
+   [
+    "1.5",
+    49
+   ],
+   [
+    "1.1",
+    49
+   ],
+   [
+    "1.25",
+    38
+   ],
+   [
+    "1.33",
+    7
+   ],
+   [
+    "1.4",
+    2
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.02em",
+    53
+   ],
+   [
+    "0.15em",
+    16
+   ],
+   [
+    "0.08em",
+    7
+   ],
+   [
+    "-0.06em",
+    2
+   ],
+   [
+    "0.129em",
+    1
+   ],
+   [
+    "0.12em",
+    1
+   ]
+  ],
+  "uppercaseShare": 13,
+  "maxFontPx": 110,
+  "maxFontText": "OUR",
+  "maxFontVwRatio": 7.7,
+  "textColors": [
+   [
+    "rgb(23, 23, 27)",
+    129
+   ],
+   [
+    "rgb(255, 255, 255)",
+    50
+   ],
+   [
+    "rgb(226, 31, 44)",
+    11
+   ],
+   [
+    "rgb(247, 247, 247)",
+    4
+   ],
+   [
+    "rgb(34, 34, 34)",
+    3
+   ],
+   [
+    "rgb(51, 71, 91)",
+    1
+   ],
+   [
+    "rgb(0, 145, 174)",
+    1
+   ],
+   [
+    "rgb(230, 43, 51)",
+    1
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(255, 255, 255)",
+    758
+   ],
+   [
+    "rgb(246, 246, 246)",
+    313
+   ],
+   [
+    "rgb(23, 23, 27)",
+    209
+   ],
+   [
+    "rgb(245, 245, 245)",
+    167
+   ],
+   [
+    "rgb(0, 0, 0)",
+    130
+   ],
+   [
+    "rgb(42, 43, 49)",
+    104
+   ],
+   [
+    "rgb(221, 221, 221)",
+    97
+   ],
+   [
+    "rgb(226, 31, 44)",
+    88
+   ],
+   [
+    "rgb(230, 43, 51)",
+    22
+   ],
+   [
+    "rgb(157, 168, 173)",
+    16
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "4px",
+    29
+   ],
+   [
+    "100%",
+    10
+   ],
+   [
+    "0px",
+    9
+   ],
+   [
+    "3px",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "1000px",
+    6
+   ],
+   [
+    "680px",
+    1
+   ],
+   [
+    "700px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "Transforming buildings with autonomous and generative AI",
+   "size": 56,
+   "weight": "300",
+   "family": "Atlas Grotesk",
+   "lh": 1.1,
+   "ls": "-1.12px",
+   "transform": "none",
+   "color": "rgb(255, 255, 255)",
+   "top": 222
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Transforming buildings with autonomous and generative AI",
+    "size": 56,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-1.12px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 222
+   },
+   {
+    "tag": "H2",
+    "text": "Your building, only smarter greener more efficient",
+    "size": 36,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.72px",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 996
+   },
+   {
+    "tag": "H3",
+    "text": "ARIA",
+    "size": 36,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.72px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 1302
+   },
+   {
+    "tag": "H3",
+    "text": "AI Control",
+    "size": 36,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.72px",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 1294
+   },
+   {
+    "tag": "H3",
+    "text": "Cloud Building Management System",
+    "size": 36,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.72px",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 1294
+   },
+   {
+    "tag": "H2",
+    "text": "OUR IMPACT",
+    "size": 110,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-6.61824px",
+    "transform": "uppercase",
+    "color": "rgb(23, 23, 27)",
+    "top": 2262
+   },
+   {
+    "tag": "H3",
+    "text": "Cities impacted",
+    "size": 16,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 2920
+   },
+   {
+    "tag": "H3",
+    "text": "Daily data points collected",
+    "size": 16,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 2920
+   },
+   {
+    "tag": "H3",
+    "text": "Buildings optimized",
+    "size": 16,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 2920
+   },
+   {
+    "tag": "H2",
+    "text": "Trusted by:",
+    "size": 16,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 3127
+   },
+   {
+    "tag": "H3",
+    "text": "The most advanced AI technology in the industry",
+    "size": 36,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.72px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 3412
+   },
+   {
+    "tag": "H3",
+    "text": "Less data used, making models 90% faster",
+    "size": 24,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 3729
+   },
+   {
+    "tag": "H3",
+    "text": "AI-generated daily temperature predictions",
+    "size": 24,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 3729
+   },
+   {
+    "tag": "H3",
+    "text": "Prediction accuracy per zone 6 hours ahead",
+    "size": 24,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 4055
+   },
+   {
+    "tag": "H3",
+    "text": "Unique daily HVAC optimizaton commands",
+    "size": 24,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 4055
+   },
+   {
+    "tag": "H2",
+    "text": "Different buildings, same results",
+    "size": 36,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.72px",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 4490
+   },
+   {
+    "tag": "H2",
+    "text": "Be the smartest one in the building—fresh AI & energy news delivered straight to your inbox.",
+    "size": 36,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.72px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 5265
+   },
+   {
+    "tag": "H2",
+    "text": "Client testimonials",
+    "size": 36,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.72px",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 5827
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 12,
+    "lh": 1.5,
+    "family": "Helvetica Neue",
+    "color": "rgb(51, 71, 91)",
+    "measure": 960
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "Atlas Grotesk",
+    "color": "rgb(23, 23, 27)",
+    "measure": 583
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "Atlas Grotesk",
+    "color": "rgb(23, 23, 27)",
+    "measure": 307
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "Atlas Grotesk",
+    "color": "rgb(23, 23, 27)",
+    "measure": 269
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "Atlas Grotesk",
+    "color": "rgb(23, 23, 27)",
+    "measure": 350
+   }
+  ],
+  "navLinks": [
+   "Solutions",
+   "AI Lab",
+   "Resources",
+   "About",
+   "LET'S TALK",
+   "FR",
+   "Solutions",
+   "ARIA",
+   "AI Control",
+   "Building Management System",
+   "Expertise",
+   "GHG Emissions",
+   "Net Zero",
+   "AI Technology",
+   "Resources"
+  ],
+  "buttons": [
+   "LET'S TALK",
+   "WATCH VIDEO",
+   "DISCOVER ARIA",
+   "LEARN MORE",
+   "SIGN-UP TO OUR NEWSLETTER"
+  ],
+  "burger": true,
+  "headerPosition": "absolute",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 6,
+   "horizontalScroll": true,
+   "themeSwitch": false,
+   "scrollContainer": false,
+   "pageTransitions": false,
+   "grid": 3,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 40,
+   "iframes": 2,
+   "images": 84,
+   "imgFormats": {
+    "svg": 15,
+    "png": 45,
+    "jpeg": 2,
+    "jpg": 6,
+    "webp": 4,
+    "other": 12
+   },
+   "langSwitch": true,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": true,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": true,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "youtube": 2,
+   "hubspot": 8
+  },
+  "scripts": [
+   "buttons-config.sharethis.com/js/663535f703b429001925aac3.js",
+   "www.youtube.com/s/player/4fd832e7/www-widgetapi.vflset/www-widgetapi.js",
+   "js.hsadspixel.net/pixels.js",
+   "js.hs-banner.com/20662219.js",
+   "js.hs-analytics.net/analytics/1789831500000/20662219.js",
+   "www.youtube.com/iframe_api",
+   "platform-api.sharethis.com/js/sharethis.js#property=663535f703b429001925aac3&product=inlin",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/900",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/900",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/185",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/900",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/900",
+   "js.hsforms.net/forms/embed/v2.js",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/909",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/909",
+   "brainboxai.com/hs/hsstatic/content-cwv-embed/static-1.1293/embed.js",
+   "brainboxai.com/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js",
+   "brainboxai.com/hubfs/hub_generated/template_assets/1/90939958078/1789049884810/template_gs",
+   "brainboxai.com/hubfs/hub_generated/template_assets/1/90939958085/1789049888793/template_gs",
+   "brainboxai.com/hubfs/hub_generated/module_assets/1/191010850350/1752691690898/module_produ",
+   "brainboxai.com/hubfs/hub_generated/template_assets/1/191854820133/1789049887634/template_c",
+   "brainboxai.com/hubfs/hub_generated/module_assets/1/191815169577/1770239156508/module_globe",
+   "brainboxai.com/hubfs/hub_generated/module_assets/1/192140199090/1753892591129/module_grid_",
+   "brainboxai.com/hubfs/hub_generated/template_assets/1/90028945029/1789049893107/template_ti",
+   "brainboxai.com/hubfs/hub_generated/module_assets/1/194064101120/1754582669425/module_fade_"
+  ],
+  "css": {
+   "media": [
+    [
+     "print, screen and (min-width: 64em)",
+     226
+    ],
+    [
+     "print, screen and (min-width: 40em)",
+     63
+    ],
+    [
+     "print, screen and (max-width: 63.9988em)",
+     39
+    ],
+    [
+     "screen and (min-width: 87.5625em)",
+     33
+    ],
+    [
+     "screen and (min-width: 75em)",
+     32
+    ],
+    [
+     "print, screen and (max-width: 39.9988em)",
+     17
+    ],
+    [
+     "(hover: hover)",
+     8
+    ],
+    [
+     "screen and (min-width: 640px)",
+     8
+    ],
+    [
+     "print, screen and (min-width: 40em) and (max-width: 63.9988em)",
+     6
+    ],
+    [
+     "(min-width: 700px) and (max-width: 1400px)",
+     6
+    ],
+    [
+     "(max-width: 699px)",
+     5
+    ],
+    [
+     "screen and (max-width: 63.9988em)",
+     4
+    ],
+    [
+     "print, screen and (min-width: 64em) and (max-width: 74.9988em)",
+     4
+    ],
+    [
+     "(min-width: 1000px)",
+     3
+    ]
+   ],
+   "durations": [
+    [
+     "0.6s",
+     42
+    ],
+    [
+     "0.5s",
+     14
+    ],
+    [
+     "0.3s",
+     12
+    ],
+    [
+     "0.9s",
+     6
+    ],
+    [
+     "0.25s",
+     5
+    ],
+    [
+     "0.45s",
+     3
+    ],
+    [
+     "0.4s",
+     3
+    ],
+    [
+     "3s",
+     2
+    ],
+    [
+     "0.15s",
+     2
+    ],
+    [
+     "0.2s",
+     2
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.4, 0, 0, 1)",
+     45
+    ],
+    [
+     "ease-in-out",
+     7
+    ],
+    [
+     "ease",
+     5
+    ],
+    [
+     "cubic-bezier(0.55, 0.085, 0.68, 0.53)",
+     3
+    ],
+    [
+     "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+     3
+    ],
+    [
+     "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+     3
+    ],
+    [
+     "cubic-bezier(0.25, 0.25, 0.75, 0.75)",
+     1
+    ],
+    [
+     "ease-in",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "Atlas Grotesk 300 normal",
+    "Atlas Grotesk 300 italic",
+    "Atlas Grotesk 400 normal",
+    "Atlas Grotesk 500 normal",
+    "Atlas Grotesk 700 normal",
+    "Atlas Typewriter 400 normal",
+    "Atlas Typewriter 600 normal"
+   ],
+   "keyframes": 6,
+   "clampFontSizes": 0,
+   "vwFontSizes": 11,
+   "sheets": 31,
+   "blocked": 0,
+   "rootVarCount": 9,
+   "rootVarsSample": {
+    "--color-black": "#17171b",
+    "--color-grey-med": "#939ba0",
+    "--color-grey": "#ddd",
+    "--color-offwht": "#f6f6f6",
+    "--color-white": "#fff",
+    "--color-red": "#e21f2c",
+    "--color-red-dark": "#b82229",
+    "--color-accent": "#e21f2c",
+    "--border-radius-small": "4px"
+   }
+  },
+  "perf": {
+   "requests": 121,
+   "kb": 2471,
+   "byTypeKB": {
+    "link": 662,
+    "script": 291,
+    "img": 562,
+    "other": 10,
+    "css": 945,
+    "xmlhttprequest": 0,
+    "iframe": 0
+   },
+   "dcl": 18099,
+   "load": 18845,
+   "ttfb": 16856
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [],
+  "scriptSignatures": {
+   "gsap": 5,
+   "ScrollTrigger": 2,
+   "SplitText": 3,
+   "react": 1
+  },
+  "scriptsChecked": 10
+ },
+ "mobile": {
+  "title": "BrainBox AI | AI Building management platform for HVAC optimization",
+  "lang": "en",
+  "generator": "HubSpot",
+  "description": "All-in-one platform to control & optimize your buildings. Achieve portfolio energy efficiency and sustainability with the most advanced AI technologies.",
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 9542,
+  "domNodes": 1221,
+  "textEls": 171,
+  "fonts": [
+   "Atlas Grotesk 300 normal",
+   "Atlas Grotesk 300 italic",
+   "Atlas Grotesk 400 normal",
+   "Atlas Grotesk 700 normal"
+  ],
+  "fontFamilies": [
+   [
+    "Atlas Grotesk",
+    167
+   ],
+   [
+    "Helvetica Neue",
+    4
+   ]
+  ],
+  "fontSizes": [
+   [
+    "16px",
+    69
+   ],
+   [
+    "24px",
+    31
+   ],
+   [
+    "12px",
+    28
+   ],
+   [
+    "20px",
+    16
+   ],
+   [
+    "48px",
+    14
+   ],
+   [
+    "28px",
+    7
+   ],
+   [
+    "47px",
+    2
+   ],
+   [
+    "13px",
+    2
+   ],
+   [
+    "14px",
+    1
+   ],
+   [
+    "15px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "300",
+    157
+   ],
+   [
+    "700",
+    10
+   ],
+   [
+    "400",
+    4
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.1",
+    49
+   ],
+   [
+    "1",
+    44
+   ],
+   [
+    "1.25",
+    40
+   ],
+   [
+    "1.5",
+    29
+   ],
+   [
+    "1.33",
+    6
+   ],
+   [
+    "1.4",
+    2
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.02em",
+    53
+   ],
+   [
+    "0.15em",
+    16
+   ],
+   [
+    "0.08em",
+    7
+   ],
+   [
+    "-0.06em",
+    2
+   ],
+   [
+    "0.129em",
+    1
+   ]
+  ],
+  "uppercaseShare": 15,
+  "maxFontPx": 48,
+  "maxFontText": "3,500+",
+  "maxFontVwRatio": 12.3,
+  "textColors": [
+   [
+    "rgb(23, 23, 27)",
+    109
+   ],
+   [
+    "rgb(255, 255, 255)",
+    48
+   ],
+   [
+    "rgb(226, 31, 44)",
+    6
+   ],
+   [
+    "rgb(34, 34, 34)",
+    3
+   ],
+   [
+    "rgb(51, 71, 91)",
+    1
+   ],
+   [
+    "rgb(0, 145, 174)",
+    1
+   ],
+   [
+    "rgb(230, 43, 51)",
+    1
+   ],
+   [
+    "rgb(0, 0, 0)",
+    1
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(255, 255, 255)",
+    321
+   ],
+   [
+    "rgb(246, 246, 246)",
+    106
+   ],
+   [
+    "rgb(23, 23, 27)",
+    71
+   ],
+   [
+    "rgb(221, 221, 221)",
+    35
+   ],
+   [
+    "rgb(245, 245, 245)",
+    34
+   ],
+   [
+    "rgb(42, 43, 49)",
+    28
+   ],
+   [
+    "rgb(226, 31, 44)",
+    19
+   ],
+   [
+    "rgb(230, 43, 51)",
+    18
+   ],
+   [
+    "rgb(0, 0, 0)",
+    18
+   ],
+   [
+    "rgb(157, 168, 173)",
+    12
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "4px",
+    28
+   ],
+   [
+    "100%",
+    8
+   ],
+   [
+    "0px",
+    8
+   ],
+   [
+    "3px",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "700px",
+    6
+   ],
+   [
+    "1000px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "Transforming buildings with autonomous and generative AI",
+   "size": 28,
+   "weight": "300",
+   "family": "Atlas Grotesk",
+   "lh": 1.1,
+   "ls": "-0.56px",
+   "transform": "none",
+   "color": "rgb(255, 255, 255)",
+   "top": 100
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Transforming buildings with autonomous and generative AI",
+    "size": 28,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.56px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 100
+   },
+   {
+    "tag": "H2",
+    "text": "Your building, only smarter greener more efficient",
+    "size": 24,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 528
+   },
+   {
+    "tag": "H3",
+    "text": "ARIA",
+    "size": 24,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 826
+   },
+   {
+    "tag": "H3",
+    "text": "AI Control",
+    "size": 24,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 1358
+   },
+   {
+    "tag": "H3",
+    "text": "Cloud Building Management System",
+    "size": 24,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 1880
+   },
+   {
+    "tag": "H2",
+    "text": "OUR IMPACT",
+    "size": 47,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-2.808px",
+    "transform": "uppercase",
+    "color": "rgb(23, 23, 27)",
+    "top": 2604
+   },
+   {
+    "tag": "H3",
+    "text": "Cities impacted",
+    "size": 16,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 3019
+   },
+   {
+    "tag": "H3",
+    "text": "Daily data points collected",
+    "size": 16,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 3270
+   },
+   {
+    "tag": "H3",
+    "text": "Buildings optimized",
+    "size": 16,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 3521
+   },
+   {
+    "tag": "H2",
+    "text": "Trusted by:",
+    "size": 16,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 3668
+   },
+   {
+    "tag": "H3",
+    "text": "The most advanced AI technology in the industry",
+    "size": 24,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 3870
+   },
+   {
+    "tag": "H3",
+    "text": "Less data used, making models 90% faster",
+    "size": 20,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.4px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 4126
+   },
+   {
+    "tag": "H3",
+    "text": "AI-generated daily temperature predictions",
+    "size": 20,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.4px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 4337
+   },
+   {
+    "tag": "H3",
+    "text": "Prediction accuracy per zone 6 hours ahead",
+    "size": 20,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.4px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 4548
+   },
+   {
+    "tag": "H3",
+    "text": "Unique daily HVAC optimizaton commands",
+    "size": 20,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.4px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 4758
+   },
+   {
+    "tag": "H2",
+    "text": "Different buildings, same results",
+    "size": 24,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 4963
+   },
+   {
+    "tag": "H2",
+    "text": "Be the smartest one in the building—fresh AI & energy news delivered straight to your inbox.",
+    "size": 24,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 5756
+   },
+   {
+    "tag": "H2",
+    "text": "Client testimonials",
+    "size": 24,
+    "weight": "300",
+    "family": "Atlas Grotesk",
+    "lh": 1.1,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(23, 23, 27)",
+    "top": 6498
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 12,
+    "lh": 1.25,
+    "family": "Helvetica Neue",
+    "color": "rgb(51, 71, 91)",
+    "measure": 362
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "Atlas Grotesk",
+    "color": "rgb(23, 23, 27)",
+    "measure": 292
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "Atlas Grotesk",
+    "color": "rgb(23, 23, 27)",
+    "measure": 288
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "Atlas Grotesk",
+    "color": "rgb(23, 23, 27)",
+    "measure": 350
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "Atlas Grotesk",
+    "color": "rgb(23, 23, 27)",
+    "measure": 350
+   }
+  ],
+  "navLinks": [],
+  "buttons": [
+   "LET'S TALK",
+   "WATCH VIDEO",
+   "DISCOVER ARIA",
+   "LEARN MORE",
+   "SIGN-UP TO OUR NEWSLETTER"
+  ],
+  "burger": true,
+  "headerPosition": "absolute",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 6,
+   "horizontalScroll": true,
+   "themeSwitch": false,
+   "scrollContainer": false,
+   "pageTransitions": false,
+   "grid": 0,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 40,
+   "iframes": 2,
+   "images": 84,
+   "imgFormats": {
+    "svg": 15,
+    "png": 48,
+    "other": 13,
+    "jpg": 4,
+    "webp": 4
+   },
+   "langSwitch": true,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": true,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": true,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "youtube": 2,
+   "hubspot": 8
+  },
+  "scripts": [
+   "buttons-config.sharethis.com/js/663535f703b429001925aac3.js",
+   "js.hsadspixel.net/pixels.js",
+   "js.hs-banner.com/20662219.js",
+   "js.hs-analytics.net/analytics/1789831500000/20662219.js",
+   "www.youtube.com/s/player/4fd832e7/www-widgetapi.vflset/www-widgetapi.js",
+   "www.youtube.com/iframe_api",
+   "platform-api.sharethis.com/js/sharethis.js#property=663535f703b429001925aac3&product=inlin",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/900",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/900",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/185",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/900",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/900",
+   "js.hsforms.net/forms/embed/v2.js",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/909",
+   "20662219.fs1.hubspotusercontent-na1.net/hubfs/20662219/hub_generated/template_assets/1/909",
+   "brainboxai.com/hs/hsstatic/content-cwv-embed/static-1.1293/embed.js",
+   "brainboxai.com/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js",
+   "brainboxai.com/hubfs/hub_generated/template_assets/1/90939958078/1789049884810/template_gs",
+   "brainboxai.com/hubfs/hub_generated/template_assets/1/90939958085/1789049888793/template_gs",
+   "brainboxai.com/hubfs/hub_generated/module_assets/1/191010850350/1752691690898/module_produ",
+   "brainboxai.com/hubfs/hub_generated/template_assets/1/191854820133/1789049887634/template_c",
+   "brainboxai.com/hubfs/hub_generated/module_assets/1/191815169577/1770239156508/module_globe",
+   "brainboxai.com/hubfs/hub_generated/module_assets/1/192140199090/1753892591129/module_grid_",
+   "brainboxai.com/hubfs/hub_generated/template_assets/1/90028945029/1789049893107/template_ti",
+   "brainboxai.com/hubfs/hub_generated/module_assets/1/194064101120/1754582669425/module_fade_"
+  ],
+  "css": {
+   "media": [
+    [
+     "print, screen and (min-width: 64em)",
+     226
+    ],
+    [
+     "print, screen and (min-width: 40em)",
+     63
+    ],
+    [
+     "print, screen and (max-width: 63.9988em)",
+     39
+    ],
+    [
+     "screen and (min-width: 87.5625em)",
+     33
+    ],
+    [
+     "screen and (min-width: 75em)",
+     32
+    ],
+    [
+     "print, screen and (max-width: 39.9988em)",
+     17
+    ],
+    [
+     "(hover: hover)",
+     8
+    ],
+    [
+     "screen and (min-width: 640px)",
+     8
+    ],
+    [
+     "print, screen and (min-width: 40em) and (max-width: 63.9988em)",
+     6
+    ],
+    [
+     "(min-width: 700px) and (max-width: 1400px)",
+     6
+    ],
+    [
+     "(max-width: 699px)",
+     5
+    ],
+    [
+     "screen and (max-width: 63.9988em)",
+     4
+    ],
+    [
+     "print, screen and (min-width: 64em) and (max-width: 74.9988em)",
+     4
+    ],
+    [
+     "(min-width: 1000px)",
+     3
+    ]
+   ],
+   "durations": [
+    [
+     "0.6s",
+     42
+    ],
+    [
+     "0.5s",
+     14
+    ],
+    [
+     "0.3s",
+     12
+    ],
+    [
+     "0.9s",
+     6
+    ],
+    [
+     "0.25s",
+     5
+    ],
+    [
+     "0.45s",
+     3
+    ],
+    [
+     "0.4s",
+     3
+    ],
+    [
+     "3s",
+     2
+    ],
+    [
+     "0.15s",
+     2
+    ],
+    [
+     "0.2s",
+     2
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.4, 0, 0, 1)",
+     45
+    ],
+    [
+     "ease-in-out",
+     7
+    ],
+    [
+     "ease",
+     5
+    ],
+    [
+     "cubic-bezier(0.55, 0.085, 0.68, 0.53)",
+     3
+    ],
+    [
+     "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+     3
+    ],
+    [
+     "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+     3
+    ],
+    [
+     "cubic-bezier(0.25, 0.25, 0.75, 0.75)",
+     1
+    ],
+    [
+     "ease-in",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "Atlas Grotesk 300 normal",
+    "Atlas Grotesk 300 italic",
+    "Atlas Grotesk 400 normal",
+    "Atlas Grotesk 500 normal",
+    "Atlas Grotesk 700 normal",
+    "Atlas Typewriter 400 normal",
+    "Atlas Typewriter 600 normal"
+   ],
+   "keyframes": 6,
+   "clampFontSizes": 0,
+   "vwFontSizes": 11,
+   "sheets": 31,
+   "blocked": 0,
+   "rootVarCount": 9,
+   "rootVarsSample": {
+    "--color-black": "#17171b",
+    "--color-grey-med": "#939ba0",
+    "--color-grey": "#ddd",
+    "--color-offwht": "#f6f6f6",
+    "--color-white": "#fff",
+    "--color-red": "#e21f2c",
+    "--color-red-dark": "#b82229",
+    "--color-accent": "#e21f2c",
+    "--border-radius-small": "4px"
+   }
+  },
+  "perf": {
+   "requests": 112,
+   "kb": 2830,
+   "byTypeKB": {
+    "link": 662,
+    "img": 927,
+    "script": 291,
+    "other": 5,
+    "css": 945,
+    "xmlhttprequest": 0,
+    "iframe": 0
+   },
+   "dcl": 13772,
+   "load": 14934,
+   "ttfb": 12648
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": []
+ },
+ "seconds": 75
+}

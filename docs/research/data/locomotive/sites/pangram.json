@@ -1,0 +1,985 @@
+{
+ "label": "pangram",
+ "url": "https://pangrampangram.com",
+ "capturedAt": "2026-09-19T15:03:32.290Z",
+ "desktop": {
+  "title": "Pangram Pangram — Free to try, High-Quality Fonts for Designers – Pangram Pangram Foundry",
+  "lang": "en",
+  "generator": null,
+  "description": "Pangram Pangram is a world-renowned type foundry crafting premium, contemporary fonts for bold brands and creatives. Explore our full catalog, every font is free to try, made to perform across print, digital, and everything in between.",
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 8319,
+  "domNodes": 1458,
+  "textEls": 327,
+  "fonts": [
+   "Neue Montreal 1 999 normal",
+   "neue-gstaad-normal-normal-semibold 400 normal",
+   "palma-fizzy-heavy 400 normal",
+   "neue-montreal-semibold 600 normal",
+   "neue-york-normal-bold 700 normal",
+   "watch-medium 485 normal",
+   "kyoto-semibold 600 normal",
+   "frama-semibold 580 normal"
+  ],
+  "fontFamilies": [
+   [
+    "Neue Montreal",
+    300
+   ],
+   [
+    "palma-fizzy-heavy",
+    3
+   ],
+   [
+    "neue-montreal-semibold",
+    3
+   ],
+   [
+    "neue-gstaad-normal-bold",
+    2
+   ],
+   [
+    "neue-york-normal-bold",
+    2
+   ],
+   [
+    "frama-semibold",
+    2
+   ]
+  ],
+  "fontSizes": [
+   [
+    "14px",
+    184
+   ],
+   [
+    "12px",
+    64
+   ],
+   [
+    "22px",
+    17
+   ],
+   [
+    "36px",
+    16
+   ],
+   [
+    "18px",
+    12
+   ],
+   [
+    "103px",
+    12
+   ],
+   [
+    "29px",
+    12
+   ],
+   [
+    "16px",
+    4
+   ],
+   [
+    "121px",
+    2
+   ],
+   [
+    "145px",
+    1
+   ],
+   [
+    "20px",
+    1
+   ],
+   [
+    "48px",
+    1
+   ],
+   [
+    "73px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    249
+   ],
+   [
+    "600",
+    47
+   ],
+   [
+    "530",
+    11
+   ],
+   [
+    "700",
+    6
+   ],
+   [
+    "500",
+    4
+   ],
+   [
+    "300",
+    2
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.3",
+    178
+   ],
+   [
+    "1.17",
+    55
+   ],
+   [
+    "normal",
+    49
+   ],
+   [
+    "1",
+    33
+   ],
+   [
+    "1.1",
+    12
+   ]
+  ],
+  "letterSpacing": [],
+  "uppercaseShare": 0,
+  "maxFontPx": 145,
+  "maxFontText": "Palma",
+  "maxFontVwRatio": 10.1,
+  "textColors": [
+   [
+    "rgb(0, 0, 0)",
+    164
+   ],
+   [
+    "rgb(102, 102, 102)",
+    98
+   ],
+   [
+    "rgb(250, 250, 250)",
+    36
+   ],
+   [
+    "rgb(255, 255, 255)",
+    25
+   ],
+   [
+    "rgb(255, 47, 0)",
+    4
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(237, 237, 237)",
+    1314
+   ],
+   [
+    "rgba(0, 0, 0, 0.99)",
+    80
+   ],
+   [
+    "rgb(0, 0, 0)",
+    52
+   ],
+   [
+    "rgb(255, 47, 0)",
+    6
+   ],
+   [
+    "rgb(255, 255, 255)",
+    3
+   ],
+   [
+    "rgb(255, 183, 0)",
+    0
+   ]
+  ],
+  "bodyBg": "rgb(250, 250, 250)",
+  "radii": [
+   [
+    "20px",
+    76
+   ],
+   [
+    "999px",
+    55
+   ],
+   [
+    "50%",
+    16
+   ]
+  ],
+  "maxWidths": [
+   [
+    "1440px",
+    14
+   ],
+   [
+    "720px",
+    5
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "Pangram Pangram Foundry",
+   "size": 14,
+   "weight": "600",
+   "family": "Neue Montreal",
+   "lh": 1.3,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(0, 0, 0)",
+   "top": 18
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Pangram Pangram Foundry",
+    "size": 14,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 18
+   },
+   {
+    "tag": "H2",
+    "text": "Neue Gstaad",
+    "size": 121,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(250, 250, 250)",
+    "top": 255
+   },
+   {
+    "tag": "H2",
+    "text": "Palma",
+    "size": 145,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(250, 250, 250)",
+    "top": 792
+   },
+   {
+    "tag": "H2",
+    "text": "Neue Montreal",
+    "size": 121,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(250, 250, 250)",
+    "top": 1355
+   },
+   {
+    "tag": "H2",
+    "text": "Our newest fonts",
+    "size": 14,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 1819
+   },
+   {
+    "tag": "H3",
+    "text": "Neue Gstaad Collection",
+    "size": 18,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 1909
+   },
+   {
+    "tag": "H3",
+    "text": "Palma Collection",
+    "size": 18,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 1909
+   },
+   {
+    "tag": "H3",
+    "text": "Neue Montreal",
+    "size": 18,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 1909
+   },
+   {
+    "tag": "H3",
+    "text": "Neue York Collection",
+    "size": 18,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 1909
+   },
+   {
+    "tag": "H3",
+    "text": "Frama",
+    "size": 18,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 2341
+   },
+   {
+    "tag": "H3",
+    "text": "Kyoto",
+    "size": 18,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 2341
+   },
+   {
+    "tag": "H3",
+    "text": "Mori",
+    "size": 18,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 2341
+   },
+   {
+    "tag": "H3",
+    "text": "Museum",
+    "size": 18,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 2341
+   },
+   {
+    "tag": "H3",
+    "text": "Neue Corp Collection",
+    "size": 18,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 2773
+   },
+   {
+    "tag": "H3",
+    "text": "Watch",
+    "size": 18,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 2773
+   },
+   {
+    "tag": "H3",
+    "text": "Monument Collection",
+    "size": 18,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 2773
+   },
+   {
+    "tag": "H3",
+    "text": "Model Collection",
+    "size": 18,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 2773
+   },
+   {
+    "tag": "H2",
+    "text": "Our fonts in use",
+    "size": 14,
+    "weight": "600",
+    "family": "Neue Montreal",
+    "lh": 1.3,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 3368
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 22,
+    "lh": 1.3,
+    "family": "Neue Montreal",
+    "color": "rgb(250, 250, 250)",
+    "measure": 846
+   },
+   {
+    "size": 16,
+    "lh": 1.3,
+    "family": "Neue Montreal",
+    "color": "rgb(0, 0, 0)",
+    "measure": 566
+   },
+   {
+    "size": 16,
+    "lh": 1.3,
+    "family": "Neue Montreal",
+    "color": "rgb(255, 255, 255)",
+    "measure": 566
+   },
+   {
+    "size": 16,
+    "lh": 1.3,
+    "family": "Neue Montreal",
+    "color": "rgb(0, 0, 0)",
+    "measure": 566
+   },
+   {
+    "size": 14,
+    "lh": 1.3,
+    "family": "Neue Montreal",
+    "color": "rgb(0, 0, 0)",
+    "measure": 507
+   }
+  ],
+  "navLinks": [
+   "Pangram Pangram Foundry",
+   "All fonts",
+   "Font starter pack",
+   "Font in use",
+   "Academy",
+   "Support",
+   "Pangram Pangram",
+   "All fonts",
+   "Font starter pack",
+   "Font in use",
+   "Academy",
+   "About us",
+   "Search",
+   "Contact us",
+   "Font licenses"
+  ],
+  "buttons": [
+   "Skip to content",
+   "Explore font",
+   "Try for Free",
+   "Card view",
+   "List view",
+   "View all fonts",
+   "Check it out",
+   "View all",
+   "Read More",
+   "Learn more about us",
+   "View All",
+   "Experience the microsite",
+   "Get it now",
+   "Try Spaceship now",
+   "Buy now"
+  ],
+  "burger": true,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": false,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 0,
+   "fixed": 5,
+   "horizontalScroll": true,
+   "themeSwitch": false,
+   "scrollContainer": false,
+   "pageTransitions": false,
+   "grid": 53,
+   "videos": 1,
+   "autoplayVideos": 1,
+   "canvases": 0,
+   "inlineSvg": 40,
+   "iframes": 1,
+   "images": 37,
+   "imgFormats": {
+    "jpg": 16,
+    "webp": 3,
+    "png": 5,
+    "svg": 13
+   },
+   "langSwitch": true,
+   "darkFirstView": false
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": true,
+   "Webflow": false,
+   "Alpine": true,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "shopify": 10,
+   "ogl": 2,
+   "gtag": 1
+  },
+  "scripts": [
+   "node1.itoris.com/dpo/storefront/include.js?shop=pangrampangram.myshopify.com",
+   "d23dclunsivw3h.cloudfront.net/redirect-app.js?shop=pangrampangram.myshopify.com",
+   "connect.facebook.net/signals/config/1146785409087348?v=2.9.403&r=stable&domain=pangrampang",
+   "connect.facebook.net/en_US/fbevents.js",
+   "pangrampangram.com/cdn/s/trekkie.storefront.7ba2605b9cb6cd518b93431f40a9bde3a4a2f7bd.min.j",
+   "pangrampangram.com/cdn/shop/t/52/assets/index-hF3E6oxz.js",
+   "pangrampangram.com/checkouts/internal/preloads.js?locale=en-US",
+   "shop.app/checkouts/internal/preloads.js?locale=en-US&shop_id=26426578",
+   "cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+   "pangrampangram.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js",
+   "pangrampangram.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v",
+   "cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-5059b83f.js",
+   "pangrampangram.com/cdn/shopifycloud/privacy-banner/storefront-banner.js",
+   "pangrampangram.com/cdn/wpm/b1b3c7779w6e1f7d30p7ae783d3m9b5a05aam.js",
+   "pangrampangram.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js",
+   "pangrampangram.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.9.2.min.js",
+   "pangrampangram.com/web-pixels@1b3c7779w6e1f7d30p7ae783d3m9b5a05aa/app/web-pixel-769458479@",
+   "pangrampangram.com/web-pixels@1b3c7779w6e1f7d30p7ae783d3m9b5a05aa/app/web-pixel-416088367@",
+   "ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+   "cdn.shopify.com/storefront/standard-actions.js",
+   "www.googletagmanager.com/gtag/js?id=G-3BDNHLGGVE"
+  ],
+  "css": {
+   "media": [
+    [
+     "screen and (width >= 768px)",
+     106
+    ],
+    [
+     "screen and (width >= 750px)",
+     36
+    ],
+    [
+     "screen and (width <= 767px)",
+     29
+    ],
+    [
+     "screen and (width <= 749px)",
+     12
+    ],
+    [
+     "screen and (forced-colors: active)",
+     7
+    ],
+    [
+     "screen and (width >= 990px)",
+     7
+    ],
+    [
+     "screen and (width >= 1024px)",
+     6
+    ],
+    [
+     "screen and (width >= 750px) and (width <= 989px)",
+     3
+    ],
+    [
+     "screen and (width >= 1440px)",
+     2
+    ],
+    [
+     "only screen and (width <= 900px)",
+     2
+    ],
+    [
+     "screen and (width >= 1000px)",
+     2
+    ],
+    [
+     "only screen and (width >= 750px)",
+     2
+    ],
+    [
+     "screen and (width <= 768px)",
+     2
+    ],
+    [
+     "(width >= 600px)",
+     2
+    ]
+   ],
+   "durations": [
+    [
+     "auto",
+     7
+    ],
+    [
+     "0.2s",
+     4
+    ],
+    [
+     "1.4s",
+     4
+    ],
+    [
+     "1s",
+     1
+    ],
+    [
+     "0.3s",
+     1
+    ],
+    [
+     "0.1s",
+     1
+    ],
+    [
+     "0.15s",
+     1
+    ],
+    [
+     "30s",
+     1
+    ],
+    [
+     "2.5s",
+     1
+    ],
+    [
+     "5s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "ease",
+     3
+    ],
+    [
+     "ease-in-out",
+     2
+    ],
+    [
+     "var(--swiper-wrapper-transition-timing-function,initial)",
+     1
+    ],
+    [
+     "ease-out",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "Neue Montreal 1 999 ",
+    "neue-gstaad-normal-normal-semibold 400 normal",
+    "palma-fizzy-heavy 400 normal",
+    "neue-montreal-semibold 600 normal",
+    "palma-fizzy-heavy 800 normal",
+    "neue-york-normal-bold 700 normal",
+    "neue-gstaad-normal-bold 700 normal",
+    "watch-medium 485 normal",
+    "neue-corp-normal-semibold 500 normal",
+    "museum-light 300 normal",
+    "model-plastic-regular 500 normal",
+    "kyoto-semibold 600 normal",
+    "mori-bold 700 normal",
+    "frama-semibold 580 normal",
+    "monument-narrow-medium 525 normal"
+   ],
+   "keyframes": 25,
+   "clampFontSizes": 0,
+   "vwFontSizes": 1,
+   "sheets": 20,
+   "blocked": 1,
+   "rootVarCount": 105,
+   "rootVarsSample": {
+    "--swiper-theme-color": "#007aff",
+    "--swiper-navigation-size": "44px",
+    "--swiper-navigation-color": "hsl(var(--color-white))",
+    "--swiper-pagination-bullet-inactive-color": "hsl(var(--color-black))",
+    "--swiper-pagination-color": "hsl(var(--color-black))",
+    "--color-black": "0 0 0%",
+    "--color-white": "0 0 100%",
+    "--color-offwhite": "0 0 98%",
+    "--color-gray": "0 0 93%",
+    "--color-gray-medium": "0 0 85%",
+    "--color-gray-dark": "0 0 67%",
+    "--color-gray-darker": "0 0 40%",
+    "--color-red": "11 100% 50%",
+    "--color-yellow": "43 100% 50%",
+    "--color-green": "148 100% 68%",
+    "--color-blue": "209 100% 87.5%",
+    "--color-orange": "24.9 100% 48.6%",
+    "--color-primary": "var(--color-red)",
+    "--color-foreground": "var(--color-black)",
+    "--color-background": "var(--color-offwhite)",
+    "--color-link": "var(--color-foreground)",
+    "--color-link-hover": "var(--color-primary)",
+    "--space-3xs": "clamp(.25rem, .25rem + 0vw, .25rem)",
+    "--space-2xs": "clamp(.4375rem, .4259rem + .0581vw, .5rem)",
+    "--space-xs": "clamp(.6875rem, .6759rem + .0581vw, .75rem)",
+    "--space-s": "clamp(.875rem, .8517rem + .1163vw, 1rem)",
+    "--space-m": "clamp(1.3125rem, 1.2776rem + .1744vw, 1.5rem)",
+    "--space-l": "clamp(1.75rem, 1.7035rem + .2326vw, 2rem)",
+    "--space-xl": "clamp(2.625rem, 2.5552rem + .3488vw, 3rem)",
+    "--space-2xl": "clamp(3.5rem, 3.407rem + .4651vw, 4rem)",
+    "--space-3xl": "clamp(5.25rem, 5.1105rem + .6977vw, 6rem)",
+    "--space-4xl": "clamp(7rem, 6.814rem + .9302vw, 8rem)",
+    "--space-5xl": "clamp(8.75rem, 8.5174rem + 1.1628vw, 10rem)",
+    "--space-3xs-2xs": "clamp(.25rem, .2035rem + .2326vw, .5rem)",
+    "--space-2xs-xs": "clamp(.4375rem, .3794rem + .2907vw, .75rem)",
+    "--space-xs-s": "clamp(.6875rem, .6294rem + .2907vw, 1rem)",
+    "--space-s-m": "clamp(.875rem, .7587rem + .5814vw, 1.5rem)",
+    "--space-m-l": "clamp(1.3125rem, 1.1846rem + .6395vw, 2rem)",
+    "--space-l-xl": "clamp(1.75rem, 1.5174rem + 1.1628vw, 3rem)",
+    "--space-xl-2xl": "clamp(2.625rem, 2.3692rem + 1.2791vw, 4rem)",
+    "--space-2xl-3xl": "clamp(3.5rem, 3.0349rem + 2.3256vw, 6rem)",
+    "--space-3xl-4xl": "clamp(5.25rem, 4.7384rem + 2.5581vw, 8rem)",
+    "--space-4xl-5xl": "clamp(7rem, 6.4419rem + 2.7907vw, 10rem)",
+    "--space-s-l": "clamp(.875rem, .6657rem + 1.0465vw, 2rem)",
+    "--space-m-xl": "clamp(1.3125rem, .9985rem + 1.5698vw, 3rem)",
+    "--space-xl-3xl": "clamp(2.625rem, 1.9971rem + 3.1395vw, 6rem)",
+    "--space-s-xl": "clamp(.875rem, .4797rem + 1.9767vw, 3rem)",
+    "--font-family": "\"Neue Montreal\", sans-serif",
+    "--font-body-family": "var(--font-family)",
+    "--font-body-style": "normal",
+    "--font-body-weight": "400",
+    "--font-heading-family": "var(--font-family)",
+    "--font-heading-style": "normal",
+    "--font-heading-weight": "600",
+    "--border-radius": "1.25rem",
+    "--radius-full": "999px",
+    "--color-button-text": "var(--color-foreground)",
+    "--color-button-border": "transparent",
+    "--color-button": "transparent",
+    "--color-buttonhover-text": "var(--color-primary)",
+    "--color-buttonhover-border": "var(--color-button-border)",
+    "--color-buttonhover": "transparent",
+    "--buttons-radius": "var(--border-radius)",
+    "--buttons-border-width": "1px",
+    "--color-badge-background": "var(--color-gray-light)",
+    "--color-badge-foreground": "var(--color-foreground)",
+    "--badge-corner-radius": "var(--radius-full)",
+    "--inputs-radius": "var(--border-radius)",
+    "--spacing-sections-mobile": "calc(var(--gutter) * 5)",
+    "--spacing-sections-desktop": "calc(var(--gutter) * 4)",
+    "--focused-base-outline": ".2rem solid rgba(var(--color-foreground), .5)",
+    "--focused-base-outline-offset": ".3rem",
+    "--focused-base-box-shadow": "0 0 0 .3rem rgb(var(--color-background)), 0 0 .5rem .4rem rgba(var(--color-foreg",
+    "--duration-short": ".1s",
+    "--duration-default": ".2s",
+    "--duration-medium": ".3s",
+    "--duration-long": ".5s",
+    "--duration-extra-long": ".6s",
+    "--duration-extra-longer": ".75s",
+    "--duration-extended": "3s"
+   }
+  },
+  "perf": {
+   "requests": 94,
+   "kb": 3281,
+   "byTypeKB": {
+    "link": 27,
+    "script": 491,
+    "img": 1561,
+    "video": 5,
+    "beacon": 0,
+    "css": 1136,
+    "fetch": 0,
+    "iframe": 29,
+    "other": 29
+   },
+   "dcl": 16526,
+   "load": 32162,
+   "ttfb": 1950
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [
+   "TypeError: Failed to fetch dynamically imported module: https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.i"
+  ],
+  "scriptSignatures": {
+   "shopify": 8,
+   "alpine": 1,
+   "vue": 1,
+   "swiper": 1,
+   "IntersectionObserver": 2,
+   "ogl": 1
+  },
+  "scriptsChecked": 10
+ },
+ "mobile": {
+  "title": "",
+  "lang": "",
+  "generator": null,
+  "description": null,
+  "viewport": [
+   980,
+   2121
+  ],
+  "scrollHeight": 2120,
+  "domNodes": 0,
+  "textEls": 0,
+  "fonts": [],
+  "fontFamilies": [],
+  "fontSizes": [],
+  "weights": [],
+  "lineHeights": [],
+  "letterSpacing": [],
+  "uppercaseShare": 0,
+  "maxFontPx": 0,
+  "maxFontText": null,
+  "maxFontVwRatio": 0,
+  "textColors": [],
+  "backgrounds": [],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [],
+  "maxWidths": [],
+  "h1": null,
+  "headings": [],
+  "bodyParagraphs": [],
+  "navLinks": [],
+  "buttons": [],
+  "burger": false,
+  "headerPosition": null,
+  "headerMix": null,
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": false,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 0,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": false,
+   "pageTransitions": false,
+   "grid": 0,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 0,
+   "iframes": 0,
+   "images": 0,
+   "imgFormats": {},
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {},
+  "scripts": [],
+  "css": {
+   "media": [],
+   "durations": [],
+   "easings": [],
+   "fontFaces": [],
+   "keyframes": 0,
+   "clampFontSizes": 0,
+   "vwFontSizes": 0,
+   "sheets": 0,
+   "blocked": 0,
+   "rootVarCount": 0,
+   "rootVarsSample": {}
+  },
+  "perf": {
+   "requests": 0,
+   "kb": 0,
+   "byTypeKB": {},
+   "dcl": 5024,
+   "load": 5025,
+   "ttfb": 0
+  },
+  "status": null,
+  "cookieDismissed": null,
+  "errors": [
+   "nav: page.goto: net::ERR_TOO_MANY_RETRIES at https://pangrampangram.com/\nCall log:\n\u001b[2m  - navigating to "
+  ]
+ },
+ "seconds": 62
+}

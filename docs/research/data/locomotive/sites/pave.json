@@ -1,0 +1,1433 @@
+{
+ "label": "pave",
+ "url": "https://pave.ai/",
+ "capturedAt": "2026-09-19T15:37:31.460Z",
+ "desktop": {
+  "title": "PAVE® | AI-Powered Vehicle Inspection Platform",
+  "lang": "en-US",
+  "generator": "WordPress 7.1.1",
+  "description": "Automate vehicle inspections with PAVE® AI. Detect damage, capture vehicle condition, and generate consistent reports for fleets, dealers, and mobility teams.",
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 6456,
+  "domNodes": 573,
+  "textEls": 133,
+  "fonts": [
+   "Inter 400 normal",
+   "Inter 700 normal",
+   "Sora 700 normal"
+  ],
+  "fontFamilies": [
+   [
+    "Inter",
+    101
+   ],
+   [
+    "Sora",
+    32
+   ]
+  ],
+  "fontSizes": [
+   [
+    "12px",
+    33
+   ],
+   [
+    "16px",
+    28
+   ],
+   [
+    "11px",
+    15
+   ],
+   [
+    "13px",
+    13
+   ],
+   [
+    "34px",
+    9
+   ],
+   [
+    "14px",
+    8
+   ],
+   [
+    "51px",
+    8
+   ],
+   [
+    "26px",
+    7
+   ],
+   [
+    "24px",
+    4
+   ],
+   [
+    "61px",
+    3
+   ],
+   [
+    "7px",
+    1
+   ],
+   [
+    "17px",
+    1
+   ],
+   [
+    "10px",
+    1
+   ],
+   [
+    "22px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "700",
+    87
+   ],
+   [
+    "400",
+    25
+   ],
+   [
+    "600",
+    9
+   ],
+   [
+    "800",
+    6
+   ],
+   [
+    "650",
+    4
+   ],
+   [
+    "900",
+    2
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.5",
+    68
+   ],
+   [
+    "1",
+    12
+   ],
+   [
+    "1.35",
+    10
+   ],
+   [
+    "1.15",
+    9
+   ],
+   [
+    "1.02",
+    9
+   ],
+   [
+    "1.05",
+    8
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "0.08em",
+    6
+   ],
+   [
+    "0.12em",
+    6
+   ],
+   [
+    "0.1em",
+    1
+   ]
+  ],
+  "uppercaseShare": 13,
+  "maxFontPx": 61,
+  "maxFontText": "The world's most advanced",
+  "maxFontVwRatio": 4.3,
+  "textColors": [
+   [
+    "rgb(7, 16, 26)",
+    75
+   ],
+   [
+    "rgb(83, 100, 116)",
+    32
+   ],
+   [
+    "rgb(31, 102, 240)",
+    11
+   ],
+   [
+    "rgb(255, 255, 255)",
+    9
+   ],
+   [
+    "rgb(244, 248, 249)",
+    3
+   ],
+   [
+    "rgb(22, 123, 48)",
+    2
+   ],
+   [
+    "rgba(244, 248, 249, 0.82)",
+    1
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(247, 250, 252)",
+    256
+   ],
+   [
+    "rgb(245, 248, 251)",
+    233
+   ],
+   [
+    "rgba(0, 0, 0, 0.86)",
+    128
+   ],
+   [
+    "rgb(5, 6, 7)",
+    71
+   ],
+   [
+    "rgb(7, 9, 10)",
+    23
+   ],
+   [
+    "rgb(255, 255, 255)",
+    22
+   ],
+   [
+    "rgba(255, 255, 255, 0.72)",
+    19
+   ],
+   [
+    "rgba(255, 255, 255, 0.86)",
+    15
+   ],
+   [
+    "color(srgb 1 1 1 / 0.72)",
+    7
+   ],
+   [
+    "rgba(7, 16, 26, 0.043)",
+    7
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "999px",
+    27
+   ],
+   [
+    "8px",
+    13
+   ],
+   [
+    "50%",
+    7
+   ],
+   [
+    "11.52px",
+    2
+   ],
+   [
+    "16px",
+    2
+   ],
+   [
+    "14.4px",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "760px",
+    5
+   ],
+   [
+    "800px",
+    1
+   ],
+   [
+    "650px",
+    1
+   ],
+   [
+    "680px",
+    1
+   ],
+   [
+    "660px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "The world's most advanced automated vehicle inspection platform",
+   "size": 61,
+   "weight": "700",
+   "family": "Sora",
+   "lh": 1.06,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(244, 248, 249)",
+   "top": 212
+  },
+  "headings": [
+   {
+    "tag": "H2",
+    "text": "",
+    "size": 26,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 1329
+   },
+   {
+    "tag": "H1",
+    "text": "The world's most advanced automated vehicle inspection platform",
+    "size": 61,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 1.06,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(244, 248, 249)",
+    "top": 212
+   },
+   {
+    "tag": "H2",
+    "text": "A guided inspection flow that turns photos into structured vehicle intelligence.",
+    "size": 51,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 1.06,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 1150
+   },
+   {
+    "tag": "H3",
+    "text": "Inspect any vehicle anywhere",
+    "size": 26,
+    "weight": "650",
+    "family": "Sora",
+    "lh": 1.05,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 1541
+   },
+   {
+    "tag": "H3",
+    "text": "Vehicle capture in about 60 seconds",
+    "size": 26,
+    "weight": "650",
+    "family": "Sora",
+    "lh": 1.05,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 1541
+   },
+   {
+    "tag": "H3",
+    "text": "Complete vehicle condition report automatically generated",
+    "size": 26,
+    "weight": "650",
+    "family": "Sora",
+    "lh": 1.05,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 1845
+   },
+   {
+    "tag": "H3",
+    "text": "Mobile app or tablet is all you need",
+    "size": 26,
+    "weight": "650",
+    "family": "Sora",
+    "lh": 1.05,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 1845
+   },
+   {
+    "tag": "H2",
+    "text": "Detailed, Accurate, and Complete Vehicle Condition Report",
+    "size": 51,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 1.06,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 2454
+   },
+   {
+    "tag": "H2",
+    "text": "Monitor Your Inventory Standards",
+    "size": 51,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 1.06,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 3312
+   },
+   {
+    "tag": "H2",
+    "text": "",
+    "size": 60,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 0.95,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 4533
+   },
+   {
+    "tag": "H2",
+    "text": "",
+    "size": 51,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 1.06,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 5582
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 22,
+    "lh": 1.5,
+    "family": "Inter",
+    "color": "rgba(244, 248, 249, 0.82)",
+    "measure": 650
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "Inter",
+    "color": "rgb(83, 100, 116)",
+    "measure": 273
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "Inter",
+    "color": "rgb(83, 100, 116)",
+    "measure": 273
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "Inter",
+    "color": "rgb(83, 100, 116)",
+    "measure": 273
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "Inter",
+    "color": "rgb(83, 100, 116)",
+    "measure": 546
+   }
+  ],
+  "navLinks": [
+   "Skip to content",
+   "Products",
+   "Company",
+   "Contact Us",
+   "Let's Talk",
+   "TRY",
+   "See the workflow",
+   "Try PAVE®",
+   "Download Now",
+   "Products",
+   "Car Dealerships",
+   "Fleet & Rental",
+   "Insurance",
+   "Lenders",
+   "Partner Integration"
+  ],
+  "buttons": [
+   "Open menu",
+   "Let's Talk",
+   "See the workflow",
+   "Try PAVE®",
+   "Download Now"
+  ],
+  "burger": true,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 7,
+   "horizontalScroll": false,
+   "themeSwitch": true,
+   "scrollContainer": false,
+   "pageTransitions": true,
+   "grid": 107,
+   "videos": 1,
+   "autoplayVideos": 1,
+   "canvases": 0,
+   "inlineSvg": 24,
+   "iframes": 0,
+   "images": 44,
+   "imgFormats": {
+    "webp": 31,
+    "svg": 13
+   },
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 2,
+   "gtag": 1,
+   "wp-content": 2
+  },
+  "scripts": [
+   "www.googletagmanager.com/gtag/js?id=GT-MBGDNDJ7",
+   "pave.ai/wp-includes/js/wp-emoji-release.min.js?ver=7.1.1",
+   "pave.ai/wp-content/themes/pave-ai-demo/dist/assets/app-y9wPNmtB.js?ver=0.1.65",
+   "pave.ai/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-co"
+  ],
+  "css": {
+   "media": [
+    [
+     "(prefers-reduced-motion: reduce)",
+     3
+    ],
+    [
+     "(max-width: 767px)",
+     2
+    ],
+    [
+     "(min-resolution: 192dpi)",
+     1
+    ],
+    [
+     "screen and (max-width: 600px)",
+     1
+    ],
+    [
+     "(max-width: 820px)",
+     1
+    ],
+    [
+     "(max-width: 760px)",
+     1
+    ],
+    [
+     "(min-width: 981px)",
+     1
+    ],
+    [
+     "(max-width: 980px)",
+     1
+    ],
+    [
+     "(min-width: 621px) and (max-width: 980px)",
+     1
+    ],
+    [
+     "(min-width: 621px) and (max-width: 1180px)",
+     1
+    ],
+    [
+     "(max-width: 620px)",
+     1
+    ],
+    [
+     "(max-width: 640px)",
+     1
+    ],
+    [
+     "(min-width: 641px) and (max-width: 980px)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "0.01ms",
+     2
+    ],
+    [
+     "0.52s",
+     2
+    ],
+    [
+     "0.88s",
+     1
+    ],
+    [
+     "0.46s",
+     1
+    ],
+    [
+     "0.62s",
+     1
+    ],
+    [
+     "auto",
+     1
+    ],
+    [
+     "0.56s",
+     1
+    ],
+    [
+     "0.18s",
+     1
+    ],
+    [
+     "1.8s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "ease",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "Inter 400 normal",
+    "Inter 500 normal",
+    "Inter 700 normal",
+    "Sora 500 normal",
+    "Sora 700 normal"
+   ],
+   "keyframes": 7,
+   "clampFontSizes": 19,
+   "vwFontSizes": 19,
+   "sheets": 9,
+   "blocked": 0,
+   "rootVarCount": 98,
+   "rootVarsSample": {
+    "--color-bg": "#0a1017",
+    "--color-text": "#f4f8f9",
+    "--wp-block-synced-color": "#7a00df",
+    "--wp-block-synced-color--rgb": "122,0,223",
+    "--wp-bound-block-color": "var(--wp-block-synced-color)",
+    "--wp-admin-theme-color": "#007cba",
+    "--wp-admin-theme-color--rgb": "0,124,186",
+    "--wp-admin-theme-color-darker-10": "#006ba1",
+    "--wp-admin-theme-color-darker-10--rgb": "0,107,160.5",
+    "--wp-admin-theme-color-darker-20": "#005a87",
+    "--wp-admin-theme-color-darker-20--rgb": "0,90,135",
+    "--wp-admin-border-width-focus": "1.5px",
+    "--wp--preset--font-size--normal": "16px",
+    "--wp--preset--font-size--huge": "42px",
+    "--wp--preset--color--black": "#000000",
+    "--wp--preset--color--cyan-bluish-gray": "#abb8c3",
+    "--wp--preset--color--white": "#ffffff",
+    "--wp--preset--color--pale-pink": "#f78da7",
+    "--wp--preset--color--vivid-red": "#cf2e2e",
+    "--wp--preset--color--luminous-vivid-orange": "#ff6900",
+    "--wp--preset--color--luminous-vivid-amber": "#fcb900",
+    "--wp--preset--color--light-green-cyan": "#7bdcb5",
+    "--wp--preset--color--vivid-green-cyan": "#00d084",
+    "--wp--preset--color--pale-cyan-blue": "#8ed1fc",
+    "--wp--preset--color--vivid-cyan-blue": "#0693e3",
+    "--wp--preset--color--vivid-purple": "#9b51e0",
+    "--wp--preset--font-size--small": "13px",
+    "--wp--preset--font-size--medium": "20px",
+    "--wp--preset--font-size--large": "36px",
+    "--wp--preset--font-size--x-large": "42px",
+    "--wp--preset--spacing--20": "0.44rem",
+    "--wp--preset--spacing--30": "0.67rem",
+    "--wp--preset--spacing--40": "1rem",
+    "--wp--preset--spacing--50": "1.5rem",
+    "--wp--preset--spacing--60": "2.25rem",
+    "--wp--preset--spacing--70": "3.38rem",
+    "--wp--preset--spacing--80": "5.06rem",
+    "--wp--preset--shadow--natural": "6px 6px 9px rgba(0, 0, 0, 0.2)",
+    "--wp--preset--shadow--deep": "12px 12px 50px rgba(0, 0, 0, 0.4)",
+    "--wp--preset--shadow--sharp": "6px 6px 0px rgba(0, 0, 0, 0.2)",
+    "--wp--preset--shadow--outlined": "6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0)",
+    "--wp--preset--shadow--crisp": "6px 6px 0px rgb(0, 0, 0)",
+    "--color-ink": "#050607",
+    "--color-graphite": "#0b0f12",
+    "--color-panel": "#10171b",
+    "--color-panel-strong": "#162127",
+    "--color-line": "rgba(218, 236, 242, .14)",
+    "--color-muted": "#93a4ab",
+    "--color-dim": "#5d6b72",
+    "--color-cyan": "#1f66f0",
+    "--color-blue": "#1f66f0",
+    "--color-lime": "#a7ff62",
+    "--color-amber": "#ffc857",
+    "--color-page-bg": "#050607",
+    "--color-page-bg-soft": "#0b0f12",
+    "--color-header-bg": "rgba(5, 6, 7, .78)",
+    "--color-menu-bg": "#050607",
+    "--color-dropdown-glass": "rgba(8, 12, 15, .58)",
+    "--color-dropdown-glass-end": "rgba(16, 23, 27, .42)",
+    "--color-card-bg": "linear-gradient(145deg, rgba(22, 33, 39, .92), rgba(9, 13, 16, .92))",
+    "--color-card-flat": "rgba(16, 23, 27, .88)",
+    "--color-control-bg": "rgba(255, 255, 255, .05)",
+    "--color-grid-line": "rgba(244, 248, 249, .055)",
+    "--color-grid-line-menu": "rgba(244, 248, 249, .06)",
+    "--color-hero-copy": "rgba(244, 248, 249, .78)",
+    "--font-sans": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", ",
+    "--font-display": "Sora, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe",
+    "--space-page": "clamp(1rem, 4vw, 4.5rem)",
+    "--section-heading-gap": ".5rem",
+    "--radius-sm": "8px",
+    "--radius-md": "16px",
+    "--radius-lg": "24px",
+    "--shadow-glow": "0 0 50px rgba(31, 102, 240, .22)",
+    "--ease-out": "cubic-bezier(.22, 1, .36, 1)"
+   }
+  },
+  "perf": {
+   "requests": 52,
+   "kb": 1319,
+   "byTypeKB": {
+    "link": 174,
+    "other": 75,
+    "script": 150,
+    "img": 921,
+    "fetch": 0,
+    "video": 0
+   },
+   "dcl": 2060,
+   "load": 6916,
+   "ttfb": 1451
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [],
+  "scriptSignatures": {
+   "gsap": 1,
+   "ScrollTrigger": 1,
+   "IntersectionObserver": 1,
+   "reducedMotion": 1
+  },
+  "scriptsChecked": 3
+ },
+ "mobile": {
+  "title": "PAVE® | AI-Powered Vehicle Inspection Platform",
+  "lang": "en-US",
+  "generator": "WordPress 7.1.1",
+  "description": "Automate vehicle inspections with PAVE® AI. Detect damage, capture vehicle condition, and generate consistent reports for fleets, dealers, and mobility teams.",
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 7425,
+  "domNodes": 572,
+  "textEls": 111,
+  "fonts": [
+   "Inter 400 normal",
+   "Inter 700 normal",
+   "Sora 700 normal"
+  ],
+  "fontFamilies": [
+   [
+    "Inter",
+    82
+   ],
+   [
+    "Sora",
+    29
+   ]
+  ],
+  "fontSizes": [
+   [
+    "12px",
+    32
+   ],
+   [
+    "16px",
+    22
+   ],
+   [
+    "13px",
+    14
+   ],
+   [
+    "21px",
+    9
+   ],
+   [
+    "11px",
+    8
+   ],
+   [
+    "18px",
+    5
+   ],
+   [
+    "29px",
+    4
+   ],
+   [
+    "33px",
+    3
+   ],
+   [
+    "17px",
+    3
+   ],
+   [
+    "27px",
+    3
+   ],
+   [
+    "19px",
+    2
+   ],
+   [
+    "7px",
+    1
+   ],
+   [
+    "15px",
+    1
+   ],
+   [
+    "10px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "700",
+    71
+   ],
+   [
+    "400",
+    24
+   ],
+   [
+    "600",
+    9
+   ],
+   [
+    "800",
+    4
+   ],
+   [
+    "900",
+    2
+   ],
+   [
+    "650",
+    1
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.5",
+    61
+   ],
+   [
+    "1",
+    10
+   ],
+   [
+    "1.35",
+    10
+   ],
+   [
+    "1.02",
+    9
+   ],
+   [
+    "1.06",
+    7
+   ],
+   [
+    "1.05",
+    5
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "0.08em",
+    6
+   ],
+   [
+    "0.12em",
+    6
+   ],
+   [
+    "0.1em",
+    1
+   ]
+  ],
+  "uppercaseShare": 14,
+  "maxFontPx": 47,
+  "maxFontText": "",
+  "maxFontVwRatio": 12,
+  "textColors": [
+   [
+    "rgb(7, 16, 26)",
+    60
+   ],
+   [
+    "rgb(83, 100, 116)",
+    29
+   ],
+   [
+    "rgb(255, 255, 255)",
+    8
+   ],
+   [
+    "rgb(31, 102, 240)",
+    7
+   ],
+   [
+    "rgb(244, 248, 249)",
+    3
+   ],
+   [
+    "rgb(22, 123, 48)",
+    2
+   ],
+   [
+    "rgb(96, 102, 108)",
+    1
+   ],
+   [
+    "rgba(244, 248, 249, 0.82)",
+    1
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(245, 248, 251)",
+    74
+   ],
+   [
+    "rgb(247, 250, 252)",
+    66
+   ],
+   [
+    "rgba(0, 0, 0, 0.86)",
+    33
+   ],
+   [
+    "rgb(7, 9, 10)",
+    23
+   ],
+   [
+    "rgb(255, 255, 255)",
+    22
+   ],
+   [
+    "rgba(255, 255, 255, 0.86)",
+    14
+   ],
+   [
+    "rgba(255, 255, 255, 0.72)",
+    11
+   ],
+   [
+    "rgba(7, 16, 26, 0.043)",
+    7
+   ],
+   [
+    "rgb(5, 6, 7)",
+    7
+   ],
+   [
+    "rgb(7, 16, 26)",
+    3
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "999px",
+    20
+   ],
+   [
+    "8px",
+    10
+   ],
+   [
+    "50%",
+    9
+   ],
+   [
+    "16px",
+    2
+   ],
+   [
+    "37.6px",
+    1
+   ],
+   [
+    "26.4px",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "760px",
+    5
+   ],
+   [
+    "650px",
+    1
+   ],
+   [
+    "680px",
+    1
+   ],
+   [
+    "660px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "The world's most advanced automated vehicle inspection platform",
+   "size": 33,
+   "weight": "700",
+   "family": "Sora",
+   "lh": 1.06,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(244, 248, 249)",
+   "top": 265
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "The world's most advanced automated vehicle inspection platform",
+    "size": 33,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 1.06,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(244, 248, 249)",
+    "top": 265
+   },
+   {
+    "tag": "H2",
+    "text": "A guided inspection flow that turns photos into structured vehicle intelligence.",
+    "size": 27,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 1.06,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 1314
+   },
+   {
+    "tag": "H3",
+    "text": "Inspect any vehicle anywhere",
+    "size": 18,
+    "weight": "650",
+    "family": "Sora",
+    "lh": 1.05,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 2087
+   },
+   {
+    "tag": "H2",
+    "text": "",
+    "size": 27,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 1.06,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 2412
+   },
+   {
+    "tag": "H2",
+    "text": "",
+    "size": 27,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 1.06,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 3634
+   },
+   {
+    "tag": "H2",
+    "text": "",
+    "size": 32,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 0.95,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 5197
+   },
+   {
+    "tag": "H2",
+    "text": "",
+    "size": 47,
+    "weight": "700",
+    "family": "Sora",
+    "lh": 1.06,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(7, 16, 26)",
+    "top": 6487
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 17,
+    "lh": 1.5,
+    "family": "Inter",
+    "color": "rgba(244, 248, 249, 0.82)",
+    "measure": 358
+   }
+  ],
+  "navLinks": [
+   "Let's Talk"
+  ],
+  "buttons": [
+   "Open menu",
+   "Let's Talk",
+   "See the workflow",
+   "Try PAVE®",
+   "←",
+   "→",
+   "Download Now"
+  ],
+  "burger": true,
+  "headerPosition": "fixed",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 7,
+   "horizontalScroll": false,
+   "themeSwitch": true,
+   "scrollContainer": false,
+   "pageTransitions": true,
+   "grid": 107,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 24,
+   "iframes": 0,
+   "images": 44,
+   "imgFormats": {
+    "webp": 31,
+    "svg": 13
+   },
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 2,
+   "gtag": 1,
+   "wp-content": 2
+  },
+  "scripts": [
+   "www.googletagmanager.com/gtag/js?id=GT-MBGDNDJ7",
+   "pave.ai/wp-includes/js/wp-emoji-release.min.js?ver=7.1.1",
+   "pave.ai/wp-content/themes/pave-ai-demo/dist/assets/app-y9wPNmtB.js?ver=0.1.65",
+   "pave.ai/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-co"
+  ],
+  "css": {
+   "media": [
+    [
+     "(prefers-reduced-motion: reduce)",
+     3
+    ],
+    [
+     "(max-width: 767px)",
+     2
+    ],
+    [
+     "(min-resolution: 192dpi)",
+     1
+    ],
+    [
+     "screen and (max-width: 600px)",
+     1
+    ],
+    [
+     "(max-width: 820px)",
+     1
+    ],
+    [
+     "(max-width: 760px)",
+     1
+    ],
+    [
+     "(min-width: 981px)",
+     1
+    ],
+    [
+     "(max-width: 980px)",
+     1
+    ],
+    [
+     "(min-width: 621px) and (max-width: 980px)",
+     1
+    ],
+    [
+     "(min-width: 621px) and (max-width: 1180px)",
+     1
+    ],
+    [
+     "(max-width: 620px)",
+     1
+    ],
+    [
+     "(max-width: 640px)",
+     1
+    ],
+    [
+     "(min-width: 641px) and (max-width: 980px)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "0.01ms",
+     2
+    ],
+    [
+     "0.52s",
+     2
+    ],
+    [
+     "0.88s",
+     1
+    ],
+    [
+     "0.46s",
+     1
+    ],
+    [
+     "0.62s",
+     1
+    ],
+    [
+     "auto",
+     1
+    ],
+    [
+     "0.56s",
+     1
+    ],
+    [
+     "0.18s",
+     1
+    ],
+    [
+     "1.8s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "ease",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "Inter 400 normal",
+    "Inter 500 normal",
+    "Inter 700 normal",
+    "Sora 500 normal",
+    "Sora 700 normal"
+   ],
+   "keyframes": 7,
+   "clampFontSizes": 19,
+   "vwFontSizes": 19,
+   "sheets": 9,
+   "blocked": 0,
+   "rootVarCount": 98,
+   "rootVarsSample": {
+    "--color-bg": "#0a1017",
+    "--color-text": "#f4f8f9",
+    "--wp-block-synced-color": "#7a00df",
+    "--wp-block-synced-color--rgb": "122,0,223",
+    "--wp-bound-block-color": "var(--wp-block-synced-color)",
+    "--wp-admin-theme-color": "#007cba",
+    "--wp-admin-theme-color--rgb": "0,124,186",
+    "--wp-admin-theme-color-darker-10": "#006ba1",
+    "--wp-admin-theme-color-darker-10--rgb": "0,107,160.5",
+    "--wp-admin-theme-color-darker-20": "#005a87",
+    "--wp-admin-theme-color-darker-20--rgb": "0,90,135",
+    "--wp-admin-border-width-focus": "1.5px",
+    "--wp--preset--font-size--normal": "16px",
+    "--wp--preset--font-size--huge": "42px",
+    "--wp--preset--color--black": "#000000",
+    "--wp--preset--color--cyan-bluish-gray": "#abb8c3",
+    "--wp--preset--color--white": "#ffffff",
+    "--wp--preset--color--pale-pink": "#f78da7",
+    "--wp--preset--color--vivid-red": "#cf2e2e",
+    "--wp--preset--color--luminous-vivid-orange": "#ff6900",
+    "--wp--preset--color--luminous-vivid-amber": "#fcb900",
+    "--wp--preset--color--light-green-cyan": "#7bdcb5",
+    "--wp--preset--color--vivid-green-cyan": "#00d084",
+    "--wp--preset--color--pale-cyan-blue": "#8ed1fc",
+    "--wp--preset--color--vivid-cyan-blue": "#0693e3",
+    "--wp--preset--color--vivid-purple": "#9b51e0",
+    "--wp--preset--font-size--small": "13px",
+    "--wp--preset--font-size--medium": "20px",
+    "--wp--preset--font-size--large": "36px",
+    "--wp--preset--font-size--x-large": "42px",
+    "--wp--preset--spacing--20": "0.44rem",
+    "--wp--preset--spacing--30": "0.67rem",
+    "--wp--preset--spacing--40": "1rem",
+    "--wp--preset--spacing--50": "1.5rem",
+    "--wp--preset--spacing--60": "2.25rem",
+    "--wp--preset--spacing--70": "3.38rem",
+    "--wp--preset--spacing--80": "5.06rem",
+    "--wp--preset--shadow--natural": "6px 6px 9px rgba(0, 0, 0, 0.2)",
+    "--wp--preset--shadow--deep": "12px 12px 50px rgba(0, 0, 0, 0.4)",
+    "--wp--preset--shadow--sharp": "6px 6px 0px rgba(0, 0, 0, 0.2)",
+    "--wp--preset--shadow--outlined": "6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0)",
+    "--wp--preset--shadow--crisp": "6px 6px 0px rgb(0, 0, 0)",
+    "--color-ink": "#050607",
+    "--color-graphite": "#0b0f12",
+    "--color-panel": "#10171b",
+    "--color-panel-strong": "#162127",
+    "--color-line": "rgba(218, 236, 242, .14)",
+    "--color-muted": "#93a4ab",
+    "--color-dim": "#5d6b72",
+    "--color-cyan": "#1f66f0",
+    "--color-blue": "#1f66f0",
+    "--color-lime": "#a7ff62",
+    "--color-amber": "#ffc857",
+    "--color-page-bg": "#050607",
+    "--color-page-bg-soft": "#0b0f12",
+    "--color-header-bg": "rgba(5, 6, 7, .78)",
+    "--color-menu-bg": "#050607",
+    "--color-dropdown-glass": "rgba(8, 12, 15, .58)",
+    "--color-dropdown-glass-end": "rgba(16, 23, 27, .42)",
+    "--color-card-bg": "linear-gradient(145deg, rgba(22, 33, 39, .92), rgba(9, 13, 16, .92))",
+    "--color-card-flat": "rgba(16, 23, 27, .88)",
+    "--color-control-bg": "rgba(255, 255, 255, .05)",
+    "--color-grid-line": "rgba(244, 248, 249, .055)",
+    "--color-grid-line-menu": "rgba(244, 248, 249, .06)",
+    "--color-hero-copy": "rgba(244, 248, 249, .78)",
+    "--font-sans": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", ",
+    "--font-display": "Sora, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe",
+    "--space-page": "clamp(1rem, 4vw, 4.5rem)",
+    "--section-heading-gap": ".5rem",
+    "--radius-sm": "8px",
+    "--radius-md": "16px",
+    "--radius-lg": "24px",
+    "--shadow-glow": "0 0 50px rgba(31, 102, 240, .22)",
+    "--ease-out": "cubic-bezier(.22, 1, .36, 1)"
+   }
+  },
+  "perf": {
+   "requests": 43,
+   "kb": 956,
+   "byTypeKB": {
+    "link": 174,
+    "other": 75,
+    "script": 150,
+    "img": 559,
+    "fetch": 0,
+    "video": 0
+   },
+   "dcl": 3015,
+   "load": 6873,
+   "ttfb": 2456
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": []
+ },
+ "seconds": 47
+}

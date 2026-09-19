@@ -1,0 +1,1532 @@
+{
+ "label": "populous",
+ "url": "https://populous.com",
+ "capturedAt": "2026-09-19T15:08:35.362Z",
+ "desktop": {
+  "title": "Global Architectural Design – Stadiums, Arenas, Events | Populous",
+  "lang": "en-US",
+  "generator": "WPML ver:4.9.7 stt:5,59,1,4,27,28,29,2;",
+  "description": "Populous is a global architectural design firm specializing in creating environments & venues that draw communities and people together.",
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 11022,
+  "domNodes": 575,
+  "textEls": 159,
+  "fonts": [
+   "SuisseIntl 400 normal",
+   "SuisseIntl 500 normal",
+   "TiemposFine 300 normal"
+  ],
+  "fontFamilies": [
+   [
+    "SuisseIntl",
+    159
+   ]
+  ],
+  "fontSizes": [
+   [
+    "16px",
+    62
+   ],
+   [
+    "12px",
+    58
+   ],
+   [
+    "36px",
+    14
+   ],
+   [
+    "21px",
+    11
+   ],
+   [
+    "10px",
+    6
+   ],
+   [
+    "47px",
+    3
+   ],
+   [
+    "27px",
+    3
+   ],
+   [
+    "79px",
+    2
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    116
+   ],
+   [
+    "500",
+    43
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.6",
+    62
+   ],
+   [
+    "1.5",
+    61
+   ],
+   [
+    "1.2",
+    18
+   ],
+   [
+    "1.4",
+    11
+   ],
+   [
+    "1",
+    5
+   ],
+   [
+    "normal",
+    2
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "0.04em",
+    32
+   ],
+   [
+    "-0.05em",
+    29
+   ]
+  ],
+  "uppercaseShare": 4,
+  "maxFontPx": 79,
+  "maxFontText": "We design the places where people love to be together.",
+  "maxFontVwRatio": 5.5,
+  "textColors": [
+   [
+    "rgb(1, 1, 1)",
+    106
+   ],
+   [
+    "rgb(255, 255, 255)",
+    50
+   ],
+   [
+    "color(srgb 0.00392157 0.00392157 0.00392157 / 0.2)",
+    3
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(1, 1, 1)",
+    1094
+   ],
+   [
+    "rgb(255, 255, 255)",
+    478
+   ],
+   [
+    "rgba(0, 0, 0, 0.1)",
+    323
+   ],
+   [
+    "rgb(28, 25, 181)",
+    256
+   ],
+   [
+    "rgb(230, 230, 230)",
+    220
+   ],
+   [
+    "rgb(0, 0, 0)",
+    128
+   ],
+   [
+    "color(srgb 0.900392 0.900392 0.900392)",
+    123
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "4px",
+    26
+   ],
+   [
+    "50%",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "1425px",
+    2
+   ],
+   [
+    "1440px",
+    1
+   ],
+   [
+    "700.538px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "We design the places where people love to be together.",
+   "size": 79,
+   "weight": "400",
+   "family": "SuisseIntl",
+   "lh": 1,
+   "ls": "-3.95833px",
+   "transform": "none",
+   "color": "rgb(255, 255, 255)",
+   "top": 558
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "We design the places where people love to be together.",
+    "size": 79,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1,
+    "ls": "-3.95833px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 558
+   },
+   {
+    "tag": "H2",
+    "text": "News & Perspectives",
+    "size": 27,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.2,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1367
+   },
+   {
+    "tag": "H3",
+    "text": "Highmark Stadium Makes Regular Season Debut",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1812
+   },
+   {
+    "tag": "H3",
+    "text": "New Philadelphia Arena Poised to Shape the Future of Philadelphia Sports and Entertainment",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1812
+   },
+   {
+    "tag": "H3",
+    "text": "Venezia FC Reveals New Images of Populous-Designed Bosco Dello Sport Stadium",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1812
+   },
+   {
+    "tag": "H3",
+    "text": "A Stadium Shaped by Its Fans: How Brand Activation Brings Buffalo’s Culture into Highmark Stadium",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1812
+   },
+   {
+    "tag": "H3",
+    "text": "Populous-Designed ONT Field Named 2026 Ballpark of the Year by BaseballParks.com",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1812
+   },
+   {
+    "tag": "H3",
+    "text": "Populous Strengthens Aviation Design Practice, Adds Nikolas Dando-Haenisch as Head of Aviation, East",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1812
+   },
+   {
+    "tag": "H3",
+    "text": "Baseball’s Biggest Moments: The Unseen Work That Makes Iconic Events Possible",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1812
+   },
+   {
+    "tag": "H3",
+    "text": "Populous Appointed as Lead Designer for New Frankfurt Multi-Purpose Arena",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1812
+   },
+   {
+    "tag": "H3",
+    "text": "Tampa Bay Rays Release Interior Renderings for New Ballpark Designed by Populous",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1812
+   },
+   {
+    "tag": "H3",
+    "text": "Denver Summit FC Celebrates Grand Opening of CommonSpirit Performance Center",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1812
+   },
+   {
+    "tag": "H3",
+    "text": "Earl Santee and Bruce Miller Win EY Entrepreneur Of The Year® 2026 Heartland Award",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1812
+   },
+   {
+    "tag": "H2",
+    "text": "Explore some of our best work around the world",
+    "size": 36,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.2,
+    "ls": "-1.78125px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 2419
+   },
+   {
+    "tag": "H2",
+    "text": "Featured Projects",
+    "size": 27,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.2,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 3642
+   },
+   {
+    "tag": "H3",
+    "text": "Kai Tak Sports Park",
+    "size": 16,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 3990
+   },
+   {
+    "tag": "H3",
+    "text": "Tottenham Hotspur Stadium",
+    "size": 16,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 4441
+   },
+   {
+    "tag": "H3",
+    "text": "BMO Centre",
+    "size": 16,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 5239
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 27,
+    "lh": 1.2,
+    "family": "SuisseIntl",
+    "color": "rgb(1, 1, 1)",
+    "measure": 495
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "SuisseIntl",
+    "color": "rgb(255, 255, 255)",
+    "measure": 289
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "SuisseIntl",
+    "color": "rgb(1, 1, 1)",
+    "measure": 289
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "SuisseIntl",
+    "color": "rgb(1, 1, 1)",
+    "measure": 289
+   }
+  ],
+  "navLinks": [
+   "Explore",
+   "Sustainability",
+   "Projects",
+   "Digital Future",
+   "Disciplines",
+   "Careers",
+   "Explore",
+   "Projects",
+   "Disciplines",
+   "About",
+   "Team",
+   "Careers",
+   "Sustainability",
+   "Digital Future",
+   "News"
+  ],
+  "buttons": [
+   "↳ Go to main content",
+   "Search",
+   "View",
+   "← Previous",
+   "→ Next",
+   "↳ View all",
+   "↳ Start",
+   "↳ View Project",
+   "↳ Sustainability",
+   "↳ Careers",
+   "↳ Contact"
+  ],
+  "burger": true,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": true,
+   "marquee": false,
+   "preloader": true,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 9,
+   "fixed": 17,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 16,
+   "videos": 2,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 12,
+   "iframes": 0,
+   "images": 18,
+   "imgFormats": {
+    "webp": 14,
+    "jpg": 4
+   },
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "locomotive": 1,
+   "ogl": 1,
+   "gtag": 1
+  },
+  "scripts": [
+   "populous.com/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=4970",
+   "populous.com/themes/populous/static/assets/scripts/vendors.js?ver=0.0.0%2B1788451736199",
+   "populous.com/themes/populous/static/assets/scripts/app.js?ver=0.0.0%2B1788451736199",
+   "populous.com/mu-plugins/locomotive-cookie-consent/assets/cookie-consent.js?ver=0.2.3",
+   "www.googletagmanager.com/gtag/js?id=G-8Y4HWQ8B5H"
+  ],
+  "css": {
+   "media": [
+    [
+     "(min-width: 700px)",
+     111
+    ],
+    [
+     "(max-width: 699px)",
+     91
+    ],
+    [
+     "(min-width: 1000px)",
+     65
+    ],
+    [
+     "(max-width: 999px)",
+     58
+    ],
+    [
+     "(prefers-reduced-motion: no-preference)",
+     38
+    ],
+    [
+     "(min-width: 500px)",
+     36
+    ],
+    [
+     "(hover: hover)",
+     36
+    ],
+    [
+     "(max-width: 499px)",
+     23
+    ],
+    [
+     "(prefers-reduced-motion)",
+     17
+    ],
+    [
+     "(min-width: 700px) and (max-width: 999px)",
+     14
+    ],
+    [
+     "(min-width: 1200px)",
+     11
+    ],
+    [
+     "(hover: hover) and (min-width: 1000px)",
+     6
+    ],
+    [
+     "(hover: none), (max-width: 999px)",
+     6
+    ],
+    [
+     "(min-width: 700px) and (max-width: 1199px)",
+     6
+    ]
+   ],
+   "durations": [
+    [
+     "0.9s",
+     147
+    ],
+    [
+     "0.3s",
+     57
+    ],
+    [
+     "0.75s",
+     24
+    ],
+    [
+     "0.15s",
+     23
+    ],
+    [
+     "0.6s",
+     20
+    ],
+    [
+     "0.198s",
+     6
+    ],
+    [
+     "0.25s",
+     5
+    ],
+    [
+     "0.45s",
+     4
+    ],
+    [
+     "1s",
+     2
+    ],
+    [
+     "auto",
+     2
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.215, 0.61, 0.355, 1)",
+     255
+    ],
+    [
+     "cubic-bezier(0.55, 0.055, 0.675, 0.19)",
+     9
+    ],
+    [
+     "ease",
+     6
+    ],
+    [
+     "ease-out",
+     2
+    ]
+   ],
+   "fontFaces": [
+    "SuisseIntl 400 normal",
+    "SuisseIntl 500 normal",
+    "TiemposFine 300 normal",
+    "TiemposFine 200 normal"
+   ],
+   "keyframes": 20,
+   "clampFontSizes": 1,
+   "vwFontSizes": 1,
+   "sheets": 5,
+   "blocked": 0,
+   "rootVarCount": 184,
+   "rootVarsSample": {
+    "--wp--preset--color--black": "#000000",
+    "--wp--preset--color--cyan-bluish-gray": "#abb8c3",
+    "--wp--preset--color--white": "#ffffff",
+    "--wp--preset--color--pale-pink": "#f78da7",
+    "--wp--preset--color--vivid-red": "#cf2e2e",
+    "--wp--preset--color--luminous-vivid-orange": "#ff6900",
+    "--wp--preset--color--luminous-vivid-amber": "#fcb900",
+    "--wp--preset--color--light-green-cyan": "#7bdcb5",
+    "--wp--preset--color--vivid-green-cyan": "#00d084",
+    "--wp--preset--color--pale-cyan-blue": "#8ed1fc",
+    "--wp--preset--color--vivid-cyan-blue": "#0693e3",
+    "--wp--preset--color--vivid-purple": "#9b51e0",
+    "--wp--preset--font-size--small": "13px",
+    "--wp--preset--font-size--medium": "20px",
+    "--wp--preset--font-size--large": "36px",
+    "--wp--preset--font-size--x-large": "42px",
+    "--wp--preset--spacing--20": "0.44rem",
+    "--wp--preset--spacing--30": "0.67rem",
+    "--wp--preset--spacing--40": "1rem",
+    "--wp--preset--spacing--50": "1.5rem",
+    "--wp--preset--spacing--60": "2.25rem",
+    "--wp--preset--spacing--70": "3.38rem",
+    "--wp--preset--spacing--80": "5.06rem",
+    "--wp--preset--shadow--natural": "6px 6px 9px rgba(0, 0, 0, 0.2)",
+    "--wp--preset--shadow--deep": "12px 12px 50px rgba(0, 0, 0, 0.4)",
+    "--wp--preset--shadow--sharp": "6px 6px 0px rgba(0, 0, 0, 0.2)",
+    "--wp--preset--shadow--outlined": "6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0)",
+    "--wp--preset--shadow--crisp": "6px 6px 0px rgb(0, 0, 0)",
+    "--animation-duration-factor": "1",
+    "--color": "#010101",
+    "--color-bg": "white",
+    "--color-accent": "#1c19b5",
+    "--grid-columns": "12",
+    "--grid-gutter": "20px",
+    "--grid-margin": "calc(7.3611111111 * var(--vw, 1vw))",
+    "--grid-outer": "32px",
+    "--container-margin": "var(--grid-margin)",
+    "--container-large-margin": "var(--grid-margin)",
+    "--container-medium-margin": "var(--grid-margin)",
+    "--font-size-body": "clamp(14px, 0.0111111111 * calc(100 * var(--vw, 1vw)), 16px)",
+    "--font-size-body-tiny": "clamp(10px, 0.0069444444 * calc(100 * var(--vw, 1vw)), 10px)",
+    "--font-size-body-small": "clamp(12px, 0.0083333333 * calc(100 * var(--vw, 1vw)), 12px)",
+    "--font-size-body-medium": "clamp(21px, 0.0145833333 * calc(100 * var(--vw, 1vw)), 21px)",
+    "--font-size-body-large": "clamp(26px, 0.01875 * calc(100 * var(--vw, 1vw)), 27px)",
+    "--font-size-huge": "clamp(56px, 0.0972222222 * calc(100 * var(--vw, 1vw)), 140px)",
+    "--font-size-h1": "clamp(36px, 0.0555555556 * calc(100 * var(--vw, 1vw)), 80px)",
+    "--font-size-h2": "clamp(34px, 0.0423611111 * calc(100 * var(--vw, 1vw)), 61px)",
+    "--font-size-h3": "clamp(32px, 0.0326388889 * calc(100 * var(--vw, 1vw)), 47px)",
+    "--font-size-h4": "clamp(28px, 0.025 * calc(100 * var(--vw, 1vw)), 36px)",
+    "--font-size-h5": "var(--font-size-body-large)",
+    "--font-size-h6": "var(--font-size-body-medium)",
+    "--spacing-micro-mobile": "5",
+    "--spacing-micro": "10",
+    "--spacing-tiny-mobile": "20",
+    "--spacing-tiny": "20",
+    "--spacing-small-mobile": "30",
+    "--spacing-small": "30",
+    "--spacing-medium-mobile": "40",
+    "--spacing-medium": "40",
+    "--spacing-large-mobile": "52",
+    "--spacing-large": "80",
+    "--spacing-big-mobile": "80",
+    "--spacing-big": "160",
+    "--spacing-huge-mobile": "100",
+    "--spacing-huge": "200",
+    "--spacing-enormous-mobile": "140",
+    "--spacing-enormous": "250",
+    "--icon-width-logo-small": "var(--populous-logo-small)",
+    "--icon-width-logo-wide": "210px",
+    "--icon-width-search": "12px",
+    "--icon-width-cross": "1em",
+    "--icon-width-gallery": "18px",
+    "--icon-width-sort": ".75em",
+    "--icon-width-info": "16px",
+    "--icon-width-zoom": "16px",
+    "--icon-width-explore-mode": "16px",
+    "--icon-width-play": "12px",
+    "--icon-width-phone": "22px",
+    "--icon-width-copy": "22px",
+    "--icon-width-mail": "22px"
+   }
+  },
+  "perf": {
+   "requests": 34,
+   "kb": 2383,
+   "byTypeKB": {
+    "link": 42,
+    "script": 332,
+    "video": 185,
+    "other": 8,
+    "css": 143,
+    "img": 1637,
+    "fetch": 35
+   },
+   "dcl": 14659,
+   "load": 14732,
+   "ttfb": 2056
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [
+   "NetworkError: A network error occurred.",
+   "NetworkError: A network error occurred.",
+   "NetworkError: A network error occurred.",
+   "NetworkError: A network error occurred.",
+   "NetworkError: A network error occurred.",
+   "NetworkError: A network error occurred."
+  ],
+  "scriptSignatures": {
+   "gsap": 1,
+   "ScrollTrigger": 1,
+   "Lenis": 1,
+   "three": 1,
+   "swup": 1,
+   "SplitText": 1,
+   "splide": 1,
+   "glsl": 1,
+   "IntersectionObserver": 1,
+   "reducedMotion": 1
+  },
+  "scriptsChecked": 4
+ },
+ "mobile": {
+  "title": "Global Architectural Design – Stadiums, Arenas, Events | Populous",
+  "lang": "en-US",
+  "generator": "WPML ver:4.9.7 stt:5,59,1,4,27,28,29,2;",
+  "description": "Populous is a global architectural design firm specializing in creating environments & venues that draw communities and people together.",
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 8129,
+  "domNodes": 575,
+  "textEls": 152,
+  "fonts": [
+   "SuisseIntl 400 normal",
+   "SuisseIntl 500 normal",
+   "TiemposFine 300 normal"
+  ],
+  "fontFamilies": [
+   [
+    "SuisseIntl",
+    152
+   ]
+  ],
+  "fontSizes": [
+   [
+    "12px",
+    58
+   ],
+   [
+    "14px",
+    46
+   ],
+   [
+    "28px",
+    14
+   ],
+   [
+    "21px",
+    11
+   ],
+   [
+    "16px",
+    9
+   ],
+   [
+    "10px",
+    6
+   ],
+   [
+    "47px",
+    3
+   ],
+   [
+    "26px",
+    3
+   ],
+   [
+    "36px",
+    2
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    109
+   ],
+   [
+    "500",
+    43
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.6",
+    62
+   ],
+   [
+    "1.5",
+    54
+   ],
+   [
+    "1.2",
+    18
+   ],
+   [
+    "1.4",
+    11
+   ],
+   [
+    "1.15",
+    3
+   ],
+   [
+    "1",
+    2
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "0.04em",
+    32
+   ],
+   [
+    "-0.05em",
+    26
+   ]
+  ],
+  "uppercaseShare": 4,
+  "maxFontPx": 47,
+  "maxFontText": "",
+  "maxFontVwRatio": 12.1,
+  "textColors": [
+   [
+    "rgb(1, 1, 1)",
+    109
+   ],
+   [
+    "rgb(255, 255, 255)",
+    43
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(1, 1, 1)",
+    241
+   ],
+   [
+    "rgb(255, 255, 255)",
+    165
+   ],
+   [
+    "rgb(230, 230, 230)",
+    88
+   ],
+   [
+    "rgb(28, 25, 181)",
+    66
+   ],
+   [
+    "rgba(0, 0, 0, 0.1)",
+    56
+   ],
+   [
+    "rgb(0, 0, 0)",
+    33
+   ],
+   [
+    "color(srgb 0.900392 0.900392 0.900392)",
+    24
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "4px",
+    25
+   ],
+   [
+    "50%",
+    1
+   ]
+  ],
+  "maxWidths": [],
+  "h1": {
+   "tag": "H1",
+   "text": "We design the places where people love to be together.",
+   "size": 36,
+   "weight": "400",
+   "family": "SuisseIntl",
+   "lh": 1,
+   "ls": "-1.8px",
+   "transform": "none",
+   "color": "rgb(255, 255, 255)",
+   "top": 726
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "We design the places where people love to be together.",
+    "size": 36,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1,
+    "ls": "-1.8px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 726
+   },
+   {
+    "tag": "H2",
+    "text": "News & Perspectives",
+    "size": 26,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.2,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1412
+   },
+   {
+    "tag": "H3",
+    "text": "Highmark Stadium Makes Regular Season Debut",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1722
+   },
+   {
+    "tag": "H3",
+    "text": "New Philadelphia Arena Poised to Shape the Future of Philadelphia Sports and Entertainment",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1722
+   },
+   {
+    "tag": "H3",
+    "text": "Venezia FC Reveals New Images of Populous-Designed Bosco Dello Sport Stadium",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1722
+   },
+   {
+    "tag": "H3",
+    "text": "A Stadium Shaped by Its Fans: How Brand Activation Brings Buffalo’s Culture into Highmark Stadium",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1722
+   },
+   {
+    "tag": "H3",
+    "text": "Populous-Designed ONT Field Named 2026 Ballpark of the Year by BaseballParks.com",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1722
+   },
+   {
+    "tag": "H3",
+    "text": "Populous Strengthens Aviation Design Practice, Adds Nikolas Dando-Haenisch as Head of Aviation, East",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1722
+   },
+   {
+    "tag": "H3",
+    "text": "Baseball’s Biggest Moments: The Unseen Work That Makes Iconic Events Possible",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1722
+   },
+   {
+    "tag": "H3",
+    "text": "Populous Appointed as Lead Designer for New Frankfurt Multi-Purpose Arena",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1722
+   },
+   {
+    "tag": "H3",
+    "text": "Tampa Bay Rays Release Interior Renderings for New Ballpark Designed by Populous",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1722
+   },
+   {
+    "tag": "H3",
+    "text": "Denver Summit FC Celebrates Grand Opening of CommonSpirit Performance Center",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1722
+   },
+   {
+    "tag": "H3",
+    "text": "Earl Santee and Bruce Miller Win EY Entrepreneur Of The Year® 2026 Heartland Award",
+    "size": 21,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.4,
+    "ls": "-1.05px",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 1722
+   },
+   {
+    "tag": "H2",
+    "text": "Explore some of our best work around the world",
+    "size": 28,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.2,
+    "ls": "-1.4px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 2293
+   },
+   {
+    "tag": "H2",
+    "text": "Featured Projects",
+    "size": 26,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.2,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 2884
+   },
+   {
+    "tag": "H3",
+    "text": "Kai Tak Sports Park",
+    "size": 14,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 3194
+   },
+   {
+    "tag": "H3",
+    "text": "Tottenham Hotspur Stadium",
+    "size": 14,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 3493
+   },
+   {
+    "tag": "H3",
+    "text": "BMO Centre",
+    "size": 14,
+    "weight": "400",
+    "family": "SuisseIntl",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(1, 1, 1)",
+    "top": 3792
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 26,
+    "lh": 1.2,
+    "family": "SuisseIntl",
+    "color": "rgb(1, 1, 1)",
+    "measure": 370
+   },
+   {
+    "size": 14,
+    "lh": 1.5,
+    "family": "SuisseIntl",
+    "color": "rgb(255, 255, 255)",
+    "measure": 320
+   },
+   {
+    "size": 14,
+    "lh": 1.5,
+    "family": "SuisseIntl",
+    "color": "rgb(1, 1, 1)",
+    "measure": 370
+   },
+   {
+    "size": 14,
+    "lh": 1.5,
+    "family": "SuisseIntl",
+    "color": "rgb(1, 1, 1)",
+    "measure": 370
+   }
+  ],
+  "navLinks": [],
+  "buttons": [
+   "↳ Go to main content",
+   "View",
+   "← Previous",
+   "→ Next",
+   "↳ View all",
+   "↳ Start",
+   "↳ View Project",
+   "↳ Sustainability",
+   "↳ Careers",
+   "↳ Contact"
+  ],
+  "burger": true,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": true,
+   "marquee": false,
+   "preloader": true,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 7,
+   "fixed": 18,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 15,
+   "videos": 2,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 12,
+   "iframes": 0,
+   "images": 18,
+   "imgFormats": {
+    "webp": 13,
+    "jpg": 4,
+    "png": 1
+   },
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "locomotive": 1,
+   "ogl": 1,
+   "gtag": 1
+  },
+  "scripts": [
+   "populous.com/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=4970",
+   "populous.com/themes/populous/static/assets/scripts/vendors.js?ver=0.0.0%2B1788451736199",
+   "populous.com/themes/populous/static/assets/scripts/app.js?ver=0.0.0%2B1788451736199",
+   "populous.com/mu-plugins/locomotive-cookie-consent/assets/cookie-consent.js?ver=0.2.3",
+   "www.googletagmanager.com/gtag/js?id=G-8Y4HWQ8B5H"
+  ],
+  "css": {
+   "media": [
+    [
+     "(min-width: 700px)",
+     111
+    ],
+    [
+     "(max-width: 699px)",
+     91
+    ],
+    [
+     "(min-width: 1000px)",
+     65
+    ],
+    [
+     "(max-width: 999px)",
+     58
+    ],
+    [
+     "(prefers-reduced-motion: no-preference)",
+     38
+    ],
+    [
+     "(min-width: 500px)",
+     36
+    ],
+    [
+     "(hover: hover)",
+     36
+    ],
+    [
+     "(max-width: 499px)",
+     23
+    ],
+    [
+     "(prefers-reduced-motion)",
+     17
+    ],
+    [
+     "(min-width: 700px) and (max-width: 999px)",
+     14
+    ],
+    [
+     "(min-width: 1200px)",
+     11
+    ],
+    [
+     "(hover: hover) and (min-width: 1000px)",
+     6
+    ],
+    [
+     "(hover: none), (max-width: 999px)",
+     6
+    ],
+    [
+     "(min-width: 700px) and (max-width: 1199px)",
+     6
+    ]
+   ],
+   "durations": [
+    [
+     "0.9s",
+     147
+    ],
+    [
+     "0.3s",
+     57
+    ],
+    [
+     "0.75s",
+     24
+    ],
+    [
+     "0.15s",
+     23
+    ],
+    [
+     "0.6s",
+     20
+    ],
+    [
+     "0.198s",
+     6
+    ],
+    [
+     "0.25s",
+     5
+    ],
+    [
+     "0.45s",
+     4
+    ],
+    [
+     "1s",
+     2
+    ],
+    [
+     "auto",
+     2
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.215, 0.61, 0.355, 1)",
+     255
+    ],
+    [
+     "cubic-bezier(0.55, 0.055, 0.675, 0.19)",
+     9
+    ],
+    [
+     "ease",
+     6
+    ],
+    [
+     "ease-out",
+     2
+    ]
+   ],
+   "fontFaces": [
+    "SuisseIntl 400 normal",
+    "SuisseIntl 500 normal",
+    "TiemposFine 300 normal",
+    "TiemposFine 200 normal"
+   ],
+   "keyframes": 20,
+   "clampFontSizes": 1,
+   "vwFontSizes": 1,
+   "sheets": 5,
+   "blocked": 0,
+   "rootVarCount": 184,
+   "rootVarsSample": {
+    "--wp--preset--color--black": "#000000",
+    "--wp--preset--color--cyan-bluish-gray": "#abb8c3",
+    "--wp--preset--color--white": "#ffffff",
+    "--wp--preset--color--pale-pink": "#f78da7",
+    "--wp--preset--color--vivid-red": "#cf2e2e",
+    "--wp--preset--color--luminous-vivid-orange": "#ff6900",
+    "--wp--preset--color--luminous-vivid-amber": "#fcb900",
+    "--wp--preset--color--light-green-cyan": "#7bdcb5",
+    "--wp--preset--color--vivid-green-cyan": "#00d084",
+    "--wp--preset--color--pale-cyan-blue": "#8ed1fc",
+    "--wp--preset--color--vivid-cyan-blue": "#0693e3",
+    "--wp--preset--color--vivid-purple": "#9b51e0",
+    "--wp--preset--font-size--small": "13px",
+    "--wp--preset--font-size--medium": "20px",
+    "--wp--preset--font-size--large": "36px",
+    "--wp--preset--font-size--x-large": "42px",
+    "--wp--preset--spacing--20": "0.44rem",
+    "--wp--preset--spacing--30": "0.67rem",
+    "--wp--preset--spacing--40": "1rem",
+    "--wp--preset--spacing--50": "1.5rem",
+    "--wp--preset--spacing--60": "2.25rem",
+    "--wp--preset--spacing--70": "3.38rem",
+    "--wp--preset--spacing--80": "5.06rem",
+    "--wp--preset--shadow--natural": "6px 6px 9px rgba(0, 0, 0, 0.2)",
+    "--wp--preset--shadow--deep": "12px 12px 50px rgba(0, 0, 0, 0.4)",
+    "--wp--preset--shadow--sharp": "6px 6px 0px rgba(0, 0, 0, 0.2)",
+    "--wp--preset--shadow--outlined": "6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0)",
+    "--wp--preset--shadow--crisp": "6px 6px 0px rgb(0, 0, 0)",
+    "--animation-duration-factor": "1",
+    "--color": "#010101",
+    "--color-bg": "white",
+    "--color-accent": "#1c19b5",
+    "--grid-columns": "12",
+    "--grid-gutter": "20px",
+    "--grid-margin": "calc(7.3611111111 * var(--vw, 1vw))",
+    "--grid-outer": "32px",
+    "--container-margin": "var(--grid-margin)",
+    "--container-large-margin": "var(--grid-margin)",
+    "--container-medium-margin": "var(--grid-margin)",
+    "--font-size-body": "clamp(14px, 0.0111111111 * calc(100 * var(--vw, 1vw)), 16px)",
+    "--font-size-body-tiny": "clamp(10px, 0.0069444444 * calc(100 * var(--vw, 1vw)), 10px)",
+    "--font-size-body-small": "clamp(12px, 0.0083333333 * calc(100 * var(--vw, 1vw)), 12px)",
+    "--font-size-body-medium": "clamp(21px, 0.0145833333 * calc(100 * var(--vw, 1vw)), 21px)",
+    "--font-size-body-large": "clamp(26px, 0.01875 * calc(100 * var(--vw, 1vw)), 27px)",
+    "--font-size-huge": "clamp(56px, 0.0972222222 * calc(100 * var(--vw, 1vw)), 140px)",
+    "--font-size-h1": "clamp(36px, 0.0555555556 * calc(100 * var(--vw, 1vw)), 80px)",
+    "--font-size-h2": "clamp(34px, 0.0423611111 * calc(100 * var(--vw, 1vw)), 61px)",
+    "--font-size-h3": "clamp(32px, 0.0326388889 * calc(100 * var(--vw, 1vw)), 47px)",
+    "--font-size-h4": "clamp(28px, 0.025 * calc(100 * var(--vw, 1vw)), 36px)",
+    "--font-size-h5": "var(--font-size-body-large)",
+    "--font-size-h6": "var(--font-size-body-medium)",
+    "--spacing-micro-mobile": "5",
+    "--spacing-micro": "10",
+    "--spacing-tiny-mobile": "20",
+    "--spacing-tiny": "20",
+    "--spacing-small-mobile": "30",
+    "--spacing-small": "30",
+    "--spacing-medium-mobile": "40",
+    "--spacing-medium": "40",
+    "--spacing-large-mobile": "52",
+    "--spacing-large": "80",
+    "--spacing-big-mobile": "80",
+    "--spacing-big": "160",
+    "--spacing-huge-mobile": "100",
+    "--spacing-huge": "200",
+    "--spacing-enormous-mobile": "140",
+    "--spacing-enormous": "250",
+    "--icon-width-logo-small": "var(--populous-logo-small)",
+    "--icon-width-logo-wide": "210px",
+    "--icon-width-search": "12px",
+    "--icon-width-cross": "1em",
+    "--icon-width-gallery": "18px",
+    "--icon-width-sort": ".75em",
+    "--icon-width-info": "16px",
+    "--icon-width-zoom": "16px",
+    "--icon-width-explore-mode": "16px",
+    "--icon-width-play": "12px",
+    "--icon-width-phone": "22px",
+    "--icon-width-copy": "22px",
+    "--icon-width-mail": "22px"
+   }
+  },
+  "perf": {
+   "requests": 32,
+   "kb": 2487,
+   "byTypeKB": {
+    "link": 42,
+    "script": 332,
+    "video": 151,
+    "other": 8,
+    "css": 143,
+    "img": 1811,
+    "fetch": 0
+   },
+   "dcl": 11366,
+   "load": 11436,
+   "ttfb": 875
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [
+   "NetworkError: A network error occurred.",
+   "NetworkError: A network error occurred.",
+   "NetworkError: A network error occurred.",
+   "NetworkError: A network error occurred.",
+   "NetworkError: A network error occurred.",
+   "NetworkError: A network error occurred."
+  ]
+ },
+ "seconds": 64
+}

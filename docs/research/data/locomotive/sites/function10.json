@@ -1,0 +1,1335 @@
+{
+ "label": "function10",
+ "url": "https://function10.ca",
+ "capturedAt": "2026-09-19T15:32:13.498Z",
+ "desktop": {
+  "title": "FUNCTION",
+  "lang": "en-US",
+  "generator": null,
+  "description": null,
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 8469,
+  "domNodes": 347,
+  "textEls": 90,
+  "fonts": [
+   "TWKEverett 400 normal",
+   "PPMonument 900 normal",
+   "Ayer 500 italic"
+  ],
+  "fontFamilies": [
+   [
+    "TWKEverett",
+    85
+   ],
+   [
+    "monospace",
+    5
+   ]
+  ],
+  "fontSizes": [
+   [
+    "10px",
+    29
+   ],
+   [
+    "12px",
+    23
+   ],
+   [
+    "42px",
+    12
+   ],
+   [
+    "80px",
+    9
+   ],
+   [
+    "22px",
+    8
+   ],
+   [
+    "16px",
+    3
+   ],
+   [
+    "72px",
+    3
+   ],
+   [
+    "265px",
+    2
+   ],
+   [
+    "21px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    90
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1",
+    51
+   ],
+   [
+    "1.4",
+    23
+   ],
+   [
+    "1.1",
+    10
+   ],
+   [
+    "normal",
+    4
+   ],
+   [
+    "1.5",
+    1
+   ],
+   [
+    "1.2",
+    1
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.02em",
+    87
+   ],
+   [
+    "-0.015em",
+    1
+   ]
+  ],
+  "uppercaseShare": 94,
+  "maxFontPx": 265,
+  "maxFontText": "BALLROOM IS FREEDOM",
+  "maxFontVwRatio": 18.4,
+  "textColors": [
+   [
+    "rgb(255, 255, 255)",
+    48
+   ],
+   [
+    "rgb(0, 0, 0)",
+    33
+   ],
+   [
+    "color(srgb 1 1 1 / 0.5)",
+    5
+   ],
+   [
+    "rgb(17, 17, 17)",
+    4
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(0, 0, 0)",
+    387
+   ],
+   [
+    "rgb(255, 255, 255)",
+    137
+   ],
+   [
+    "rgb(17, 17, 17)",
+    128
+   ],
+   [
+    "rgb(147, 137, 197)",
+    21
+   ],
+   [
+    "rgb(36, 206, 234)",
+    21
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "2px",
+    6
+   ],
+   [
+    "50%",
+    4
+   ],
+   [
+    "8px",
+    1
+   ],
+   [
+    "4px",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "1440px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "Function 10 is a platform for Ballroom culture, stories, and events.",
+   "size": 16,
+   "weight": "400",
+   "family": "TWKEverett",
+   "lh": 1.1,
+   "ls": "-0.32px",
+   "transform": "none",
+   "color": "rgb(255, 255, 255)",
+   "top": 33
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Function 10 is a platform for Ballroom culture, stories, and events.",
+    "size": 16,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-0.32px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 33
+   },
+   {
+    "tag": "H2",
+    "text": "ICON KEVIN JZ PRODIGY",
+    "size": 22,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-0.44px",
+    "transform": "uppercase",
+    "color": "rgb(17, 17, 17)",
+    "top": 1402
+   },
+   {
+    "tag": "H2",
+    "text": "WORLD AIDS DAY BALL: MUSEUM",
+    "size": 42,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1,
+    "ls": "-0.84px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 1066
+   },
+   {
+    "tag": "H2",
+    "text": "SECURE THE BAG: A QUICK GUIDE TO BUDGETING AND CREDIT",
+    "size": 22,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-0.44px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 2059
+   },
+   {
+    "tag": "H2",
+    "text": "JAZMINE MIYAKE-MUGLER",
+    "size": 42,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1,
+    "ls": "-0.84px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 1851
+   },
+   {
+    "tag": "H2",
+    "text": "MAYHEM RELEASE PARTY",
+    "size": 42,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1,
+    "ls": "-0.84px",
+    "transform": "uppercase",
+    "color": "rgb(255, 255, 255)",
+    "top": 2383
+   },
+   {
+    "tag": "H2",
+    "text": "BALLROOM IS FREEDOM",
+    "size": 265,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-5.3px",
+    "transform": "uppercase",
+    "color": "rgb(255, 255, 255)",
+    "top": 3527
+   },
+   {
+    "tag": "H2",
+    "text": "ICON RICKY ALLURE",
+    "size": 22,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-0.44px",
+    "transform": "uppercase",
+    "color": "rgb(17, 17, 17)",
+    "top": 4928
+   },
+   {
+    "tag": "H2",
+    "text": "DISCO NOUVEAU",
+    "size": 42,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1,
+    "ls": "-0.84px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 4593
+   },
+   {
+    "tag": "H2",
+    "text": "BALLROOM: 5 THINGS WITH ACE HOTEL",
+    "size": 22,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-0.44px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 5586
+   },
+   {
+    "tag": "H2",
+    "text": "OMI BALENCIAGA",
+    "size": 42,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1,
+    "ls": "-0.84px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 5377
+   },
+   {
+    "tag": "H2",
+    "text": "PLATINUM PRIDE BALL: MOTHER MONSTER",
+    "size": 42,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1,
+    "ls": "-0.84px",
+    "transform": "uppercase",
+    "color": "rgb(255, 255, 255)",
+    "top": 5886
+   },
+   {
+    "tag": "H2",
+    "text": "",
+    "size": 42,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1,
+    "ls": "-0.84px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 435
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 12,
+    "lh": 1.4,
+    "family": "TWKEverett",
+    "color": "rgb(255, 255, 255)",
+    "measure": 454
+   },
+   {
+    "size": 12,
+    "lh": 1.4,
+    "family": "TWKEverett",
+    "color": "rgb(0, 0, 0)",
+    "measure": 278
+   },
+   {
+    "size": 21,
+    "lh": 1.2,
+    "family": "TWKEverett",
+    "color": "rgb(255, 255, 255)",
+    "measure": 512
+   }
+  ],
+  "navLinks": [
+   "FEED",
+   "AUDIO",
+   "EVENTS",
+   "PORTRAITS",
+   "ARTICLES",
+   "SWITCH TO VOICES SWITCH TO VOICES"
+  ],
+  "buttons": [
+   "SWITCH TO VOICES SWITCH TO VOICES",
+   "BROWSE THE FEED",
+   "MANAGE COOKIES"
+  ],
+  "burger": true,
+  "headerPosition": "fixed",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 2,
+   "fixed": 4,
+   "horizontalScroll": false,
+   "themeSwitch": true,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 9,
+   "videos": 2,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 6,
+   "iframes": 0,
+   "images": 12,
+   "imgFormats": {
+    "png": 2,
+    "jpg": 10
+   },
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 1,
+   "gtag": 1
+  },
+  "scripts": [
+   "function10.ca/assets/function10/scripts/vendors.js",
+   "function10.ca/assets/function10/scripts/app.js",
+   "www.googletagmanager.com/gtag/js?id=G-CVSH76DPMW",
+   "function10.ca/assets/function10/scripts/cookie-consent.js"
+  ],
+  "css": {
+   "media": [
+    [
+     "(max-width: 999px)",
+     67
+    ],
+    [
+     "(min-width: 1000px)",
+     51
+    ],
+    [
+     "(prefers-reduced-motion: no-preference)",
+     22
+    ],
+    [
+     "(max-width: 699px)",
+     12
+    ],
+    [
+     "(hover: hover)",
+     9
+    ],
+    [
+     "(prefers-reduced-motion: no-preference) and (hover: hover)",
+     4
+    ],
+    [
+     "(prefers-reduced-motion)",
+     3
+    ],
+    [
+     "(max-width: 499px)",
+     3
+    ],
+    [
+     "(prefers-reduced-motion: reduce)",
+     3
+    ],
+    [
+     "(min-width: 700px)",
+     2
+    ],
+    [
+     "(prefers-reduced-motion: no-preference) and (min-width: 1000px)",
+     2
+    ],
+    [
+     "(min-width: 1200px)",
+     1
+    ],
+    [
+     "(prefers-reduced-motion: reduce) and (hover: hover)",
+     1
+    ],
+    [
+     "(max-width: 1399px)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "0.3s",
+     25
+    ],
+    [
+     "0.25s",
+     4
+    ],
+    [
+     "0.5s",
+     3
+    ],
+    [
+     "0.75s",
+     3
+    ],
+    [
+     "0.15s",
+     1
+    ],
+    [
+     "8s",
+     1
+    ],
+    [
+     "0s",
+     1
+    ],
+    [
+     "2s",
+     1
+    ],
+    [
+     "1.25s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.215, 0.61, 0.355, 1)",
+     27
+    ],
+    [
+     "cubic-bezier(0.38, 0.005, 0.215, 1)",
+     2
+    ],
+    [
+     "linear",
+     1
+    ],
+    [
+     "cubic-bezier(0.23, 1, 0.32, 1)",
+     1
+    ],
+    [
+     "ease",
+     1
+    ],
+    [
+     "cubic-bezier(0.165, 0.84, 0.44, 1)",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "TWKEverett 400 normal",
+    "PPMonument 900 normal",
+    "Ayer 500 italic"
+   ],
+   "keyframes": 3,
+   "clampFontSizes": 2,
+   "vwFontSizes": 4,
+   "sheets": 1,
+   "blocked": 1,
+   "rootVarCount": 70,
+   "rootVarsSample": {
+    "--spacing-3xs-mobile": "6",
+    "--spacing-3xs-desktop": "6",
+    "--spacing-2xs-mobile": "6",
+    "--spacing-2xs-desktop": "10",
+    "--spacing-xs-mobile": "12",
+    "--spacing-xs-desktop": "16",
+    "--spacing-sm-mobile": "22",
+    "--spacing-sm-desktop": "32",
+    "--spacing-md-mobile": "32",
+    "--spacing-md-desktop": "56",
+    "--spacing-lg-mobile": "48",
+    "--spacing-lg-desktop": "96",
+    "--spacing-xl-mobile": "64",
+    "--spacing-xl-desktop": "128",
+    "--spacing-2xl-mobile": "88",
+    "--spacing-2xl-desktop": "176",
+    "--spacing-3xl-mobile": "122",
+    "--spacing-3xl-desktop": "224",
+    "--color": "white",
+    "--color-bg": "#111111",
+    "--grid-columns": "24",
+    "--grid-gutter": "16px",
+    "--grid-margin": "16px",
+    "--container-margin": "var(--grid-margin)",
+    "--container-lg-margin": "var(--grid-margin)",
+    "--container-md-margin": "var(--grid-margin)",
+    "--container-sm-margin": "var(--grid-margin)",
+    "--container-xs-margin": "var(--grid-margin)",
+    "--container-edito-left-margin": "var(--grid-margin)",
+    "--container-edito-right-margin": "var(--grid-margin)",
+    "--_icon-width": "20px",
+    "--font-size-huge": "clamp(55px, 0.1892857143 * calc(100 * var(--vw, 1vw)), 265px)",
+    "--font-size-h1": "clamp(46px, 0.0857142857 * calc(100 * var(--vw, 1vw)), 120px)",
+    "--font-size-h1-wysiwyg": "clamp(38px, 0.0514285714 * calc(100 * var(--vw, 1vw)), 72px)",
+    "--font-size-h2": "clamp(34px, 0.0571428571 * calc(100 * var(--vw, 1vw)), 80px)",
+    "--font-size-h3": "clamp(22px, 0.03 * calc(100 * var(--vw, 1vw)), 42px)",
+    "--font-size-h4": "clamp(20px, 0.0228571429 * calc(100 * var(--vw, 1vw)), 32px)",
+    "--font-size-h1-ext": "clamp(40px, 0.1014285714 * calc(100 * var(--vw, 1vw)), 142px)",
+    "--font-size-h2-ext": "clamp(38px, 0.0514285714 * calc(100 * var(--vw, 1vw)), 72px)",
+    "--font-size-h3-ext": "clamp(30px, 0.0257142857 * calc(100 * var(--vw, 1vw)), 36px)",
+    "--font-size-h1-serif": "clamp(38px, 0.0514285714 * calc(100 * var(--vw, 1vw)), 72px)",
+    "--font-size-h2-serif": "clamp(30px, 0.0257142857 * calc(100 * var(--vw, 1vw)), 36px)",
+    "--font-size-h3-serif": "clamp(26px, 0.0228571429 * calc(100 * var(--vw, 1vw)), 32px)",
+    "--font-size-body-lg": "22px",
+    "--font-size-body": "16px",
+    "--font-size-body-sm": "15px",
+    "--font-size-body-label": "clamp(10px, 0.01 * calc(100 * var(--vw, 1vw)), 12px)",
+    "--font-size-body-label-sm": "10px",
+    "--menu-width": "100%",
+    "--menu-animation-duration": "0.3s",
+    "--dialog-animation-duration": "0.75s",
+    "--dialog-width": "100%",
+    "--color-lightest": "white",
+    "--color-darkest": "black",
+    "--color-soft-black": "#111111",
+    "--color-coral": "#ffe1e1",
+    "--color-violet": "#e1deff",
+    "--color-butter": "#fff4c4",
+    "--color-mint": "#e7fde7",
+    "--color-orange": "#ffb16f",
+    "--color-purple": "#9389c5",
+    "--color-yellow": "#fcd949",
+    "--color-blue": "#24ceea",
+    "--color-red": "#ff2247",
+    "--color-theme-primary": "var(--color)",
+    "--color-theme-secondary": "var(--color-bg)"
+   }
+  },
+  "perf": {
+   "requests": 29,
+   "kb": 2708,
+   "byTypeKB": {
+    "link": 218,
+    "script": 273,
+    "other": 5,
+    "video": 0,
+    "img": 1784,
+    "css": 426
+   },
+   "dcl": 8425,
+   "load": 14244,
+   "ttfb": 7739
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [
+   "AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22",
+   "NotSupportedError: The element has no supported sources."
+  ],
+  "scriptSignatures": {
+   "gsap": 1,
+   "ScrollTrigger": 1,
+   "Lenis": 1,
+   "swup": 1,
+   "SplitText": 1,
+   "IntersectionObserver": 1,
+   "reducedMotion": 1
+  },
+  "scriptsChecked": 3
+ },
+ "mobile": {
+  "title": "FUNCTION",
+  "lang": "en-US",
+  "generator": null,
+  "description": null,
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 7638,
+  "domNodes": 325,
+  "textEls": 80,
+  "fonts": [
+   "TWKEverett 400 normal",
+   "PPMonument 900 normal",
+   "Ayer 500 italic"
+  ],
+  "fontFamilies": [
+   [
+    "TWKEverett",
+    75
+   ],
+   [
+    "monospace",
+    5
+   ]
+  ],
+  "fontSizes": [
+   [
+    "10px",
+    44
+   ],
+   [
+    "34px",
+    10
+   ],
+   [
+    "22px",
+    10
+   ],
+   [
+    "15px",
+    5
+   ],
+   [
+    "16px",
+    4
+   ],
+   [
+    "38px",
+    3
+   ],
+   [
+    "18px",
+    2
+   ],
+   [
+    "56px",
+    2
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    80
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1",
+    45
+   ],
+   [
+    "1.4",
+    15
+   ],
+   [
+    "1.1",
+    9
+   ],
+   [
+    "1.5",
+    6
+   ],
+   [
+    "normal",
+    4
+   ],
+   [
+    "1.2",
+    1
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.02em",
+    78
+   ]
+  ],
+  "uppercaseShare": 94,
+  "maxFontPx": 56,
+  "maxFontText": "BALLROOM IS FREEDOM",
+  "maxFontVwRatio": 14.4,
+  "textColors": [
+   [
+    "rgb(255, 255, 255)",
+    44
+   ],
+   [
+    "rgb(0, 0, 0)",
+    27
+   ],
+   [
+    "color(srgb 1 1 1 / 0.5)",
+    5
+   ],
+   [
+    "rgb(17, 17, 17)",
+    4
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(0, 0, 0)",
+    99
+   ],
+   [
+    "rgb(255, 255, 255)",
+    54
+   ],
+   [
+    "rgb(17, 17, 17)",
+    37
+   ],
+   [
+    "rgb(147, 137, 197)",
+    7
+   ],
+   [
+    "rgb(36, 206, 234)",
+    7
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "2px",
+    6
+   ],
+   [
+    "50%",
+    4
+   ],
+   [
+    "8px",
+    1
+   ],
+   [
+    "4px",
+    1
+   ]
+  ],
+  "maxWidths": [],
+  "h1": {
+   "tag": "H1",
+   "text": "Function 10 is a platform for Ballroom culture, stories, and events.",
+   "size": 16,
+   "weight": "400",
+   "family": "TWKEverett",
+   "lh": 1.1,
+   "ls": "-0.32px",
+   "transform": "none",
+   "color": "rgb(255, 255, 255)",
+   "top": 0
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Function 10 is a platform for Ballroom culture, stories, and events.",
+    "size": 16,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-0.32px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 0
+   },
+   {
+    "tag": "H2",
+    "text": "ICON KEVIN JZ PRODIGY",
+    "size": 18,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-0.36px",
+    "transform": "uppercase",
+    "color": "rgb(17, 17, 17)",
+    "top": 1107
+   },
+   {
+    "tag": "H2",
+    "text": "WORLD AIDS DAY BALL: MUSEUM",
+    "size": 22,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-0.44px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 1742
+   },
+   {
+    "tag": "H2",
+    "text": "SECURE THE BAG: A QUICK GUIDE TO BUDGETING AND CREDIT",
+    "size": 22,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-0.44px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 2367
+   },
+   {
+    "tag": "H2",
+    "text": "JAZMINE MIYAKE-MUGLER",
+    "size": 34,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1,
+    "ls": "-0.68px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 2800
+   },
+   {
+    "tag": "H2",
+    "text": "MAYHEM RELEASE PARTY",
+    "size": 22,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1,
+    "ls": "-0.44px",
+    "transform": "uppercase",
+    "color": "rgb(255, 255, 255)",
+    "top": 3031
+   },
+   {
+    "tag": "H2",
+    "text": "BALLROOM IS FREEDOM",
+    "size": 56,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-1.12px",
+    "transform": "uppercase",
+    "color": "rgb(255, 255, 255)",
+    "top": 3512
+   },
+   {
+    "tag": "H2",
+    "text": "ICON RICKY ALLURE",
+    "size": 18,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-0.36px",
+    "transform": "uppercase",
+    "color": "rgb(17, 17, 17)",
+    "top": 4077
+   },
+   {
+    "tag": "H2",
+    "text": "DISCO NOUVEAU",
+    "size": 22,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-0.44px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 4702
+   },
+   {
+    "tag": "H2",
+    "text": "BALLROOM: 5 THINGS WITH ACE HOTEL",
+    "size": 22,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1.1,
+    "ls": "-0.44px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 5303
+   },
+   {
+    "tag": "H2",
+    "text": "OMI BALENCIAGA",
+    "size": 34,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1,
+    "ls": "-0.68px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 5712
+   },
+   {
+    "tag": "H2",
+    "text": "PLATINUM PRIDE BALL: MOTHER MONSTER",
+    "size": 22,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1,
+    "ls": "-0.44px",
+    "transform": "uppercase",
+    "color": "rgb(255, 255, 255)",
+    "top": 5943
+   },
+   {
+    "tag": "H2",
+    "text": "",
+    "size": 22,
+    "weight": "400",
+    "family": "TWKEverett",
+    "lh": 1,
+    "ls": "-0.44px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 384
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 10,
+    "lh": 1.4,
+    "family": "TWKEverett",
+    "color": "rgb(255, 255, 255)",
+    "measure": 258
+   },
+   {
+    "size": 10,
+    "lh": 1.4,
+    "family": "TWKEverett",
+    "color": "rgb(0, 0, 0)",
+    "measure": 258
+   },
+   {
+    "size": 16,
+    "lh": 1.2,
+    "family": "TWKEverett",
+    "color": "rgb(255, 255, 255)",
+    "measure": 350
+   }
+  ],
+  "navLinks": [],
+  "buttons": [
+   "SWITCH TO VOICES SWITCH TO VOICES",
+   "BROWSE THE FEED",
+   "MANAGE COOKIES"
+  ],
+  "burger": true,
+  "headerPosition": "fixed",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 2,
+   "fixed": 4,
+   "horizontalScroll": false,
+   "themeSwitch": true,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 6,
+   "videos": 2,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 6,
+   "iframes": 0,
+   "images": 12,
+   "imgFormats": {
+    "png": 2,
+    "jpg": 10
+   },
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 1,
+   "gtag": 1
+  },
+  "scripts": [
+   "function10.ca/assets/function10/scripts/vendors.js",
+   "function10.ca/assets/function10/scripts/app.js",
+   "www.googletagmanager.com/gtag/js?id=G-CVSH76DPMW",
+   "function10.ca/assets/function10/scripts/cookie-consent.js"
+  ],
+  "css": {
+   "media": [
+    [
+     "(max-width: 999px)",
+     67
+    ],
+    [
+     "(min-width: 1000px)",
+     51
+    ],
+    [
+     "(prefers-reduced-motion: no-preference)",
+     22
+    ],
+    [
+     "(max-width: 699px)",
+     12
+    ],
+    [
+     "(hover: hover)",
+     9
+    ],
+    [
+     "(prefers-reduced-motion: no-preference) and (hover: hover)",
+     4
+    ],
+    [
+     "(prefers-reduced-motion)",
+     3
+    ],
+    [
+     "(max-width: 499px)",
+     3
+    ],
+    [
+     "(prefers-reduced-motion: reduce)",
+     3
+    ],
+    [
+     "(min-width: 700px)",
+     2
+    ],
+    [
+     "(prefers-reduced-motion: no-preference) and (min-width: 1000px)",
+     2
+    ],
+    [
+     "(min-width: 1200px)",
+     1
+    ],
+    [
+     "(prefers-reduced-motion: reduce) and (hover: hover)",
+     1
+    ],
+    [
+     "(max-width: 1399px)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "0.3s",
+     25
+    ],
+    [
+     "0.25s",
+     4
+    ],
+    [
+     "0.5s",
+     3
+    ],
+    [
+     "0.75s",
+     3
+    ],
+    [
+     "0.15s",
+     1
+    ],
+    [
+     "8s",
+     1
+    ],
+    [
+     "0s",
+     1
+    ],
+    [
+     "2s",
+     1
+    ],
+    [
+     "1.25s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.215, 0.61, 0.355, 1)",
+     27
+    ],
+    [
+     "cubic-bezier(0.38, 0.005, 0.215, 1)",
+     2
+    ],
+    [
+     "linear",
+     1
+    ],
+    [
+     "cubic-bezier(0.23, 1, 0.32, 1)",
+     1
+    ],
+    [
+     "ease",
+     1
+    ],
+    [
+     "cubic-bezier(0.165, 0.84, 0.44, 1)",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "TWKEverett 400 normal",
+    "PPMonument 900 normal",
+    "Ayer 500 italic"
+   ],
+   "keyframes": 3,
+   "clampFontSizes": 2,
+   "vwFontSizes": 4,
+   "sheets": 1,
+   "blocked": 1,
+   "rootVarCount": 70,
+   "rootVarsSample": {
+    "--spacing-3xs-mobile": "6",
+    "--spacing-3xs-desktop": "6",
+    "--spacing-2xs-mobile": "6",
+    "--spacing-2xs-desktop": "10",
+    "--spacing-xs-mobile": "12",
+    "--spacing-xs-desktop": "16",
+    "--spacing-sm-mobile": "22",
+    "--spacing-sm-desktop": "32",
+    "--spacing-md-mobile": "32",
+    "--spacing-md-desktop": "56",
+    "--spacing-lg-mobile": "48",
+    "--spacing-lg-desktop": "96",
+    "--spacing-xl-mobile": "64",
+    "--spacing-xl-desktop": "128",
+    "--spacing-2xl-mobile": "88",
+    "--spacing-2xl-desktop": "176",
+    "--spacing-3xl-mobile": "122",
+    "--spacing-3xl-desktop": "224",
+    "--color": "white",
+    "--color-bg": "#111111",
+    "--grid-columns": "24",
+    "--grid-gutter": "16px",
+    "--grid-margin": "16px",
+    "--container-margin": "var(--grid-margin)",
+    "--container-lg-margin": "var(--grid-margin)",
+    "--container-md-margin": "var(--grid-margin)",
+    "--container-sm-margin": "var(--grid-margin)",
+    "--container-xs-margin": "var(--grid-margin)",
+    "--container-edito-left-margin": "var(--grid-margin)",
+    "--container-edito-right-margin": "var(--grid-margin)",
+    "--_icon-width": "20px",
+    "--font-size-huge": "clamp(55px, 0.1892857143 * calc(100 * var(--vw, 1vw)), 265px)",
+    "--font-size-h1": "clamp(46px, 0.0857142857 * calc(100 * var(--vw, 1vw)), 120px)",
+    "--font-size-h1-wysiwyg": "clamp(38px, 0.0514285714 * calc(100 * var(--vw, 1vw)), 72px)",
+    "--font-size-h2": "clamp(34px, 0.0571428571 * calc(100 * var(--vw, 1vw)), 80px)",
+    "--font-size-h3": "clamp(22px, 0.03 * calc(100 * var(--vw, 1vw)), 42px)",
+    "--font-size-h4": "clamp(20px, 0.0228571429 * calc(100 * var(--vw, 1vw)), 32px)",
+    "--font-size-h1-ext": "clamp(40px, 0.1014285714 * calc(100 * var(--vw, 1vw)), 142px)",
+    "--font-size-h2-ext": "clamp(38px, 0.0514285714 * calc(100 * var(--vw, 1vw)), 72px)",
+    "--font-size-h3-ext": "clamp(30px, 0.0257142857 * calc(100 * var(--vw, 1vw)), 36px)",
+    "--font-size-h1-serif": "clamp(38px, 0.0514285714 * calc(100 * var(--vw, 1vw)), 72px)",
+    "--font-size-h2-serif": "clamp(30px, 0.0257142857 * calc(100 * var(--vw, 1vw)), 36px)",
+    "--font-size-h3-serif": "clamp(26px, 0.0228571429 * calc(100 * var(--vw, 1vw)), 32px)",
+    "--font-size-body-lg": "22px",
+    "--font-size-body": "16px",
+    "--font-size-body-sm": "15px",
+    "--font-size-body-label": "clamp(10px, 0.01 * calc(100 * var(--vw, 1vw)), 12px)",
+    "--font-size-body-label-sm": "10px",
+    "--menu-width": "100%",
+    "--menu-animation-duration": "0.3s",
+    "--dialog-animation-duration": "0.75s",
+    "--dialog-width": "100%",
+    "--color-lightest": "white",
+    "--color-darkest": "black",
+    "--color-soft-black": "#111111",
+    "--color-coral": "#ffe1e1",
+    "--color-violet": "#e1deff",
+    "--color-butter": "#fff4c4",
+    "--color-mint": "#e7fde7",
+    "--color-orange": "#ffb16f",
+    "--color-purple": "#9389c5",
+    "--color-yellow": "#fcd949",
+    "--color-blue": "#24ceea",
+    "--color-red": "#ff2247",
+    "--color-theme-primary": "var(--color)",
+    "--color-theme-secondary": "var(--color-bg)"
+   }
+  },
+  "perf": {
+   "requests": 30,
+   "kb": 2704,
+   "byTypeKB": {
+    "link": 218,
+    "script": 273,
+    "other": 0,
+    "video": 0,
+    "img": 1784,
+    "css": 426
+   },
+   "dcl": 6591,
+   "load": 13363,
+   "ttfb": 5715
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [
+   "AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22",
+   "NotSupportedError: The element has no supported sources.",
+   "NotSupportedError: The element has no supported sources."
+  ]
+ },
+ "seconds": 55
+}

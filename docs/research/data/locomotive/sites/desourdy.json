@@ -1,0 +1,1339 @@
+{
+ "label": "desourdy",
+ "url": "https://constructiondesourdy.com/en",
+ "capturedAt": "2026-09-19T15:26:06.807Z",
+ "desktop": {
+  "title": "Désourdy | Custom home builder",
+  "lang": "en",
+  "generator": "Astro v5.6.1",
+  "description": "We are passionate about creating unique, comfortable and functional homes for our customers. We work hard to deliver a superior building experience that emphasizes collaboration and personalization.",
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 8772,
+  "domNodes": 474,
+  "textEls": 107,
+  "fonts": [
+   "GT America 900 normal",
+   "GT America 500 normal",
+   "GT America 400 normal",
+   "GT America 300 normal"
+  ],
+  "fontFamilies": [
+   [
+    "GT America",
+    107
+   ]
+  ],
+  "fontSizes": [
+   [
+    "42px",
+    35
+   ],
+   [
+    "16px",
+    31
+   ],
+   [
+    "14px",
+    12
+   ],
+   [
+    "32px",
+    8
+   ],
+   [
+    "13px",
+    5
+   ],
+   [
+    "48px",
+    5
+   ],
+   [
+    "12px",
+    4
+   ],
+   [
+    "20px",
+    3
+   ],
+   [
+    "24px",
+    3
+   ],
+   [
+    "10px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "300",
+    52
+   ],
+   [
+    "400",
+    28
+   ],
+   [
+    "900",
+    14
+   ],
+   [
+    "500",
+    10
+   ],
+   [
+    "100",
+    3
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.2",
+    46
+   ],
+   [
+    "1.4",
+    32
+   ],
+   [
+    "1",
+    18
+   ],
+   [
+    "1.5",
+    11
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.011em",
+    35
+   ],
+   [
+    "-0.013em",
+    5
+   ],
+   [
+    "0.107em",
+    4
+   ],
+   [
+    "-0.024em",
+    3
+   ],
+   [
+    "-0.02em",
+    3
+   ]
+  ],
+  "uppercaseShare": 9,
+  "maxFontPx": 48,
+  "maxFontText": "Explore our projects",
+  "maxFontVwRatio": 3.3,
+  "textColors": [
+   [
+    "rgb(20, 20, 21)",
+    85
+   ],
+   [
+    "rgb(241, 236, 232)",
+    16
+   ],
+   [
+    "rgb(255, 255, 255)",
+    6
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(20, 20, 21)",
+    486
+   ],
+   [
+    "rgb(241, 236, 232)",
+    126
+   ],
+   [
+    "rgb(255, 255, 255)",
+    15
+   ],
+   [
+    "rgba(20, 20, 21, 0.1)",
+    0
+   ]
+  ],
+  "bodyBg": "rgb(255, 255, 255)",
+  "radii": [
+   [
+    "6px",
+    17
+   ],
+   [
+    "8px",
+    6
+   ],
+   [
+    "30px",
+    6
+   ],
+   [
+    "4px",
+    3
+   ]
+  ],
+  "maxWidths": [],
+  "h1": {
+   "tag": "H1",
+   "text": "Désourdy Construction",
+   "size": 16,
+   "weight": "400",
+   "family": "GT America",
+   "lh": 1.5,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(20, 20, 21)",
+   "top": 424
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Désourdy Construction",
+    "size": 16,
+    "weight": "400",
+    "family": "GT America",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 424
+   },
+   {
+    "tag": "H2",
+    "text": "Specializing in residential construction, Désourdy creates sustainable homes that combine quality, i",
+    "size": 42,
+    "weight": "300",
+    "family": "GT America",
+    "lh": 1.2,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 1341
+   },
+   {
+    "tag": "H2",
+    "text": "Nos réalisations",
+    "size": 16,
+    "weight": "400",
+    "family": "GT America",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 1934
+   },
+   {
+    "tag": "H3",
+    "text": "Brill 02",
+    "size": 14,
+    "weight": "900",
+    "family": "GT America",
+    "lh": 1.4,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 2380
+   },
+   {
+    "tag": "H3",
+    "text": "MaisonArt 01",
+    "size": 14,
+    "weight": "900",
+    "family": "GT America",
+    "lh": 1.4,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 2232
+   },
+   {
+    "tag": "H2",
+    "text": "Explore our projects",
+    "size": 48,
+    "weight": "900",
+    "family": "GT America",
+    "lh": 1,
+    "ls": "-0.64px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 2676
+   },
+   {
+    "tag": "H2",
+    "text": "The art of building Unique homes",
+    "size": 48,
+    "weight": "900",
+    "family": "GT America",
+    "lh": 1,
+    "ls": "-0.64px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 3124
+   },
+   {
+    "tag": "H2",
+    "text": "Your vision, our mission",
+    "size": 48,
+    "weight": "900",
+    "family": "GT America",
+    "lh": 1,
+    "ls": "-0.64px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 4304
+   },
+   {
+    "tag": "H3",
+    "text": "New construction",
+    "size": 24,
+    "weight": "300",
+    "family": "GT America",
+    "lh": 1.4,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 4297
+   },
+   {
+    "tag": "H3",
+    "text": "Complete renovation",
+    "size": 24,
+    "weight": "300",
+    "family": "GT America",
+    "lh": 1.4,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 4759
+   },
+   {
+    "tag": "H3",
+    "text": "Extension",
+    "size": 24,
+    "weight": "300",
+    "family": "GT America",
+    "lh": 1.4,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 5244
+   },
+   {
+    "tag": "H2",
+    "text": "A history of trust and knowledge",
+    "size": 48,
+    "weight": "900",
+    "family": "GT America",
+    "lh": 1,
+    "ls": "-0.64px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 6189
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 16,
+    "lh": 1.4,
+    "family": "GT America",
+    "color": "rgb(20, 20, 21)",
+    "measure": 453
+   },
+   {
+    "size": 16,
+    "lh": 1.4,
+    "family": "GT America",
+    "color": "rgb(20, 20, 21)",
+    "measure": 315
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "GT America",
+    "color": "rgb(20, 20, 21)",
+    "measure": 335
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "GT America",
+    "color": "rgb(20, 20, 21)",
+    "measure": 260
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "GT America",
+    "color": "rgb(20, 20, 21)",
+    "measure": 260
+   }
+  ],
+  "navLinks": [
+   "Gallery",
+   "Projects",
+   "Services",
+   "About",
+   "Français"
+  ],
+  "buttons": [
+   "Contact",
+   "Close contact window",
+   "Copy phone number",
+   "Copy email address",
+   "Copy postal address",
+   "PLAY",
+   "ABOUT US",
+   "DISCOVER",
+   "GALLERY",
+   "SERVICES",
+   "Cookies preferences"
+  ],
+  "burger": true,
+  "headerPosition": "fixed",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": true,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 3,
+   "fixed": 4,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 19,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 11,
+   "iframes": 0,
+   "images": 14,
+   "imgFormats": {
+    "other": 14
+   },
+   "langSwitch": true,
+   "darkFirstView": false
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": true,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 1,
+   "gtag": 1,
+   "_astro": 11,
+   "storyblok": 1
+  },
+  "scripts": [
+   "www.googletagmanager.com/gtag/js?id=G-2S3HP7VGFG",
+   "www.constructiondesourdy.com/_astro/page.Bkn-iXrJ.js",
+   "app.storyblok.com/f/storyblok-v2-latest.js",
+   "www.constructiondesourdy.com/_astro/SiteHeader.astro_astro_type_script_index_0_lang.CA4e70",
+   "www.constructiondesourdy.com/_astro/ContactModal.astro_astro_type_script_index_0_lang.B2yI",
+   "www.constructiondesourdy.com/_astro/InlineVideo.astro_astro_type_script_index_0_lang.DtCmF",
+   "www.constructiondesourdy.com/_astro/BlockVideo.astro_astro_type_script_index_0_lang.itwtrY",
+   "www.constructiondesourdy.com/_astro/BlockTitle.astro_astro_type_script_index_0_lang.DkQLZZ",
+   "www.constructiondesourdy.com/_astro/RotatingImages.astro_astro_type_script_index_0_lang.BQ",
+   "www.constructiondesourdy.com/_astro/BlockHomeGallery.astro_astro_type_script_index_0_lang.",
+   "www.constructiondesourdy.com/_astro/SiteFooter.astro_astro_type_script_index_0_lang.Cc1yhH",
+   "www.constructiondesourdy.com/_astro/Layout.astro_astro_type_script_index_0_lang.D9wEY__Y.j",
+   "www.constructiondesourdy.com/_astro/Layout.astro_astro_type_script_index_1_lang.DAuA-wcV.j"
+  ],
+  "css": {
+   "media": [
+    [
+     "(max-width: 1023px)",
+     10
+    ],
+    [
+     "(min-width: 1024px)",
+     6
+    ],
+    [
+     "screen and (max-width: 640px)",
+     3
+    ],
+    [
+     "(min-width: 40rem)",
+     2
+    ],
+    [
+     "(min-width: 48rem)",
+     2
+    ],
+    [
+     "(hover: hover)",
+     2
+    ],
+    [
+     "screen and (min-width: 640px)",
+     1
+    ],
+    [
+     "(prefers-reduced-motion)",
+     1
+    ],
+    [
+     "(min-width: 64rem)",
+     1
+    ],
+    [
+     "(min-width: 96rem)",
+     1
+    ],
+    [
+     "not all and (min-width: 1024px)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "0.15s",
+     8
+    ],
+    [
+     "0.25s",
+     7
+    ],
+    [
+     "var(--tw-duration",
+     3
+    ],
+    [
+     "0.3s",
+     2
+    ]
+   ],
+   "easings": [
+    [
+     "ease",
+     6
+    ],
+    [
+     "var(--tw-ease",
+     3
+    ],
+    [
+     "ease-out",
+     1
+    ],
+    [
+     "var(--ease-in-quart)",
+     1
+    ],
+    [
+     "var(--ease-out-quad)",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "GT America 900 normal",
+    "GT America 500 normal",
+    "GT America 400 normal",
+    "GT America 300 normal"
+   ],
+   "keyframes": 0,
+   "clampFontSizes": 4,
+   "vwFontSizes": 5,
+   "sheets": 2,
+   "blocked": 0,
+   "rootVarCount": 112,
+   "rootVarsSample": {
+    "--cc-font-family": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"A",
+    "--cc-modal-border-radius": ".5rem",
+    "--cc-btn-border-radius": ".4rem",
+    "--cc-modal-transition-duration": ".25s",
+    "--cc-link-color": "var(--cc-btn-primary-bg)",
+    "--cc-z-index": "2147480000",
+    "--cc-primary-color": "#2c2f31",
+    "--cc-secondary-color": "#5e6266",
+    "--cc-btn-primary-color": "#fff",
+    "--cc-btn-primary-border-color": "var(--cc-btn-primary-bg)",
+    "--cc-btn-primary-hover-color": "#fff",
+    "--cc-btn-primary-hover-border-color": "var(--cc-btn-primary-hover-bg)",
+    "--cc-btn-secondary-color": "var(--cc-primary-color)",
+    "--cc-btn-secondary-border-color": "var(--cc-btn-secondary-bg)",
+    "--cc-btn-secondary-hover-color": "#000",
+    "--cc-btn-secondary-hover-border-color": "#d4dae0",
+    "--cc-separator-border-color": "#f0f4f7",
+    "--cc-toggle-enabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-disabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-readonly-knob-icon-color": "var(--cc-toggle-readonly-bg)",
+    "--cc-footer-color": "var(--cc-secondary-color)",
+    "--cc-footer-border-color": "#e4eaed",
+    "--cc-pm-toggle-border-radius": "4em",
+    "--font-sans": "\"GT America\",sans-serif",
+    "--font-mono": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New",
+    "--color-red-400": "oklch(70.4% .191 22.216)",
+    "--color-black": "#141415",
+    "--color-white": "#fff",
+    "--spacing": "10px",
+    "--font-weight-light": "300",
+    "--font-weight-medium": "500",
+    "--radius-sm": ".25rem",
+    "--radius-md": ".375rem",
+    "--radius-lg": ".5rem",
+    "--default-transition-duration": ".15s",
+    "--default-font-family": "var(--font-sans)",
+    "--default-mono-font-family": "var(--font-mono)",
+    "--spacing-unit-md": "var(--unit-xl)",
+    "--color-slate": "#141415",
+    "--color-snowdrift": "#f1ece8",
+    "--color-powder": "#c9d2d6",
+    "--color-blue": "#8099a4",
+    "--z-index-header-backdrop": "99",
+    "--z-index-header-menu": "101",
+    "--z-index-header-contact": "101",
+    "--ease-out-quad": "cubic-bezier(.25,.46,.45,.94)",
+    "--ease-out-expo": "cubic-bezier(.19,1,.22,1)",
+    "--ease-out-cubic": "cubic-bezier(.33,1,.68,1)",
+    "--ease-in-quart": "cubic-bezier(.86,0,.07,1)",
+    "--grid-size-s": "calc(100vw - 16px)",
+    "--grid-edge-s": "8px",
+    "--grid-gutter-s": "20px",
+    "--grid-columns-s": "4",
+    "--grid-size-xl": "calc(100vw - 40px)",
+    "--grid-edge-xl": "20px",
+    "--grid-gutter-xl": "20px",
+    "--grid-columns-xl": "12",
+    "--icon-width-logo": "50px",
+    "--button-width": "auto",
+    "--button-radius": "30px",
+    "--button-font-size": "var(--text-button)",
+    "--button-gap": "25px",
+    "--button-color": "var(--color-white)",
+    "--button-stroke-color": "transparent",
+    "--button-color-hover": "var(--color-white)",
+    "--button-color-active": "var(--color-black)"
+   }
+  },
+  "perf": {
+   "requests": 52,
+   "kb": 1377,
+   "byTypeKB": {
+    "link": 300,
+    "script": 1081,
+    "img": 0,
+    "video": 0,
+    "xmlhttprequest": 0
+   },
+   "dcl": 20364,
+   "load": 20541,
+   "ttfb": 19345
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [
+   "AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22"
+  ],
+  "scriptSignatures": {
+   "astro": 8,
+   "SplitText": 2
+  },
+  "scriptsChecked": 10
+ },
+ "mobile": {
+  "title": "Désourdy | Custom home builder",
+  "lang": "en",
+  "generator": "Astro v5.6.1",
+  "description": "We are passionate about creating unique, comfortable and functional homes for our customers. We work hard to deliver a superior building experience that emphasizes collaboration and personalization.",
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 6457,
+  "domNodes": 479,
+  "textEls": 109,
+  "fonts": [
+   "GT America 900 normal",
+   "GT America 500 normal",
+   "GT America 400 normal",
+   "GT America 300 normal"
+  ],
+  "fontFamilies": [
+   [
+    "GT America",
+    109
+   ]
+  ],
+  "fontSizes": [
+   [
+    "28px",
+    39
+   ],
+   [
+    "13px",
+    17
+   ],
+   [
+    "16px",
+    13
+   ],
+   [
+    "12px",
+    12
+   ],
+   [
+    "25px",
+    8
+   ],
+   [
+    "40px",
+    5
+   ],
+   [
+    "10px",
+    5
+   ],
+   [
+    "11px",
+    5
+   ],
+   [
+    "20px",
+    3
+   ],
+   [
+    "15px",
+    2
+   ]
+  ],
+  "weights": [
+   [
+    "300",
+    48
+   ],
+   [
+    "400",
+    35
+   ],
+   [
+    "900",
+    13
+   ],
+   [
+    "500",
+    10
+   ],
+   [
+    "100",
+    3
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.2",
+    42
+   ],
+   [
+    "1.4",
+    32
+   ],
+   [
+    "1",
+    17
+   ],
+   [
+    "1.5",
+    13
+   ],
+   [
+    "1.1",
+    5
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.017em",
+    35
+   ],
+   [
+    "-0.024em",
+    8
+   ],
+   [
+    "0.126em",
+    4
+   ],
+   [
+    "-0.023em",
+    4
+   ],
+   [
+    "-0.029em",
+    3
+   ]
+  ],
+  "uppercaseShare": 9,
+  "maxFontPx": 40,
+  "maxFontText": "Gallery",
+  "maxFontVwRatio": 10.3,
+  "textColors": [
+   [
+    "rgb(20, 20, 21)",
+    87
+   ],
+   [
+    "rgb(241, 236, 232)",
+    16
+   ],
+   [
+    "rgb(255, 255, 255)",
+    6
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(20, 20, 21)",
+    134
+   ],
+   [
+    "rgb(241, 236, 232)",
+    36
+   ],
+   [
+    "rgb(255, 255, 255)",
+    22
+   ],
+   [
+    "rgba(20, 20, 21, 0.1)",
+    0
+   ]
+  ],
+  "bodyBg": "rgb(255, 255, 255)",
+  "radii": [
+   [
+    "6px",
+    17
+   ],
+   [
+    "8px",
+    6
+   ],
+   [
+    "30px",
+    6
+   ],
+   [
+    "4px",
+    3
+   ],
+   [
+    "16px",
+    1
+   ]
+  ],
+  "maxWidths": [],
+  "h1": {
+   "tag": "H1",
+   "text": "Désourdy Construction",
+   "size": 16,
+   "weight": "400",
+   "family": "GT America",
+   "lh": 1.5,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(20, 20, 21)",
+   "top": 357
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Désourdy Construction",
+    "size": 16,
+    "weight": "400",
+    "family": "GT America",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 357
+   },
+   {
+    "tag": "H2",
+    "text": "Specializing in residential construction, Désourdy creates sustainable homes that combine quality, i",
+    "size": 28,
+    "weight": "300",
+    "family": "GT America",
+    "lh": 1.2,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 622
+   },
+   {
+    "tag": "H2",
+    "text": "Nos réalisations",
+    "size": 16,
+    "weight": "400",
+    "family": "GT America",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 1142
+   },
+   {
+    "tag": "H3",
+    "text": "Brill 02",
+    "size": 12,
+    "weight": "900",
+    "family": "GT America",
+    "lh": 1.4,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 1390
+   },
+   {
+    "tag": "H3",
+    "text": "MaisonArt 01",
+    "size": 12,
+    "weight": "900",
+    "family": "GT America",
+    "lh": 1.4,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 1792
+   },
+   {
+    "tag": "H2",
+    "text": "Explore our projects",
+    "size": 28,
+    "weight": "900",
+    "family": "GT America",
+    "lh": 1,
+    "ls": "-0.64px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 1963
+   },
+   {
+    "tag": "H2",
+    "text": "The art of building Unique homes",
+    "size": 28,
+    "weight": "900",
+    "family": "GT America",
+    "lh": 1,
+    "ls": "-0.64px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 2294
+   },
+   {
+    "tag": "H2",
+    "text": "Your vision, our mission",
+    "size": 28,
+    "weight": "900",
+    "family": "GT America",
+    "lh": 1,
+    "ls": "-0.64px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 3338
+   },
+   {
+    "tag": "H3",
+    "text": "New construction",
+    "size": 20,
+    "weight": "300",
+    "family": "GT America",
+    "lh": 1.4,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 3912
+   },
+   {
+    "tag": "H3",
+    "text": "Complete renovation",
+    "size": 20,
+    "weight": "300",
+    "family": "GT America",
+    "lh": 1.4,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 4234
+   },
+   {
+    "tag": "H3",
+    "text": "Extension",
+    "size": 20,
+    "weight": "300",
+    "family": "GT America",
+    "lh": 1.4,
+    "ls": "-0.48px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 4557
+   },
+   {
+    "tag": "H2",
+    "text": "A history of trust and knowledge",
+    "size": 28,
+    "weight": "900",
+    "family": "GT America",
+    "lh": 1,
+    "ls": "-0.64px",
+    "transform": "none",
+    "color": "rgb(20, 20, 21)",
+    "top": 4946
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 13,
+    "lh": 1.4,
+    "family": "GT America",
+    "color": "rgb(20, 20, 21)",
+    "measure": 320
+   },
+   {
+    "size": 13,
+    "lh": 1.4,
+    "family": "GT America",
+    "color": "rgb(20, 20, 21)",
+    "measure": 274
+   },
+   {
+    "size": 16,
+    "lh": 1.5,
+    "family": "GT America",
+    "color": "rgb(20, 20, 21)",
+    "measure": 177
+   },
+   {
+    "size": 13,
+    "lh": 1.5,
+    "family": "GT America",
+    "color": "rgb(20, 20, 21)",
+    "measure": 340
+   },
+   {
+    "size": 13,
+    "lh": 1.5,
+    "family": "GT America",
+    "color": "rgb(20, 20, 21)",
+    "measure": 340
+   }
+  ],
+  "navLinks": [
+   "Gallery",
+   "Projects",
+   "Services",
+   "About",
+   "Français"
+  ],
+  "buttons": [
+   "Close menu",
+   "Contact",
+   "Open menu",
+   "Close contact window",
+   "Copy phone number",
+   "Copy email address",
+   "Copy postal address",
+   "PLAY",
+   "ABOUT US",
+   "DISCOVER",
+   "GALLERY",
+   "SERVICES",
+   "Cookies preferences"
+  ],
+  "burger": true,
+  "headerPosition": "fixed",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": true,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 0,
+   "fixed": 5,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 19,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 11,
+   "iframes": 0,
+   "images": 14,
+   "imgFormats": {
+    "other": 14
+   },
+   "langSwitch": true,
+   "darkFirstView": false
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": true,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 1,
+   "gtag": 1,
+   "_astro": 11,
+   "storyblok": 1
+  },
+  "scripts": [
+   "www.googletagmanager.com/gtag/js?id=G-2S3HP7VGFG",
+   "www.constructiondesourdy.com/_astro/page.Bkn-iXrJ.js",
+   "app.storyblok.com/f/storyblok-v2-latest.js",
+   "www.constructiondesourdy.com/_astro/SiteHeader.astro_astro_type_script_index_0_lang.CA4e70",
+   "www.constructiondesourdy.com/_astro/ContactModal.astro_astro_type_script_index_0_lang.B2yI",
+   "www.constructiondesourdy.com/_astro/InlineVideo.astro_astro_type_script_index_0_lang.DtCmF",
+   "www.constructiondesourdy.com/_astro/BlockVideo.astro_astro_type_script_index_0_lang.itwtrY",
+   "www.constructiondesourdy.com/_astro/BlockTitle.astro_astro_type_script_index_0_lang.DkQLZZ",
+   "www.constructiondesourdy.com/_astro/RotatingImages.astro_astro_type_script_index_0_lang.BQ",
+   "www.constructiondesourdy.com/_astro/BlockHomeGallery.astro_astro_type_script_index_0_lang.",
+   "www.constructiondesourdy.com/_astro/SiteFooter.astro_astro_type_script_index_0_lang.Cc1yhH",
+   "www.constructiondesourdy.com/_astro/Layout.astro_astro_type_script_index_0_lang.D9wEY__Y.j",
+   "www.constructiondesourdy.com/_astro/Layout.astro_astro_type_script_index_1_lang.DAuA-wcV.j"
+  ],
+  "css": {
+   "media": [
+    [
+     "(max-width: 1023px)",
+     10
+    ],
+    [
+     "(min-width: 1024px)",
+     6
+    ],
+    [
+     "screen and (max-width: 640px)",
+     3
+    ],
+    [
+     "(min-width: 40rem)",
+     2
+    ],
+    [
+     "(min-width: 48rem)",
+     2
+    ],
+    [
+     "(hover: hover)",
+     2
+    ],
+    [
+     "screen and (min-width: 640px)",
+     1
+    ],
+    [
+     "(prefers-reduced-motion)",
+     1
+    ],
+    [
+     "(min-width: 64rem)",
+     1
+    ],
+    [
+     "(min-width: 96rem)",
+     1
+    ],
+    [
+     "not all and (min-width: 1024px)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "0.15s",
+     8
+    ],
+    [
+     "0.25s",
+     7
+    ],
+    [
+     "var(--tw-duration",
+     3
+    ],
+    [
+     "0.3s",
+     2
+    ]
+   ],
+   "easings": [
+    [
+     "ease",
+     6
+    ],
+    [
+     "var(--tw-ease",
+     3
+    ],
+    [
+     "ease-out",
+     1
+    ],
+    [
+     "var(--ease-in-quart)",
+     1
+    ],
+    [
+     "var(--ease-out-quad)",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "GT America 900 normal",
+    "GT America 500 normal",
+    "GT America 400 normal",
+    "GT America 300 normal"
+   ],
+   "keyframes": 0,
+   "clampFontSizes": 4,
+   "vwFontSizes": 5,
+   "sheets": 2,
+   "blocked": 0,
+   "rootVarCount": 112,
+   "rootVarsSample": {
+    "--cc-font-family": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"A",
+    "--cc-modal-border-radius": ".5rem",
+    "--cc-btn-border-radius": ".4rem",
+    "--cc-modal-transition-duration": ".25s",
+    "--cc-link-color": "var(--cc-btn-primary-bg)",
+    "--cc-z-index": "2147480000",
+    "--cc-primary-color": "#2c2f31",
+    "--cc-secondary-color": "#5e6266",
+    "--cc-btn-primary-color": "#fff",
+    "--cc-btn-primary-border-color": "var(--cc-btn-primary-bg)",
+    "--cc-btn-primary-hover-color": "#fff",
+    "--cc-btn-primary-hover-border-color": "var(--cc-btn-primary-hover-bg)",
+    "--cc-btn-secondary-color": "var(--cc-primary-color)",
+    "--cc-btn-secondary-border-color": "var(--cc-btn-secondary-bg)",
+    "--cc-btn-secondary-hover-color": "#000",
+    "--cc-btn-secondary-hover-border-color": "#d4dae0",
+    "--cc-separator-border-color": "#f0f4f7",
+    "--cc-toggle-enabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-disabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-readonly-knob-icon-color": "var(--cc-toggle-readonly-bg)",
+    "--cc-footer-color": "var(--cc-secondary-color)",
+    "--cc-footer-border-color": "#e4eaed",
+    "--cc-pm-toggle-border-radius": "4em",
+    "--font-sans": "\"GT America\",sans-serif",
+    "--font-mono": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New",
+    "--color-red-400": "oklch(70.4% .191 22.216)",
+    "--color-black": "#141415",
+    "--color-white": "#fff",
+    "--spacing": "10px",
+    "--font-weight-light": "300",
+    "--font-weight-medium": "500",
+    "--radius-sm": ".25rem",
+    "--radius-md": ".375rem",
+    "--radius-lg": ".5rem",
+    "--default-transition-duration": ".15s",
+    "--default-font-family": "var(--font-sans)",
+    "--default-mono-font-family": "var(--font-mono)",
+    "--spacing-unit-md": "var(--unit-xl)",
+    "--color-slate": "#141415",
+    "--color-snowdrift": "#f1ece8",
+    "--color-powder": "#c9d2d6",
+    "--color-blue": "#8099a4",
+    "--z-index-header-backdrop": "99",
+    "--z-index-header-menu": "101",
+    "--z-index-header-contact": "101",
+    "--ease-out-quad": "cubic-bezier(.25,.46,.45,.94)",
+    "--ease-out-expo": "cubic-bezier(.19,1,.22,1)",
+    "--ease-out-cubic": "cubic-bezier(.33,1,.68,1)",
+    "--ease-in-quart": "cubic-bezier(.86,0,.07,1)",
+    "--grid-size-s": "calc(100vw - 16px)",
+    "--grid-edge-s": "8px",
+    "--grid-gutter-s": "20px",
+    "--grid-columns-s": "4",
+    "--grid-size-xl": "calc(100vw - 40px)",
+    "--grid-edge-xl": "20px",
+    "--grid-gutter-xl": "20px",
+    "--grid-columns-xl": "12",
+    "--icon-width-logo": "50px",
+    "--button-width": "auto",
+    "--button-radius": "30px",
+    "--button-font-size": "var(--text-button)",
+    "--button-gap": "25px",
+    "--button-color": "var(--color-white)",
+    "--button-stroke-color": "transparent",
+    "--button-color-hover": "var(--color-white)",
+    "--button-color-active": "var(--color-black)"
+   }
+  },
+  "perf": {
+   "requests": 52,
+   "kb": 1377,
+   "byTypeKB": {
+    "link": 300,
+    "script": 1081,
+    "img": 0,
+    "video": 0,
+    "xmlhttprequest": 0
+   },
+   "dcl": 12373,
+   "load": 12586,
+   "ttfb": 11530
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [
+   "AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22"
+  ]
+ },
+ "seconds": 68
+}

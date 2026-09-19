@@ -1,0 +1,1550 @@
+{
+ "label": "wolverine",
+ "url": "https://wolverineworldwide.com",
+ "capturedAt": "2026-09-19T15:19:37.537Z",
+ "desktop": {
+  "title": "Home | Wolverine Worldwide",
+  "lang": "en",
+  "generator": null,
+  "description": "The story of a company that was founded on the simple desire to create good products for good people, whose own footprint can be found in approximately 200 countries and territories throughout the world.",
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 7954,
+  "domNodes": 894,
+  "textEls": 98,
+  "fonts": [
+   "ABCDiatype 400 normal",
+   "ABCDiatype 700 normal",
+   "ABCDiatype-Mono 400 700 normal"
+  ],
+  "fontFamilies": [
+   [
+    "ABCDiatype",
+    78
+   ],
+   [
+    "ABCDiatype-Mono",
+    20
+   ]
+  ],
+  "fontSizes": [
+   [
+    "15px",
+    26
+   ],
+   [
+    "11px",
+    20
+   ],
+   [
+    "16px",
+    12
+   ],
+   [
+    "19px",
+    12
+   ],
+   [
+    "33px",
+    11
+   ],
+   [
+    "128px",
+    11
+   ],
+   [
+    "168px",
+    3
+   ],
+   [
+    "24px",
+    2
+   ],
+   [
+    "57px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    70
+   ],
+   [
+    "700",
+    28
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.2",
+    38
+   ],
+   [
+    "1.4",
+    20
+   ],
+   [
+    "0.79",
+    14
+   ],
+   [
+    "1",
+    13
+   ],
+   [
+    "1.5",
+    12
+   ],
+   [
+    "0.9",
+    1
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.02em",
+    38
+   ],
+   [
+    "-0.05em",
+    14
+   ],
+   [
+    "-0.03em",
+    13
+   ],
+   [
+    "-0.04em",
+    1
+   ]
+  ],
+  "uppercaseShare": 20,
+  "maxFontPx": 168,
+  "maxFontText": "Make.",
+  "maxFontVwRatio": 11.7,
+  "textColors": [
+   [
+    "rgb(255, 255, 255)",
+    47
+   ],
+   [
+    "rgb(0, 0, 0)",
+    31
+   ],
+   [
+    "rgb(117, 117, 117)",
+    10
+   ],
+   [
+    "rgb(1, 1, 1)",
+    9
+   ],
+   [
+    "rgb(157, 157, 157)",
+    1
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(1, 1, 1)",
+    415
+   ],
+   [
+    "oklab(0.0672042 0.00000306219 0.00000134483 / 0.2)",
+    175
+   ],
+   [
+    "rgb(255, 255, 255)",
+    40
+   ],
+   [
+    "color(srgb 0 0 0 / 0.5)",
+    14
+   ],
+   [
+    "oklab(0.0672042 0.00000306219 0.00000134483 / 0.1)",
+    8
+   ],
+   [
+    "rgba(0, 0, 0, 0.8)",
+    5
+   ],
+   [
+    "rgba(255, 255, 255, 0.1)",
+    5
+   ],
+   [
+    "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+    5
+   ],
+   [
+    "rgba(0, 0, 0, 0.1)",
+    3
+   ],
+   [
+    "oklab(0 0 0 / 0.1)",
+    0
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "12px",
+    7
+   ],
+   [
+    "10px",
+    3
+   ],
+   [
+    "20px",
+    2
+   ],
+   [
+    "16px",
+    2
+   ]
+  ],
+  "maxWidths": [],
+  "h1": {
+   "tag": "H1",
+   "text": "Make. Every Day. Better.",
+   "size": 16,
+   "weight": "400",
+   "family": "ABCDiatype",
+   "lh": 1.5,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(255, 255, 255)",
+   "top": 462
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Make. Every Day. Better.",
+    "size": 16,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 462
+   },
+   {
+    "tag": "H2",
+    "text": "A portfolio built for every step.",
+    "size": 128,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 0.79,
+    "ls": "-6.4px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 1953
+   },
+   {
+    "tag": "H2",
+    "text": "2025 Annual Report",
+    "size": 57,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 0.9,
+    "ls": "-2.28px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 2736
+   },
+   {
+    "tag": "H2",
+    "text": "Many brands, one shared culture, limitless innovation.",
+    "size": 33,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-0.99px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 3528
+   },
+   {
+    "tag": "H2",
+    "text": "Market Snapshot",
+    "size": 33,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-0.99px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 3983
+   },
+   {
+    "tag": "H3",
+    "text": "Wolverine World Wide, Inc. (WWW)",
+    "size": 15,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.3px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 3983
+   },
+   {
+    "tag": "H2",
+    "text": "Latest News",
+    "size": 33,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-0.99px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4626
+   },
+   {
+    "tag": "H3",
+    "text": "96% of employees said they feel welcomed when they join the Company. 95% say they care about their c",
+    "size": 19,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.38px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 5081
+   },
+   {
+    "tag": "H3",
+    "text": "Footwear News' June 2026 Milestone Issue explores Merrell's 45th anniversary and how the brand conti",
+    "size": 19,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.38px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 5066
+   },
+   {
+    "tag": "H3",
+    "text": "Saucony's Endorphin Pro 5 wins \"Best Racing Shoe\" and Endorphin Azura wins \"Best Training Shoe\" by R",
+    "size": 19,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.38px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 5066
+   },
+   {
+    "tag": "H3",
+    "text": "The MUSE Creative Awards is a leading international creative awards program recognizing excellence i",
+    "size": 19,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.38px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 5081
+   },
+   {
+    "tag": "H3",
+    "text": "The daily running Azura shoe returns to Saucony's Endorphin collection. Lighweight, intense grip, an",
+    "size": 19,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.38px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 5066
+   },
+   {
+    "tag": "H3",
+    "text": "The brand's latest trail runner that grips, flexes, and cushions so nothing breaks your flow.",
+    "size": 19,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.38px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 5066
+   },
+   {
+    "tag": "H3",
+    "text": "The iconic work boot brand joins season two of Paramount+'s \"Landman\" to celebrate the grit, innovat",
+    "size": 19,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.38px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 5066
+   },
+   {
+    "tag": "H3",
+    "text": "WWW was awarded Company of the Year for its \"new, more-focused brand-building model\" at the 2025 Foo",
+    "size": 19,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.38px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 5066
+   },
+   {
+    "tag": "H2",
+    "text": "Creating Your Future With Us",
+    "size": 128,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 0.79,
+    "ls": "-6.4px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 5455
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 33,
+    "lh": 1,
+    "family": "ABCDiatype",
+    "color": "rgb(0, 0, 0)",
+    "measure": 435
+   },
+   {
+    "size": 15,
+    "lh": 1.2,
+    "family": "ABCDiatype",
+    "color": "rgb(255, 255, 255)",
+    "measure": 232
+   },
+   {
+    "size": 33,
+    "lh": 1,
+    "family": "ABCDiatype",
+    "color": "rgb(0, 0, 0)",
+    "measure": 548
+   },
+   {
+    "size": 19,
+    "lh": 1.2,
+    "family": "ABCDiatype",
+    "color": "rgb(255, 255, 255)",
+    "measure": 328
+   },
+   {
+    "size": 15,
+    "lh": 1.2,
+    "family": "ABCDiatype",
+    "color": "rgb(255, 255, 255)",
+    "measure": 248
+   }
+  ],
+  "navLinks": [
+   "Home",
+   "About",
+   "Brands",
+   "Careers",
+   "Investors"
+  ],
+  "buttons": [
+   "Responsibility",
+   "→ Learn More About Us →",
+   "→ Explore Our Brands →",
+   "Explore Career Opportunities",
+   "Investor Relations",
+   "View All",
+   "Prev.",
+   "Next",
+   "Work at Wolverine",
+   "MANAGE COOKIES"
+  ],
+  "burger": true,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": true,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": false,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 1,
+   "fixed": 2,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 11,
+   "videos": 1,
+   "autoplayVideos": 1,
+   "canvases": 0,
+   "inlineSvg": 42,
+   "iframes": 0,
+   "images": 77,
+   "imgFormats": {
+    "webp": 77
+   },
+   "langSwitch": true,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 1,
+   "gtm": 1
+  },
+  "scripts": [
+   "www.googletagmanager.com/gtm.js?id=GTM-NMPZT8PK",
+   "wolverineworldwide.com/dist/main-DEWcZEWU.js",
+   "wolverineworldwide.com/dist/InlineVideo-VxD0xbSK.js",
+   "wolverineworldwide.com/dist/HeroHome-CZIa6_lW.js",
+   "wolverineworldwide.com/dist/Particles-0BM77DBr.js",
+   "wolverineworldwide.com/dist/StandoutImageGalaxy-B2el79Mz.js",
+   "wolverineworldwide.com/dist/Carousel-BQ8YF4PF.js"
+  ],
+  "css": {
+   "media": [
+    [
+     "not all and (min-width: 700px)",
+     57
+    ],
+    [
+     "(hover: hover)",
+     31
+    ],
+    [
+     "(min-width: 700px)",
+     23
+    ],
+    [
+     "(min-width: 1000px)",
+     17
+    ],
+    [
+     "not all and (min-width: 1000px)",
+     16
+    ],
+    [
+     "(min-width: 1200px)",
+     7
+    ],
+    [
+     "(min-width: 1400px)",
+     7
+    ],
+    [
+     "(min-width: 340px)",
+     6
+    ],
+    [
+     "(min-width: 500px)",
+     6
+    ],
+    [
+     "(min-width: 1600px)",
+     6
+    ],
+    [
+     "(min-width: 1800px)",
+     6
+    ],
+    [
+     "(min-width: 2000px)",
+     6
+    ],
+    [
+     "(min-width: 2400px)",
+     6
+    ],
+    [
+     "screen and (max-width: 640px)",
+     2
+    ]
+   ],
+   "durations": [
+    [
+     "0.15s",
+     8
+    ],
+    [
+     "var(--tw-duration",
+     7
+    ],
+    [
+     "0.25s",
+     5
+    ],
+    [
+     "var(--transition-duration)",
+     2
+    ],
+    [
+     "var(--transition-duration-slow)",
+     2
+    ],
+    [
+     "var(--header-transition-duration)",
+     1
+    ],
+    [
+     "calc(var(--mobile-menu-transition-duration)*.5)",
+     1
+    ],
+    [
+     "var(--mobile-menu-transition-duration)",
+     1
+    ],
+    [
+     "var(--transition-duration-fast)",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "var(--tw-ease",
+     7
+    ],
+    [
+     "ease",
+     6
+    ],
+    [
+     "var(--ease-sine-out)",
+     2
+    ],
+    [
+     "var(--ease-expo-out)",
+     2
+    ],
+    [
+     "var(--mobile-menu-transition-ease)",
+     1
+    ],
+    [
+     "var(--ease)",
+     1
+    ],
+    [
+     "var(--ease-power2-out)",
+     1
+    ],
+    [
+     "var(--ease-power3-out)",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "ABCDiatype 400 normal",
+    "ABCDiatype 700 normal",
+    "ABCDiatype-Mono 400 700 normal"
+   ],
+   "keyframes": 0,
+   "clampFontSizes": 0,
+   "vwFontSizes": 0,
+   "sheets": 2,
+   "blocked": 0,
+   "rootVarCount": 154,
+   "rootVarsSample": {
+    "--cc-font-family": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"A",
+    "--cc-modal-border-radius": ".5rem",
+    "--cc-btn-border-radius": ".4rem",
+    "--cc-modal-transition-duration": ".25s",
+    "--cc-link-color": "var(--cc-btn-primary-bg)",
+    "--cc-z-index": "2147483647",
+    "--cc-primary-color": "#2c2f31",
+    "--cc-secondary-color": "#5e6266",
+    "--cc-btn-primary-color": "#fff",
+    "--cc-btn-primary-border-color": "var(--cc-btn-primary-bg)",
+    "--cc-btn-primary-hover-color": "#fff",
+    "--cc-btn-primary-hover-border-color": "var(--cc-btn-primary-hover-bg)",
+    "--cc-btn-secondary-color": "var(--cc-primary-color)",
+    "--cc-btn-secondary-border-color": "var(--cc-btn-secondary-bg)",
+    "--cc-btn-secondary-hover-color": "#000",
+    "--cc-btn-secondary-hover-border-color": "#d4dae0",
+    "--cc-separator-border-color": "#f0f4f7",
+    "--cc-toggle-enabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-disabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-readonly-knob-icon-color": "var(--cc-toggle-readonly-bg)",
+    "--cc-footer-color": "var(--cc-secondary-color)",
+    "--cc-footer-border-color": "#e4eaed",
+    "--cc-pm-toggle-border-radius": "4em",
+    "--font-sans": "\"ABCDiatype\",sans-serif",
+    "--font-mono": "\"ABCDiatype-Mono\",monospace",
+    "--color-black": "#010101",
+    "--color-white": "#fff",
+    "--spacing": ".25rem",
+    "--font-weight-bold": "700",
+    "--radius-xs": "6px",
+    "--radius-sm": "8px",
+    "--radius-md": "10px",
+    "--radius-lg": "12px",
+    "--radius-xl": "16px",
+    "--radius-2xl": "20px",
+    "--default-transition-duration": ".15s",
+    "--default-font-family": "var(--font-sans)",
+    "--default-mono-font-family": "var(--font-mono)",
+    "--color-gray-800": "#4d4d4d",
+    "--color-gray-600": "#757575",
+    "--color-gray-500": "#737373",
+    "--color-gray-400": "#9d9d9d",
+    "--color-gray-200": "#ccc",
+    "--spacing-unit-sm": "var(--unit-sm)",
+    "--spacing-unit-md": "var(--unit-md)",
+    "--spacing-unit-lg": "var(--unit-lg)",
+    "--spacing-gutter": "var(--grid-gutter)",
+    "--spacing-fluid-2xs": "clamp(.375rem, .3315rem + .2174vw, .5rem)",
+    "--spacing-fluid-xs": "clamp(.5rem, .4565rem + .2174vw, .625rem)",
+    "--spacing-fluid-sm": "clamp(1rem, .8261rem + .8696vw, 1.5rem)",
+    "--spacing-fluid-md": "clamp(1.5rem, 1.3261rem + .8696vw, 2rem)",
+    "--spacing-fluid-lg": "clamp(2rem, 1.8261rem + .8696vw, 2.5rem)",
+    "--spacing-fluid-xl": "clamp(2.5rem, 2.1522rem + 1.7391vw, 3.5rem)",
+    "--spacing-fluid-2xl": "clamp(3.5rem, 2.7609rem + 3.6957vw, 5.625rem)",
+    "--spacing-fluid-3xl": "clamp(5.625rem, 4.3207rem + 6.5217vw, 9.375rem)",
+    "--spacing-fluid-4xl": "clamp(9.375rem, 8.288rem + 5.4348vw, 12.5rem)",
+    "--radius-2xs": "4px",
+    "--transition-duration-fast": ".2s",
+    "--transition-duration": ".4s",
+    "--transition-duration-slow": ".6s",
+    "--transition-duration-slower": ".8s",
+    "--transition-duration-slowest": "1s",
+    "--ease-power2-out": "cubic-bezier(.215,.61,.355,1)",
+    "--ease-power3-out": "cubic-bezier(.165,.84,.44,1)",
+    "--ease-power4-out": "cubic-bezier(.23,1,.32,1)",
+    "--ease-expo-out": "cubic-bezier(.19,1,.22,1)",
+    "--ease-sine-out": "cubic-bezier(.39,.575,.565,1)",
+    "--ease": "var(--ease-power2-out)",
+    "--z-index-highest": "2147480000",
+    "--z-index-modal": "700",
+    "--z-index-menu": "200",
+    "--z-index-header": "50",
+    "--z-index-anchors-menu": "40",
+    "--z-index": "0",
+    "--z-index-above": "1",
+    "--z-index-below": "-1",
+    "--icon-width-logo": "20px",
+    "--icon-width-logotype": "252px",
+    "--icon-width-logotype-only": "176px",
+    "--icon-width-craft": "34px"
+   }
+  },
+  "perf": {
+   "requests": 59,
+   "kb": 615,
+   "byTypeKB": {
+    "script": 118,
+    "other": 148,
+    "link": 163,
+    "video": 0,
+    "img": 0,
+    "css": 185
+   },
+   "dcl": 9796,
+   "load": 12419,
+   "ttfb": 9053
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [],
+  "scriptSignatures": {
+   "gsap": 1,
+   "swup": 1,
+   "SplitText": 3,
+   "IntersectionObserver": 1,
+   "componentManager": 6
+  },
+  "scriptsChecked": 6
+ },
+ "mobile": {
+  "title": "Home | Wolverine Worldwide",
+  "lang": "en",
+  "generator": null,
+  "description": "The story of a company that was founded on the simple desire to create good products for good people, whose own footprint can be found in approximately 200 countries and territories throughout the world.",
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 7629,
+  "domNodes": 894,
+  "textEls": 122,
+  "fonts": [
+   "ABCDiatype 400 normal",
+   "ABCDiatype 700 normal",
+   "ABCDiatype-Mono 400 700 normal"
+  ],
+  "fontFamilies": [
+   [
+    "ABCDiatype",
+    102
+   ],
+   [
+    "ABCDiatype-Mono",
+    20
+   ]
+  ],
+  "fontSizes": [
+   [
+    "14px",
+    58
+   ],
+   [
+    "10px",
+    20
+   ],
+   [
+    "50px",
+    14
+   ],
+   [
+    "16px",
+    13
+   ],
+   [
+    "27px",
+    11
+   ],
+   [
+    "18px",
+    5
+   ],
+   [
+    "21px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    94
+   ],
+   [
+    "700",
+    28
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.2",
+    63
+   ],
+   [
+    "1.4",
+    20
+   ],
+   [
+    "0.79",
+    14
+   ],
+   [
+    "1.5",
+    13
+   ],
+   [
+    "0.99",
+    11
+   ],
+   [
+    "1",
+    1
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.02em",
+    63
+   ],
+   [
+    "-0.05em",
+    14
+   ],
+   [
+    "-0.04em",
+    11
+   ],
+   [
+    "-0.03em",
+    1
+   ]
+  ],
+  "uppercaseShare": 16,
+  "maxFontPx": 50,
+  "maxFontText": "Make.",
+  "maxFontVwRatio": 12.9,
+  "textColors": [
+   [
+    "rgb(255, 255, 255)",
+    73
+   ],
+   [
+    "rgb(0, 0, 0)",
+    30
+   ],
+   [
+    "rgb(117, 117, 117)",
+    10
+   ],
+   [
+    "rgb(1, 1, 1)",
+    9
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(1, 1, 1)",
+    123
+   ],
+   [
+    "oklab(0.0672042 0.00000306219 0.00000134483 / 0.2)",
+    45
+   ],
+   [
+    "rgba(0, 0, 0, 0.8)",
+    31
+   ],
+   [
+    "color(srgb 0 0 0 / 0.5)",
+    5
+   ],
+   [
+    "oklab(0.0672042 0.00000306219 0.00000134483 / 0.1)",
+    4
+   ],
+   [
+    "rgb(255, 255, 255)",
+    4
+   ],
+   [
+    "rgba(0, 0, 0, 0.1)",
+    3
+   ],
+   [
+    "rgba(255, 255, 255, 0.1)",
+    3
+   ],
+   [
+    "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+    3
+   ],
+   [
+    "oklab(0 0 0 / 0.1)",
+    0
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "12px",
+    11
+   ],
+   [
+    "16px",
+    2
+   ],
+   [
+    "10px",
+    1
+   ],
+   [
+    "20px",
+    1
+   ]
+  ],
+  "maxWidths": [],
+  "h1": {
+   "tag": "H1",
+   "text": "Make. Every Day. Better.",
+   "size": 16,
+   "weight": "400",
+   "family": "ABCDiatype",
+   "lh": 1.5,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(255, 255, 255)",
+   "top": 338
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Make. Every Day. Better.",
+    "size": 16,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 338
+   },
+   {
+    "tag": "H2",
+    "text": "A portfolio built for every step.",
+    "size": 50,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 0.79,
+    "ls": "-2.51955px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 1897
+   },
+   {
+    "tag": "H2",
+    "text": "2025 Annual Report",
+    "size": 27,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 0.99,
+    "ls": "-1.06044px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 2800
+   },
+   {
+    "tag": "H2",
+    "text": "Many brands, one shared culture, limitless innovation.",
+    "size": 27,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 0.99,
+    "ls": "-1.06044px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 3184
+   },
+   {
+    "tag": "H2",
+    "text": "Market Snapshot",
+    "size": 27,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 0.99,
+    "ls": "-1.06044px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 3811
+   },
+   {
+    "tag": "H3",
+    "text": "Wolverine World Wide, Inc. (WWW)",
+    "size": 14,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.281535px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 3923
+   },
+   {
+    "tag": "H2",
+    "text": "Latest News",
+    "size": 21,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-0.629673px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4300
+   },
+   {
+    "tag": "H3",
+    "text": "96% of employees said they feel welcomed when they join the Company. 95% say they care about their c",
+    "size": 14,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.287609px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4601
+   },
+   {
+    "tag": "H3",
+    "text": "Footwear News' June 2026 Milestone Issue explores Merrell's 45th anniversary and how the brand conti",
+    "size": 14,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.287609px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4601
+   },
+   {
+    "tag": "H3",
+    "text": "Saucony's Endorphin Pro 5 wins \"Best Racing Shoe\" and Endorphin Azura wins \"Best Training Shoe\" by R",
+    "size": 14,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.287609px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4601
+   },
+   {
+    "tag": "H3",
+    "text": "The MUSE Creative Awards is a leading international creative awards program recognizing excellence i",
+    "size": 14,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.287609px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4615
+   },
+   {
+    "tag": "H3",
+    "text": "The daily running Azura shoe returns to Saucony's Endorphin collection. Lighweight, intense grip, an",
+    "size": 14,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.287609px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4587
+   },
+   {
+    "tag": "H3",
+    "text": "The brand's latest trail runner that grips, flexes, and cushions so nothing breaks your flow.",
+    "size": 14,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.287609px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4587
+   },
+   {
+    "tag": "H3",
+    "text": "The iconic work boot brand joins season two of Paramount+'s \"Landman\" to celebrate the grit, innovat",
+    "size": 14,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.287609px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4587
+   },
+   {
+    "tag": "H3",
+    "text": "WWW was awarded Company of the Year for its \"new, more-focused brand-building model\" at the 2025 Foo",
+    "size": 14,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "-0.287609px",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4587
+   },
+   {
+    "tag": "H2",
+    "text": "Creating Your Future With Us",
+    "size": 50,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 0.79,
+    "ls": "-2.51955px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 4902
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 27,
+    "lh": 0.99,
+    "family": "ABCDiatype",
+    "color": "rgb(0, 0, 0)",
+    "measure": 366
+   },
+   {
+    "size": 14,
+    "lh": 1.2,
+    "family": "ABCDiatype",
+    "color": "rgb(255, 255, 255)",
+    "measure": 366
+   },
+   {
+    "size": 27,
+    "lh": 0.99,
+    "family": "ABCDiatype",
+    "color": "rgb(0, 0, 0)",
+    "measure": 366
+   },
+   {
+    "size": 14,
+    "lh": 1.2,
+    "family": "ABCDiatype",
+    "color": "rgb(255, 255, 255)",
+    "measure": 328
+   },
+   {
+    "size": 14,
+    "lh": 1.2,
+    "family": "ABCDiatype",
+    "color": "rgb(255, 255, 255)",
+    "measure": 248
+   }
+  ],
+  "navLinks": [
+   "Home"
+  ],
+  "buttons": [
+   "Menu +",
+   "→ Learn More About Us →",
+   "→ Explore Our Brands →",
+   "Explore Career Opportunities",
+   "Investor Relations",
+   "View All",
+   "Work at Wolverine",
+   "MANAGE COOKIES"
+  ],
+  "burger": true,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": true,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": false,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 1,
+   "fixed": 2,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 9,
+   "videos": 1,
+   "autoplayVideos": 1,
+   "canvases": 0,
+   "inlineSvg": 42,
+   "iframes": 0,
+   "images": 77,
+   "imgFormats": {
+    "webp": 77
+   },
+   "langSwitch": true,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 1,
+   "gtm": 1
+  },
+  "scripts": [
+   "www.googletagmanager.com/gtm.js?id=GTM-NMPZT8PK",
+   "wolverineworldwide.com/dist/main-DEWcZEWU.js",
+   "wolverineworldwide.com/dist/InlineVideo-VxD0xbSK.js",
+   "wolverineworldwide.com/dist/HeroHome-CZIa6_lW.js",
+   "wolverineworldwide.com/dist/Particles-0BM77DBr.js",
+   "wolverineworldwide.com/dist/StandoutImageGalaxy-B2el79Mz.js",
+   "wolverineworldwide.com/dist/Carousel-BQ8YF4PF.js"
+  ],
+  "css": {
+   "media": [
+    [
+     "not all and (min-width: 700px)",
+     57
+    ],
+    [
+     "(hover: hover)",
+     31
+    ],
+    [
+     "(min-width: 700px)",
+     23
+    ],
+    [
+     "(min-width: 1000px)",
+     17
+    ],
+    [
+     "not all and (min-width: 1000px)",
+     16
+    ],
+    [
+     "(min-width: 1200px)",
+     7
+    ],
+    [
+     "(min-width: 1400px)",
+     7
+    ],
+    [
+     "(min-width: 340px)",
+     6
+    ],
+    [
+     "(min-width: 500px)",
+     6
+    ],
+    [
+     "(min-width: 1600px)",
+     6
+    ],
+    [
+     "(min-width: 1800px)",
+     6
+    ],
+    [
+     "(min-width: 2000px)",
+     6
+    ],
+    [
+     "(min-width: 2400px)",
+     6
+    ],
+    [
+     "screen and (max-width: 640px)",
+     2
+    ]
+   ],
+   "durations": [
+    [
+     "0.15s",
+     8
+    ],
+    [
+     "var(--tw-duration",
+     7
+    ],
+    [
+     "0.25s",
+     5
+    ],
+    [
+     "var(--transition-duration)",
+     2
+    ],
+    [
+     "var(--transition-duration-slow)",
+     2
+    ],
+    [
+     "var(--header-transition-duration)",
+     1
+    ],
+    [
+     "calc(var(--mobile-menu-transition-duration)*.5)",
+     1
+    ],
+    [
+     "var(--mobile-menu-transition-duration)",
+     1
+    ],
+    [
+     "var(--transition-duration-fast)",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "var(--tw-ease",
+     7
+    ],
+    [
+     "ease",
+     6
+    ],
+    [
+     "var(--ease-sine-out)",
+     2
+    ],
+    [
+     "var(--ease-expo-out)",
+     2
+    ],
+    [
+     "var(--mobile-menu-transition-ease)",
+     1
+    ],
+    [
+     "var(--ease)",
+     1
+    ],
+    [
+     "var(--ease-power2-out)",
+     1
+    ],
+    [
+     "var(--ease-power3-out)",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "ABCDiatype 400 normal",
+    "ABCDiatype 700 normal",
+    "ABCDiatype-Mono 400 700 normal"
+   ],
+   "keyframes": 0,
+   "clampFontSizes": 0,
+   "vwFontSizes": 0,
+   "sheets": 2,
+   "blocked": 0,
+   "rootVarCount": 154,
+   "rootVarsSample": {
+    "--cc-font-family": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"A",
+    "--cc-modal-border-radius": ".5rem",
+    "--cc-btn-border-radius": ".4rem",
+    "--cc-modal-transition-duration": ".25s",
+    "--cc-link-color": "var(--cc-btn-primary-bg)",
+    "--cc-z-index": "2147483647",
+    "--cc-primary-color": "#2c2f31",
+    "--cc-secondary-color": "#5e6266",
+    "--cc-btn-primary-color": "#fff",
+    "--cc-btn-primary-border-color": "var(--cc-btn-primary-bg)",
+    "--cc-btn-primary-hover-color": "#fff",
+    "--cc-btn-primary-hover-border-color": "var(--cc-btn-primary-hover-bg)",
+    "--cc-btn-secondary-color": "var(--cc-primary-color)",
+    "--cc-btn-secondary-border-color": "var(--cc-btn-secondary-bg)",
+    "--cc-btn-secondary-hover-color": "#000",
+    "--cc-btn-secondary-hover-border-color": "#d4dae0",
+    "--cc-separator-border-color": "#f0f4f7",
+    "--cc-toggle-enabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-disabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-readonly-knob-icon-color": "var(--cc-toggle-readonly-bg)",
+    "--cc-footer-color": "var(--cc-secondary-color)",
+    "--cc-footer-border-color": "#e4eaed",
+    "--cc-pm-toggle-border-radius": "4em",
+    "--font-sans": "\"ABCDiatype\",sans-serif",
+    "--font-mono": "\"ABCDiatype-Mono\",monospace",
+    "--color-black": "#010101",
+    "--color-white": "#fff",
+    "--spacing": ".25rem",
+    "--font-weight-bold": "700",
+    "--radius-xs": "6px",
+    "--radius-sm": "8px",
+    "--radius-md": "10px",
+    "--radius-lg": "12px",
+    "--radius-xl": "16px",
+    "--radius-2xl": "20px",
+    "--default-transition-duration": ".15s",
+    "--default-font-family": "var(--font-sans)",
+    "--default-mono-font-family": "var(--font-mono)",
+    "--color-gray-800": "#4d4d4d",
+    "--color-gray-600": "#757575",
+    "--color-gray-500": "#737373",
+    "--color-gray-400": "#9d9d9d",
+    "--color-gray-200": "#ccc",
+    "--spacing-unit-sm": "var(--unit-sm)",
+    "--spacing-unit-md": "var(--unit-md)",
+    "--spacing-unit-lg": "var(--unit-lg)",
+    "--spacing-gutter": "var(--grid-gutter)",
+    "--spacing-fluid-2xs": "clamp(.375rem, .3315rem + .2174vw, .5rem)",
+    "--spacing-fluid-xs": "clamp(.5rem, .4565rem + .2174vw, .625rem)",
+    "--spacing-fluid-sm": "clamp(1rem, .8261rem + .8696vw, 1.5rem)",
+    "--spacing-fluid-md": "clamp(1.5rem, 1.3261rem + .8696vw, 2rem)",
+    "--spacing-fluid-lg": "clamp(2rem, 1.8261rem + .8696vw, 2.5rem)",
+    "--spacing-fluid-xl": "clamp(2.5rem, 2.1522rem + 1.7391vw, 3.5rem)",
+    "--spacing-fluid-2xl": "clamp(3.5rem, 2.7609rem + 3.6957vw, 5.625rem)",
+    "--spacing-fluid-3xl": "clamp(5.625rem, 4.3207rem + 6.5217vw, 9.375rem)",
+    "--spacing-fluid-4xl": "clamp(9.375rem, 8.288rem + 5.4348vw, 12.5rem)",
+    "--radius-2xs": "4px",
+    "--transition-duration-fast": ".2s",
+    "--transition-duration": ".4s",
+    "--transition-duration-slow": ".6s",
+    "--transition-duration-slower": ".8s",
+    "--transition-duration-slowest": "1s",
+    "--ease-power2-out": "cubic-bezier(.215,.61,.355,1)",
+    "--ease-power3-out": "cubic-bezier(.165,.84,.44,1)",
+    "--ease-power4-out": "cubic-bezier(.23,1,.32,1)",
+    "--ease-expo-out": "cubic-bezier(.19,1,.22,1)",
+    "--ease-sine-out": "cubic-bezier(.39,.575,.565,1)",
+    "--ease": "var(--ease-power2-out)",
+    "--z-index-highest": "2147480000",
+    "--z-index-modal": "700",
+    "--z-index-menu": "200",
+    "--z-index-header": "50",
+    "--z-index-anchors-menu": "40",
+    "--z-index": "0",
+    "--z-index-above": "1",
+    "--z-index-below": "-1",
+    "--icon-width-logo": "20px",
+    "--icon-width-logotype": "252px",
+    "--icon-width-logotype-only": "176px",
+    "--icon-width-craft": "34px"
+   }
+  },
+  "perf": {
+   "requests": 60,
+   "kb": 615,
+   "byTypeKB": {
+    "script": 118,
+    "other": 148,
+    "link": 163,
+    "video": 0,
+    "css": 185,
+    "img": 0
+   },
+   "dcl": 5284,
+   "load": 9790,
+   "ttfb": 4602
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": []
+ },
+ "seconds": 51
+}

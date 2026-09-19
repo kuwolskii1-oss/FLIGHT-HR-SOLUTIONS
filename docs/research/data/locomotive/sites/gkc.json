@@ -1,0 +1,1446 @@
+{
+ "label": "gkc",
+ "url": "https://gkc.ca/en",
+ "capturedAt": "2026-09-19T15:09:39.761Z",
+ "desktop": {
+  "title": "Home — GKC Architecture & Design",
+  "lang": "en",
+  "generator": null,
+  "description": "GKC offers strategic advice beyond design for  industrial, commercial and workplace projects.",
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 11513,
+  "domNodes": 746,
+  "textEls": 155,
+  "fonts": [
+   "ABCDiatype 400 italic",
+   "ABCDiatype 700 normal",
+   "ABCDiatype 700 italic",
+   "SuisseIntlCond 400 normal"
+  ],
+  "fontFamilies": [
+   [
+    "ABCDiatype",
+    121
+   ],
+   [
+    "SuisseIntlCond",
+    34
+   ]
+  ],
+  "fontSizes": [
+   [
+    "16px",
+    47
+   ],
+   [
+    "14px",
+    26
+   ],
+   [
+    "18px",
+    22
+   ],
+   [
+    "35px",
+    17
+   ],
+   [
+    "22px",
+    14
+   ],
+   [
+    "55px",
+    11
+   ],
+   [
+    "19px",
+    7
+   ],
+   [
+    "12px",
+    3
+   ],
+   [
+    "202px",
+    2
+   ],
+   [
+    "24px",
+    2
+   ],
+   [
+    "230px",
+    2
+   ],
+   [
+    "32px",
+    1
+   ],
+   [
+    "75px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    145
+   ],
+   [
+    "700",
+    10
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.23",
+    67
+   ],
+   [
+    "1",
+    36
+   ],
+   [
+    "1.05",
+    26
+   ],
+   [
+    "1.1",
+    11
+   ],
+   [
+    "normal",
+    7
+   ],
+   [
+    "1.2",
+    6
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "0.01em",
+    29
+   ],
+   [
+    "-0.02em",
+    25
+   ],
+   [
+    "-0.04em",
+    14
+   ],
+   [
+    "-0.05em",
+    2
+   ]
+  ],
+  "uppercaseShare": 22,
+  "maxFontPx": 230,
+  "maxFontText": "Our",
+  "maxFontVwRatio": 16,
+  "textColors": [
+   [
+    "rgb(21, 31, 38)",
+    97
+   ],
+   [
+    "rgb(162, 162, 162)",
+    33
+   ],
+   [
+    "rgb(255, 255, 255)",
+    21
+   ],
+   [
+    "rgb(0, 0, 0)",
+    3
+   ],
+   [
+    "rgb(217, 217, 217)",
+    1
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(255, 255, 255)",
+    2828
+   ],
+   [
+    "rgb(21, 31, 38)",
+    274
+   ],
+   [
+    "rgb(20, 68, 240)",
+    124
+   ],
+   [
+    "rgba(217, 217, 217, 0.3)",
+    0
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [],
+  "maxWidths": [
+   [
+    "650px",
+    3
+   ],
+   [
+    "867.5px",
+    1
+   ],
+   [
+    "690px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "GKC Architecture & Design",
+   "size": 32,
+   "weight": "700",
+   "family": "ABCDiatype",
+   "lh": 1.1,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(21, 31, 38)",
+   "top": 0
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "GKC Architecture & Design",
+    "size": 32,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 1.1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 0
+   },
+   {
+    "tag": "H2",
+    "text": "Aligning vision and action",
+    "size": 75,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-3px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 323
+   },
+   {
+    "tag": "H3",
+    "text": "Design Futures",
+    "size": 22,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 742
+   },
+   {
+    "tag": "H3",
+    "text": "Key Appointments",
+    "size": 22,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 742
+   },
+   {
+    "tag": "H3",
+    "text": "The Impact of Interior Design in the Workplace",
+    "size": 22,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 742
+   },
+   {
+    "tag": "H2",
+    "text": "The creativity, expertise and strategic insight to achieve your goals.",
+    "size": 55,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-2.2px",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 920
+   },
+   {
+    "tag": "H2",
+    "text": "Our portfolio speaks for itself.",
+    "size": 35,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-0.7px",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 4883
+   },
+   {
+    "tag": "H2",
+    "text": "A sample of our long-standing clients.",
+    "size": 35,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-0.7px",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 5273
+   },
+   {
+    "tag": "H2",
+    "text": "Our vision",
+    "size": 24,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 1.1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 7367
+   },
+   {
+    "tag": "H2",
+    "text": "In the news",
+    "size": 22,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 9167
+   },
+   {
+    "tag": "H2",
+    "text": "Let's explore the possibilities together.",
+    "size": 55,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-2.2px",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 10306
+   },
+   {
+    "tag": "H2",
+    "text": "Offices",
+    "size": 24,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 1.1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 11106
+   },
+   {
+    "tag": "H3",
+    "text": "MONTREAL",
+    "size": 14,
+    "weight": "400",
+    "family": "SuisseIntlCond",
+    "lh": 1.05,
+    "ls": "0.14px",
+    "transform": "uppercase",
+    "color": "rgb(162, 162, 162)",
+    "top": 11106
+   },
+   {
+    "tag": "H3",
+    "text": "TORONTO",
+    "size": 14,
+    "weight": "400",
+    "family": "SuisseIntlCond",
+    "lh": 1.05,
+    "ls": "0.14px",
+    "transform": "uppercase",
+    "color": "rgb(162, 162, 162)",
+    "top": 11106
+   },
+   {
+    "tag": "H3",
+    "text": "VANCOUVER",
+    "size": 14,
+    "weight": "400",
+    "family": "SuisseIntlCond",
+    "lh": 1.05,
+    "ls": "0.14px",
+    "transform": "uppercase",
+    "color": "rgb(162, 162, 162)",
+    "top": 11331
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 55,
+    "lh": 1,
+    "family": "ABCDiatype",
+    "color": "rgb(21, 31, 38)",
+    "measure": 868
+   },
+   {
+    "size": 35,
+    "lh": 1,
+    "family": "ABCDiatype",
+    "color": "rgb(21, 31, 38)",
+    "measure": 650
+   },
+   {
+    "size": 35,
+    "lh": 1,
+    "family": "ABCDiatype",
+    "color": "rgb(21, 31, 38)",
+    "measure": 650
+   }
+  ],
+  "navLinks": [],
+  "buttons": [
+   "Open the main menu MENU",
+   "Skip to main content Skip to main content",
+   "Next Next",
+   "Previous Previous",
+   "Our Areas of Expertise Our Areas of Expertise",
+   "See Our Projects See Our Projects",
+   "Our approach",
+   "See all news See all news",
+   "Let's talk Let's talk",
+   "Contact us Contact us",
+   "COOKIE PREFERENCES"
+  ],
+  "burger": true,
+  "headerPosition": "fixed",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": true,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 4,
+   "fixed": 6,
+   "horizontalScroll": true,
+   "themeSwitch": true,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 16,
+   "videos": 2,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 21,
+   "iframes": 0,
+   "images": 29,
+   "imgFormats": {
+    "png": 12,
+    "jpg": 17
+   },
+   "langSwitch": true,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 2,
+   "gtag": 1,
+   "gtm": 2
+  },
+  "scripts": [
+   "www.googletagmanager.com/gtag/js?id=G-W8TJXN5YQJ&cx=c&gtm=4e69h0h2",
+   "www.googletagmanager.com/gtm.js?id=GTM-KMRV3NJQ",
+   "tag.simpli.fi/sifitag/e6a90c21-3e5b-4bab-a521-55d46b554b80",
+   "gkc.ca/assets/scripts/app.js?v=1773688474990"
+  ],
+  "css": {
+   "media": [
+    [
+     "(min-width: 700px)",
+     115
+    ],
+    [
+     "(min-width: 1000px)",
+     99
+    ],
+    [
+     "(max-width: 699px)",
+     92
+    ],
+    [
+     "(max-width: 999px)",
+     53
+    ],
+    [
+     "(hover: hover)",
+     52
+    ],
+    [
+     "(min-width: 700px) and (max-width: 999px)",
+     37
+    ],
+    [
+     "(prefers-reduced-motion)",
+     5
+    ],
+    [
+     "(min-width: 1200px)",
+     5
+    ],
+    [
+     "(min-width: 500px) and (max-width: 699px)",
+     4
+    ],
+    [
+     "(hover: none), (max-width: 699px)",
+     4
+    ],
+    [
+     "(max-width: 499px)",
+     3
+    ],
+    [
+     "(min-width: 1400px)",
+     3
+    ],
+    [
+     "screen and (max-width: 640px)",
+     2
+    ],
+    [
+     "(min-width: 500px)",
+     2
+    ]
+   ],
+   "durations": [
+    [
+     "0.6s",
+     14
+    ],
+    [
+     "1s",
+     8
+    ],
+    [
+     "0.15s",
+     8
+    ],
+    [
+     "0.25s",
+     6
+    ],
+    [
+     "0.5s",
+     1
+    ],
+    [
+     "1.2s",
+     1
+    ],
+    [
+     "var(--transition)",
+     1
+    ],
+    [
+     "0.3s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.38, 0.005, 0.215, 1)",
+     6
+    ],
+    [
+     "ease",
+     6
+    ],
+    [
+     "cubic-bezier(0.165, 0.84, 0.44, 1)",
+     3
+    ],
+    [
+     "var(--swiper-wrapper-transition-timing-function, initial)",
+     1
+    ],
+    [
+     "cubic-bezier(0.23, 1, 0.32, 1)",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "swiper-icons 400 normal",
+    "ABCDiatype 400 normal",
+    "ABCDiatype 400 italic",
+    "ABCDiatype 700 normal",
+    "ABCDiatype 700 italic",
+    "SuisseIntlCond 400 normal"
+   ],
+   "keyframes": 10,
+   "clampFontSizes": 7,
+   "vwFontSizes": 10,
+   "sheets": 2,
+   "blocked": 0,
+   "rootVarCount": 134,
+   "rootVarsSample": {
+    "--spacing-xs-mobile": "12",
+    "--spacing-xs-desktop": "16",
+    "--spacing-sm-mobile": "22",
+    "--spacing-sm-desktop": "32",
+    "--spacing-md-mobile": "32",
+    "--spacing-md-desktop": "56",
+    "--spacing-lg-mobile": "48",
+    "--spacing-lg-desktop": "96",
+    "--spacing-xl-mobile": "64",
+    "--spacing-xl-desktop": "128",
+    "--spacing-2xl-mobile": "88",
+    "--spacing-2xl-desktop": "176",
+    "--spacing-3xl-mobile": "122",
+    "--spacing-3xl-desktop": "224",
+    "--grid-columns": "16",
+    "--grid-gutter": "20px",
+    "--grid-margin": "20px",
+    "--color": "#151f26",
+    "--color-bg": "white",
+    "--color-accent": "#1444f0",
+    "--color-light": "#a2a2a2",
+    "--color-alt": "var(--color-light)",
+    "--color-hover": "#3a4349",
+    "--menu-width": "max(calc(calc(0.25 * (calc(100 * var(--vw, 1vw)) - 2 * var(--grid-margin, 0px)) ",
+    "--enter-translate-menu-duration": "1s",
+    "--leave-translate-menu-duration": "1s",
+    "--media-wire-color": "var(--color-light)",
+    "--media-wire-width": "1px",
+    "--max-content-heading-width": "450px",
+    "--swiper-theme-color": "#007aff",
+    "--cc-font-family": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"A",
+    "--cc-modal-border-radius": ".5rem",
+    "--cc-btn-border-radius": ".4rem",
+    "--cc-modal-transition-duration": ".25s",
+    "--cc-link-color": "var(--cc-btn-primary-bg)",
+    "--cc-z-index": "2147483647",
+    "--cc-primary-color": "#2c2f31",
+    "--cc-secondary-color": "#5e6266",
+    "--cc-btn-primary-color": "#fff",
+    "--cc-btn-primary-border-color": "var(--cc-btn-primary-bg)",
+    "--cc-btn-primary-hover-color": "#fff",
+    "--cc-btn-primary-hover-border-color": "var(--cc-btn-primary-hover-bg)",
+    "--cc-btn-secondary-color": "var(--cc-primary-color)",
+    "--cc-btn-secondary-border-color": "var(--cc-btn-secondary-bg)",
+    "--cc-btn-secondary-hover-color": "#000",
+    "--cc-btn-secondary-hover-border-color": "#d4dae0",
+    "--cc-separator-border-color": "#f0f4f7",
+    "--cc-toggle-readonly-knob-icon-color": "var(--cc-toggle-readonly-bg)",
+    "--cc-footer-color": "var(--cc-secondary-color)",
+    "--cc-footer-border-color": "#e4eaed",
+    "--cc-pm-toggle-border-radius": "4em",
+    "--icon-width": "1rem",
+    "--icon-width-logo": "clamp(180px, 0.2083333333 * calc(100 * var(--vw, 1vw)), 300px)",
+    "--icon-width-logo-bis": "clamp(78px, 0.0604166667 * calc(100 * var(--vw, 1vw)), 87px)",
+    "--icon-width-logo-header": "clamp(146px, 0.1236111111 * calc(100 * var(--vw, 1vw)), 178px)",
+    "--icon-width-logo-part-1": "clamp(58px, 0.0465277778 * calc(100 * var(--vw, 1vw)), 67px)",
+    "--icon-width-logo-part-2": "clamp(67px, 0.0604166667 * calc(100 * var(--vw, 1vw)), 87px)",
+    "--icon-width-logo-footer": "300px",
+    "--icon-width-cta-icon": "20px",
+    "--icon-width-arrow-icon": "10px",
+    "--icon-width-logo-linkedin": "26px",
+    "--icon-width-player-play": "12px",
+    "--icon-width-player-pause": "11px",
+    "--icon-width-close": "57px",
+    "--icon-width-cross": "22px",
+    "--icon-width-blockquote": "25px",
+    "--font-size-huge": "clamp(50px, 0.1041666667 * calc(100 * var(--vw, 1vw)), 150px)",
+    "--font-size-h1": "clamp(50px, 0.0520833333 * calc(100 * var(--vw, 1vw)), 75px)",
+    "--font-size-h2": "clamp(35px, 0.0381944444 * calc(100 * var(--vw, 1vw)), 55px)",
+    "--font-size-h3": "clamp(30px, 0.0243055556 * calc(100 * var(--vw, 1vw)), 35px)",
+    "--font-size-h4": "clamp(22px, 0.0152777778 * calc(100 * var(--vw, 1vw)), 22px)",
+    "--font-size-text-t1": "clamp(18px, 0.0125 * calc(100 * var(--vw, 1vw)), 18px)",
+    "--font-size-text-t2": "clamp(16px, 0.0111111111 * calc(100 * var(--vw, 1vw)), 16px)",
+    "--font-size-text-t3": "clamp(14px, 0.0097222222 * calc(100 * var(--vw, 1vw)), 14px)",
+    "--font-size-text-t4": "clamp(12px, 0.0083333333 * calc(100 * var(--vw, 1vw)), 12px)",
+    "--button-text-color": "currentColor",
+    "--button-width": "200px",
+    "--button-gap": "20px",
+    "--button-transition-duration": "var(--transition)"
+   }
+  },
+  "perf": {
+   "requests": 17,
+   "kb": 1771,
+   "byTypeKB": {
+    "link": 173,
+    "video": 0,
+    "script": 183,
+    "other": 0,
+    "img": 1402,
+    "css": 0,
+    "fetch": 13
+   },
+   "dcl": 13154,
+   "load": 23740,
+   "ttfb": 7630
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [
+   "NetworkError: A network error occurred."
+  ],
+  "scriptSignatures": {
+   "gsap": 1,
+   "ScrollTrigger": 1,
+   "Lenis": 1,
+   "swup": 1,
+   "Splitting": 1,
+   "SplitText": 1,
+   "lottie": 1,
+   "swiper": 1,
+   "IntersectionObserver": 1,
+   "reducedMotion": 1
+  },
+  "scriptsChecked": 1
+ },
+ "mobile": {
+  "title": "Home — GKC Architecture & Design",
+  "lang": "en",
+  "generator": null,
+  "description": "GKC offers strategic advice beyond design for  industrial, commercial and workplace projects.",
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 13600,
+  "domNodes": 737,
+  "textEls": 146,
+  "fonts": [
+   "ABCDiatype 400 normal",
+   "ABCDiatype 700 normal",
+   "ABCDiatype 700 italic"
+  ],
+  "fontFamilies": [
+   [
+    "ABCDiatype",
+    112
+   ],
+   [
+    "SuisseIntlCond",
+    34
+   ]
+  ],
+  "fontSizes": [
+   [
+    "16px",
+    46
+   ],
+   [
+    "14px",
+    26
+   ],
+   [
+    "18px",
+    22
+   ],
+   [
+    "22px",
+    18
+   ],
+   [
+    "35px",
+    11
+   ],
+   [
+    "19px",
+    7
+   ],
+   [
+    "62px",
+    4
+   ],
+   [
+    "30px",
+    4
+   ],
+   [
+    "12px",
+    3
+   ],
+   [
+    "24px",
+    3
+   ],
+   [
+    "32px",
+    1
+   ],
+   [
+    "50px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    136
+   ],
+   [
+    "700",
+    10
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.23",
+    67
+   ],
+   [
+    "1.05",
+    26
+   ],
+   [
+    "1",
+    23
+   ],
+   [
+    "1.1",
+    11
+   ],
+   [
+    "1.2",
+    10
+   ],
+   [
+    "normal",
+    7
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "0.01em",
+    29
+   ],
+   [
+    "-0.02em",
+    24
+   ],
+   [
+    "-0.04em",
+    6
+   ],
+   [
+    "-0.05em",
+    2
+   ]
+  ],
+  "uppercaseShare": 23,
+  "maxFontPx": 62,
+  "maxFontText": "+4M",
+  "maxFontVwRatio": 16,
+  "textColors": [
+   [
+    "rgb(21, 31, 38)",
+    89
+   ],
+   [
+    "rgb(162, 162, 162)",
+    33
+   ],
+   [
+    "rgb(255, 255, 255)",
+    21
+   ],
+   [
+    "rgb(0, 0, 0)",
+    3
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(255, 255, 255)",
+    1115
+   ],
+   [
+    "rgb(21, 31, 38)",
+    80
+   ],
+   [
+    "rgb(20, 68, 240)",
+    66
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [],
+  "maxWidths": [
+   [
+    "650px",
+    3
+   ],
+   [
+    "684px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "GKC Architecture & Design",
+   "size": 32,
+   "weight": "700",
+   "family": "ABCDiatype",
+   "lh": 1.1,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(21, 31, 38)",
+   "top": 0
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "GKC Architecture & Design",
+    "size": 32,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 1.1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 0
+   },
+   {
+    "tag": "H2",
+    "text": "Aligning vision and action",
+    "size": 50,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-2px",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 275
+   },
+   {
+    "tag": "H3",
+    "text": "Design Futures",
+    "size": 22,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 696
+   },
+   {
+    "tag": "H3",
+    "text": "Key Appointments",
+    "size": 22,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 696
+   },
+   {
+    "tag": "H3",
+    "text": "The Impact of Interior Design in the Workplace",
+    "size": 22,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 696
+   },
+   {
+    "tag": "H2",
+    "text": "The creativity, expertise and strategic insight to achieve your goals.",
+    "size": 35,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-1.4px",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 864
+   },
+   {
+    "tag": "H2",
+    "text": "Our portfolio speaks for itself.",
+    "size": 24,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 4518
+   },
+   {
+    "tag": "H2",
+    "text": "A sample of our long-standing clients.",
+    "size": 30,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-0.6px",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 4840
+   },
+   {
+    "tag": "H2",
+    "text": "Our vision",
+    "size": 24,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 1.1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 8812
+   },
+   {
+    "tag": "H2",
+    "text": "In the news",
+    "size": 22,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1.2,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 9744
+   },
+   {
+    "tag": "H2",
+    "text": "Let's explore the possibilities together.",
+    "size": 35,
+    "weight": "400",
+    "family": "ABCDiatype",
+    "lh": 1,
+    "ls": "-1.4px",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 11646
+   },
+   {
+    "tag": "H2",
+    "text": "Offices",
+    "size": 24,
+    "weight": "700",
+    "family": "ABCDiatype",
+    "lh": 1.1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(21, 31, 38)",
+    "top": 13062
+   },
+   {
+    "tag": "H3",
+    "text": "MONTREAL",
+    "size": 14,
+    "weight": "400",
+    "family": "SuisseIntlCond",
+    "lh": 1.05,
+    "ls": "0.14px",
+    "transform": "uppercase",
+    "color": "rgb(162, 162, 162)",
+    "top": 13062
+   },
+   {
+    "tag": "H3",
+    "text": "TORONTO",
+    "size": 14,
+    "weight": "400",
+    "family": "SuisseIntlCond",
+    "lh": 1.05,
+    "ls": "0.14px",
+    "transform": "uppercase",
+    "color": "rgb(162, 162, 162)",
+    "top": 13062
+   },
+   {
+    "tag": "H3",
+    "text": "VANCOUVER",
+    "size": 14,
+    "weight": "400",
+    "family": "SuisseIntlCond",
+    "lh": 1.05,
+    "ls": "0.14px",
+    "transform": "uppercase",
+    "color": "rgb(162, 162, 162)",
+    "top": 13251
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 35,
+    "lh": 1,
+    "family": "ABCDiatype",
+    "color": "rgb(21, 31, 38)",
+    "measure": 350
+   },
+   {
+    "size": 30,
+    "lh": 1,
+    "family": "ABCDiatype",
+    "color": "rgb(21, 31, 38)",
+    "measure": 350
+   },
+   {
+    "size": 30,
+    "lh": 1,
+    "family": "ABCDiatype",
+    "color": "rgb(21, 31, 38)",
+    "measure": 350
+   }
+  ],
+  "navLinks": [],
+  "buttons": [
+   "Open the main menu MENU",
+   "Skip to main content Skip to main content",
+   "Next Next",
+   "Previous Previous",
+   "Our Areas of Expertise Our Areas of Expertise",
+   "See Our Projects See Our Projects",
+   "Our approach",
+   "See all news See all news",
+   "Let's talk Let's talk",
+   "Contact us Contact us",
+   "COOKIE PREFERENCES"
+  ],
+  "burger": true,
+  "headerPosition": "fixed",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": true,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 3,
+   "fixed": 6,
+   "horizontalScroll": true,
+   "themeSwitch": true,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 14,
+   "videos": 2,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 21,
+   "iframes": 0,
+   "images": 29,
+   "imgFormats": {
+    "png": 12,
+    "jpg": 17
+   },
+   "langSwitch": true,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 1,
+   "gtm": 1
+  },
+  "scripts": [
+   "www.googletagmanager.com/gtm.js?id=GTM-KMRV3NJQ",
+   "tag.simpli.fi/sifitag/e6a90c21-3e5b-4bab-a521-55d46b554b80",
+   "gkc.ca/assets/scripts/app.js?v=1773688474990"
+  ],
+  "css": {
+   "media": [
+    [
+     "(min-width: 700px)",
+     115
+    ],
+    [
+     "(min-width: 1000px)",
+     99
+    ],
+    [
+     "(max-width: 699px)",
+     92
+    ],
+    [
+     "(max-width: 999px)",
+     53
+    ],
+    [
+     "(hover: hover)",
+     52
+    ],
+    [
+     "(min-width: 700px) and (max-width: 999px)",
+     37
+    ],
+    [
+     "(prefers-reduced-motion)",
+     5
+    ],
+    [
+     "(min-width: 1200px)",
+     5
+    ],
+    [
+     "(min-width: 500px) and (max-width: 699px)",
+     4
+    ],
+    [
+     "(hover: none), (max-width: 699px)",
+     4
+    ],
+    [
+     "(max-width: 499px)",
+     3
+    ],
+    [
+     "(min-width: 1400px)",
+     3
+    ],
+    [
+     "screen and (max-width: 640px)",
+     2
+    ],
+    [
+     "(min-width: 500px)",
+     2
+    ]
+   ],
+   "durations": [
+    [
+     "0.6s",
+     14
+    ],
+    [
+     "1s",
+     8
+    ],
+    [
+     "0.15s",
+     8
+    ],
+    [
+     "0.25s",
+     6
+    ],
+    [
+     "0.5s",
+     1
+    ],
+    [
+     "1.2s",
+     1
+    ],
+    [
+     "var(--transition)",
+     1
+    ],
+    [
+     "0.3s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.38, 0.005, 0.215, 1)",
+     6
+    ],
+    [
+     "ease",
+     6
+    ],
+    [
+     "cubic-bezier(0.165, 0.84, 0.44, 1)",
+     3
+    ],
+    [
+     "var(--swiper-wrapper-transition-timing-function, initial)",
+     1
+    ],
+    [
+     "cubic-bezier(0.23, 1, 0.32, 1)",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "swiper-icons 400 normal",
+    "ABCDiatype 400 normal",
+    "ABCDiatype 400 italic",
+    "ABCDiatype 700 normal",
+    "ABCDiatype 700 italic",
+    "SuisseIntlCond 400 normal"
+   ],
+   "keyframes": 10,
+   "clampFontSizes": 7,
+   "vwFontSizes": 10,
+   "sheets": 2,
+   "blocked": 0,
+   "rootVarCount": 134,
+   "rootVarsSample": {
+    "--spacing-xs-mobile": "12",
+    "--spacing-xs-desktop": "16",
+    "--spacing-sm-mobile": "22",
+    "--spacing-sm-desktop": "32",
+    "--spacing-md-mobile": "32",
+    "--spacing-md-desktop": "56",
+    "--spacing-lg-mobile": "48",
+    "--spacing-lg-desktop": "96",
+    "--spacing-xl-mobile": "64",
+    "--spacing-xl-desktop": "128",
+    "--spacing-2xl-mobile": "88",
+    "--spacing-2xl-desktop": "176",
+    "--spacing-3xl-mobile": "122",
+    "--spacing-3xl-desktop": "224",
+    "--grid-columns": "16",
+    "--grid-gutter": "20px",
+    "--grid-margin": "20px",
+    "--color": "#151f26",
+    "--color-bg": "white",
+    "--color-accent": "#1444f0",
+    "--color-light": "#a2a2a2",
+    "--color-alt": "var(--color-light)",
+    "--color-hover": "#3a4349",
+    "--menu-width": "max(calc(calc(0.25 * (calc(100 * var(--vw, 1vw)) - 2 * var(--grid-margin, 0px)) ",
+    "--enter-translate-menu-duration": "1s",
+    "--leave-translate-menu-duration": "1s",
+    "--media-wire-color": "var(--color-light)",
+    "--media-wire-width": "1px",
+    "--max-content-heading-width": "450px",
+    "--swiper-theme-color": "#007aff",
+    "--cc-font-family": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"A",
+    "--cc-modal-border-radius": ".5rem",
+    "--cc-btn-border-radius": ".4rem",
+    "--cc-modal-transition-duration": ".25s",
+    "--cc-link-color": "var(--cc-btn-primary-bg)",
+    "--cc-z-index": "2147483647",
+    "--cc-primary-color": "#2c2f31",
+    "--cc-secondary-color": "#5e6266",
+    "--cc-btn-primary-color": "#fff",
+    "--cc-btn-primary-border-color": "var(--cc-btn-primary-bg)",
+    "--cc-btn-primary-hover-color": "#fff",
+    "--cc-btn-primary-hover-border-color": "var(--cc-btn-primary-hover-bg)",
+    "--cc-btn-secondary-color": "var(--cc-primary-color)",
+    "--cc-btn-secondary-border-color": "var(--cc-btn-secondary-bg)",
+    "--cc-btn-secondary-hover-color": "#000",
+    "--cc-btn-secondary-hover-border-color": "#d4dae0",
+    "--cc-separator-border-color": "#f0f4f7",
+    "--cc-toggle-readonly-knob-icon-color": "var(--cc-toggle-readonly-bg)",
+    "--cc-footer-color": "var(--cc-secondary-color)",
+    "--cc-footer-border-color": "#e4eaed",
+    "--cc-pm-toggle-border-radius": "4em",
+    "--icon-width": "1rem",
+    "--icon-width-logo": "clamp(180px, 0.2083333333 * calc(100 * var(--vw, 1vw)), 300px)",
+    "--icon-width-logo-bis": "clamp(78px, 0.0604166667 * calc(100 * var(--vw, 1vw)), 87px)",
+    "--icon-width-logo-header": "clamp(146px, 0.1236111111 * calc(100 * var(--vw, 1vw)), 178px)",
+    "--icon-width-logo-part-1": "clamp(58px, 0.0465277778 * calc(100 * var(--vw, 1vw)), 67px)",
+    "--icon-width-logo-part-2": "clamp(67px, 0.0604166667 * calc(100 * var(--vw, 1vw)), 87px)",
+    "--icon-width-logo-footer": "300px",
+    "--icon-width-cta-icon": "20px",
+    "--icon-width-arrow-icon": "10px",
+    "--icon-width-logo-linkedin": "26px",
+    "--icon-width-player-play": "12px",
+    "--icon-width-player-pause": "11px",
+    "--icon-width-close": "57px",
+    "--icon-width-cross": "22px",
+    "--icon-width-blockquote": "25px",
+    "--font-size-huge": "clamp(50px, 0.1041666667 * calc(100 * var(--vw, 1vw)), 150px)",
+    "--font-size-h1": "clamp(50px, 0.0520833333 * calc(100 * var(--vw, 1vw)), 75px)",
+    "--font-size-h2": "clamp(35px, 0.0381944444 * calc(100 * var(--vw, 1vw)), 55px)",
+    "--font-size-h3": "clamp(30px, 0.0243055556 * calc(100 * var(--vw, 1vw)), 35px)",
+    "--font-size-h4": "clamp(22px, 0.0152777778 * calc(100 * var(--vw, 1vw)), 22px)",
+    "--font-size-text-t1": "clamp(18px, 0.0125 * calc(100 * var(--vw, 1vw)), 18px)",
+    "--font-size-text-t2": "clamp(16px, 0.0111111111 * calc(100 * var(--vw, 1vw)), 16px)",
+    "--font-size-text-t3": "clamp(14px, 0.0097222222 * calc(100 * var(--vw, 1vw)), 14px)",
+    "--font-size-text-t4": "clamp(12px, 0.0083333333 * calc(100 * var(--vw, 1vw)), 12px)",
+    "--button-text-color": "currentColor",
+    "--button-width": "200px",
+    "--button-gap": "20px",
+    "--button-transition-duration": "var(--transition)"
+   }
+  },
+  "perf": {
+   "requests": 28,
+   "kb": 2575,
+   "byTypeKB": {
+    "link": 141,
+    "video": 0,
+    "script": 183,
+    "other": 17,
+    "img": 2222,
+    "css": 0,
+    "fetch": 13
+   },
+   "dcl": 9127,
+   "load": 16861,
+   "ttfb": 4014
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [
+   "NetworkError: A network error occurred."
+  ]
+ },
+ "seconds": 74
+}

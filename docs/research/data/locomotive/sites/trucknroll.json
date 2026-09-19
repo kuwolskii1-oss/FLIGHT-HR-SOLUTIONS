@@ -1,0 +1,1423 @@
+{
+ "label": "trucknroll",
+ "url": "https://trucknroll.com",
+ "capturedAt": "2026-09-19T15:35:18.705Z",
+ "desktop": {
+  "title": "Entertainment logistics - Truck'N Roll",
+  "lang": "en",
+  "generator": null,
+  "description": "Truck’n Roll® is a logistics compagnie built for the fast, demanding world of live entertainment. For over three decades, we’ve been trusted to move the gear behind the biggest tours across North America.",
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 11159,
+  "domNodes": 653,
+  "textEls": 148,
+  "fonts": [
+   "Helvetica Now Display 700 normal",
+   "National 2 Condensed 900 normal"
+  ],
+  "fontFamilies": [
+   [
+    "Helvetica Now Display",
+    118
+   ],
+   [
+    "National 2 Condensed",
+    30
+   ]
+  ],
+  "fontSizes": [
+   [
+    "20px",
+    49
+   ],
+   [
+    "16px",
+    41
+   ],
+   [
+    "200px",
+    22
+   ],
+   [
+    "32px",
+    10
+   ],
+   [
+    "72px",
+    9
+   ],
+   [
+    "51px",
+    6
+   ],
+   [
+    "420px",
+    4
+   ],
+   [
+    "12px",
+    3
+   ],
+   [
+    "152px",
+    2
+   ],
+   [
+    "232px",
+    2
+   ]
+  ],
+  "weights": [
+   [
+    "500",
+    87
+   ],
+   [
+    "900",
+    31
+   ],
+   [
+    "700",
+    25
+   ],
+   [
+    "400",
+    5
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.2",
+    49
+   ],
+   [
+    "1.1",
+    39
+   ],
+   [
+    "0.7",
+    30
+   ],
+   [
+    "0.9",
+    15
+   ],
+   [
+    "1",
+    10
+   ],
+   [
+    "normal",
+    5
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.02em",
+    24
+   ],
+   [
+    "-0.03em",
+    19
+   ],
+   [
+    "-0.01em",
+    12
+   ]
+  ],
+  "uppercaseShare": 32,
+  "maxFontPx": 420,
+  "maxFontText": "WE",
+  "maxFontVwRatio": 29.2,
+  "textColors": [
+   [
+    "rgb(254, 254, 254)",
+    75
+   ],
+   [
+    "rgb(216, 211, 211)",
+    51
+   ],
+   [
+    "rgb(19, 19, 19)",
+    20
+   ],
+   [
+    "rgba(0, 0, 0, 0)",
+    1
+   ],
+   [
+    "color(srgb 0.258824 0.258824 0.258824)",
+    1
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(19, 19, 19)",
+    726
+   ],
+   [
+    "rgb(254, 254, 254)",
+    338
+   ],
+   [
+    "rgb(216, 211, 211)",
+    302
+   ],
+   [
+    "rgb(78, 55, 255)",
+    191
+   ],
+   [
+    "oklab(0.186733 0.00000850856 0.00000375509 / 0.2)",
+    9
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "4.00024px",
+    3
+   ],
+   [
+    "8.00048px",
+    2
+   ]
+  ],
+  "maxWidths": [
+   [
+    "600.036px",
+    6
+   ],
+   [
+    "1000.06px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "FULL TOURS, NO EXCUSES.",
+   "size": 200,
+   "weight": "900",
+   "family": "National 2 Condensed",
+   "lh": 0.7,
+   "ls": "-4.00024px",
+   "transform": "uppercase",
+   "color": "rgb(254, 254, 254)",
+   "top": 524
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "FULL TOURS, NO EXCUSES.",
+    "size": 200,
+    "weight": "900",
+    "family": "National 2 Condensed",
+    "lh": 0.7,
+    "ls": "-4.00024px",
+    "transform": "uppercase",
+    "color": "rgb(254, 254, 254)",
+    "top": 524
+   },
+   {
+    "tag": "H2",
+    "text": "The engine of every show.",
+    "size": 72,
+    "weight": "700",
+    "family": "Helvetica Now Display",
+    "lh": 0.9,
+    "ls": "-2.16013px",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 1234
+   },
+   {
+    "tag": "H2",
+    "text": "We Move Shows Forward",
+    "size": 16,
+    "weight": "400",
+    "family": "Helvetica Now Display",
+    "lh": "normal",
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 2120
+   },
+   {
+    "tag": "H3",
+    "text": "Flawless Execution",
+    "size": 51,
+    "weight": "700",
+    "family": "Helvetica Now Display",
+    "lh": 0.9,
+    "ls": "-1.53009px",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 3830
+   },
+   {
+    "tag": "H3",
+    "text": "Safety-first standards",
+    "size": 51,
+    "weight": "700",
+    "family": "Helvetica Now Display",
+    "lh": 0.9,
+    "ls": "-1.53009px",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 4087
+   },
+   {
+    "tag": "H3",
+    "text": "Solution oriented",
+    "size": 51,
+    "weight": "700",
+    "family": "Helvetica Now Display",
+    "lh": 0.9,
+    "ls": "-1.53009px",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 4344
+   },
+   {
+    "tag": "H2",
+    "text": "Every tour is different. We always stay in tune.",
+    "size": 16,
+    "weight": "400",
+    "family": "Helvetica Now Display",
+    "lh": "normal",
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 4984
+   },
+   {
+    "tag": "H2",
+    "text": "Use Cases",
+    "size": 16,
+    "weight": "400",
+    "family": "Helvetica Now Display",
+    "lh": "normal",
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 5884
+   },
+   {
+    "tag": "H2",
+    "text": "A SOLID NETWORK",
+    "size": 200,
+    "weight": "900",
+    "family": "National 2 Condensed",
+    "lh": 0.7,
+    "ls": "-4.00024px",
+    "transform": "uppercase",
+    "color": "rgb(19, 19, 19)",
+    "top": 6538
+   },
+   {
+    "tag": "H2",
+    "text": "THAT NEVER SLEEPS",
+    "size": 200,
+    "weight": "900",
+    "family": "National 2 Condensed",
+    "lh": 0.7,
+    "ls": "-4.00024px",
+    "transform": "uppercase",
+    "color": "rgb(19, 19, 19)",
+    "top": 7228
+   },
+   {
+    "tag": "H2",
+    "text": "Ready? Let's hit the road.",
+    "size": 72,
+    "weight": "700",
+    "family": "Helvetica Now Display",
+    "lh": 0.9,
+    "ls": "-2.16013px",
+    "transform": "none",
+    "color": "rgb(19, 19, 19)",
+    "top": 8234
+   },
+   {
+    "tag": "H3",
+    "text": "CLIENTS DON’T REMEMBER TRUCKS. THEY REMEMBER NAMES.",
+    "size": 232,
+    "weight": "900",
+    "family": "National 2 Condensed",
+    "lh": 0.7,
+    "ls": "-4.64028px",
+    "transform": "uppercase",
+    "color": "color(srgb 0.258824 0.258824 0.258824)",
+    "top": 8712
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 16,
+    "lh": 1.1,
+    "family": "Helvetica Now Display",
+    "color": "rgb(254, 254, 254)",
+    "measure": 308
+   },
+   {
+    "size": 72,
+    "lh": 0.9,
+    "family": "Helvetica Now Display",
+    "color": "rgb(254, 254, 254)",
+    "measure": 699
+   },
+   {
+    "size": 16,
+    "lh": 1.1,
+    "family": "Helvetica Now Display",
+    "color": "rgb(254, 254, 254)",
+    "measure": 272
+   },
+   {
+    "size": 16,
+    "lh": 1.1,
+    "family": "Helvetica Now Display",
+    "color": "rgb(254, 254, 254)",
+    "measure": 272
+   },
+   {
+    "size": 16,
+    "lh": 1.1,
+    "family": "Helvetica Now Display",
+    "color": "rgb(254, 254, 254)",
+    "measure": 350
+   }
+  ],
+  "navLinks": [],
+  "buttons": [
+   "Access to main content",
+   "Contact",
+   "Plan your logistics",
+   "Culture",
+   "Start your logistics request",
+   "Join the crew",
+   "USA openings",
+   "Fb",
+   "In",
+   "Li",
+   "Cookies Preferences"
+  ],
+  "burger": false,
+  "headerPosition": "fixed",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 0,
+   "fixed": 5,
+   "horizontalScroll": false,
+   "themeSwitch": true,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 36,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 28,
+   "iframes": 2,
+   "images": 11,
+   "imgFormats": {
+    "webp": 11
+   },
+   "langSwitch": true,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "recaptcha": 2,
+   "ogl": 2,
+   "gtag": 1
+  },
+  "scripts": [
+   "www.gstatic.com/recaptcha/releases/zqB-6Xpbd3lCIvi7Tr2D0pob/recaptcha__en.js",
+   "trucknroll.com/dist/main-Csu8MLr1.js",
+   "www.google.com/recaptcha/api.js?render=6LdAAR4sAAAAAN89XRpvv-RNt_thn_dIt185q6ae",
+   "www.googletagmanager.com/gtag/js?id=G-STR9KP8K2M",
+   "trucknroll.com/dist/ParallaxImage-D-Hx3zFW.js",
+   "trucknroll.com/dist/ParallaxImage-D-Hx3zFW.js",
+   "trucknroll.com/dist/ParallaxImage-D-Hx3zFW.js",
+   "trucknroll.com/dist/ParallaxImage-D-Hx3zFW.js",
+   "trucknroll.com/dist/ParallaxImage-D-Hx3zFW.js",
+   "trucknroll.com/dist/Accordion-jn8VkQG4.js",
+   "trucknroll.com/dist/Accordion-jn8VkQG4.js",
+   "trucknroll.com/dist/Accordion-jn8VkQG4.js",
+   "trucknroll.com/dist/Accordion-jn8VkQG4.js",
+   "trucknroll.com/dist/Accordion-jn8VkQG4.js",
+   "trucknroll.com/dist/ParallaxImage-D-Hx3zFW.js",
+   "trucknroll.com/dist/HugeCaption-Crf9GPdC.js",
+   "trucknroll.com/dist/HoverCaption-B_8cR76t.js",
+   "trucknroll.com/dist/Rail-Ck4YugMY.js",
+   "trucknroll.com/dist/Rail-Ck4YugMY.js",
+   "trucknroll.com/dist/ModalVideo-UVJUOQ_g.js",
+   "trucknroll.com/dist/Modal-CNySbtkZ.js"
+  ],
+  "css": {
+   "media": [
+    [
+     "(min-width: 1000px)",
+     26
+    ],
+    [
+     "not all and (min-width: 1000px)",
+     23
+    ],
+    [
+     "not all and (min-width: 700px)",
+     15
+    ],
+    [
+     "(min-width: 700px)",
+     14
+    ],
+    [
+     "(hover: hover)",
+     11
+    ],
+    [
+     "not all and (min-width: 1200px)",
+     10
+    ],
+    [
+     "(min-width: 1200px)",
+     10
+    ],
+    [
+     "(min-width: 1400px)",
+     4
+    ],
+    [
+     "(hover: hover) and (prefers-reduced-motion: no-preference)",
+     3
+    ],
+    [
+     "screen and (max-width: 640px)",
+     2
+    ],
+    [
+     "not all and (min-width: 1400px)",
+     2
+    ],
+    [
+     "(min-width: 500px)",
+     2
+    ],
+    [
+     "screen and (min-width: 640px)",
+     1
+    ],
+    [
+     "(prefers-reduced-motion)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "0.15s",
+     8
+    ],
+    [
+     "0.25s",
+     5
+    ],
+    [
+     "var(--modal-transition-duration-in",
+     3
+    ],
+    [
+     "var(--modal-transition-duration-out",
+     3
+    ],
+    [
+     "var(--transition-duration-fast)",
+     2
+    ],
+    [
+     "var(--transition-duration-slow)",
+     1
+    ],
+    [
+     "0.6s",
+     1
+    ],
+    [
+     "1.2s",
+     1
+    ],
+    [
+     "5000s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "ease",
+     6
+    ],
+    [
+     "var(--ease-power3-out)",
+     2
+    ],
+    [
+     "var(--ease-power4-out)",
+     1
+    ],
+    [
+     "ease-in-out",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "Helvetica Now Display 700 normal",
+    "National 2 Condensed 900 normal"
+   ],
+   "keyframes": 6,
+   "clampFontSizes": 1,
+   "vwFontSizes": 1,
+   "sheets": 2,
+   "blocked": 0,
+   "rootVarCount": 160,
+   "rootVarsSample": {
+    "--cc-font-family": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"A",
+    "--cc-modal-border-radius": ".5rem",
+    "--cc-btn-border-radius": ".4rem",
+    "--cc-modal-transition-duration": ".25s",
+    "--cc-link-color": "var(--cc-btn-primary-bg)",
+    "--cc-z-index": "2147483647",
+    "--cc-primary-color": "#2c2f31",
+    "--cc-secondary-color": "#5e6266",
+    "--cc-btn-primary-color": "#fff",
+    "--cc-btn-primary-border-color": "var(--cc-btn-primary-bg)",
+    "--cc-btn-primary-hover-color": "#fff",
+    "--cc-btn-primary-hover-border-color": "var(--cc-btn-primary-hover-bg)",
+    "--cc-btn-secondary-color": "var(--cc-primary-color)",
+    "--cc-btn-secondary-border-color": "var(--cc-btn-secondary-bg)",
+    "--cc-btn-secondary-hover-color": "#000",
+    "--cc-btn-secondary-hover-border-color": "#d4dae0",
+    "--cc-separator-border-color": "#f0f4f7",
+    "--cc-toggle-enabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-disabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-readonly-knob-icon-color": "var(--cc-toggle-readonly-bg)",
+    "--cc-footer-color": "var(--cc-secondary-color)",
+    "--cc-footer-border-color": "#e4eaed",
+    "--cc-pm-toggle-border-radius": "4em",
+    "--font-sans": "\"Helvetica Now Display\",sans-serif",
+    "--font-mono": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New",
+    "--color-gray-200": "oklch(92.8% .006 264.531)",
+    "--color-neutral-200": "oklch(92.2% 0 0)",
+    "--color-neutral-400": "oklch(70.8% 0 0)",
+    "--color-black": "#131313",
+    "--color-white": "#fefefe",
+    "--spacing": ".25rem",
+    "--container-3xl": "48rem",
+    "--radius-xs": ".25rem",
+    "--radius-sm": ".5rem",
+    "--radius-md": ".875rem",
+    "--radius-lg": "2.5rem",
+    "--ease-out": "cubic-bezier(0,0,.2,1)",
+    "--default-font-family": "var(--font-sans)",
+    "--default-mono-font-family": "var(--font-mono)",
+    "--font-condensed": "\"National 2 Condensed\",sans-serif",
+    "--text-heading-huge--letter-spacing": "-.03em",
+    "--text-heading-huge--line-height": ".7",
+    "--text-heading-huge--font-weight": "900",
+    "--text-heading-xl--letter-spacing": "-.02em",
+    "--text-heading-xl--line-height": ".7",
+    "--text-heading-xl--font-weight": "900",
+    "--text-heading-lg--letter-spacing": "-.02em",
+    "--text-heading-lg--line-height": ".7",
+    "--text-heading-lg--font-weight": "900",
+    "--text-heading-md--letter-spacing": "-.01em",
+    "--text-heading-md--line-height": ".7",
+    "--text-heading-md--font-weight": "900",
+    "--text-heading-sm--letter-spacing": "-.03em",
+    "--text-heading-sm--line-height": ".9",
+    "--text-heading-sm--font-weight": "700",
+    "--text-heading-xs--letter-spacing": "-.03em",
+    "--text-heading-xs--line-height": ".9",
+    "--text-heading-xs--font-weight": "700",
+    "--text-heading-2xs--letter-spacing": "-.01em",
+    "--text-heading-2xs--line-height": "1",
+    "--text-heading-2xs--font-weight": "700",
+    "--text-body-lg--letter-spacing": "0",
+    "--text-body-lg--line-height": "1.2",
+    "--text-body-lg--font-weight": "500",
+    "--text-body-md--letter-spacing": "0",
+    "--text-body-md--line-height": "1.1",
+    "--text-body-md--font-weight": "500",
+    "--text-body-sm--letter-spacing": "0",
+    "--text-body-sm--line-height": "1.1",
+    "--text-body-sm--font-weight": "500",
+    "--color-accent": "#4e37ff",
+    "--color-gray": "#d8d3d3",
+    "--color-feedback-error": "#de3e3e",
+    "--color-placeholder": "#424242",
+    "--color-visual-placeholder": "var(--color-gray)",
+    "--spacing-unit-md": "var(--unit-md)",
+    "--spacing-gutter": "10px",
+    "--spacing-fluid-xs": "clamp(.5rem, .4565rem + .2174vw, .625rem)",
+    "--spacing-fluid-sm": "clamp(1rem, .8261rem + .8696vw, 1.5rem)",
+    "--spacing-fluid-md": "clamp(1.5rem, 1.3261rem + .8696vw, 2rem)"
+   }
+  },
+  "perf": {
+   "requests": 38,
+   "kb": 1590,
+   "byTypeKB": {
+    "script": 931,
+    "other": 64,
+    "link": 111,
+    "css": 97,
+    "img": 324,
+    "fetch": 65,
+    "iframe": 0
+   },
+   "dcl": 6693,
+   "load": 11245,
+   "ttfb": 6065
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [
+   "NetworkError: Failed to execute 'importScripts' on 'WorkerGlobalScope': The script at 'https://www.gstatic.com/recaptcha"
+  ],
+  "scriptSignatures": {
+   "swup": 1,
+   "IntersectionObserver": 1,
+   "reducedMotion": 1
+  },
+  "scriptsChecked": 9
+ },
+ "mobile": {
+  "title": "Entertainment logistics - Truck'N Roll",
+  "lang": "en",
+  "generator": null,
+  "description": "Truck’n Roll® is a logistics compagnie built for the fast, demanding world of live entertainment. For over three decades, we’ve been trusted to move the gear behind the biggest tours across North America.",
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 9173,
+  "domNodes": 633,
+  "textEls": 133,
+  "fonts": [
+   "Helvetica Now Display 700 normal",
+   "National 2 Condensed 900 normal"
+  ],
+  "fontFamilies": [
+   [
+    "Helvetica Now Display",
+    107
+   ],
+   [
+    "National 2 Condensed",
+    26
+   ]
+  ],
+  "fontSizes": [
+   [
+    "14px",
+    41
+   ],
+   [
+    "18px",
+    31
+   ],
+   [
+    "82px",
+    24
+   ],
+   [
+    "12px",
+    15
+   ],
+   [
+    "39px",
+    9
+   ],
+   [
+    "33px",
+    6
+   ],
+   [
+    "16px",
+    5
+   ],
+   [
+    "45px",
+    2
+   ]
+  ],
+  "weights": [
+   [
+    "500",
+    86
+   ],
+   [
+    "900",
+    27
+   ],
+   [
+    "700",
+    15
+   ],
+   [
+    "400",
+    5
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.1",
+    56
+   ],
+   [
+    "1.2",
+    31
+   ],
+   [
+    "0.7",
+    26
+   ],
+   [
+    "0.9",
+    15
+   ],
+   [
+    "normal",
+    5
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.02em",
+    24
+   ],
+   [
+    "-0.03em",
+    15
+   ],
+   [
+    "-0.01em",
+    2
+   ]
+  ],
+  "uppercaseShare": 29,
+  "maxFontPx": 82,
+  "maxFontText": "FULL",
+  "maxFontVwRatio": 21,
+  "textColors": [
+   [
+    "rgb(254, 254, 254)",
+    70
+   ],
+   [
+    "rgb(216, 211, 211)",
+    41
+   ],
+   [
+    "rgb(19, 19, 19)",
+    20
+   ],
+   [
+    "rgba(0, 0, 0, 0)",
+    1
+   ],
+   [
+    "color(srgb 0.258824 0.258824 0.258824)",
+    1
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(19, 19, 19)",
+    131
+   ],
+   [
+    "rgb(216, 211, 211)",
+    109
+   ],
+   [
+    "rgb(254, 254, 254)",
+    72
+   ],
+   [
+    "rgb(78, 55, 255)",
+    55
+   ],
+   [
+    "oklab(0.186733 0.00000850856 0.00000375509 / 0.2)",
+    7
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "4px",
+    3
+   ],
+   [
+    "8px",
+    2
+   ]
+  ],
+  "maxWidths": [
+   [
+    "1000px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "FULL TOURS, NO EXCUSES.",
+   "size": 82,
+   "weight": "900",
+   "family": "National 2 Condensed",
+   "lh": 0.7,
+   "ls": "-1.63478px",
+   "transform": "uppercase",
+   "color": "rgb(254, 254, 254)",
+   "top": 199
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "FULL TOURS, NO EXCUSES.",
+    "size": 82,
+    "weight": "900",
+    "family": "National 2 Condensed",
+    "lh": 0.7,
+    "ls": "-1.63478px",
+    "transform": "uppercase",
+    "color": "rgb(254, 254, 254)",
+    "top": 199
+   },
+   {
+    "tag": "H2",
+    "text": "The engine of every show.",
+    "size": 39,
+    "weight": "700",
+    "family": "Helvetica Now Display",
+    "lh": 0.9,
+    "ls": "-1.16217px",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 872
+   },
+   {
+    "tag": "H2",
+    "text": "We Move Shows Forward",
+    "size": 16,
+    "weight": "400",
+    "family": "Helvetica Now Display",
+    "lh": "normal",
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 1766
+   },
+   {
+    "tag": "H3",
+    "text": "Flawless Execution",
+    "size": 33,
+    "weight": "700",
+    "family": "Helvetica Now Display",
+    "lh": 0.9,
+    "ls": "-1.00339px",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 2689
+   },
+   {
+    "tag": "H3",
+    "text": "Safety-first standards",
+    "size": 33,
+    "weight": "700",
+    "family": "Helvetica Now Display",
+    "lh": 0.9,
+    "ls": "-1.00339px",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 3250
+   },
+   {
+    "tag": "H3",
+    "text": "Solution oriented",
+    "size": 33,
+    "weight": "700",
+    "family": "Helvetica Now Display",
+    "lh": 0.9,
+    "ls": "-1.00339px",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 3810
+   },
+   {
+    "tag": "H2",
+    "text": "Every tour is different. We always stay in tune.",
+    "size": 16,
+    "weight": "400",
+    "family": "Helvetica Now Display",
+    "lh": "normal",
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 4337
+   },
+   {
+    "tag": "H2",
+    "text": "Use Cases",
+    "size": 16,
+    "weight": "400",
+    "family": "Helvetica Now Display",
+    "lh": "normal",
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(254, 254, 254)",
+    "top": 4957
+   },
+   {
+    "tag": "H2",
+    "text": "A SOLID NETWORK",
+    "size": 82,
+    "weight": "900",
+    "family": "National 2 Condensed",
+    "lh": 0.7,
+    "ls": "-1.63478px",
+    "transform": "uppercase",
+    "color": "rgb(19, 19, 19)",
+    "top": 5582
+   },
+   {
+    "tag": "H2",
+    "text": "THAT NEVER SLEEPS",
+    "size": 82,
+    "weight": "900",
+    "family": "National 2 Condensed",
+    "lh": 0.7,
+    "ls": "-1.63478px",
+    "transform": "uppercase",
+    "color": "rgb(19, 19, 19)",
+    "top": 5900
+   },
+   {
+    "tag": "H2",
+    "text": "Ready? Let's hit the road.",
+    "size": 39,
+    "weight": "700",
+    "family": "Helvetica Now Display",
+    "lh": 0.9,
+    "ls": "-1.16217px",
+    "transform": "none",
+    "color": "rgb(19, 19, 19)",
+    "top": 6720
+   },
+   {
+    "tag": "H3",
+    "text": "CLIENTS DON’T REMEMBER TRUCKS. THEY REMEMBER NAMES.",
+    "size": 82,
+    "weight": "900",
+    "family": "National 2 Condensed",
+    "lh": 0.7,
+    "ls": "-1.63478px",
+    "transform": "uppercase",
+    "color": "color(srgb 0.258824 0.258824 0.258824)",
+    "top": 7371
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 14,
+    "lh": 1.1,
+    "family": "Helvetica Now Display",
+    "color": "rgb(254, 254, 254)",
+    "measure": 308
+   },
+   {
+    "size": 39,
+    "lh": 0.9,
+    "family": "Helvetica Now Display",
+    "color": "rgb(254, 254, 254)",
+    "measure": 370
+   },
+   {
+    "size": 14,
+    "lh": 1.1,
+    "family": "Helvetica Now Display",
+    "color": "rgb(254, 254, 254)",
+    "measure": 272
+   },
+   {
+    "size": 14,
+    "lh": 1.1,
+    "family": "Helvetica Now Display",
+    "color": "rgb(254, 254, 254)",
+    "measure": 272
+   },
+   {
+    "size": 14,
+    "lh": 1.1,
+    "family": "Helvetica Now Display",
+    "color": "rgb(254, 254, 254)",
+    "measure": 350
+   }
+  ],
+  "navLinks": [
+   "Services",
+   "Culture"
+  ],
+  "buttons": [
+   "Contact",
+   "Access to main content",
+   "Plan your logistics",
+   "Culture",
+   "Start your logistics request",
+   "Join the crew",
+   "USA openings",
+   "Fb",
+   "In",
+   "Li",
+   "Cookies Preferences"
+  ],
+  "burger": false,
+  "headerPosition": "fixed",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 0,
+   "fixed": 5,
+   "horizontalScroll": false,
+   "themeSwitch": true,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 31,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 26,
+   "iframes": 2,
+   "images": 11,
+   "imgFormats": {
+    "webp": 11
+   },
+   "langSwitch": true,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "recaptcha": 2,
+   "ogl": 2,
+   "gtag": 1
+  },
+  "scripts": [
+   "www.gstatic.com/recaptcha/releases/zqB-6Xpbd3lCIvi7Tr2D0pob/recaptcha__en.js",
+   "trucknroll.com/dist/main-Csu8MLr1.js",
+   "www.google.com/recaptcha/api.js?render=6LdAAR4sAAAAAN89XRpvv-RNt_thn_dIt185q6ae",
+   "www.googletagmanager.com/gtag/js?id=G-STR9KP8K2M",
+   "trucknroll.com/dist/ParallaxImage-D-Hx3zFW.js",
+   "trucknroll.com/dist/ParallaxImage-D-Hx3zFW.js",
+   "trucknroll.com/dist/ParallaxImage-D-Hx3zFW.js",
+   "trucknroll.com/dist/ParallaxImage-D-Hx3zFW.js",
+   "trucknroll.com/dist/ParallaxImage-D-Hx3zFW.js",
+   "trucknroll.com/dist/Accordion-jn8VkQG4.js",
+   "trucknroll.com/dist/Accordion-jn8VkQG4.js",
+   "trucknroll.com/dist/Accordion-jn8VkQG4.js",
+   "trucknroll.com/dist/Accordion-jn8VkQG4.js",
+   "trucknroll.com/dist/Accordion-jn8VkQG4.js",
+   "trucknroll.com/dist/ParallaxImage-D-Hx3zFW.js",
+   "trucknroll.com/dist/HugeCaption-Crf9GPdC.js",
+   "trucknroll.com/dist/HoverCaption-B_8cR76t.js",
+   "trucknroll.com/dist/Rail-Ck4YugMY.js",
+   "trucknroll.com/dist/Rail-Ck4YugMY.js",
+   "trucknroll.com/dist/ModalVideo-UVJUOQ_g.js",
+   "trucknroll.com/dist/Modal-CNySbtkZ.js"
+  ],
+  "css": {
+   "media": [
+    [
+     "(min-width: 1000px)",
+     26
+    ],
+    [
+     "not all and (min-width: 1000px)",
+     23
+    ],
+    [
+     "not all and (min-width: 700px)",
+     15
+    ],
+    [
+     "(min-width: 700px)",
+     14
+    ],
+    [
+     "(hover: hover)",
+     11
+    ],
+    [
+     "not all and (min-width: 1200px)",
+     10
+    ],
+    [
+     "(min-width: 1200px)",
+     10
+    ],
+    [
+     "(min-width: 1400px)",
+     4
+    ],
+    [
+     "(hover: hover) and (prefers-reduced-motion: no-preference)",
+     3
+    ],
+    [
+     "screen and (max-width: 640px)",
+     2
+    ],
+    [
+     "not all and (min-width: 1400px)",
+     2
+    ],
+    [
+     "(min-width: 500px)",
+     2
+    ],
+    [
+     "screen and (min-width: 640px)",
+     1
+    ],
+    [
+     "(prefers-reduced-motion)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "0.15s",
+     8
+    ],
+    [
+     "0.25s",
+     5
+    ],
+    [
+     "var(--modal-transition-duration-in",
+     3
+    ],
+    [
+     "var(--modal-transition-duration-out",
+     3
+    ],
+    [
+     "var(--transition-duration-fast)",
+     2
+    ],
+    [
+     "var(--transition-duration-slow)",
+     1
+    ],
+    [
+     "0.6s",
+     1
+    ],
+    [
+     "1.2s",
+     1
+    ],
+    [
+     "5000s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "ease",
+     6
+    ],
+    [
+     "var(--ease-power3-out)",
+     2
+    ],
+    [
+     "var(--ease-power4-out)",
+     1
+    ],
+    [
+     "ease-in-out",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "Helvetica Now Display 700 normal",
+    "National 2 Condensed 900 normal"
+   ],
+   "keyframes": 6,
+   "clampFontSizes": 1,
+   "vwFontSizes": 1,
+   "sheets": 2,
+   "blocked": 0,
+   "rootVarCount": 160,
+   "rootVarsSample": {
+    "--cc-font-family": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"A",
+    "--cc-modal-border-radius": ".5rem",
+    "--cc-btn-border-radius": ".4rem",
+    "--cc-modal-transition-duration": ".25s",
+    "--cc-link-color": "var(--cc-btn-primary-bg)",
+    "--cc-z-index": "2147483647",
+    "--cc-primary-color": "#2c2f31",
+    "--cc-secondary-color": "#5e6266",
+    "--cc-btn-primary-color": "#fff",
+    "--cc-btn-primary-border-color": "var(--cc-btn-primary-bg)",
+    "--cc-btn-primary-hover-color": "#fff",
+    "--cc-btn-primary-hover-border-color": "var(--cc-btn-primary-hover-bg)",
+    "--cc-btn-secondary-color": "var(--cc-primary-color)",
+    "--cc-btn-secondary-border-color": "var(--cc-btn-secondary-bg)",
+    "--cc-btn-secondary-hover-color": "#000",
+    "--cc-btn-secondary-hover-border-color": "#d4dae0",
+    "--cc-separator-border-color": "#f0f4f7",
+    "--cc-toggle-enabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-disabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-readonly-knob-icon-color": "var(--cc-toggle-readonly-bg)",
+    "--cc-footer-color": "var(--cc-secondary-color)",
+    "--cc-footer-border-color": "#e4eaed",
+    "--cc-pm-toggle-border-radius": "4em",
+    "--font-sans": "\"Helvetica Now Display\",sans-serif",
+    "--font-mono": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New",
+    "--color-gray-200": "oklch(92.8% .006 264.531)",
+    "--color-neutral-200": "oklch(92.2% 0 0)",
+    "--color-neutral-400": "oklch(70.8% 0 0)",
+    "--color-black": "#131313",
+    "--color-white": "#fefefe",
+    "--spacing": ".25rem",
+    "--container-3xl": "48rem",
+    "--radius-xs": ".25rem",
+    "--radius-sm": ".5rem",
+    "--radius-md": ".875rem",
+    "--radius-lg": "2.5rem",
+    "--ease-out": "cubic-bezier(0,0,.2,1)",
+    "--default-font-family": "var(--font-sans)",
+    "--default-mono-font-family": "var(--font-mono)",
+    "--font-condensed": "\"National 2 Condensed\",sans-serif",
+    "--text-heading-huge--letter-spacing": "-.03em",
+    "--text-heading-huge--line-height": ".7",
+    "--text-heading-huge--font-weight": "900",
+    "--text-heading-xl--letter-spacing": "-.02em",
+    "--text-heading-xl--line-height": ".7",
+    "--text-heading-xl--font-weight": "900",
+    "--text-heading-lg--letter-spacing": "-.02em",
+    "--text-heading-lg--line-height": ".7",
+    "--text-heading-lg--font-weight": "900",
+    "--text-heading-md--letter-spacing": "-.01em",
+    "--text-heading-md--line-height": ".7",
+    "--text-heading-md--font-weight": "900",
+    "--text-heading-sm--letter-spacing": "-.03em",
+    "--text-heading-sm--line-height": ".9",
+    "--text-heading-sm--font-weight": "700",
+    "--text-heading-xs--letter-spacing": "-.03em",
+    "--text-heading-xs--line-height": ".9",
+    "--text-heading-xs--font-weight": "700",
+    "--text-heading-2xs--letter-spacing": "-.01em",
+    "--text-heading-2xs--line-height": "1",
+    "--text-heading-2xs--font-weight": "700",
+    "--text-body-lg--letter-spacing": "0",
+    "--text-body-lg--line-height": "1.2",
+    "--text-body-lg--font-weight": "500",
+    "--text-body-md--letter-spacing": "0",
+    "--text-body-md--line-height": "1.1",
+    "--text-body-md--font-weight": "500",
+    "--text-body-sm--letter-spacing": "0",
+    "--text-body-sm--line-height": "1.1",
+    "--text-body-sm--font-weight": "500",
+    "--color-accent": "#4e37ff",
+    "--color-gray": "#d8d3d3",
+    "--color-feedback-error": "#de3e3e",
+    "--color-placeholder": "#424242",
+    "--color-visual-placeholder": "var(--color-gray)",
+    "--spacing-unit-md": "var(--unit-md)",
+    "--spacing-gutter": "10px",
+    "--spacing-fluid-xs": "clamp(.5rem, .4565rem + .2174vw, .625rem)",
+    "--spacing-fluid-sm": "clamp(1rem, .8261rem + .8696vw, 1.5rem)",
+    "--spacing-fluid-md": "clamp(1.5rem, 1.3261rem + .8696vw, 2rem)"
+   }
+  },
+  "perf": {
+   "requests": 38,
+   "kb": 1590,
+   "byTypeKB": {
+    "script": 931,
+    "other": 64,
+    "link": 111,
+    "css": 97,
+    "img": 324,
+    "fetch": 65,
+    "iframe": 0
+   },
+   "dcl": 5364,
+   "load": 12574,
+   "ttfb": 4796
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": []
+ },
+ "seconds": 50
+}

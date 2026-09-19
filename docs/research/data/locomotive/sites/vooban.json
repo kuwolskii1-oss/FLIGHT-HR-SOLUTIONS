@@ -1,0 +1,308 @@
+{
+ "label": "vooban",
+ "url": "https://vooban.com/",
+ "capturedAt": "2026-09-19T15:33:10.614Z",
+ "desktop": {
+  "title": "ERROR: The request could not be satisfied",
+  "lang": "",
+  "generator": null,
+  "description": null,
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 900,
+  "domNodes": 8,
+  "textEls": 3,
+  "fonts": [],
+  "fontFamilies": [
+   [
+    "Times New Roman",
+    2
+   ],
+   [
+    "monospace",
+    1
+   ]
+  ],
+  "fontSizes": [
+   [
+    "32px",
+    1
+   ],
+   [
+    "24px",
+    1
+   ],
+   [
+    "13px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "700",
+    2
+   ],
+   [
+    "400",
+    1
+   ]
+  ],
+  "lineHeights": [
+   [
+    "normal",
+    3
+   ]
+  ],
+  "letterSpacing": [],
+  "uppercaseShare": 0,
+  "maxFontPx": 32,
+  "maxFontText": "403 ERROR",
+  "maxFontVwRatio": 2.2,
+  "textColors": [
+   [
+    "rgb(0, 0, 0)",
+    3
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(128, 128, 128)",
+    0
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [],
+  "maxWidths": [],
+  "h1": {
+   "tag": "H1",
+   "text": "403 ERROR",
+   "size": 32,
+   "weight": "700",
+   "family": "Times New Roman",
+   "lh": "normal",
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(0, 0, 0)",
+   "top": 21
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "403 ERROR",
+    "size": 32,
+    "weight": "700",
+    "family": "Times New Roman",
+    "lh": "normal",
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 21
+   },
+   {
+    "tag": "H2",
+    "text": "The request could not be satisfied.",
+    "size": 24,
+    "weight": "700",
+    "family": "Times New Roman",
+    "lh": "normal",
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 80
+   }
+  ],
+  "bodyParagraphs": [],
+  "navLinks": [],
+  "buttons": [],
+  "burger": false,
+  "headerPosition": null,
+  "headerMix": null,
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": false,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 0,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": false,
+   "pageTransitions": false,
+   "grid": 0,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 0,
+   "iframes": 0,
+   "images": 0,
+   "imgFormats": {},
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {},
+  "scripts": [],
+  "css": {
+   "media": [],
+   "durations": [],
+   "easings": [],
+   "fontFaces": [],
+   "keyframes": 0,
+   "clampFontSizes": 0,
+   "vwFontSizes": 0,
+   "sheets": 0,
+   "blocked": 0,
+   "rootVarCount": 0,
+   "rootVarsSample": {}
+  },
+  "perf": {
+   "requests": 0,
+   "kb": 0,
+   "byTypeKB": {},
+   "dcl": 2442,
+   "load": 2442,
+   "ttfb": 2430
+  },
+  "status": 403,
+  "cookieDismissed": null,
+  "errors": [],
+  "scriptSignatures": {},
+  "scriptsChecked": 0
+ },
+ "mobile": {
+  "title": "",
+  "lang": "",
+  "generator": null,
+  "description": null,
+  "viewport": [
+   980,
+   2121
+  ],
+  "scrollHeight": 2120,
+  "domNodes": 0,
+  "textEls": 0,
+  "fonts": [],
+  "fontFamilies": [],
+  "fontSizes": [],
+  "weights": [],
+  "lineHeights": [],
+  "letterSpacing": [],
+  "uppercaseShare": 0,
+  "maxFontPx": 0,
+  "maxFontText": null,
+  "maxFontVwRatio": 0,
+  "textColors": [],
+  "backgrounds": [],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [],
+  "maxWidths": [],
+  "h1": null,
+  "headings": [],
+  "bodyParagraphs": [],
+  "navLinks": [],
+  "buttons": [],
+  "burger": false,
+  "headerPosition": null,
+  "headerMix": null,
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": false,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 0,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": false,
+   "pageTransitions": false,
+   "grid": 0,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 0,
+   "iframes": 0,
+   "images": 0,
+   "imgFormats": {},
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {},
+  "scripts": [],
+  "css": {
+   "media": [],
+   "durations": [],
+   "easings": [],
+   "fontFaces": [],
+   "keyframes": 0,
+   "clampFontSizes": 0,
+   "vwFontSizes": 0,
+   "sheets": 0,
+   "blocked": 0,
+   "rootVarCount": 0,
+   "rootVarsSample": {}
+  },
+  "perf": {
+   "requests": 0,
+   "kb": 0,
+   "byTypeKB": {},
+   "dcl": 6888,
+   "load": 6889,
+   "ttfb": 0
+  },
+  "status": null,
+  "cookieDismissed": null,
+  "errors": [
+   "nav: page.goto: net::ERR_TOO_MANY_RETRIES at https://vooban.com/\nCall log:\n\u001b[2m  - navigating to \"https:/"
+  ]
+ },
+ "seconds": 34
+}

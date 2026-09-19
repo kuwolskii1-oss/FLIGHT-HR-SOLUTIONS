@@ -1,0 +1,624 @@
+{
+ "label": "mcalpine",
+ "url": "https://mcalpinehouse.com",
+ "capturedAt": "2026-09-19T15:31:27.689Z",
+ "desktop": {
+  "title": "",
+  "lang": "",
+  "generator": null,
+  "description": null,
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 900,
+  "domNodes": 0,
+  "textEls": 0,
+  "fonts": [],
+  "fontFamilies": [],
+  "fontSizes": [],
+  "weights": [],
+  "lineHeights": [],
+  "letterSpacing": [],
+  "uppercaseShare": 0,
+  "maxFontPx": 0,
+  "maxFontText": null,
+  "maxFontVwRatio": 0,
+  "textColors": [],
+  "backgrounds": [],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [],
+  "maxWidths": [],
+  "h1": null,
+  "headings": [],
+  "bodyParagraphs": [],
+  "navLinks": [],
+  "buttons": [],
+  "burger": false,
+  "headerPosition": null,
+  "headerMix": null,
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": false,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 0,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": false,
+   "pageTransitions": false,
+   "grid": 0,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 0,
+   "iframes": 0,
+   "images": 0,
+   "imgFormats": {},
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {},
+  "scripts": [],
+  "css": {
+   "media": [],
+   "durations": [],
+   "easings": [],
+   "fontFaces": [],
+   "keyframes": 0,
+   "clampFontSizes": 0,
+   "vwFontSizes": 0,
+   "sheets": 0,
+   "blocked": 0,
+   "rootVarCount": 0,
+   "rootVarsSample": {}
+  },
+  "perf": {
+   "requests": 0,
+   "kb": 0,
+   "byTypeKB": {},
+   "dcl": 9522,
+   "load": 9523,
+   "ttfb": 0
+  },
+  "status": null,
+  "cookieDismissed": null,
+  "errors": [
+   "nav: page.goto: net::ERR_TOO_MANY_RETRIES at https://mcalpinehouse.com/\nCall log:\n\u001b[2m  - navigating to \""
+  ],
+  "scriptSignatures": {},
+  "scriptsChecked": 0
+ },
+ "mobile": {
+  "title": "McALPINE",
+  "lang": "en-US",
+  "generator": "WordPress 6.9.4",
+  "description": "Residential Architecture and Interior Design Partnership. We find sanctuary in a place that mirrors our soul. The best house is the house that looks like how we feel inside.",
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 3056,
+  "domNodes": 637,
+  "textEls": 97,
+  "fonts": [
+   "Canela 200 normal",
+   "Canela 200 italic",
+   "Canela 300 normal",
+   "Canela 300 italic",
+   "Canela Text 400 normal",
+   "Canela Text 400 italic"
+  ],
+  "fontFamilies": [
+   [
+    "Canela Text",
+    60
+   ],
+   [
+    "Canela",
+    37
+   ]
+  ],
+  "fontSizes": [
+   [
+    "13px",
+    58
+   ],
+   [
+    "40px",
+    37
+   ],
+   [
+    "28px",
+    1
+   ],
+   [
+    "14px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    59
+   ],
+   [
+    "250",
+    37
+   ],
+   [
+    "700",
+    1
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.5",
+    45
+   ],
+   [
+    "0.9",
+    37
+   ],
+   [
+    "normal",
+    11
+   ],
+   [
+    "1.2",
+    3
+   ],
+   [
+    "1.1",
+    1
+   ]
+  ],
+  "letterSpacing": [],
+  "uppercaseShare": 0,
+  "maxFontPx": 40,
+  "maxFontText": "",
+  "maxFontVwRatio": 10.3,
+  "textColors": [
+   [
+    "rgb(36, 28, 24)",
+    54
+   ],
+   [
+    "rgb(255, 255, 255)",
+    43
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(255, 255, 255)",
+    46
+   ],
+   [
+    "rgb(235, 235, 235)",
+    38
+   ],
+   [
+    "rgba(62, 62, 67, 0.65)",
+    33
+   ],
+   [
+    "rgb(61, 60, 68)",
+    29
+   ],
+   [
+    "rgb(0, 0, 0)",
+    8
+   ],
+   [
+    "rgba(36, 28, 24, 0.35)",
+    1
+   ],
+   [
+    "rgb(36, 28, 24)",
+    1
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [
+   [
+    "50%",
+    1
+   ],
+   [
+    "4px",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "612.5px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "McALPINE",
+   "size": 28,
+   "weight": "700",
+   "family": "Canela Text",
+   "lh": 1.1,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(255, 255, 255)",
+   "top": 379
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "McALPINE",
+    "size": 28,
+    "weight": "700",
+    "family": "Canela Text",
+    "lh": 1.1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 379
+   }
+  ],
+  "bodyParagraphs": [],
+  "navLinks": [
+   "Go to main content"
+  ],
+  "buttons": [
+   "Go to main content",
+   "Open / Close menu",
+   "Play",
+   "Copy info@mcalpinehouse.com to clipboard",
+   "Copy jobs@mcalpinehouse.com to clipboard",
+   "Copy 844.624.6633 to clipboard",
+   "Manage Cookies"
+  ],
+  "burger": true,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": true,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 5,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": true,
+   "pageTransitions": false,
+   "grid": 4,
+   "videos": 3,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 9,
+   "iframes": 1,
+   "images": 77,
+   "imgFormats": {
+    "webp": 77
+   },
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "locomotive": 1,
+   "ogl": 1,
+   "gtag": 1
+  },
+  "scripts": [
+   "mcalpinehouse.com/themes/mcalpine/static/assets/scripts/vendors.js?ver=1.0.0+1744829362583",
+   "mcalpinehouse.com/themes/mcalpine/static/assets/scripts/app.js?ver=1.0.0+1744829362583",
+   "mcalpinehouse.com/mu-plugins/locomotive-cookie-consent/assets/cookie-consent.js?ver=0.2.3",
+   "www.googletagmanager.com/gtag/js?id=G-7B4L14SCN4",
+   "static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+  ],
+  "css": {
+   "media": [
+    [
+     "(min-width: 1000px)",
+     53
+    ],
+    [
+     "(min-width: 700px)",
+     49
+    ],
+    [
+     "(max-width: 699px)",
+     40
+    ],
+    [
+     "(max-width: 999px)",
+     33
+    ],
+    [
+     "(min-width: 1400px)",
+     16
+    ],
+    [
+     "(hover: hover) and (prefers-reduced-motion: no-preference)",
+     13
+    ],
+    [
+     "(hover: hover)",
+     10
+    ],
+    [
+     "(min-width: 700px) and (hover: hover) and (prefers-reduced-motion: no-preference)",
+     5
+    ],
+    [
+     "(min-width: 700px) and (max-width: 999px)",
+     5
+    ],
+    [
+     "(min-width: 700px) and (hover: hover)",
+     4
+    ],
+    [
+     "(max-width: 699px), (hover: none)",
+     4
+    ],
+    [
+     "(hover: hover) and (prefers-reduced-motion: reduce)",
+     3
+    ],
+    [
+     "(min-width: 700px) and (min-width: 1400px)",
+     2
+    ],
+    [
+     "(max-width: 699px) and (min-width: 1400px)",
+     2
+    ]
+   ],
+   "durations": [
+    [
+     "0.3s",
+     36
+    ],
+    [
+     "0.5s",
+     25
+    ],
+    [
+     "0.25s",
+     23
+    ],
+    [
+     "0.15s",
+     9
+    ],
+    [
+     "0.75s",
+     6
+    ],
+    [
+     "1s",
+     4
+    ],
+    [
+     "0.4s",
+     2
+    ],
+    [
+     "1.2s",
+     2
+    ],
+    [
+     "0.1s",
+     1
+    ],
+    [
+     "1000ms",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.165, 0.84, 0.44, 1)",
+     43
+    ],
+    [
+     "ease",
+     16
+    ],
+    [
+     "cubic-bezier(0.23, 1, 0.32, 1)",
+     7
+    ],
+    [
+     "linear",
+     2
+    ],
+    [
+     "cubic-bezier(0.77, 0, 0.175, 1)",
+     2
+    ],
+    [
+     "var(--swiper-wrapper-transition-timing-function, initial)",
+     1
+    ],
+    [
+     "cubic-bezier(0.38, 0.005, 0.215, 1)",
+     1
+    ],
+    [
+     "cubic-bezier(0.895, 0.03, 0.685, 0.22)",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "swiper-icons 400 normal",
+    "Canela 200 normal",
+    "Canela 200 italic",
+    "Canela 300 normal",
+    "Canela 300 italic",
+    "Canela Text 400 normal",
+    "Canela Text 400 italic"
+   ],
+   "keyframes": 6,
+   "clampFontSizes": 0,
+   "vwFontSizes": 0,
+   "sheets": 4,
+   "blocked": 0,
+   "rootVarCount": 139,
+   "rootVarsSample": {
+    "--spacing-2xs-mobile": "6",
+    "--spacing-2xs-desktop": "10",
+    "--spacing-xs-mobile": "12",
+    "--spacing-xs-desktop": "16",
+    "--spacing-sm-mobile": "22",
+    "--spacing-sm-desktop": "32",
+    "--spacing-md-mobile": "32",
+    "--spacing-md-desktop": "56",
+    "--spacing-lg-mobile": "48",
+    "--spacing-lg-desktop": "96",
+    "--spacing-xl-mobile": "64",
+    "--spacing-xl-desktop": "128",
+    "--spacing-2xl-mobile": "96",
+    "--spacing-2xl-desktop": "176",
+    "--spacing-3xl-mobile": "150",
+    "--spacing-3xl-desktop": "240",
+    "--grid-columns": "12",
+    "--grid-gutter": "1.5rem",
+    "--grid-margin": "clamp(18px, 0.0857142857 * calc(100 * var(--vw, 1vw)), 120px)",
+    "--swiper-theme-color": "#007aff",
+    "--icon-width": "1rem",
+    "--icon-width-logo": "16.75rem",
+    "--icon-width-close": "0.75rem",
+    "--icon-width-play": "0.9375rem",
+    "--icon-width-plus": "1.0625rem",
+    "--icon-width-minus": "1.0625rem",
+    "--icon-width-dropdown": "0.6875rem",
+    "--icon-width-error": "calc(calc(100 * var(--vw, 1vw)) - 2 * var(--grid-margin))",
+    "--font-size-h1": "clamp(40px, 0.08 * calc(100 * var(--vw, 1vw)), 96px)",
+    "--font-size-h2": "clamp(40px, 0.0533333333 * calc(100 * var(--vw, 1vw)), 64px)",
+    "--font-size-h3": "clamp(22px, 0.0266666667 * calc(100 * var(--vw, 1vw)), 32px)",
+    "--font-size-body-medium": "clamp(18px, 0.0166666667 * calc(100 * var(--vw, 1vw)), 20px)",
+    "--font-size-body-regular": "clamp(13px, 0.0133333333 * calc(100 * var(--vw, 1vw)), 16px)",
+    "--font-size-body-small": "clamp(13px, 0.0108333333 * calc(100 * var(--vw, 1vw)), 13px)",
+    "--button-text-color": "#241c18",
+    "--button-radius": "36px",
+    "--button-gap": "8px",
+    "--cc-font-family": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"A",
+    "--cc-modal-border-radius": ".5rem",
+    "--cc-btn-border-radius": ".4rem",
+    "--cc-modal-transition-duration": ".25s",
+    "--cc-link-color": "var(--cc-btn-primary-bg)",
+    "--cc-z-index": "2147483647",
+    "--cc-primary-color": "#2c2f31",
+    "--cc-secondary-color": "#5e6266",
+    "--cc-btn-primary-color": "#fff",
+    "--cc-btn-primary-border-color": "var(--cc-btn-primary-bg)",
+    "--cc-btn-primary-hover-color": "#fff",
+    "--cc-btn-primary-hover-border-color": "var(--cc-btn-primary-hover-bg)",
+    "--cc-btn-secondary-color": "var(--cc-primary-color)",
+    "--cc-btn-secondary-border-color": "var(--cc-btn-secondary-bg)",
+    "--cc-btn-secondary-hover-color": "#000",
+    "--cc-btn-secondary-hover-border-color": "#d4dae0",
+    "--cc-separator-border-color": "#f0f4f7",
+    "--cc-toggle-enabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-disabled-icon-color": "var(--cc-bg)",
+    "--cc-toggle-readonly-knob-icon-color": "var(--cc-toggle-readonly-bg)",
+    "--cc-footer-color": "var(--cc-secondary-color)",
+    "--cc-footer-border-color": "#e4eaed",
+    "--cc-pm-toggle-border-radius": "4em",
+    "--wp--preset--color--black": "#000000",
+    "--wp--preset--color--cyan-bluish-gray": "#abb8c3",
+    "--wp--preset--color--white": "#ffffff",
+    "--wp--preset--color--pale-pink": "#f78da7",
+    "--wp--preset--color--vivid-red": "#cf2e2e",
+    "--wp--preset--color--luminous-vivid-orange": "#ff6900",
+    "--wp--preset--color--luminous-vivid-amber": "#fcb900",
+    "--wp--preset--color--light-green-cyan": "#7bdcb5",
+    "--wp--preset--color--vivid-green-cyan": "#00d084",
+    "--wp--preset--color--pale-cyan-blue": "#8ed1fc",
+    "--wp--preset--color--vivid-cyan-blue": "#0693e3",
+    "--wp--preset--color--vivid-purple": "#9b51e0",
+    "--wp--preset--font-size--small": "13px",
+    "--wp--preset--font-size--medium": "20px",
+    "--wp--preset--font-size--large": "36px",
+    "--wp--preset--font-size--x-large": "42px",
+    "--wp--preset--spacing--20": "0.44rem",
+    "--wp--preset--spacing--30": "0.67rem",
+    "--wp--preset--spacing--40": "1rem",
+    "--wp--preset--spacing--50": "1.5rem"
+   }
+  },
+  "perf": {
+   "requests": 24,
+   "kb": 991,
+   "byTypeKB": {
+    "link": 163,
+    "script": 352,
+    "other": 2,
+    "css": 229,
+    "img": 244,
+    "video": 0,
+    "fetch": 0,
+    "beacon": 0,
+    "xmlhttprequest": 0
+   },
+   "dcl": 7876,
+   "load": 12016,
+   "ttfb": 7243
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [
+   "NotSupportedError: The element has no supported sources.",
+   "NotSupportedError: Failed to load because no supported source was found."
+  ]
+ },
+ "seconds": 43
+}

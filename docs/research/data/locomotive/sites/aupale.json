@@ -1,0 +1,891 @@
+{
+ "label": "aupale",
+ "url": "https://aupalevodka.com/en",
+ "capturedAt": "2026-09-19T15:30:17.871Z",
+ "desktop": {
+  "title": "",
+  "lang": "",
+  "generator": null,
+  "description": null,
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 900,
+  "domNodes": 0,
+  "textEls": 0,
+  "fonts": [],
+  "fontFamilies": [],
+  "fontSizes": [],
+  "weights": [],
+  "lineHeights": [],
+  "letterSpacing": [],
+  "uppercaseShare": 0,
+  "maxFontPx": 0,
+  "maxFontText": null,
+  "maxFontVwRatio": 0,
+  "textColors": [],
+  "backgrounds": [],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [],
+  "maxWidths": [],
+  "h1": null,
+  "headings": [],
+  "bodyParagraphs": [],
+  "navLinks": [],
+  "buttons": [],
+  "burger": false,
+  "headerPosition": null,
+  "headerMix": null,
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": false,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 0,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": false,
+   "pageTransitions": false,
+   "grid": 0,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 0,
+   "iframes": 0,
+   "images": 0,
+   "imgFormats": {},
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {},
+  "scripts": [],
+  "css": {
+   "media": [],
+   "durations": [],
+   "easings": [],
+   "fontFaces": [],
+   "keyframes": 0,
+   "clampFontSizes": 0,
+   "vwFontSizes": 0,
+   "sheets": 0,
+   "blocked": 0,
+   "rootVarCount": 0,
+   "rootVarsSample": {}
+  },
+  "perf": {
+   "requests": 0,
+   "kb": 0,
+   "byTypeKB": {},
+   "dcl": 9311,
+   "load": 9312,
+   "ttfb": 0
+  },
+  "status": null,
+  "cookieDismissed": null,
+  "errors": [
+   "nav: page.goto: net::ERR_TOO_MANY_RETRIES at https://aupalevodka.com/en\nCall log:\n\u001b[2m  - navigating to \""
+  ],
+  "scriptSignatures": {},
+  "scriptsChecked": 0
+ },
+ "mobile": {
+  "title": "AUPALE VODKA - Distilled, differently.",
+  "lang": "en",
+  "generator": "Astro v5.15.9",
+  "description": "Aupale Vodka is a canadian premium spirit made with the best process. An exchange of natural forces from sky to earth, bottled. Distilled to the highest standard with glacier valley water sourced beneath an Aurora Borealis sky in the extreme Canadian north. The result: Ultimate purity that’s pure chemistry.",
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 16284,
+  "domNodes": 1706,
+  "textEls": 324,
+  "fonts": [
+   "Martha-a6f99d8cc2cc3d04 700 normal",
+   "HelveticaNowDisplay-a2f8c48b330dbb44 500 normal",
+   "InstrumentSerif-20eeea0c6e7eec58 400 normal"
+  ],
+  "fontFamilies": [
+   [
+    "Martha-a6f99d8cc2cc3d04",
+    184
+   ],
+   [
+    "InstrumentSerif-20eeea0c6e7eec58",
+    94
+   ],
+   [
+    "HelveticaNowDisplay-a2f8c48b330dbb44",
+    46
+   ]
+  ],
+  "fontSizes": [
+   [
+    "10px",
+    184
+   ],
+   [
+    "16px",
+    28
+   ],
+   [
+    "38px",
+    23
+   ],
+   [
+    "40px",
+    18
+   ],
+   [
+    "37px",
+    18
+   ],
+   [
+    "25px",
+    18
+   ],
+   [
+    "31px",
+    8
+   ],
+   [
+    "36px",
+    6
+   ],
+   [
+    "17px",
+    5
+   ],
+   [
+    "50px",
+    4
+   ],
+   [
+    "63px",
+    4
+   ],
+   [
+    "104px",
+    3
+   ],
+   [
+    "67px",
+    3
+   ],
+   [
+    "119px",
+    2
+   ]
+  ],
+  "weights": [
+   [
+    "600",
+    184
+   ],
+   [
+    "400",
+    117
+   ],
+   [
+    "500",
+    23
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.25",
+    182
+   ],
+   [
+    "0.84",
+    59
+   ],
+   [
+    "0.92",
+    29
+   ],
+   [
+    "1.5",
+    23
+   ],
+   [
+    "0.95",
+    18
+   ],
+   [
+    "1",
+    5
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.02em",
+    36
+   ],
+   [
+    "-0.06em",
+    18
+   ],
+   [
+    "-0.03em",
+    6
+   ],
+   [
+    "-0.01em",
+    5
+   ]
+  ],
+  "uppercaseShare": 57,
+  "maxFontPx": 119,
+  "maxFontText": "Taste the Clarity",
+  "maxFontVwRatio": 30.6,
+  "textColors": [
+   [
+    "oklch(0.17216 0.01154 260.654)",
+    250
+   ],
+   [
+    "oklch(1 0.00011 271.152)",
+    72
+   ],
+   [
+    "oklch(0.88803 0.01773 164.921)",
+    2
+   ]
+  ],
+  "backgrounds": [
+   [
+    "oklch(1 0.00011 271.152)",
+    875
+   ],
+   [
+    "oklch(0.17216 0.01154 260.654)",
+    101
+   ],
+   [
+    "oklch(0.88803 0.01773 164.921)",
+    43
+   ]
+  ],
+  "bodyBg": "oklch(1 0.00011 271.152)",
+  "radii": [
+   [
+    "12px",
+    25
+   ],
+   [
+    "3.35544e+07px",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "896px",
+    2
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "Born From The Untouched Wilderness.",
+   "size": 50,
+   "weight": "400",
+   "family": "InstrumentSerif-20eeea0c6e7eec58",
+   "lh": 0.84,
+   "ls": "normal",
+   "transform": "none",
+   "color": "oklch(1 0.00011 271.152)",
+   "top": 513
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Born From The Untouched Wilderness.",
+    "size": 50,
+    "weight": "400",
+    "family": "InstrumentSerif-20eeea0c6e7eec58",
+    "lh": 0.84,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(1 0.00011 271.152)",
+    "top": 513
+   },
+   {
+    "tag": "H2",
+    "text": "Philosophy",
+    "size": 16,
+    "weight": "400",
+    "family": "HelveticaNowDisplay-a2f8c48b330dbb44",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "top": 843
+   },
+   {
+    "tag": "H3",
+    "text": "We go back to basics, only real ingredients. We go back to basics, only real ingredients.",
+    "size": 40,
+    "weight": "400",
+    "family": "InstrumentSerif-20eeea0c6e7eec58",
+    "lh": 0.84,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "top": 739
+   },
+   {
+    "tag": "H3",
+    "text": "Water born from a landscape carved for thousands of years. Water born from a landscape carved for th",
+    "size": 40,
+    "weight": "400",
+    "family": "InstrumentSerif-20eeea0c6e7eec58",
+    "lh": 0.84,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "top": 705
+   },
+   {
+    "tag": "H3",
+    "text": "When nature perfects something, we don’t alter it, we reveal it. When nature perfects something, we ",
+    "size": 31,
+    "weight": "400",
+    "family": "InstrumentSerif-20eeea0c6e7eec58",
+    "lh": 0.84,
+    "ls": "-0.624px",
+    "transform": "none",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "top": 6385
+   },
+   {
+    "tag": "H2",
+    "text": "The bottle is our tribute to the source.",
+    "size": 63,
+    "weight": "400",
+    "family": "InstrumentSerif-20eeea0c6e7eec58",
+    "lh": 0.84,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(1 0.00011 271.152)",
+    "top": 7463
+   },
+   {
+    "tag": "H3",
+    "text": "Aupale",
+    "size": 16,
+    "weight": "400",
+    "family": "HelveticaNowDisplay-a2f8c48b330dbb44",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(1 0.00011 271.152)",
+    "top": 7769
+   },
+   {
+    "tag": "H3",
+    "text": "Nature's Dancing Lights",
+    "size": 16,
+    "weight": "400",
+    "family": "HelveticaNowDisplay-a2f8c48b330dbb44",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(1 0.00011 271.152)",
+    "top": 8050
+   },
+   {
+    "tag": "H3",
+    "text": "Modern Classic",
+    "size": 16,
+    "weight": "400",
+    "family": "HelveticaNowDisplay-a2f8c48b330dbb44",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(1 0.00011 271.152)",
+    "top": 8349
+   },
+   {
+    "tag": "H3",
+    "text": "The Flow of Water",
+    "size": 16,
+    "weight": "400",
+    "family": "HelveticaNowDisplay-a2f8c48b330dbb44",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(1 0.00011 271.152)",
+    "top": 8631
+   },
+   {
+    "tag": "H2",
+    "text": "The Vodka",
+    "size": 16,
+    "weight": "400",
+    "family": "HelveticaNowDisplay-a2f8c48b330dbb44",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "top": 9166
+   },
+   {
+    "tag": "H3",
+    "text": "",
+    "size": 16,
+    "weight": "400",
+    "family": "HelveticaNowDisplay-a2f8c48b330dbb44",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "top": 503
+   },
+   {
+    "tag": "H4",
+    "text": "",
+    "size": 10,
+    "weight": "600",
+    "family": "Martha-a6f99d8cc2cc3d04",
+    "lh": 1.25,
+    "ls": "normal",
+    "transform": "uppercase",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "top": 726
+   },
+   {
+    "tag": "H4",
+    "text": "",
+    "size": 10,
+    "weight": "600",
+    "family": "Martha-a6f99d8cc2cc3d04",
+    "lh": 1.25,
+    "ls": "normal",
+    "transform": "uppercase",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "top": 788
+   },
+   {
+    "tag": "H4",
+    "text": "",
+    "size": 10,
+    "weight": "600",
+    "family": "Martha-a6f99d8cc2cc3d04",
+    "lh": 1.25,
+    "ls": "normal",
+    "transform": "uppercase",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "top": 837
+   },
+   {
+    "tag": "H4",
+    "text": "",
+    "size": 10,
+    "weight": "600",
+    "family": "Martha-a6f99d8cc2cc3d04",
+    "lh": 1.25,
+    "ls": "normal",
+    "transform": "uppercase",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "top": 912
+   },
+   {
+    "tag": "H2",
+    "text": "The Seltzers",
+    "size": 16,
+    "weight": "400",
+    "family": "HelveticaNowDisplay-a2f8c48b330dbb44",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "top": 10088
+   },
+   {
+    "tag": "H3",
+    "text": "",
+    "size": 16,
+    "weight": "400",
+    "family": "HelveticaNowDisplay-a2f8c48b330dbb44",
+    "lh": 1.5,
+    "ls": "normal",
+    "transform": "none",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "top": 503
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 10,
+    "lh": 1.25,
+    "family": "Martha-a6f99d8cc2cc3d04",
+    "color": "oklch(1 0.00011 271.152)",
+    "measure": 171
+   },
+   {
+    "size": 10,
+    "lh": 1.25,
+    "family": "Martha-a6f99d8cc2cc3d04",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "measure": 306
+   },
+   {
+    "size": 10,
+    "lh": 1.25,
+    "family": "Martha-a6f99d8cc2cc3d04",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "measure": 318
+   },
+   {
+    "size": 31,
+    "lh": 0.84,
+    "family": "InstrumentSerif-20eeea0c6e7eec58",
+    "color": "oklch(0.17216 0.01154 260.654)",
+    "measure": 1
+   },
+   {
+    "size": 10,
+    "lh": 1.25,
+    "family": "Martha-a6f99d8cc2cc3d04",
+    "color": "oklch(1 0.00011 271.152)",
+    "measure": 1
+   }
+  ],
+  "navLinks": [],
+  "buttons": [
+   "YES",
+   "NO",
+   "WHERE TO BUY?",
+   "MENU",
+   "DISCOVER OUR STORY",
+   "See product Aupale Vodka",
+   "See product Seltzer",
+   "SUBSCRIBE",
+   "FACEBOOK",
+   "INSTAGRAM",
+   "TERMS AND CONDITIONS",
+   "LOCOMOTIVE"
+  ],
+  "burger": false,
+  "headerPosition": "fixed",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": true,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 4,
+   "fixed": 19,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 61,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 35,
+   "iframes": 0,
+   "images": 54,
+   "imgFormats": {
+    "other": 27,
+    "png": 27
+   },
+   "langSwitch": true,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": true,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 1,
+   "gtag": 1,
+   "_astro": 24,
+   "storyblok": 1
+  },
+  "scripts": [
+   "www.googletagmanager.com/gtag/js?id=G-BHMFRR1BP5",
+   "www.aupalevodka.com/_astro/page.Co8YPvR4.js",
+   "app.storyblok.com/f/storyblok-v2-latest.js",
+   "www.aupalevodka.com/_astro/Layout.astro_astro_type_script_index_0_lang.CLMUk5UT.js",
+   "www.aupalevodka.com/_astro/CTA.astro_astro_type_script_index_0_lang.BQS_UFLu.js",
+   "www.aupalevodka.com/_astro/AgeVerification.astro_astro_type_script_index_0_lang.gZNkSQzj.j",
+   "www.aupalevodka.com/_astro/Logo.astro_astro_type_script_index_0_lang.d1yjGrvR.js",
+   "www.aupalevodka.com/_astro/LanguageSwitcher.astro_astro_type_script_index_0_lang.Ym5NzO_H.",
+   "www.aupalevodka.com/_astro/WideHeader.astro_astro_type_script_index_0_lang.CS222cfk.js",
+   "www.aupalevodka.com/_astro/MenuButton.astro_astro_type_script_index_0_lang.CLWiufX3.js",
+   "www.aupalevodka.com/_astro/MenuHeader.astro_astro_type_script_index_0_lang.vcbxHIhn.js",
+   "www.aupalevodka.com/_astro/NarrowHeader.astro_astro_type_script_index_0_lang.DuUldIYb.js",
+   "www.aupalevodka.com/_astro/InlineVideo.astro_astro_type_script_index_0_lang.G3MhDH31.js",
+   "www.aupalevodka.com/_astro/Hero.astro_astro_type_script_index_0_lang.f8FzUTkh.js",
+   "www.aupalevodka.com/_astro/Cartography.astro_astro_type_script_index_0_lang.DuTWBk9-.js",
+   "www.aupalevodka.com/_astro/StoryChapter.astro_astro_type_script_index_0_lang.C3dqFUv6.js",
+   "www.aupalevodka.com/_astro/Story.astro_astro_type_script_index_0_lang.CFAPh9Gq.js",
+   "www.aupalevodka.com/_astro/Triptych.astro_astro_type_script_index_0_lang.BWOYzlCw.js",
+   "www.aupalevodka.com/_astro/Bottle.astro_astro_type_script_index_0_lang.D7VaShET.js",
+   "www.aupalevodka.com/_astro/SplitParagraph.astro_astro_type_script_index_0_lang.Dp5oy_Hl.js",
+   "www.aupalevodka.com/_astro/Mosaic.astro_astro_type_script_index_0_lang.DvoWWxZd.js",
+   "www.aupalevodka.com/_astro/VideoModal.astro_astro_type_script_index_0_lang.BAeykxsk.js",
+   "www.aupalevodka.com/_astro/Newsletter.astro_astro_type_script_index_0_lang.PQh1MHWb.js",
+   "www.aupalevodka.com/_astro/Rail.astro_astro_type_script_index_0_lang.C6tR2E11.js",
+   "www.aupalevodka.com/_astro/Layout.astro_astro_type_script_index_1_lang.6hWnfiL1.js"
+  ],
+  "css": {
+   "media": [
+    [
+     "(any-hover: hover)",
+     11
+    ],
+    [
+     "not all and (min-width: 700px)",
+     9
+    ],
+    [
+     "(min-width: 700px)",
+     9
+    ],
+    [
+     "(min-width: 1000px)",
+     8
+    ],
+    [
+     "(min-width: 500px)",
+     4
+    ],
+    [
+     "(min-width: 1200px)",
+     4
+    ],
+    [
+     "(min-width: 340px)",
+     3
+    ],
+    [
+     "(min-width: 1400px)",
+     3
+    ],
+    [
+     "(min-width: 1600px)",
+     3
+    ],
+    [
+     "(min-width: 1800px)",
+     3
+    ],
+    [
+     "(min-width: 2000px)",
+     3
+    ],
+    [
+     "(min-width: 2400px)",
+     3
+    ],
+    [
+     "not all and (min-width: 1000px)",
+     2
+    ],
+    [
+     "not all and (min-width: 1200px)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "var(--transition-duration-slow)",
+     3
+    ],
+    [
+     "0.5s",
+     2
+    ],
+    [
+     "0.8s",
+     2
+    ],
+    [
+     "0.25s",
+     1
+    ],
+    [
+     "1s",
+     1
+    ],
+    [
+     "var(--tw-duration",
+     1
+    ],
+    [
+     "0.3s",
+     1
+    ],
+    [
+     "var(--transition-duration-fast)",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "var(--smooth-ease)",
+     5
+    ],
+    [
+     "var(--ease)",
+     2
+    ],
+    [
+     "var(--tw-ease",
+     1
+    ],
+    [
+     "var(--ease-in-out)",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "Martha-a6f99d8cc2cc3d04 400 normal",
+    "Martha-a6f99d8cc2cc3d04 700 normal",
+    "Martha-a6f99d8cc2cc3d04 fallback: Arial 400 normal",
+    "Martha-a6f99d8cc2cc3d04 fallback: Arial 700 normal",
+    "HelveticaNowDisplay-a2f8c48b330dbb44 500 normal",
+    "HelveticaNowDisplay-a2f8c48b330dbb44 fallback: Arial 500 normal",
+    "InstrumentSerif-20eeea0c6e7eec58 400 normal",
+    "InstrumentSerif-20eeea0c6e7eec58 fallback: Times New Roman 400 normal"
+   ],
+   "keyframes": 1,
+   "clampFontSizes": 1,
+   "vwFontSizes": 0,
+   "sheets": 9,
+   "blocked": 0,
+   "rootVarCount": 98,
+   "rootVarsSample": {
+    "--font-mono": "var(--font-mono)",
+    "--font-sans": "var(--font-sans)",
+    "--font-serif": "var(--font-serif)",
+    "--color-black": "oklch(17.216% .01154 260.654)",
+    "--color-white": "oklch(100% .00011 271.152)",
+    "--spacing": ".25rem",
+    "--container-3xl": "48rem",
+    "--container-4xl": "56rem",
+    "--radius-sm": "var(--border-radius-sm)",
+    "--radius-md": "var(--border-radius-md)",
+    "--radius-lg": "var(--border-radius-lg)",
+    "--radius-xl": "var(--border-radius-xl)",
+    "--ease-in-out": "cubic-bezier(.4,0,.2,1)",
+    "--default-transition-duration": ".15s",
+    "--default-font-family": "var(--font-sans)",
+    "--default-mono-font-family": "var(--font-mono)",
+    "--color-green-light": "oklch(88.803% .01773 164.921)",
+    "--color-green-dark": "color-mix(in oklch,var(--color-green-light)68%,var(--color-black))",
+    "--spacing-unit-sm": "var(--unit-sm)",
+    "--spacing-unit-md": "var(--unit-md)",
+    "--spacing-gutter": "var(--spacing-unit-md)",
+    "--spacing-fluid-xs": "clamp(.5rem, .4565rem + .2174vw, .625rem)",
+    "--spacing-fluid-sm": "clamp(.875rem, .788rem + .4348vw, 1.125rem)",
+    "--spacing-fluid-md": "clamp(1.5rem, 1.3696rem + .6522vw, 1.875rem)",
+    "--spacing-fluid-lg": "clamp(2rem, 1.8261rem + .8696vw, 2.5rem)",
+    "--spacing-fluid-xl": "clamp(2.5rem, 2.1522rem + 1.7391vw, 3.5rem)",
+    "--spacing-fluid-2xl": "clamp(3.5rem, 2.9783rem + 2.6087vw, 5rem)",
+    "--spacing-fluid-3xl": "clamp(5rem, 3.9565rem + 5.2174vw, 8rem)",
+    "--spacing-fluid-4xl": "clamp(8rem, 7.3043rem + 3.4783vw, 10rem)",
+    "--spacing-fluid-5xl": "clamp(10rem, 9.3043rem + 3.4783vw, 12rem)",
+    "--border-radius-sm": "4px",
+    "--border-radius-md": "8px",
+    "--border-radius-lg": "12px",
+    "--border-radius-xl": "16px",
+    "--transition-duration-fast": ".2s",
+    "--transition-duration": ".4s",
+    "--transition-duration-slow": ".6s",
+    "--transition-duration-slower": ".8s",
+    "--transition-duration-slowest": "1s",
+    "--ease": "cubic-bezier(.645,.045,.355,1)",
+    "--spring-ease": "linear(0,.0073,.0274,.0578,.0962,.1408,.1899,.242,.2958,.3502,.4045,.4578,.5096,",
+    "--smooth-ease": "linear(0,.0001,.0002,.0005,.0008,.0011,.0016,.0021,.0027,.0034,.0042,.005,.006,.",
+    "--smoother-ease": "linear(0,.0547,.107,.1568,.2044,.2497,.2928,.334,.3731,.4103,.4457,.4793,.5112,.",
+    "--z-index-noise": "10000",
+    "--z-index-modal": "2000",
+    "--z-index-header": "1000",
+    "--z-index": "0",
+    "--z-index-above": "1",
+    "--z-index-below": "-1",
+    "--grid-gutter": "var(--spacing-gutter)",
+    "--grid-margin": "24px",
+    "--grid-margin-sm": "16px",
+    "--color-primary": "var(--color-black)",
+    "--color-secondary": "var(--color-white)",
+    "--icon-aupale-width-logo": "30px",
+    "--icon-aupale-width-logotype": "101px",
+    "--icon-external-arrow-width": "9px",
+    "--icon-dropdown-width": "10px",
+    "--icon-logo-top-width": "287px",
+    "--icon-logo-bottom-width": "288px"
+   }
+  },
+  "perf": {
+   "requests": 132,
+   "kb": 3257,
+   "byTypeKB": {
+    "link": 201,
+    "script": 2144,
+    "css": 247,
+    "img": 214,
+    "fetch": 455,
+    "video": 0,
+    "xmlhttprequest": 0
+   },
+   "dcl": 14821,
+   "load": 15491,
+   "ttfb": 13022
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": []
+ },
+ "seconds": 67
+}

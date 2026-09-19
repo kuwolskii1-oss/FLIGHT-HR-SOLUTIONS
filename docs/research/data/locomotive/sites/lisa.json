@@ -1,0 +1,455 @@
+{
+ "label": "lisa",
+ "url": "https://lisa.locomotive.ca/en",
+ "capturedAt": "2026-09-19T15:28:35.707Z",
+ "desktop": {
+  "title": "Locomotive",
+  "lang": "en",
+  "generator": null,
+  "description": "We are Locomotive®. An independent agency with a deep skill set, big ideas, lots of heart and a global reputation.",
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 900,
+  "domNodes": 98,
+  "textEls": 10,
+  "fonts": [],
+  "fontFamilies": [
+   [
+    "Times New Roman",
+    10
+   ]
+  ],
+  "fontSizes": [
+   [
+    "15px",
+    10
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    10
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.3",
+    8
+   ],
+   [
+    "normal",
+    2
+   ]
+  ],
+  "letterSpacing": [],
+  "uppercaseShare": 0,
+  "maxFontPx": 15,
+  "maxFontText": "Locomotive®",
+  "maxFontVwRatio": 1,
+  "textColors": [
+   [
+    "rgb(0, 0, 0)",
+    10
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(0, 0, 0)",
+    130
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [],
+  "maxWidths": [],
+  "h1": null,
+  "headings": [],
+  "bodyParagraphs": [],
+  "navLinks": [],
+  "buttons": [
+   "Let's talk",
+   "Menu",
+   "Close"
+  ],
+  "burger": true,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": true,
+   "textSplit": false,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 1,
+   "horizontalScroll": false,
+   "themeSwitch": true,
+   "scrollContainer": false,
+   "pageTransitions": false,
+   "grid": 0,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 1,
+   "iframes": 1,
+   "images": 0,
+   "imgFormats": {},
+   "langSwitch": true,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "recaptcha": 2,
+   "ogl": 2,
+   "gtag": 1,
+   "locomotive": 2
+  },
+  "scripts": [
+   "www.gstatic.com/recaptcha/releases/zqB-6Xpbd3lCIvi7Tr2D0pob/recaptcha__en.js",
+   "www.google.com/recaptcha/api.js?render=explicit",
+   "www.googletagmanager.com/gtag/js?id=G-WYYJ9ZP43V",
+   "lisa.locomotive.ca/assets/scripts/vendors.js?v=1773158732955",
+   "lisa.locomotive.ca/assets/scripts/app.js?v=1773158732955",
+   "static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+  ],
+  "css": {
+   "media": [
+    [
+     "(max-width: 699px)",
+     2
+    ],
+    [
+     "(min-width: 1025px)",
+     1
+    ],
+    [
+     "(max-width: 1024px)",
+     1
+    ],
+    [
+     "(min-width: 700px) and (max-width: 1024px)",
+     1
+    ],
+    [
+     "(min-width: 1025px) and (max-width: 1199px)",
+     1
+    ],
+    [
+     "(min-width: 1200px) and (max-width: 1599px)",
+     1
+    ],
+    [
+     "(min-width: 1600px) and (max-width: 1999px)",
+     1
+    ],
+    [
+     "(min-width: 2000px) and (max-width: 2399px)",
+     1
+    ],
+    [
+     "(min-width: 2400px)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "0.9s",
+     2
+    ],
+    [
+     "0.3s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.215, 0.61, 0.355, 1)",
+     2
+    ]
+   ],
+   "fontFaces": [],
+   "keyframes": 1,
+   "clampFontSizes": 0,
+   "vwFontSizes": 0,
+   "sheets": 1,
+   "blocked": 1,
+   "rootVarCount": 3,
+   "rootVarsSample": {
+    "--color": "#000000",
+    "--color-bg": "#FFFFFF",
+    "--font-size": "21px"
+   }
+  },
+  "perf": {
+   "requests": 8,
+   "kb": 3323,
+   "byTypeKB": {
+    "script": 3323,
+    "link": 0,
+    "audio": 0,
+    "xmlhttprequest": 0
+   },
+   "dcl": 5258,
+   "load": 7421,
+   "ttfb": 4223
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [],
+  "scriptSignatures": {
+   "gsap": 1,
+   "ScrollTrigger": 1,
+   "Lenis": 1,
+   "three": 1,
+   "barba": 1,
+   "SplitText": 1,
+   "vue": 1,
+   "swiper": 1,
+   "glsl": 1,
+   "IntersectionObserver": 1
+  },
+  "scriptsChecked": 4
+ },
+ "mobile": {
+  "title": "Locomotive",
+  "lang": "en",
+  "generator": null,
+  "description": "We are Locomotive®. An independent agency with a deep skill set, big ideas, lots of heart and a global reputation.",
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 844,
+  "domNodes": 98,
+  "textEls": 10,
+  "fonts": [],
+  "fontFamilies": [
+   [
+    "Times New Roman",
+    10
+   ]
+  ],
+  "fontSizes": [
+   [
+    "15px",
+    10
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    10
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1.3",
+    8
+   ],
+   [
+    "normal",
+    2
+   ]
+  ],
+  "letterSpacing": [],
+  "uppercaseShare": 0,
+  "maxFontPx": 15,
+  "maxFontText": "Locomotive®",
+  "maxFontVwRatio": 3.8,
+  "textColors": [
+   [
+    "rgb(0, 0, 0)",
+    10
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(0, 0, 0)",
+    33
+   ]
+  ],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [],
+  "maxWidths": [],
+  "h1": null,
+  "headings": [],
+  "bodyParagraphs": [],
+  "navLinks": [],
+  "buttons": [
+   "Let's talk",
+   "Menu",
+   "Close"
+  ],
+  "burger": true,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": true,
+   "textSplit": false,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 1,
+   "horizontalScroll": false,
+   "themeSwitch": true,
+   "scrollContainer": false,
+   "pageTransitions": false,
+   "grid": 0,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 1,
+   "iframes": 1,
+   "images": 0,
+   "imgFormats": {},
+   "langSwitch": true,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "recaptcha": 2,
+   "ogl": 2,
+   "gtag": 1,
+   "locomotive": 2
+  },
+  "scripts": [
+   "www.gstatic.com/recaptcha/releases/zqB-6Xpbd3lCIvi7Tr2D0pob/recaptcha__en.js",
+   "www.google.com/recaptcha/api.js?render=explicit",
+   "www.googletagmanager.com/gtag/js?id=G-WYYJ9ZP43V",
+   "lisa.locomotive.ca/assets/scripts/vendors.js?v=1773158732955",
+   "lisa.locomotive.ca/assets/scripts/app.js?v=1773158732955",
+   "static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+  ],
+  "css": {
+   "media": [
+    [
+     "(max-width: 699px)",
+     2
+    ],
+    [
+     "(min-width: 1025px)",
+     1
+    ],
+    [
+     "(max-width: 1024px)",
+     1
+    ],
+    [
+     "(min-width: 700px) and (max-width: 1024px)",
+     1
+    ],
+    [
+     "(min-width: 1025px) and (max-width: 1199px)",
+     1
+    ],
+    [
+     "(min-width: 1200px) and (max-width: 1599px)",
+     1
+    ],
+    [
+     "(min-width: 1600px) and (max-width: 1999px)",
+     1
+    ],
+    [
+     "(min-width: 2000px) and (max-width: 2399px)",
+     1
+    ],
+    [
+     "(min-width: 2400px)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "0.9s",
+     2
+    ],
+    [
+     "0.3s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.215, 0.61, 0.355, 1)",
+     2
+    ]
+   ],
+   "fontFaces": [],
+   "keyframes": 1,
+   "clampFontSizes": 0,
+   "vwFontSizes": 0,
+   "sheets": 1,
+   "blocked": 1,
+   "rootVarCount": 3,
+   "rootVarsSample": {
+    "--color": "#000000",
+    "--color-bg": "#FFFFFF",
+    "--font-size": "21px"
+   }
+  },
+  "perf": {
+   "requests": 8,
+   "kb": 3323,
+   "byTypeKB": {
+    "script": 3323,
+    "link": 0,
+    "audio": 0,
+    "xmlhttprequest": 0
+   },
+   "dcl": 8087,
+   "load": 10241,
+   "ttfb": 7109
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": []
+ },
+ "seconds": 41
+}

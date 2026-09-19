@@ -1,0 +1,957 @@
+{
+ "label": "dulcedo",
+ "url": "https://dulcedo.com",
+ "capturedAt": "2026-09-19T15:29:18.831Z",
+ "desktop": {
+  "title": "Talent Management Agency in North America - Dulcedo",
+  "lang": "en-US",
+  "generator": null,
+  "description": "Leading full-service talent management agency representing influencers, models, athletes, and gaming creators across North America. Offices in Montreal,...",
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 12146,
+  "domNodes": 1353,
+  "textEls": 367,
+  "fonts": [
+   "Helvetica Now Display 800 normal",
+   "Helvetica Now Display 500 normal",
+   "Saol Display 300 italic",
+   "Saol Display 400 normal"
+  ],
+  "fontFamilies": [
+   [
+    "Helvetica Now Display",
+    361
+   ],
+   [
+    "Saol Display",
+    6
+   ]
+  ],
+  "fontSizes": [
+   [
+    "16px",
+    111
+   ],
+   [
+    "32px",
+    80
+   ],
+   [
+    "12px",
+    77
+   ],
+   [
+    "50px",
+    41
+   ],
+   [
+    "14px",
+    18
+   ],
+   [
+    "18px",
+    17
+   ],
+   [
+    "100px",
+    14
+   ],
+   [
+    "28px",
+    3
+   ],
+   [
+    "140px",
+    2
+   ],
+   [
+    "130px",
+    2
+   ],
+   [
+    "22px",
+    1
+   ],
+   [
+    "55px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "800",
+    246
+   ],
+   [
+    "500",
+    109
+   ],
+   [
+    "300",
+    6
+   ],
+   [
+    "400",
+    6
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1",
+    197
+   ],
+   [
+    "1.4",
+    128
+   ],
+   [
+    "0.8",
+    38
+   ],
+   [
+    "0.7",
+    2
+   ],
+   [
+    "0",
+    1
+   ],
+   [
+    "1.1",
+    1
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.03em",
+    118
+   ],
+   [
+    "-0.055em",
+    1
+   ]
+  ],
+  "uppercaseShare": 67,
+  "maxFontPx": 140,
+  "maxFontText": "Featured",
+  "maxFontVwRatio": 9.7,
+  "textColors": [
+   [
+    "rgb(10, 10, 10)",
+    163
+   ],
+   [
+    "rgb(0, 0, 0)",
+    86
+   ],
+   [
+    "rgb(197, 174, 121)",
+    65
+   ],
+   [
+    "rgb(255, 255, 255)",
+    52
+   ],
+   [
+    "oklch(0.446 0.03 256.802)",
+    1
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(244, 244, 244)",
+    3329
+   ],
+   [
+    "rgb(10, 10, 10)",
+    1315
+   ],
+   [
+    "rgba(0, 0, 0, 0.05)",
+    278
+   ],
+   [
+    "rgba(0, 0, 0, 0.5)",
+    128
+   ],
+   [
+    "rgb(255, 255, 255)",
+    81
+   ],
+   [
+    "rgb(197, 174, 121)",
+    16
+   ],
+   [
+    "rgb(0, 0, 0)",
+    0
+   ]
+  ],
+  "bodyBg": "rgb(26, 26, 26)",
+  "radii": [
+   [
+    "32px",
+    14
+   ],
+   [
+    "1000px",
+    11
+   ],
+   [
+    "2px",
+    10
+   ],
+   [
+    "100%",
+    1
+   ],
+   [
+    "3px",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "1440px",
+    1
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "Dulcedo",
+   "size": 16,
+   "weight": "500",
+   "family": "Helvetica Now Display",
+   "lh": 1.4,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(197, 174, 121)",
+   "top": 251
+  },
+  "headings": [
+   {
+    "tag": "H3",
+    "text": "",
+    "size": 22,
+    "weight": "800",
+    "family": "Helvetica Now Display",
+    "lh": 1,
+    "ls": "-0.66px",
+    "transform": "uppercase",
+    "color": "rgb(10, 10, 10)",
+    "top": 422
+   },
+   {
+    "tag": "H1",
+    "text": "Dulcedo",
+    "size": 16,
+    "weight": "500",
+    "family": "Helvetica Now Display",
+    "lh": 1.4,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(197, 174, 121)",
+    "top": 251
+   },
+   {
+    "tag": "H2",
+    "text": "WE ELEVATE VOICES THAT SHAPE CULTURE: BUILDING INFLUENCE, IMPACT, AND LASTING LEGACY.",
+    "size": 100,
+    "weight": "800",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "-3px",
+    "transform": "uppercase",
+    "color": "rgb(197, 174, 121)",
+    "top": 774
+   },
+   {
+    "tag": "H2",
+    "text": "Featured PROFILES",
+    "size": 16,
+    "weight": "500",
+    "family": "Helvetica Now Display",
+    "lh": 1.4,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 2787
+   },
+   {
+    "tag": "H3",
+    "text": "CHLOE CHRISTIAN",
+    "size": 16,
+    "weight": "500",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 3170
+   },
+   {
+    "tag": "H3",
+    "text": "ASHTEN BARNES",
+    "size": 16,
+    "weight": "500",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 3170
+   },
+   {
+    "tag": "H3",
+    "text": "MILLY KEURNA",
+    "size": 16,
+    "weight": "500",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 3170
+   },
+   {
+    "tag": "H3",
+    "text": "CINDY COURNOYER",
+    "size": 16,
+    "weight": "500",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4078
+   },
+   {
+    "tag": "H3",
+    "text": "SHINA NOVALINGA",
+    "size": 16,
+    "weight": "500",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4078
+   },
+   {
+    "tag": "H3",
+    "text": "HELEN CHRISTIE",
+    "size": 16,
+    "weight": "500",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4652
+   },
+   {
+    "tag": "H3",
+    "text": "ALYCEA ADAMS",
+    "size": 16,
+    "weight": "500",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4652
+   },
+   {
+    "tag": "H3",
+    "text": "LUCIE RHÉAUME",
+    "size": 16,
+    "weight": "500",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 4652
+   },
+   {
+    "tag": "H2",
+    "text": "CAST YOUR PROFILES",
+    "size": 130,
+    "weight": "800",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "-3.9px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 5610
+   },
+   {
+    "tag": "H2",
+    "text": "CHOOSE YOUR PROFILES",
+    "size": 50,
+    "weight": "800",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "-1.5px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 6115
+   },
+   {
+    "tag": "H2",
+    "text": "SEND A REQUEST",
+    "size": 50,
+    "weight": "800",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "-1.5px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 6205
+   },
+   {
+    "tag": "H2",
+    "text": "CAST THE TALENT",
+    "size": 50,
+    "weight": "800",
+    "family": "Helvetica Now Display",
+    "lh": 0.8,
+    "ls": "-1.5px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 6295
+   },
+   {
+    "tag": "H2",
+    "text": "GET IN TOUCH",
+    "size": 18,
+    "weight": "800",
+    "family": "Helvetica Now Display",
+    "lh": 1,
+    "ls": "-0.54px",
+    "transform": "uppercase",
+    "color": "rgb(0, 0, 0)",
+    "top": 7217
+   },
+   {
+    "tag": "H2",
+    "text": "Latest ARTICLES",
+    "size": 16,
+    "weight": "500",
+    "family": "Helvetica Now Display",
+    "lh": 1.4,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(0, 0, 0)",
+    "top": 7736
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 12,
+    "lh": 1,
+    "family": "Helvetica Now Display",
+    "color": "rgb(10, 10, 10)",
+    "measure": 276
+   },
+   {
+    "size": 12,
+    "lh": 1,
+    "family": "Helvetica Now Display",
+    "color": "rgb(0, 0, 0)",
+    "measure": 422
+   },
+   {
+    "size": 16,
+    "lh": 1.4,
+    "family": "Helvetica Now Display",
+    "color": "rgb(0, 0, 0)",
+    "measure": 274
+   },
+   {
+    "size": 16,
+    "lh": 1.4,
+    "family": "Helvetica Now Display",
+    "color": "rgb(0, 0, 0)",
+    "measure": 426
+   },
+   {
+    "size": 16,
+    "lh": 1.4,
+    "family": "Helvetica Now Display",
+    "color": "rgb(0, 0, 0)",
+    "measure": 382
+   }
+  ],
+  "navLinks": [
+   "Home",
+   "Contact",
+   "My Cast (0)"
+  ],
+  "buttons": [
+   "Talents",
+   "Models",
+   "Blog",
+   "Agency",
+   "Search",
+   "Manifesto",
+   "History",
+   "Our Vision",
+   "MODELS (+)",
+   "ADD TO MY CAST ADDED TO MY CAST",
+   "Go to My Cast",
+   "Contact us",
+   "Read",
+   "MORE ARTICLES",
+   "Subscribe"
+  ],
+  "burger": false,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": true,
+   "marquee": false,
+   "preloader": true,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 9,
+   "fixed": 29,
+   "horizontalScroll": false,
+   "themeSwitch": true,
+   "scrollContainer": true,
+   "pageTransitions": true,
+   "grid": 70,
+   "videos": 2,
+   "autoplayVideos": 1,
+   "canvases": 1,
+   "inlineSvg": 74,
+   "iframes": 0,
+   "images": 17,
+   "imgFormats": {
+    "jpg": 13,
+    "jpeg": 2,
+    "png": 2
+   },
+   "langSwitch": true,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": true,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "cpresources": 1
+  },
+  "scripts": [
+   "dulcedo.com/dist/main-BKhcSSFY.js",
+   "dulcedo.com/dist/CastCount-DPV2wNN3.js",
+   "dulcedo.com/dist/CastClear-CA2HkaxK.js",
+   "dulcedo.com/dist/ShapeAnimation-Bz6JIx_E.js",
+   "dulcedo.com/dist/Splitline-Divo0WuC.js",
+   "dulcedo.com/dist/CategoryListing-C9JWOeS7.js",
+   "dulcedo.com/dist/CastAdd-C6eZ6kZ0.js",
+   "dulcedo.com/dist/CastAdd-C6eZ6kZ0.js",
+   "dulcedo.com/dist/CastAdd-C6eZ6kZ0.js",
+   "dulcedo.com/dist/CastAdd-C6eZ6kZ0.js",
+   "dulcedo.com/dist/CastAdd-C6eZ6kZ0.js",
+   "dulcedo.com/dist/CastAdd-C6eZ6kZ0.js",
+   "dulcedo.com/dist/CastAdd-C6eZ6kZ0.js",
+   "dulcedo.com/dist/CastAdd-C6eZ6kZ0.js",
+   "dulcedo.com/dist/Splitline-Divo0WuC.js",
+   "dulcedo.com/dist/CastRemove-PJ4rvCg8.js",
+   "dulcedo.com/dist/FormExit-BrICOph1.js",
+   "dulcedo.com/dist/DialogCloseConfirmation-D0jVq0OR.js",
+   "dulcedo.com/scripts/cookie-consent.js?v=2",
+   "dulcedo.com/cpresources/a1d8ff5/htmx.min.js?v=1787668062"
+  ],
+  "css": {
+   "media": [
+    [
+     "not all and (min-width: 1000px)",
+     74
+    ],
+    [
+     "(min-width: 1000px)",
+     68
+    ],
+    [
+     "(hover: hover)",
+     38
+    ],
+    [
+     "(max-width: 768px)",
+     36
+    ],
+    [
+     "not all and (min-width: 700px)",
+     23
+    ],
+    [
+     "(min-width: 700px)",
+     21
+    ],
+    [
+     "(min-width: 1200px)",
+     10
+    ],
+    [
+     "(min-width: 1400px)",
+     10
+    ],
+    [
+     "(min-width: 500px)",
+     8
+    ],
+    [
+     "(min-width: 1600px)",
+     8
+    ],
+    [
+     "(min-width: 340px)",
+     6
+    ],
+    [
+     "(min-width: 1800px)",
+     6
+    ],
+    [
+     "(min-width: 2000px)",
+     6
+    ],
+    [
+     "(min-width: 2400px)",
+     6
+    ]
+   ],
+   "durations": [
+    [
+     "0.3s",
+     4
+    ],
+    [
+     "0.6s",
+     4
+    ],
+    [
+     "var(--transition-duration)",
+     4
+    ],
+    [
+     "1s",
+     2
+    ],
+    [
+     "var(--transition-duration-slower)",
+     2
+    ],
+    [
+     "200ms",
+     2
+    ],
+    [
+     "0.5s",
+     1
+    ],
+    [
+     "50ms",
+     1
+    ],
+    [
+     "var(--tw-duration",
+     1
+    ],
+    [
+     "0.4s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0.215, 0.61, 0.355, 1)",
+     3
+    ],
+    [
+     "linear",
+     2
+    ],
+    [
+     "var(--ease)",
+     2
+    ],
+    [
+     "ease-in",
+     2
+    ],
+    [
+     "var(--swiper-wrapper-transition-timing-function,initial)",
+     1
+    ],
+    [
+     "var(--tw-ease",
+     1
+    ],
+    [
+     "cubic-bezier(0.4, 0, 0.2, 1)",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "Helvetica Now Display 800 normal",
+    "Helvetica Now Display 500 normal",
+    "Saol Display 300 italic",
+    "Saol Display 400 normal"
+   ],
+   "keyframes": 13,
+   "clampFontSizes": 7,
+   "vwFontSizes": 8,
+   "sheets": 4,
+   "blocked": 1,
+   "rootVarCount": 134,
+   "rootVarsSample": {
+    "--font-sans": "\"Helvetica Now Display\",sans-serif",
+    "--font-serif": "\"Saol Display\",serif",
+    "--font-mono": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New",
+    "--color-red-100": "oklch(93.6% .032 17.717)",
+    "--color-red-500": "oklch(63.7% .237 25.331)",
+    "--color-red-800": "oklch(44.4% .177 26.899)",
+    "--color-green-100": "oklch(96.2% .044 156.743)",
+    "--color-green-800": "oklch(44.8% .119 151.328)",
+    "--color-gray-100": "#f4f4f4",
+    "--color-gray-200": "#e0e0e0",
+    "--color-gray-300": "oklch(87.2% .01 258.338)",
+    "--color-gray-500": "oklch(55.1% .027 264.364)",
+    "--color-gray-600": "oklch(44.6% .03 256.802)",
+    "--color-gray-900": "oklch(21% .034 264.665)",
+    "--color-black": "#0a0a0a",
+    "--color-white": "#fff",
+    "--spacing": ".25rem",
+    "--container-sm": "24rem",
+    "--container-md": "28rem",
+    "--text-xs--line-height": "calc(1/.75)",
+    "--text-sm--line-height": "calc(1.25/.875)",
+    "--text-base--line-height": "1.5",
+    "--text-lg--line-height": "calc(1.75/1.125)",
+    "--text-xl--line-height": "calc(1.75/1.25)",
+    "--font-weight-normal": "400",
+    "--font-weight-medium": "500",
+    "--font-weight-semibold": "600",
+    "--font-weight-bold": "700",
+    "--font-weight-extrabold": "800",
+    "--radius-sm": "2px",
+    "--radius-4xl": "2rem",
+    "--ease-in-out": "cubic-bezier(.4,0,.2,1)",
+    "--default-transition-duration": ".15s",
+    "--default-font-family": "var(--font-sans)",
+    "--default-mono-font-family": "var(--font-mono)",
+    "--color-gold": "#c5ae79",
+    "--color-dark-gold": "#7c735c",
+    "--color-stroke-light": "#ccc",
+    "--color-stroke-dark": "#393939",
+    "--spacing-unit-sm": "var(--unit-sm)",
+    "--spacing-unit-md": "var(--unit-md)",
+    "--spacing-unit-lg": "var(--unit-lg)",
+    "--spacing-unit-xl": "var(--unit-xl)",
+    "--spacing-gutter": "var(--unit-md)",
+    "--spacing-fluid-2xs": "clamp(.375rem, .3315rem + .2174vw, .5rem)",
+    "--spacing-fluid-xs": "clamp(.5rem, .413rem + .4348vw, .75rem)",
+    "--spacing-fluid-sm": "clamp(1rem, .8261rem + .8696vw, 1.5rem)",
+    "--spacing-fluid-md": "clamp(1.5rem, 1.3261rem + .8696vw, 2rem)",
+    "--spacing-fluid-lg": "clamp(2rem, 1.8261rem + .8696vw, 2.5rem)",
+    "--spacing-fluid-xl": "clamp(2.5rem, 2.1522rem + 1.7391vw, 3.5rem)",
+    "--spacing-fluid-2xl": "clamp(3.5rem, 2.7609rem + 3.6957vw, 5.625rem)",
+    "--spacing-fluid-3xl": "clamp(5.625rem, 4.3207rem + 6.5217vw, 9.375rem)",
+    "--spacing-fluid-4xl": "clamp(9.375rem, 8.288rem + 5.4348vw, 12.5rem)",
+    "--spacing-fluid-5xl": "clamp(12.5rem, 10.3261rem + 10.8696vw, 18.75rem)",
+    "--transition-duration-fastest": ".1s",
+    "--transition-duration-faster": ".15s",
+    "--transition-duration-fast": ".2s",
+    "--transition-duration": ".4s",
+    "--transition-duration-slow": ".6s",
+    "--transition-duration-slower": ".8s",
+    "--transition-duration-slowest": "1s",
+    "--ease": "cubic-bezier(.38,.005,.215,1)",
+    "--ease-power-out": "cubic-bezier(.215,.61,.355,1)",
+    "--ease-smooth": "cubic-bezier(.38,.005,.215,1)",
+    "--z-index-highest": "2147480000",
+    "--z-index-header": "50",
+    "--z-index-header-panel": "40",
+    "--z-index-search-panel": "40",
+    "--z-index-above": "1",
+    "--z-index-abover": "2",
+    "--icon-width-logo": "100px",
+    "--icon-width-logo-full": "calc(98.75vw - 40px)",
+    "--icon-width-footer-shape": "clamp(13.4375rem, 11.5027rem + 9.6739vw, 19rem)",
+    "--icon-width-card-shape": "103px",
+    "--icon-width-what-we-do-logo": "clamp(20.3125rem, 13.7908rem + 32.6087vw, 39.0625rem)",
+    "--icon-width-imdb": "32px",
+    "--dialog-animation-duration": "var(--transition-duration)",
+    "--dialog-width": "100%",
+    "--dialog-max-width": "100%",
+    "--dialog-z-index": "100"
+   }
+  },
+  "perf": {
+   "requests": 76,
+   "kb": 3359,
+   "byTypeKB": {
+    "script": 748,
+    "other": 612,
+    "link": 296,
+    "css": 397,
+    "img": 0,
+    "video": 0,
+    "xmlhttprequest": 0,
+    "fetch": 1303
+   },
+   "dcl": 6603,
+   "load": 9342,
+   "ttfb": 5085
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [
+   "AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22",
+   "AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22"
+  ],
+  "scriptSignatures": {
+   "gsap": 4,
+   "swup": 2,
+   "lottie": 1,
+   "IntersectionObserver": 1
+  },
+  "scriptsChecked": 10
+ },
+ "mobile": {
+  "title": "",
+  "lang": "",
+  "generator": null,
+  "description": null,
+  "viewport": [
+   980,
+   2121
+  ],
+  "scrollHeight": 2120,
+  "domNodes": 0,
+  "textEls": 0,
+  "fonts": [],
+  "fontFamilies": [],
+  "fontSizes": [],
+  "weights": [],
+  "lineHeights": [],
+  "letterSpacing": [],
+  "uppercaseShare": 0,
+  "maxFontPx": 0,
+  "maxFontText": null,
+  "maxFontVwRatio": 0,
+  "textColors": [],
+  "backgrounds": [],
+  "bodyBg": "rgba(0, 0, 0, 0)",
+  "radii": [],
+  "maxWidths": [],
+  "h1": null,
+  "headings": [],
+  "bodyParagraphs": [],
+  "navLinks": [],
+  "buttons": [],
+  "burger": false,
+  "headerPosition": null,
+  "headerMix": null,
+  "signals": {
+   "customCursor": false,
+   "marquee": false,
+   "preloader": false,
+   "textSplit": false,
+   "magnetic": false,
+   "parallax": false,
+   "sticky": 0,
+   "fixed": 0,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": false,
+   "pageTransitions": false,
+   "grid": 0,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 0,
+   "iframes": 0,
+   "images": 0,
+   "imgFormats": {},
+   "langSwitch": false,
+   "darkFirstView": true
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {},
+  "scripts": [],
+  "css": {
+   "media": [],
+   "durations": [],
+   "easings": [],
+   "fontFaces": [],
+   "keyframes": 0,
+   "clampFontSizes": 0,
+   "vwFontSizes": 0,
+   "sheets": 0,
+   "blocked": 0,
+   "rootVarCount": 0,
+   "rootVarsSample": {}
+  },
+  "perf": {
+   "requests": 0,
+   "kb": 0,
+   "byTypeKB": {},
+   "dcl": 7178,
+   "load": 7179,
+   "ttfb": 0
+  },
+  "status": null,
+  "cookieDismissed": null,
+  "errors": [
+   "nav: page.goto: net::ERR_TOO_MANY_RETRIES at https://dulcedo.com/\nCall log:\n\u001b[2m  - navigating to \"https:"
+  ]
+ },
+ "seconds": 57
+}

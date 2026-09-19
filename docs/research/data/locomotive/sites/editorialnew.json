@@ -1,0 +1,1012 @@
+{
+ "label": "editorialnew",
+ "url": "https://editorialnew.com",
+ "capturedAt": "2026-09-19T15:27:44.459Z",
+ "desktop": {
+  "title": "Ēdìtørîaļ Něw | Pangram Pangram® Foundry + Locomotive®",
+  "lang": "en",
+  "generator": null,
+  "description": "A precise and elegant narrow serif that was designed for the long-form copy with a big enough personality to make a statement as a title. It is perfect to give your design that mid 90s retro feel while being rich and contemporary.",
+  "viewport": [
+   1440,
+   900
+  ],
+  "scrollHeight": 19800,
+  "domNodes": 1249,
+  "textEls": 550,
+  "fonts": [
+   "Editorial New 1 999 normal",
+   "Neue Montreal 400 normal",
+   "Neue Montreal 500 normal"
+  ],
+  "fontFamilies": [
+   [
+    "Editorial New",
+    474
+   ],
+   [
+    "Neue Montreal",
+    76
+   ]
+  ],
+  "fontSizes": [
+   [
+    "22px",
+    381
+   ],
+   [
+    "16px",
+    111
+   ],
+   [
+    "44px",
+    13
+   ],
+   [
+    "1111px",
+    8
+   ],
+   [
+    "864px",
+    6
+   ],
+   [
+    "53px",
+    5
+   ],
+   [
+    "12px",
+    4
+   ],
+   [
+    "37px",
+    3
+   ],
+   [
+    "10px",
+    3
+   ],
+   [
+    "58px",
+    2
+   ],
+   [
+    "27px",
+    2
+   ],
+   [
+    "20px",
+    2
+   ],
+   [
+    "13px",
+    2
+   ],
+   [
+    "213px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    437
+   ],
+   [
+    "300",
+    44
+   ],
+   [
+    "500",
+    40
+   ],
+   [
+    "200",
+    19
+   ],
+   [
+    "800",
+    6
+   ],
+   [
+    "900",
+    2
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1",
+    400
+   ],
+   [
+    "1.33",
+    103
+   ],
+   [
+    "normal",
+    23
+   ],
+   [
+    "1.6",
+    7
+   ],
+   [
+    "1.17",
+    7
+   ],
+   [
+    "1.38",
+    5
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.2em",
+    4
+   ]
+  ],
+  "uppercaseShare": 1,
+  "maxFontPx": 1728,
+  "maxFontText": "EDITORIAL",
+  "maxFontVwRatio": 120,
+  "textColors": [
+   [
+    "rgb(26, 26, 26)",
+    507
+   ],
+   [
+    "rgb(244, 244, 244)",
+    21
+   ],
+   [
+    "rgb(255, 255, 255)",
+    14
+   ],
+   [
+    "rgb(36, 36, 36)",
+    7
+   ],
+   [
+    "rgb(0, 0, 0)",
+    1
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(244, 244, 244)",
+    2996
+   ],
+   [
+    "rgb(26, 26, 26)",
+    1386
+   ],
+   [
+    "rgb(246, 246, 246)",
+    25
+   ],
+   [
+    "rgb(255, 255, 255)",
+    1
+   ],
+   [
+    "rgb(219, 219, 219)",
+    0
+   ],
+   [
+    "rgb(0, 0, 0)",
+    0
+   ]
+  ],
+  "bodyBg": "rgb(244, 244, 244)",
+  "radii": [
+   [
+    "22.2222px",
+    7
+   ],
+   [
+    "50%",
+    2
+   ],
+   [
+    "36.4445px",
+    2
+   ],
+   [
+    "45.3333px",
+    2
+   ],
+   [
+    "10px",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "1461.33px",
+    5
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "Editorial New",
+   "size": 16,
+   "weight": "400",
+   "family": "Editorial New",
+   "lh": 1.33,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(255, 255, 255)",
+   "top": 19
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Editorial New",
+    "size": 16,
+    "weight": "400",
+    "family": "Editorial New",
+    "lh": 1.33,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(255, 255, 255)",
+    "top": 19
+   },
+   {
+    "tag": "H1",
+    "text": "Editorial New",
+    "size": 213,
+    "weight": "200",
+    "family": "Editorial New",
+    "lh": 1.33,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(26, 26, 26)",
+    "top": 301
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 37,
+    "lh": 1.33,
+    "family": "Editorial New",
+    "color": "rgb(26, 26, 26)",
+    "measure": 328
+   },
+   {
+    "size": 16,
+    "lh": 1.6,
+    "family": "Editorial New",
+    "color": "rgb(26, 26, 26)",
+    "measure": 72
+   },
+   {
+    "size": 16,
+    "lh": 1.6,
+    "family": "Editorial New",
+    "color": "rgb(26, 26, 26)",
+    "measure": 72
+   },
+   {
+    "size": 16,
+    "lh": 1.6,
+    "family": "Editorial New",
+    "color": "rgb(26, 26, 26)",
+    "measure": 72
+   },
+   {
+    "size": 16,
+    "lh": 1.6,
+    "family": "Editorial New",
+    "color": "rgb(26, 26, 26)",
+    "measure": 72
+   }
+  ],
+  "navLinks": [
+   "Pangram Pangram® Foundry",
+   "Locomotive®",
+   "Editorial New",
+   "Get the font"
+  ],
+  "buttons": [
+   "Invert Colors",
+   "Get the font",
+   "Table of contents",
+   "Change",
+   "Randomize",
+   "Regular — 400",
+   "↑",
+   "Buy Editorial New",
+   "Try it for Free"
+  ],
+  "burger": true,
+  "headerPosition": "fixed",
+  "headerMix": "difference",
+  "signals": {
+   "customCursor": true,
+   "marquee": false,
+   "preloader": true,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 0,
+   "fixed": 5,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": true,
+   "pageTransitions": false,
+   "grid": 0,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 4,
+   "iframes": 0,
+   "images": 9,
+   "imgFormats": {
+    "webp": 8,
+    "svg": 1
+   },
+   "langSwitch": true,
+   "darkFirstView": false
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 3,
+   "gtag": 2,
+   "gtm": 1
+  },
+  "scripts": [
+   "www.google-analytics.com/analytics.js",
+   "www.googletagmanager.com/gtag/js?id=G-7N45D9T4F9&cx=c&gtm=4e69g1",
+   "www.googletagmanager.com/gtag/js?id=UA-150264708-1",
+   "cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js",
+   "cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=fetch%2CCustomEvent%2CElement.pr",
+   "editorialnew.com/assets/scripts/vendors.js",
+   "editorialnew.com/assets/scripts/app.js",
+   "static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+  ],
+  "css": {
+   "media": [
+    [
+     "(max-width: 699px)",
+     71
+    ],
+    [
+     "(min-width: 700px)",
+     58
+    ],
+    [
+     "(min-width: 1200px)",
+     20
+    ],
+    [
+     "(min-width: 700px) and (max-width: 999px)",
+     14
+    ],
+    [
+     "(min-width: 1000px)",
+     14
+    ],
+    [
+     "(max-width: 1199px)",
+     11
+    ],
+    [
+     "(min-width: 1000px) and (max-width: 1199px)",
+     6
+    ],
+    [
+     "(max-width: 999px)",
+     6
+    ],
+    [
+     "(min-width: 700px) and (max-width: 1199px)",
+     6
+    ],
+    [
+     "(min-width: 1600px)",
+     2
+    ],
+    [
+     "(min-width: 1200px) and (max-width: 1599px)",
+     1
+    ],
+    [
+     "(min-width: 1600px) and (max-width: 1999px)",
+     1
+    ],
+    [
+     "(min-width: 2000px) and (max-width: 2399px)",
+     1
+    ],
+    [
+     "(min-width: 2400px)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "0.3s",
+     6
+    ],
+    [
+     "0.45s",
+     6
+    ],
+    [
+     "1s",
+     1
+    ],
+    [
+     "0.2s",
+     1
+    ],
+    [
+     "0.6s",
+     1
+    ],
+    [
+     "9s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0, 0, 0.2, 1)",
+     12
+    ],
+    [
+     "ease",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "Editorial New 1 999 ",
+    "Neue Montreal 400 normal",
+    "Neue Montreal 500 normal"
+   ],
+   "keyframes": 4,
+   "clampFontSizes": 0,
+   "vwFontSizes": 8,
+   "sheets": 2,
+   "blocked": 0,
+   "rootVarCount": 0,
+   "rootVarsSample": {}
+  },
+  "perf": {
+   "requests": 22,
+   "kb": 1253,
+   "byTypeKB": {
+    "link": 67,
+    "script": 84,
+    "other": 2,
+    "css": 138,
+    "img": 962,
+    "fetch": 0,
+    "xmlhttprequest": 0
+   },
+   "dcl": 2574,
+   "load": 3349,
+   "ttfb": 2087
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": [],
+  "scriptSignatures": {},
+  "scriptsChecked": 3
+ },
+ "mobile": {
+  "title": "Eđiťoŕiål Ňeŵ | Pangram Pangram® Foundry + Locomotive®",
+  "lang": "en",
+  "generator": null,
+  "description": "A precise and elegant narrow serif that was designed for the long-form copy with a big enough personality to make a statement as a title. It is perfect to give your design that mid 90s retro feel while being rich and contemporary.",
+  "viewport": [
+   390,
+   844
+  ],
+  "scrollHeight": 10439,
+  "domNodes": 1248,
+  "textEls": 537,
+  "fonts": [
+   "Editorial New 1 999 normal",
+   "Neue Montreal 400 normal",
+   "Neue Montreal 500 normal"
+  ],
+  "fontFamilies": [
+   [
+    "Editorial New",
+    473
+   ],
+   [
+    "Neue Montreal",
+    64
+   ]
+  ],
+  "fontSizes": [
+   [
+    "13px",
+    380
+   ],
+   [
+    "18px",
+    87
+   ],
+   [
+    "20px",
+    11
+   ],
+   [
+    "25px",
+    9
+   ],
+   [
+    "350px",
+    8
+   ],
+   [
+    "35px",
+    7
+   ],
+   [
+    "30px",
+    7
+   ],
+   [
+    "9px",
+    7
+   ],
+   [
+    "390px",
+    6
+   ],
+   [
+    "5px",
+    3
+   ],
+   [
+    "14px",
+    2
+   ],
+   [
+    "50px",
+    2
+   ],
+   [
+    "15px",
+    2
+   ],
+   [
+    "105px",
+    1
+   ]
+  ],
+  "weights": [
+   [
+    "400",
+    427
+   ],
+   [
+    "300",
+    44
+   ],
+   [
+    "500",
+    34
+   ],
+   [
+    "200",
+    21
+   ],
+   [
+    "700",
+    7
+   ],
+   [
+    "900",
+    2
+   ]
+  ],
+  "lineHeights": [
+   [
+    "1",
+    402
+   ],
+   [
+    "1.33",
+    89
+   ],
+   [
+    "normal",
+    23
+   ],
+   [
+    "1.6",
+    7
+   ],
+   [
+    "1.05",
+    7
+   ],
+   [
+    "1.32",
+    6
+   ]
+  ],
+  "letterSpacing": [
+   [
+    "-0.2em",
+    4
+   ]
+  ],
+  "uppercaseShare": 1,
+  "maxFontPx": 468,
+  "maxFontText": "EDITORIAL",
+  "maxFontVwRatio": 120,
+  "textColors": [
+   [
+    "rgb(26, 26, 26)",
+    500
+   ],
+   [
+    "rgb(244, 244, 244)",
+    21
+   ],
+   [
+    "rgb(255, 255, 255)",
+    9
+   ],
+   [
+    "rgb(36, 36, 36)",
+    7
+   ]
+  ],
+  "backgrounds": [
+   [
+    "rgb(244, 244, 244)",
+    517
+   ],
+   [
+    "rgb(26, 26, 26)",
+    222
+   ],
+   [
+    "rgb(246, 246, 246)",
+    7
+   ],
+   [
+    "rgb(219, 219, 219)",
+    2
+   ]
+  ],
+  "bodyBg": "rgb(244, 244, 244)",
+  "radii": [
+   [
+    "25px",
+    7
+   ],
+   [
+    "41px",
+    2
+   ],
+   [
+    "50.9999px",
+    2
+   ],
+   [
+    "50%",
+    1
+   ]
+  ],
+  "maxWidths": [
+   [
+    "1644px",
+    5
+   ]
+  ],
+  "h1": {
+   "tag": "H1",
+   "text": "Editorial New",
+   "size": 18,
+   "weight": "400",
+   "family": "Editorial New",
+   "lh": 1.33,
+   "ls": "normal",
+   "transform": "none",
+   "color": "rgb(26, 26, 26)",
+   "top": 21
+  },
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "Editorial New",
+    "size": 18,
+    "weight": "400",
+    "family": "Editorial New",
+    "lh": 1.33,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(26, 26, 26)",
+    "top": 21
+   },
+   {
+    "tag": "H1",
+    "text": "Editorial New",
+    "size": 105,
+    "weight": "200",
+    "family": "Editorial New",
+    "lh": 1,
+    "ls": "normal",
+    "transform": "none",
+    "color": "rgb(26, 26, 26)",
+    "top": 211
+   }
+  ],
+  "bodyParagraphs": [
+   {
+    "size": 25,
+    "lh": 1.33,
+    "family": "Editorial New",
+    "color": "rgb(26, 26, 26)",
+    "measure": 340
+   },
+   {
+    "size": 9,
+    "lh": 1.6,
+    "family": "Editorial New",
+    "color": "rgb(26, 26, 26)",
+    "measure": 158
+   },
+   {
+    "size": 9,
+    "lh": 1.6,
+    "family": "Editorial New",
+    "color": "rgb(26, 26, 26)",
+    "measure": 158
+   },
+   {
+    "size": 9,
+    "lh": 1.6,
+    "family": "Editorial New",
+    "color": "rgb(26, 26, 26)",
+    "measure": 158
+   },
+   {
+    "size": 9,
+    "lh": 1.6,
+    "family": "Editorial New",
+    "color": "rgb(26, 26, 26)",
+    "measure": 158
+   }
+  ],
+  "navLinks": [
+   "Editorial New",
+   "Get the font"
+  ],
+  "buttons": [
+   "Invert Colors",
+   "Get the font",
+   "↓",
+   "Change",
+   "Randomize",
+   "Regular — 400",
+   "↑",
+   "Buy Editorial New",
+   "Try it for Free"
+  ],
+  "burger": true,
+  "headerPosition": "static",
+  "headerMix": "normal",
+  "signals": {
+   "customCursor": true,
+   "marquee": false,
+   "preloader": true,
+   "textSplit": true,
+   "magnetic": false,
+   "parallax": true,
+   "sticky": 0,
+   "fixed": 6,
+   "horizontalScroll": false,
+   "themeSwitch": false,
+   "scrollContainer": true,
+   "pageTransitions": false,
+   "grid": 0,
+   "videos": 0,
+   "autoplayVideos": 0,
+   "canvases": 0,
+   "inlineSvg": 4,
+   "iframes": 0,
+   "images": 9,
+   "imgFormats": {
+    "webp": 8,
+    "svg": 1
+   },
+   "langSwitch": true,
+   "darkFirstView": false
+  },
+  "libs": {
+   "gsap": false,
+   "ScrollTrigger": false,
+   "Lenis": false,
+   "LocomotiveScroll": false,
+   "THREE": false,
+   "barba": false,
+   "Swup": false,
+   "Splitting": false,
+   "lottie": false,
+   "PIXI": false,
+   "nuxt": false,
+   "next": false,
+   "Vue": false,
+   "React": false,
+   "Shopify": false,
+   "Webflow": false,
+   "Alpine": false,
+   "jQuery": false,
+   "Astro": false,
+   "Svelte": false
+  },
+  "scriptHints": {
+   "ogl": 3,
+   "gtag": 2,
+   "gtm": 1
+  },
+  "scripts": [
+   "www.google-analytics.com/analytics.js",
+   "www.googletagmanager.com/gtag/js?id=G-7N45D9T4F9&cx=c&gtm=4e69h0h2",
+   "www.googletagmanager.com/gtag/js?id=UA-150264708-1",
+   "cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js",
+   "cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=fetch%2CCustomEvent%2CElement.pr",
+   "editorialnew.com/assets/scripts/vendors.js",
+   "editorialnew.com/assets/scripts/app.js",
+   "static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+  ],
+  "css": {
+   "media": [
+    [
+     "(max-width: 699px)",
+     71
+    ],
+    [
+     "(min-width: 700px)",
+     58
+    ],
+    [
+     "(min-width: 1200px)",
+     20
+    ],
+    [
+     "(min-width: 700px) and (max-width: 999px)",
+     14
+    ],
+    [
+     "(min-width: 1000px)",
+     14
+    ],
+    [
+     "(max-width: 1199px)",
+     11
+    ],
+    [
+     "(min-width: 1000px) and (max-width: 1199px)",
+     6
+    ],
+    [
+     "(max-width: 999px)",
+     6
+    ],
+    [
+     "(min-width: 700px) and (max-width: 1199px)",
+     6
+    ],
+    [
+     "(min-width: 1600px)",
+     2
+    ],
+    [
+     "(min-width: 1200px) and (max-width: 1599px)",
+     1
+    ],
+    [
+     "(min-width: 1600px) and (max-width: 1999px)",
+     1
+    ],
+    [
+     "(min-width: 2000px) and (max-width: 2399px)",
+     1
+    ],
+    [
+     "(min-width: 2400px)",
+     1
+    ]
+   ],
+   "durations": [
+    [
+     "0.3s",
+     6
+    ],
+    [
+     "0.45s",
+     6
+    ],
+    [
+     "1s",
+     1
+    ],
+    [
+     "0.2s",
+     1
+    ],
+    [
+     "0.6s",
+     1
+    ],
+    [
+     "9s",
+     1
+    ]
+   ],
+   "easings": [
+    [
+     "cubic-bezier(0, 0, 0.2, 1)",
+     12
+    ],
+    [
+     "ease",
+     1
+    ]
+   ],
+   "fontFaces": [
+    "Editorial New 1 999 ",
+    "Neue Montreal 400 normal",
+    "Neue Montreal 500 normal"
+   ],
+   "keyframes": 4,
+   "clampFontSizes": 0,
+   "vwFontSizes": 8,
+   "sheets": 2,
+   "blocked": 0,
+   "rootVarCount": 0,
+   "rootVarsSample": {}
+  },
+  "perf": {
+   "requests": 22,
+   "kb": 1256,
+   "byTypeKB": {
+    "link": 67,
+    "script": 84,
+    "other": 2,
+    "css": 138,
+    "img": 965,
+    "fetch": 0,
+    "xmlhttprequest": 0
+   },
+   "dcl": 4145,
+   "load": 7906,
+   "ttfb": 3732
+  },
+  "status": 200,
+  "cookieDismissed": null,
+  "errors": []
+ },
+ "seconds": 49
+}
