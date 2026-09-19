@@ -1,0 +1,5250 @@
+{
+  "home-desktop": {
+    "url": "https://flighthoursolution.com/",
+    "served": {
+      "requests": 55,
+      "kb": 2777,
+      "byTypeKB": {
+        "document": 175,
+        "stylesheet": 284,
+        "script": 448,
+        "image": 1234,
+        "3p:stylesheet": 29,
+        "3p:font": 38,
+        "3p:script": 540,
+        "3p:xhr": 29
+      },
+      "missing": [
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg",
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg",
+        "/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle.min.js",
+        "/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/form.a8f0864f4b4fda696ad1.bundle.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/popup.f7b15b2ca565b152bf98.bundle.min.js"
+      ]
+    },
+    "metrics": {
+      "title": "Tailored consulting for aviation industry - Flight Hour Solution",
+      "lang": "pl-PL",
+      "domNodes": 835,
+      "imgs": [
+        {
+          "src": "revisit.svg",
+          "alt": "Revisit consent button",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "close.svg",
+          "alt": "Close",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            63,
+            16
+          ],
+          "loading": null
+        },
+        {
+          "src": "01_Flight-Hour-Solution_podstawowe.svg",
+          "alt": "",
+          "nat": [
+            300,
+            70
+          ],
+          "disp": [
+            220,
+            52
+          ],
+          "loading": null
+        },
+        {
+          "src": "image-17-1.webp",
+          "alt": "",
+          "nat": [
+            655,
+            691
+          ],
+          "disp": [
+            574,
+            605
+          ],
+          "loading": null
+        },
+        {
+          "src": "Vector-3.svg",
+          "alt": "",
+          "nat": [
+            379,
+            332
+          ],
+          "disp": [
+            231,
+            203
+          ],
+          "loading": null
+        },
+        {
+          "src": "AdobeStock_21354821-1-1024x679.webp",
+          "alt": "",
+          "nat": [
+            800,
+            530
+          ],
+          "disp": [
+            337,
+            490
+          ],
+          "loading": "lazy"
+        },
+        {
+          "src": "AdobeStock_271291361-2-1024x576.webp",
+          "alt": "",
+          "nat": [
+            800,
+            450
+          ],
+          "disp": [
+            337,
+            490
+          ],
+          "loading": "lazy"
+        },
+        {
+          "src": "Bundeswehreinsatz-in-Niger-beendet-1024x647.webp",
+          "alt": "",
+          "nat": [
+            800,
+            505
+          ],
+          "disp": [
+            337,
+            490
+          ],
+          "loading": "lazy"
+        },
+        {
+          "src": "image-25.png",
+          "alt": "",
+          "nat": [
+            800,
+            374
+          ],
+          "disp": [
+            719,
+            337
+          ],
+          "loading": "lazy"
+        },
+        {
+          "src": "Mask-group-1.svg",
+          "alt": "",
+          "nat": [
+            921,
+            420
+          ],
+          "disp": [
+            739,
+            337
+          ],
+          "loading": "lazy"
+        },
+        {
+          "src": "Vector-3.svg",
+          "alt": "",
+          "nat": [
+            379,
+            332
+          ],
+          "disp": [
+            231,
+            203
+          ],
+          "loading": null
+        }
+      ],
+      "fonts": [
+        "Nunito 400 normal",
+        "Nunito 500 normal",
+        "Nunito 600 normal",
+        "Nunito 700 normal"
+      ],
+      "colors": [
+        [
+          "rgb(255, 255, 255)",
+          24
+        ],
+        [
+          "rgb(28, 32, 92)",
+          22
+        ],
+        [
+          "rgb(73, 77, 132)",
+          18
+        ],
+        [
+          "rgb(238, 114, 3)",
+          14
+        ],
+        [
+          "rgb(33, 33, 33)",
+          13
+        ],
+        [
+          "rgb(24, 99, 220)",
+          3
+        ],
+        [
+          "rgb(0, 128, 0)",
+          1
+        ]
+      ],
+      "backgrounds": [
+        [
+          "rgb(255, 255, 255)",
+          2018
+        ],
+        [
+          "rgb(28, 32, 92)",
+          1713
+        ],
+        [
+          "rgba(196, 196, 196, 0)",
+          1296
+        ],
+        [
+          "rgb(245, 245, 245)",
+          1256
+        ],
+        [
+          "rgba(238, 114, 3, 0.87)",
+          37
+        ],
+        [
+          "rgba(238, 114, 3, 0)",
+          32
+        ],
+        [
+          "rgb(238, 114, 3)",
+          22
+        ],
+        [
+          "rgb(24, 99, 220)",
+          10
+        ]
+      ],
+      "fontFamilies": [
+        [
+          "Nunito, sans-serif",
+          75
+        ],
+        [
+          "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helv",
+          20
+        ]
+      ],
+      "fontSizes": [
+        [
+          "16px/400",
+          26
+        ],
+        [
+          "14px/400",
+          9
+        ],
+        [
+          "18px/700",
+          8
+        ],
+        [
+          "24px/700",
+          7
+        ],
+        [
+          "27px/400",
+          6
+        ],
+        [
+          "16px/700",
+          5
+        ],
+        [
+          "18px/600",
+          5
+        ],
+        [
+          "24px/600",
+          4
+        ],
+        [
+          "15px/400",
+          4
+        ],
+        [
+          "21px/400",
+          3
+        ]
+      ],
+      "headings": [
+        "H2: Welcome to Flight Hour Solution",
+        "H2: Phone number:",
+        "H2: E-mail Address:",
+        "H2: Your Partner for optimized engines management.",
+        "H2: Our services keeps you flying!",
+        "H2: Services",
+        "H2: Our services keeps you flying!",
+        "H2: About Us",
+        "H2: About Flight Hour Solution",
+        "H2: Join Our Team",
+        "H2: Specialized Expertise",
+        "H2: Tailored Solutions",
+        "H2: Technology-Driven",
+        "H2: IF YOU HAVE ANY QUESTIONS,",
+        "H2: Feel Free To Let Us Now",
+        "H2: Stay in Touch",
+        "H2: Contact Form",
+        "H2: Stay in Touch",
+        "H2: Discover Site",
+        "H2: Services",
+        "H2: Flight Hour Solution © 2026",
+        "H2: Privacy Policy"
+      ],
+      "scrollHeight": 5892,
+      "overflowX": false,
+      "linksWithoutName": 1,
+      "h1Count": 0,
+      "buttons": [
+        "Customise",
+        "Reject All",
+        "Accept All",
+        "Call us now",
+        "Discover Us",
+        "Go to Contact",
+        "Read More",
+        "Read more About Us",
+        "Contact Us",
+        "About Us",
+        "Submit"
+      ],
+      "smallText": 4,
+      "tapTargets": 3,
+      "firstHeadingTop": 295,
+      "heroText": "Welcome to Flight Hour Solution"
+    },
+    "consoleErrors": [
+      "error: Failed to load resource: net::ERR_FAILED",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp-content/",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp-content/",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "axe": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 8,
+        "sample": [
+          "<span class=\"elementor-button-text\">Call us now</span>",
+          "<h2 class=\"elementor-heading-title elementor-size-default\">Our services keeps you flying!</h2>"
+        ]
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "help": "Links must have discernible text",
+        "nodes": 1,
+        "sample": [
+          "<a href=\"https://flighthoursolution.com/\">\n\t\t\t\t\t\t\t<img fetchpriority=\"high\" width=\"668\" height=\"157\" src=\"https://flighthoursolution.com/wp-"
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "help": "Page should contain a level-one heading",
+        "nodes": 1,
+        "sample": [
+          "<html lang=\"pl-PL\">"
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "nodes": 17,
+        "sample": [
+          "<div class=\"elementor-element elementor-element-f69dd49 elementor-widget elementor-widget-button\" data-id=\"f69dd49\" data-element_type=\"widge",
+          "<div class=\"elementor-element elementor-element-5e27a94 elementor-widget elementor-widget-heading\" data-id=\"5e27a94\" data-element_type=\"widg"
+        ]
+      }
+    ]
+  },
+  "services-desktop": {
+    "url": "https://flighthoursolution.com/services/",
+    "served": {
+      "requests": 50,
+      "kb": 2078,
+      "byTypeKB": {
+        "document": 172,
+        "stylesheet": 278,
+        "script": 448,
+        "image": 545,
+        "3p:stylesheet": 29,
+        "3p:font": 38,
+        "3p:script": 540,
+        "3p:xhr": 29
+      },
+      "missing": [
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg",
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg",
+        "/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle.min.js",
+        "/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js"
+      ]
+    },
+    "metrics": {
+      "title": "Services - Flight Hour Solution",
+      "lang": "pl-PL",
+      "domNodes": 979,
+      "imgs": [
+        {
+          "src": "revisit.svg",
+          "alt": "Revisit consent button",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "close.svg",
+          "alt": "Close",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            63,
+            16
+          ],
+          "loading": null
+        },
+        {
+          "src": "01_Flight-Hour-Solution_podstawowe.svg",
+          "alt": "",
+          "nat": [
+            300,
+            70
+          ],
+          "disp": [
+            220,
+            52
+          ],
+          "loading": null
+        },
+        {
+          "src": "image-25.png",
+          "alt": "",
+          "nat": [
+            800,
+            374
+          ],
+          "disp": [
+            719,
+            337
+          ],
+          "loading": null
+        },
+        {
+          "src": "Mask-group-1.svg",
+          "alt": "",
+          "nat": [
+            921,
+            420
+          ],
+          "disp": [
+            739,
+            337
+          ],
+          "loading": null
+        }
+      ],
+      "fonts": [
+        "Nunito 400 normal",
+        "Nunito 500 normal",
+        "Nunito 600 normal",
+        "Nunito 700 normal"
+      ],
+      "colors": [
+        [
+          "rgb(28, 32, 92)",
+          61
+        ],
+        [
+          "rgb(255, 255, 255)",
+          19
+        ],
+        [
+          "rgb(238, 114, 3)",
+          18
+        ],
+        [
+          "rgb(33, 33, 33)",
+          13
+        ],
+        [
+          "rgb(73, 77, 132)",
+          10
+        ],
+        [
+          "rgb(24, 99, 220)",
+          3
+        ],
+        [
+          "rgb(0, 128, 0)",
+          1
+        ]
+      ],
+      "backgrounds": [
+        [
+          "rgb(240, 240, 240)",
+          1870
+        ],
+        [
+          "rgb(255, 255, 255)",
+          1564
+        ],
+        [
+          "rgb(28, 32, 92)",
+          1488
+        ],
+        [
+          "rgb(238, 114, 3)",
+          16
+        ],
+        [
+          "rgba(238, 114, 3, 0)",
+          11
+        ],
+        [
+          "rgb(24, 99, 220)",
+          10
+        ],
+        [
+          "rgb(0, 86, 167)",
+          2
+        ]
+      ],
+      "fontFamilies": [
+        [
+          "Nunito, sans-serif",
+          107
+        ],
+        [
+          "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helv",
+          18
+        ]
+      ],
+      "fontSizes": [
+        [
+          "18px/500",
+          53
+        ],
+        [
+          "16px/400",
+          16
+        ],
+        [
+          "24px/700",
+          13
+        ],
+        [
+          "14px/400",
+          9
+        ],
+        [
+          "21px/400",
+          7
+        ],
+        [
+          "18px/700",
+          6
+        ],
+        [
+          "80px/700",
+          6
+        ],
+        [
+          "16px/700",
+          5
+        ],
+        [
+          "27px/400",
+          2
+        ],
+        [
+          "15px/400",
+          2
+        ]
+      ],
+      "headings": [
+        "H2: Services",
+        "H2: Your benefits are our services",
+        "H2: What We offer",
+        "H2: Programs",
+        "H2: Support in:",
+        "H2: Advisory / Evaluation",
+        "H2: Analysis",
+        "H2: Shop Visit Management",
+        "H2: Capabilities",
+        "H2: CFM Family",
+        "H2: IAE Family",
+        "H2: Pratt&Whitney Family",
+        "H2: Honeywell Family",
+        "H2: Military & Government Programs",
+        "H2: Our Services for Military & Government Aviation:",
+        "H2: IF YOU HAVE ANY QUESTIONS,",
+        "H2: Feel Free To Let Us Know",
+        "H2: Stay in Touch",
+        "H2: Discover Site",
+        "H2: Services",
+        "H2: Flight Hour Solution © 2026",
+        "H2: Privacy Policy"
+      ],
+      "scrollHeight": 4951,
+      "overflowX": false,
+      "linksWithoutName": 1,
+      "h1Count": 0,
+      "buttons": [
+        "Customise",
+        "Reject All",
+        "Accept All",
+        "Call us now",
+        "Contact Us",
+        "About Us",
+        "Submit"
+      ],
+      "smallText": 2,
+      "tapTargets": 3,
+      "firstHeadingTop": 162,
+      "heroText": "Services"
+    },
+    "consoleErrors": [
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/services/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/services/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "pageerror: ChunkLoadError: Loading chunk 334 failed.\n(error: https://flighthoursolution.com/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle"
+    ],
+    "axe": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 14,
+        "sample": [
+          "<span class=\"elementor-button-text\">Call us now</span>",
+          "<span class=\"text-orange\">offer</span>"
+        ]
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "help": "Links must have discernible text",
+        "nodes": 1,
+        "sample": [
+          "<a href=\"https://flighthoursolution.com/\">\n\t\t\t\t\t\t\t<img fetchpriority=\"high\" width=\"668\" height=\"157\" src=\"https://flighthoursolution.com/wp-"
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "help": "Page should contain a level-one heading",
+        "nodes": 1,
+        "sample": [
+          "<html lang=\"pl-PL\">"
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "nodes": 17,
+        "sample": [
+          "<div class=\"elementor-element elementor-element-f69dd49 elementor-widget elementor-widget-button\" data-id=\"f69dd49\" data-element_type=\"widge",
+          "<div class=\"elementor-element elementor-element-5e27a94 elementor-widget elementor-widget-heading\" data-id=\"5e27a94\" data-element_type=\"widg"
+        ]
+      }
+    ]
+  },
+  "about-us-desktop": {
+    "url": "https://flighthoursolution.com/about-us/",
+    "served": {
+      "requests": 51,
+      "kb": 1787,
+      "byTypeKB": {
+        "document": 143,
+        "stylesheet": 239,
+        "script": 448,
+        "image": 321,
+        "3p:stylesheet": 29,
+        "3p:font": 38,
+        "3p:script": 540,
+        "3p:xhr": 29
+      },
+      "missing": [
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg",
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg",
+        "/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle.min.js",
+        "/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js"
+      ]
+    },
+    "metrics": {
+      "title": "About Us - Flight Hour Solution",
+      "lang": "pl-PL",
+      "domNodes": 615,
+      "imgs": [
+        {
+          "src": "revisit.svg",
+          "alt": "Revisit consent button",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "close.svg",
+          "alt": "Close",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            63,
+            16
+          ],
+          "loading": null
+        },
+        {
+          "src": "01_Flight-Hour-Solution_podstawowe.svg",
+          "alt": "",
+          "nat": [
+            300,
+            70
+          ],
+          "disp": [
+            220,
+            52
+          ],
+          "loading": null
+        },
+        {
+          "src": "Vector-3.svg",
+          "alt": "",
+          "nat": [
+            379,
+            332
+          ],
+          "disp": [
+            231,
+            203
+          ],
+          "loading": null
+        },
+        {
+          "src": "image-25.png",
+          "alt": "",
+          "nat": [
+            800,
+            374
+          ],
+          "disp": [
+            719,
+            337
+          ],
+          "loading": null
+        },
+        {
+          "src": "Mask-group-1.svg",
+          "alt": "",
+          "nat": [
+            921,
+            420
+          ],
+          "disp": [
+            739,
+            337
+          ],
+          "loading": "lazy"
+        }
+      ],
+      "fonts": [
+        "Nunito 400 normal",
+        "Nunito 500 normal",
+        "Nunito 600 normal",
+        "Nunito 700 normal"
+      ],
+      "colors": [
+        [
+          "rgb(255, 255, 255)",
+          20
+        ],
+        [
+          "rgb(33, 33, 33)",
+          13
+        ],
+        [
+          "rgb(28, 32, 92)",
+          11
+        ],
+        [
+          "rgb(73, 77, 132)",
+          11
+        ],
+        [
+          "rgb(238, 114, 3)",
+          8
+        ],
+        [
+          "rgb(24, 99, 220)",
+          3
+        ],
+        [
+          "rgb(0, 128, 0)",
+          1
+        ]
+      ],
+      "backgrounds": [
+        [
+          "rgb(28, 32, 92)",
+          1488
+        ],
+        [
+          "rgb(245, 245, 245)",
+          1248
+        ],
+        [
+          "rgb(255, 255, 255)",
+          1202
+        ],
+        [
+          "rgb(240, 240, 240)",
+          317
+        ],
+        [
+          "rgb(238, 114, 3)",
+          27
+        ],
+        [
+          "rgba(238, 114, 3, 0)",
+          11
+        ],
+        [
+          "rgb(24, 99, 220)",
+          10
+        ],
+        [
+          "rgb(0, 86, 167)",
+          2
+        ]
+      ],
+      "fontFamilies": [
+        [
+          "Nunito, sans-serif",
+          49
+        ],
+        [
+          "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helv",
+          18
+        ]
+      ],
+      "fontSizes": [
+        [
+          "16px/400",
+          17
+        ],
+        [
+          "14px/400",
+          9
+        ],
+        [
+          "18px/700",
+          7
+        ],
+        [
+          "21px/400",
+          7
+        ],
+        [
+          "24px/700",
+          6
+        ],
+        [
+          "16px/700",
+          5
+        ],
+        [
+          "24px/600",
+          3
+        ],
+        [
+          "80px/700",
+          2
+        ],
+        [
+          "27px/400",
+          2
+        ],
+        [
+          "15px/400",
+          2
+        ]
+      ],
+      "headings": [
+        "H2: About Us",
+        "H2: About Flight Hour Solution",
+        "H2: Your Partner for optimized engines management.",
+        "H2: Our services keeps you flying!",
+        "H2: Why choose us?",
+        "H2: Reasons to cooperate with us",
+        "H2: Specialized Expertise",
+        "H2: Tailored Solutions",
+        "H2: Technology-Driven",
+        "H2: Our Story",
+        "H2: IF YOU HAVE ANY QUESTIONS,",
+        "H2: Feel Free To Let Us Know",
+        "H2: Stay in Touch",
+        "H2: Discover Site",
+        "H2: Services",
+        "H2: Flight Hour Solution © 2026",
+        "H2: Privacy Policy"
+      ],
+      "scrollHeight": 3450,
+      "overflowX": false,
+      "linksWithoutName": 1,
+      "h1Count": 0,
+      "buttons": [
+        "Customise",
+        "Reject All",
+        "Accept All",
+        "Call us now",
+        "Contact with Us",
+        "Contact Us",
+        "About Us",
+        "Submit"
+      ],
+      "smallText": 2,
+      "tapTargets": 3,
+      "firstHeadingTop": 162,
+      "heroText": "About Us"
+    },
+    "consoleErrors": [
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/about-us/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/about-us/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "pageerror: ChunkLoadError: Loading chunk 334 failed.\n(error: https://flighthoursolution.com/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle"
+    ],
+    "axe": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 5,
+        "sample": [
+          "<span class=\"elementor-button-text\">Call us now</span>",
+          "<h2 class=\"elementor-heading-title elementor-size-default\">Our services keeps you flying!</h2>"
+        ]
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "help": "Links must have discernible text",
+        "nodes": 1,
+        "sample": [
+          "<a href=\"https://flighthoursolution.com/\">\n\t\t\t\t\t\t\t<img fetchpriority=\"high\" width=\"668\" height=\"157\" src=\"https://flighthoursolution.com/wp-"
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "help": "Page should contain a level-one heading",
+        "nodes": 1,
+        "sample": [
+          "<html lang=\"pl-PL\">"
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "nodes": 17,
+        "sample": [
+          "<div class=\"elementor-element elementor-element-f69dd49 elementor-widget elementor-widget-button\" data-id=\"f69dd49\" data-element_type=\"widge",
+          "<div class=\"elementor-element elementor-element-5e27a94 elementor-widget elementor-widget-heading\" data-id=\"5e27a94\" data-element_type=\"widg"
+        ]
+      }
+    ]
+  },
+  "career-desktop": {
+    "url": "https://flighthoursolution.com/career/",
+    "served": {
+      "requests": 50,
+      "kb": 1722,
+      "byTypeKB": {
+        "document": 104,
+        "stylesheet": 223,
+        "script": 448,
+        "image": 311,
+        "3p:stylesheet": 29,
+        "3p:font": 38,
+        "3p:script": 540,
+        "3p:xhr": 29
+      },
+      "missing": [
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg",
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg",
+        "/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle.min.js",
+        "/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js"
+      ]
+    },
+    "metrics": {
+      "title": "Career - Flight Hour Solution",
+      "lang": "pl-PL",
+      "domNodes": 498,
+      "imgs": [
+        {
+          "src": "revisit.svg",
+          "alt": "Revisit consent button",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "close.svg",
+          "alt": "Close",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            63,
+            16
+          ],
+          "loading": null
+        },
+        {
+          "src": "01_Flight-Hour-Solution_podstawowe.svg",
+          "alt": "",
+          "nat": [
+            300,
+            70
+          ],
+          "disp": [
+            220,
+            52
+          ],
+          "loading": null
+        }
+      ],
+      "fonts": [
+        "Nunito 400 normal",
+        "Nunito 500 normal",
+        "Nunito 600 normal",
+        "Nunito 700 normal"
+      ],
+      "colors": [
+        [
+          "rgb(255, 255, 255)",
+          17
+        ],
+        [
+          "rgb(33, 33, 33)",
+          13
+        ],
+        [
+          "rgb(28, 32, 92)",
+          6
+        ],
+        [
+          "rgb(238, 114, 3)",
+          5
+        ],
+        [
+          "rgb(24, 99, 220)",
+          3
+        ],
+        [
+          "rgb(73, 77, 132)",
+          2
+        ],
+        [
+          "rgb(0, 128, 0)",
+          1
+        ]
+      ],
+      "backgrounds": [
+        [
+          "rgb(255, 255, 255)",
+          1202
+        ],
+        [
+          "rgb(28, 32, 92)",
+          1099
+        ],
+        [
+          "rgb(240, 240, 240)",
+          317
+        ],
+        [
+          "rgb(238, 114, 3)",
+          17
+        ],
+        [
+          "rgb(24, 99, 220)",
+          10
+        ],
+        [
+          "rgb(0, 86, 167)",
+          2
+        ]
+      ],
+      "fontFamilies": [
+        [
+          "Nunito, sans-serif",
+          29
+        ],
+        [
+          "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helv",
+          18
+        ]
+      ],
+      "fontSizes": [
+        [
+          "16px/400",
+          14
+        ],
+        [
+          "14px/400",
+          9
+        ],
+        [
+          "18px/700",
+          5
+        ],
+        [
+          "16px/700",
+          5
+        ],
+        [
+          "24px/700",
+          3
+        ],
+        [
+          "80px/700",
+          2
+        ],
+        [
+          "27px/400",
+          2
+        ],
+        [
+          "15px/400",
+          2
+        ],
+        [
+          "14px/700",
+          1
+        ],
+        [
+          "14px/600",
+          1
+        ]
+      ],
+      "headings": [
+        "H2: Career",
+        "H2: Join Our Team",
+        "H2: Join Us Today",
+        "H2: Stay in Touch",
+        "H2: Discover Site",
+        "H2: Services",
+        "H2: Flight Hour Solution © 2026",
+        "H2: Privacy Policy"
+      ],
+      "scrollHeight": 2112,
+      "overflowX": false,
+      "linksWithoutName": 1,
+      "h1Count": 0,
+      "buttons": [
+        "Customise",
+        "Reject All",
+        "Accept All",
+        "Call us now",
+        "Contact with Us",
+        "Submit"
+      ],
+      "smallText": 2,
+      "tapTargets": 3,
+      "firstHeadingTop": 162,
+      "heroText": "Career"
+    },
+    "consoleErrors": [
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/career/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp-c",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/career/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp-c",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "pageerror: ChunkLoadError: Loading chunk 334 failed.\n(error: https://flighthoursolution.com/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle"
+    ],
+    "axe": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 2,
+        "sample": [
+          "<span class=\"elementor-button-text\">Call us now</span>",
+          "<span class=\"elementor-button-text\">Contact with Us</span>"
+        ]
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "help": "Links must have discernible text",
+        "nodes": 1,
+        "sample": [
+          "<a href=\"https://flighthoursolution.com/\">\n\t\t\t\t\t\t\t<img fetchpriority=\"high\" width=\"668\" height=\"157\" src=\"https://flighthoursolution.com/wp-"
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "help": "Page should contain a level-one heading",
+        "nodes": 1,
+        "sample": [
+          "<html lang=\"pl-PL\">"
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "nodes": 17,
+        "sample": [
+          "<div class=\"elementor-element elementor-element-f69dd49 elementor-widget elementor-widget-button\" data-id=\"f69dd49\" data-element_type=\"widge",
+          "<div class=\"elementor-element elementor-element-5e27a94 elementor-widget elementor-widget-heading\" data-id=\"5e27a94\" data-element_type=\"widg"
+        ]
+      }
+    ]
+  },
+  "contact-desktop": {
+    "url": "https://flighthoursolution.com/contact/",
+    "served": {
+      "requests": 106,
+      "kb": 3626,
+      "byTypeKB": {
+        "document": 115,
+        "stylesheet": 254,
+        "script": 448,
+        "image": 285,
+        "3p:stylesheet": 110,
+        "3p:font": 193,
+        "3p:script": 1599,
+        "3p:xhr": 201,
+        "3p:image": 421
+      },
+      "missing": [
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg",
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg",
+        "/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle.min.js",
+        "/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/form.a8f0864f4b4fda696ad1.bundle.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/popup.f7b15b2ca565b152bf98.bundle.min.js"
+      ]
+    },
+    "metrics": {
+      "title": "Contact - Flight Hour Solution",
+      "lang": "pl-PL",
+      "domNodes": 957,
+      "imgs": [
+        {
+          "src": "revisit.svg",
+          "alt": "Revisit consent button",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "close.svg",
+          "alt": "Close",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            63,
+            16
+          ],
+          "loading": null
+        },
+        {
+          "src": "01_Flight-Hour-Solution_podstawowe.svg",
+          "alt": "",
+          "nat": [
+            300,
+            70
+          ],
+          "disp": [
+            220,
+            52
+          ],
+          "loading": null
+        },
+        {
+          "src": "spotlight-poi3.png",
+          "alt": "",
+          "nat": [
+            26,
+            37
+          ],
+          "disp": [
+            26,
+            37
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1071!3i718!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1072!3i719!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1072!3i718!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1071!3i719!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1072!3i720!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1073!3i718!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1073!3i719!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1071!3i717!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1073!3i720!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1070!3i717!4i256!2m3!1e0!2sm!3i7955613",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1070!3i718!4i256!2m3!1e0!2sm!3i7955613",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1074!3i719!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1074!3i720!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1069!3i720!4i256!2m3!1e0!2sm!3i7955611",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1069!3i719!4i256!2m3!1e0!2sm!3i7955611",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1075!3i720!4i256!2m3!1e0!2sm!3i7955611",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1073!3i717!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1070!3i720!4i256!2m3!1e0!2sm!3i7955611",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1071!3i720!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1074!3i718!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1070!3i719!4i256!2m3!1e0!2sm!3i7955611",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1072!3i717!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1074!3i717!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1075!3i719!4i256!2m3!1e0!2sm!3i7955611",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1069!3i717!4i256!2m3!1e0!2sm!3i7955613",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1069!3i718!4i256!2m3!1e0!2sm!3i7955613",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1075!3i717!4i256!2m3!1e0!2sm!3i7955612",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1075!3i718!4i256!2m3!1e0!2sm!3i7955612",
+          "alt": "",
+          "nat": [
+            256,
+            256
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "transparent.png",
+          "alt": "",
+          "nat": [
+            1,
+            1
+          ],
+          "disp": [
+            26,
+            37
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            18,
+            18
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            169,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            169,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            169,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            28,
+            28
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "Street View Pegman Control",
+          "nat": [
+            91,
+            150
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "Pegman is on top of the Map",
+          "nat": [
+            95,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "Street View Pegman Control",
+          "nat": [
+            120,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            28,
+            28
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            28,
+            28
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "Google",
+          "nat": [
+            300,
+            126
+          ],
+          "disp": [
+            66,
+            26
+          ],
+          "loading": null
+        }
+      ],
+      "fonts": [
+        "Roboto 400 normal",
+        "Roboto 500 normal",
+        "Roboto 700 normal",
+        "Nunito 400 normal",
+        "Nunito 500 normal",
+        "Nunito 600 normal",
+        "Nunito 700 normal"
+      ],
+      "colors": [
+        [
+          "rgb(255, 255, 255)",
+          17
+        ],
+        [
+          "rgb(33, 33, 33)",
+          13
+        ],
+        [
+          "rgb(28, 32, 92)",
+          10
+        ],
+        [
+          "rgb(73, 77, 132)",
+          10
+        ],
+        [
+          "rgb(238, 114, 3)",
+          9
+        ],
+        [
+          "rgb(0, 0, 0)",
+          5
+        ],
+        [
+          "rgb(24, 99, 220)",
+          3
+        ],
+        [
+          "rgb(0, 128, 0)",
+          1
+        ]
+      ],
+      "backgrounds": [
+        [
+          "rgb(255, 255, 255)",
+          1362
+        ],
+        [
+          "rgb(28, 32, 92)",
+          1099
+        ],
+        [
+          "rgb(229, 227, 223)",
+          864
+        ],
+        [
+          "rgb(240, 240, 240)",
+          317
+        ],
+        [
+          "rgb(238, 114, 3)",
+          12
+        ],
+        [
+          "rgb(24, 99, 220)",
+          10
+        ],
+        [
+          "rgb(245, 245, 245)",
+          6
+        ],
+        [
+          "rgb(0, 86, 167)",
+          2
+        ]
+      ],
+      "fontFamilies": [
+        [
+          "Nunito, sans-serif",
+          43
+        ],
+        [
+          "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helv",
+          20
+        ],
+        [
+          "Roboto, Arial, sans-serif",
+          6
+        ]
+      ],
+      "fontSizes": [
+        [
+          "16px/400",
+          22
+        ],
+        [
+          "14px/400",
+          9
+        ],
+        [
+          "18px/700",
+          5
+        ],
+        [
+          "16px/700",
+          5
+        ],
+        [
+          "24px/700",
+          4
+        ],
+        [
+          "27px/400",
+          4
+        ],
+        [
+          "15px/400",
+          4
+        ],
+        [
+          "10px/400",
+          3
+        ],
+        [
+          "24px/600",
+          2
+        ],
+        [
+          "42px/700",
+          2
+        ]
+      ],
+      "headings": [
+        "H2: Contact",
+        "H2: How can we help you?",
+        "H2: Stay in Touch",
+        "H2: Contact Form",
+        "H2: Our Office",
+        "H2: Meet Us Here",
+        "H2: Stay in Touch",
+        "H2: Discover Site",
+        "H2: Services",
+        "H2: Flight Hour Solution © 2026",
+        "H2: Privacy Policy"
+      ],
+      "scrollHeight": 2674,
+      "overflowX": false,
+      "linksWithoutName": 1,
+      "h1Count": 0,
+      "buttons": [
+        "Customise",
+        "Reject All",
+        "Accept All",
+        "Call us now",
+        "Submit",
+        "Map",
+        "Satellite",
+        "Keyboard shortcuts",
+        "Map Data",
+        "2 km Click to toggle between metric and "
+      ],
+      "smallText": 7,
+      "tapTargets": 6,
+      "firstHeadingTop": 162,
+      "heroText": "Contact"
+    },
+    "consoleErrors": [
+      "error: Failed to load resource: net::ERR_FAILED",
+      "warning: Google Maps JavaScript API has been loaded directly without loading=async. This can result in suboptimal performance. For best-practice loading patterns please ",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/contact/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp-",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/contact/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp-",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "warning: As of February 21st, 2024, google.maps.Marker is deprecated. Please use google.maps.marker.AdvancedMarkerElement instead. At this time, google.maps.Marker is no",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "axe": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 3,
+        "sample": [
+          "<span class=\"elementor-button-text\">Call us now</span>",
+          "<h2 class=\"elementor-heading-title elementor-size-default\">Stay in Touch</h2>"
+        ]
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "help": "Links must have discernible text",
+        "nodes": 1,
+        "sample": [
+          "<a href=\"https://flighthoursolution.com/\">\n\t\t\t\t\t\t\t<img fetchpriority=\"high\" width=\"668\" height=\"157\" src=\"https://flighthoursolution.com/wp-"
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "help": "Page should contain a level-one heading",
+        "nodes": 1,
+        "sample": [
+          "<html lang=\"pl-PL\">"
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "nodes": 17,
+        "sample": [
+          "<div class=\"elementor-element elementor-element-f69dd49 elementor-widget elementor-widget-button\" data-id=\"f69dd49\" data-element_type=\"widge",
+          "<div class=\"elementor-element elementor-element-5e27a94 elementor-widget elementor-widget-heading\" data-id=\"5e27a94\" data-element_type=\"widg"
+        ]
+      }
+    ]
+  },
+  "privacy-policy-desktop": {
+    "url": "https://flighthoursolution.com/privacy-policy/",
+    "served": {
+      "requests": 48,
+      "kb": 1590,
+      "byTypeKB": {
+        "document": 132,
+        "stylesheet": 320,
+        "script": 448,
+        "image": 13,
+        "3p:stylesheet": 29,
+        "3p:font": 79,
+        "3p:script": 540,
+        "3p:xhr": 29
+      },
+      "missing": [
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg",
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg",
+        "/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle.min.js",
+        "/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js"
+      ]
+    },
+    "metrics": {
+      "title": "Privacy Policy - Flight Hour Solution",
+      "lang": "pl-PL",
+      "domNodes": 885,
+      "imgs": [
+        {
+          "src": "revisit.svg",
+          "alt": "Revisit consent button",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "close.svg",
+          "alt": "Close",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            63,
+            16
+          ],
+          "loading": null
+        },
+        {
+          "src": "01_Flight-Hour-Solution_podstawowe.svg",
+          "alt": "",
+          "nat": [
+            300,
+            70
+          ],
+          "disp": [
+            220,
+            52
+          ],
+          "loading": null
+        }
+      ],
+      "fonts": [
+        "Nunito 700 italic",
+        "Nunito 400 normal",
+        "Nunito 500 normal",
+        "Nunito 700 normal"
+      ],
+      "colors": [
+        [
+          "rgb(73, 77, 132)",
+          139
+        ],
+        [
+          "rgb(255, 255, 255)",
+          16
+        ],
+        [
+          "rgb(33, 33, 33)",
+          13
+        ],
+        [
+          "rgb(238, 114, 3)",
+          6
+        ],
+        [
+          "rgb(28, 32, 92)",
+          5
+        ],
+        [
+          "rgb(24, 99, 220)",
+          3
+        ],
+        [
+          "rgb(0, 128, 0)",
+          1
+        ]
+      ],
+      "backgrounds": [
+        [
+          "rgb(255, 255, 255)",
+          1202
+        ],
+        [
+          "rgb(28, 32, 92)",
+          638
+        ],
+        [
+          "rgb(240, 240, 240)",
+          312
+        ],
+        [
+          "rgb(24, 99, 220)",
+          10
+        ],
+        [
+          "rgb(238, 114, 3)",
+          6
+        ],
+        [
+          "rgb(0, 86, 167)",
+          2
+        ]
+      ],
+      "fontFamilies": [
+        [
+          "Nunito, sans-serif",
+          165
+        ],
+        [
+          "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helv",
+          18
+        ]
+      ],
+      "fontSizes": [
+        [
+          "16px/400",
+          102
+        ],
+        [
+          "16px/700",
+          57
+        ],
+        [
+          "14px/400",
+          9
+        ],
+        [
+          "18px/700",
+          4
+        ],
+        [
+          "24px/700",
+          3
+        ],
+        [
+          "27px/400",
+          2
+        ],
+        [
+          "15px/400",
+          2
+        ],
+        [
+          "14px/700",
+          1
+        ],
+        [
+          "14px/600",
+          1
+        ],
+        [
+          "12px/500",
+          1
+        ]
+      ],
+      "headings": [
+        "H2: Privacy Policy",
+        "H2: Stay in Touch",
+        "H2: Discover Site",
+        "H2: Services",
+        "H2: Flight Hour Solution © 2026",
+        "H2: Privacy Policy"
+      ],
+      "scrollHeight": 5642,
+      "overflowX": false,
+      "linksWithoutName": 1,
+      "h1Count": 0,
+      "buttons": [
+        "Customise",
+        "Reject All",
+        "Accept All",
+        "Call us now",
+        "Submit"
+      ],
+      "smallText": 2,
+      "tapTargets": 5,
+      "firstHeadingTop": 172,
+      "heroText": "Privacy Policy"
+    },
+    "consoleErrors": [
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/privacy-policy/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/privacy-policy/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "pageerror: ChunkLoadError: Loading chunk 334 failed.\n(error: https://flighthoursolution.com/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle"
+    ],
+    "axe": [
+      {
+        "id": "aria-allowed-attr",
+        "impact": "critical",
+        "help": "Elements must only use supported ARIA attributes",
+        "nodes": 21,
+        "sample": [
+          "<p aria-level=\"2\"><b><span data-contrast=\"none\">Interpretation and Definitions</span></b><span data-ccp-props=\"{&quot;134245418&quot;:true,&",
+          "<p aria-level=\"3\"><b><span data-contrast=\"none\">Interpretation</span></b><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&q"
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 3,
+        "sample": [
+          "<span class=\"elementor-button-text\">Call us now</span>",
+          "<span data-contrast=\"auto\">flighthoursolution.com</span>"
+        ]
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "help": "Links must have discernible text",
+        "nodes": 1,
+        "sample": [
+          "<a href=\"https://flighthoursolution.com/\">\n\t\t\t\t\t\t\t<img width=\"668\" height=\"157\" src=\"https://flighthoursolution.com/wp-content/uploads/2024/"
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "help": "Page should contain a level-one heading",
+        "nodes": 1,
+        "sample": [
+          "<html lang=\"pl-PL\">"
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "nodes": 17,
+        "sample": [
+          "<div class=\"elementor-element elementor-element-f69dd49 elementor-widget elementor-widget-button\" data-id=\"f69dd49\" data-element_type=\"widge",
+          "<div class=\"elementor-element elementor-element-5e27a94 elementor-widget elementor-widget-heading\" data-id=\"5e27a94\" data-element_type=\"widg"
+        ]
+      }
+    ]
+  },
+  "home-mobile": {
+    "url": "https://flighthoursolution.com/",
+    "served": {
+      "requests": 51,
+      "kb": 2017,
+      "byTypeKB": {
+        "document": 175,
+        "stylesheet": 284,
+        "script": 448,
+        "image": 1043,
+        "3p:stylesheet": 29,
+        "3p:font": 38
+      },
+      "missing": [
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg",
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg",
+        "/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle.min.js",
+        "/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/form.a8f0864f4b4fda696ad1.bundle.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/popup.f7b15b2ca565b152bf98.bundle.min.js"
+      ]
+    },
+    "metrics": {
+      "title": "Tailored consulting for aviation industry - Flight Hour Solution",
+      "lang": "pl-PL",
+      "domNodes": 835,
+      "imgs": [
+        {
+          "src": "revisit.svg",
+          "alt": "Revisit consent button",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "close.svg",
+          "alt": "Close",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            65,
+            16
+          ],
+          "loading": null
+        },
+        {
+          "src": "01_Flight-Hour-Solution_podstawowe.svg",
+          "alt": "",
+          "nat": [
+            300,
+            70
+          ],
+          "disp": [
+            140,
+            33
+          ],
+          "loading": null
+        },
+        {
+          "src": "image-17-1.webp",
+          "alt": "",
+          "nat": [
+            390,
+            411
+          ],
+          "disp": [
+            277,
+            292
+          ],
+          "loading": null
+        },
+        {
+          "src": "Vector-3.svg",
+          "alt": "",
+          "nat": [
+            379,
+            332
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "AdobeStock_21354821-1-1536x1018.webp",
+          "alt": "",
+          "nat": [
+            390,
+            258
+          ],
+          "disp": [
+            320,
+            200
+          ],
+          "loading": "lazy"
+        },
+        {
+          "src": "AdobeStock_271291361-2-1536x864.webp",
+          "alt": "",
+          "nat": [
+            390,
+            219
+          ],
+          "disp": [
+            320,
+            200
+          ],
+          "loading": "lazy"
+        },
+        {
+          "src": "Bundeswehreinsatz-in-Niger-beendet.webp",
+          "alt": "",
+          "nat": [
+            390,
+            246
+          ],
+          "disp": [
+            320,
+            200
+          ],
+          "loading": "lazy"
+        },
+        {
+          "src": "image-25.png",
+          "alt": "",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            350,
+            164
+          ],
+          "loading": "lazy"
+        },
+        {
+          "src": "Mask-group-1.svg",
+          "alt": "",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            370,
+            169
+          ],
+          "loading": "lazy"
+        },
+        {
+          "src": "Vector-3.svg",
+          "alt": "",
+          "nat": [
+            379,
+            332
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        }
+      ],
+      "fonts": [
+        "Nunito 400 normal",
+        "Nunito 500 normal",
+        "Nunito 600 normal",
+        "Nunito 700 normal"
+      ],
+      "colors": [
+        [
+          "rgb(28, 32, 92)",
+          18
+        ],
+        [
+          "rgb(73, 77, 132)",
+          18
+        ],
+        [
+          "rgb(255, 255, 255)",
+          14
+        ],
+        [
+          "rgb(238, 114, 3)",
+          14
+        ],
+        [
+          "rgb(33, 33, 33)",
+          13
+        ],
+        [
+          "rgb(24, 99, 220)",
+          3
+        ],
+        [
+          "rgb(0, 128, 0)",
+          1
+        ]
+      ],
+      "backgrounds": [
+        [
+          "rgb(255, 255, 255)",
+          1444
+        ],
+        [
+          "rgb(28, 32, 92)",
+          454
+        ],
+        [
+          "rgb(245, 245, 245)",
+          415
+        ],
+        [
+          "rgba(196, 196, 196, 0)",
+          306
+        ],
+        [
+          "rgb(238, 114, 3)",
+          43
+        ],
+        [
+          "rgb(24, 99, 220)",
+          35
+        ],
+        [
+          "rgba(238, 114, 3, 0.87)",
+          18
+        ],
+        [
+          "rgba(238, 114, 3, 0)",
+          9
+        ]
+      ],
+      "fontFamilies": [
+        [
+          "Nunito, sans-serif",
+          60
+        ],
+        [
+          "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helv",
+          21
+        ]
+      ],
+      "fontSizes": [
+        [
+          "16px/400",
+          11
+        ],
+        [
+          "15px/400",
+          11
+        ],
+        [
+          "18px/700",
+          8
+        ],
+        [
+          "14px/400",
+          7
+        ],
+        [
+          "16px/600",
+          6
+        ],
+        [
+          "21px/700",
+          6
+        ],
+        [
+          "16px/700",
+          5
+        ],
+        [
+          "21px/400",
+          5
+        ],
+        [
+          "18px/600",
+          5
+        ],
+        [
+          "18px/400",
+          3
+        ]
+      ],
+      "headings": [
+        "H2: Welcome to Flight Hour Solution",
+        "H2: Phone number:",
+        "H2: E-mail Address:",
+        "H2: Your Partner for optimized engines management.",
+        "H2: Our services keeps you flying!",
+        "H2: Services",
+        "H2: Our services keeps you flying!",
+        "H2: About Us",
+        "H2: About Flight Hour Solution",
+        "H2: Join Our Team",
+        "H2: Specialized Expertise",
+        "H2: Tailored Solutions",
+        "H2: Technology-Driven",
+        "H2: IF YOU HAVE ANY QUESTIONS,",
+        "H2: Feel Free To Let Us Now",
+        "H2: Stay in Touch",
+        "H2: Contact Form",
+        "H2: Stay in Touch",
+        "H2: Flight Hour Solution © 2026",
+        "H2: Privacy Policy"
+      ],
+      "scrollHeight": 7066,
+      "overflowX": false,
+      "linksWithoutName": 1,
+      "h1Count": 0,
+      "buttons": [
+        "Customise",
+        "Reject All",
+        "Accept All",
+        "Call us now",
+        "Discover Us",
+        "Go to Contact",
+        "Read More",
+        "Read more About Us",
+        "Contact Us",
+        "About Us",
+        "Submit"
+      ],
+      "smallText": 4,
+      "tapTargets": 8,
+      "firstHeadingTop": 418,
+      "heroText": "Welcome to Flight Hour Solution"
+    },
+    "consoleErrors": [
+      "error: Failed to load resource: net::ERR_FAILED",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp-content/",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp-content/",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "axe": null
+  },
+  "services-mobile": {
+    "url": "https://flighthoursolution.com/services/",
+    "served": {
+      "requests": 48,
+      "kb": 1509,
+      "byTypeKB": {
+        "document": 172,
+        "stylesheet": 278,
+        "script": 448,
+        "image": 545,
+        "3p:stylesheet": 29,
+        "3p:font": 38
+      },
+      "missing": [
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg",
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg",
+        "/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle.min.js",
+        "/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js"
+      ]
+    },
+    "metrics": {
+      "title": "Services - Flight Hour Solution",
+      "lang": "pl-PL",
+      "domNodes": 979,
+      "imgs": [
+        {
+          "src": "revisit.svg",
+          "alt": "Revisit consent button",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "close.svg",
+          "alt": "Close",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            65,
+            16
+          ],
+          "loading": null
+        },
+        {
+          "src": "01_Flight-Hour-Solution_podstawowe.svg",
+          "alt": "",
+          "nat": [
+            300,
+            70
+          ],
+          "disp": [
+            140,
+            33
+          ],
+          "loading": null
+        },
+        {
+          "src": "image-25.png",
+          "alt": "",
+          "nat": [
+            390,
+            182
+          ],
+          "disp": [
+            350,
+            164
+          ],
+          "loading": null
+        },
+        {
+          "src": "Mask-group-1.svg",
+          "alt": "",
+          "nat": [
+            921,
+            420
+          ],
+          "disp": [
+            370,
+            169
+          ],
+          "loading": null
+        }
+      ],
+      "fonts": [
+        "Nunito 400 normal",
+        "Nunito 500 normal",
+        "Nunito 600 normal",
+        "Nunito 700 normal"
+      ],
+      "colors": [
+        [
+          "rgb(28, 32, 92)",
+          58
+        ],
+        [
+          "rgb(238, 114, 3)",
+          18
+        ],
+        [
+          "rgb(33, 33, 33)",
+          13
+        ],
+        [
+          "rgb(73, 77, 132)",
+          10
+        ],
+        [
+          "rgb(255, 255, 255)",
+          8
+        ],
+        [
+          "rgb(24, 99, 220)",
+          3
+        ],
+        [
+          "rgb(0, 128, 0)",
+          1
+        ]
+      ],
+      "backgrounds": [
+        [
+          "rgb(255, 255, 255)",
+          1320
+        ],
+        [
+          "rgb(240, 240, 240)",
+          589
+        ],
+        [
+          "rgb(28, 32, 92)",
+          327
+        ],
+        [
+          "rgb(24, 99, 220)",
+          35
+        ],
+        [
+          "rgb(238, 114, 3)",
+          14
+        ],
+        [
+          "rgb(0, 86, 167)",
+          2
+        ],
+        [
+          "rgb(245, 245, 245)",
+          1
+        ]
+      ],
+      "fontFamilies": [
+        [
+          "Nunito, sans-serif",
+          92
+        ],
+        [
+          "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helv",
+          19
+        ]
+      ],
+      "fontSizes": [
+        [
+          "14px/500",
+          47
+        ],
+        [
+          "18px/700",
+          15
+        ],
+        [
+          "15px/400",
+          11
+        ],
+        [
+          "14px/400",
+          7
+        ],
+        [
+          "36px/700",
+          6
+        ],
+        [
+          "18px/500",
+          6
+        ],
+        [
+          "16px/700",
+          5
+        ],
+        [
+          "16px/400",
+          2
+        ],
+        [
+          "16px/600",
+          2
+        ],
+        [
+          "21px/400",
+          2
+        ]
+      ],
+      "headings": [
+        "H2: Services",
+        "H2: Your benefits are our services",
+        "H2: What We offer",
+        "H2: Programs",
+        "H2: Support in:",
+        "H2: Advisory / Evaluation",
+        "H2: Analysis",
+        "H2: Shop Visit Management",
+        "H2: Capabilities",
+        "H2: CFM Family",
+        "H2: IAE Family",
+        "H2: Pratt&Whitney Family",
+        "H2: Honeywell Family",
+        "H2: Military & Government Programs",
+        "H2: Our Services for Military & Government Aviation:",
+        "H2: IF YOU HAVE ANY QUESTIONS,",
+        "H2: Feel Free To Let Us Know",
+        "H2: Stay in Touch",
+        "H2: Flight Hour Solution © 2026",
+        "H2: Privacy Policy"
+      ],
+      "scrollHeight": 5957,
+      "overflowX": false,
+      "linksWithoutName": 1,
+      "h1Count": 0,
+      "buttons": [
+        "Customise",
+        "Reject All",
+        "Accept All",
+        "Call us now",
+        "Contact Us",
+        "About Us",
+        "Submit"
+      ],
+      "smallText": 2,
+      "tapTargets": 7,
+      "firstHeadingTop": 116,
+      "heroText": "Services"
+    },
+    "consoleErrors": [
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/services/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/services/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "pageerror: ChunkLoadError: Loading chunk 334 failed.\n(error: https://flighthoursolution.com/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle"
+    ],
+    "axe": null
+  },
+  "about-us-mobile": {
+    "url": "https://flighthoursolution.com/about-us/",
+    "served": {
+      "requests": 49,
+      "kb": 1219,
+      "byTypeKB": {
+        "document": 143,
+        "stylesheet": 239,
+        "script": 448,
+        "image": 321,
+        "3p:stylesheet": 29,
+        "3p:font": 38
+      },
+      "missing": [
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg",
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg",
+        "/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle.min.js",
+        "/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js"
+      ]
+    },
+    "metrics": {
+      "title": "About Us - Flight Hour Solution",
+      "lang": "pl-PL",
+      "domNodes": 615,
+      "imgs": [
+        {
+          "src": "revisit.svg",
+          "alt": "Revisit consent button",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "close.svg",
+          "alt": "Close",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            65,
+            16
+          ],
+          "loading": null
+        },
+        {
+          "src": "01_Flight-Hour-Solution_podstawowe.svg",
+          "alt": "",
+          "nat": [
+            300,
+            70
+          ],
+          "disp": [
+            140,
+            33
+          ],
+          "loading": null
+        },
+        {
+          "src": "Vector-3.svg",
+          "alt": "",
+          "nat": [
+            379,
+            332
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "image-25.png",
+          "alt": "",
+          "nat": [
+            390,
+            182
+          ],
+          "disp": [
+            350,
+            164
+          ],
+          "loading": null
+        },
+        {
+          "src": "Mask-group-1.svg",
+          "alt": "",
+          "nat": [
+            921,
+            420
+          ],
+          "disp": [
+            370,
+            169
+          ],
+          "loading": "lazy"
+        }
+      ],
+      "fonts": [
+        "Nunito 400 normal",
+        "Nunito 500 normal",
+        "Nunito 600 normal",
+        "Nunito 700 normal"
+      ],
+      "colors": [
+        [
+          "rgb(33, 33, 33)",
+          13
+        ],
+        [
+          "rgb(73, 77, 132)",
+          11
+        ],
+        [
+          "rgb(255, 255, 255)",
+          9
+        ],
+        [
+          "rgb(238, 114, 3)",
+          8
+        ],
+        [
+          "rgb(28, 32, 92)",
+          8
+        ],
+        [
+          "rgb(24, 99, 220)",
+          3
+        ],
+        [
+          "rgb(0, 128, 0)",
+          1
+        ]
+      ],
+      "backgrounds": [
+        [
+          "rgb(255, 255, 255)",
+          1042
+        ],
+        [
+          "rgb(245, 245, 245)",
+          537
+        ],
+        [
+          "rgb(28, 32, 92)",
+          327
+        ],
+        [
+          "rgb(240, 240, 240)",
+          41
+        ],
+        [
+          "rgb(24, 99, 220)",
+          35
+        ],
+        [
+          "rgb(238, 114, 3)",
+          23
+        ],
+        [
+          "rgb(0, 86, 167)",
+          2
+        ]
+      ],
+      "fontFamilies": [
+        [
+          "Nunito, sans-serif",
+          34
+        ],
+        [
+          "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helv",
+          19
+        ]
+      ],
+      "fontSizes": [
+        [
+          "15px/400",
+          12
+        ],
+        [
+          "14px/400",
+          7
+        ],
+        [
+          "18px/700",
+          5
+        ],
+        [
+          "16px/700",
+          5
+        ],
+        [
+          "36px/700",
+          3
+        ],
+        [
+          "16px/600",
+          3
+        ],
+        [
+          "21px/700",
+          3
+        ],
+        [
+          "16px/400",
+          2
+        ],
+        [
+          "13px/700",
+          2
+        ],
+        [
+          "21px/400",
+          2
+        ]
+      ],
+      "headings": [
+        "H2: About Us",
+        "H2: About Flight Hour Solution",
+        "H2: Your Partner for optimized engines management.",
+        "H2: Our services keeps you flying!",
+        "H2: Why choose us?",
+        "H2: Reasons to cooperate with us",
+        "H2: Specialized Expertise",
+        "H2: Tailored Solutions",
+        "H2: Technology-Driven",
+        "H2: Our Story",
+        "H2: IF YOU HAVE ANY QUESTIONS,",
+        "H2: Feel Free To Let Us Know",
+        "H2: Stay in Touch",
+        "H2: Flight Hour Solution © 2026",
+        "H2: Privacy Policy"
+      ],
+      "scrollHeight": 3900,
+      "overflowX": false,
+      "linksWithoutName": 1,
+      "h1Count": 0,
+      "buttons": [
+        "Customise",
+        "Reject All",
+        "Accept All",
+        "Call us now",
+        "Contact with Us",
+        "Contact Us",
+        "About Us",
+        "Submit"
+      ],
+      "smallText": 2,
+      "tapTargets": 7,
+      "firstHeadingTop": 116,
+      "heroText": "About Us"
+    },
+    "consoleErrors": [
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/about-us/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/about-us/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "pageerror: ChunkLoadError: Loading chunk 334 failed.\n(error: https://flighthoursolution.com/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle"
+    ],
+    "axe": null
+  },
+  "career-mobile": {
+    "url": "https://flighthoursolution.com/career/",
+    "served": {
+      "requests": 48,
+      "kb": 1153,
+      "byTypeKB": {
+        "document": 104,
+        "stylesheet": 223,
+        "script": 448,
+        "image": 311,
+        "3p:stylesheet": 29,
+        "3p:font": 38
+      },
+      "missing": [
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg",
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg",
+        "/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle.min.js",
+        "/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js"
+      ]
+    },
+    "metrics": {
+      "title": "Career - Flight Hour Solution",
+      "lang": "pl-PL",
+      "domNodes": 498,
+      "imgs": [
+        {
+          "src": "revisit.svg",
+          "alt": "Revisit consent button",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "close.svg",
+          "alt": "Close",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            65,
+            16
+          ],
+          "loading": null
+        },
+        {
+          "src": "01_Flight-Hour-Solution_podstawowe.svg",
+          "alt": "",
+          "nat": [
+            300,
+            70
+          ],
+          "disp": [
+            140,
+            33
+          ],
+          "loading": null
+        }
+      ],
+      "fonts": [
+        "Nunito 400 normal",
+        "Nunito 500 normal",
+        "Nunito 600 normal",
+        "Nunito 700 normal"
+      ],
+      "colors": [
+        [
+          "rgb(33, 33, 33)",
+          13
+        ],
+        [
+          "rgb(255, 255, 255)",
+          7
+        ],
+        [
+          "rgb(238, 114, 3)",
+          5
+        ],
+        [
+          "rgb(24, 99, 220)",
+          3
+        ],
+        [
+          "rgb(28, 32, 92)",
+          3
+        ],
+        [
+          "rgb(73, 77, 132)",
+          2
+        ],
+        [
+          "rgb(0, 128, 0)",
+          1
+        ]
+      ],
+      "backgrounds": [
+        [
+          "rgb(255, 255, 255)",
+          1042
+        ],
+        [
+          "rgb(28, 32, 92)",
+          196
+        ],
+        [
+          "rgb(240, 240, 240)",
+          41
+        ],
+        [
+          "rgb(24, 99, 220)",
+          35
+        ],
+        [
+          "rgb(238, 114, 3)",
+          15
+        ],
+        [
+          "rgb(0, 86, 167)",
+          2
+        ],
+        [
+          "rgb(245, 245, 245)",
+          1
+        ]
+      ],
+      "fontFamilies": [
+        [
+          "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helv",
+          19
+        ],
+        [
+          "Nunito, sans-serif",
+          15
+        ]
+      ],
+      "fontSizes": [
+        [
+          "14px/400",
+          7
+        ],
+        [
+          "18px/700",
+          5
+        ],
+        [
+          "16px/700",
+          5
+        ],
+        [
+          "15px/400",
+          3
+        ],
+        [
+          "16px/400",
+          2
+        ],
+        [
+          "36px/700",
+          2
+        ],
+        [
+          "21px/400",
+          2
+        ],
+        [
+          "12px/400",
+          2
+        ],
+        [
+          "14px/700",
+          1
+        ],
+        [
+          "14px/600",
+          1
+        ]
+      ],
+      "headings": [
+        "H2: Career",
+        "H2: Join Our Team",
+        "H2: Join Us Today",
+        "H2: Stay in Touch",
+        "H2: Flight Hour Solution © 2026",
+        "H2: Privacy Policy"
+      ],
+      "scrollHeight": 1378,
+      "overflowX": false,
+      "linksWithoutName": 1,
+      "h1Count": 0,
+      "buttons": [
+        "Customise",
+        "Reject All",
+        "Accept All",
+        "Call us now",
+        "Contact with Us",
+        "Submit"
+      ],
+      "smallText": 2,
+      "tapTargets": 7,
+      "firstHeadingTop": 116,
+      "heroText": "Career"
+    },
+    "consoleErrors": [
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/career/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp-c",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/career/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp-c",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "pageerror: ChunkLoadError: Loading chunk 334 failed.\n(error: https://flighthoursolution.com/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle"
+    ],
+    "axe": null
+  },
+  "contact-mobile": {
+    "url": "https://flighthoursolution.com/contact/",
+    "served": {
+      "requests": 79,
+      "kb": 2823,
+      "byTypeKB": {
+        "document": 115,
+        "stylesheet": 254,
+        "script": 448,
+        "image": 285,
+        "3p:stylesheet": 111,
+        "3p:font": 172,
+        "3p:script": 1050,
+        "3p:xhr": 27,
+        "3p:image": 361
+      },
+      "missing": [
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg",
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg",
+        "/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle.min.js",
+        "/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/form.a8f0864f4b4fda696ad1.bundle.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/popup.f7b15b2ca565b152bf98.bundle.min.js"
+      ]
+    },
+    "metrics": {
+      "title": "Contact - Flight Hour Solution",
+      "lang": "pl-PL",
+      "domNodes": 846,
+      "imgs": [
+        {
+          "src": "revisit.svg",
+          "alt": "Revisit consent button",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "close.svg",
+          "alt": "Close",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            65,
+            16
+          ],
+          "loading": null
+        },
+        {
+          "src": "01_Flight-Hour-Solution_podstawowe.svg",
+          "alt": "",
+          "nat": [
+            300,
+            70
+          ],
+          "disp": [
+            140,
+            33
+          ],
+          "loading": null
+        },
+        {
+          "src": "spotlight-poi3_hdpi.png",
+          "alt": "",
+          "nat": [
+            52,
+            74
+          ],
+          "disp": [
+            26,
+            37
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1072!3i718!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            512,
+            512
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1071!3i719!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            512,
+            512
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1071!3i718!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            512,
+            512
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1072!3i719!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            512,
+            512
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1073!3i719!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            512,
+            512
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "vt?pb=!1m5!1m4!1i11!2i1073!3i718!4i256!2m3!1e0!2sm!3i7955615",
+          "alt": "",
+          "nat": [
+            512,
+            512
+          ],
+          "disp": [
+            256,
+            256
+          ],
+          "loading": null
+        },
+        {
+          "src": "transparent.png",
+          "alt": "",
+          "nat": [
+            1,
+            1
+          ],
+          "disp": [
+            42,
+            53
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            18,
+            18
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            169,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            169,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            169,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            28,
+            28
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "Street View Pegman Control",
+          "nat": [
+            91,
+            150
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "Pegman is on top of the Map",
+          "nat": [
+            95,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "Street View Pegman Control",
+          "nat": [
+            120,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            28,
+            28
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            28,
+            28
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "",
+          "nat": [
+            150,
+            150
+          ],
+          "disp": [
+            0,
+            0
+          ],
+          "loading": null
+        },
+        {
+          "src": "svg%3E",
+          "alt": "Google",
+          "nat": [
+            300,
+            126
+          ],
+          "disp": [
+            66,
+            26
+          ],
+          "loading": null
+        }
+      ],
+      "fonts": [
+        "Roboto 400 normal",
+        "Roboto 500 normal",
+        "Roboto 700 normal",
+        "Nunito 400 normal",
+        "Nunito 500 normal",
+        "Nunito 600 normal",
+        "Nunito 700 normal"
+      ],
+      "colors": [
+        [
+          "rgb(33, 33, 33)",
+          13
+        ],
+        [
+          "rgb(73, 77, 132)",
+          10
+        ],
+        [
+          "rgb(238, 114, 3)",
+          9
+        ],
+        [
+          "rgb(255, 255, 255)",
+          7
+        ],
+        [
+          "rgb(28, 32, 92)",
+          7
+        ],
+        [
+          "rgb(0, 0, 0)",
+          4
+        ],
+        [
+          "rgb(24, 99, 220)",
+          3
+        ],
+        [
+          "rgb(0, 128, 0)",
+          1
+        ]
+      ],
+      "backgrounds": [
+        [
+          "rgb(255, 255, 255)",
+          1168
+        ],
+        [
+          "rgb(28, 32, 92)",
+          196
+        ],
+        [
+          "rgb(229, 227, 223)",
+          140
+        ],
+        [
+          "rgb(240, 240, 240)",
+          41
+        ],
+        [
+          "rgb(24, 99, 220)",
+          35
+        ],
+        [
+          "rgb(238, 114, 3)",
+          12
+        ],
+        [
+          "rgb(245, 245, 245)",
+          5
+        ],
+        [
+          "rgb(0, 86, 167)",
+          2
+        ]
+      ],
+      "fontFamilies": [
+        [
+          "Nunito, sans-serif",
+          29
+        ],
+        [
+          "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helv",
+          21
+        ],
+        [
+          "Roboto, Arial, sans-serif",
+          5
+        ]
+      ],
+      "fontSizes": [
+        [
+          "16px/400",
+          11
+        ],
+        [
+          "18px/700",
+          7
+        ],
+        [
+          "14px/400",
+          7
+        ],
+        [
+          "16px/700",
+          5
+        ],
+        [
+          "15px/400",
+          5
+        ],
+        [
+          "21px/400",
+          4
+        ],
+        [
+          "16px/600",
+          2
+        ],
+        [
+          "32px/700",
+          2
+        ],
+        [
+          "10px/400",
+          2
+        ],
+        [
+          "12px/400",
+          2
+        ]
+      ],
+      "headings": [
+        "H2: Contact",
+        "H2: How can we help you?",
+        "H2: Stay in Touch",
+        "H2: Contact Form",
+        "H2: Our Office",
+        "H2: Meet Us Here",
+        "H2: Stay in Touch",
+        "H2: Flight Hour Solution © 2026",
+        "H2: Privacy Policy"
+      ],
+      "scrollHeight": 2453,
+      "overflowX": false,
+      "linksWithoutName": 1,
+      "h1Count": 0,
+      "buttons": [
+        "Customise",
+        "Reject All",
+        "Accept All",
+        "Call us now",
+        "Submit",
+        "Map",
+        "Satellite",
+        "Keyboard shortcuts",
+        "Map Data",
+        "2 km Click to toggle between metric and "
+      ],
+      "smallText": 6,
+      "tapTargets": 10,
+      "firstHeadingTop": 116,
+      "heroText": "Contact"
+    },
+    "consoleErrors": [
+      "error: Failed to load resource: net::ERR_FAILED",
+      "warning: Google Maps JavaScript API has been loaded directly without loading=async. This can result in suboptimal performance. For best-practice loading patterns please ",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/contact/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp-",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/contact/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.com/wp-",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "warning: As of February 21st, 2024, google.maps.Marker is deprecated. Please use google.maps.marker.AdvancedMarkerElement instead. At this time, google.maps.Marker is no",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "axe": null
+  },
+  "privacy-policy-mobile": {
+    "url": "https://flighthoursolution.com/privacy-policy/",
+    "served": {
+      "requests": 46,
+      "kb": 1021,
+      "byTypeKB": {
+        "document": 132,
+        "stylesheet": 320,
+        "script": 448,
+        "image": 13,
+        "3p:stylesheet": 29,
+        "3p:font": 79
+      },
+      "missing": [
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg",
+        "/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg",
+        "/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js",
+        "/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle.min.js",
+        "/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js"
+      ]
+    },
+    "metrics": {
+      "title": "Privacy Policy - Flight Hour Solution",
+      "lang": "pl-PL",
+      "domNodes": 885,
+      "imgs": [
+        {
+          "src": "revisit.svg",
+          "alt": "Revisit consent button",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            30,
+            30
+          ],
+          "loading": null
+        },
+        {
+          "src": "close.svg",
+          "alt": "Close",
+          "nat": [
+            0,
+            0
+          ],
+          "disp": [
+            65,
+            16
+          ],
+          "loading": null
+        },
+        {
+          "src": "01_Flight-Hour-Solution_podstawowe.svg",
+          "alt": "",
+          "nat": [
+            300,
+            70
+          ],
+          "disp": [
+            140,
+            33
+          ],
+          "loading": null
+        }
+      ],
+      "fonts": [
+        "Nunito 700 italic",
+        "Nunito 400 normal",
+        "Nunito 500 normal",
+        "Nunito 700 normal"
+      ],
+      "colors": [
+        [
+          "rgb(73, 77, 132)",
+          139
+        ],
+        [
+          "rgb(33, 33, 33)",
+          13
+        ],
+        [
+          "rgb(255, 255, 255)",
+          6
+        ],
+        [
+          "rgb(238, 114, 3)",
+          6
+        ],
+        [
+          "rgb(24, 99, 220)",
+          3
+        ],
+        [
+          "rgb(28, 32, 92)",
+          2
+        ],
+        [
+          "rgb(0, 128, 0)",
+          1
+        ]
+      ],
+      "backgrounds": [
+        [
+          "rgb(255, 255, 255)",
+          1042
+        ],
+        [
+          "rgb(28, 32, 92)",
+          126
+        ],
+        [
+          "rgb(240, 240, 240)",
+          36
+        ],
+        [
+          "rgb(24, 99, 220)",
+          35
+        ],
+        [
+          "rgb(238, 114, 3)",
+          6
+        ],
+        [
+          "rgb(0, 86, 167)",
+          2
+        ],
+        [
+          "rgb(245, 245, 245)",
+          1
+        ]
+      ],
+      "fontFamilies": [
+        [
+          "Nunito, sans-serif",
+          151
+        ],
+        [
+          "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helv",
+          19
+        ]
+      ],
+      "fontSizes": [
+        [
+          "16px/400",
+          90
+        ],
+        [
+          "16px/700",
+          57
+        ],
+        [
+          "14px/400",
+          7
+        ],
+        [
+          "18px/700",
+          5
+        ],
+        [
+          "21px/400",
+          2
+        ],
+        [
+          "15px/400",
+          2
+        ],
+        [
+          "12px/400",
+          2
+        ],
+        [
+          "14px/700",
+          1
+        ],
+        [
+          "14px/600",
+          1
+        ],
+        [
+          "22px/400",
+          1
+        ]
+      ],
+      "headings": [
+        "H2: Privacy Policy",
+        "H2: Stay in Touch",
+        "H2: Flight Hour Solution © 2026",
+        "H2: Privacy Policy"
+      ],
+      "scrollHeight": 10657,
+      "overflowX": false,
+      "linksWithoutName": 1,
+      "h1Count": 0,
+      "buttons": [
+        "Customise",
+        "Reject All",
+        "Accept All",
+        "Call us now",
+        "Submit"
+      ],
+      "smallText": 2,
+      "tapTargets": 9,
+      "firstHeadingTop": 116,
+      "heroText": "Privacy Policy"
+    },
+    "consoleErrors": [
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/privacy-policy/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.",
+      "warning: Mixed Content: The page at 'https://flighthoursolution.com/privacy-policy/' was loaded over HTTPS, but requested an insecure element 'http://flighthoursolution.",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "pageerror: ChunkLoadError: Loading chunk 334 failed.\n(error: https://flighthoursolution.com/wp-content/plugins/elementor-pro/assets/js/nav-menu.7e665d03657d48aef483.bundle",
+      "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "axe": null
+  }
+}

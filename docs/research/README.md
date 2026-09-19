@@ -14,7 +14,7 @@ Prepared 19 September 2026 as the foundation for a new website for **Flight Hour
 | 06 | [06-market-context-and-seo.md](06-market-context-and-seo.md) | Sourced 2025–2026 engine-MRO market facts, buyer personas, 46 English + German keywords with SERP competition, content strategy (pillars, service pages, 20 article topics, tools, glossary), messaging inputs |
 | 07 | [07-recommendations-and-brief.md](07-recommendations-and-brief.md) | Positioning, sitemap, page briefs, design direction, content plan, conversion, technical stack, must-fix list, launch checklist, decisions needed, project plan |
 
-Supporting material: `assets/brand/` (logo, favicon, icons), `assets/screenshots/` (desktop and mobile captures of every page), `assets/site-archive/` (plain-text copy of every page and the Elementor kit CSS), `data/` (WordPress REST exports, commercial-register JSON and SOGC XML, validator output, certificate log, Wayback index).
+Supporting material: `assets/brand/` (logo, favicon, icons), `assets/screenshots/` (desktop and mobile captures of every page, taken from a byte-exact mirror of the live site because the host's bot protection breaks live captures), `assets/site-archive/` (plain-text copy of every page and the Elementor kit CSS), `data/` (WordPress REST exports, commercial-register JSON and SOGC XML, validator output, certificate log, Wayback index).
 
 ## Ten things to know
 

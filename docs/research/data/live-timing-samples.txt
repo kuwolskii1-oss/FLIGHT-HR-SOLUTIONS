@@ -1,0 +1,5 @@
+Homepage document, three requests 6 s apart, default headers (no compression negotiated):
+  #1 HTTP 200, 179,029 B, TTFB 2.47 s, total 2.82 s
+  #2 HTTP 200, 179,029 B, TTFB 0.99 s, total 1.21 s
+  #3 HTTP 200, 179,029 B, TTFB 1.17 s, total 1.39 s
+compressed: http=200 bytes=39796 ttfb=0.968411s total=1.074207s
