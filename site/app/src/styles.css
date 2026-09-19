@@ -4,9 +4,14 @@
 @layer reset, theme, base, components, utilities;
 
 @import "tailwindcss" source(none);
-@source "../src";
-@source "../packages/app-landing/src";
-@source "../packages/quanta/src";
+/* Utility generation is limited to the files this website renders (routes, the site components,
+ * the scroll-scrub engine and the site layer). The scaffold's landing package, its Quanta
+ * component sources and the unused src/components/ui kit are not scanned, which keeps the
+ * shipped stylesheet to what the pages use. The Quanta entry itself stays imported. */
+@source "../src/routes";
+@source "../src/components/site";
+@source "../src/components/scroll-scrub";
+@source "../src/site";
 @import "@higgsfield/quanta/tailwind.css";
 
 /* New in-app Quanta-style components (moved out of the quanta package). Their

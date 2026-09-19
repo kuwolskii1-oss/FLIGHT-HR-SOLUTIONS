@@ -33,3 +33,7 @@ Supporting material: `assets/brand/` (logo, favicon, icons), `assets/screenshots
 
 ## Skills installed for this project
 Third-party agent skills were installed into `.claude/skills/` with the `skills` CLI (versions pinned in `skills-lock.json`): frontend-design (Anthropic), web-design-guidelines (Vercel), research (mattpocock), seo-audit, copywriting and customer-research (coreyhaines31), design-taste-frontend and brandkit (leonxlnx), audit-website (squirrelscan), landing-page-conversion-audit (autonnel), competitive-analysis (claude-office-skills). For the design phase a second set was added: build-awwwards-quality-sites and animation-on-scroll (mengto), gsap-core (GreenSock), motion-design (LottieFiles), design-motion-principles (kylezantos), better-typography (jakubkrehel), design-tokens (julianoczkowski), design-critique (owl-listener), extract-design-system (arvindrk), threejs-webgl (freshtechbro), and design plus design-system (nextlevelbuilder). They are reference instructions for the build phase; review before relying on them.
+
+## The website itself
+
+The site built from this research lives in [`site/`](../../site/README.md) (Higgsfield-hosted React 19 + TanStack Start project, design tokens, components, routes, content and generated assets). Build notes, platform deviations and the client decisions still open are in [`docs/website/README.md`](../website/README.md).

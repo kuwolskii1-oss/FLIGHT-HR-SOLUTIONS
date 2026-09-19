@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { ClosingBand } from "@/components/site/ClosingBand";
 import { MediaFrame } from "@/components/site/MediaFrame";
@@ -21,7 +22,7 @@ function EnginesPage() {
     meta: f.models,
   }));
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <PageIntro eyebrow="Engines" title={engines.hub.title} lead={engines.hub.intro} />
       <Section theme="light" id="families">
         <div className="c-split">
@@ -33,11 +34,12 @@ function EnginesPage() {
             </p>
           </div>
           <div className="c-split__main">
-            <RuledList rows={rows} ariaLabel="Engine families" />
+            <RuledList rows={rows} ariaLabel="Engine families" headingLevel="h2" />
           </div>
         </div>
       </Section>
       <ClosingBand headline="Tell us the engine, the shop and the date" />
+      <PageMotion />
     </main>
   );
 }

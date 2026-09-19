@@ -20,7 +20,6 @@ export function SiteHeader() {
   useEffect(() => {
     if (lastPath.current !== pathname) {
       lastPath.current = pathname;
-      // eslint-disable-next-line react-hooks/set-state-in-effect -- reset on navigation
       setOpen(false);
     }
   }, [pathname]);
@@ -43,8 +42,10 @@ export function SiteHeader() {
         else if (goingUp || y < 120) header.classList.remove("is-hidden");
       }
       lastY = y;
-      const el = document.elementFromPoint(24, probeY());
-      const themed = el?.closest<HTMLElement>("[data-theme]:not(.c-header)");
+      const beneath = document
+        .elementsFromPoint(Math.min(24, window.innerWidth - 1), probeY())
+        .find((el) => !header.contains(el) && !el.closest(".c-menu"));
+      const themed = beneath?.closest<HTMLElement>("[data-theme]");
       const theme = themed?.dataset.theme ?? "light";
       if (header.dataset.theme !== theme) header.dataset.theme = theme;
     };
@@ -112,8 +113,16 @@ export function SiteHeader() {
         <div className="o-container c-header__inner">
           <SmartLink href="/" className="c-header__logo" aria-label={`${company.shortName}, home`}>
             <img
-              className="c-header__logo-img c-header__logo-img--dark"
+              className="c-header__logo-img c-header__logo-img--on-dark"
               src="/brand/logo-light.svg"
+              alt=""
+              width={272}
+              height={64}
+              decoding="async"
+            />
+            <img
+              className="c-header__logo-img c-header__logo-img--on-light"
+              src="/brand/logo.svg"
               alt=""
               width={272}
               height={64}
@@ -165,7 +174,6 @@ export function SiteHeader() {
                 {item.label}
               </SmartLink>
             ))}
-            <SmartLink href={cta.primary.href}>{cta.primary.label}</SmartLink>
           </nav>
           <nav className="c-menu__secondary" aria-label="Menu, secondary">
             {nav.secondary.map((item) => (

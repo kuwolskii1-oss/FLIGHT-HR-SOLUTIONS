@@ -38,7 +38,7 @@ export const scrollScrubScenes: ScrollScrubScene[] = chapters.slice(0, 5).map((c
     title: first ? hero.headline : chapter.title,
     body: first ? hero.sub : chapter.body,
     tags: first ? hero.metaLine : chapter.tags,
-    align: index % 2 === 1 ? "right" : "left",
+    align: "left",
     clip: `/assets/world/scene-${n}.mp4`,
     poster: `/assets/world/scene-${n}-poster.jpg`,
     mobileClip: `/assets/world/scene-${n}-mobile.mp4`,

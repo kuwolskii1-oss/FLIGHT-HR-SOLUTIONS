@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { PageIntro } from "@/components/site/PageIntro";
@@ -14,7 +15,7 @@ export const Route = createFileRoute("/assets")({
 
 function AssetsPage() {
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <PageIntro eyebrow="Assets" title={assets.title} lead={assets.intro} image="engine-cradle" />
       <Section theme="light" id="disclosure" tight>
         <div className="c-notice" style={{ maxWidth: "52rem" }}>
@@ -67,6 +68,7 @@ function AssetsPage() {
           </div>
         </div>
       </Section>
+      <PageMotion />
     </main>
   );
 }

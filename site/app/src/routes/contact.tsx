@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { StructuredData } from "@/components/StructuredData";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
@@ -28,7 +29,7 @@ const SCHEMA = JSON.stringify({
 
 function ContactPage() {
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <StructuredData json={SCHEMA} />
       <PageIntro eyebrow="Contact" title={contact.title} lead={contact.intro} />
       <Section theme="light" id="workscope">
@@ -74,6 +75,7 @@ function ContactPage() {
           </div>
         </div>
       </Section>
+      <PageMotion />
     </main>
   );
 }

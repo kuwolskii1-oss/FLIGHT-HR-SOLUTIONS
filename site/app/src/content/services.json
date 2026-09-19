@@ -1,0 +1,1151 @@
+{
+  "notes": "Services content following the service page template in 07 section 5 (who it is for, the problem in numbers, deliverables from the 02 section 4 taxonomy, how an engagement runs, engine families, proof, FAQ, CTA). Every market figure is tagged [F] in 06 section 1; figures tagged [S] or [V] are not used. Stat source fields are rendered on the page, so they name the publication and date; the research document and section for each figure is in the non-rendered source field of each problem object and in the page-level sources array. British English, no dashes, one label per call-to-action intent. Engine family names match site.json so the service page can link to the family pages.",
+  "clientToConfirm": [
+    "Training and knowledge transfer: the service is in the registered purpose (01 section 1) and in the Swiss Aerospace Cluster core competences (01 section 4.2), and 07 section 4 marks the page 'confirm'. Confirm the offer exists in practice, its formats (on site, remote, during engagements), languages, whether any accreditation exists, and whether it stays as a service page.",
+    "Military and government: the page reuses the substance of the current site's Military & Government Programs copy (02 section 4) without the years-of-experience claim. Confirm which programme types, platforms and client categories may be named, the security clearance position, and any restriction on showing this work (07 section 12, decision 7).",
+    "No case notes, quotes, client names, savings figures or counters appear on any service page. Supply anonymised, approved cases in the formats of 06 section 4.7 so the proof sections can carry them.",
+    "Team experience is stated without a years figure, per the copy rules. Confirm who leads on each service. The 07 section 5 template calls for a named contact card per service; the content schema has no field for it, so this needs a decision.",
+    "MRO Support Programs (02 section 4): confirm whether these are programmes for MRO clients, for the customers of MROs, or both. The contracts page describes them neutrally.",
+    "Fee basis: the pages say Flight Hour Solution is not owned by an MRO, a lessor or an OEM and acts for the client alone on advisory work. They do not say fee-only. Confirm that no commissions or referral fees are received from MROs, OEMs, lessors or parts suppliers on advisory work before that word is added.",
+    "Aviation Suppliers Association membership: confirm whether it relates to a parts-supply activity. The analytics page says 'we do not sell a monitoring platform or shop capacity'; the wording avoids any statement about parts until this is confirmed.",
+    "Appraisals: confirm whether anyone on the team holds an ISTAT or comparable appraiser certification. The due diligence page says teardown valuations and maintenance status forecasts are provided and that a certified appraisal is done alongside an appointed appraiser.",
+    "Military and government engine coverage: the page lists the same five families as the civil work and says other types are assessed case by case. Confirm.",
+    "Market figures: only figures tagged [F] in 06 section 1 are quoted, with publisher and date shown under each stat. Confirm that quoting these publications is acceptable and whether a footnote with URLs should be rendered on each page."
+  ],
+  "hub": {
+    "title": "Eight engine management services",
+    "intro": "Shop visits, workscopes, lease returns, contracts, data, due diligence, government programmes and training. Pick the situation you are in and start there.",
+    "situations": [
+      {
+        "title": "Buying or leasing an engine",
+        "text": "Before money moves: records back to birth, LLP status, maintenance forecast and the contract terms that decide what the engine will cost you.",
+        "serviceSlugs": ["technical-due-diligence", "contracts-mro-and-supply-chain", "lease-return-and-asset-management"]
+      },
+      {
+        "title": "Operating a fleet",
+        "text": "Engines on wing and engines due off: removal timing, the workscope, the shop visit itself and the invoice at the end.",
+        "serviceSlugs": ["shop-visit-management", "workscope-and-removal-planning", "predictive-maintenance-and-analytics", "contracts-mro-and-supply-chain"]
+      },
+      {
+        "title": "Returning or transitioning an engine",
+        "text": "Redelivery conditions, maintenance reserves and records decide who pays at the end of a lease. We work for either side, or between them.",
+        "serviceSlugs": ["lease-return-and-asset-management", "shop-visit-management", "technical-due-diligence"]
+      },
+      {
+        "title": "Government and military fleets",
+        "text": "Independent oversight of engine sustainment where the OEM is often the only supplier, plus training for the teams who manage it.",
+        "serviceSlugs": ["military-and-government", "contracts-mro-and-supply-chain", "training-and-knowledge-transfer"]
+      }
+    ],
+    "source": "Situational hub structure: 07-recommendations-and-brief.md section 4 (services hub: buying/leasing, operating, returning, government) and 05-competitor-benchmark.md section 5 item 4 (owner, operator and transition journeys). Service list and slugs: 07 section 4; 02-website-content-inventory.md section 4."
+  },
+  "services": [
+    {
+      "slug": "shop-visit-management",
+      "name": "Shop visit management",
+      "shortName": "Shop visits",
+      "oneLiner": "Full or overview management of an engine shop visit, from pre-induction to redelivery, with every workscope line, finding and invoice item checked independently.",
+      "seoTitle": "Independent engine shop visit management",
+      "metaDescription": "Independent engine shop visit management: workscope review, table inspection, test-cell overview and invoice review. On site worldwide from Zug, Switzerland.",
+      "keywords": [
+        "engine shop visit management",
+        "engine shop visit management services",
+        "shop visit management consultant",
+        "on-site shop visit representative",
+        "shop visit workscope",
+        "engine invoice review",
+        "shop visit invoice audit",
+        "engine shop visit cost",
+        "aircraft engine consultant Switzerland"
+      ],
+      "audience": ["Head of Powerplant", "Engine Fleet Manager", "Technical Asset Manager", "Director of Maintenance"],
+      "problem": {
+        "title": "A purchase most teams make a few times",
+        "text": "An engine needs three to five shop visits in its life. A performance restoration typically costs several million US dollars, and CFM56 repair costs have risen 50 to 75 per cent since 2019. The shop writes the workscope and the invoice. Someone on your side has to read both and be there when the engine is on the table.",
+        "stats": [
+          {
+            "value": "3 to 5",
+            "unit": "visits",
+            "label": "Shop visits an engine typically needs over its life",
+            "source": "MTU Maintenance, civil maintenance overview, mtu.de"
+          },
+          {
+            "value": "+50 to 75",
+            "unit": "%",
+            "label": "Rise in CFM56 repair costs since 2019",
+            "source": "Magnetic Group, From CFM56 to LEAP, June 2025"
+          },
+          {
+            "value": "US$136",
+            "unit": "bn",
+            "label": "Global commercial MRO demand in 2025, with engines the largest and fastest-growing segment",
+            "source": "Oliver Wyman, Global Fleet and MRO Market Forecast 2026 to 2036, February 2026"
+          }
+        ],
+        "source": "06-market-context-and-seo.md section 1.2: MTU, an engine typically needs 3 to 5 shop visits over its life [F]; Magnetic Group (June 2025), CFM56 repair costs +50 to 75% since 2019 [F]; the copy implication permits 'typically several million US dollars per visit'. Section 1.1: Oliver Wyman (February 2026), global commercial MRO demand US$136 bn in 2025, engines the biggest and fastest-growing segment [F]."
+      },
+      "deliverables": [
+        {
+          "title": "Full shop visit management",
+          "text": "We run the visit end to end: pre-induction review, workscope, table inspection, repair and material approvals, test cell, invoice and records. Your team gets one file and one point of contact."
+        },
+        {
+          "title": "Overview shop visit management",
+          "text": "Your team runs the visit. We review the workscope, attend the table inspection and check the invoice at the points where money is committed."
+        },
+        {
+          "title": "Workscope compilation and review",
+          "text": "A preliminary workscope drafted against the planning guide, the lease and the LLP stubs before induction, then the shop's proposal compared with it line by line."
+        },
+        {
+          "title": "Dirty condition and table inspection",
+          "text": "Attended in person once the engine is stripped. Findings photographed and recorded, repair or replace decided part by part, before the shop quotes."
+        },
+        {
+          "title": "Pre and post repair borescope overview",
+          "text": "Borescope images and video reviewed before induction and after repair, so that the recorded condition and the workscope agree."
+        },
+        {
+          "title": "Material sourcing support and documentation audit",
+          "text": "New, used serviceable or repaired parts chosen against lead time, price and records, with the documentation checked before the part goes into the engine."
+        },
+        {
+          "title": "Test cell overview",
+          "text": "Test-cell results reviewed against the acceptance limits and the agreed margins, with any shortfall raised before the engine is released."
+        },
+        {
+          "title": "Engine overhaul and repair invoice review",
+          "text": "The invoice reconciled against the agreed workscope, the recorded findings and the contract rates. Items outside the agreement are queried before payment."
+        },
+        {
+          "title": "Scrap review and material value extraction",
+          "text": "Scrapped parts reviewed against the scrap criteria. Parts with remaining value or a repair option are identified and retained for you."
+        },
+        {
+          "title": "Post-shop visit documentation audit and warranty management",
+          "text": "Release documents, LLP records and test data audited before the engine leaves the shop. Warranty items logged and followed until they are closed."
+        }
+      ],
+      "engagement": [
+        {
+          "n": "01",
+          "title": "Pre-induction",
+          "text": "Removal reason, technical status, records and LLP status reviewed. Slot, transport and a preliminary workscope agreed with the shop before the engine arrives."
+        },
+        {
+          "n": "02",
+          "title": "Table inspection",
+          "text": "We attend the dirty condition and table inspection, photograph and record every finding, and settle repair or replace part by part."
+        },
+        {
+          "n": "03",
+          "title": "Workscope approval",
+          "text": "The final workscope is agreed in writing against the findings, the planning guide and the lease. Only what the engine needs is released for repair."
+        },
+        {
+          "n": "04",
+          "title": "Test cell",
+          "text": "Repairs and material are approved as they arise. At the test cell we review the results against the acceptance limits before release."
+        },
+        {
+          "n": "05",
+          "title": "Invoice reconciliation",
+          "text": "The invoice is reconciled against the agreed workscope, the findings and the contract rates. Queries are settled before payment."
+        },
+        {
+          "n": "06",
+          "title": "Warranty and records",
+          "text": "Post-shop visit documentation is audited, warranty items are logged and followed up. The engine is redelivered with a records pack ready for the next event."
+        }
+      ],
+      "engineFamilies": ["CFM56", "LEAP", "V2500", "PW4000", "APU and turboprop"],
+      "proof": {
+        "title": "Every decision on paper",
+        "text": "Each workscope line, finding and invoice item is recorded in one file that stays with you. Flight Hour Solution is owned by its managing director, not by an MRO, a lessor or an OEM, so on advisory work the only interest at the table is yours."
+      },
+      "faq": [
+        {
+          "q": "What is the difference between full and overview shop visit management?",
+          "a": "Full management means we run the visit end to end and are your single point of contact with the shop. Overview management means your own team runs the visit and we review the workscope, attend the table inspection and check the invoice."
+        },
+        {
+          "q": "When should we bring you in?",
+          "a": "Before the workscope is agreed with the shop, ideally at removal planning. We can join at the table inspection or at the invoice, but the largest decisions are made in the workscope."
+        },
+        {
+          "q": "Do you attend the table inspection in person?",
+          "a": "Yes. Table inspections, test-cell runs and redeliveries are attended on site, at the shop, wherever the engine is."
+        },
+        {
+          "q": "Which engines do you manage shop visits for?",
+          "a": "CFM56-3, -5 and -7; LEAP-1A, -1B and -1C; V2500-A1, -A5 and -D5; PW4000-94, -100 and -112; Honeywell APU 131-9A, -9B and -9D; and the TPE331, T76 and TFE731."
+        }
+      ],
+      "related": ["workscope-and-removal-planning", "contracts-mro-and-supply-chain", "lease-return-and-asset-management"],
+      "image": {
+        "src": "table-inspection",
+        "alt": "Turbine blades laid out in rows on a white inspection table",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Send us a workscope", "href": "/contact#workscope", "kind": "secondary" },
+      "notes": "Deliverables are the Shop Visit Management list in 02 section 4 (Full and Overview Shop Visit Management, Workscope Compilation / Review, Dirty Condition / Table Inspection, Support with Material Sourcing and Documentation Audit, Test Cell Overview, Pre / Post Repair BSI Overview, Invoice Review, Scrap Review and Material Value Extraction) plus Post-Shop Visit Documentation Audit and Warranty Management from the Advisory list. Engagement steps follow the timeline in 07 section 5. Engine list in the last FAQ: 02 section 4."
+    },
+    {
+      "slug": "workscope-and-removal-planning",
+      "name": "Workscope and removal planning",
+      "shortName": "Workscopes",
+      "oneLiner": "Removal timing, workscope compilation and maintenance cost forecasting for the fleet, so each engine comes off wing at the right time with the right workscope.",
+      "seoTitle": "Engine workscope and removal planning",
+      "metaDescription": "Engine workscope review and removal planning: LLP limits, EGT margin, slot lead times and maintenance cost forecasts for CFM56, LEAP, V2500 and PW4000 fleets.",
+      "keywords": [
+        "engine workscope optimisation",
+        "shop visit workscope",
+        "engine removal planning",
+        "LLP replacement strategy",
+        "LLP stub life",
+        "engine shop visit rate",
+        "performance restoration shop visit vs quick turn",
+        "LEAP HPT durability kit"
+      ],
+      "audience": ["Head of Powerplant", "Powerplant Engineer", "Head of CAMO", "Head of Fleet Finance"],
+      "problem": {
+        "title": "Slots are scarce. Timing is the lever.",
+        "text": "Turnaround times are up 35 per cent or more on legacy engines and 150 per cent or more on new-generation engines against pre-pandemic levels. Slot waits have stretched by two to three months, up to six in some cases. An engine removed early wastes life; one removed late waits without a slot. The workscope then decides what the visit costs.",
+        "stats": [
+          {
+            "value": "+35",
+            "unit": "%",
+            "label": "Turnaround time on legacy engines against pre-pandemic levels, or more",
+            "source": "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, July 2024"
+          },
+          {
+            "value": "+150",
+            "unit": "%",
+            "label": "Turnaround time on new-generation engines against pre-pandemic levels, or more",
+            "source": "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, July 2024"
+          },
+          {
+            "value": "2 to 3",
+            "unit": "months",
+            "label": "Added waiting time for a shop slot, up to six months in some cases",
+            "source": "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, July 2024"
+          }
+        ],
+        "source": "06-market-context-and-seo.md section 1.3: Bain (17 July 2024), turnaround times +35% or more for legacy engines and +150% or more for new-generation engines against pre-pandemic, slot waits +2 to 3 months and up to 6 months in some cases, engine MRO demand peaking in 2026 and constrained to the end of the decade [F]. Section 1.4: IBA H2 2026, LEAP-1A fuel-nozzle coking with reverse-bleed fix and LEAP-1B HPT durability kit certified H1 2026 [F], with the copy implication that durability-kit embodiment and LLP sequencing are live workscope questions."
+      },
+      "deliverables": [
+        {
+          "title": "Workscope compilation",
+          "text": "A workscope built from the planning guide, the engine's records, the LLP stub lives, the lease conditions and the next planned removal, before the shop writes its own."
+        },
+        {
+          "title": "Workscope review",
+          "text": "The shop's proposed workscope compared line by line with the compiled one. Additions are challenged, omissions raised, and the agreed scope recorded in writing."
+        },
+        {
+          "title": "Removal planning",
+          "text": "Removal dates set against LLP limits, EGT margin trends, planned utilisation and slot lead times, so the engine is neither pulled early nor stranded late."
+        },
+        {
+          "title": "Maintenance cost forecasting",
+          "text": "Shop visit and LLP cost forecasts by engine and by year, with the assumptions written down, for budgets, reserves and board reporting."
+        },
+        {
+          "title": "Fleet shop visit planning",
+          "text": "A fleet-level plan of removals, visit types and shop assignments that keeps each removal inside the slot lead times the shops are quoting."
+        },
+        {
+          "title": "Modification and durability kit decisions",
+          "text": "For LEAP and other new-generation engines: whether and when to embody durability upgrades, and how to sequence LLP replacement around them."
+        },
+        {
+          "title": "Engine on-wing performance review",
+          "text": "Trend data reviewed for each engine, so removal decisions rest on measured margin rather than on the calendar alone."
+        },
+        {
+          "title": "Industry best practice advice",
+          "text": "What comparable operators do on visit types, LLP replacement and used serviceable material, presented with the trade-offs and without vendor bias."
+        }
+      ],
+      "engagement": [
+        {
+          "n": "01",
+          "title": "Fleet and records review",
+          "text": "Engine status, LLP stubs, trend data, lease terms and the current removal plan are collected into one baseline."
+        },
+        {
+          "n": "02",
+          "title": "Removal plan",
+          "text": "Removal windows are set per engine against limits, margins and slot lead times, and agreed with maintenance planning and finance."
+        },
+        {
+          "n": "03",
+          "title": "Workscope compilation",
+          "text": "For each planned removal a workscope is compiled from the planning guide, the records and the lease, with the target build standard stated."
+        },
+        {
+          "n": "04",
+          "title": "Shop proposal review",
+          "text": "The shop's proposal is compared with the compiled workscope. Differences are settled in writing before induction."
+        },
+        {
+          "n": "05",
+          "title": "Forecast and handover",
+          "text": "Cost forecasts are updated with the agreed scopes. The plan is handed to shop visit management or to your own team for execution."
+        }
+      ],
+      "engineFamilies": ["CFM56", "LEAP", "V2500", "PW4000", "APU and turboprop"],
+      "proof": {
+        "title": "Assumptions you can audit",
+        "text": "Every forecast and workscope carries its assumptions in writing: utilisation, LLP limits, margin trends, rates and lead times, so your team can challenge them. Nothing is tied to a vendor's tool or to an MRO's capacity."
+      },
+      "faq": [
+        {
+          "q": "When is the right time to remove an engine?",
+          "a": "When the remaining LLP life, the EGT margin trend and the slot lead time meet. We set the window per engine from those inputs and the fleet plan, and revisit it as the trends move."
+        },
+        {
+          "q": "What is in a workscope?",
+          "a": "The inspection and repair level for each module, the LLPs to be replaced, the modifications to be embodied and the build standard the engine must meet on test. It is written against the OEM workscope planning guide and, for leased engines, the lease conditions."
+        },
+        {
+          "q": "Can you help decide whether to embody a durability kit?",
+          "a": "Yes. For LEAP engines we set the embodiment decision against the engine's expected time on wing, the LLP plan and the cost of the next visit, and record the reasoning."
+        },
+        {
+          "q": "Do you guarantee a shop slot?",
+          "a": "No. We do not control shop capacity. We plan removals against the lead times shops are quoting and support the negotiation of slots and turnaround commitments."
+        }
+      ],
+      "related": ["shop-visit-management", "predictive-maintenance-and-analytics", "contracts-mro-and-supply-chain"],
+      "image": {
+        "src": "cross-section",
+        "alt": "Line drawing of a turbofan engine in cross section",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Send us a workscope", "href": "/contact#workscope", "kind": "secondary" },
+      "notes": "Deliverables from 02 section 4: Workscope Compilation / Review, Maintenance Cost Forecasting, Engine On-Wing Performance Review, Industry Best Practice Advice; fleet planning follows 06 section 4.2 (removal planning and fleet forecasting) and 06 section 5.2 (promise planning and negotiation support, never slot access). The slot FAQ states plainly that slots are not guaranteed."
+    },
+    {
+      "slug": "lease-return-and-asset-management",
+      "name": "Lease return and asset management",
+      "shortName": "Lease returns",
+      "oneLiner": "Redelivery support for lessee or lessor, maintenance reserve calculations and claim analysis, and records audits back to birth, through the lease and at its end.",
+      "seoTitle": "Engine lease return and asset management",
+      "metaDescription": "Engine lease return support for lessees and lessors: redelivery conditions, maintenance reserves and claims, LLP and records audits back to birth. Independent.",
+      "keywords": [
+        "engine lease return support",
+        "engine redelivery support",
+        "engine lease return inspection",
+        "engine technical advisor",
+        "engine maintenance reserves calculation",
+        "engine lease return conditions",
+        "engine records audit",
+        "back-to-birth records review",
+        "engine asset management consulting"
+      ],
+      "audience": ["Technical Asset Manager", "Head of Engines (lessor)", "Head of Powerplant (lessee)", "Head of Fleet Finance"],
+      "problem": {
+        "title": "Reserves and redelivery decide who pays",
+        "text": "Maintenance reserve clauses and redelivery conditions are the two lease provisions most likely to end in a multi-million-dollar dispute, over LLP valuations, deferred defects, incomplete back-to-birth records and the limits of fair wear and tear. With 17,000 aircraft ordered but undelivered, legacy fleets keep flying, and older lease language did not anticipate early shop visits or module swaps.",
+        "stats": [
+          {
+            "value": "2",
+            "unit": "clauses",
+            "label": "Lease provisions most likely to trigger an end-of-lease dispute: maintenance reserves and redelivery conditions",
+            "source": "Acumen Aviation, Aircraft lease return conditions: common disputes and how to avoid them"
+          },
+          {
+            "value": "17,000",
+            "unit": "aircraft",
+            "label": "Unfilled aircraft orders at the start of 2026, keeping legacy fleets and their engines in service",
+            "source": "Oliver Wyman, Global Fleet and MRO Market Forecast 2026 to 2036, February 2026"
+          },
+          {
+            "value": "90 to 120",
+            "unit": "days",
+            "label": "Independent benchmark for a CFM56 full overhaul, often the last visit before a redelivery",
+            "source": "Acumen Aviation, Why engine shortages are reshaping aircraft asset values, June 2026"
+          }
+        ],
+        "source": "06-market-context-and-seo.md section 1.7: Acumen, maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes, centred on LLP valuations, deferred defects, incomplete back-to-birth records and the boundary of fair wear and tear [F]; ACC Aviation 2025, early shop visits and unexpected module swaps complicate redelivery conditions that were not drafted for them, and MRO slots and correct documentation remain the major transition problems [F]. Section 1.6: Oliver Wyman (February 2026), 17,000 unfilled aircraft orders at the start of 2026, delayed deliveries keep legacy fleets and engines flying [F]. Section 1.2: Acumen (15 June 2026), CFM56 full overhaul 90 to 120 days [F]."
+      },
+      "deliverables": [
+        {
+          "title": "Redelivery management for lessees",
+          "text": "The lease's return conditions turned into a work plan months ahead: final shop visit, LLP status, records and the reserve position, worked through before the redelivery inspection rather than during it."
+        },
+        {
+          "title": "Redelivery acceptance for lessors",
+          "text": "Technical and records inspection of the returning engine against the lease, with a findings list, a cost estimate for each shortfall and the basis for any claim."
+        },
+        {
+          "title": "Maintenance reserve calculations",
+          "text": "Reserve rates and balances modelled against the expected shop visit and LLP cost, per engine and per event, with the assumptions stated."
+        },
+        {
+          "title": "Reserve claim analysis",
+          "text": "Claims against reserves checked for eligibility under the lease, relevance to the agreed workscope and invoice support, on either side of the table."
+        },
+        {
+          "title": "LLP back-to-birth trace audit",
+          "text": "Every life-limited part traced from manufacture to today through the records, with gaps listed and the options to close them assessed."
+        },
+        {
+          "title": "Technical documentation audit",
+          "text": "The engine's records package audited against the lease's return standard and airworthiness requirements, ahead of a transition or a sale."
+        },
+        {
+          "title": "Post-shop visit documentation audit",
+          "text": "Release documents, test data and LLP records of the final visit audited before the engine is offered for return."
+        },
+        {
+          "title": "Lessor portfolio support programmes",
+          "text": "Ongoing technical oversight of an engine portfolio: lessee reporting review, shop visit attendance and reserve tracking through the lease."
+        }
+      ],
+      "engagement": [
+        {
+          "n": "01",
+          "title": "Lease review",
+          "text": "Return conditions, reserve clauses, LLP requirements and the records standard are extracted from the lease into a checklist with dates."
+        },
+        {
+          "n": "02",
+          "title": "Gap analysis",
+          "text": "The engine's current status and records are compared with the checklist. Each gap gets a cost, an owner and a deadline."
+        },
+        {
+          "n": "03",
+          "title": "Final shop visit",
+          "text": "Where a visit is needed to meet the return condition, its workscope is set against the lease and the visit is managed or overseen to the same standard as any other."
+        },
+        {
+          "n": "04",
+          "title": "Reserve reconciliation",
+          "text": "Reserve balances, claims and end-of-lease compensation are calculated from the agreed status and supported line by line."
+        },
+        {
+          "n": "05",
+          "title": "Redelivery",
+          "text": "The redelivery inspection and records handover are attended. Findings are settled on the day where possible, and open items are documented with their value."
+        }
+      ],
+      "engineFamilies": ["CFM56", "LEAP", "V2500", "PW4000", "APU and turboprop"],
+      "proof": {
+        "title": "Either side, or between them",
+        "text": "We work for the lessee, for the lessor, or as the technical party both accept. Flight Hour Solution is not owned by a lessor or an MRO, and on advisory work our only interest is the client's. When we broker an engine we say so."
+      },
+      "faq": [
+        {
+          "q": "Do you work for lessors or for airlines?",
+          "a": "Both, but never for both sides of the same lease at once. Many engagements are for the lessee preparing a return; others are for the lessor accepting one or overseeing a portfolio."
+        },
+        {
+          "q": "How early should redelivery planning start?",
+          "a": "Before the last shop visit of the lease is planned. The final workscope, the LLP position and the records take longer to put right than the inspection itself."
+        },
+        {
+          "q": "What are the most common causes of dispute at redelivery?",
+          "a": "LLP valuations, deferred defects, incomplete back-to-birth records and the boundary of fair wear and tear, under the maintenance reserve and redelivery clauses. Each can be checked and priced before the return date."
+        },
+        {
+          "q": "Can you calculate or check maintenance reserves?",
+          "a": "Yes. We model reserve rates and balances against the expected shop visit and LLP cost for each engine, and check claims against those reserves for eligibility and invoice support."
+        }
+      ],
+      "related": ["technical-due-diligence", "shop-visit-management", "contracts-mro-and-supply-chain"],
+      "image": {
+        "src": "engine-cradle",
+        "alt": "Covered turbofan engine secured in a shipping cradle",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Talk to us", "href": "/contact", "kind": "primary" },
+      "notes": "Deliverables from 02 section 4: Lessor Portfolio Support Programs, Maintenance Reserve Calculations / Reserve Claim Analysis, LLP Back to Birth Trace Audit, Technical Documentation Audit, Post-Shop Visit Documentation Audit; redelivery support is the page's purpose per 07 section 4 and section 3 (Technical Asset Manager persona). The dispute FAQ repeats the Acumen findings in 06 section 1.7."
+    },
+    {
+      "slug": "contracts-mro-and-supply-chain",
+      "name": "Contracts, MRO and supply chain",
+      "shortName": "Contracts and MRO",
+      "oneLiner": "Engine overhaul, repair, purchase and lease contract negotiation, warranty management, invoice review and material sourcing support, on your side of the table.",
+      "seoTitle": "Engine MRO contract negotiation support",
+      "metaDescription": "Engine MRO contract negotiation, warranty management, invoice review and material sourcing for airlines and lessors. Not owned by an MRO, a lessor or an OEM.",
+      "keywords": [
+        "engine MRO contract negotiation support",
+        "engine maintenance RFP support",
+        "power by the hour vs time and material engine",
+        "used serviceable material engine strategy",
+        "engine MRO consulting",
+        "engine invoice review",
+        "engine warranty management"
+      ],
+      "audience": ["Head of Procurement", "Contracts Manager", "Head of Technical Supply Chain", "VP Technical"],
+      "problem": {
+        "title": "Parts are short. Contracts decide the price.",
+        "text": "OEM parts demand is running 10 to 20 per cent ahead of supply, and used serviceable material covers up to 30 per cent of part demand at some shops while teardown harvesting runs five times below pre-2020 levels. In that market the contract sets your exposure: rates, escalation, material policy, warranty and what counts as an extra.",
+        "stats": [
+          {
+            "value": "10 to 20",
+            "unit": "%",
+            "label": "OEM parts demand ahead of supply",
+            "source": "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, July 2024"
+          },
+          {
+            "value": "5x",
+            "unit": "",
+            "label": "Less teardown part harvesting than before 2020, while used serviceable material covers up to 30 per cent of part demand at some shops",
+            "source": "Magnetic Group, From CFM56 to LEAP, June 2025; Bain & Company, July 2024"
+          },
+          {
+            "value": "+30",
+            "unit": "%",
+            "label": "CFM56 hot-section blade prices since 2019; fan blade prices have doubled since 2020",
+            "source": "Magnetic Group, From CFM56 to LEAP, June 2025"
+          }
+        ],
+        "source": "06-market-context-and-seo.md section 1.3: Bain (17 July 2024), OEM parts demand outpaces supply by 10 to 20%, used serviceable material covers up to 30% of part demand at some shops [F]. Section 1.2: Magnetic Group (June 2025), teardown part harvesting 5x below pre-2020, CFM56 hot-section blade prices +30% since 2019, fan blades doubled since 2020 [F]. Section 1.7: USM is now a cost lever that needs expertise, not a default."
+      },
+      "deliverables": [
+        {
+          "title": "Engine overhaul and repair contract negotiation",
+          "text": "Scope, rates, escalation, turnaround commitments, material policy, warranty and exclusions negotiated with the MRO, each clause tied to what it costs over the contract term, whether the model is power by the hour or time and material."
+        },
+        {
+          "title": "Engine purchase negotiation",
+          "text": "The technical terms of an engine purchase: delivery condition, records, LLP status, test requirements, warranty and the remedies if the engine misses them."
+        },
+        {
+          "title": "Lease contract negotiation",
+          "text": "Technical support to the lease negotiation: return conditions, reserve rates, workscope approval rights, and the module swap and early shop visit language that later decides who pays."
+        },
+        {
+          "title": "Warranty management",
+          "text": "Warranty terms tracked from contract to shop floor: claims raised on findings, followed through the MRO and the OEM, and credited on the invoice."
+        },
+        {
+          "title": "Engine overhaul and repair invoice review",
+          "text": "Invoices reconciled against the contract rates, the agreed workscope and the recorded findings, with a written query list before payment."
+        },
+        {
+          "title": "Material sourcing support",
+          "text": "Support with new, used serviceable and repaired material: sources, lead times, price, and the documentation each part must carry."
+        },
+        {
+          "title": "Scrap rate analysis and material value extraction",
+          "text": "Scrap rates by part and by shop compared over time, scrap criteria checked, and value recovered from parts that can be repaired or sold."
+        },
+        {
+          "title": "Insurance claims support",
+          "text": "The technical file for an engine damage claim: cause, condition, repair options and cost, prepared for the insurer and the loss adjuster."
+        },
+        {
+          "title": "MRO support programmes",
+          "text": "Programmes for MROs and their customers: contract performance review, workscope and invoice standards, and dispute avoidance between shop and operator."
+        }
+      ],
+      "engagement": [
+        {
+          "n": "01",
+          "title": "Baseline",
+          "text": "Current contracts, rates, invoices and warranty history are reviewed. The spend and the exposure are laid out by engine and by clause."
+        },
+        {
+          "n": "02",
+          "title": "Position",
+          "text": "Targets are set for each clause: rates, escalation, turnaround, material policy, warranty, exclusions. Trade-offs are agreed with procurement and finance."
+        },
+        {
+          "n": "03",
+          "title": "Negotiation",
+          "text": "We support or lead the technical negotiation with the MRO, OEM, lessor or seller, and keep a record of every position and concession."
+        },
+        {
+          "n": "04",
+          "title": "Contract to shop floor",
+          "text": "The signed terms are turned into checklists for workscope approval, invoice review and warranty claims, so the contract is applied on every visit."
+        },
+        {
+          "n": "05",
+          "title": "Review",
+          "text": "Contract performance is reviewed against the invoices and findings at agreed intervals, and the renewal is prepared from the evidence."
+        }
+      ],
+      "engineFamilies": ["CFM56", "LEAP", "V2500", "PW4000", "APU and turboprop"],
+      "proof": {
+        "title": "Not on the other side's payroll",
+        "text": "Flight Hour Solution is not owned by an MRO, a lessor or an OEM, and on advisory work it acts for the client alone. When we source or broker an engine or aircraft, that is done under our Assets line and disclosed."
+      },
+      "faq": [
+        {
+          "q": "Power by the hour or time and material?",
+          "a": "It depends on utilisation, fleet age, your own engineering capacity and your appetite for cost variance. We model both against the fleet plan and negotiate the terms of whichever fits, including the exit and transfer clauses."
+        },
+        {
+          "q": "Do you negotiate with the MRO directly?",
+          "a": "As you prefer. We can lead the technical negotiation, sit beside your procurement team, or prepare positions and review drafts in the background."
+        },
+        {
+          "q": "Can you review invoices from shop visits you did not manage?",
+          "a": "Yes. We reconcile the invoice against the contract rates, the agreed workscope and the shop's own findings report, and give you a written list of queries with their value."
+        },
+        {
+          "q": "Are you tied to any MRO or parts supplier?",
+          "a": "No. Flight Hour Solution is owned by its managing director and is not owned by an MRO, a lessor or an OEM. Engine and aircraft sourcing is done under a separate Assets line and is always disclosed."
+        }
+      ],
+      "related": ["shop-visit-management", "lease-return-and-asset-management", "workscope-and-removal-planning"],
+      "image": {
+        "src": "shop-floor",
+        "alt": "Engine overhaul shop with several turbofan engines on stands",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Talk to us", "href": "/contact", "kind": "primary" },
+      "notes": "Deliverables from 02 section 4: Engine Overhaul & Repair Contract Negotiation, Engine Purchase Negotiation, Lease Contract Negotiation, Insurance Claims Support, Warranty Management, Invoice Review, Support with Material Sourcing, Scrap Review and Material Value Extraction, MRO Support Programs; scrap rate analysis also appears in the Swiss Aerospace Cluster core competences (01 section 4.2). Power by the hour versus time and material follows the persona 5 triggers and the on-page targets in 06 sections 2 and 3.4. The last FAQ answer avoids any statement about parts supply until the ASA membership is explained (see clientToConfirm)."
+    },
+    {
+      "slug": "predictive-maintenance-and-analytics",
+      "name": "Predictive maintenance and analytics",
+      "shortName": "Engine data",
+      "oneLiner": "An independent read of your ECM and EHM data, borescope video and test results: when to watch, when to pull, what the shop should find.",
+      "seoTitle": "Independent engine condition monitoring",
+      "metaDescription": "Independent review of ECM and EHM trends, borescope video and test cell results, with removal timing and workscope advice not tied to an OEM or MRO platform.",
+      "keywords": [
+        "predictive maintenance consulting aviation",
+        "engine health monitoring services",
+        "engine condition monitoring services",
+        "independent ECM EHM data review",
+        "engine trend monitoring second opinion",
+        "engine borescope inspection findings",
+        "engine removal planning"
+      ],
+      "audience": ["Head of Powerplant", "Powerplant Engineer", "Director of Maintenance", "Head of CAMO"],
+      "problem": {
+        "title": "Full shops punish unplanned removals",
+        "text": "Engine stands at CFM56-5A and -5B shops ran at 92 per cent utilisation in the first half of 2026, and V2500 project durations rose 9 per cent. An engine removed unplanned joins that queue. The OEM and the MRO read your trend data, each with an interest in the answer. A second, independent read lets you time the removal yourself.",
+        "stats": [
+          {
+            "value": "92",
+            "unit": "%",
+            "label": "Engine stand utilisation at CFM56-5A and -5B shops in the first half of 2026, up from 77 per cent in 2025",
+            "source": "Air Cargo Week, EngineStands.com data, July 2026"
+          },
+          {
+            "value": "+9",
+            "unit": "%",
+            "label": "Change in V2500 shop project durations in the first half of 2026",
+            "source": "Air Cargo Week, EngineStands.com data, July 2026"
+          },
+          {
+            "value": "up to 6",
+            "unit": "months",
+            "label": "Added waiting time for a shop slot in some cases, on top of two to three months typically",
+            "source": "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, July 2024"
+          }
+        ],
+        "source": "06-market-context-and-seo.md section 1.2: Air Cargo Week (EngineStands.com data, 17 July 2026), CFM56-5A/B stand utilisation 92% in H1 2026 (77% in 2025), V2500 stand utilisation 76% and project durations +9% [F]. Section 1.3: Bain (17 July 2024), slot waits +2 to 3 months, up to 6 months in some cases [F]. Section 1.8: the independent interpreter of OEM and MRO data as the defensible role; Aviation Today (1 May 2026), lessors increasingly evaluate how well an aircraft is operated and reward demonstrable maintenance quality [F]. Section 1.7: shop-visit-rate levers include engine health monitoring [F]."
+      },
+      "deliverables": [
+        {
+          "title": "Fleet ECM and EHM monitoring programme",
+          "text": "Trend data from the OEM portal, the MRO's system or your own exports reviewed on an agreed cycle, with alerts interpreted and removal recommendations given in writing."
+        },
+        {
+          "title": "On-wing troubleshooting advisory",
+          "text": "Support to your engineers on a live problem: which data to pull, what the borescope should look at, whether the engine can stay on wing and under what monitoring."
+        },
+        {
+          "title": "Engine on-wing performance review",
+          "text": "EGT margin, fuel flow and vibration trends reviewed per engine, with the remaining margin to a removal set against LLP limits and the fleet plan."
+        },
+        {
+          "title": "Borescope overview and video analysis",
+          "text": "Borescope stills and video read against the manual limits and the engine's history, with a written condition statement and a repeat-inspection interval."
+        },
+        {
+          "title": "Test cell and on-wing run result analysis",
+          "text": "Test-cell and on-wing run data reviewed against the acceptance limits and the pre-visit condition, so a marginal pass is seen for what it is."
+        },
+        {
+          "title": "Removal timing recommendations",
+          "text": "For each monitored engine, the recommended removal window and the reasoning behind it, updated as the trend moves and handed to workscope planning."
+        },
+        {
+          "title": "Maintenance cost forecasting from trend data",
+          "text": "Forecasts that use measured margin decay rather than average intervals, so budgets follow the engines you actually operate."
+        }
+      ],
+      "engagement": [
+        {
+          "n": "01",
+          "title": "Data access",
+          "text": "We agree which sources we read: OEM portal exports, MRO reports, your maintenance system, borescope archives. No new platform is installed."
+        },
+        {
+          "n": "02",
+          "title": "Baseline",
+          "text": "Each engine's trend history, findings and LLP position are reviewed once, and the fleet is ranked by remaining margin."
+        },
+        {
+          "n": "03",
+          "title": "Monitoring cycle",
+          "text": "Trends are reviewed on the agreed cycle. Alerts are interpreted, recommendations issued in writing and discussed with your engineers."
+        },
+        {
+          "n": "04",
+          "title": "Removal call",
+          "text": "When an engine approaches its window, the removal date is recommended with the evidence, and the workscope is drafted from the same data."
+        },
+        {
+          "n": "05",
+          "title": "Feedback from the shop",
+          "text": "Table inspection findings are compared with what the data predicted, and the assumptions are corrected from the evidence."
+        }
+      ],
+      "engineFamilies": ["CFM56", "LEAP", "V2500", "PW4000", "APU and turboprop"],
+      "proof": {
+        "title": "Your data, our reading",
+        "text": "We do not sell a monitoring platform or shop capacity, so the recommendation is not shaped by what happens after the removal. Every alert we interpret is answered in writing, with the data behind it."
+      },
+      "faq": [
+        {
+          "q": "Do we need to install new software?",
+          "a": "No. We work from the data you already have: OEM portal exports, MRO trend reports, your maintenance system and borescope archives."
+        },
+        {
+          "q": "How is this different from the OEM's monitoring service?",
+          "a": "The OEM's service is built on its own fleet models and its own aftermarket. We read the same data for you alone, and our recommendation is not tied to a repair network."
+        },
+        {
+          "q": "Can you review a single borescope finding?",
+          "a": "Yes. Send the stills or video and the engine's history, and you get a written condition statement against the manual limits, with a recommended next inspection."
+        },
+        {
+          "q": "Do you cover APUs and turboprops?",
+          "a": "Yes. Honeywell 131-9A, -9B and -9D APUs, the TPE331 and T76, and the TFE731 are covered with the same trend and test-result review."
+        }
+      ],
+      "related": ["workscope-and-removal-planning", "shop-visit-management", "technical-due-diligence"],
+      "image": {
+        "src": "borescope",
+        "alt": "Gloved hands guiding a borescope probe into an engine inspection port",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Talk to us", "href": "/contact", "kind": "primary" },
+      "notes": "Deliverables from 02 section 4: Fleet ECM/EHM Monitoring Programs, On-Wing Troubleshooting Advisory, Engine On-Wing Performance Review, Borescope Overview / Borescope Video Analysis, Engine Test Cell or On-wing Run Overview / Test Result Analysis, Maintenance Cost Forecasting; Predictive Maintenance & Data Analytics is a Swiss Aerospace Cluster core competence (01 section 4.2). Positioning follows 06 section 1.8 and section 3.2 row 8: do not fight for the platform term, be the independent second opinion."
+    },
+    {
+      "slug": "technical-due-diligence",
+      "name": "Technical due diligence",
+      "shortName": "Due diligence",
+      "oneLiner": "Engine evaluation and selection, records audits back to birth, maintenance forecasts and teardown valuations for buyers, lessors, lenders and investors.",
+      "seoTitle": "Engine technical due diligence",
+      "metaDescription": "Independent engine due diligence for buyers, lenders and investors: records audit back to birth, LLP status, maintenance forecast and teardown valuation.",
+      "keywords": [
+        "engine technical due diligence",
+        "engine records audit",
+        "back-to-birth records review",
+        "independent engine technical advisor",
+        "engine asset management consulting",
+        "green time engine strategy",
+        "engine teardown valuation"
+      ],
+      "audience": ["Investment Manager", "Technical Advisor to lenders", "Technical Asset Manager", "Head of Fleet Finance"],
+      "problem": {
+        "title": "Value now sits in the engines",
+        "text": "Lenders scrutinise engine status more closely than before, and an aircraft can no longer be assessed by model, age and lease status alone: one with serviceable engines, strong records and manageable maintenance exposure may be worth more than a similar one facing engine uncertainty. The records, the LLP position and the next shop visit are the valuation.",
+        "stats": [
+          {
+            "value": "5",
+            "unit": "checks",
+            "label": "Checks Acumen recommends to investors, from records traceability and shop visit timing to spare engine availability and early transition planning",
+            "source": "Acumen Aviation, Why engine shortages are reshaping aircraft asset values, June 2026"
+          },
+          {
+            "value": "70",
+            "unit": "%",
+            "label": "Approximate share of the global narrowbody fleet still flying on CFM56 and V2500 engines, June 2025",
+            "source": "Magnetic Group, From CFM56 to LEAP, June 2025"
+          },
+          {
+            "value": "24",
+            "unit": "%",
+            "label": "Aircraft production below 2019 levels at the end of 2025, keeping older assets in service",
+            "source": "Oliver Wyman, Global Fleet and MRO Market Forecast 2026 to 2036, February 2026"
+          }
+        ],
+        "source": "06-market-context-and-seo.md section 1.7 and 1.5: Acumen (15 June 2026), lenders scrutinise engine status more closely; aircraft can no longer be assessed only by model, age or lease status; aircraft with serviceable engines, strong records and manageable maintenance exposure may be worth more than similar aircraft facing engine uncertainty; five recommendations for investors (review maintenance history and traceability, track shop-visit timing, assess spare-engine availability, adjust residual-value assumptions, plan lease transitions early) [F]. Section 1.2: Magnetic Group (June 2025), around 70% of the global narrowbody fleet still on CFM56/V2500 [F]. Section 1.6: Oliver Wyman (February 2026), production 24% below 2019 at end-2025 [F]. Section 1.5: IBA H2 2026, shop-visit and LLP costs increased significantly [F]."
+      },
+      "deliverables": [
+        {
+          "title": "Engine evaluation and selection",
+          "text": "Candidate engines compared on technical status, LLP position, records, modification standard and expected cost to the next shop visit, for a purchase, a lease or a fleet decision."
+        },
+        {
+          "title": "Technical documentation audit",
+          "text": "The full records package audited: airworthiness release, modification and repair history, AD and SB status, LLP traceability, and the gaps that would stop a sale or a lease."
+        },
+        {
+          "title": "LLP back-to-birth trace audit",
+          "text": "Every life-limited part traced from manufacture to the current build through the paperwork. Missing links are listed with the options and the cost to close them."
+        },
+        {
+          "title": "Maintenance status and cost forecast",
+          "text": "Time and cycles since the last visit, remaining LLP life and margin, and a forecast of the next shop visit's timing and cost with the assumptions stated."
+        },
+        {
+          "title": "Borescope and test result review",
+          "text": "Recent borescope and test-cell data read independently, so the stated condition and the evidence agree before the price is fixed."
+        },
+        {
+          "title": "Engine teardown valuation",
+          "text": "What the engine is worth in parts: LLP remaining life, repairable rotables, scrap, and the cost and time of a teardown, as a floor for the price or as an exit option."
+        },
+        {
+          "title": "Portfolio engine exposure review",
+          "text": "For a portfolio or an ABS pool: shop visit timing by engine, reserve adequacy, spare coverage and the records position, ranked by exposure."
+        },
+        {
+          "title": "Post-shop visit documentation audit",
+          "text": "For an engine fresh from overhaul: release documents, workscope, findings and test data audited against what was paid for."
+        }
+      ],
+      "engagement": [
+        {
+          "n": "01",
+          "title": "Scope and access",
+          "text": "The transaction, the timetable and the questions to be answered are agreed. Records access is arranged with the seller, lessee or servicer."
+        },
+        {
+          "n": "02",
+          "title": "Desk review",
+          "text": "Records, LLP status, modification standard and maintenance history are audited against the checklist and the transaction documents."
+        },
+        {
+          "n": "03",
+          "title": "Physical inspection",
+          "text": "Where the engine is accessible, a visual and borescope inspection is attended, and the physical state is reconciled with the paperwork."
+        },
+        {
+          "n": "04",
+          "title": "Forecast and valuation",
+          "text": "Next shop visit timing and cost, the reserve or compensation position and, where required, the teardown value are modelled with stated assumptions."
+        },
+        {
+          "n": "05",
+          "title": "Report",
+          "text": "A written report with findings ranked by value at risk, the open items and how to close them, delivered before the decision date and defended in your meetings."
+        }
+      ],
+      "engineFamilies": ["CFM56", "LEAP", "V2500", "PW4000", "APU and turboprop"],
+      "proof": {
+        "title": "Written for the decision",
+        "text": "Reports rank findings by value at risk and state every assumption, so a credit committee or an investment board can test them. Flight Hour Solution is not owned by a lessor, an MRO or an OEM. When we broker an asset we say so."
+      },
+      "faq": [
+        {
+          "q": "What do you need from the seller or lessee?",
+          "a": "The records package, the current status report, LLP status, the last shop visit report and test data, and access to the engine for a visual and borescope inspection where possible. We send a checklist at the start."
+        },
+        {
+          "q": "Do you provide certified appraisals?",
+          "a": "We provide technical due diligence, maintenance status forecasts and teardown valuations. Where a transaction requires an appraisal certified under a specific standard, we work alongside the appointed appraiser."
+        },
+        {
+          "q": "Can you assess an engine we cannot inspect physically?",
+          "a": "Yes, from the records and recent borescope and test data, with the limits of a desk review stated in the report."
+        },
+        {
+          "q": "Do you review whole portfolios?",
+          "a": "Yes. For a portfolio or an ABS pool we rank each engine by shop visit timing, reserve adequacy, spare coverage and records position, so the exposure is visible at a glance."
+        }
+      ],
+      "related": ["lease-return-and-asset-management", "contracts-mro-and-supply-chain", "predictive-maintenance-and-analytics"],
+      "image": {
+        "src": "records-desk",
+        "alt": "Engine record binders, a logbook and a caliper on a desk",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Talk to us", "href": "/contact", "kind": "primary" },
+      "notes": "Deliverables from 02 section 4: Engine Evaluation & Selection, Technical Documentation Audit, LLP Back to Birth Trace Audit, Maintenance Cost Forecasting, Borescope Overview, Test Result Analysis, Engine Teardown Valuations, Post-Shop Visit Documentation Audit; the portfolio review combines these for the lender and investor persona (06 section 2, persona 7) and follows Acumen's five recommendations in 06 section 1.7. The appraisal FAQ makes no certification claim (see clientToConfirm)."
+    },
+    {
+      "slug": "military-and-government",
+      "name": "Military and government programmes",
+      "shortName": "Military and government",
+      "oneLiner": "Shop visit management, maintenance forecasting, contract negotiation and post-repair evaluation for governmental and military operators, so critical engines stay mission-ready.",
+      "seoTitle": "Military and government programmes",
+      "metaDescription": "Independent engine shop visit management, maintenance forecasting, contract negotiation and post-repair audits for military and government operators.",
+      "keywords": [
+        "military aviation sustainment consulting",
+        "defence engine sustainment advisor",
+        "engine shop visit management",
+        "engine MRO contract negotiation support",
+        "military engine life-cycle cost"
+      ],
+      "audience": ["Programme Manager", "Head of Sustainment", "Procurement Officer", "Air force logistics command"],
+      "problem": {
+        "title": "Readiness with the OEM as sole supplier",
+        "text": "The global military aircraft fleet is set to grow from 44,700 in 2025 to 50,700 by 2036, with military MRO growing about ten times faster than in the previous decade, led by engine maintenance. Government operators often face a single supplier for engine overhaul, with limited visibility of workscope, cost and turnaround. Independent oversight keeps engines mission-ready and budgets defensible.",
+        "stats": [
+          {
+            "value": "+13.4",
+            "unit": "%",
+            "label": "Growth of the global military aircraft fleet, from 44,700 in 2025 to 50,700 in 2036",
+            "source": "Oliver Wyman, Global Military Aircraft Fleet and Sustainment Outlook, February 2026"
+          },
+          {
+            "value": "10x",
+            "unit": "",
+            "label": "Faster growth in military MRO this decade than in the previous one, led by engine maintenance",
+            "source": "Oliver Wyman, Global Military Aircraft Fleet and Sustainment Outlook, February 2026"
+          },
+          {
+            "value": "2x",
+            "unit": "",
+            "label": "Scenario Oliver Wyman analysed: a doubling of European defence spending that could bring shortages of parts, production and skilled labour",
+            "source": "Oliver Wyman, Key challenges facing Europe's proposed defence expansion, August 2025"
+          }
+        ],
+        "source": "06-market-context-and-seo.md section 1.9: Oliver Wyman (February 2026), global military fleet 44,700 aircraft in 2025 to 50,700 in 2036 (+13.4%), military MRO growth about 1% a year over the decade, ten times faster than the previous decade, engine maintenance leading the growth [F]; Oliver Wyman (August 2025), doubling European defence spend could trigger capacity shortages in parts, production and skilled labour [F]. Section 1.10: Swiss independence framing, no implied state endorsement. Section 5.1 item 10: independent oversight where the OEM is the only supplier. The European budget figures in the same table are tagged F/S and are not used."
+      },
+      "deliverables": [
+        {
+          "title": "Full shop visit management for military engines",
+          "text": "Shop visit management for engines in government and military service: workscope, table inspection, test and invoice review, run to the same standard as our civil work and under the programme's confidentiality rules."
+        },
+        {
+          "title": "Maintenance reserve calculations and claim analysis",
+          "text": "Reserve and life-cycle cost calculations adapted to government budget cycles and to leased or contractor-owned engines, with claims checked line by line."
+        },
+        {
+          "title": "Engine overhaul and repair contract negotiation",
+          "text": "Technical support in negotiating overhaul and repair contracts where the OEM or a single depot is the only supplier: scope, rates, turnaround, data and warranty."
+        },
+        {
+          "title": "Engine purchase, lease contract and insurance claims support",
+          "text": "Technical terms for engine purchases and leases, and the technical file for insurance claims, prepared for the programme office and its legal advisers."
+        },
+        {
+          "title": "Borescope and test cell analysis for operational readiness",
+          "text": "Borescope findings and test-cell results read independently, so release decisions rest on evidence and availability is not lost to a marginal call."
+        },
+        {
+          "title": "Post-shop visit documentation audits and performance reviews",
+          "text": "Documentation audited after each visit and engine performance reviewed against the contract's commitments, feeding the next negotiation."
+        },
+        {
+          "title": "Maintenance forecasting for the programme",
+          "text": "Removal and cost forecasts across the fleet, by aircraft and by engine, for budget submissions and readiness planning."
+        }
+      ],
+      "engagement": [
+        {
+          "n": "01",
+          "title": "Programme review",
+          "text": "Fleet, engine status, contracts, budget cycle and confidentiality requirements are reviewed with the programme office. The scope of independent oversight is agreed in writing."
+        },
+        {
+          "n": "02",
+          "title": "Forecast",
+          "text": "Removal and cost forecasts are built by engine and by year, with the assumptions stated for budget submissions."
+        },
+        {
+          "n": "03",
+          "title": "Contract and workscope",
+          "text": "Overhaul contracts and each proposed workscope are reviewed against the forecast and the readiness targets before commitment."
+        },
+        {
+          "n": "04",
+          "title": "Oversight on site",
+          "text": "Table inspections, test-cell runs and acceptance are attended where the programme permits, with findings recorded."
+        },
+        {
+          "n": "05",
+          "title": "Audit and review",
+          "text": "Invoices, documentation and engine performance are audited after each visit, and the findings feed the next negotiation and budget round."
+        }
+      ],
+      "engineFamilies": ["CFM56", "LEAP", "V2500", "PW4000", "APU and turboprop"],
+      "proof": {
+        "title": "Independent where it counts",
+        "text": "Flight Hour Solution is a privately owned Swiss company, not owned by an OEM, an MRO or a lessor, and not part of any national industrial group. Confidentiality terms are agreed before any programme data is shared."
+      },
+      "faq": [
+        {
+          "q": "Do you hold security clearances?",
+          "a": "Security requirements are agreed programme by programme. Tell us the classification of the material involved and we will confirm what we can do and under which arrangements."
+        },
+        {
+          "q": "Which engine types do you cover for government fleets?",
+          "a": "The same families as our civil work: CFM56, LEAP, V2500, PW4000, Honeywell 131-9 APUs and the TPE331, T76 and TFE731. Other types are assessed case by case."
+        },
+        {
+          "q": "Can you work within public procurement rules?",
+          "a": "Our role is technical adviser to the programme office. Independence, scope and confidentiality are documented so that the arrangement fits the procurement file."
+        },
+        {
+          "q": "Where is Flight Hour Solution based, and where do you work?",
+          "a": "In Zug, Switzerland. Work is on site at the depot, the OEM's shop or the operator's base, wherever the engine is."
+        }
+      ],
+      "related": ["shop-visit-management", "contracts-mro-and-supply-chain", "training-and-knowledge-transfer"],
+      "image": {
+        "src": "test-cell",
+        "alt": "Turbofan engine mounted in a test cell",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Talk to us", "href": "/contact", "kind": "primary" },
+      "notes": "Reuses the substance of the Military & Government Programs copy in 02 section 4 (shop visit management tailored to governmental and military aviation, critical assets mission-ready and operationally effective, support across the full lifecycle of engine operations, from maintenance forecasting to contract negotiation and post-repair evaluations) and its six service items, without the 'over 40 years of expertise' claim. No platforms, programmes, clearances or approvals are named (06 section 5.2; 01 section 5: no EASA or FAA approvals are claimed). Ownership fact behind 'privately owned': 01 section 2."
+    },
+    {
+      "slug": "training-and-knowledge-transfer",
+      "name": "Training and knowledge transfer",
+      "shortName": "Training",
+      "oneLiner": "Practical training for powerplant, procurement and asset teams on shop visits, workscopes, invoices and lease returns, built from the methods we use on engagements.",
+      "seoTitle": "Engine management training",
+      "metaDescription": "Practical training for airline, lessor and government teams: engine shop visits, workscope and invoice review, maintenance reserves and lease returns.",
+      "keywords": [
+        "engine shop visit training",
+        "what is an engine shop visit",
+        "shop visit workscope",
+        "maintenance reserves explained",
+        "engine removal planning",
+        "engine records audit"
+      ],
+      "audience": ["Powerplant teams", "Procurement and contracts teams", "Technical asset managers", "Government programme staff"],
+      "problem": {
+        "title": "Experience is leaving faster than it arrives",
+        "text": "A new technician needs two to five years to reach full productivity, and in the United States 41 per cent of certified mechanics are over 60, with 45,000 expected to retire within a decade. Reading a workscope or an invoice is learned on the job. Knowledge transfer keeps that judgement inside your team rather than inside the shop's.",
+        "stats": [
+          {
+            "value": "2 to 5",
+            "unit": "years",
+            "label": "Time a new technician needs to reach full productivity",
+            "source": "ARSA market assessment with Oliver Wyman Vector, arsa.org"
+          },
+          {
+            "value": "41",
+            "unit": "%",
+            "label": "Certified US aircraft mechanics aged over 60",
+            "source": "Oliver Wyman, Global Fleet and MRO Market Forecast 2026 to 2036, February 2026"
+          },
+          {
+            "value": "45,000",
+            "unit": "",
+            "label": "US mechanics expected to retire within a decade",
+            "source": "Oliver Wyman, Global Fleet and MRO Market Forecast 2026 to 2036, February 2026"
+          }
+        ],
+        "source": "06-market-context-and-seo.md section 1.3: ARSA market assessment (Oliver Wyman Vector, 18 March 2026), new technicians need 2 to 5 years to reach full productivity [F]; Oliver Wyman (February 2026), 41% of certified US mechanics over 60 and 45,000 to retire within a decade [F]. The 22,000-technician shortfall and the 15 to 20% capacity gap in the same section are tagged S/V and are not used. Basis for the service: 01 section 1 (registered purpose: training and knowledge transfer) and 01 section 4.2 (Swiss Aerospace Cluster core competence: Training & Knowledge Transfer)."
+      },
+      "deliverables": [
+        {
+          "title": "Shop visit management workshop",
+          "text": "How a managed shop visit runs, from pre-induction to invoice: the decisions, the documents and where the money moves, worked through on the documents your team sees."
+        },
+        {
+          "title": "Workscope reading and review",
+          "text": "How to read the OEM workscope planning guide, compile a workscope and challenge a shop's proposal line by line."
+        },
+        {
+          "title": "Invoice and findings review",
+          "text": "How to reconcile an overhaul invoice against the workscope, the findings report and the contract rates, and how to write the query list."
+        },
+        {
+          "title": "Maintenance reserves and lease returns",
+          "text": "How reserves are calculated and claimed, what redelivery conditions require, and how to audit records back to birth before a return."
+        },
+        {
+          "title": "Borescope and trend data basics",
+          "text": "How to read ECM and EHM trends, borescope reports and test-cell results well enough to ask the right questions of the OEM and the MRO."
+        },
+        {
+          "title": "Knowledge transfer during engagements",
+          "text": "On a managed shop visit or lease return, your engineers work alongside us, and the method and the checklists are handed over at the end."
+        }
+      ],
+      "engagement": [
+        {
+          "n": "01",
+          "title": "Needs review",
+          "text": "Who needs what: the roles, the engine types, the decisions they face and the gaps found in recent shop visits or returns."
+        },
+        {
+          "n": "02",
+          "title": "Programme design",
+          "text": "Sessions built from the relevant parts of our own method, using your fleet, contracts and documents where confidentiality allows."
+        },
+        {
+          "n": "03",
+          "title": "Delivery",
+          "text": "Sessions delivered to the team, with the working documents as the teaching material and time reserved for the team's own open cases."
+        },
+        {
+          "n": "04",
+          "title": "Follow-through",
+          "text": "Checklists and templates stay with the team, and the next real shop visit or return is used to apply them, with us alongside if wanted."
+        }
+      ],
+      "engineFamilies": ["CFM56", "LEAP", "V2500", "PW4000", "APU and turboprop"],
+      "proof": {
+        "title": "Taught by the people who do it",
+        "text": "Every session is built from the method we use on live engagements, not from a generic syllabus. Training and knowledge transfer is part of the company's registered purpose in the Zug commercial register."
+      },
+      "faq": [
+        {
+          "q": "Who is the training for?",
+          "a": "Powerplant and maintenance planning teams, procurement and contracts staff, technical asset managers at lessors, and programme staff in government fleets. Content is adjusted to the role."
+        },
+        {
+          "q": "Is the training certified or accredited?",
+          "a": "No. It is practical, method-based training from a working consultancy, not an approved course under a regulatory training standard."
+        },
+        {
+          "q": "Can training be combined with a real shop visit?",
+          "a": "Yes. Knowledge transfer during a managed shop visit or lease return is often the most effective format: your engineers work alongside us and keep the method afterwards."
+        },
+        {
+          "q": "Which engine types are covered?",
+          "a": "CFM56, LEAP, V2500, PW4000, Honeywell 131-9 APUs and the TPE331, T76 and TFE731, with examples drawn from the family your fleet operates."
+        }
+      ],
+      "related": ["shop-visit-management", "workscope-and-removal-planning", "military-and-government"],
+      "image": {
+        "src": "apron-dusk",
+        "alt": "Narrow-body airliner on a maintenance apron at dusk with an engine cowl open",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Talk to us", "href": "/contact", "kind": "primary" },
+      "notes": "Written modestly: the service rests on the registered purpose (01 section 1) and the Swiss Aerospace Cluster core competences (01 section 4.2); no formats, durations, prices, languages or accreditation are stated as fact. Content topics mirror the 02 section 4 taxonomy so the training matches the advisory services.",
+      "clientToConfirm": [
+        "Confirm that training and knowledge transfer is offered in practice and how: on site, remote, during engagements, or all three.",
+        "Confirm the delivery languages (English is assumed; German, French or Polish may be possible) and whether any course is accredited or certified.",
+        "Confirm whether checklists and templates may be handed over to client teams, as the follow-through step says."
+      ]
+    }
+  ],
+  "sources": [
+    "01-company-profile.md section 1: legal name, registered seat Zug, and the registered purpose (consulting services, technical expertise, training and knowledge transfer, cost optimisation and financial planning in the aviation industry; SOGC).",
+    "01-company-profile.md section 2: Hubert Nowosad, managing director and sole shareholder since July 2025 (SOGC), the basis for 'owned by its managing director' and 'privately owned'.",
+    "01-company-profile.md section 4.2: Swiss Aerospace Cluster directory core competences (shop visit management and oversight, engine overhaul and repair contract negotiation, technical documentation and compliance audits, material management and scrap rate analysis, on-wing troubleshooting and performance advisory, training and knowledge transfer, predictive maintenance and data analytics, warranty and invoice review, borescope and test cell result analysis, insurance and lease contract negotiation support) and client types (airlines, lessors, MROs, governmental operators, worldwide).",
+    "01-company-profile.md section 5: Swiss Aerospace Cluster membership verified; ISO 9001 and Aviation Suppliers Association claimed and therefore not used on these pages; no EASA or FAA approvals claimed or implied.",
+    "02-website-content-inventory.md section 4: the service taxonomy (Programs; Support in; Advisory / Evaluation; Analysis; Shop Visit Management), the engine families and models (CFM56-3/-5/-7, LEAP-1A/-1B/-1C, V2500-A1/-A5/-D5, PW4000-94/-100/-112, Honeywell APU 131-9A/-9B/-9D, TPE331/T76, TFE731) and the Military & Government Programs copy and service list, reused without the years-of-experience claim.",
+    "05-competitor-benchmark.md section 4: niche vocabulary (workscope compilation and review, dirty condition and table inspection, BSI reviews, LLP back to birth trace audit, invoice reconciliation against workscope, warranty management, transitions, mid-lease) and section 5 items 2 to 4 (independence, military and government vertical, lessor and airline liaison).",
+    "06-market-context-and-seo.md section 1.1 [F]: Oliver Wyman, Global Fleet and MRO Market Forecast 2026 to 2036 (February 2026), global commercial MRO demand US$136 bn in 2025, engines the biggest and fastest-growing segment. https://www.oliverwyman.com/our-expertise/insights/2026/feb/global-fleet-and-mro-market-forecast-2026-2036.html",
+    "06-market-context-and-seo.md section 1.2 [F]: MTU, an engine typically needs 3 to 5 shop visits over its life (https://www.mtu.de/de/maintenance/zivile-maintenance/); Magnetic Group (June 2025), around 70% of the global narrowbody fleet still on CFM56/V2500, CFM56 repair costs +50 to 75% since 2019, hot-section blade prices +30% since 2019, fan blades doubled since 2020, teardown part harvesting 5x below pre-2020 (https://www.magneticgroup.co/from-cfm56-to-leap-navigating-the-turbulent-shift-to-next-generation-aircraft-engines/); Air Cargo Week with EngineStands.com data (17 July 2026), CFM56-5A/B stand utilisation 92% in H1 2026 against 77% in 2025, V2500 stand utilisation 76% and project durations +9% (https://aircargoweek.com/from-pw1100g-to-cfm56-the-engine-maintenance-trends-shaping-2026/); Acumen (15 June 2026), CFM56 full overhaul 90 to 120 days (https://www.acumen.aero/blogs/why-are-engine-shortages-reshaping-aircraft-asset-values-in-2026-); permitted wording 'typically several million US dollars per visit'. Vendor cost ranges tagged [V] are not used.",
+    "06-market-context-and-seo.md section 1.3 [F]: Bain & Company (17 July 2024), turnaround times +35% or more for legacy and +150% or more for new-generation engines against pre-pandemic, slot waits +2 to 3 months and up to 6 months, cumulative demand exceeding supply by nearly 17% through the decade, OEM parts demand outpacing supply by 10 to 20%, used serviceable material covering up to 30% of part demand at some shops (https://www.bain.com/insights/get-a-step-ahead-of-the-engine-maintenance-capacity-crunch/); Oliver Wyman (February 2026), 41% of certified US mechanics over 60 and 45,000 to retire within a decade; ARSA market assessment with Oliver Wyman Vector (18 March 2026), new technicians need 2 to 5 years to reach full productivity (https://arsa.org/market-assessment/). The 22,000-technician shortfall and 15 to 20% capacity gap tagged S/V are not used.",
+    "06-market-context-and-seo.md section 1.4 [F]: IBA Engine and Lease Rate Update H2 2026, LEAP-1A fuel-nozzle coking with reverse-bleed fix, LEAP-1B HPT durability kit certified H1 2026 (https://www.iba.aero/resources/articles/iba-engine-and-lease-rate-update-h2-2026/), and the copy implication that durability-kit embodiment and LLP sequencing are live workscope decisions.",
+    "06-market-context-and-seo.md section 1.5 [F]: IBA H2 2026, shop-visit and LLP costs increased significantly, PW4000-100 strong value growth since 2023; Acumen (15 June 2026), aircraft can no longer be assessed only by model, age or lease status, and aircraft with serviceable engines, strong records and manageable maintenance exposure may be worth more.",
+    "06-market-context-and-seo.md section 1.6 [F]: Oliver Wyman (February 2026), 17,000 unfilled aircraft orders at the start of 2026, production 24% below 2019 at the end of 2025; delayed deliveries keep legacy fleets and engines flying.",
+    "06-market-context-and-seo.md section 1.7 [F]: Acumen, maintenance-reserve clauses and redelivery conditions the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes, centred on LLP valuations, deferred defects, incomplete back-to-birth records and the boundary of fair wear and tear (https://www.acumen.aero/blogs/aircraft-lease-return-conditions-common-disputes-and-how-to-avoid-them); ACC Aviation 2025, MRO slots and correct documentation the major transition problems, early shop visits and unexpected module swaps complicating redelivery conditions (https://accaviation.com/aircraft-transitions-and-repossessions-2025-market-update/); Acumen, lenders scrutinise engine status more closely and five recommendations for investors; competitor definitions of what shop visit management contains; shop-visit-rate levers including engine health monitoring.",
+    "06-market-context-and-seo.md section 1.8 [F]: Aviation Today (1 May 2026), lessors evaluate how well an aircraft is operated, predictive-maintenance histories read as lower risk, digital records improve liquidity and residual values; copy implication: the independent interpreter of OEM and MRO data.",
+    "06-market-context-and-seo.md section 1.9 [F]: Oliver Wyman, Global Military Aircraft Fleet and Sustainment Outlook (February 2026), global military fleet 44,700 aircraft in 2025 to 50,700 in 2036 (+13.4%), military MRO growing about 1% a year, ten times faster than the previous decade, engine maintenance leading growth (https://www.oliverwyman.com/our-expertise/insights/2026/feb/global-military-aircraft-fleet-and-sustainment-outlook.html); Oliver Wyman (August 2025), doubling European defence spend could trigger capacity shortages in parts, production and skilled labour (https://www.oliverwyman.com/our-expertise/insights/2025/aug/key-challenges-facing-europe-proposed-defense-expansion.html). European budget figures tagged F/S are not used.",
+    "06-market-context-and-seo.md section 1.10: Swiss neutrality and independence framing for a consultancy; no implied state endorsement.",
+    "06-market-context-and-seo.md section 2: buyer personas and their titles, used for the audience tags, and the universal decision criteria (engine-family depth, hands-on shop experience, independence, availability, confidentiality).",
+    "06-market-context-and-seo.md sections 3.1, 3.2 and 3.4: keyword candidates, SERP competition and on-page targets per service page.",
+    "06-market-context-and-seo.md sections 5.1, 5.2 and 5.3: sourced value propositions, claims to avoid (no vendor cost ranges, no savings percentages, no slot promises, no approvals or clearances implied, no world-leading or one-stop language) and tone.",
+    "07-recommendations-and-brief.md section 2.2 and 2.3: message pillars and the Advisory and Assets lines with disclosure when brokering; section 3: personas mapped to entry pages; section 4: fixed service slugs and the situational hub; section 5: the service page template (who it is for, the problem in numbers, deliverables from the 02 taxonomy, engagement timeline of pre-induction, table inspection, workscope approval, test cell, invoice reconciliation and warranty, engine families, proof, FAQ, CTA); section 12: decisions needed from the client.",
+    "08-locomotive-design-blueprint.md section 8.4: component rules for stats, ruled rows, metadata labels and badges.",
+    "site/content-brief/VOICE-AND-FACTS.md: entity naming, fixed CTA labels, independence wording, banned words, no years-of-experience figure, engine families and models, market facts only from 06 section 1 with the source named."
+  ]
+}

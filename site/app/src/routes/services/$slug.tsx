@@ -1,4 +1,5 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { StructuredData } from "@/components/StructuredData";
 import { ClosingBand } from "@/components/site/ClosingBand";
@@ -61,7 +62,7 @@ function ServicePage() {
     ...(s.faq?.length ? [{ id: "faq", label: "Questions" }] : []),
   ];
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <StructuredData json={schema} />
       <PageIntro
         eyebrow="Service"
@@ -124,7 +125,8 @@ function ServicePage() {
           <RuledList rows={related} compact />
         </Section>
       ) : null}
-      <ClosingBand headline={s.cta?.label && s.cta.label !== site.cta.primary.label ? s.cta.label : "Tell us about the engine and the date"} />
+      <ClosingBand headline="Tell us the engine, the shop and the date" />
+      <PageMotion />
     </main>
   );
 }

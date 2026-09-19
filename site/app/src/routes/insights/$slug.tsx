@@ -1,4 +1,5 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { StructuredData } from "@/components/StructuredData";
 import { ClosingBand } from "@/components/site/ClosingBand";
@@ -50,7 +51,7 @@ function ArticlePage() {
     publisher: { "@type": "Organization", name: site.company.legalName, url: SITE_URL, logo: { "@type": "ImageObject", url: `${SITE_URL}/icon-512.png` } },
   });
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <StructuredData json={schema} />
       <PageIntro
         eyebrow={`${formatDate(a.date)}${a.readingMinutes ? ` · ${a.readingMinutes} min read` : ""}`}
@@ -62,7 +63,7 @@ function ArticlePage() {
       <Section theme="light" id="article" as="article">
         <div className="o-grid">
           <div style={{ gridColumn: "1 / -1" }}>
-            {a.image ? <MediaFrame image={a.image.src} alt={a.image.alt} ratio="16x9" caption={a.image.credit} className="c-page-intro__media" /> : null}
+            {a.image ? <MediaFrame image={a.image.src} alt={a.image.alt} ratio="16x9" className="c-page-intro__media" /> : null}
             <div style={{ marginTop: "var(--space-large)" }}>
               <Prose sections={a.sections} />
             </div>
@@ -107,6 +108,7 @@ function ArticlePage() {
         </Section>
       ) : null}
       <ClosingBand headline="Talk to us about your next shop visit" />
+      <PageMotion />
     </main>
   );
 }

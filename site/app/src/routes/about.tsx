@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { ClosingBand } from "@/components/site/ClosingBand";
 import { LocalNav } from "@/components/site/LocalNav";
@@ -25,7 +26,7 @@ const NAV = [
 function AboutPage() {
   const [lead, ...rest] = about.story.paragraphs;
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <PageIntro eyebrow="About" title={about.story.title} lead={lead} image="records-desk" />
       <LocalNav items={NAV} />
       <Section theme="light" id="story">
@@ -112,7 +113,7 @@ function AboutPage() {
             </p>
           </div>
           <div className="c-split__main">
-            <MediaFrame image={about.zug.image?.src ?? "zug-lake"} alt={about.zug.image?.alt} ratio="3x2" caption={about.zug.image?.credit} />
+            <MediaFrame image={about.zug.image?.src ?? "zug-lake"} alt={about.zug.image?.alt} ratio="3x2" />
           </div>
         </div>
       </Section>
@@ -127,6 +128,7 @@ function AboutPage() {
         </address>
       </Section>
       <ClosingBand headline="Talk to the person who does the work" />
+      <PageMotion />
     </main>
   );
 }

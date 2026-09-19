@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { ClosingBand } from "@/components/site/ClosingBand";
 import { PageIntro } from "@/components/site/PageIntro";
@@ -26,7 +27,7 @@ function ServicesPage() {
     meta: s.engineFamilies?.slice(0, 5),
   }));
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <PageIntro eyebrow="Services" title={services.hub.title} lead={services.hub.intro} image="shop-floor" />
       {services.hub.situations?.length ? (
         <Section theme="light" id="situations" tight>
@@ -56,6 +57,7 @@ function ServicesPage() {
         <RuledList rows={rows} ariaLabel="All services" />
       </Section>
       <ClosingBand headline="Send us the workscope before you sign it" />
+      <PageMotion />
     </main>
   );
 }

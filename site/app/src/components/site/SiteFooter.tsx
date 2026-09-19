@@ -1,6 +1,8 @@
 import { site } from "@/site/content";
 import { SmartLink } from "./SmartLink";
 
+const YEAR = new Date().getFullYear();
+
 export function SiteFooter() {
   const { company, nav, memberships, footer } = site;
   const verified = memberships.filter((m) => m.status === "verified");
@@ -79,8 +81,9 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="c-footer__legal">
-          <span>{footer.legalLine}</span>
-          <span>UID {company.uid}</span>
+          <span>
+            © {YEAR} {footer.legalLine}
+          </span>
           {nav.secondary
             .filter((i) => /impressum|privacy|cookies/.test(i.href))
             .map((i) => (

@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { ClosingBand } from "@/components/site/ClosingBand";
 import { PageIntro } from "@/components/site/PageIntro";
@@ -16,7 +17,7 @@ export const Route = createFileRoute("/insights/")({
 function InsightsPage() {
   const articles = sortedArticles();
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <PageIntro eyebrow="Insights" title={insights.title} lead={insights.intro} />
       <Section theme="light" id="articles">
         <div className="c-index" data-reveal-group>
@@ -42,6 +43,7 @@ function InsightsPage() {
         </div>
       </Section>
       <ClosingBand headline="A question these notes do not answer?" />
+      <PageMotion />
     </main>
   );
 }

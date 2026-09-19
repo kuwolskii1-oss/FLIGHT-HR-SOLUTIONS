@@ -46,8 +46,9 @@ export default {
       url.pathname = url.pathname.replace(/\/+$/, "");
       return applySecurityHeaders(Response.redirect(url.toString(), 301));
     }
-    // Legacy addresses from the previous website.
+    // Legacy addresses from the previous website, plus the scaffold workspace path.
     const legacy: Record<string, string> = {
+      "/app": "/",
       "/about-us": "/about",
       "/career": "/careers",
       "/privacy-policy": "/privacy",

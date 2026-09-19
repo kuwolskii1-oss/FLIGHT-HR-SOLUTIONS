@@ -1,7 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
-import { bindings } from "@/lib/bindings.server";
 import siteJson from "@/content/site.json";
 
 const enquirySchema = z.object({
@@ -31,6 +30,9 @@ const escapeHtml = (s: string) =>
 export const submitEnquiry = createServerFn({ method: "POST" })
   .validator((data: unknown) => enquirySchema.parse(data))
   .handler(async ({ data }) => {
+    // The Cloudflare bindings module is loaded only when the handler runs on the Worker, so the
+    // route that renders the form also works in local development, where the module does not exist.
+    const { bindings } = await import("@/lib/bindings.server");
     const env = bindings() as unknown as Record<string, string | undefined>;
     const apiKey = env.RESEND_API_KEY;
     const to = env.ENQUIRY_TO ?? siteJson.company.email;

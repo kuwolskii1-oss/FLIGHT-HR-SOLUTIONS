@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { PageIntro } from "@/components/site/PageIntro";
 import { Section } from "@/components/site/Section";
@@ -15,7 +16,7 @@ export const Route = createFileRoute("/cookies")({
 function Page() {
   const sections = doc.sections as { title: string; lines?: string[]; paragraphs?: string[] }[];
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <PageIntro eyebrow="Legal" title={doc.title} theme="light" lead={"updated" in doc ? `Last updated ${(doc as { updated: string }).updated}` : undefined} />
       <Section theme="light" id="content">
         <div className="c-prose">
@@ -29,6 +30,7 @@ function Page() {
           ))}
         </div>
       </Section>
+      <PageMotion />
     </main>
   );
 }

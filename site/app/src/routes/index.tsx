@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 import { useMemo } from "react";
 
 import { ScrollScrub } from "@/components/scroll-scrub/scroll-scrub";
@@ -104,7 +105,7 @@ function Index() {
   const person = about.team.people[0];
 
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <StructuredData json={ORG_SCHEMA} />
 
       <div className="c-journey" data-theme="deep">
@@ -253,6 +254,7 @@ function Index() {
           </div>
         </div>
       </section>
+      <PageMotion />
     </main>
   );
 }

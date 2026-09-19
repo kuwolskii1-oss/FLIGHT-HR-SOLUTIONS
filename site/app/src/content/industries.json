@@ -1,0 +1,220 @@
+{
+  "hub": {
+    "title": "Who we work for",
+    "intro": "Airlines, lessors and investors, MROs and government operators each meet the same engine from a different side. Start with yours.",
+    "source": "Client types: docs/research/01-company-profile.md section 4.2 (Swiss Aerospace Cluster directory: airlines, lessors, MROs and governmental operators worldwide). Page set: docs/research/07-recommendations-and-brief.md section 4 (Industries: Airlines, Lessors and investors, MROs, Government and military) and section 3 (audience table).",
+    "notes": "The hub lists the four industries as ruled rows. Each row shows the industry name and its audience line, so every audience line below is written to read on its own under the industry name as well as under the H1 of its page."
+  },
+  "industries": [
+    {
+      "slug": "airlines",
+      "name": "Airlines",
+      "seoTitle": "Engine shop visit management for airlines | Flight Hour Solution",
+      "metaDescription": "Independent shop visit management, workscope and removal planning, engine data review and MRO contract support for airline powerplant teams. Zug, Switzerland.",
+      "audience": "For VPs Technical, heads of powerplant, engine fleet managers, CAMO leads and procurement teams who own fleet availability and the engine budget.",
+      "situation": "Engines are the largest and fastest-growing segment of the aircraft maintenance market. Turnaround times are up 35 per cent or more on legacy engines and 150 per cent or more on new-generation types, and slot waits are two to three months longer, up to six. A lean powerplant team cannot sit in every shop. That is the gap we fill.",
+      "whatWeDo": [
+        {
+          "title": "An extra pair of hands at the shop",
+          "text": "Full or overview shop visit management from pre-induction to redelivery: workscope review, dirty condition and table inspection, test cell overview and invoice review. We work alongside your powerplant team and report to it.",
+          "serviceSlug": "shop-visit-management"
+        },
+        {
+          "title": "Removal timing and the workscope",
+          "text": "Removal planning against LLP limits, EGT margin and slot lead times, then a workscope that fits the lease, the budget and the engine's next run, including durability kit decisions on LEAP.",
+          "serviceSlug": "workscope-and-removal-planning"
+        },
+        {
+          "title": "A second read of your engine data",
+          "text": "Independent review of ECM and EHM trends, borescope video and test cell results, so the removal decision is timed by you rather than by whoever sells the shop visit.",
+          "serviceSlug": "predictive-maintenance-and-analytics"
+        },
+        {
+          "title": "Contracts and invoices, on your side",
+          "text": "Engine overhaul and repair contract negotiation, warranty management and line-by-line invoice review, whether you buy maintenance by the flight hour or by time and material.",
+          "serviceSlug": "contracts-mro-and-supply-chain"
+        },
+        {
+          "title": "Keeping the judgement in the team",
+          "text": "Workshops for powerplant, CAMO and procurement staff on reading a workscope, a findings report and an invoice, built from the methods we use on engagements.",
+          "serviceSlug": "training-and-knowledge-transfer"
+        }
+      ],
+      "entryCta": { "label": "Send us a workscope", "href": "/contact#workscope", "kind": "secondary" },
+      "image": {
+        "src": "apron-dusk",
+        "alt": "Narrow-body airliner on a maintenance apron at dusk with an engine cowl open",
+        "credit": "Generated illustration"
+      },
+      "source": "Personas: docs/research/06-market-context-and-seo.md section 2 rows 1, 2, 4, 5 and 6. Entry page and CTA: docs/research/07-recommendations-and-brief.md section 3 rows 1 and 2 (the workscope upload is the powerplant persona's primary action). Figures: engines the biggest and fastest-growing MRO segment, Oliver Wyman February 2026, 06 section 1.1 [F]; turnaround times up 35 per cent or more (legacy) and 150 per cent or more (new generation) and slot waits up 2 to 3 months, up to 6, Bain July 2024, 06 section 1.3 [F]; LEAP durability kits, IBA H2 2026, 06 section 1.4 [F]. Power-by-the-hour against time and material: 06 section 2 row 5 and section 3.1 item 31.",
+      "clientToConfirm": [
+        "Confirm the on-site scope that may be promised to airline clients (table inspection attendance, test cell overview) and the typical mobilisation time from Zug to the shops your clients use.",
+        "07 section 3 proposes a 30-minute engine review as the entry offer for VPs Technical. Confirm whether a calendar booking link should sit behind Talk to us on this page; the fixed labels are used and no new label has been added.",
+        "Confirm that the airline audience should include ACMI and business-aviation operators (06 section 2 row 4) or whether they warrant a separate line."
+      ]
+    },
+    {
+      "slug": "lessors-and-investors",
+      "name": "Lessors and investors",
+      "seoTitle": "Engine technical advisor for lessors and investors | Flight Hour Solution",
+      "metaDescription": "Lease return support, maintenance reserve and claim analysis, back-to-birth records audits and technical due diligence for lessors, lenders and investors.",
+      "audience": "For technical asset managers, heads of engines and the lenders, funds, servicers and insurers who carry the residual value risk on engines and aircraft.",
+      "situation": "At the end of a lease, the reserve clause and the redelivery conditions are where multi-million-dollar disputes start. Early shop visits and unexpected module swaps are testing lease language that never anticipated them, and lenders scrutinise engine status more closely than they used to. Value sits in the records, the LLPs and the next shop visit.",
+      "whatWeDo": [
+        {
+          "title": "Redelivery, reserves and records",
+          "text": "Redelivery management for the lessee or acceptance for the lessor, maintenance reserve calculations and claim analysis, and LLP back-to-birth trace audits. We act for one side, or between the two, and say which.",
+          "serviceSlug": "lease-return-and-asset-management"
+        },
+        {
+          "title": "The shop visit under your lease",
+          "text": "When a lessee's engine goes to the shop mid-lease or before return: workscope approval against the lease terms, table inspection attendance, test cell overview and invoice review, so the engine comes back in the condition the lease describes.",
+          "serviceSlug": "shop-visit-management"
+        },
+        {
+          "title": "Due diligence before money moves",
+          "text": "Records audits back to birth, maintenance status and cost forecasts, the engine exposure of a whole portfolio and teardown valuations, for acquisitions, financings, ABS closings and engine-only deals.",
+          "serviceSlug": "technical-due-diligence"
+        },
+        {
+          "title": "Watching the portfolio between events",
+          "text": "Fleet ECM and EHM monitoring programmes and on-wing performance reviews across leased engines, so an early removal is seen coming and raised with the lessee, not reported after the fact.",
+          "serviceSlug": "predictive-maintenance-and-analytics"
+        },
+        {
+          "title": "Lease and purchase contracts",
+          "text": "Lease contract and engine purchase negotiation support, insurance claims support and warranty management, with return and reserve clauses that anticipate early shop visits and module swaps.",
+          "serviceSlug": "contracts-mro-and-supply-chain"
+        }
+      ],
+      "entryCta": { "label": "Talk to us", "href": "/contact", "kind": "primary" },
+      "image": {
+        "src": "engine-cradle",
+        "alt": "Covered turbofan engine secured in a shipping cradle",
+        "credit": "Generated illustration"
+      },
+      "source": "Personas: docs/research/06-market-context-and-seo.md section 2 rows 3 and 7. Entry pages and CTA: docs/research/07-recommendations-and-brief.md section 3 rows 3 and 5. Statements: maintenance-reserve clauses and redelivery conditions the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes, and lenders scrutinising engine status more closely, Acumen, 06 section 1.7 [F]; early shop visits and unexpected module swaps complicating redelivery conditions that were not drafted to anticipate them, ACC Aviation 2025, 06 section 1.7 [F]; lessors rewarding demonstrable maintenance quality and records, Aviation Today May 2026, 06 section 1.8 [F]. The position between lessor and lessee: docs/research/05-competitor-benchmark.md section 5 item 4. Lessor Portfolio Support Programs and Fleet ECM/EHM Monitoring Programs: docs/research/02-website-content-inventory.md section 4.",
+      "notes": "The Assets line (engine and aircraft sourcing, sales support and listings) is deliberately not listed among the what-we-do items, which map to advisory services only. The navigation and the About page carry the Assets line and its disclosure (07 section 2.3). Teardown valuations are described as technical valuations, not certified appraisals.",
+      "clientToConfirm": [
+        "Confirm that fleet ECM and EHM monitoring can be offered to lessors for engines on lease; it depends on the lessee's data-sharing obligations under each lease.",
+        "Confirm whether an ISTAT appraiser qualification or professional indemnity insurance is held and may be mentioned to lender clients (05 section 6); neither is claimed here.",
+        "07 section 3 proposes 'Request our capability statement' as the lender CTA; the fixed labels are used instead. Confirm that a capability statement PDF will exist so the page can link to it later.",
+        "Confirm whether lessor clients should be told on this page that the firm also sources and remarkets engines through the Assets line, or whether the About page disclosure is sufficient."
+      ]
+    },
+    {
+      "slug": "mros",
+      "name": "MROs",
+      "seoTitle": "Independent support for engine MROs and overhaul shops | Flight Hour Solution",
+      "metaDescription": "Material and scrap review, findings and records review, new engine type induction support and training for independent and airline-affiliated engine shops.",
+      "audience": "For heads of engine shops, commercial directors and customer support engineers at independent and airline-affiliated MROs who want fewer disputes and better-run inductions.",
+      "situation": "Cumulative engine MRO demand exceeds supply by nearly 17 per cent through the end of the decade and OEM parts demand by 10 to 20 per cent. Slots are contested, findings are questioned and invoices are read line by line. Most of our work is on the customer's side of the table, so we know what a customer will accept.",
+      "whatWeDo": [
+        {
+          "title": "Material strategy and scrap review",
+          "text": "Material sourcing support, scrap rate analysis and material value extraction, and a used serviceable material policy for a market in which teardown harvesting runs five times below pre-2020 levels.",
+          "serviceSlug": "contracts-mro-and-supply-chain"
+        },
+        {
+          "title": "Findings and records that hold",
+          "text": "Table inspection findings, test cell results and post-shop visit documentation reviewed against the workscope before they reach the customer, so the record holds when the invoice is questioned.",
+          "serviceSlug": "shop-visit-management"
+        },
+        {
+          "title": "Induction readiness for a new type",
+          "text": "Workscope compilation and review for an engine type new to the shop, durability kit embodiment decisions on LEAP, and industry best practice advice while the induction plan is built.",
+          "serviceSlug": "workscope-and-removal-planning"
+        },
+        {
+          "title": "Training for customer-facing engineers",
+          "text": "Workshops for customer support and shop engineers on how airlines and lessors read a workscope, a findings report and an invoice, built from our work on the other side of the table and the team's experience in engine shops and airline engineering.",
+          "serviceSlug": "training-and-knowledge-transfer"
+        }
+      ],
+      "entryCta": { "label": "Talk to us", "href": "/contact", "kind": "primary" },
+      "image": {
+        "src": "shop-floor",
+        "alt": "Engine overhaul shop with several turbofan engines on stands",
+        "credit": "Generated illustration"
+      },
+      "source": "Persona: docs/research/06-market-context-and-seo.md section 2 row 9. MROs as a client type: docs/research/01-company-profile.md section 4.2 (Swiss Aerospace Cluster directory, including material management and scrap rate analysis and training and knowledge transfer) and docs/research/02-website-content-inventory.md section 4 (MRO Support Programs; Support with Material Sourcing and Documentation Audit; Scrap Review and Material Value Extraction; Industry Best Practice Advice). Figures: cumulative demand exceeding supply by nearly 17 per cent through the end of the decade and OEM parts demand outpacing supply by 10 to 20 per cent, Bain July 2024, 06 section 1.3 [F]; teardown part harvesting five times below pre-2020 levels, Magnetic Group June 2025, 06 section 1.2 [F]; LEAP durability kits, IBA H2 2026, 06 section 1.4 [F]. Team experience phrasing: site/content-brief/VOICE-AND-FACTS.md and 01 section 2.",
+      "notes": "This page states openly that most of the firm's work is on the customer's side of the table. That is consistent with the independence statement and is the honest answer to the persona's objection that consultants are customer-side adversaries (06 section 2 row 9).",
+      "clientToConfirm": [
+        "Confirm that MRO support programmes are an active offer and that the four items shown are the ones to sell to shops; the register purpose and the Swiss Aerospace Cluster entry list material management, scrap rate analysis and training, but no MRO client has been named.",
+        "Confirm the statement that most of the firm's work is on the customer's side of the table, and approve a conflicts rule for this page: the firm does not act for a shop and for that shop's customer on the same shop visit.",
+        "The phrase 'the team's experience in engine shops and airline engineering' is used without a years figure. Confirm which shops and airlines may be named on the About page (01 section 2 indicates about four years at Aero Norway for the managing director; role and title unverified).",
+        "Confirm whether the name of this page should read MROs or Engine shops and MROs."
+      ]
+    },
+    {
+      "slug": "government-and-military",
+      "name": "Government and military",
+      "seoTitle": "Engine sustainment support for government and military fleets | Flight Hour Solution",
+      "metaDescription": "Independent oversight of military engine shop visits, sole-source contract support, maintenance forecasting and training for defence and government fleets.",
+      "audience": "For programme managers, heads of sustainment, logistics commands and procurement officers who answer for the availability and life-cycle cost of a government fleet.",
+      "situation": "Military MRO is growing about ten times faster than in the previous decade, with engines leading, and a doubling of European defence spending could bring shortages of parts, production capacity and skilled labour. Where the engine OEM is the only overhaul supplier, workscope, cost and turnaround are hard to challenge from inside the programme. Independent oversight makes them defensible.",
+      "whatWeDo": [
+        {
+          "title": "Oversight of the engine sustainment contract",
+          "text": "Full shop visit management for military engines, borescope and test cell analysis for operational readiness, and post-shop visit documentation audits and performance reviews, reported to the programme office rather than to the supplier.",
+          "serviceSlug": "military-and-government"
+        },
+        {
+          "title": "Negotiating with a sole supplier",
+          "text": "Engine overhaul and repair contract negotiation, purchase, lease and insurance claims support and warranty management, bringing an outside view of workscope, cost and turnaround into a negotiation that otherwise has one side's numbers.",
+          "serviceSlug": "contracts-mro-and-supply-chain"
+        },
+        {
+          "title": "Life-cycle cost and maintenance forecasting",
+          "text": "Maintenance cost forecasting, removal planning and fleet shop visit planning for the programme, so readiness targets and budget lines rest on the same set of numbers.",
+          "serviceSlug": "workscope-and-removal-planning"
+        },
+        {
+          "title": "Your own read of the engine data",
+          "text": "An independent read of ECM and EHM trends, borescope video and on-wing performance, for fleets where the supplier's monitoring is otherwise the only view and data sovereignty matters.",
+          "serviceSlug": "predictive-maintenance-and-analytics"
+        },
+        {
+          "title": "Knowledge transfer to the programme team",
+          "text": "Training for programme, logistics and procurement staff on shop visits, workscopes and invoices, so the judgement stays inside the service when people rotate out.",
+          "serviceSlug": "training-and-knowledge-transfer"
+        }
+      ],
+      "entryCta": { "label": "Talk to us", "href": "/contact", "kind": "primary" },
+      "image": {
+        "src": "test-cell",
+        "alt": "Turbofan engine mounted in a test cell",
+        "credit": "Generated illustration"
+      },
+      "source": "Persona: docs/research/06-market-context-and-seo.md section 2 row 8. Entry page and contact route: docs/research/07-recommendations-and-brief.md section 3 row 6. Figures: military MRO growing about 1 per cent a year, ten times faster than the previous decade, with engine maintenance leading growth, Oliver Wyman Global Military Aircraft Fleet and Sustainment Outlook, February 2026, 06 section 1.9 [F]; doubling European defence spend could trigger capacity shortages in parts, production and skilled labour, Oliver Wyman August 2025, 06 section 1.9 [F]. Message pillar 'independent oversight where the OEM is the only supplier': 07 section 2.2 and 06 section 5.1 item 10. Service list: docs/research/02-website-content-inventory.md section 4 (Our Services for Military & Government Aviation). Data sovereignty and workforce gaps as persona concerns: 06 section 2 row 8.",
+      "notes": "No security clearance, government approval, programme reference or endorsement is claimed on this page (01 section 5; 06 section 5.2). Swiss neutrality is not invoked pending the client's answer below (06 section 1.10). The global fleet counts and European budget figures in 06 section 1.9 are not used here; the military service page carries the fleet figures.",
+      "clientToConfirm": [
+        "07 section 3 asks for a dedicated contact route for defence programme managers. Confirm whether a separate mailbox or a named contact should sit behind Talk to us on this page.",
+        "Confirm any restrictions on what may be shown about military and government work (01 section 9 item 8; 07 section 12 item 7), including which programme or engine types, if any, may be named.",
+        "Confirm whether any team member holds a personnel security clearance that may be stated; none is claimed here.",
+        "Confirm whether the Swiss base should be presented as neutral ground for non-aligned governments on this page (06 section 1.10), without implying endorsement by the Swiss state."
+      ]
+    }
+  ],
+  "sources": [
+    "docs/research/01-company-profile.md section 4.2: Swiss Aerospace Cluster directory entry naming the client types (airlines, lessors, MROs and governmental operators worldwide) and the core competences (shop visit management and oversight, engine overhaul and repair contract negotiation, technical documentation and compliance audits, material management and scrap rate analysis, on-wing troubleshooting and performance advisory, training and knowledge transfer, predictive maintenance and data analytics, warranty and invoice review, borescope and test cell result analysis, insurance and lease contract negotiation support).",
+    "docs/research/01-company-profile.md section 2: the managing director's background (about four years at Aero Norway, an independent CFM56 overhaul shop; role and title unverified), the basis for the phrase 'the team's experience in engine shops and airline engineering', used without a years figure per site/content-brief/VOICE-AND-FACTS.md.",
+    "docs/research/01-company-profile.md section 5 and section 9 item 8: no EASA or FAA approvals and no clearances are claimed; disclosure limits for military and government work are a client decision.",
+    "docs/research/02-website-content-inventory.md section 4: the service taxonomy behind every what-we-do item (Programs: Lessor Portfolio Support, MRO Support, Fleet ECM/EHM Monitoring; Support in: maintenance cost forecasting, maintenance reserve calculations and reserve claim analysis, engine overhaul and repair contract negotiation, engine purchase, lease contract and insurance claims support; Advisory and Evaluation: engine teardown valuations, industry best practice advice, technical documentation audit, LLP back to birth trace audit, on-wing troubleshooting advisory, post-shop visit documentation audit, warranty management, on-wing performance review; Analysis: borescope video, test cell and on-wing run result analysis; Shop Visit Management: full and overview management, workscope compilation and review, dirty condition and table inspection, material sourcing support and documentation audit, test cell overview, invoice review, scrap review and material value extraction) and the Military & Government Programs service list.",
+    "docs/research/05-competitor-benchmark.md section 4 (buyer segments named across the niche and the shop visit, workscope, table inspection, records and transition vocabulary) and section 5 items 2, 3 and 4 (independence as a product; the military and government vertical no peer site has; the position between lessor and lessee that nobody owns).",
+    "docs/research/06-market-context-and-seo.md section 1.1 [F]: Oliver Wyman, Global Fleet and MRO Market Forecast 2026 to 2036 (February 2026): engines the biggest and fastest-growing segment of the MRO market. https://www.oliverwyman.com/our-expertise/insights/2026/feb/global-fleet-and-mro-market-forecast-2026-2036.html",
+    "docs/research/06-market-context-and-seo.md section 1.2 [F]: Magnetic Group (June 2025): teardown part harvesting five times below pre-2020 levels (URL listed in 06 section 6 under Shop visits, costs, engine families).",
+    "docs/research/06-market-context-and-seo.md section 1.3 [F]: Bain and Company (17 July 2024): turnaround times up 35 per cent or more for legacy engines and 150 per cent or more for new-generation engines against pre-pandemic levels; slot waits up 2 to 3 months, up to 6 months in some cases; cumulative engine MRO demand exceeding supply by nearly 17 per cent through the end of the decade; OEM parts demand outpacing supply by 10 to 20 per cent. https://www.bain.com/insights/get-a-step-ahead-of-the-engine-maintenance-capacity-crunch/",
+    "docs/research/06-market-context-and-seo.md section 1.4 [F]: IBA Engine and Lease Rate Update H2 2026: LEAP-1A fuel-nozzle coking addressed by the reverse-bleed system and the LEAP-1B HPT durability kit certified in the first half of 2026, the basis for 'durability kit decisions on LEAP'. https://www.iba.aero/resources/articles/iba-engine-and-lease-rate-update-h2-2026/",
+    "docs/research/06-market-context-and-seo.md section 1.7 [F]: Acumen: maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes (https://www.acumen.aero/blogs/aircraft-lease-return-conditions-common-disputes-and-how-to-avoid-them); lenders scrutinise engine status more closely (https://www.acumen.aero/blogs/why-are-engine-shortages-reshaping-aircraft-asset-values-in-2026-); ACC Aviation (2025): early shop visits and unexpected module swaps are complicating redelivery conditions that were not drafted to anticipate them (https://accaviation.com/aircraft-transitions-and-repossessions-2025-market-update/).",
+    "docs/research/06-market-context-and-seo.md section 1.8 [F]: Aviation Today (1 May 2026): lessors evaluate how well an aircraft is operated and strong predictive-maintenance histories read as lower-risk assets, the basis for offering portfolio monitoring to lessors. https://www.aviationtoday.com/2026/05/01/digital-maintenance-predictive-analytics-and-the-new-lease-economics-of-aircraft-health/",
+    "docs/research/06-market-context-and-seo.md section 1.9 [F]: Oliver Wyman, Global Military Aircraft Fleet and Sustainment Outlook (February 2026): military MRO growing about 1 per cent a year, ten times faster than the previous decade, with engine maintenance leading growth (https://www.oliverwyman.com/our-expertise/insights/2026/feb/global-military-aircraft-fleet-and-sustainment-outlook.html); Oliver Wyman (August 2025): doubling European defence spend could trigger capacity shortages in parts, production and skilled labour (https://www.oliverwyman.com/our-expertise/insights/2025/aug/key-challenges-facing-europe-proposed-defense-expansion.html). The fleet counts and the European budget figures tagged F/S in the same section are not used on this page.",
+    "docs/research/06-market-context-and-seo.md section 1.10: Swiss neutrality and confidentiality as an honest framing for a consultancy, with no implied state endorsement; held back on this page pending the client's decision.",
+    "docs/research/06-market-context-and-seo.md section 2: buyer personas 1 to 9 (titles, organisations, concerns, objections and search triggers), the basis for each audience line, situation and what-we-do selection: airlines from rows 1, 2, 4, 5 and 6; lessors and investors from rows 3 and 7; MROs from row 9; government and military from row 8; and the universal decision criteria (engine-family depth, hands-on shop experience, independence, availability, confidentiality).",
+    "docs/research/06-market-context-and-seo.md sections 3.1, 3.2 and 3.4: the search terms behind the page titles (engine shop visit management; engine technical advisor for lessors; military aviation sustainment consulting; power by the hour against time and material).",
+    "docs/research/06-market-context-and-seo.md sections 5.1, 5.2 and 5.3: sourced value propositions (independence, planning around the capacity crunch, workscope discipline on both sides of the lease, data-led removal timing, independent oversight where the OEM is the only supplier), claims to avoid (no savings percentages, no vendor cost ranges, no slot promises, no approvals or clearances implied) and tone.",
+    "docs/research/07-recommendations-and-brief.md section 2.2 (message pillars), section 2.3 (Advisory and Assets lines with disclosure when brokering), section 3 (audience table: persona, primary entry page, primary CTA), section 4 (the four industry pages) and section 12 (decisions needed from the client).",
+    "docs/research/08-locomotive-design-blueprint.md section 8.4: ruled rows and media frames, the components the industry template renders.",
+    "site/content-brief/VOICE-AND-FACTS.md: fixed CTA labels (Talk to us; Send us a workscope), entity naming, independence wording, banned words, no years-of-experience figure, the exact phrase for team experience, market facts only from 06 section 1 with the source named."
+  ]
+}

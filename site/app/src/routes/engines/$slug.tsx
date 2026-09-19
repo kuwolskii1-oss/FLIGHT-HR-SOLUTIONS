@@ -1,4 +1,5 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { ClosingBand } from "@/components/site/ClosingBand";
 import { Faq } from "@/components/site/Faq";
@@ -42,7 +43,7 @@ function EnginePage() {
     ...(f.faq?.length ? [{ id: "faq", label: "Questions" }] : []),
   ];
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <PageIntro eyebrow="Engine family" title={f.name} lead={f.context.text} meta={f.models} image={f.image?.src} imageAlt={f.image?.alt} />
       <LocalNav items={nav} />
       <Section theme="light" id="context">
@@ -73,6 +74,7 @@ function EnginePage() {
         </Section>
       ) : null}
       <ClosingBand headline={`Planning a ${f.name} shop visit or transition?`} />
+      <PageMotion />
     </main>
   );
 }

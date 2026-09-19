@@ -11,7 +11,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { MotionProvider } from "@/components/site/MotionProvider";
 import { CtaLink } from "@/components/site/Cta";
-import { INDEXABLE, SITE_NAME, SITE_URL } from "@/site/config";
+import { INDEXABLE, SITE_NAME, SITE_URL, THEME_COLOR } from "@/site/config";
 
 declare const __HF_DESIGN_INSPECTOR__: boolean;
 
@@ -53,7 +53,7 @@ function buildHead(meta: AppMeta) {
       { title },
       { name: "description", content: description },
       { name: "author", content: SITE_NAME },
-      { name: "theme-color", content: "#1c205c" },
+      { name: "theme-color", content: THEME_COLOR },
       { name: "robots", content: INDEXABLE ? "index, follow, max-image-preview:large" : "noindex, nofollow" },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
@@ -69,7 +69,9 @@ function buildHead(meta: AppMeta) {
       { rel: "preload", href: "/fonts/IBMPlexSans-500-latin.woff2", as: "font", type: "font/woff2", crossOrigin: "anonymous" as const },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", sizes: "32x32" },
+      { rel: "icon", href: "/favicon-16.png", type: "image/png", sizes: "16x16" },
       { rel: "icon", href: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { rel: "icon", href: "/favicon-48.png", type: "image/png", sizes: "48x48" },
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
       { rel: "manifest", href: "/site.webmanifest" },
     ],
@@ -78,7 +80,7 @@ function buildHead(meta: AppMeta) {
 
 function NotFoundComponent() {
   return (
-    <main id="main" data-theme="light" className="o-section c-notfound">
+    <main id="main" tabIndex={-1} data-theme="light" className="o-section c-notfound">
       <div className="o-container">
         <span className="c-eyebrow">404</span>
         <h1 className="c-h1 c-h1--inner">This page does not exist</h1>
@@ -102,7 +104,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     reportHiggsfieldError(error, { boundary: "tanstack_root_error_component" });
   }, [error]);
   return (
-    <main id="main" data-theme="light" className="o-section c-notfound">
+    <main id="main" tabIndex={-1} data-theme="light" className="o-section c-notfound">
       <div className="o-container">
         <h1 className="c-h1 c-h1--inner">This page did not load</h1>
         <p className="c-lead c-muted" style={{ marginTop: "var(--space-medium)" }}>

@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { PageIntro } from "@/components/site/PageIntro";
 import { Section, SectionHead } from "@/components/site/Section";
@@ -12,7 +13,7 @@ export const Route = createFileRoute("/careers")({
 
 function CareersPage() {
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <PageIntro eyebrow="Careers" title={careers.title} lead={careers.intro} image="test-cell" />
       <Section theme="light" id="profile">
         <SectionHead title="What we look for" />
@@ -50,6 +51,7 @@ function CareersPage() {
           </a>
         </p>
       </Section>
+      <PageMotion />
     </main>
   );
 }

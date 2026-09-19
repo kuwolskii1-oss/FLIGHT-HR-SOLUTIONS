@@ -1,0 +1,790 @@
+{
+  "notes": "Engine family pages following the template in 07 section 5 and the route in site/app/src/routes/engines/$slug.tsx. The first sentence of each context.text is reused as the family's row summary on the hub page, so it stands alone. Stat sources are rendered on the page, so each stat.source names the publisher and date in plain words while the dossier reference sits in the stat's notes and in the page-level sources array. Every rendered market figure is tagged [F] in 06 section 1; [S] and [V] figures are not rendered. Aircraft applications and Honeywell product figures carry their URL in the sources array. British English, no dashes, fixed call-to-action labels, no vendor cost ranges, no savings figures.",
+  "clientToConfirm": [
+    "Engine-family experience: confirm which of the seventeen listed models the team has managed shop visits for in practice, and name the consultant per family for the team page (07 section 2.2 asks for engine-family experience per consultant).",
+    "Confirm the capability list is current, in particular the LEAP-1C, V2500-A1, V2500-D5 and PW4000-112, which have small or shrinking fleets.",
+    "Figures tagged [S] in 06 section 1 were left out pending verification against the source: CFM56 shop visits of about 2,300 to 2,400 per year through 2026 to 2028 and about 800 V2500 shop visits expected in 2026 (Aviation Week snippet); the LEAP-1A HPT durability kit certified in December 2024 with more than 1,200 kits and 70 per cent of the fleet on the reverse-bleed system (CFM press release); FAA certification of the LEAP-1B durability improvements on 18 July 2026 (FlightGlobal), which conflicts with IBA's 'H1 2026', so the page says 'in 2026'. Supply verified figures if they should be added.",
+    "Aircraft applications: the CFM International and Pratt & Whitney product pages refused automated reading, so applications were cross-checked against GE Aerospace pages and encyclopaedia entries (URLs in sources). Confirm against the type certificate data sheets before launch if preferred.",
+    "Honeywell figures on the APU and turboprop page (more than 36,000 APUs in service, more than 100 million hours for the 131 family, more than 13,000 TPE331 engines in 18 models and 106 configurations) were read from Honeywell's pages on 19 September 2026 and are undated there. Confirm they may be quoted, or replace them with figures from the team's own experience.",
+    "Widebody families named in 07 section 4 for later (Trent, GE90, GEnx, CF34) are not included. Confirm whether the Rolls-Royce Trent, which the company has sold through its sourcing activity (01 section 3), should get a page.",
+    "The CFM56 sourcing question in the FAQ points to the Assets line. Confirm the name of that line and that CFM56 listings may be cross-linked from the CFM56 page.",
+    "No savings figures, response times or engagement durations are stated on these pages. Supply approved figures if any should appear (06 section 5.2).",
+    "APU and turboprop page: confirm that the team has managed APU shop visits and turboprop overhauls in practice, and whether the T76 and other military applications may be described (07 section 12, decision 7)."
+  ],
+  "hub": {
+    "title": "Engine families we manage",
+    "intro": "Five families and seventeen models, from the CFM56 to the Honeywell 131-9 APU: fleet context in 2026, typical visit types, cost drivers and what we do for each.",
+    "source": "Families and models: 02-website-content-inventory.md section 4. Page template: 07-recommendations-and-brief.md section 5."
+  },
+  "families": [
+    {
+      "slug": "cfm56",
+      "name": "CFM56",
+      "seoTitle": "CFM56 shop visit management and cost drivers | Flight Hour Solution",
+      "metaDescription": "Independent CFM56 shop visit management: workscope review, table inspection, LLP planning and invoice review for CFM56-3, -5 and -7 operators and owners.",
+      "keywords": [
+        "CFM56-7B shop visit cost",
+        "CFM56-5B shop visit cost",
+        "CFM56 workscope",
+        "CFM56 LLP replacement strategy",
+        "CFM56 shop visit management",
+        "engine shop visit management"
+      ],
+      "models": ["CFM56-3", "CFM56-5", "CFM56-7"],
+      "context": {
+        "title": "Still the narrowbody workhorse in 2026",
+        "text": "The CFM56 powers the Boeing 737 Classic and 737NG families and the Airbus A320ceo family, and with the V2500 it still sits on around 70 per cent of the narrowbody fleet. Repair costs are up 50 to 75 per cent since 2019 and delayed deliveries keep the fleet flying. We manage CFM56-3, -5 and -7 visits from workscope to invoice.",
+        "source": "Applications: GE Aerospace CFM56 page and the CFM56 encyclopaedia entry (URLs in sources). Fleet share and repair costs: 06 section 1.2, Magnetic Group, June 2025 [F]. Delayed deliveries: 06 section 1.6, Oliver Wyman, February 2026 [F].",
+        "stats": [
+          {
+            "value": "70",
+            "unit": "%",
+            "label": "Approximate share of the narrowbody fleet still on CFM56 or V2500, June 2025",
+            "source": "Magnetic Group, From CFM56 to LEAP, June 2025",
+            "notes": "06 section 1.2 [F]: around 70% of the global narrowbody fleet still on CFM56/V2500 (June 2025)."
+          },
+          {
+            "value": "+50 to 75",
+            "unit": "%",
+            "label": "Rise in CFM56 repair costs since 2019",
+            "source": "Magnetic Group, From CFM56 to LEAP, June 2025",
+            "notes": "06 section 1.2 [F]: CFM56 repair costs +50 to 75% since 2019."
+          },
+          {
+            "value": "90 to 120",
+            "unit": "days",
+            "label": "Independent benchmark for a CFM56 full overhaul; a light visit about 45 days",
+            "source": "Acumen Aviation, June 2026",
+            "notes": "06 section 1.2 [F]: Acumen turnaround benchmarks, 15 June 2026."
+          }
+        ]
+      },
+      "visitTypes": [
+        {
+          "title": "Performance restoration",
+          "text": "The full visit: the core is opened, exhaust gas temperature margin is restored and life-limited parts are replaced according to the stub-life plan. Acumen benchmarks a CFM56 full overhaul at 90 to 120 days, and Bain puts legacy-engine turnaround times 35 per cent or more above pre-pandemic levels. The workscope agreed before induction decides most of the bill.",
+          "source": "06 section 1.2 (Acumen, June 2026 [F]) and section 1.3 (Bain, July 2024 [F])."
+        },
+        {
+          "title": "Light or hospital visit",
+          "text": "A limited workscope to correct a specific finding, such as a borescope indication or an oil-system fault, without a full restoration. Acumen benchmarks a light CFM56 visit at about 45 days. The risk is scope growth once the engine is on the stand, so every added task is checked against the removal reason and the planning guide.",
+          "source": "06 section 1.2 (Acumen, June 2026 [F])."
+        },
+        {
+          "title": "Life-limited part visit",
+          "text": "A removal timed by life-limited part limits rather than by performance. The decision is which parts to replace now and which stubs to carry to the next visit, set against the aircraft's planned life and the lease return conditions. On a CFM56 this plan is one of the largest levers on cost over the engine's remaining life.",
+          "source": "Qualitative; deliverable taxonomy in 02 section 4 (LLP Back to Birth Trace Audit, Workscope Compilation / Review)."
+        },
+        {
+          "title": "Module swap or engine exchange",
+          "text": "When slots are scarce a shop may offer a module swap or an exchange engine instead of a full visit. It saves time but changes the engine's identity, records and lease position. ACC Aviation reported in 2025 that unexpected module swaps complicate redelivery conditions not drafted for them, so we read the lease before the offer is accepted.",
+          "source": "06 section 1.7 (ACC Aviation, 2025 transitions update [F])."
+        }
+      ],
+      "costDrivers": [
+        {
+          "title": "Life-limited parts",
+          "text": "The life-limited part stack is among the largest lines on a full visit, and IBA reports that shop-visit and life-limited part costs have increased significantly. How many parts are replaced, at which visit and from which source (new, used serviceable or exchanged) is decided in the workscope, not on the invoice.",
+          "source": "06 section 1.5 (IBA engine and lease rate update, H2 2026 [F])."
+        },
+        {
+          "title": "Hot-section material prices",
+          "text": "Magnetic Group put CFM56 hot-section blade prices 30 per cent above 2019 levels in June 2025, with fan blade prices doubled since 2020. Each repair-or-replace call at the table inspection is therefore worth checking against the repair limits in the manual and against approved repair sources before new material is ordered.",
+          "source": "06 section 1.2 (Magnetic Group, June 2025 [F])."
+        },
+        {
+          "title": "Used serviceable material supply",
+          "text": "Bain finds used serviceable material covering up to 30 per cent of part demand at some shops, while Magnetic Group reports teardown part harvesting running about five times below pre-2020 levels. Used material is still a cost lever on the CFM56, but one that needs sourcing, traceability checks and a records audit rather than a default assumption.",
+          "source": "06 section 1.3 (Bain, July 2024 [F]) and section 1.2 (Magnetic Group, June 2025 [F])."
+        },
+        {
+          "title": "Slot timing and stand time",
+          "text": "CFM56-5A and -5B engine-stand utilisation reached 92 per cent in the first half of 2026, up from 77 per cent in 2025, while CFM56-7B project durations fell 17 per cent. Bain reports slot waits two to three months longer than before the pandemic, up to six in some cases. Late slots mean spare-engine cover, paid for by the month.",
+          "source": "06 section 1.2 (Air Cargo Week, EngineStands.com data, 17 July 2026 [F]) and section 1.3 (Bain, July 2024 [F])."
+        }
+      ],
+      "whatWeDo": [
+        {
+          "title": "Shop visit management",
+          "text": "Full or overview management of a CFM56 shop visit: removal reason and technical status review, workscope compilation and review, attendance at the dirty-condition table inspection, pre- and post-repair borescope overview, test-cell overview, invoice review and scrap review with material value extraction.",
+          "serviceSlug": "shop-visit-management"
+        },
+        {
+          "title": "Workscope and removal planning",
+          "text": "Removal timing against life-limited part limits, exhaust gas temperature margin and slot availability; workscope compilation and review against the workscope planning guide and the lease; maintenance cost forecasting for the CFM56 fleet.",
+          "serviceSlug": "workscope-and-removal-planning"
+        },
+        {
+          "title": "Lease return and asset management",
+          "text": "Redelivery support on the lessee or lessor side, maintenance reserve calculations and reserve claim analysis, LLP back-to-birth trace audits and post-shop-visit documentation audits, so a CFM56 returns with records that match its physical state.",
+          "serviceSlug": "lease-return-and-asset-management"
+        },
+        {
+          "title": "Contracts, MRO and supply chain",
+          "text": "Engine overhaul and repair contract negotiation, support with material sourcing including used serviceable material, warranty management and engine overhaul and repair invoice review against the agreed workscope.",
+          "serviceSlug": "contracts-mro-and-supply-chain"
+        },
+        {
+          "title": "Predictive maintenance and analytics",
+          "text": "Fleet ECM and EHM monitoring programmes, engine on-wing performance review, on-wing troubleshooting advisory, borescope video analysis and test-cell result analysis: an independent read of the data before a removal is decided.",
+          "serviceSlug": "predictive-maintenance-and-analytics"
+        },
+        {
+          "title": "Technical due diligence",
+          "text": "Engine evaluation and selection, technical documentation audits and engine teardown valuations for buyers, lenders and investors looking at CFM56-powered aircraft or engine-only deals.",
+          "serviceSlug": "technical-due-diligence"
+        }
+      ],
+      "faq": [
+        {
+          "q": "How much does a CFM56 shop visit cost?",
+          "a": "A performance restoration on a CFM56-5B or -7B typically costs several million US dollars, and the figure depends on the workscope, the life-limited parts replaced and the material sources. Magnetic Group reports CFM56 repair costs up 50 to 75 per cent since 2019. We do not publish vendor price ranges; we review your shop's quote line by line.",
+          "source": "06 section 1.2: Magnetic Group [F]; the phrase 'typically several million US dollars per visit' is the wording 06 section 1.2 permits; vendor ranges excluded per 06 section 5.2."
+        },
+        {
+          "q": "How long does a CFM56 shop visit take in 2026?",
+          "a": "Acumen's independent benchmark is 90 to 120 days for a full overhaul and about 45 days for a light visit. Bain puts legacy-engine turnaround times 35 per cent or more above pre-pandemic levels, with slot waits two to three months longer. Plan the slot at removal planning, not at removal.",
+          "source": "06 section 1.2 (Acumen, June 2026 [F]) and section 1.3 (Bain, July 2024 [F])."
+        },
+        {
+          "q": "Do you cover the CFM56-3 as well as the -5 and -7?",
+          "a": "Yes. The CFM56-3 on the Boeing 737 Classic, the CFM56-5 on the Airbus A320 family and A340 and the CFM56-7 on the 737 Next Generation (737NG) are all covered, for shop visits, records audits and transitions.",
+          "source": "02 section 4 (models); applications from the CFM56 encyclopaedia entry (URL in sources)."
+        },
+        {
+          "q": "Can you source a CFM56 engine for us?",
+          "a": "Yes, through our Assets line, which is kept separate from advisory work. When we broker an engine we say so, and an advisory client is never offered an engine we are marketing without that disclosure.",
+          "source": "01 section 3 and 4.3 (CFM56-3B2, -3C1 and -7B26 engines offered for sale in 2026); 07 section 2.3 option 1 (Advisory and Assets lines with disclosure); wording aligned with site.json footer disclosure."
+        }
+      ],
+      "image": {
+        "src": "fan-macro",
+        "alt": "Close view of turbofan fan blades and spinner",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Send us a workscope", "href": "/contact#workscope", "kind": "secondary" },
+      "notes": "The cta object repeats the site-wide secondary call to action (07 section 3 names the workscope upload as the primary action for engine-family visitors); the route currently renders the closing band with both fixed labels."
+    },
+    {
+      "slug": "leap",
+      "name": "LEAP",
+      "seoTitle": "LEAP-1A and LEAP-1B shop visits and durability kits | Flight Hour Solution",
+      "metaDescription": "Independent LEAP-1A, -1B and -1C workscope and shop visit management: durability kit embodiment, LLP sequencing, contract review and invoice reconciliation.",
+      "keywords": [
+        "LEAP-1A shop visit cost",
+        "LEAP HPT durability kit",
+        "LEAP-1B durability kit embodiment",
+        "LEAP workscope",
+        "LEAP LLP sequencing",
+        "engine shop visit management"
+      ],
+      "models": ["LEAP-1A", "LEAP-1B", "LEAP-1C"],
+      "context": {
+        "title": "The new generation, with durability upgrades",
+        "text": "The LEAP powers the Airbus A320neo family, Boeing 737 MAX and COMAC C919, and its shop-visit pattern is still forming. CFM has a reverse-bleed fix for LEAP-1A fuel-nozzle coking and certified a LEAP-1B high-pressure turbine durability kit in 2026; new-generation turnaround times are 150 per cent or more above pre-pandemic. We manage LEAP-1A, -1B and -1C workscopes and embodiment decisions.",
+        "source": "Applications: GE Aerospace LEAP page and the LEAP encyclopaedia entry (URLs in sources). Durability programmes: 06 section 1.4, IBA H2 2026 [F]. Turnaround times: 06 section 1.3, Bain, July 2024 [F].",
+        "stats": [
+          {
+            "value": "+150",
+            "unit": "%",
+            "label": "Turnaround-time increase for new-generation engines against pre-pandemic levels, or more",
+            "source": "Bain & Company, July 2024",
+            "notes": "06 section 1.3 [F]: TAT +150% or more for new-generation engines."
+          },
+          {
+            "value": "71",
+            "unit": "%",
+            "label": "LEAP-1A engine-stand utilisation in the first half of 2026; project durations down 8 per cent, LEAP-1B up 5 per cent",
+            "source": "EngineStands.com data reported by Air Cargo Week, July 2026",
+            "notes": "06 section 1.2 [F]: LEAP-1A stand utilisation 71%, durations minus 8%; LEAP-1B durations plus 5% (17 July 2026)."
+          },
+          {
+            "value": "2026",
+            "unit": "",
+            "label": "LEAP-1B high-pressure turbine durability kit certified; LEAP-1A fuel-nozzle coking addressed by a reverse-bleed fix",
+            "source": "IBA engine and lease rate update, H2 2026",
+            "notes": "06 section 1.4 [F]: IBA view. IBA says H1 2026; a FlightGlobal snippet [S] says FAA certification on 18 July 2026, hence 'in 2026'."
+          }
+        ]
+      },
+      "visitTypes": [
+        {
+          "title": "Durability upgrade embodiment",
+          "text": "A visit whose workscope is driven by embodying durability hardware: the reverse-bleed system on the LEAP-1A or the high-pressure turbine kit on the LEAP-1B. The question is whether to combine it with a restoration or run a limited workscope, and the answer depends on the engine's trend data, remaining life-limited part life and the operating environment.",
+          "source": "06 section 1.4 (IBA H2 2026 [F]); the decision framing is the copy implication in 06 section 1.4."
+        },
+        {
+          "title": "First performance restoration",
+          "text": "The first full restorations on early LEAP cohorts set the pattern for the fleet. The workscope planning guide is younger than the CFM56's, so each revision is compared with the shop's proposal before induction. Bain puts new-generation turnaround times 150 per cent or more above pre-pandemic levels, so the slot is booked early.",
+          "source": "06 section 1.3 (Bain, July 2024 [F])."
+        },
+        {
+          "title": "Hospital or limited visit",
+          "text": "A short visit to correct a specific finding, for example a fuel-nozzle or hot-section indication from borescope inspection, without opening the whole core or disturbing life-limited parts. When slots are scarce a limited workscope that returns the engine to wing quickly can be the better economic answer, provided the removal reason is fully addressed.",
+          "source": "Qualitative; slot scarcity from 06 section 1.3 (Bain [F])."
+        },
+        {
+          "title": "Module exchange",
+          "text": "The OEM network or a shop may propose a module exchange to cut turnaround time. It changes which serial numbers and life-limited parts leave with the engine, so the lease, the maintenance reserves and the records must be re-read first. ACC Aviation reported in 2025 that unexpected module swaps complicate redelivery conditions not drafted for them.",
+          "source": "06 section 1.7 (ACC Aviation, 2025 transitions update [F])."
+        }
+      ],
+      "costDrivers": [
+        {
+          "title": "Durability hardware and its timing",
+          "text": "Embodying a durability kit costs money and stand time now against time on wing later. The right moment differs by engine: trend data, remaining life-limited part life, the next planned removal and the contract terms all move it. We make the case per engine, in writing, rather than accepting a fleet-wide default.",
+          "source": "Qualitative; programme facts in 06 section 1.4 (IBA H2 2026 [F])."
+        },
+        {
+          "title": "Life-limited parts and sequencing",
+          "text": "IBA reports that shop-visit and life-limited part costs have increased significantly. On a LEAP the sequencing question is sharper: which parts are replaced at the first restoration decides the scope and timing of the second. We do not quote vendor list prices; we build the stub-life plan from the engine's own records.",
+          "source": "06 section 1.5 (IBA H2 2026 [F]); vendor LLP list prices excluded per 06 section 5.2."
+        },
+        {
+          "title": "Turnaround time and slot scarcity",
+          "text": "Bain expects engine maintenance demand to peak in 2026 and capacity to stay constrained to the end of the decade, with new-generation turnaround times 150 per cent or more above pre-pandemic levels and slot waits two to three months longer. LEAP-1B project durations rose 5 per cent in the first half of 2026. Every extra week is spare-engine cost.",
+          "source": "06 section 1.3 (Bain, July 2024 [F]) and section 1.2 (Air Cargo Week, EngineStands.com data, July 2026 [F])."
+        },
+        {
+          "title": "Contract structure",
+          "text": "Whether the engine sits under a rate-per-flight-hour agreement or is maintained on a time-and-material basis decides who proposes the workscope, who pays for durability hardware and what the operator may challenge. The contract is read before the visit, and the invoice is reconciled against both the contract and the agreed workscope.",
+          "source": "Qualitative; contract types from 06 section 3.1 (power by the hour versus time and material) and 02 section 4 (invoice review, contract negotiation)."
+        }
+      ],
+      "whatWeDo": [
+        {
+          "title": "Workscope and removal planning",
+          "text": "Embodiment decisions for durability hardware, life-limited part sequencing for the first and second visits, removal timing against trend data and slot lead times, and workscope review against the current planning guide revision.",
+          "serviceSlug": "workscope-and-removal-planning"
+        },
+        {
+          "title": "Shop visit management",
+          "text": "Full or overview management of a LEAP visit: workscope agreement, attendance at the table inspection, borescope and test-cell overview, repair and material approvals, invoice review and a post-shop-visit documentation audit.",
+          "serviceSlug": "shop-visit-management"
+        },
+        {
+          "title": "Contracts, MRO and supply chain",
+          "text": "Review and negotiation of rate-per-flight-hour and time-and-material agreements, warranty management, material sourcing support and invoice reconciliation against the contract and the agreed workscope.",
+          "serviceSlug": "contracts-mro-and-supply-chain"
+        },
+        {
+          "title": "Predictive maintenance and analytics",
+          "text": "An independent read of ECM and EHM trends, borescope video analysis and on-wing performance review, so that a removal or an embodiment decision rests on the engine's own data rather than on a fleet campaign date.",
+          "serviceSlug": "predictive-maintenance-and-analytics"
+        },
+        {
+          "title": "Lease return and asset management",
+          "text": "Technical review of new and existing leases for LEAP-powered aircraft, so that early shop visits, durability upgrades and module exchanges are covered by the redelivery conditions and the maintenance reserve mechanism. ACC Aviation reported in 2025 that older lease language does not anticipate them.",
+          "serviceSlug": "lease-return-and-asset-management",
+          "source": "06 section 1.7 (ACC Aviation [F])."
+        },
+        {
+          "title": "Technical due diligence",
+          "text": "Engine evaluation, records review and shop-visit forecasts for lenders and investors in LEAP-powered aircraft, where IBA notes values benefiting from product improvements and where the maintenance status decides the exposure.",
+          "serviceSlug": "technical-due-diligence",
+          "source": "06 section 1.4 (IBA H2 2026 [F]: LEAP values benefiting from product improvements)."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Should we embody the LEAP durability kit at the next shop visit?",
+          "a": "Often, but not by default. The decision depends on the engine's operating environment, its trend data, remaining life-limited part life, the next planned removal and who pays under the contract. We assess it per engine and put the case in writing.",
+          "source": "Advisory position; programme facts in 06 section 1.4 (IBA H2 2026 [F])."
+        },
+        {
+          "q": "Why do LEAP shop visits take longer than CFM56 visits?",
+          "a": "Bain puts new-generation turnaround times 150 per cent or more above pre-pandemic levels, against 35 per cent or more for legacy engines, with capacity constrained to the end of the decade. EngineStands.com data reported by Air Cargo Week show LEAP-1B project durations up 5 per cent in the first half of 2026, while LEAP-1A durations fell 8 per cent.",
+          "source": "06 section 1.3 (Bain, July 2024 [F]) and section 1.2 (Air Cargo Week, July 2026 [F])."
+        },
+        {
+          "q": "Do you cover the LEAP-1C?",
+          "a": "Yes. The LEAP-1C on the COMAC C919 is covered with the same method as the LEAP-1A and -1B: workscope review, shop visit management, records audits and contract review.",
+          "source": "02 section 4 (models); application from the GE Aerospace LEAP page and the LEAP encyclopaedia entry (URLs in sources)."
+        },
+        {
+          "q": "What should a new lease say about LEAP shop visits?",
+          "a": "It should define early shop visits, durability upgrades and module exchanges, and say how each affects redelivery conditions and maintenance reserves. ACC Aviation reported in 2025 that reliability issues, early shop visits and unexpected module swaps are complicating redelivery conditions that were not drafted for them. We review the technical schedules before signature.",
+          "source": "06 section 1.7 (ACC Aviation [F])."
+        }
+      ],
+      "image": {
+        "src": "cross-section",
+        "alt": "Line drawing of a turbofan engine in cross section",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Send us a workscope", "href": "/contact#workscope", "kind": "secondary" }
+    },
+    {
+      "slug": "v2500",
+      "name": "V2500",
+      "seoTitle": "V2500 shop visit management and cost drivers | Flight Hour Solution",
+      "metaDescription": "Independent V2500-A1, -A5 and -D5 shop visit management: workscope depth against remaining life, LLP planning, redelivery support and invoice review, from Zug.",
+      "keywords": [
+        "V2500 shop visit cost",
+        "V2500-A5 workscope",
+        "V2500 LLP stub life",
+        "V2500 lease return",
+        "green time engine strategy",
+        "engine shop visit management"
+      ],
+      "models": ["V2500-A1", "V2500-A5", "V2500-D5"],
+      "context": {
+        "title": "Busy shops, softer values in 2026",
+        "text": "The V2500 powers the Airbus A320ceo family and the McDonnell Douglas MD-90, and with the CFM56 it still sits on around 70 per cent of the narrowbody fleet. Shop project durations rose 9 per cent in the first half of 2026 while V2500-A5 prices fell on extra feedstock. We manage V2500-A1, -A5 and -D5 visits, transitions and records.",
+        "source": "Applications: V2500 encyclopaedia entry (URL in sources). Fleet share: 06 section 1.2, Magnetic Group, June 2025 [F]. Durations: 06 section 1.2, Air Cargo Week, July 2026 [F]. Prices: 06 section 1.5, IBA H2 2026 [F].",
+        "stats": [
+          {
+            "value": "+9",
+            "unit": "%",
+            "label": "Change in V2500 shop project durations in the first half of 2026, with engine-stand utilisation at 76 per cent",
+            "source": "EngineStands.com data reported by Air Cargo Week, July 2026",
+            "notes": "06 section 1.2 [F]: V2500 stand utilisation 76%, project durations plus 9% (17 July 2026)."
+          },
+          {
+            "value": "60 to 70",
+            "unit": "days",
+            "label": "Independent benchmark for a V2500 full overhaul; a light visit about 45 days",
+            "source": "Acumen Aviation, June 2026",
+            "notes": "06 section 1.2 [F]: Acumen turnaround benchmarks, 15 June 2026."
+          },
+          {
+            "value": "70",
+            "unit": "%",
+            "label": "Approximate share of the narrowbody fleet still on CFM56 or V2500, June 2025",
+            "source": "Magnetic Group, From CFM56 to LEAP, June 2025",
+            "notes": "06 section 1.2 [F]."
+          }
+        ]
+      },
+      "visitTypes": [
+        {
+          "title": "Performance restoration",
+          "text": "The full visit restores exhaust gas temperature margin and replaces life-limited parts to the agreed stub-life plan. Acumen benchmarks a V2500 full overhaul at 60 to 70 days, shorter than the CFM56, but EngineStands.com data show V2500 project durations rising 9 per cent in the first half of 2026. The workscope depth is set against the engine's remaining economic life.",
+          "source": "06 section 1.2 (Acumen, June 2026 [F]; Air Cargo Week, July 2026 [F])."
+        },
+        {
+          "title": "Light or hospital visit",
+          "text": "A limited workscope for a specific finding, benchmarked by Acumen at about 45 days. On a V2500 approaching the end of a lease or of its economic life, a light visit that carries the engine to redelivery or to a planned retirement can be worth far more than a full restoration; the arithmetic is done before the shop is briefed.",
+          "source": "06 section 1.2 (Acumen, June 2026 [F])."
+        },
+        {
+          "title": "Life-limited part visit",
+          "text": "A removal driven by life-limited part limits. With V2500-A5 values softening in 2026, the choice between a full life-limited part replacement, a partial one and a green-time engine is an asset decision as much as a maintenance one, and it is made with the lessor, the lease terms and the fleet plan in view.",
+          "source": "06 section 1.5 (IBA H2 2026 [F]: V2500-A5 prices fell on extra feedstock)."
+        },
+        {
+          "title": "Transition visit before redelivery",
+          "text": "A visit performed to meet redelivery conditions rather than because the engine needs it operationally. ACC Aviation reported that in 2025 transitions the main problems remained MRO slots and correct documentation, so the slot and the records pack are planned together, and the workscope is written against the lease's return conditions rather than the shop's standard scope.",
+          "source": "06 section 1.7 (ACC Aviation [F])."
+        }
+      ],
+      "costDrivers": [
+        {
+          "title": "Workscope depth against remaining life",
+          "text": "IBA reported in H2 2026 that V2500-A5 prices fell on extra feedstock from the Spirit Airlines bankruptcy and weaker ACMI demand. When the asset is worth less, a full restoration must earn its cost within the engine's remaining life; Acumen notes that aircraft with serviceable engines and strong records may be worth more than similar aircraft facing engine uncertainty.",
+          "source": "06 section 1.5 (IBA H2 2026 [F]; Acumen, June 2026 [F])."
+        },
+        {
+          "title": "Life-limited parts and stub lives",
+          "text": "IBA reports that shop-visit and life-limited part costs have increased significantly. On the V2500 the stub-life plan decides whether the next visit is a full or a partial life-limited part replacement, and at redelivery it decides the compensation owed under the lease. We plan it from the back-to-birth records, not from the shop's default.",
+          "source": "06 section 1.5 (IBA H2 2026 [F]); redelivery mechanics from 06 section 1.7 (Acumen [F])."
+        },
+        {
+          "title": "Slot timing and turnaround",
+          "text": "V2500 project durations rose 9 per cent in the first half of 2026 with engine-stand utilisation at 76 per cent, and Bain reports slot waits two to three months longer than before the pandemic, up to six in some cases. A late slot means spare-engine or green-time cover, so the slot is secured at removal planning.",
+          "source": "06 section 1.2 (Air Cargo Week, July 2026 [F]) and section 1.3 (Bain, July 2024 [F])."
+        },
+        {
+          "title": "Material source: new, used or repaired",
+          "text": "Bain finds used serviceable material covering up to 30 per cent of part demand at some shops, while OEM parts demand outpaces supply by 10 to 20 per cent. Each repair-or-replace call at the table inspection is checked against the manual limits, approved repairs and traceable used material before new parts are ordered.",
+          "source": "06 section 1.3 (Bain, July 2024 [F])."
+        }
+      ],
+      "whatWeDo": [
+        {
+          "title": "Shop visit management",
+          "text": "Full or overview management of a V2500 visit: removal reason review, workscope compilation and review, dirty-condition table inspection, borescope and test-cell overview, invoice review and scrap review with material value extraction.",
+          "serviceSlug": "shop-visit-management"
+        },
+        {
+          "title": "Workscope and removal planning",
+          "text": "Removal timing against life-limited part limits and exhaust gas temperature margin, workscope depth set against the engine's remaining economic life and the lease, and maintenance cost forecasting for the V2500 fleet.",
+          "serviceSlug": "workscope-and-removal-planning"
+        },
+        {
+          "title": "Lease return and asset management",
+          "text": "Redelivery support on either side of the lease, maintenance reserve calculations and reserve claim analysis, LLP back-to-birth trace audits and post-shop-visit documentation audits for V2500 engines moving between operators.",
+          "serviceSlug": "lease-return-and-asset-management"
+        },
+        {
+          "title": "Technical due diligence",
+          "text": "Engine evaluation and selection, records review and teardown valuations for buyers, lenders and investors, with the 2026 value picture for the V2500-A5 read from independent sources rather than from the seller.",
+          "serviceSlug": "technical-due-diligence"
+        },
+        {
+          "title": "Contracts, MRO and supply chain",
+          "text": "Engine overhaul and repair contract negotiation, purchase and lease contract negotiation support, material sourcing support and warranty management, with invoice review against the agreed workscope.",
+          "serviceSlug": "contracts-mro-and-supply-chain"
+        },
+        {
+          "title": "Predictive maintenance and analytics",
+          "text": "Fleet ECM and EHM monitoring programmes, on-wing performance review, borescope video analysis and test-cell result analysis, giving an independent second opinion before a V2500 is pulled.",
+          "serviceSlug": "predictive-maintenance-and-analytics"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is a full performance restoration still worth it on a V2500-A5?",
+          "a": "It depends on remaining life-limited part life, the lease term, the aircraft's future in the fleet and the engine's market value. IBA reported in H2 2026 that V2500-A5 prices fell on extra feedstock, which changes the arithmetic for older engines. We run that arithmetic per engine before the workscope is agreed.",
+          "source": "06 section 1.5 (IBA H2 2026 [F])."
+        },
+        {
+          "q": "How long does a V2500 shop visit take in 2026?",
+          "a": "Acumen's independent benchmark is 60 to 70 days for a full overhaul and about 45 days for a light visit. EngineStands.com data reported by Air Cargo Week show V2500 project durations up 9 per cent in the first half of 2026, so the slot should be secured at removal planning.",
+          "source": "06 section 1.2 (Acumen, June 2026 [F]; Air Cargo Week, July 2026 [F])."
+        },
+        {
+          "q": "Do you handle V2500 redeliveries?",
+          "a": "Yes, on the lessee or the lessor side, or between the two. The work covers redelivery conditions, maintenance reserve claims, LLP back-to-birth records and the shop visit itself. ACC Aviation reported that MRO slots and correct documentation remained the main problems in 2025 transitions.",
+          "source": "02 section 4 (deliverables); 06 section 1.7 (ACC Aviation [F])."
+        },
+        {
+          "q": "Which V2500 models do you cover?",
+          "a": "The V2500-A1 and V2500-A5 on the Airbus A320ceo family and the V2500-D5 on the McDonnell Douglas MD-90, for shop visits, records audits, valuations and transitions.",
+          "source": "02 section 4 (models); applications from the V2500 encyclopaedia entry (URL in sources)."
+        }
+      ],
+      "image": {
+        "src": "test-cell",
+        "alt": "Turbofan engine mounted in a test cell",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Send us a workscope", "href": "/contact#workscope", "kind": "secondary" }
+    },
+    {
+      "slug": "pw4000",
+      "name": "PW4000",
+      "seoTitle": "PW4000 shop visit management and valuation | Flight Hour Solution",
+      "metaDescription": "Independent PW4000-94, -100 and -112 shop visit management, teardown valuations, LLP planning against retirement dates and records audits for widebody fleets.",
+      "keywords": [
+        "PW4000 shop visit cost",
+        "PW4000 workscope",
+        "PW4000-100 A330 engine",
+        "engine teardown valuation",
+        "widebody engine shop visit",
+        "engine shop visit management"
+      ],
+      "models": ["PW4000-94", "PW4000-100", "PW4000-112"],
+      "context": {
+        "title": "Few visits, very large tickets",
+        "text": "The PW4000 powers widebody and freighter fleets: the 94-inch fan on the Boeing 747-400, 767 and MD-11, the 100-inch on the Airbus A330ceo and the 112-inch on the 777 Classic. A full overhaul runs 120 days or more, and PW4000-100 values have grown strongly since 2023. We manage PW4000-94, -100 and -112 visits, records and transitions.",
+        "source": "Applications: PW4000 encyclopaedia entry (URL in sources). Overhaul duration: 06 section 1.2, Acumen, June 2026 [F]. Values: 06 section 1.5, IBA H2 2026 [F].",
+        "stats": [
+          {
+            "value": "120+",
+            "unit": "days",
+            "label": "Independent benchmark for a PW4000 full overhaul; a light visit about 60 days",
+            "source": "Acumen Aviation, June 2026",
+            "notes": "06 section 1.2 [F]: Acumen turnaround benchmarks, 15 June 2026."
+          },
+          {
+            "value": "+35",
+            "unit": "%",
+            "label": "Turnaround-time increase for legacy engines against pre-pandemic levels, or more",
+            "source": "Bain & Company, July 2024",
+            "notes": "06 section 1.3 [F]."
+          },
+          {
+            "value": "17,000",
+            "unit": "aircraft",
+            "label": "Unfilled aircraft orders at the start of 2026, with production 24 per cent below 2019",
+            "source": "Oliver Wyman, Global Fleet and MRO Market Forecast 2026 to 2036",
+            "notes": "06 section 1.6 [F]: 17,000 unfilled orders at the start of 2026; production 24% below 2019 at end-2025."
+          }
+        ]
+      },
+      "visitTypes": [
+        {
+          "title": "Performance restoration",
+          "text": "The full visit on a large engine: core restoration, life-limited part replacement to plan and, often, repairs with long lead times. Acumen benchmarks a PW4000 full overhaul at 120 days or more, and Bain puts legacy turnaround times 35 per cent or more above pre-pandemic levels, so the removal date, transport and slot are planned as one schedule.",
+          "source": "06 section 1.2 (Acumen, June 2026 [F]) and section 1.3 (Bain, July 2024 [F])."
+        },
+        {
+          "title": "Light or hospital visit",
+          "text": "A limited workscope for a specific finding, benchmarked by Acumen at about 60 days on the PW4000. For an engine on an aircraft with a known retirement date, a light visit that bridges to that date is frequently the right answer, and the workscope is written to do exactly that and no more.",
+          "source": "06 section 1.2 (Acumen, June 2026 [F])."
+        },
+        {
+          "title": "Life-extension visit on an ageing fleet",
+          "text": "With 17,000 unfilled aircraft orders at the start of 2026 and production 24 per cent below 2019 (Oliver Wyman), older widebodies fly longer than planned, while Bain expects engine capacity to stay constrained to the end of the decade. A life-extension visit replaces only the life-limited parts and repairs needed to reach the new retirement date.",
+          "source": "06 section 1.6 (Oliver Wyman, February 2026 [F]) and section 1.3 (Bain, July 2024 [F])."
+        },
+        {
+          "title": "No visit: teardown or part-out",
+          "text": "Sometimes the right visit is none. For an older PW4000-94 the alternative to a restoration is a teardown valuation: what the modules, life-limited part stubs and rotables are worth as material against the cost and remaining life of the overhauled engine. We prepare that comparison before a slot is booked.",
+          "source": "02 section 4 (Engine Teardown Valuations, Scrap Review and Material Value Extraction)."
+        }
+      ],
+      "costDrivers": [
+        {
+          "title": "Workscope size on a large engine",
+          "text": "A widebody engine has large, expensive parts, long repair cycles and few alternative sources, so a workscope that opens one module too many costs more than it would on a narrowbody. The workscope is set against the removal reason, the planning guide and the aircraft's remaining life before induction, and every addition needs a finding behind it.",
+          "source": "Qualitative; deliverables in 02 section 4."
+        },
+        {
+          "title": "Life-limited parts against retirement dates",
+          "text": "IBA reports that shop-visit and life-limited part costs have increased significantly, and that PW4000-100 values have grown strongly since 2023. The life-limited part plan is therefore set against the aircraft's planned retirement and the lease: replacing a full stack on an engine with four years left is a decision, not a default.",
+          "source": "06 section 1.5 (IBA H2 2026 [F])."
+        },
+        {
+          "title": "Turnaround, transport and slot",
+          "text": "Acumen benchmarks a PW4000 full overhaul at 120 days or more, and Bain puts legacy turnaround times 35 per cent or more above pre-pandemic levels with slot waits two to three months longer. Air Cargo Week reports widebody demand for the Trent 700 and CF6-80E concentrating in a few specialised shops, with longer transits; PW4000 planning assumes the same.",
+          "source": "06 section 1.2 (Acumen, June 2026 [F]; Air Cargo Week, July 2026 [F]) and section 1.3 (Bain, July 2024 [F])."
+        },
+        {
+          "title": "Repair versus replace at the table",
+          "text": "On a PW4000 the repair-or-replace call on a single high-value part can move the invoice by more than a whole workscope item on a narrowbody. Each call is checked against the manual limits and approved repair sources, scrap is reviewed for residual material value, and used serviceable material is accepted only with complete traceability.",
+          "source": "Qualitative; deliverables in 02 section 4 (Dirty Condition / Table Inspection, Scrap Review and Material Value Extraction)."
+        }
+      ],
+      "whatWeDo": [
+        {
+          "title": "Shop visit management",
+          "text": "Full or overview management of a PW4000 visit: removal reason review, workscope compilation and review, attendance at the table inspection, test-cell overview, invoice review and scrap review with material value extraction on high-value parts.",
+          "serviceSlug": "shop-visit-management"
+        },
+        {
+          "title": "Technical due diligence",
+          "text": "Engine teardown valuations, engine evaluation and selection, technical documentation audits and records review for buyers, lenders and investors in older widebodies and freighters, where Acumen notes an aircraft can no longer be valued by model, age and lease status alone.",
+          "serviceSlug": "technical-due-diligence",
+          "source": "06 section 1.5 (Acumen, June 2026 [F])."
+        },
+        {
+          "title": "Workscope and removal planning",
+          "text": "Removal timing and life-limited part planning against the aircraft's retirement date, workscope depth set against remaining life, and maintenance cost forecasting for small PW4000 fleets where one visit is a large share of the year's budget.",
+          "serviceSlug": "workscope-and-removal-planning"
+        },
+        {
+          "title": "Lease return and asset management",
+          "text": "Redelivery support, maintenance reserve calculations and reserve claim analysis, LLP back-to-birth trace audits and post-shop-visit documentation audits for PW4000 engines at lease end or at sale.",
+          "serviceSlug": "lease-return-and-asset-management"
+        },
+        {
+          "title": "Contracts, MRO and supply chain",
+          "text": "Engine overhaul and repair contract negotiation, material sourcing support, warranty management, insurance claims support and invoice review against the agreed workscope.",
+          "serviceSlug": "contracts-mro-and-supply-chain"
+        },
+        {
+          "title": "Military and government",
+          "text": "The PW4000-94 also powers the Boeing KC-46A tanker. For government and military operators we provide independent oversight of shop visits, workscopes and invoices where the OEM or a single contractor is the only supplier.",
+          "serviceSlug": "military-and-government",
+          "source": "KC-46A application from the PW4000 encyclopaedia entry (URL in sources); positioning from 06 section 5.1, item 10."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is a full shop visit still worth it on an older PW4000?",
+          "a": "Not always. The answer depends on remaining life-limited part life, the aircraft's retirement date, the lease and what the engine would be worth as material; a teardown valuation sometimes beats a restoration. We prepare that comparison before a slot is booked.",
+          "source": "Advisory position; deliverables in 02 section 4."
+        },
+        {
+          "q": "How long does a PW4000 shop visit take?",
+          "a": "Acumen's independent benchmark is 120 days or more for a full overhaul and about 60 days for a light visit. Bain puts legacy-engine turnaround times 35 per cent or more above pre-pandemic levels, with slot waits two to three months longer and up to six in some cases.",
+          "source": "06 section 1.2 (Acumen, June 2026 [F]) and section 1.3 (Bain, July 2024 [F])."
+        },
+        {
+          "q": "Which PW4000 models and aircraft do you cover?",
+          "a": "The PW4000-94 on the Boeing 747-400, 767 and MD-11 and the Airbus A300-600 and A310, the PW4000-100 on the Airbus A330ceo and the PW4000-112 on the Boeing 777 Classic, for shop visits, valuations, records audits and transitions.",
+          "source": "02 section 4 (models); applications from the PW4000 encyclopaedia entry (URL in sources)."
+        },
+        {
+          "q": "Can you value or audit a PW4000 before a purchase or redelivery?",
+          "a": "Yes. We provide engine evaluation and selection, technical documentation audits, LLP back-to-birth trace audits and engine teardown valuations, and we attend the borescope inspection or the shop visit if the deal needs it.",
+          "source": "02 section 4 (deliverables)."
+        }
+      ],
+      "image": {
+        "src": "engine-cradle",
+        "alt": "Covered turbofan engine secured in a shipping cradle",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Send us a workscope", "href": "/contact#workscope", "kind": "secondary" }
+    },
+    {
+      "slug": "apu-and-turboprop",
+      "name": "APU and turboprop",
+      "seoTitle": "APU and turboprop shop visit management | Flight Hour Solution",
+      "metaDescription": "Independent shop visit management for Honeywell 131-9 APUs, TPE331/T76 and TFE731: workscope review, exchange agreements, invoice review and records audits.",
+      "keywords": [
+        "APU shop visit management",
+        "Honeywell 131-9 APU overhaul",
+        "TPE331 overhaul workscope",
+        "TFE731 shop visit",
+        "APU exchange agreement review",
+        "engine shop visit management"
+      ],
+      "models": ["Honeywell APU 131-9A", "Honeywell APU 131-9B", "Honeywell APU 131-9D", "TPE331/T76", "TFE731"],
+      "context": {
+        "title": "Smaller tickets, same discipline",
+        "text": "Honeywell 131-9 APUs, the TPE331 (T76 in military service) and the TFE731 get the same workscope, invoice and records discipline as a large turbofan, at a smaller ticket. Honeywell counts more than 13,000 TPE331 engines delivered in 18 models and 106 configurations, so no two workscopes look alike. We manage 131-9A, -9B and -9D, TPE331/T76 and TFE731 visits and records.",
+        "source": "Models: 02 section 4. T76 designation: TPE331 encyclopaedia entry (URL in sources). TPE331 figures: Honeywell Aerospace TPE331 page, read 19 September 2026 (URL in sources).",
+        "stats": [
+          {
+            "value": "36,000+",
+            "unit": "APUs",
+            "label": "Honeywell auxiliary power units in service, from more than 95,000 produced",
+            "source": "Honeywell Aerospace, auxiliary power units overview, read 19 September 2026",
+            "notes": "Not from 06; OEM product figure, URL in the page-level sources. Undated on the Honeywell page."
+          },
+          {
+            "value": "100 million+",
+            "unit": "hours",
+            "label": "In-service hours of the Honeywell 131 APU family",
+            "source": "Honeywell Aerospace, auxiliary power units overview, read 19 September 2026",
+            "notes": "Not from 06; OEM product figure, URL in the page-level sources. Undated on the Honeywell page."
+          },
+          {
+            "value": "13,000+",
+            "unit": "engines",
+            "label": "TPE331 engines delivered, in 18 models and 106 configurations, with more than 122 million flight hours",
+            "source": "Honeywell Aerospace, TPE331 turboprop engine page, read 19 September 2026",
+            "notes": "Not from 06; OEM product figure, URL in the page-level sources. Undated on the Honeywell page."
+          }
+        ]
+      },
+      "visitTypes": [
+        {
+          "title": "APU hot-section inspection or overhaul",
+          "text": "APU workscopes turn on hot-section condition, the operator's APU utilisation and the shop's findings at disassembly. A hot-section inspection with limited parts replacement and a full overhaul with gearbox and load-compressor work are different purchases, and the removal reason and borescope findings decide which one the unit actually needs.",
+          "source": "Qualitative; load compressor named on the Honeywell APU overview (131-9A load compressor seal upgrade)."
+        },
+        {
+          "title": "Turboprop hot-section inspection or overhaul",
+          "text": "On the TPE331 and TFE731 the choice is between a hot-section inspection between overhauls and a full overhaul with gearbox, life-limited part and accessory work. With 18 TPE331 models in 106 configurations, the workscope must match the exact configuration and the operating profile: agricultural, regional airline, business and military use wear an engine differently.",
+          "source": "Honeywell Aerospace TPE331 page (18 models, 106 configurations; military, regional airline, agricultural and general aviation applications); TFE731 business-jet use from the TFE731 encyclopaedia entry (URLs in sources)."
+        },
+        {
+          "title": "Unscheduled repair after a finding or event",
+          "text": "A foreign object, an overtemperature event, a chip-detector warning or an oil leak sends a unit to the shop early. The workscope should address the event and the findings it caused, not become a full overhaul by default, and the insurance or warranty position is checked before the work order is signed.",
+          "source": "Qualitative; Insurance Claims Support and Warranty Management in 02 section 4."
+        },
+        {
+          "title": "Exchange or rental unit",
+          "text": "APUs and small engines are often exchanged or rented rather than waited for. The exchange fee, the core return condition and the charges for a core that arrives worse than declared decide the real cost, so the unit is inspected and documented before it ships and the exchange agreement is read line by line.",
+          "source": "Qualitative; contract review deliverables in 02 section 4."
+        }
+      ],
+      "costDrivers": [
+        {
+          "title": "Scope growth on a small ticket",
+          "text": "On an APU or a small engine, each added task is a larger share of the bill than on a turbofan, and the visit attracts less management attention. The same rule applies: every task in the shop's proposal is traced to a finding, a manual requirement or the operator's own decision, and the invoice is reconciled against that list.",
+          "source": "Qualitative; Workscope Compilation / Review and Invoice Review in 02 section 4."
+        },
+        {
+          "title": "Exchange against repair economics",
+          "text": "An exchange unit costs a fee plus the difference between the declared and the actual core condition; a repair costs the invoice plus the downtime. Which is cheaper depends on the unit's life-limited part status, the fleet's spare position and the lease. The comparison is made before the shop is chosen, not after the invoice arrives.",
+          "source": "Qualitative."
+        },
+        {
+          "title": "Parts pricing and repair development",
+          "text": "New parts from the manufacturer, approved repairs and used serviceable material carry very different prices, and the contract decides which the shop may use without asking. Bain reports OEM parts demand outpacing supply by 10 to 20 per cent across engine maintenance, so lead times and substitutes are agreed at contract stage, not discovered at the invoice.",
+          "source": "06 section 1.3 (Bain, July 2024 [F]: OEM parts demand outpaces supply by 10 to 20%)."
+        },
+        {
+          "title": "Records and traceability",
+          "text": "At sale or redelivery an APU or a small engine is worth its records. Life-limited and life-tracked parts need back-to-birth traceability, and a missing release certificate or an undocumented repair costs more than the part. Acumen lists incomplete back-to-birth records among the main sources of end-of-lease disputes, and that applies to the APU too.",
+          "source": "06 section 1.7 (Acumen [F]: disputes centre on LLP valuations, deferred defects, incomplete back-to-birth records and fair wear and tear)."
+        }
+      ],
+      "whatWeDo": [
+        {
+          "title": "Shop visit management",
+          "text": "Full or overview management of APU and small-engine shop visits: workscope compilation and review, borescope overview, test result analysis, invoice review and scrap review, scaled to the size of the ticket.",
+          "serviceSlug": "shop-visit-management"
+        },
+        {
+          "title": "Contracts, MRO and supply chain",
+          "text": "Negotiation and review of repair, exchange and rental agreements, material sourcing support, warranty management and insurance claims support after an event.",
+          "serviceSlug": "contracts-mro-and-supply-chain"
+        },
+        {
+          "title": "Lease return and asset management",
+          "text": "APU and engine condition at delivery and redelivery, maintenance reserve calculations and claim analysis where the lease provides for them, and technical documentation audits so the unit's records match its state.",
+          "serviceSlug": "lease-return-and-asset-management"
+        },
+        {
+          "title": "Predictive maintenance and analytics",
+          "text": "Review of APU and engine trend data, on-wing performance review and troubleshooting advisory, so a removal is decided on the unit's own data rather than on a calendar.",
+          "serviceSlug": "predictive-maintenance-and-analytics"
+        },
+        {
+          "title": "Military and government",
+          "text": "The TPE331 serves as the T76 in military service and Honeywell developed the type for military as well as civil use. For government and military operators we provide independent oversight of workscopes, contracts and invoices, including where a single contractor is the only supplier.",
+          "serviceSlug": "military-and-government",
+          "source": "TPE331 encyclopaedia entry (T76 military designation) and Honeywell Aerospace TPE331 page (military applications); URLs in sources."
+        },
+        {
+          "title": "Technical due diligence",
+          "text": "Evaluation, records review and valuation of APUs, turboprop and small turbofan engines before a purchase, a lease or a sale, including LLP back-to-birth trace audits.",
+          "serviceSlug": "technical-due-diligence"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do you manage APU shop visits as well as engine shop visits?",
+          "a": "Yes. The Honeywell 131-9A, 131-9B and 131-9D are covered for workscope review, shop visit management, exchange and repair agreements and records audits, using the same method as for the engine families.",
+          "source": "02 section 4 (Honeywell Family: APU 131-9A, 131-9B, 131-9D)."
+        },
+        {
+          "q": "Which turboprop and small turbofan engines do you cover?",
+          "a": "The Honeywell TPE331 turboprop, including its T76 military designation, and the Honeywell TFE731 turbofan fitted to many business jets. Both are covered for shop visits, exchanges, records and pre-purchase evaluation.",
+          "source": "02 section 4 (models); TPE331 and TFE731 encyclopaedia entries (URLs in sources)."
+        },
+        {
+          "q": "Is an independent review worth it on a small invoice?",
+          "a": "Usually, if the engagement is scaled to the ticket. An overview review of the workscope and the invoice is a short engagement and catches the same problems that appear on large engines: scope growth, unsupported parts replacement and missing records.",
+          "source": "Advisory position; Overview Shop Visit Management in 02 section 4."
+        },
+        {
+          "q": "Can you check an APU or engine before we buy or lease it?",
+          "a": "Yes. We review the records back to birth, the life-limited and life-tracked part status and the borescope findings, and we give an evaluation of the unit's condition and remaining value before you commit.",
+          "source": "02 section 4 (Engine Evaluation & Selection, LLP Back to Birth Trace Audit, Borescope Video Analysis)."
+        }
+      ],
+      "image": {
+        "src": "shop-floor",
+        "alt": "Engine overhaul shop with several turbofan engines on stands",
+        "credit": "Generated illustration"
+      },
+      "cta": { "label": "Send us a workscope", "href": "/contact#workscope", "kind": "secondary" }
+    }
+  ],
+  "sources": [
+    "docs/research/02-website-content-inventory.md section 4 (Capabilities: CFM56-3, CFM56-5, CFM56-7, LEAP-1A, LEAP-1B, LEAP-1C; V2500-A1, V2500-A5, V2500-D5; PW4000-94, PW4000-100, PW4000-112; Honeywell APU 131-9A, 131-9B, 131-9D, TPE331/T76 and TFE731; the service taxonomy used in every whatWeDo entry)",
+    "docs/research/06-market-context-and-seo.md section 1.2 (Magnetic Group, June 2025 [F]: around 70% of the global narrowbody fleet still on CFM56/V2500; CFM56 hot-section blade prices +30% since 2019; fan blades doubled since 2020; CFM56 repair costs +50 to 75% since 2019; teardown part harvesting five times below pre-2020)",
+    "docs/research/06-market-context-and-seo.md section 1.2 (Air Cargo Week, 17 July 2026, EngineStands.com data [F]: CFM56-5A/B stand utilisation 92% in H1 2026 against 77% in 2025; CFM56-7B utilisation 77% and project durations minus 17%; V2500 utilisation 76% and durations plus 9%; LEAP-1A utilisation 71% and durations minus 8%; LEAP-1B durations plus 5%; Trent 700 and CF6-80E demand concentrated in a few specialised shops with longer transit)",
+    "docs/research/06-market-context-and-seo.md section 1.2 (Acumen, 15 June 2026 [F]: turnaround benchmarks CFM56 full overhaul 90 to 120 days and light about 45; V2500 60 to 70 and about 45; PW4000 120+ and about 60; copy implication permitting 'typically several million US dollars per visit' and forbidding vendor cost ranges)",
+    "docs/research/06-market-context-and-seo.md section 1.3 (Bain, 17 July 2024 [F]: engine MRO demand peaks in 2026 and stays constrained to the end of the decade; turnaround times +35% or more for legacy and +150% or more for new-generation engines; slot waits +2 to 3 months, up to 6; OEM parts demand outpaces supply by 10 to 20%; used serviceable material covers up to 30% of part demand at some shops)",
+    "docs/research/06-market-context-and-seo.md section 1.4 (IBA engine and lease rate update H2 2026 [F]: LEAP-1A fuel-nozzle coking addressed by a reverse-bleed system fix; LEAP-1B HPT durability kit certified in 2026; LEAP values benefiting from product improvements; the [S] CFM, GE Aerospace and FlightGlobal figures are not rendered)",
+    "docs/research/06-market-context-and-seo.md section 1.5 (IBA H2 2026 [F]: V2500-A5 prices fell on extra feedstock from the Spirit Airlines bankruptcy and ACMI weakness; CF6-80E and PW4000-100 strong value growth since 2023; shop-visit and LLP costs increased significantly. Acumen, June 2026 [F]: aircraft can no longer be assessed only by model, age or lease status; aircraft with serviceable engines, strong records and manageable maintenance exposure may be worth more)",
+    "docs/research/06-market-context-and-seo.md section 1.6 (Oliver Wyman, February 2026 [F]: 17,000 unfilled aircraft orders at the start of 2026; production 24% below 2019 at end-2025; copy implication that legacy shop visits are not a sunset business)",
+    "docs/research/06-market-context-and-seo.md section 1.7 (Acumen [F]: maintenance-reserve clauses and redelivery conditions are the lease provisions most likely to trigger end-of-lease disputes, which centre on LLP valuations, deferred defects, incomplete back-to-birth records and fair wear and tear. ACC Aviation [F]: in 2025 transitions the main problems remained MRO slots and correct documentation; reliability, early shop visits and unexpected module swaps complicate redelivery conditions not drafted for them. Competitor definitions of what shop visit management contains)",
+    "docs/research/06-market-context-and-seo.md section 3.1 and 3.4 (keyword targets per engine family: the family name with shop visit cost, workscope and LLP; LEAP HPT durability kit; green time engine strategy)",
+    "docs/research/06-market-context-and-seo.md section 5.1 (value propositions 2, 4, 5, 6, 7 and 10) and section 5.2 (claims to avoid: no vendor cost ranges, no savings figures, no OEM logos, no promised slot access)",
+    "docs/research/07-recommendations-and-brief.md section 3 (engine-family pages as the entry point for heads of powerplant, workscope upload as the action), section 4 (fixed family slugs) and section 5 (engine family template: fleet context and 2026 issues from 06 section 1 with citations, visit types and cost drivers with ranges only where sourced, what we do, CTA)",
+    "docs/research/07-recommendations-and-brief.md section 2.2 (legacy proven, new-generation fluent) and section 2.3 (Advisory and Assets lines with disclosure)",
+    "docs/research/01-company-profile.md section 3 and section 4.3 (CFM56-3B2, CFM56-3C1 and CFM56-7B26 engines offered for sale through the company's sourcing activity in 2026; basis for the CFM56 sourcing question in the FAQ)",
+    "docs/research/08-locomotive-design-blueprint.md section 8.3 row 4 (engine rows with line-art cross-section) and section 8.4 (stat and metadata label rules)",
+    "site/content-brief/VOICE-AND-FACTS.md (fixed CTA labels, entity naming, banned words, [F]/[S] rule, engine families and models exactly as in 02 section 4)",
+    "https://www.geaerospace.com/propulsion/commercial/cfm56 (read 19 September 2026: the CFM56 powers the Airbus A320ceo family and the Boeing 737 Classic and 737 Next Generation families)",
+    "https://en.wikipedia.org/wiki/CFM_International_CFM56 (read 19 September 2026: CFM56-3 on the 737-300/-400/-500; CFM56-5A and -5B on the A320 family; CFM56-5C on the A340-200/-300; CFM56-7B on the 737-600/-700/-800/-900)",
+    "https://www.geaerospace.com/propulsion/commercial/leap (read 19 September 2026: the LEAP powers the Airbus A320neo family, the Boeing 737 MAX and the COMAC C919)",
+    "https://en.wikipedia.org/wiki/CFM_International_LEAP (read 19 September 2026: LEAP-1A on the A320neo family, LEAP-1B on the 737 MAX, LEAP-1C on the C919)",
+    "https://en.wikipedia.org/wiki/IAE_V2500 (read 19 September 2026: V2500-A1 on the A320; V2500-A5 on the A319, A320 and A321; V2500-D5 on the McDonnell Douglas MD-90)",
+    "https://en.wikipedia.org/wiki/Pratt_%26_Whitney_PW4000 (read 19 September 2026: PW4000-94 on the A300-600R, A310-300, 747-400, 767 and MD-11 and the KC-46A; PW4000-100 on the A330-200/-300; PW4000-112 on the 777-200/-200ER/-300)",
+    "https://www.honeywellaerospace.com/us/en/products-and-services/product/hardware-and-systems/engines/tpe331-turboprop-engine (read 19 September 2026: more than 13,000 engines delivered, more than 122 million flight hours, 18 engine models and 106 configurations, developed for military, regional airline, agricultural and general aviation aircraft)",
+    "https://www.honeywellaerospace.com/us/en/products-and-services/product/hardware-and-systems/auxiliary-power-units (read 19 September 2026: more than 95,000 APUs produced and more than 36,000 in service; the 131 family has more than 100 million hours of in-service use; 131-9A load compressor seal upgrade listed)",
+    "https://en.wikipedia.org/wiki/Garrett_TPE331 (read 19 September 2026: T76 is the military designation of the TPE331; produced by Honeywell Aerospace since 1999)",
+    "https://en.wikipedia.org/wiki/Garrett_TFE731 (read 19 September 2026: a family of geared turbofan engines commonly used on business jet aircraft, now produced by Honeywell Aerospace)"
+  ]
+}

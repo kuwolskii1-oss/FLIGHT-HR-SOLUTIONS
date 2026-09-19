@@ -1,4 +1,5 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { ClosingBand } from "@/components/site/ClosingBand";
 import { CtaLink } from "@/components/site/Cta";
@@ -33,7 +34,7 @@ function IndustryPage() {
     return { title: w.title, text: w.text, href: svc ? `/services/${svc.slug}` : "/services", meta: svc ? [svc.shortName ?? svc.name] : undefined };
   });
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <PageIntro eyebrow="Industries" title={i.name} lead={i.audience} />
       <Section theme="light" id="situation">
         <div className="c-split c-split--even">
@@ -58,6 +59,7 @@ function IndustryPage() {
         <RuledList rows={rows} />
       </Section>
       <ClosingBand headline="Tell us about the engine and the date" />
+      <PageMotion />
     </main>
   );
 }

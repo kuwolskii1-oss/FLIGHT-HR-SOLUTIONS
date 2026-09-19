@@ -7,12 +7,16 @@ export function RuledList({
   compact,
   startIndex = 1,
   ariaLabel,
+  headingLevel = "h3",
 }: {
   rows: Row[];
   compact?: boolean;
   startIndex?: number;
   ariaLabel?: string;
+  /** h2 when the list follows the page title directly, h3 under a section heading. */
+  headingLevel?: "h2" | "h3";
 }) {
+  const Heading = headingLevel;
   return (
     <ul className="c-rows" aria-label={ariaLabel}>
       {rows.map((row, i) => (
@@ -20,9 +24,9 @@ export function RuledList({
           <span className="c-row__index" aria-hidden="true">
             {String(startIndex + i).padStart(2, "0")}
           </span>
-          <h3 className="c-row__title">
+          <Heading className="c-row__title">
             <SmartLink href={row.href}>{row.title}</SmartLink>
-          </h3>
+          </Heading>
           <p className="c-row__text">{row.text}</p>
           {row.meta?.length ? (
             <ul className="c-row__meta" aria-label="Details">

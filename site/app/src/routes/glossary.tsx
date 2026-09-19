@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { PageMotion } from "@/components/site/PageMotion";
 
 import { ClosingBand } from "@/components/site/ClosingBand";
 import { PageIntro } from "@/components/site/PageIntro";
@@ -17,7 +18,7 @@ function GlossaryPage() {
   const terms = [...glossary.terms].sort((a, b) => a.term.localeCompare(b.term));
   const letters = Array.from(new Set(terms.map((t) => t.term[0].toUpperCase())));
   return (
-    <main id="main">
+    <main id="main" tabIndex={-1}>
       <PageIntro eyebrow="Glossary" title={glossary.title} lead={glossary.intro} />
       <Section theme="light" id="terms">
         <nav aria-label="Jump to letter" className="c-tags" style={{ marginBottom: "var(--space-large)" }}>
@@ -55,6 +56,7 @@ function GlossaryPage() {
         </dl>
       </Section>
       <ClosingBand headline="A term you did not find? Ask us." />
+      <PageMotion />
     </main>
   );
 }

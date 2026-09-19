@@ -1,0 +1,177 @@
+{
+  "notes": "Contact page per docs/research/07-recommendations-and-brief.md section 5: a short form, a modest response-time promise, direct channels, an urgent route by phone and the legal entity block. The EnquiryForm component looks fields up by name (name, company, role, email, phone, engineFamily, need, message), so the field names below are fixed. The form takes no attachment; the attachment note is the message field's hint, which the component renders under the textarea. Values shown here come from the research dossier; the phone number is the one site.json carries. No map: 01 section 1 indicates a domicile address at Bahnhofplatz, and 07 section 5 says map only if there is an office.",
+  "clientToConfirm": [
+    "Response-time promise: the page promises a reply within one working day, Monday to Friday, Swiss time. Confirm that the inbox and the phone are monitored to that standard and who replies.",
+    "Primary phone: +41 76 595 88 61 is used throughout (hero and contact page since April 2026; site.json). Two other numbers are in circulation: +41 76 418 63 50 (header button and WhatsApp link) and +41 76 358 84 90 (Swiss Aerospace Cluster directory). Confirm the one number.",
+    "Out-of-hours cover: the urgent route says call rather than write and makes no 24-hour promise. Confirm whether calls are answered outside Swiss working hours and whether a 24-hour AOG line should be promised (05 section 5 item 6 recommends one).",
+    "Attachments: the form has no upload; visitors are told to send files by email after the first reply. Confirm this is acceptable, or ask for a file-upload field (07 section 5 and section 8 recommend one) once a storage and virus-scanning route exists.",
+    "Calendar booking: 07 section 5 and section 8 recommend a booking link (Cal.com or Calendly) with a named consultant. None is documented, so none is shown. Supply a booking URL if wanted.",
+    "Privacy notice: the consent text points to the privacy notice for FADP and GDPR rights. The notice must name the actual processors (Cloudflare through the Higgsfield hosting platform and the email provider that delivers the form). Confirm the email provider used at launch."
+  ],
+  "seoTitle": "Contact an independent engine consultancy in Zug | Flight Hour Solution",
+  "metaDescription": "Contact Flight Hour Solution in Zug, Switzerland: one form, one phone number and a reply within one working day. Urgent or AOG matters by phone.",
+  "title": "Talk to us",
+  "intro": "Tell us the engine, where it is, what is planned and by when. We reply within one working day.",
+  "form": {
+    "title": "Send us a workscope or a question",
+    "responsePromise": "We reply within one working day, Monday to Friday, Swiss time. For anything urgent, call rather than write.",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Your name",
+        "type": "text",
+        "required": true,
+        "options": []
+      },
+      {
+        "name": "company",
+        "label": "Company",
+        "type": "text",
+        "required": true,
+        "options": []
+      },
+      {
+        "name": "role",
+        "label": "Role or job title",
+        "type": "text",
+        "required": false,
+        "options": []
+      },
+      {
+        "name": "email",
+        "label": "Work email",
+        "type": "email",
+        "required": true,
+        "options": []
+      },
+      {
+        "name": "phone",
+        "label": "Phone",
+        "type": "tel",
+        "required": false,
+        "options": []
+      },
+      {
+        "name": "engineFamily",
+        "label": "Engine family",
+        "type": "select",
+        "required": false,
+        "options": ["CFM56", "LEAP", "V2500", "PW4000", "APU and turboprop"],
+        "source": "The five families and their names as in site.json engineFamilies and docs/research/02-website-content-inventory.md section 4 (CFM56-3/-5/-7, LEAP-1A/-1B/-1C, V2500-A1/-A5/-D5, PW4000-94/-100/-112, Honeywell APU 131-9A/-9B/-9D, TPE331/T76, TFE731).",
+        "clientToConfirm": [
+          "The select lists the five families the site covers. Enquiries about other types (for example the Trent and PT6A engines the company has offered on LinkedIn, 01 section 3) have no option; confirm whether to add an option named Other."
+        ]
+      },
+      {
+        "name": "need",
+        "label": "What you need",
+        "type": "select",
+        "required": false,
+        "options": [
+          "Shop visit management",
+          "Workscope and removal planning",
+          "Lease return and asset management",
+          "Contracts, MRO and supply chain",
+          "Predictive maintenance and analytics",
+          "Technical due diligence",
+          "Military and government programmes",
+          "Training and knowledge transfer",
+          "Asset sourcing",
+          "Other"
+        ],
+        "source": "The eight service names as in services.json (slugs fixed in site/content-brief/CONTENT-SCHEMA.md; taxonomy from docs/research/02-website-content-inventory.md section 4), plus Asset sourcing for the Assets line (docs/research/01-company-profile.md section 4.3 and docs/research/07-recommendations-and-brief.md section 2.3) and Other."
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "type": "textarea",
+        "required": true,
+        "options": [],
+        "hint": "Tell us the engine type or serial number, where it is, what is planned and the date. This form takes no attachments: after our first reply, send workscopes, borescope reports or records by email."
+      }
+    ],
+    "consentText": "I agree that Flight Hour Solution GmbH may use these details to answer my enquiry and follow it up. The form reaches us as an email; nothing is stored on the website. I can withdraw consent at any time by writing to contact@flighthoursolution.com. My rights under the Swiss FADP and the GDPR are in the privacy notice.",
+    "submitLabel": "Send enquiry",
+    "successTitle": "Thank you. We have your enquiry.",
+    "successText": "We reply within one working day, Monday to Friday, Swiss time. If you have a workscope, a borescope report or a records pack to share, reply to our email with the files attached. If the matter is urgent, call +41 76 595 88 61.",
+    "source": "Form contents per docs/research/07-recommendations-and-brief.md section 5 (name, company, role, engine type, need, message, attachment, response-time promise) and docs/research/05-competitor-benchmark.md section 6 (short form with a visible response-time promise). Processing facts in the consent and success texts: site/README.md, Switches and secrets (the form calls a server function that emails the enquiry to the company, or opens the visitor's email program; no personal data is stored on the server) and site/content-brief/VOICE-AND-FACTS.md, Legal (FADP and GDPR; the contact form sends an email; no analytics, no marketing cookies). Legal entity name in the consent text: docs/research/01-company-profile.md section 1.",
+    "notes": "Required fields match what the component and the server function enforce (name, company, email, message and consent); role, phone, engine family and need are optional and the component labels them so. The one-working-day promise is a commitment the client must confirm, not a research fact; it is listed in clientToConfirm at the top of the file."
+  },
+  "channels": [
+    {
+      "label": "Phone",
+      "value": "+41 76 595 88 61",
+      "href": "tel:+41765958861",
+      "note": "the fastest route for anything urgent",
+      "source": "docs/research/01-company-profile.md section 3 (hero and contact phone changed to +41 76 595 88 61 on 10 April 2026) and section 6; docs/research/02-website-content-inventory.md sections 2, 3 and 7 (footer and contact page contact block). Same number as site.json company.phone. 01 section 6 notes that all the company's numbers are Swiss mobiles and there is no landline."
+    },
+    {
+      "label": "Email",
+      "value": "contact@flighthoursolution.com",
+      "href": "mailto:contact@flighthoursolution.com",
+      "note": "enquiries and documents",
+      "source": "docs/research/01-company-profile.md section 6 (contact@ is the general address) and docs/research/02-website-content-inventory.md sections 2 and 3.",
+      "clientToConfirm": [
+        "sales@flighthoursolution.com is used on LinkedIn for engine and aircraft enquiries (01 sections 3 and 6) but is not documented on the website, so it is not listed here. Confirm whether asset enquiries should be routed to it."
+      ]
+    },
+    {
+      "label": "WhatsApp",
+      "value": "Open a WhatsApp chat",
+      "href": "https://wa.me/41764186350",
+      "note": "",
+      "source": "docs/research/02-website-content-inventory.md section 2 (footer WhatsApp link wa.me/41764186350) and docs/research/01-company-profile.md section 6. Same link as site.json company.whatsapp. The footer component renders WhatsApp as a link without showing the number, and this page does the same so that only one phone number appears in text.",
+      "clientToConfirm": [
+        "The documented WhatsApp link is on +41 76 418 63 50, not on the primary number shown above (01 section 8 and docs/research/07-recommendations-and-brief.md section 10 item 4 ask for the WhatsApp and tel links to be brought in sync). Confirm whether WhatsApp moves to +41 76 595 88 61, in which case site.json and this link change together.",
+        "07 section 8 recommends a WhatsApp Business profile. Confirm whether the account is a business profile."
+      ]
+    },
+    {
+      "label": "LinkedIn",
+      "value": "Flight Hour Solution GmbH",
+      "href": "https://www.linkedin.com/company/flight-hour-solution",
+      "note": "company page and asset listings",
+      "source": "docs/research/01-company-profile.md section 6 (company page linkedin.com/company/flight-hour-solution) and section 10; section 4.3 (engine and aircraft offers are posted on the company page). Same URL as site.json company.linkedin."
+    }
+  ],
+  "urgent": {
+    "title": "Urgent or AOG",
+    "text": "If an engine is grounded, a removal cannot wait or a shop visit is going wrong this week, call +41 76 595 88 61 rather than using the form. Say that it is urgent. The form and the inbox are read on working days; a call reaches us faster.",
+    "source": "Urgent and AOG route by phone per docs/research/07-recommendations-and-brief.md section 5 (AOG/urgent route) and section 8 (one primary phone number); docs/research/05-competitor-benchmark.md section 5 item 6 and section 6 (AOG line as a conversion signal). Phone number as in the Phone channel above. No 24-hour service is promised because none is documented.",
+    "clientToConfirm": [
+      "Confirm the wording of the urgent route and whether a specific person answers urgent calls."
+    ]
+  },
+  "office": {
+    "title": "Registered office",
+    "lines": [
+      "Flight Hour Solution GmbH",
+      "Bahnhofplatz, 6300 Zug, Switzerland",
+      "UID CHE-196.248.398",
+      "Managing director: Hubert Nowosad",
+      "Meetings by appointment: in Zug, at your offices or at the shop."
+    ],
+    "source": "docs/research/01-company-profile.md section 1 (legal name, UID CHE-196.248.398, registered address Bahnhofplatz, 6300 Zug, no house number in the register; other companies at the same address point to a domicile address) and section 2 (Hubert Nowosad, managing director and sole owner since July 2025). Impressum data on the contact page per docs/research/07-recommendations-and-brief.md section 5; entity naming per section 2.4. The meetings line matches the Zug block in about.json.",
+    "clientToConfirm": [
+      "Bahnhofplatz: supply the house number, and confirm whether the address is a visitable office (then a map and opening hours can be added) or a domicile address (then the page keeps saying meetings are by appointment)."
+    ]
+  },
+  "sources": [
+    "docs/research/01-company-profile.md section 1 (legal name Flight Hour Solution GmbH, UID CHE-196.248.398, registered address Bahnhofplatz, 6300 Zug, Switzerland, no house number in the register; shared address noted by Moneyhouse)",
+    "docs/research/01-company-profile.md section 2 (Hubert Nowosad, managing director and sole shareholder since July 2025)",
+    "docs/research/01-company-profile.md section 3 (timeline: hero and contact phone changed to +41 76 595 88 61 on 10 April 2026; sales@ mailbox used on LinkedIn in August 2026; Trent and PT6A engines offered in 2026)",
+    "docs/research/01-company-profile.md section 4.3 (engine and aircraft sourcing as a line of business, basis for the Asset sourcing option)",
+    "docs/research/01-company-profile.md section 6 (contact channels: contact@flighthoursolution.com, the three phone numbers, WhatsApp wa.me/41764186350, LinkedIn company page URL; Swiss mobiles only, no landline)",
+    "docs/research/01-company-profile.md section 8 (WhatsApp link still on the older number) and section 9 (open questions: primary phone, visitable office)",
+    "docs/research/02-website-content-inventory.md section 2 (footer contact block: +41 76 595 88 61, contact@flighthoursolution.com, Bahnhofplatz 6300 Zug, WhatsApp wa.me/41764186350; current form fields and consent wording)",
+    "docs/research/02-website-content-inventory.md section 4 (service taxonomy and the engine families and models)",
+    "docs/research/02-website-content-inventory.md section 7 (current contact page: contact block, form, office heading without a map)",
+    "docs/research/05-competitor-benchmark.md section 5 item 6 (stated response time, AOG line and booking link as gaps) and section 6 (trust-signal checklist: short form with a visible response-time promise, phone with country code, WhatsApp, 24/7 AOG line)",
+    "docs/research/06-market-context-and-seo.md section 2 (buyer personas and the universal decision criteria: availability and speed to mobilise) and sections 5.2 and 5.3 (claims to avoid; plain, numerate tone)",
+    "docs/research/07-recommendations-and-brief.md section 2.4 (entity naming), section 5 (Contact page brief: short form, response-time promise, WhatsApp, one primary phone, AOG/urgent route, map only if there is an office, Impressum data), section 8 (one primary phone number, WhatsApp Business, email routing, calendar booking), section 9 (FADP/GDPR privacy notice naming processors) and section 10 item 4 (WhatsApp and tel links in sync)",
+    "docs/research/08-locomotive-design-blueprint.md section 8.4 (forms: visible labels, success state that names who will reply and when)",
+    "site/README.md, Switches and secrets (the contact form calls a server function that emails the enquiry when an email provider key is configured, otherwise opens the visitor's email program; no personal data is stored on the server; no analytics and no marketing cookies)",
+    "site/content-brief/VOICE-AND-FACTS.md (one phone number from 02/07, email from 02, WhatsApp only if 02 documents it, no second office; legal facts under FADP and GDPR; fixed CTA labels) and site/content-brief/CONTENT-SCHEMA.md (contact.json shape)",
+    "site/app/src/content/site.json and services.json (phone, email, WhatsApp and LinkedIn values, engine family names and service names reused verbatim so the site stays consistent)"
+  ]
+}

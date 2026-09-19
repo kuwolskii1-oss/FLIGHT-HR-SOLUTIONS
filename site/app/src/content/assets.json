@@ -1,0 +1,132 @@
+{
+  "seoTitle": "Engine and aircraft sourcing and sales support | Flight Hour Solution",
+  "metaDescription": "Engine and aircraft sourcing and sales support from Zug, Switzerland, with the broker role disclosed in writing. Recent listings and a request form.",
+  "title": "Engine and aircraft sourcing and sales support",
+  "intro": "Our Assets line finds engines and aircraft for people who need them and markets them for owners. When we broker, we say so.",
+  "disclosure": "Assets is run separately from Advisory, our consulting line. When we act as a broker on an engine or aircraft, we say so in writing before you rely on our view of it. Advisory clients are never offered an asset we represent without that disclosure. Flight Hour Solution is not owned by an MRO, a lessor or an OEM.",
+  "howItWorks": [
+    {
+      "n": "1",
+      "title": "Tell us what you have or need",
+      "text": "Use the form below or write to us. For an engine: type and variant, thrust rating, time and cycles since new and since the last shop visit, LLP status, location and preservation state. For an aircraft: type, MSN, engine status, lease or sale, and when you need it.",
+      "source": "Listing fields from docs/research/07-recommendations-and-brief.md section 5 (Assets brief: model, ESN status, cycles and time remaining, location, availability date)."
+    },
+    {
+      "n": "2",
+      "title": "We state our role in writing",
+      "text": "Before anything else, you learn which party we act for, whether we hold a mandate on the asset, and on what terms. That note goes on file. Advisory clients receive the same disclosure before any asset is put in front of them.",
+      "source": "Conflicts policy from docs/research/07-recommendations-and-brief.md section 2.3 option 1 (when we broker an asset we say so; advisory clients are never sold our own inventory without disclosure).",
+      "clientToConfirm": [
+        "Confirm that the role statement will be issued in writing on every Assets engagement and that it names the terms of remuneration."
+      ]
+    },
+    {
+      "n": "3",
+      "title": "We search, or we list",
+      "text": "For a wanted asset we approach owners, lessors, operators and part-out specialists directly. For an offered asset we prepare a specification sheet from the records and circulate it to our contacts and on our LinkedIn page, with the owner's name withheld until a serious enquiry arrives.",
+      "source": "LinkedIn as the channel used for offers and requests: docs/research/01-company-profile.md section 4.3. Part-out and teardown vocabulary: docs/research/05-competitor-benchmark.md section 4.",
+      "clientToConfirm": [
+        "Confirm the confidentiality practice: the owner's name is withheld from the specification sheet until a serious enquiry arrives."
+      ]
+    },
+    {
+      "n": "4",
+      "title": "We check the records, not just the price",
+      "text": "For the buyer or lessee we act for, we read the asset the way we read an engine before a shop visit: back-to-birth trace of the life-limited parts, the last shop visit report, borescope video, AD and SB status, and remaining time and cycles against the price asked. You get a written view before you commit.",
+      "source": "Review items from the company's own service taxonomy in docs/research/02-website-content-inventory.md section 4 (LLP back to birth trace audit, technical documentation audit, borescope video analysis, engine evaluation and selection).",
+      "clientToConfirm": [
+        "Confirm that a written technical view is part of every buy-side Assets engagement, and what it covers (records, borescope video, AD and SB status, test cell or on-wing run data)."
+      ]
+    },
+    {
+      "n": "5",
+      "title": "Negotiation, paperwork and handover",
+      "text": "We support the purchase or lease negotiation, check the delivery documentation against the agreed condition, and follow the asset to acceptance: engine stand, preservation, shipping and the records pack. If the engine is heading for a shop visit next, our Advisory line can take over from there, on a separate engagement.",
+      "source": "Engine purchase negotiation and lease contract negotiation: docs/research/02-website-content-inventory.md section 4. Delivery acceptance, engine stand assessment and records packs: docs/research/05-competitor-benchmark.md section 4. Separation of the two lines: docs/research/07-recommendations-and-brief.md section 2.3."
+    }
+  ],
+  "recentActivity": [
+    {
+      "date": "2026-09-09",
+      "type": "offered",
+      "item": "PT6A turboprop engine",
+      "text": "Offered for sale. 38,151 hours and 61,213 cycles since new.",
+      "source": "LinkedIn company post of 9 September 2026 (PT6A engine for sale, TSN 38,151, CSN 61,213), recorded in docs/research/01-company-profile.md section 3 (timeline)."
+    },
+    {
+      "date": "2026-08-19",
+      "type": "wanted",
+      "item": "Two Boeing 737-800",
+      "text": "Two aircraft sought on a five-year dry lease.",
+      "source": "LinkedIn company post of 19 August 2026 (seeking two Boeing 737-800 on a five-year dry lease), recorded in docs/research/01-company-profile.md section 3 (timeline) and section 4.3."
+    },
+    {
+      "date": "2026-07-30",
+      "type": "offered",
+      "item": "CFM56-7B26 engine",
+      "text": "Offered for sale with about 6,800 cycles remaining.",
+      "source": "LinkedIn company post of 30 July 2026 (CFM56-7B26 engine for sale, approximately 6,800 cycles remaining), recorded in docs/research/01-company-profile.md section 3 (timeline)."
+    },
+    {
+      "date": "2026-05-06",
+      "type": "offered",
+      "item": "Three Rolls-Royce Trent 772B engines",
+      "text": "Three engines offered for sale.",
+      "source": "LinkedIn company post of 6 May 2026 (three Rolls-Royce Trent 772B for sale), recorded in docs/research/01-company-profile.md section 3 (timeline)."
+    },
+    {
+      "date": "2026-03-09",
+      "type": "offered",
+      "item": "Four CFM56-3C1 engines",
+      "text": "Four serviceable engines offered for sale.",
+      "source": "LinkedIn company post of 9 March 2026 (four serviceable CFM56-3C1 engines for sale), recorded in docs/research/01-company-profile.md section 3 (timeline)."
+    },
+    {
+      "date": "2026-02-26",
+      "type": "offered",
+      "item": "Two CFM56-3B2 engines",
+      "text": "Two engines offered for sale.",
+      "source": "LinkedIn company post of 26 February 2026 (two CFM56-3B2 engines for sale), recorded in docs/research/01-company-profile.md section 3 (timeline)."
+    }
+  ],
+  "requestForm": {
+    "title": "Request or offer an asset",
+    "text": "Listings above appeared on our LinkedIn page and may no longer be open. Tell us what you are looking for or what you are selling.",
+    "fields": [
+      { "name": "name", "label": "Name", "type": "text", "required": true },
+      { "name": "company", "label": "Company", "type": "text", "required": true },
+      { "name": "email", "label": "Email", "type": "email", "required": true },
+      { "name": "assetType", "label": "Asset type", "type": "select", "required": true, "options": ["Engine", "Aircraft", "Other"] },
+      { "name": "assetModel", "label": "Engine or aircraft type", "type": "text", "required": true, "hint": "For example CFM56-7B26, Trent 772B, PT6A or Boeing 737-800." },
+      { "name": "need", "label": "Offered or wanted", "type": "select", "required": true, "options": ["Offered", "Wanted"] },
+      { "name": "message", "label": "Message", "type": "textarea", "required": false, "hint": "Time and cycles since new and since the last shop visit, LLP status, location and timing help us answer faster." }
+    ],
+    "notes": "Field set from the page brief (name, company, email, asset type, engine or aircraft type, need offered or wanted, message). The options and hint keys follow the FormField type in site/app/src/site/types.ts and the contact.json field shape, so the same form component can render this form. The route currently renders EnquiryForm with contact.form; to use these fields the component needs the assetType and assetModel keys added to its field list and to its mailto builder, and its validation currently requires a message regardless of the required flag here. Consent text, submit label and success copy are shared with the contact form and live in contact.json."
+  },
+  "cta": { "label": "Talk to us", "href": "/contact", "kind": "primary" },
+  "notes": "Assets is the second of the two labelled lines under one brand (07 section 2.3 option 1); Advisory is described on the services pages and the independence statement on the About page. recentActivity is a record of what the company has publicly offered or sought, newest first, not a live availability list: every item comes from a dated LinkedIn company post recorded in 01 section 3, and the completed Trent sale of 5 March 2026 is left out because the table types are offered and wanted only. Dates are ISO 8601 so the mono date column sorts and reads unambiguously for an international audience. No market figures are used on this page. The route hides the activity table when the array is empty, so items can be removed once the client confirms they have been placed. sales@flighthoursolution.com is not rendered anywhere pending confirmation (see clientToConfirm). The form has no file upload; borescope reports and records can follow by email after first contact.",
+  "clientToConfirm": [
+    "Confirm that engine and aircraft trading is an official line to present publicly as Assets, and approve the disclosure wording, which follows 07 section 2.3 option 1 with the addition that the role statement is made in writing.",
+    "Confirm whether Flight Hour Solution owns the engines it offers or markets them on behalf of their owners, so each listing and the disclosure can say which. The LinkedIn posts recorded in 01 section 3 do not say.",
+    "Confirm how the Assets line is paid (commission, margin or retainer) and whether the terms are disclosed to both parties. Step 2 promises that the written role statement covers the terms.",
+    "Confirm the conflict rules beyond the disclosure: whether advisory clients are ever offered assets the company represents, and whether the company declines to give an advisory opinion on an asset it is paid to sell. The Advisory line is not described as fee-only on this page until that is confirmed (see site.json).",
+    "sales@flighthoursolution.com is used on LinkedIn for asset enquiries (01 sections 4.3 and 6). Confirm whether it may be published on this page and whether the request form should deliver to it rather than to contact@flighthoursolution.com.",
+    "Confirm the status of each item in recentActivity (sold, placed, withdrawn or still available) and the LinkedIn dates recorded in 01 section 3, and supply the fields for a live listing if one is wanted at launch: model, ESN, status, time and cycles remaining, location, availability date (07 section 5).",
+    "A completed Rolls-Royce Trent engine sale was announced on LinkedIn on 5 March 2026 (01 section 3). It is omitted because the table shows offered and wanted items only. Confirm whether completed transactions may be shown, and with what detail (variant, buyer type, whether the company acted as broker or seller).",
+    "The CFM56-7B26 cycles figure is approximate in the source post (about 6,800). Confirm the exact figure and whether it refers to the limiting life-limited part.",
+    "Trent 772B and PT6A fall outside the engine families listed on the Services page (CFM56, LEAP, V2500, PW4000, Honeywell APU and turboprop). Confirm whether Assets covers any type or a defined list, and whether that list should be stated on this page.",
+    "The Aviation Suppliers Association membership and the AircraftParts hashtag point to parts supply (01 section 4.3). Confirm whether parts or modules should be an asset type on the form; it currently offers Engine, Aircraft and Other. 06 section 5.2 advises against presenting the firm as a parts supplier, so no parts activity is described.",
+    "07 section 5 proposes availability alerts by subscription for the Assets page. None is included because no mailing tool, consent text or retention rule exists yet. Confirm whether to add one at launch or in phase 2.",
+    "Confirm the process claims in How it works as things the company does on every Assets engagement: direct approach to owners, lessors, operators and part-out specialists; specification sheet from the records; LinkedIn circulation; delivery documentation check; follow-through to acceptance including engine stand, preservation, shipping and the records pack."
+  ],
+  "sources": [
+    "docs/research/01-company-profile.md section 3 (timeline: LinkedIn company posts of 26 February 2026 offering two CFM56-3B2 engines, 9 March 2026 offering four serviceable CFM56-3C1 engines, 6 May 2026 offering three Rolls-Royce Trent 772B engines, 30 July 2026 offering a CFM56-7B26 engine with about 6,800 cycles remaining, 19 August 2026 seeking two Boeing 737-800 on a five-year dry lease, and 9 September 2026 offering a PT6A engine with TSN 38,151 and CSN 61,213; completed Trent sale of 5 March 2026 recorded but not shown)",
+    "docs/research/01-company-profile.md section 4.3 (LinkedIn: sourcing, technical advisory and end-to-end engine sales support; every post since February 2026 an engine or aircraft transaction; sales@ mailbox) and section 4.4 (engine trading, remarketing and sourcing, and aircraft sourcing and lease brokerage as revenue lines absent from the old site)",
+    "docs/research/01-company-profile.md section 1 (Flight Hour Solution GmbH, Zug, Switzerland) and section 2 (Hubert Nowosad sole shareholder and managing director since July 2025: the basis for stating that the company is not owned by an MRO, a lessor or an OEM)",
+    "docs/research/02-website-content-inventory.md section 4 (service taxonomy used in How it works: engine evaluation and selection, engine purchase negotiation, lease contract negotiation, LLP back to birth trace audit, technical documentation audit, borescope video analysis, test cell result analysis, support with material sourcing and documentation audit)",
+    "docs/research/05-competitor-benchmark.md section 4 (niche vocabulary: delivery acceptance, engine stand assessment, records packs, review back to birth records, part-out valuations, USM strategies and teardowns)",
+    "docs/research/06-market-context-and-seo.md section 5.2 (claims to avoid: do not present the firm as an MRO, a lessor or a parts supplier; no OEM logos; no promises of slot access) and section 5.3 (tone)",
+    "docs/research/07-recommendations-and-brief.md section 2.3 option 1 (two labelled lines, Advisory and Assets, with a written conflicts policy: when we broker an asset we say so; advisory clients are never sold our own inventory without disclosure), section 3 (engine buyer, seller and broker persona with the Assets page as entry point), section 4 (sitemap: /assets/ engine and aircraft sourcing, current listings, sell your engine) and section 5 (Assets page brief: listing fields, sell or lease your engine form, availability alerts, disclosure of broker role)",
+    "site/content-brief/VOICE-AND-FACTS.md (fixed CTA labels Talk to us and Send us a workscope, entity naming, independence wording, no years-of-experience figures, no invented numbers or clients)"
+  ]
+}
