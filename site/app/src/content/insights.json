@@ -35,7 +35,7 @@
           "heading": "Five planning rules that hold",
           "paragraphs": [
             "Rule one: plan removals from the engine, not the calendar. An engine typically needs three to five shop visits over its life, so each removal date should come from the EGT margin trend, the LLP limits and the slot lead time together, not from a fleet-wide assumption.",
-            "Rule two: secure the slot before the workscope is final. With waits of two to six months, the slot request goes out on a provisional workscope and a removal window, and is refined when the engine comes off. Waiting for a perfect workscope costs more than adjusting one.",
+            "Rule two: secure the slot before the workscope is final. With slot waits two to six months longer than before the pandemic, the slot request goes out on a provisional workscope and a removal window, and is refined when the engine comes off. Waiting for a perfect workscope costs more than adjusting one.",
             "Rule three: benchmark the quoted turnaround against independent data, not the shop's own history. Acumen's 2026 benchmarks put a CFM56 full overhaul at 90 to 120 days and a light visit near 45; a V2500 at 60 to 70 days; a PW4000 at 120 days or more. A quote far outside these ranges needs an explanation.",
             "Rule four: treat material as part of the schedule. OEM parts demand outpaces supply by 10 to 20 per cent, and used serviceable material covers up to 30 per cent of part demand at some shops. Long-lead parts and repair routes should be identified at table inspection, not discovered at kitting.",
             "Rule five: keep spare-engine cover and lease terms in the same model. A turnaround that slips from 60 to 90 days changes the spare-engine plan and, on a leased aircraft, can move a shop visit across a redelivery date. The model should show both effects before the workscope is approved."
@@ -45,7 +45,7 @@
           "heading": "What this means for a managed visit",
           "paragraphs": [
             "In a constrained market the value of shop visit management moves earlier: into removal planning, slot negotiation and workscope discipline. On-site presence at induction and table inspection then keeps findings, material decisions and the turnaround plan aligned while the engine is open.",
-            "Flight Hour Solution plans removals, negotiates slots and represents clients on site for CFM56, LEAP, V2500 and PW4000 visits. Send us your next workscope and removal window and we will tell you where the turnaround risk sits."
+            "Flight Hour Solution plans removals, supports slot negotiation and represents clients on site for CFM56, LEAP, V2500 and PW4000 visits. Send us your next workscope and removal window and we will tell you where the turnaround risk sits."
           ]
         }
       ],
@@ -64,7 +64,7 @@
       },
       "notes": "Topic 2 in 06 section 4.3. The five rules are planning practice, not sourced statistics; the only figures are those listed in sources. Service names in the closing paragraph follow 02 section 4 (shop visit management, workscope compilation and review, table inspection).",
       "clientToConfirm": [
-        "The closing paragraph says the firm negotiates slots. 06 section 5.2 warns against promising slot access; the wording promises negotiation support only. Confirm it is acceptable.",
+        "The closing paragraph says the firm supports slot negotiation (not that it negotiates or secures slots), per 06 section 5.2. Confirm the wording.",
         "Confirm on-site representation is offered on all four families named (CFM56, LEAP, V2500, PW4000)."
       ]
     },
@@ -73,7 +73,7 @@
       "title": "Quick-turn, hospital visit or performance restoration?",
       "date": "2026-07-07",
       "readingMinutes": 3,
-      "excerpt": "Three visit types, three cost bands and three sets of lease consequences. How the choice is made, and who should be in the room.",
+      "excerpt": "Three visit types, three depths of disassembly and three sets of lease consequences. How the choice is made, and who should be in the room.",
       "tags": [
         "Workscope",
         "Shop visits",
@@ -86,7 +86,7 @@
             "An engine typically needs three to five shop visits over its life. Not all of them are the same event. The industry sorts visits into three types by depth of disassembly: the quick-turn, the hospital visit and the performance restoration. The type decides the workscope, the turnaround, the invoice and, on a leased engine, who pays.",
             "A quick-turn addresses one finding with minimal disassembly: a fan blade set, a gearbox or accessory change, or a borescope finding that can be reached without splitting the core. The engine keeps its remaining life; nothing is restored.",
             "A hospital visit goes deeper to fix a specific problem, often a module removal or a single-module repair, without a full restoration of the engine's performance margins. It buys time on wing but leaves the other modules in their existing condition.",
-            "A performance restoration is the full event: the core is disassembled, hot-section parts are inspected and repaired or replaced, life-limited parts at or near their limits are changed, and the engine leaves the test cell with restored EGT margin. It is the multi-million-dollar purchase, typically several million US dollars per visit, and the one that resets the engine's economic clock."
+            "A performance restoration is the full event: the core is disassembled, hot-section parts are inspected and repaired or replaced, life-limited parts at or near their limits are changed, and the engine leaves the test cell with restored EGT margin. It is the multi-million-dollar purchase, and the one that resets the engine's economic clock."
           ]
         },
         {
@@ -95,20 +95,20 @@
             "The first input is the removal cause. A foreign-object strike on an engine with healthy margins points to a quick-turn. A hot-section distress finding on an engine whose EGT margin has been falling points to restoration, because a repair alone would send it back to the shop within a year or two.",
             "The second input is remaining life. If several life-limited parts have limited cycles left, a hospital visit that ignores them delays a second, unavoidable disassembly. The LLP stub position, cycle by cycle, belongs on the same page as the borescope report.",
             "The third input is cost per cycle rather than cost per visit. Repair costs on the CFM56 have risen 50 to 75 per cent since 2019, hot-section blade prices are up about 30 per cent and fan blade prices have doubled since 2020. In that environment the cheapest visit is rarely the cheapest year.",
-            "The fourth input is the shop's turnaround. Independent 2026 benchmarks put a CFM56 full overhaul at 90 to 120 days and a light visit near 45 days; a V2500 at 60 to 70 days. Where slot waits already run two to six months, a restoration must be planned around spare-engine cover, not squeezed into it."
+            "The fourth input is the shop's turnaround. Independent 2026 benchmarks put a CFM56 full overhaul at 90 to 120 days and a light visit near 45 days; a V2500 at 60 to 70 days. Where slot waits already run two to six months longer than before the pandemic, a restoration must be planned around spare-engine cover, not squeezed into it."
           ]
         },
         {
           "heading": "Why the lease cares",
           "paragraphs": [
-            "Lease documents draw the same line in their own language. Many define an Engine Basic Shop Visit or a Performance Restoration Shop Visit by reference to the OEM Workscope Planning Guide, and maintenance reserves or end-of-lease compensation are often released only for that class of visit.",
+            "Lease documents draw the same line in their own language. Many define an Engine Basic Shop Visit or a Performance Restoration Shop Visit by reference to the OEM Workscope Planning Guide, and what the lease pays for a visit commonly depends on which definition it meets.",
             "A hospital visit that a lessee calls a restoration, or a restoration that falls short of the lease definition, is a common source of dispute. Maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to end in multi-million-dollar arguments. The visit type should be agreed with the lessor before induction, in writing."
           ]
         },
         {
           "heading": "Who decides, and when",
           "paragraphs": [
-            "The decision is made twice. A provisional workscope is drafted from ECM data, borescope findings and LLP status before removal. It is confirmed or changed at table inspection, when the modules are open and the real condition is visible. That second decision is where an independent representative earns their day rate.",
+            "The decision is made twice. A provisional workscope is drafted from ECM data, borescope findings and LLP status before removal. It is confirmed or changed at table inspection, when the modules are open and the real condition is visible. That second decision is where an independent representative earns their fee.",
             "Flight Hour Solution compiles and reviews workscopes for CFM56, LEAP, V2500 and PW4000 engines, attends table inspections and reconciles the final invoice against the workscope that was approved. The visit type is the first line of that workscope."
           ]
         }
@@ -126,10 +126,10 @@
         "alt": "Turbine blades laid out in rows on a light table, one held up by a gloved inspector",
         "credit": "Generated illustration"
       },
-      "notes": "Topic 3 in 06 section 4.3. The three visit-type descriptions are definitional (glossary terms quick-turn, hospital visit, performance restoration in 06 section 4.5) and carry no figures. 'Typically several million US dollars per visit' follows the copy implication in 06 section 1.2; the SAFE FLY per-visit ranges are deliberately not quoted (06 section 5.2). Services named in the closing paragraph are from 02 section 4: Workscope Compilation / Review, Dirty Condition / Table Inspection, Engine Overhaul / Repair Invoice Review.",
+      "notes": "Topic 3 in 06 section 4.3. The three visit-type descriptions are definitional (glossary terms quick-turn, hospital visit, performance restoration in 06 section 4.5) and carry no figures. 'The multi-million-dollar purchase' follows the copy implication in 06 section 1.2; the SAFE FLY per-visit ranges are deliberately not quoted (06 section 5.2). Services named in the closing paragraph are from 02 section 4: Workscope Compilation / Review, Dirty Condition / Table Inspection, Engine Overhaul / Repair Invoice Review.",
       "clientToConfirm": [
         "Confirm the firm's own preferred names for the three visit types (some shops say 'light', 'hospital' or 'repair' visit) so that the glossary and this note agree.",
-        "'Where an independent representative earns their day rate' implies day-rate pricing. Confirm that engagements are priced by the day, or reword to 'fee'."
+        "The closing section says an independent representative 'earns their fee'. Confirm this matches how engagements are priced."
       ]
     },
     {
@@ -147,7 +147,7 @@
         {
           "heading": "What has been certified",
           "paragraphs": [
-            "The LEAP has two separate durability stories. On the LEAP-1A, fuel-nozzle coking is addressed by a reverse-bleed system, and a high-pressure turbine durability kit was certified in December 2024. On the LEAP-1B, a high-pressure turbine and fuel-nozzle durability package was certified in 2026, with full production cut-over expected in early 2027.",
+            "The LEAP has two separate durability stories. On the LEAP-1A, fuel-nozzle coking is addressed by a reverse-bleed system, and CFM reports a high-pressure turbine durability kit certified in December 2024. On the LEAP-1B, a high-pressure turbine and fuel-nozzle durability package was certified in 2026, and GE Aerospace expects full production cut-over in early 2027.",
             "Uptake on the 1A has been fast. CFM reported more than 1,200 HPT kits produced in under a year, with about 70 per cent of the LEAP-1A fleet on the reverse-bleed system and 40 per cent on the HPT kit. IBA's H2 2026 update notes LEAP values benefiting from these product improvements.",
             "The claimed effect is large where it matters. GE Aerospace has said that in harsh environments a LEAP-1A stayed on wing about 1.5 years before the update and about four years with it, and that the kit more than doubles time on wing in severe conditions.",
             "Those figures describe severe environments. The gain in benign operations has to be estimated from an operator's own removal history, not read across from the worst case."
@@ -157,7 +157,7 @@
           "heading": "Why it is a workscope decision",
           "paragraphs": [
             "Embodiment is not free and not instant. It adds parts, labour and test time to a visit that, for a new-generation engine, already runs 150 per cent or more longer than pre-pandemic norms. In the first half of 2026 LEAP-1A project durations fell 8 per cent while LEAP-1B durations rose 5 per cent, so the shop's turnaround differs by variant.",
-            "The payback question therefore has four terms: the extra cost and downtime of embodiment now; the avoided cost of an earlier removal later; the value of the extra time on wing in a market where slots wait two to six months; and the residual-value effect on a leased or financed engine.",
+            "The payback question therefore has four terms: the extra cost and downtime of embodiment now; the avoided cost of an earlier removal later; the value of the extra time on wing in a market where slot waits run two to six months longer than before the pandemic; and the residual-value effect on a leased or financed engine.",
             "Each term is engine-specific. An engine due for a full performance restoration anyway, with the core open and the HPT hardware already being replaced, carries a small incremental cost. An engine in for a quick-turn with healthy margins carries the full cost and gains little until its next planned removal."
           ]
         },
@@ -173,7 +173,7 @@
           "heading": "What to fix before the visit",
           "paragraphs": [
             "Three things should be settled before induction. First, the configuration the lessor expects at redelivery, in writing. Second, kit availability and its effect on the quoted turnaround, confirmed by the shop. Third, the model that compares embodiment now with embodiment at the following visit, using the operator's own data rather than fleet averages.",
-            "Flight Hour Solution reviews LEAP-1A and LEAP-1B workscopes as an independent party, with no interest in the parts sold or the slot used. The durability decision is written into the workscope with its assumptions, so the invoice can later be reconciled against it."
+            "Flight Hour Solution reviews LEAP-1A and LEAP-1B workscopes for the operator or owner. It is not owned by an MRO, lessor or OEM, and where it brokers material or an engine itself it says so. The durability decision is written into the workscope with its assumptions, so the invoice can later be reconciled against it."
           ]
         }
       ],
@@ -196,7 +196,7 @@
         "Three sources are tagged S in 06 section 1.4 (CFM kit count and fleet percentages; GE Aerospace time-on-wing figures; FlightGlobal and GE Aerospace LEAP-1B certification date and 2027 cut-over). Verify each against the page before launch or delete the sentence that uses it.",
         "IBA (tag F) places the LEAP-1B kit certification in H1 2026 while FlightGlobal (tag S) reports FAA certification on 18 July 2026. The article says 'in 2026' and 'July 2026' only in the source list; confirm the date to be used.",
         "Confirm that the firm has reviewed LEAP-1A or LEAP-1B workscopes in practice; the closing paragraph states this as a current service.",
-        "'No interest in the parts sold or the slot used' relies on the conflicts policy (07 section 2.3). Confirm that the firm earns nothing from LEAP parts or slot placement."
+        "The closing paragraph states the firm is not owned by an MRO, lessor or OEM and discloses when it brokers material or an engine (07 section 2.3 option 1). Confirm the wording against the About page policy."
       ]
     },
     {
@@ -230,9 +230,9 @@
         {
           "heading": "Closing the gap before redelivery",
           "paragraphs": [
-            "The first step is a reserve adequacy check, engine by engine: the reserve balance against a forecast of the next restoration at current prices, with the LLP stack costed cycle by cycle. The check should run at least a year before redelivery, because slot waits alone can run two to six months.",
+            "The first step is a reserve adequacy check, engine by engine: the reserve balance against a forecast of the next restoration at current prices, with the LLP stack costed cycle by cycle. The check should run at least a year before redelivery, because slot waits alone run two to six months longer than before the pandemic.",
             "The second step is a records audit. LLP back-to-birth traceability, shop visit reports and release certificates are gathered and gaps are chased while the operator, the shop and the paperwork still exist. A missing document found at redelivery costs far more than one found twelve months earlier.",
-            "The third step is to agree the classification of any shop visit inside the redelivery window before induction: whether it is a performance restoration under the lease definition, which modules are included, and how a module swap will be treated. Silence here is where most claims are born.",
+            "The third step is to agree the classification of any shop visit inside the redelivery window before induction: whether it is a performance restoration under the lease definition, which modules are included, and how a module swap will be treated. Classification disputes start here.",
             "The fourth step is a claim file built as the visit runs, not afterwards: the approved workscope, table-inspection findings, scrap tags, the invoice reconciled line by line and the test-cell result. A reserve claim presented with that file is settled; one presented without it is negotiated."
           ]
         },
@@ -290,7 +290,7 @@
           "paragraphs": [
             "A material policy answers four questions before the engine is inducted. Which parts may be sourced as USM, and with what documentation. Where PMA parts and DER repairs are acceptable, and where the lease or the lessor forbids them. Who owns the removed material. And who checks the price of each route against the others.",
             "Lease terms often govern the second question: whether PMA parts and DER repairs are permitted on the engine, and on what conditions. A lessee that fits them against the lease creates a redelivery problem larger than the saving. The policy has to be read against every lease in the fleet, not written once for the airline.",
-            "Documentation decides whether USM is an asset or a liability. Since the 2023 AOG Technics case of falsified part paperwork, traceability has become the first question buyers and lessors ask. A USM part without a clean release certificate and back-to-birth trace is not a cheaper part; it is a future finding."
+            "Documentation decides whether USM is an asset or a liability. The 2023 AOG Technics case of falsified part paperwork pushed part traceability up the industry's agenda. A USM part without a clean release certificate and back-to-birth trace is not a cheaper part; it is a future finding."
           ]
         },
         {
@@ -298,14 +298,14 @@
           "paragraphs": [
             "The saving is rarely in the headline part price. It sits in the scrap review, where parts condemned by the shop are checked against manual limits and repair options; in material value extraction, where serviceable removed parts are recovered for the owner rather than left with the shop; and in avoiding long-lead new parts that stretch the turnaround.",
             "The decision point is table inspection. That is when the shop's findings, the repair routes, the USM offers and the lead times can be put on one sheet, and when a representative in the room can still change the outcome. After kitting, the material decision has been made by default.",
-            "In a market where slot waits run two to six months and OEM parts demand outpaces supply, the schedule value of a USM route can exceed its price value. A part available now, with paperwork, can be worth more than a cheaper part that arrives after the test-cell date."
+            "In a market where slot waits run two to six months longer than before the pandemic and OEM parts demand outpaces supply, the schedule value of a USM route can exceed its price value. A part available now, with paperwork, can be worth more than a cheaper part that arrives after the test-cell date."
           ]
         },
         {
           "heading": "Who should hold the policy",
           "paragraphs": [
             "The shop has an interest in the material it sells and the repairs it performs. The parts broker has an interest in the parts it holds. The policy should therefore sit with the owner or operator, and the check on each route should be done by someone with no stake in which route is chosen.",
-            "Flight Hour Solution supports material sourcing and documentation audits, scrap review and material value extraction during shop visits. Where we broker material or an engine ourselves we say so, in line with our conflicts policy, so that the advisory check and the sale are never confused."
+            "Flight Hour Solution supports material sourcing and documentation audits, scrap review and material value extraction during shop visits. Where it brokers material or an engine itself it says so, so that the advisory check and the sale are never confused."
           ]
         }
       ],
@@ -321,7 +321,7 @@
         "alt": "Three engines on wheeled stands in a bright engine shop, with a technician in the background",
         "credit": "Generated illustration"
       },
-      "notes": "Topic 9 in 06 section 4.3. The four policy questions and the 'schedule value' argument are practice, not sourced statistics; the 20 to 40 week lead-time and technician-shortfall figures in 06 section 1.3 are tagged S/V and are not used. Services named follow 02 section 4 (Support with Material Sourcing and Documentation Audit, Scrap Review and Material Value Extraction, Dirty Condition / Table Inspection). The conflicts-policy sentence follows 07 section 2.3 option 1.",
+      "notes": "Topic 9 in 06 section 4.3. The four policy questions and the 'schedule value' argument are practice, not sourced statistics; the 20 to 40 week lead-time and technician-shortfall figures in 06 section 1.3 are tagged S/V and are not used. Services named follow 02 section 4 (Support with Material Sourcing and Documentation Audit, Scrap Review and Material Value Extraction, Dirty Condition / Table Inspection). The disclosure sentence follows 07 section 2.3 option 1 (disclose the broker role); it does not name a conflicts policy document, which still has to be written.",
       "clientToConfirm": [
         "The AOG Technics reference is tagged S in 06 section 1.8. Verify against the GA Telesis page or another primary source, or delete the sentence.",
         "Confirm the conflicts-policy wording: the article says the firm discloses when it brokers material or an engine. Confirm also whether the firm distributes parts (the ASA membership and the #AircraftParts hashtag in 01 section 4.3 suggest it), because the article must not imply otherwise.",

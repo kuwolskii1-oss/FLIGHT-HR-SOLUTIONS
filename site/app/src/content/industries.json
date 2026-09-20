@@ -12,7 +12,7 @@
       "seoTitle": "Engine shop visit management for airlines | Flight Hour Solution",
       "metaDescription": "Independent shop visit management, workscope and removal planning, engine data review and MRO contract support for airline powerplant teams. Zug, Switzerland.",
       "audience": "For VPs Technical, heads of powerplant, engine fleet managers, CAMO leads and procurement teams who own fleet availability and the engine budget.",
-      "situation": "Engines are the largest and fastest-growing segment of the aircraft maintenance market. Turnaround times are up 35 per cent or more on legacy engines and 150 per cent or more on new-generation types, and slot waits are two to three months longer, up to six. A lean powerplant team cannot sit in every shop. That is the gap we fill.",
+      "situation": "Engines are the largest and fastest-growing segment of aircraft maintenance. Against pre-pandemic levels, turnaround times are up 35 per cent or more on legacy engines and 150 per cent or more on new-generation types, and slot waits are two to three months longer, up to six. A lean powerplant team cannot sit in every shop. We fill that gap.",
       "whatWeDo": [
         {
           "title": "An extra pair of hands at the shop",
@@ -108,7 +108,7 @@
       "seoTitle": "Independent support for engine MROs and overhaul shops | Flight Hour Solution",
       "metaDescription": "Material and scrap review, findings and records review, new engine type induction support and training for independent and airline-affiliated engine shops.",
       "audience": "For heads of engine shops, commercial directors and customer support engineers at independent and airline-affiliated MROs who want fewer disputes and better-run inductions.",
-      "situation": "Cumulative engine MRO demand exceeds supply by nearly 17 per cent through the end of the decade and OEM parts demand by 10 to 20 per cent. Slots are contested, findings are questioned and invoices are read line by line. Most of our work is on the customer's side of the table, so we know what a customer will accept.",
+      "situation": "Cumulative engine MRO demand exceeds supply by nearly 17 per cent through the end of the decade and OEM parts demand by 10 to 20 per cent. Slots are contested, findings are questioned and invoices are read line by line. Our shop visit management is built for airlines and lessors, so we know what a customer will accept.",
       "whatWeDo": [
         {
           "title": "Material strategy and scrap review",
@@ -127,7 +127,7 @@
         },
         {
           "title": "Training for customer-facing engineers",
-          "text": "Workshops for customer support and shop engineers on how airlines and lessors read a workscope, a findings report and an invoice, built from our work on the other side of the table and the team's experience in engine shops and airline engineering.",
+          "text": "Workshops for customer support and shop engineers on how airlines and lessors read a workscope, a findings report and an invoice, built from the way we run shop visits for airlines and lessors and the team's experience in engine shops and airline engineering.",
           "serviceSlug": "training-and-knowledge-transfer"
         }
       ],
@@ -137,11 +137,11 @@
         "alt": "Engine overhaul shop with several turbofan engines on stands",
         "credit": "Generated illustration"
       },
-      "source": "Persona: docs/research/06-market-context-and-seo.md section 2 row 9. MROs as a client type: docs/research/01-company-profile.md section 4.2 (Swiss Aerospace Cluster directory, including material management and scrap rate analysis and training and knowledge transfer) and docs/research/02-website-content-inventory.md section 4 (MRO Support Programs; Support with Material Sourcing and Documentation Audit; Scrap Review and Material Value Extraction; Industry Best Practice Advice). Figures: cumulative demand exceeding supply by nearly 17 per cent through the end of the decade and OEM parts demand outpacing supply by 10 to 20 per cent, Bain July 2024, 06 section 1.3 [F]; teardown part harvesting five times below pre-2020 levels, Magnetic Group June 2025, 06 section 1.2 [F]; LEAP durability kits, IBA H2 2026, 06 section 1.4 [F]. Team experience phrasing: site/content-brief/VOICE-AND-FACTS.md and 01 section 2.",
-      "notes": "This page states openly that most of the firm's work is on the customer's side of the table. That is consistent with the independence statement and is the honest answer to the persona's objection that consultants are customer-side adversaries (06 section 2 row 9).",
+      "source": "Persona: docs/research/06-market-context-and-seo.md section 2 row 9. MROs as a client type: docs/research/01-company-profile.md section 4.2 (Swiss Aerospace Cluster directory, including material management and scrap rate analysis and training and knowledge transfer) and docs/research/02-website-content-inventory.md section 4 (MRO Support Programs; Support with Material Sourcing and Documentation Audit; Scrap Review and Material Value Extraction; Industry Best Practice Advice). Figures: cumulative demand exceeding supply by nearly 17 per cent through the end of the decade and OEM parts demand outpacing supply by 10 to 20 per cent, Bain July 2024, 06 section 1.3 [F]; teardown part harvesting five times below pre-2020 levels, Magnetic Group June 2025, 06 section 1.2 [F]; LEAP durability kits, IBA H2 2026, 06 section 1.4 [F]. Team experience phrasing: site/content-brief/VOICE-AND-FACTS.md and 01 section 2. Positioning statement (shop visit management built for airlines and lessors): docs/research/01-company-profile.md section 4.1.",
+      "notes": "This page states openly that the firm's shop visit management is built for airlines and lessors (01 section 4.1). No client mix or engagement split is claimed, because the dossier documents none. The customer-side framing is consistent with the independence statement and is the honest answer to the persona's objection that consultants are customer-side adversaries (06 section 2 row 9).",
       "clientToConfirm": [
         "Confirm that MRO support programmes are an active offer and that the four items shown are the ones to sell to shops; the register purpose and the Swiss Aerospace Cluster entry list material management, scrap rate analysis and training, but no MRO client has been named.",
-        "Confirm the statement that most of the firm's work is on the customer's side of the table, and approve a conflicts rule for this page: the firm does not act for a shop and for that shop's customer on the same shop visit.",
+        "Approve a conflicts rule for this page: the firm does not act for a shop and for that shop's customer on the same shop visit. No statement about the firm's client mix is made on the page, because the dossier documents none.",
         "The phrase 'the team's experience in engine shops and airline engineering' is used without a years figure. Confirm which shops and airlines may be named on the About page (01 section 2 indicates about four years at Aero Norway for the managing director; role and title unverified).",
         "Confirm whether the name of this page should read MROs or Engine shops and MROs."
       ]

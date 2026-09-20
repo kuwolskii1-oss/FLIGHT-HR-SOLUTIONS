@@ -215,13 +215,13 @@
           {
             "value": "+35",
             "unit": "%",
-            "label": "Turnaround time on legacy engines against pre-pandemic levels, or more",
+            "label": "Rise in turnaround time for legacy engines against pre-pandemic levels, at minimum",
             "source": "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, July 2024"
           },
           {
             "value": "+150",
             "unit": "%",
-            "label": "Turnaround time on new-generation engines against pre-pandemic levels, or more",
+            "label": "Rise in turnaround time for new-generation engines against pre-pandemic levels, at minimum",
             "source": "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, July 2024"
           },
           {
@@ -364,7 +364,7 @@
           {
             "value": "90 to 120",
             "unit": "days",
-            "label": "Independent benchmark for a CFM56 full overhaul, often the last visit before a redelivery",
+            "label": "Independent turnaround benchmark for a CFM56 full overhaul",
             "source": "Acumen Aviation, Why engine shortages are reshaping aircraft asset values, June 2026"
           }
         ],
@@ -439,7 +439,7 @@
       "faq": [
         {
           "q": "Do you work for lessors or for airlines?",
-          "a": "Both, but never for both sides of the same lease at once. Many engagements are for the lessee preparing a return; others are for the lessor accepting one or overseeing a portfolio."
+          "a": "Both, but never for both sides of the same lease at once. We prepare a return for the lessee, accept one for the lessor, or oversee a lessor's portfolio through the lease."
         },
         {
           "q": "How early should redelivery planning start?",
@@ -572,7 +572,7 @@
       ],
       "engineFamilies": ["CFM56", "LEAP", "V2500", "PW4000", "APU and turboprop"],
       "proof": {
-        "title": "Not on the other side's payroll",
+        "title": "Owned by no MRO, lessor or OEM",
         "text": "Flight Hour Solution is not owned by an MRO, a lessor or an OEM, and on advisory work it acts for the client alone. When we source or broker an engine or aircraft, that is done under our Assets line and disclosed."
       },
       "faq": [
@@ -590,7 +590,7 @@
         },
         {
           "q": "Are you tied to any MRO or parts supplier?",
-          "a": "No. Flight Hour Solution is owned by its managing director and is not owned by an MRO, a lessor or an OEM. Engine and aircraft sourcing is done under a separate Assets line and is always disclosed."
+          "a": "No. Flight Hour Solution is owned by its managing director, not by an MRO, a lessor or an OEM. Engine and aircraft sourcing is done under a separate Assets line and is always disclosed."
         }
       ],
       "related": ["shop-visit-management", "lease-return-and-asset-management", "workscope-and-removal-planning"],
@@ -703,7 +703,7 @@
       ],
       "engineFamilies": ["CFM56", "LEAP", "V2500", "PW4000", "APU and turboprop"],
       "proof": {
-        "title": "Your data, our reading",
+        "title": "No platform, no shop capacity to sell",
         "text": "We do not sell a monitoring platform or shop capacity, so the recommendation is not shaped by what happens after the removal. Every alert we interpret is answered in writing, with the data behind it."
       },
       "faq": [
@@ -872,7 +872,7 @@
       "slug": "military-and-government",
       "name": "Military and government programmes",
       "shortName": "Military and government",
-      "oneLiner": "Shop visit management, maintenance forecasting, contract negotiation and post-repair evaluation for governmental and military operators, so critical engines stay mission-ready.",
+      "oneLiner": "Shop visit management, maintenance forecasting, contract negotiation and post-repair evaluation for governmental and military operators, with the OEM or a single depot on the other side of the table.",
       "seoTitle": "Military and government programmes",
       "metaDescription": "Independent engine shop visit management, maintenance forecasting, contract negotiation and post-repair audits for military and government operators.",
       "keywords": [
@@ -885,7 +885,7 @@
       "audience": ["Programme Manager", "Head of Sustainment", "Procurement Officer", "Air force logistics command"],
       "problem": {
         "title": "Readiness with the OEM as sole supplier",
-        "text": "The global military aircraft fleet is set to grow from 44,700 in 2025 to 50,700 by 2036, with military MRO growing about ten times faster than in the previous decade, led by engine maintenance. Government operators often face a single supplier for engine overhaul, with limited visibility of workscope, cost and turnaround. Independent oversight keeps engines mission-ready and budgets defensible.",
+        "text": "The global military aircraft fleet is set to grow from 44,700 in 2025 to 50,700 by 2036, with military MRO growing about ten times faster than in the previous decade, led by engine maintenance. Government operators often face a single supplier for engine overhaul, with limited visibility of workscope, cost and turnaround. Someone on the programme's side has to read both.",
         "stats": [
           {
             "value": "+13.4",
@@ -977,7 +977,7 @@
         },
         {
           "q": "Which engine types do you cover for government fleets?",
-          "a": "The same families as our civil work: CFM56, LEAP, V2500, PW4000, Honeywell 131-9 APUs and the TPE331, T76 and TFE731. Other types are assessed case by case."
+          "a": "The same families as our civil work: CFM56, LEAP, V2500, PW4000, Honeywell APU 131-9A, -9B and -9D, and the TPE331, T76 and TFE731. Other types are assessed case by case."
         },
         {
           "q": "Can you work within public procurement rules?",
@@ -1102,11 +1102,11 @@
         },
         {
           "q": "Can training be combined with a real shop visit?",
-          "a": "Yes. Knowledge transfer during a managed shop visit or lease return is often the most effective format: your engineers work alongside us and keep the method afterwards."
+          "a": "Yes. Knowledge transfer during a managed shop visit or lease return is the most direct format: your engineers work alongside us and keep the method afterwards."
         },
         {
           "q": "Which engine types are covered?",
-          "a": "CFM56, LEAP, V2500, PW4000, Honeywell 131-9 APUs and the TPE331, T76 and TFE731, with examples drawn from the family your fleet operates."
+          "a": "CFM56, LEAP, V2500, PW4000, Honeywell APU 131-9A, -9B and -9D, and the TPE331, T76 and TFE731, with examples drawn from the family your fleet operates."
         }
       ],
       "related": ["shop-visit-management", "workscope-and-removal-planning", "military-and-government"],

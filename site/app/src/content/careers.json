@@ -4,7 +4,7 @@
     "Open roles: 02 section 6 documents no vacancies, so openRoles is empty and the page shows the built-in line 'There are no advertised roles at the moment. Speculative applications are welcome.' For any role to advertise, supply a title, a location and two or three sentences.",
     "Employment form: confirm whether the company hires employees, engages freelance or associate consultants per engagement, or both, and whether roles are based in Zug, at client sites or remote. The page says the work happens at the shop and, between site visits, from Zug.",
     "Backgrounds: the three named (engine shop, airline engineering, lessor technical) follow the page brief. Confirm whether to add others, for example OEM field service, MRO customer support, records and CAMO, or defence sustainment for the military and government line.",
-    "Engine families: the page names the families from 02 section 4 and says depth on one counts for more than a line on each. Confirm the priority families for hiring, for example LEAP for new-generation work.",
+    "Engine families: the page names the families from 02 section 4 and says real depth on one family counts for more than a passing acquaintance with all of them. Confirm the priority families for hiring, for example LEAP for new-generation work.",
     "Languages: English is described as essential and German as useful. The team's languages are not documented (01 section 9, question 6). Confirm the requirement and whether French or Polish should be mentioned.",
     "Small firm: the title describes the company as a small consultancy. Team-size signals conflict (commercial register: one person; Swiss Aerospace Cluster directory: 4; LinkedIn: 11 to 50). Confirm the description, as also flagged in about.json.",
     "Travel: the page says table inspections, test-cell runs and redeliveries are attended in person, wherever the engine is, and that the work between visits is done from Zug (the same sentence as about.json). Confirm the expected share of travel.",
@@ -13,16 +13,16 @@
   "seoTitle": "Careers at an independent engine consultancy in Zug | Flight Hour Solution",
   "metaDescription": "Careers at Flight Hour Solution, an independent engine consultancy in Zug. Engine shop, airline engineering and lessor technical people welcome. Apply by email.",
   "title": "Join a small engine consultancy in Zug",
-  "intro": "We manage shop visits and lease returns for airlines, lessors and governments. Engine shop, airline engineering and lessor technical backgrounds are all welcome.",
+  "intro": "We manage shop visits for airlines, lessors and governments, and lease returns for airlines and lessors. Engine shop, airline engineering and lessor technical backgrounds are welcome.",
   "whatWeLookFor": [
     "Engine shop experience. You have worked in an engine overhaul or repair shop, on the shop floor, in the test cell, in planning or in customer support, and you know what happens at a table inspection, a borescope review and a scrap review.",
     "Airline engineering experience. You have worked in powerplant engineering, removal planning or engine records for an operator, and you have been on the airline's side of a workscope review, an invoice or an MRO contract.",
     "Lessor technical experience. You have managed engines through a lease as a technical asset manager: maintenance reserves, redelivery conditions, back-to-birth records, mid-term inspections and the disputes that follow when a shop visit comes early.",
-    "Depth on the engines we work on: CFM56, LEAP, V2500, PW4000, Honeywell APU 131-9A/-9B/-9D, TPE331/T76 and TFE731. Real depth on one family counts for more than a line on each.",
+    "Engine family knowledge. We work on CFM56, LEAP, V2500, PW4000, Honeywell APU 131-9A/-9B/-9D, TPE331/T76 and TFE731. Real depth on one family counts for more than a passing acquaintance with all of them.",
     "Plain English and sound numbers. What we deliver is a report, a workscope comment or a negotiating position that a client will act on. You can explain a finding in a paragraph and defend every figure in it.",
     "Comfort with independence. We are not owned by an MRO, lessor or OEM and we work for the client alone. That sometimes means telling a shop, a manufacturer or the other side of a lease something it would rather not hear, politely and with the evidence.",
     "Readiness to travel. Table inspections, test-cell runs and redeliveries are attended in person, wherever the engine is. Between site visits the work is done from Zug.",
-    "Languages. English is essential. German is useful with Swiss and German-speaking clients, and other languages are welcome."
+    "Languages. English is essential. German is useful with clients in Switzerland, Germany and Austria, and other languages are welcome."
   ],
   "howToApply": {
     "title": "How to apply",

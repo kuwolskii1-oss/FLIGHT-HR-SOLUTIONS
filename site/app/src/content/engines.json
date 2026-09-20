@@ -1,11 +1,11 @@
 {
-  "notes": "Engine family pages following the template in 07 section 5 and the route in site/app/src/routes/engines/$slug.tsx. The first sentence of each context.text is reused as the family's row summary on the hub page, so it stands alone. Stat sources are rendered on the page, so each stat.source names the publisher and date in plain words while the dossier reference sits in the stat's notes and in the page-level sources array. Every rendered market figure is tagged [F] in 06 section 1; [S] and [V] figures are not rendered. Aircraft applications and Honeywell product figures carry their URL in the sources array. British English, no dashes, fixed call-to-action labels, no vendor cost ranges, no savings figures.",
+  "notes": "Engine family pages following the template in 07 section 5 and the route in site/app/src/routes/engines/$slug.tsx. The first sentence of each context.text is reused as the family's row summary on the hub page, so it stands alone. Stat sources are rendered on the page, so each stat.source names the publisher and date in plain words while the dossier reference sits in the stat's notes and in the page-level sources array. Every rendered market figure is tagged [F] in 06 section 1; [S] and [V] figures are not rendered. Aircraft applications carry their URL in the sources array. The APU and turboprop page renders no stats: Honeywell product figures are not in 06 section 1 and were removed (see clientToConfirm). British English, no dashes, fixed call-to-action labels, no vendor cost ranges, no savings figures.",
   "clientToConfirm": [
     "Engine-family experience: confirm which of the seventeen listed models the team has managed shop visits for in practice, and name the consultant per family for the team page (07 section 2.2 asks for engine-family experience per consultant).",
     "Confirm the capability list is current, in particular the LEAP-1C, V2500-A1, V2500-D5 and PW4000-112, which have small or shrinking fleets.",
     "Figures tagged [S] in 06 section 1 were left out pending verification against the source: CFM56 shop visits of about 2,300 to 2,400 per year through 2026 to 2028 and about 800 V2500 shop visits expected in 2026 (Aviation Week snippet); the LEAP-1A HPT durability kit certified in December 2024 with more than 1,200 kits and 70 per cent of the fleet on the reverse-bleed system (CFM press release); FAA certification of the LEAP-1B durability improvements on 18 July 2026 (FlightGlobal), which conflicts with IBA's 'H1 2026', so the page says 'in 2026'. Supply verified figures if they should be added.",
     "Aircraft applications: the CFM International and Pratt & Whitney product pages refused automated reading, so applications were cross-checked against GE Aerospace pages and encyclopaedia entries (URLs in sources). Confirm against the type certificate data sheets before launch if preferred.",
-    "Honeywell figures on the APU and turboprop page (more than 36,000 APUs in service, more than 100 million hours for the 131 family, more than 13,000 TPE331 engines in 18 models and 106 configurations) were read from Honeywell's pages on 19 September 2026 and are undated there. Confirm they may be quoted, or replace them with figures from the team's own experience.",
+    "Honeywell figures for the APU and turboprop page (more than 36,000 APUs in service from more than 95,000 produced, more than 100 million hours for the 131 family, more than 13,000 TPE331 engines in 18 models and 106 configurations with more than 122 million flight hours) read correctly on Honeywell's pages on 19 September 2026 but are not in the research dossier, so no stats are rendered on that page. To restore them, add a sourced [F] row to 06 section 1.2 with the two Honeywell URLs and the read date; the visit-type text still names the 18 models and 106 configurations against the Honeywell URL and should be reviewed under the same decision.",
     "Widebody families named in 07 section 4 for later (Trent, GE90, GEnx, CF34) are not included. Confirm whether the Rolls-Royce Trent, which the company has sold through its sourcing activity (01 section 3), should get a page.",
     "The CFM56 sourcing question in the FAQ points to the Assets line. Confirm the name of that line and that CFM56 listings may be cross-linked from the CFM56 page.",
     "No savings figures, response times or engagement durations are stated on these pages. Supply approved figures if any should appear (06 section 5.2).",
@@ -13,7 +13,7 @@
   ],
   "hub": {
     "title": "Engine families we manage",
-    "intro": "Five families and seventeen models, from the CFM56 to the Honeywell 131-9 APU: fleet context in 2026, typical visit types, cost drivers and what we do for each.",
+    "intro": "Five families and seventeen models, from the CFM56 to the Honeywell 131-9 APU: fleet context in 2026, visit types, cost drivers and what we do.",
     "source": "Families and models: 02-website-content-inventory.md section 4. Page template: 07-recommendations-and-brief.md section 5."
   },
   "families": [
@@ -626,31 +626,9 @@
       "models": ["Honeywell APU 131-9A", "Honeywell APU 131-9B", "Honeywell APU 131-9D", "TPE331/T76", "TFE731"],
       "context": {
         "title": "Smaller tickets, same discipline",
-        "text": "Honeywell 131-9 APUs, the TPE331 (T76 in military service) and the TFE731 get the same workscope, invoice and records discipline as a large turbofan, at a smaller ticket. Honeywell counts more than 13,000 TPE331 engines delivered in 18 models and 106 configurations, so no two workscopes look alike. We manage 131-9A, -9B and -9D, TPE331/T76 and TFE731 visits and records.",
-        "source": "Models: 02 section 4. T76 designation: TPE331 encyclopaedia entry (URL in sources). TPE331 figures: Honeywell Aerospace TPE331 page, read 19 September 2026 (URL in sources).",
-        "stats": [
-          {
-            "value": "36,000+",
-            "unit": "APUs",
-            "label": "Honeywell auxiliary power units in service, from more than 95,000 produced",
-            "source": "Honeywell Aerospace, auxiliary power units overview, read 19 September 2026",
-            "notes": "Not from 06; OEM product figure, URL in the page-level sources. Undated on the Honeywell page."
-          },
-          {
-            "value": "100 million+",
-            "unit": "hours",
-            "label": "In-service hours of the Honeywell 131 APU family",
-            "source": "Honeywell Aerospace, auxiliary power units overview, read 19 September 2026",
-            "notes": "Not from 06; OEM product figure, URL in the page-level sources. Undated on the Honeywell page."
-          },
-          {
-            "value": "13,000+",
-            "unit": "engines",
-            "label": "TPE331 engines delivered, in 18 models and 106 configurations, with more than 122 million flight hours",
-            "source": "Honeywell Aerospace, TPE331 turboprop engine page, read 19 September 2026",
-            "notes": "Not from 06; OEM product figure, URL in the page-level sources. Undated on the Honeywell page."
-          }
-        ]
+        "text": "Honeywell 131-9 APUs, the TPE331 (T76 in military service) and the TFE731 get the same workscope, invoice and records discipline as a large turbofan, at a smaller ticket. The TPE331 exists in many models and configurations, so no two workscopes look alike. We manage 131-9A, -9B and -9D, TPE331/T76 and TFE731 visits and records.",
+        "source": "Models: 02 section 4. T76 designation: TPE331 encyclopaedia entry (URL in sources). No stats rendered: the Honeywell product figures are not in 06 section 1, so they were removed pending a sourced dossier row.",
+        "stats": []
       },
       "visitTypes": [
         {
@@ -719,7 +697,7 @@
         },
         {
           "title": "Military and government",
-          "text": "The TPE331 serves as the T76 in military service and Honeywell developed the type for military as well as civil use. For government and military operators we provide independent oversight of workscopes, contracts and invoices, including where a single contractor is the only supplier.",
+          "text": "The TPE331 serves as the T76 in military service and was developed for military as well as civil use. For government and military operators we provide independent oversight of workscopes, contracts and invoices, including where a single contractor is the only supplier.",
           "serviceSlug": "military-and-government",
           "source": "TPE331 encyclopaedia entry (T76 military designation) and Honeywell Aerospace TPE331 page (military applications); URLs in sources."
         },

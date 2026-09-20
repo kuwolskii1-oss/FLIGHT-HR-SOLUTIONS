@@ -11,16 +11,16 @@
     "phone": "+41765958861",
     "phoneDisplay": "+41 76 595 88 61",
     "email": "contact@flighthoursolution.com",
-    "whatsapp": "https://wa.me/41764186350",
+    "whatsapp": "",
     "linkedin": "https://www.linkedin.com/company/flight-hour-solution",
     "founded": "2024",
     "managingDirector": "Hubert Nowosad",
     "registerUrl": "https://www.zefix.ch/en/search/entity/list/firm/1658864",
     "source": "Legal name, UID, registered address, founding and managing director: docs/research/01-company-profile.md sections 1, 2 and 3 (Zefix, SOGC, UID register). Phone, email, WhatsApp and LinkedIn: docs/research/01-company-profile.md section 6 and docs/research/02-website-content-inventory.md sections 2, 3 and 7. Tagline: docs/research/03-brand-assets.md section 1 and docs/research/07-recommendations-and-brief.md section 2.4.",
-    "notes": "Entered in the Zug commercial register on 26 September 2024 (statutes 4 September 2024, SOGC publication 1 October 2024); share capital CHF 20,000. The register gives Bahnhofplatz without a house number. The phone is the number the company put on its hero and contact page in April 2026 and that appears in the footer contact block (02 section 2). The WhatsApp link is the one documented on the current site; it uses the older number +41 76 418 63 50. Use legalName in the footer, Impressum and Organization schema, shortName in prose; never the plural form of the name and never the three-letter abbreviation on its own.",
+    "notes": "Entered in the Zug commercial register on 26 September 2024 (statutes 4 September 2024, SOGC publication 1 October 2024); share capital CHF 20,000. The register gives Bahnhofplatz without a house number. The phone is the number the company put on its hero and contact page in April 2026 and that appears in the footer contact block (02 section 2). The WhatsApp link documented on the current site uses the older number +41 76 418 63 50, so whatsapp is left empty (button not rendered) until the client confirms which number carries WhatsApp; it must then equal company.phone. Use legalName in the footer, Impressum and Organization schema, shortName in prose; never the plural form of the name and never the three-letter abbreviation on its own.",
     "clientToConfirm": [
       "Primary phone: +41 76 595 88 61 is used here (hero and contact page since April 2026). Two other numbers are in circulation: +41 76 418 63 50 (current header button and WhatsApp) and +41 76 358 84 90 (Swiss Aerospace Cluster directory). Confirm the one number for the site and whether a landline or switchboard exists.",
-      "WhatsApp: the documented link is on +41 76 418 63 50, so the WhatsApp and tel links do not match. Confirm whether WhatsApp should move to the primary number.",
+      "WhatsApp: the documented link is on +41 76 418 63 50, so the WhatsApp and tel links do not match. Confirm whether WhatsApp should move to the primary number; the button is hidden until then.",
       "Bahnhofplatz: confirm the house number and whether the address is a visitable office (map and opening hours) or a domicile address (meetings by appointment).",
       "Confirm that sales@flighthoursolution.com, used on LinkedIn for engine and aircraft enquiries, may be published on the Assets page.",
       "Confirm the singular spelling Flight Hour Solution everywhere; LinkedIn posts have used the plural.",
@@ -55,7 +55,7 @@
     {
       "name": "Swiss Aerospace Cluster",
       "status": "verified",
-      "since": "November 2025",
+      "since": "2025",
       "url": "https://swiss-aerospace-cluster.ch/portfolio-item/flight-hour-solution/",
       "source": "docs/research/01-company-profile.md section 5 (verified: SAC directory entry and welcome post of 26 November 2025) and section 3 (logo uploaded to the SAC site October 2025).",
       "clientToConfirm": [

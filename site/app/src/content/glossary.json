@@ -3,7 +3,7 @@
   "clientToConfirm": [
     "Term selection: the forty terms follow the list in 06 section 4.5 plus Table inspection from 05 section 4 and the company's own service list. Five list items are folded into neighbouring entries (stub life, hard time, reverse bleed system, Part-M, Maintenance Planning Document dropped). Confirm the selection or name terms to swap in, for example mid-term inspection, invoice reconciliation, warranty claim, scrap review, expert witness or ISTAT appraisal from the 05 vocabulary.",
     "Performance restoration: the entry says such a visit is 'typically several million US dollars for a narrowbody engine'. This follows the copy guidance in 06 section 1.2 (vendor ranges are not quoted; IBA reports shop-visit and LLP costs increased significantly) and is not an audited figure. Confirm the wording or remove the phrase.",
-    "Durability kit: the dates are snippet-level sources. CFM's press article gives December 2024 for the LEAP-1A HPT kit [S], FlightGlobal and GE Aerospace give 18 July 2026 for the LEAP-1B improvements [S], while IBA's H2 2026 update says the LEAP-1B kit was certified in H1 2026 [F]. The 'more than doubles time on wing in severe environments' statement is GE Aerospace's own claim [S]. Verify against the CFM and GE press releases before launch.",
+    "Durability kit: the dates are snippet-level sources. CFM's press article gives December 2024 for the LEAP-1A HPT kit [S], FlightGlobal and GE Aerospace give 18 July 2026 for the LEAP-1B improvements [S], while IBA's H2 2026 update says the LEAP-1B kit was certified in H1 2026 [F]. The 'more than doubles time on wing in severe environments' statement is GE Aerospace's own claim [S]. The entry therefore says only that the LEAP-1B improvements were certified in 2026. Verify the exact date against the CFM and GE press releases before launch.",
     "Powder-metal inspection: the 2015 to 2021 manufacturing window is a snippet-level figure [S] and the fleet figures (about 1,900 PW1000G-powered aircraft in service, about 770 in storage) are dated April 2026 [F]. Both will date; confirm a refresh cadence for the entry or remove the figures.",
     "Full-life: the IBA figure (GE90-115BL full-life value above US$35 million, September 2026) will date. Confirm whether to keep a dated example in the glossary or replace it with a plain definition.",
     "Neutral definitions: no entry names a Flight Hour Solution service. Confirm whether entries such as Table inspection, Workscope, Back-to-birth records and Test cell acceptance should end with a one-sentence 'what we do' line pointing to the service page, or stay as pure reference material.",
@@ -44,12 +44,12 @@
     },
     {
       "term": "Dirty fingerprint",
-      "definition": "The findings recorded at the dirty table inspection, before parts are cleaned, documenting the condition in which an engine arrived at the shop. Lessors, lessees, insurers and warranty claims rely on it to attribute damage and cost to a period of operation, which is why the customer's representative should be present when it is taken.",
+      "definition": "The findings recorded at the dirty table inspection, before parts are cleaned, documenting the condition in which an engine arrived at the shop. Lessors, lessees, insurers and warranty assessors rely on it to attribute damage and cost to a period of operation, which is why the customer's representative should be present when it is taken.",
       "related": ["Table inspection", "Teardown", "End-of-lease compensation"]
     },
     {
       "term": "Durability kit",
-      "definition": "Redesigned hot-section hardware certified for an engine already in service to lengthen time on wing, embodied at a shop visit as a workscope decision. CFM's LEAP-1A high-pressure turbine kit (certified December 2024) is reported to more than double time on wing in severe environments; LEAP-1B improvements followed in July 2026. The related reverse bleed system addresses LEAP-1A fuel-nozzle coking.",
+      "definition": "Redesigned hot-section hardware certified for an engine already in service to lengthen time on wing, embodied at a shop visit as a workscope decision. CFM's LEAP-1A high-pressure turbine kit (certified December 2024) is reported to more than double time on wing in severe environments; LEAP-1B improvements were certified in 2026. The related reverse bleed system addresses LEAP-1A fuel-nozzle coking.",
       "source": "docs/research/06-market-context-and-seo.md section 1.4 (CFM LEAP table: LEAP-1A HPT durability kit certified December 2024 [S]; GE Aerospace: the kit more than doubles time on wing in severe environments [S]; LEAP-1B HPT and fuel-nozzle durability improvements certificated 18 July 2026 [S]; IBA H2 2026: LEAP-1A fuel-nozzle coking addressed by the reverse bleed system [F]) and the copy implication that durability-kit embodiment is a workscope decision",
       "related": ["Time on wing", "Workscope", "Powder-metal inspection"]
     },
@@ -60,8 +60,8 @@
     },
     {
       "term": "End-of-lease compensation",
-      "definition": "The payment at redelivery that settles the gap between an engine's actual maintenance status and the status the lease requires, measured in life-limited part cycles used and hours since the last performance restoration. Under some leases it replaces monthly maintenance reserves; under others it is netted against the reserve balance. It is where most end-of-lease disputes arise.",
-      "source": "docs/research/06-market-context-and-seo.md section 1.7 (Acumen: maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes) [F]",
+      "definition": "The payment at redelivery that settles the gap between an engine's actual maintenance status and the status the lease requires, measured in life-limited part cycles used and hours since the last performance restoration. Under some leases it replaces monthly maintenance reserves; under others it is netted against the reserve balance. Disputes over it turn on life-limited part valuations, deferred defects, incomplete records and where fair wear and tear ends.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.7 (Acumen: maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes; disputes centre on LLP valuations, deferred defects, incomplete back-to-birth records and the boundary of fair wear and tear) [F]",
       "related": ["Maintenance reserves", "Redelivery conditions", "Half-life"]
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "term": "Life-limited part (LLP)",
-      "definition": "A rotating part (disc, shaft or spool) retired at a fixed cycle limit set by the manufacturer, whatever its condition. Remaining cycles on each LLP are traced back to birth and drive much of its value and next workscope. Cycles forfeited when a part is replaced early so the set reaches the next shop visit are its stub life.",
+      "definition": "A rotating part (disc, shaft or spool) retired at a fixed cycle limit set by the manufacturer, whatever its condition. Remaining cycles on each LLP are traced back to birth and drive much of an engine's value and its next workscope. Cycles forfeited when a part is replaced early so the set reaches the next shop visit are its stub life.",
       "related": ["Back-to-birth records", "Full-life", "On-condition"]
     },
     {
@@ -127,7 +127,7 @@
     },
     {
       "term": "Part-145",
-      "definition": "The EASA regulation under which a maintenance organisation is approved to carry out and certify maintenance on aircraft, engines and components; the FAA equivalent is the Part 145 repair station. An engine shop must hold the approval and rating for each engine type it works on, and its release document is the EASA Form 1 or FAA 8130-3.",
+      "definition": "The EASA approval standard (Annex II to the continuing-airworthiness regulation) under which a maintenance organisation is approved to carry out and certify maintenance on aircraft, engines and components; the FAA equivalent is the Part 145 repair station. An engine shop must hold the approval and rating for each engine type it works on, and its release document is the EASA Form 1 or FAA 8130-3.",
       "related": ["CAMO", "Serviceable tag (EASA Form 1, FAA 8130-3)", "Shop visit"]
     },
     {
@@ -198,7 +198,7 @@
     },
     {
       "term": "Teardown",
-      "definition": "The disassembly of an engine that will not return to service, so its parts can be inspected, tagged and sold as used serviceable material or scrapped. A teardown valuation estimates what the parts will fetch and so sets the floor value of an engine; the supply of parts harvested from teardowns has fallen to a fifth of pre-2020 levels.",
+      "definition": "The disassembly of an engine that will not return to service, so its parts can be inspected, tagged and sold as used serviceable material or scrapped. A teardown valuation estimates what the parts will fetch; the supply of parts harvested from teardowns has fallen to a fifth of pre-2020 levels.",
       "source": "docs/research/06-market-context-and-seo.md section 1.2 (Magnetic Group, June 2025: teardown part harvesting five times below pre-2020 levels) [F]; docs/research/02-website-content-inventory.md section 4 (Engine Teardown Valuations; Scrap Review and Material Value Extraction)",
       "related": ["Part-out", "Used serviceable material (USM)", "Dirty fingerprint"]
     },

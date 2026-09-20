@@ -25,8 +25,8 @@
       "label": "The company",
       "kicker": "Founded in Zug, 2024",
       "title": "Independent engine management from Zug, Switzerland",
-      "body": "Flight Hour Solution is an independent jet-engine management consultancy. We work for airlines, lessors, MROs and government operators across five engine families and seventeen models.",
-      "tags": ["Founded 2024", "Zug, Switzerland", "17 engine models"],
+      "body": "Flight Hour Solution is an independent jet-engine management consultancy. We work for airlines, lessors, MROs and government operators across seventeen engine and APU models, from the CFM56 to the Honeywell 131-9 APU.",
+      "tags": ["Founded 2024", "Zug, Switzerland", "17 engine and APU models"],
       "source": "01-company-profile.md section 1 (registered seat Zug, register entry 26 September 2024) and section 4.2 (client types); 02-website-content-inventory.md section 4 (engine families and models)."
     },
     {
@@ -34,7 +34,7 @@
       "label": "The purchase",
       "kicker": "Several million per visit",
       "title": "A shop visit is a multi-million-dollar purchase",
-      "body": "An engine needs three to five shop visits in its life. A performance restoration costs several million US dollars. We treat each as a purchase.",
+      "body": "An engine needs three to five shop visits in its life. A performance restoration typically costs several million US dollars. We treat each as a purchase.",
       "tags": ["3 to 5 shop visits per engine life", "CFM56 repair costs +50 to 75% since 2019", "TAT up 35% legacy, 150% new-generation"],
       "source": "06-market-context-and-seo.md section 1.2: MTU, an engine typically needs 3 to 5 shop visits over its life [F]; Magnetic Group, CFM56 repair costs +50 to 75% since 2019 [F]; the phrase 'typically several million US dollars per visit' is the wording 06 section 1.2 permits. Section 1.3: Bain, turnaround times +35% for legacy and +150% for new-generation engines against pre-pandemic [F]."
     },
@@ -43,7 +43,7 @@
       "label": "The workscope",
       "kicker": "Value through the lease",
       "title": "Workscope discipline protects value on both sides",
-      "body": "Reserve clauses and redelivery conditions are the most disputed lease terms. We set each workscope against the lease, the LLP plan and the records.",
+      "body": "Reserve clauses and redelivery conditions are the lease terms most likely to end in a dispute. We set each workscope against the lease, the LLP plan and the records.",
       "tags": ["Maintenance reserves", "Redelivery conditions", "LLP back-to-birth"],
       "source": "06-market-context-and-seo.md section 1.7: Acumen, maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes; disputes centre on LLP valuations, deferred defects, incomplete back-to-birth records and fair wear and tear [F]. Deliverables: 02 section 4."
     },
@@ -76,9 +76,9 @@
       },
       {
         "value": "5",
-        "unit": "families",
-        "label": "Engine families covered",
-        "source": "02-website-content-inventory.md section 4 (Capabilities), grouped as in the content schema: CFM56, LEAP, V2500, PW4000, APU and turboprop."
+        "unit": "groups",
+        "label": "Engine groups covered",
+        "source": "02-website-content-inventory.md section 4 (Capabilities). The five groups are the site's own page grouping (CFM56, LEAP, V2500, PW4000, APU and turboprop); 02 section 4 groups the same list by manufacturer (CFM, IAE, Pratt & Whitney, Honeywell)."
       },
       {
         "value": "17",
@@ -105,7 +105,7 @@
       },
       {
         "title": "A lease is ending or an engine is changing hands",
-        "text": "Redelivery conditions, maintenance reserves, LLP status and back-to-birth records decide what the transition costs. We work on either side of the lease, or between the two.",
+        "text": "Redelivery conditions, maintenance reserves, LLP status and back-to-birth records decide what the transition costs. We work for the lessee or the lessor.",
         "href": "/services/lease-return-and-asset-management"
       },
       {
@@ -118,7 +118,7 @@
   },
   "services": {
     "title": "What we do",
-    "intro": "Eight services, one method: know the engine, set the workscope, check every line before it is paid.",
+    "intro": "Eight services, each with its deliverables listed on its own page. Most engagements start with the workscope.",
     "rows": [
       {
         "title": "Shop visit management",
@@ -164,9 +164,9 @@
       },
       {
         "title": "Training and knowledge transfer",
-        "text": "Training for powerplant, procurement and asset teams on shop visits, workscopes, invoices and lease returns, built from the same methods we use on engagements.",
+        "text": "Training and knowledge transfer on engine management for client teams, covering the deliverables listed on the service pages above. Formats and scope on request.",
         "href": "/services/training-and-knowledge-transfer",
-        "meta": ["Powerplant", "Procurement", "Asset teams"]
+        "meta": ["Training", "Knowledge transfer", "Client teams"]
       }
     ],
     "source": "02-website-content-inventory.md section 4 (service taxonomy, verbatim deliverables); 01-company-profile.md section 1 (registered purpose includes training and knowledge transfer) and section 4.2 (Swiss Aerospace Cluster core competences).",
@@ -177,11 +177,11 @@
   },
   "engines": {
     "title": "Engines we manage",
-    "intro": "Five families, seventeen models, from the CFM56 to the Honeywell 131-9 APU. Each family page sets out visit types, cost drivers and what we do.",
+    "intro": "Seventeen engine and APU models in five groups, from the CFM56 to the Honeywell 131-9 APU. Each group page sets out visit types, cost drivers and what we do.",
     "rows": [
       {
         "title": "CFM56",
-        "text": "Still on around 70 per cent of the narrowbody fleet with the V2500. Repair costs up 50 to 75 per cent since 2019.",
+        "text": "Together with the V2500, still on around 70 per cent of the narrowbody fleet (June 2025). Repair costs up 50 to 75 per cent since 2019.",
         "href": "/engines/cfm56",
         "meta": ["CFM56-3", "CFM56-5", "CFM56-7"]
       },
@@ -199,7 +199,7 @@
       },
       {
         "title": "PW4000",
-        "text": "PW4000-100 values have grown strongly since 2023 and a full overhaul runs 120 days or more. Few visits, large tickets.",
+        "text": "PW4000-100 values have grown strongly since 2023 and a full overhaul runs 120 days or more. Visits are rare and each one is expensive.",
         "href": "/engines/pw4000",
         "meta": ["PW4000-94", "PW4000-100", "PW4000-112"]
       },
@@ -214,7 +214,7 @@
   },
   "process": {
     "title": "How a managed shop visit works",
-    "intro": "Five steps, one file. Every decision is recorded against the workscope so the invoice, the records and the lease agree at the end.",
+    "intro": "Five steps. Every decision is recorded against the workscope so the invoice, the records and the lease agree at the end.",
     "steps": [
       {
         "n": "01",

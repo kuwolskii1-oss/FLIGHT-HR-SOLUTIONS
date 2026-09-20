@@ -3,7 +3,7 @@
   "metaDescription": "Engine and aircraft sourcing and sales support from Zug, Switzerland, with the broker role disclosed in writing. Recent listings and a request form.",
   "title": "Engine and aircraft sourcing and sales support",
   "intro": "Our Assets line finds engines and aircraft for people who need them and markets them for owners. When we broker, we say so.",
-  "disclosure": "Assets is run separately from Advisory, our consulting line. When we act as a broker on an engine or aircraft, we say so in writing before you rely on our view of it. Advisory clients are never offered an asset we represent without that disclosure. Flight Hour Solution is not owned by an MRO, a lessor or an OEM.",
+  "disclosure": "Assets is a separate line from Advisory, our consulting line. When we act as a broker on an engine or aircraft, we say so in writing before you rely on our view of it. Advisory clients are never offered an asset we represent without that disclosure. Flight Hour Solution is not owned by an MRO, a lessor or an OEM.",
   "howItWorks": [
     {
       "n": "1",
@@ -23,10 +23,11 @@
     {
       "n": "3",
       "title": "We search, or we list",
-      "text": "For a wanted asset we approach owners, lessors, operators and part-out specialists directly. For an offered asset we prepare a specification sheet from the records and circulate it to our contacts and on our LinkedIn page, with the owner's name withheld until a serious enquiry arrives.",
-      "source": "LinkedIn as the channel used for offers and requests: docs/research/01-company-profile.md section 4.3. Part-out and teardown vocabulary: docs/research/05-competitor-benchmark.md section 4.",
+      "text": "For a wanted asset we approach owners, lessors and operators directly. For an offered asset we prepare a specification sheet from the records and circulate it to our contacts and on our LinkedIn page.",
+      "source": "LinkedIn as the channel used for offers and requests: docs/research/01-company-profile.md section 3 (timeline of offers and requests) and section 4.3.",
       "clientToConfirm": [
-        "Confirm the confidentiality practice: the owner's name is withheld from the specification sheet until a serious enquiry arrives."
+        "Confirm whether the owner's name is withheld from the specification sheet until a serious enquiry arrives. No confidentiality practice is stated on the page until confirmed.",
+        "Confirm whether part-out specialists are approached for wanted assets. They are not named on the page because the research does not document it."
       ]
     },
     {
@@ -41,8 +42,11 @@
     {
       "n": "5",
       "title": "Negotiation, paperwork and handover",
-      "text": "We support the purchase or lease negotiation, check the delivery documentation against the agreed condition, and follow the asset to acceptance: engine stand, preservation, shipping and the records pack. If the engine is heading for a shop visit next, our Advisory line can take over from there, on a separate engagement.",
-      "source": "Engine purchase negotiation and lease contract negotiation: docs/research/02-website-content-inventory.md section 4. Delivery acceptance, engine stand assessment and records packs: docs/research/05-competitor-benchmark.md section 4. Separation of the two lines: docs/research/07-recommendations-and-brief.md section 2.3."
+      "text": "We support the purchase or lease negotiation and check the delivery documentation against the agreed condition. If the engine is heading for a shop visit next, our Advisory line can take over from there, on a separate engagement.",
+      "source": "Engine purchase negotiation, lease contract negotiation and documentation audit: docs/research/02-website-content-inventory.md section 4. Separation of the two lines: docs/research/07-recommendations-and-brief.md section 2.3.",
+      "clientToConfirm": [
+        "Confirm whether the company follows the asset to physical acceptance (engine stand, preservation, shipping, records pack). This is not claimed on the page because the research documents it only as competitor vocabulary (05 section 4)."
+      ]
     }
   ],
   "recentActivity": [
@@ -117,7 +121,7 @@
     "Trent 772B and PT6A fall outside the engine families listed on the Services page (CFM56, LEAP, V2500, PW4000, Honeywell APU and turboprop). Confirm whether Assets covers any type or a defined list, and whether that list should be stated on this page.",
     "The Aviation Suppliers Association membership and the AircraftParts hashtag point to parts supply (01 section 4.3). Confirm whether parts or modules should be an asset type on the form; it currently offers Engine, Aircraft and Other. 06 section 5.2 advises against presenting the firm as a parts supplier, so no parts activity is described.",
     "07 section 5 proposes availability alerts by subscription for the Assets page. None is included because no mailing tool, consent text or retention rule exists yet. Confirm whether to add one at launch or in phase 2.",
-    "Confirm the process claims in How it works as things the company does on every Assets engagement: direct approach to owners, lessors, operators and part-out specialists; specification sheet from the records; LinkedIn circulation; delivery documentation check; follow-through to acceptance including engine stand, preservation, shipping and the records pack."
+    "Confirm the process claims in How it works as things the company does on every Assets engagement: direct approach to owners, lessors and operators; specification sheet from the records; LinkedIn circulation; delivery documentation check."
   ],
   "sources": [
     "docs/research/01-company-profile.md section 3 (timeline: LinkedIn company posts of 26 February 2026 offering two CFM56-3B2 engines, 9 March 2026 offering four serviceable CFM56-3C1 engines, 6 May 2026 offering three Rolls-Royce Trent 772B engines, 30 July 2026 offering a CFM56-7B26 engine with about 6,800 cycles remaining, 19 August 2026 seeking two Boeing 737-800 on a five-year dry lease, and 9 September 2026 offering a PT6A engine with TSN 38,151 and CSN 61,213; completed Trent sale of 5 March 2026 recorded but not shown)",

@@ -14,7 +14,7 @@
           "Flight Hour Solution GmbH",
           "Bahnhofplatz, 6300 Zug, Switzerland",
           "A limited liability company (GmbH) under Swiss law with its registered seat in Zug.",
-          "Flight Hour Solution GmbH is a consultancy. It is not an approved maintenance organisation and holds no EASA or FAA approvals."
+          "Flight Hour Solution GmbH is an engine management consultancy that also sources engines and aircraft for its clients. It is not an approved maintenance organisation and holds no EASA or FAA approvals."
         ],
         "source": "docs/research/01-company-profile.md section 1 (legal name, legal form GmbH, registered seat Zug, registered address Bahnhofplatz, 6300 Zug, no house number in the register) and section 5 (no EASA or FAA approvals claimed; a consultancy needs none and the site must not imply any).",
         "clientToConfirm": [
@@ -142,7 +142,7 @@
       {
         "title": "Server logs",
         "paragraphs": [
-          "The website is built and deployed on the Higgsfield website platform and runs on Cloudflare's network. Like every web host, they record each request: your IP address, the date and time, the page requested, the referring page, your browser and operating system, and the response code.",
+          "The website is built and deployed on the Higgsfield website platform and runs on Cloudflare's network. Like every web host, Cloudflare records each request: your IP address, the date and time, the page requested, the referring page, your browser and operating system, and the response code.",
           "These logs exist to run the site, to defend it against attacks and to find faults. We do not keep copies of them and we do not use them to identify visitors. The providers set the retention period. Legal basis under the GDPR: our legitimate interest in a secure, working website (Article 6(1)(f))."
         ],
         "source": "Platform and edge: site/README.md and docs/website/README.md (React 19 + TanStack Start on a Cloudflare Worker, deployed through the Higgsfield website tools); live check on 19 September 2026 (server: cloudflare on every response). Worker logging: site/app/wrangler.jsonc (observability enabled). The list of logged items is the standard content of web server access logs; the retention period is the provider's and is listed in clientToConfirm. Legal basis: Article 6(1)(f) GDPR."
@@ -167,8 +167,8 @@
         "title": "Who receives your data",
         "paragraphs": [
           "We do not sell personal data and we do not use it for advertising. The following service providers process data on our behalf, under data processing terms that bind them to our instructions and to confidentiality.",
-          "Higgsfield, the website platform on which the site is built and deployed, and Cloudflare, on whose network the site runs and which records the request logs described above.",
-          "Resend, the email delivery service that carries the contact form to our mailbox, and zenbox.pl (Cyber_Folks S.A., Poland), which hosts that mailbox.",
+          "Higgsfield provides the website platform on which the site is built and deployed. Cloudflare provides the network on which the site runs and records the request logs described above.",
+          "Resend is the email delivery service that carries the contact form to our mailbox. zenbox.pl (Cyber_Folks S.A., Poland) hosts that mailbox.",
           "Beyond these, we disclose personal data only to professional advisers bound by confidentiality, to authorities when the law requires it, or where necessary to establish, exercise or defend legal claims."
         ],
         "source": "Processors named per site/content-brief/VOICE-AND-FACTS.md (Legal: name actual processors, Cloudflare through the Higgsfield hosting platform, the contact form sends an email). Higgsfield and Cloudflare: site/README.md. Resend: site/app/src/site/enquiry.functions.ts (api.resend.com). Mailbox host: docs/research/04-technical-audit.md section 1. Data processing terms: to be confirmed, see clientToConfirm."
