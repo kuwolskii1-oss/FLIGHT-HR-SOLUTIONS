@@ -6,3 +6,5 @@ site/app/.output/
 site/app/.tanstack/
 site/app/.wrangler/
 site/app/.vinxi/
+site/tools/node_modules/
+site/tools/qa/out/

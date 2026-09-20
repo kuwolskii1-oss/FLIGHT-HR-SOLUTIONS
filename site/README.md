@@ -43,7 +43,8 @@ bun run build          # runs the template's UI contract check, then the Worker 
 ```
 
 Deploying goes through the Higgsfield website tools (checkout in the hosted sandbox, commit,
-push, `deploy_website`). Every deploy ships the live site; there is no separate preview.
+push, `deploy_website`). Every deploy ships the live site; there is no separate preview. The
+step-by-step runbook is `DEPLOY.md`; the quality checks and the deploy helpers are in `tools/`.
 
 ## Switches and secrets
 
