@@ -137,13 +137,6 @@ export function SiteHeader() {
             ))}
           </nav>
           <div className="c-header__actions">
-            <div className="c-header__lang" aria-label="Language">
-              <span aria-current="true">EN</span>
-              <span aria-hidden="true">/</span>
-              <span aria-disabled="true" title="German edition in preparation">
-                DE
-              </span>
-            </div>
             <CtaTalk href={cta.primary.href} label={cta.primary.label} small />
             <button
               type="button"

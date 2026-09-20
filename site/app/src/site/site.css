@@ -318,17 +318,6 @@ html.site.is-menu-open {
   align-items: center;
   gap: var(--space-tiny);
 }
-.c-header__lang {
-  display: none;
-  gap: 0.35rem;
-  font-family: var(--font-mono);
-  font-size: var(--step--2);
-  letter-spacing: var(--tracking-caps);
-  text-transform: uppercase;
-}
-.c-header__lang span[aria-disabled="true"] {
-  color: var(--fg-muted);
-}
 .c-header__burger {
   display: inline-flex;
   align-items: center;
@@ -375,10 +364,7 @@ html.site.is-menu-open {
     display: flex;
     gap: var(--space-medium);
   }
-  .c-header__lang {
-    display: inline-flex;
-  }
-  .c-header__burger {
+    .c-header__burger {
     display: none;
   }
 }
