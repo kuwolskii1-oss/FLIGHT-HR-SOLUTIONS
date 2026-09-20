@@ -141,6 +141,23 @@ html.site.is-menu-open {
 }
 
 /* ---------- type ---------- */
+/* Glossary letter markers come from a data attribute so the definition list keeps a clean
+ * dt/dd structure; the first term of each letter carries the anchor for the letter index. */
+.c-list__item[data-letter]::before {
+  content: attr(data-letter);
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--fg-muted);
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
+  font-weight: 500;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+.c-list__item[id],
+.c-list__title[id] {
+  scroll-margin-top: calc(var(--header-height) + var(--space-medium));
+}
 .c-eyebrow {
   display: block;
   margin-bottom: var(--space-small);

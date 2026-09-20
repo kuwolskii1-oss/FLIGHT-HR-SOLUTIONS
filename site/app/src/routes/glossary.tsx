@@ -33,9 +33,10 @@ function GlossaryPage() {
             const letter = t.term[0].toUpperCase();
             const firstOfLetter = i === 0 || terms[i - 1].term[0].toUpperCase() !== letter;
             return (
-              <div className="c-list__item" key={t.term} id={slug(t.term)}>
-                {firstOfLetter ? <span id={`letter-${letter}`} className="c-eyebrow" style={{ marginBottom: "0.5rem" }}>{letter}</span> : null}
-                <dt className="c-list__title">{t.term}</dt>
+              <div className="c-list__item" key={t.term} id={slug(t.term)} data-letter={firstOfLetter ? letter : undefined}>
+                <dt className="c-list__title" id={firstOfLetter ? `letter-${letter}` : undefined}>
+                  {t.term}
+                </dt>
                 <dd className="c-list__text">
                   {t.definition}
                   {t.related?.length ? (
