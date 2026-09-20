@@ -1,6 +1,7 @@
 {
   "notes": "Contact page per docs/research/07-recommendations-and-brief.md section 5: a short form, a modest response-time promise, direct channels, an urgent route by phone and the legal entity block. The EnquiryForm component looks fields up by name (name, company, role, email, phone, engineFamily, need, message), so the field names below are fixed. The form takes no attachment; the attachment note is the message field's hint, which the component renders under the textarea. Values shown here come from the research dossier; the phone number is the one site.json carries. No map: 01 section 1 indicates a domicile address at Bahnhofplatz, and 07 section 5 says map only if there is an office.",
   "clientToConfirm": [
+    "WhatsApp: no WhatsApp channel is rendered on this page because site.json company.whatsapp is empty. The documented link (wa.me/41764186350) is on +41 76 418 63 50, not on the primary number +41 76 595 88 61 (01 section 8; 07 section 10 item 4). Confirm which number carries WhatsApp; it must equal company.phone, and then site.json company.whatsapp and a WhatsApp channel here are set together. 07 section 8 also recommends a WhatsApp Business profile.",
     "Response-time promise: the page promises a reply within one working day, Monday to Friday, Swiss time. Confirm that the inbox and the phone are monitored to that standard and who replies.",
     "Primary phone: +41 76 595 88 61 is used throughout (hero and contact page since April 2026; site.json). Two other numbers are in circulation: +41 76 418 63 50 (header button and WhatsApp link) and +41 76 358 84 90 (Swiss Aerospace Cluster directory). Confirm the one number.",
     "Out-of-hours cover: the urgent route says call rather than write and makes no 24-hour promise. Confirm whether calls are answered outside Swiss working hours and whether a 24-hour AOG line should be promised (05 section 5 item 6 recommends one).",
@@ -113,17 +114,6 @@
       "source": "docs/research/01-company-profile.md section 6 (contact@ is the general address) and docs/research/02-website-content-inventory.md sections 2 and 3.",
       "clientToConfirm": [
         "sales@flighthoursolution.com is used on LinkedIn for engine and aircraft enquiries (01 sections 3 and 6) but is not documented on the website, so it is not listed here. Confirm whether asset enquiries should be routed to it."
-      ]
-    },
-    {
-      "label": "WhatsApp",
-      "value": "Open a WhatsApp chat",
-      "href": "https://wa.me/41764186350",
-      "note": "",
-      "source": "docs/research/02-website-content-inventory.md section 2 (footer WhatsApp link wa.me/41764186350) and docs/research/01-company-profile.md section 6. Same link as site.json company.whatsapp. The footer component renders WhatsApp as a link without showing the number, and this page does the same so that only one phone number appears in text.",
-      "clientToConfirm": [
-        "The documented WhatsApp link is on +41 76 418 63 50, not on the primary number shown above (01 section 8 and docs/research/07-recommendations-and-brief.md section 10 item 4 ask for the WhatsApp and tel links to be brought in sync). Confirm whether WhatsApp moves to +41 76 595 88 61, in which case site.json and this link change together.",
-        "07 section 8 recommends a WhatsApp Business profile. Confirm whether the account is a business profile."
       ]
     },
     {

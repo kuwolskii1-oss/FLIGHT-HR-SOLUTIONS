@@ -211,7 +211,7 @@
         "title": "Cookies, analytics and third-party content",
         "paragraphs": [
           "This website sets no cookies of its own and uses no analytics, no advertising tags, no social media plug-ins and no fonts loaded from third parties. Fonts, images and videos are served from our own host. We make no automated decisions about you and build no profiles. Details are in the cookie notice.",
-          "Links to LinkedIn, WhatsApp, the commercial register and the Swiss Aerospace Cluster lead to third-party sites. Nothing is sent to them until you follow a link; from then on their own privacy terms apply."
+          "Links to LinkedIn, the commercial register and the Swiss Aerospace Cluster lead to third-party sites. Nothing is sent to them until you follow a link; from then on their own privacy terms apply."
         ],
         "source": "Source review on 19 September 2026: no document.cookie, localStorage or sessionStorage use in the site's own code; no analytics dependency in site/app/package.json; site/app/src/routes/__root.tsx loads only same-origin stylesheets, fonts and scripts; site/app/src/site/fonts.css serves IBM Plex from /fonts; the film and illustrations live under /assets on the same host (site/README.md). External links: site.json (LinkedIn, WhatsApp, Zefix register URL) and the Swiss Aerospace Cluster membership URL."
       },
@@ -261,7 +261,7 @@
       {
         "title": "Links to other sites",
         "paragraphs": [
-          "Links to LinkedIn, WhatsApp, the commercial register (zefix.ch) and the Swiss Aerospace Cluster open those sites, which set their own cookies under their own notices. Nothing is loaded from them while you stay on this site."
+          "Links to LinkedIn, the commercial register (zefix.ch) and the Swiss Aerospace Cluster open those sites, which set their own cookies under their own notices. Nothing is loaded from them while you stay on this site."
         ],
         "source": "External links: site/app/src/content/site.json (company.linkedin, company.whatsapp, company.registerUrl, memberships url) and site/app/src/components/site/SiteFooter.tsx (plain links, no embedded widgets)."
       },

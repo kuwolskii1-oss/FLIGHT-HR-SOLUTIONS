@@ -1,152 +1,152 @@
 {
-  "notes": "About page content following the About brief in 07 section 5 and the page-specific brief in the content task: story from 01, an independence statement with a written conflicts policy per 07 section 2.3 option 1, one team member (the managing director), credentials with verified or claimed status, a Zug section with the zug-lake illustration and the legal entity block. Section ids rendered by the route are story, independence, team, credentials, zug and legal; home.json links to /about#independence and /about#team. The first story paragraph is rendered as the page lead. Deliberately not said anywhere on this page: any years-of-experience figure (the company was founded in September 2024), the former co-owner's name, the Aero Norway background (role and title unverified in 01), the 30-minute travel time to Zurich Airport, EASA or FAA approvals (none held, none claimed, none needed for consulting) and any client name, case or testimonial. British English, no dashes, nothing left to fill in.",
-  "seoTitle": "About us: independent engine consultancy in Zug | Flight Hour Solution",
-  "metaDescription": "Flight Hour Solution GmbH: independent jet-engine management consultancy in Zug, founded 2024 and owned by its managing director, not by an MRO, lessor or OEM.",
-  "story": {
-    "title": "An independent engine consultancy, founded in Zug",
-    "paragraphs": [
-      "Flight Hour Solution is an independent jet-engine management consultancy, founded in Zug in 2024 and owned by its managing director.",
-      "The statutes were adopted on 4 September 2024. The company was entered in the commercial register of the canton of Zug on 26 September 2024 as a GmbH with a share capital of CHF 20,000. Since July 2025 it has been wholly owned by its managing director, Hubert Nowosad, who holds all 200 shares.",
-      "The registered purpose is plain: consulting services, technical expertise, training and knowledge transfer, cost optimisation and financial planning in the aviation industry. In practice that means jet-engine shop visit management, workscope compilation and review, contract negotiation, maintenance reserve calculations and records audits for airlines, lessors, MROs and government operators.",
-      "Two lines of work run under one name. Advisory is independent engine management consulting: shop visit management, workscopes, lease returns, contracts, data and records. Assets is engine and aircraft sourcing, sales support and listings. The two are kept apart and labelled, as the independence section below sets out.",
-      "The firm is small and led by its managing director. Table inspections and test-cell runs are attended in person. Between site visits the work is done from Zug, a short drive from Zurich Airport."
-    ],
-    "source": "Founding facts: docs/research/01-company-profile.md section 1 (statutes dated 4 September 2024, register entry 26 September 2024, GmbH, share capital CHF 20,000 in 200 shares of CHF 100, registered seat Zug; Zefix and SOGC) and section 3 (timeline). Ownership: 01 section 2 (mutation entered 24 July 2025, SOGC 29 July 2025: Hubert Nowosad holds 200 shares, 100 per cent, sole signature). Registered purpose: 01 section 1 (SOGC, translated from German). Services in practice: 01 section 4.2 (Swiss Aerospace Cluster directory: airlines, lessors, MROs and governmental operators worldwide; core competences) and docs/research/02-website-content-inventory.md section 4 (service taxonomy: shop visit management, workscope compilation and review, contract negotiation, maintenance reserve calculations, LLP back-to-birth audit). Two lines: docs/research/07-recommendations-and-brief.md section 2.3 option 1 and 01 section 4.3 (LinkedIn 2026: sourcing, technical advisory and engine sales support). On-site attendance: 02 section 4 (Dirty Condition / Table Inspection, Test Cell Overview) and docs/research/05-competitor-benchmark.md section 4 (on-site representation vocabulary). Zug and Zurich Airport: docs/research/06-market-context-and-seo.md section 1.10.",
-    "clientToConfirm": [
-      "Founding history: the register shows two founders in 2024 and one exit in July 2025. The page says only that the company has been wholly owned by its managing director since July 2025 and does not name the former co-owner. Confirm this treatment.",
-      "The firm is described as small and led by its managing director. Team-size signals conflict (register: one person; Swiss Aerospace Cluster directory: 4; LinkedIn: 11 to 50). Confirm both statements.",
-      "Confirm that table inspections and test-cell runs are attended in person by the managing director or a named colleague, and whether redelivery attendance or worldwide attendance may be added.",
-      "Distance to Zurich Airport is given as 'a short drive'. Confirm whether '30 minutes' (07 section 2.2, 06 section 1.10) may be used instead.",
-      "07 section 5 suggests the story should mention professionals from the engine-MRO world (Aero Norway and other backgrounds) once confirmed. Nothing of the kind is rendered until the client confirms names, roles and dates."
-    ]
-  },
-  "independence": {
-    "title": "Independence, in writing",
-    "statement": "Flight Hour Solution is owned by its managing director, not by an MRO, lessor or OEM. Advisory work is done for the client alone.",
-    "policy": [
-      "Two lines, always labelled. Advisory is independent engine management consulting. Assets is engine and aircraft sourcing, sales support and listings. Every proposal, report and invoice names the line it belongs to.",
-      "On advisory work we act for the client alone. We take instructions from, report to and answer to the client who engages us, not to the MRO, the OEM or the counterparty to the lease or sale.",
-      "When we broker, market or source an engine or aircraft, we say so in writing before that asset is discussed.",
-      "An advisory client is never offered an asset we own or are marketing without written disclosure of our interest. Any such transaction runs under the Assets line, with its own engagement letter, and never as part of an advisory engagement.",
-      "If an Assets mandate and an advisory engagement touch the same engine, aircraft or counterparty, every client concerned is told before we continue, and may decline either."
-    ],
-    "source": "Ownership: docs/research/01-company-profile.md section 2 (Hubert Nowosad, a natural person, sole shareholder with 200 shares since July 2025; SOGC; Moneyhouse lists him as the only active member of management). Two labelled lines and the conflicts policy: docs/research/07-recommendations-and-brief.md section 2.3 option 1 ('when we broker an asset we say so; advisory clients are never sold our own inventory without disclosure') and section 2.2 (independence pillar). Independence as positioning: docs/research/06-market-context-and-seo.md section 5.1 item 3 and section 1.10 (no OEM, MRO, lessor or national-champion ownership; neutral ground for multi-party disputes); docs/research/05-competitor-benchmark.md section 5 item 2. Wording aligned with the footer disclosure in site.json and the independence block in home.json.",
-    "clientToConfirm": [
-      "Approve the five policy lines as the company's written conflicts policy. Policy 5 (same engine, aircraft or counterparty) goes beyond 07 section 2.3 and can be removed if not wanted.",
-      "Fee-only Advisory line: 07 section 2.3 describes Advisory as fee-only. This is not rendered until confirmed. If the company receives no commissions, referral fees or other payments from MROs, OEMs, lessors or parts suppliers on advisory work, add the policy line: 'On advisory work we accept no commission, referral fee or other payment from an MRO, OEM, lessor or parts supplier.'",
-      "Confidentiality: if wanted, add a policy line on non-disclosure agreements and data handling, for example: 'Client data stays inside the engagement. We sign non-disclosure agreements as a matter of course and never use one client's data in work for another.' Not rendered.",
-      "Confirm the name of the second line ('Assets', as used on the home page and in the footer) and that engine and aircraft sourcing is an official service line to present publicly."
-    ]
-  },
-  "team": {
-    "title": "Who you will work with",
-    "intro": "Engagements are led by the managing director, drawing on the team's experience in engine shops and airline engineering.",
-    "people": [
-      {
-        "name": "Hubert Nowosad",
-        "role": "Managing Director",
-        "text": "Hubert Nowosad is the managing director and owner of Flight Hour Solution, and the company's named contact in the Swiss Aerospace Cluster directory. He leads the advisory work, from shop visit management and workscope review to contract negotiation and records audits, and sources engines and aircraft under the Assets line. He works from Zug and on site at the shop.",
-        "languages": [],
-        "linkedin": "",
-        "source": "docs/research/01-company-profile.md section 2 (co-founder, managing director, sole shareholder since July 2025, named contact person in the Swiss Aerospace Cluster directory, only active member of management per Moneyhouse). Services named: docs/research/02-website-content-inventory.md section 4; Assets line: 01 section 4.3 and docs/research/07-recommendations-and-brief.md section 2.3. Languages are not documented in 01, so the array is empty. No personal LinkedIn profile URL is documented in 01 (only a post URL by 'a Hubert Nowosad' and a profile named 'Flight Hour Solution GmbH' linked from the company page), so the field is empty.",
-        "clientToConfirm": [
-          "Confirm Hubert Nowosad as the public face with the title Managing Director, and supply a portrait for the person card.",
-          "Former employers and engine-family experience: 01 section 2 records a public LinkedIn post dated 31 October 2022 titled 'After 4 years at Aero Norway', pointing to roughly 2018 to 2022 at Aero Norway AS, the independent CFM56 overhaul shop at Stavanger. Role and title are unverified, so nothing about former employers is rendered. Confirm what may be named, with dates and titles.",
-          "Languages: none are documented. Supply the languages to show (for example English, German, Polish, French).",
-          "LinkedIn: supply the personal profile URL to link, or confirm the field stays empty.",
-          "Confirm that he personally leads the advisory work and the Assets line as described, and edit the text if colleagues lead parts of it."
-        ]
-      }
-    ],
-    "source": "docs/research/01-company-profile.md section 2 (people and team-size signals) and site/content-brief/VOICE-AND-FACTS.md (team experience stated without a years figure). Wording of the intro matches the people block in home.json.",
-    "clientToConfirm": [
-      "Other team members: the Swiss Aerospace Cluster directory says 4 employees or members, LinkedIn says 11 to 50, the commercial register names one person. Only Hubert Nowosad is shown. Confirm whether anyone else may be named, with title, portrait and consent.",
-      "Team experience is described as 'the team's experience in engine shops and airline engineering' with no years figure, per the copy rules. Confirm the description holds for the current team."
-    ]
-  },
-  "credentials": {
-    "title": "Registration, memberships and certification",
-    "items": [
-      {
-        "name": "Swiss commercial register",
-        "status": "verified",
-        "text": "Flight Hour Solution GmbH, entered in the commercial register of the canton of Zug on 26 September 2024. UID CHE-196.248.398. Status: active.",
-        "url": "https://www.zefix.ch/en/search/entity/list/firm/1658864",
-        "source": "docs/research/01-company-profile.md section 1 (Zefix entity 1658864, SOGC publication 1 October 2024, UID register: status active) and section 10 (register URLs)."
-      },
-      {
-        "name": "Swiss Aerospace Cluster",
-        "status": "verified",
-        "text": "Member since late 2025. Listed in the cluster's member directory, with Hubert Nowosad as the named contact.",
-        "url": "https://swiss-aerospace-cluster.ch/portfolio-item/flight-hour-solution/",
-        "source": "docs/research/01-company-profile.md section 5 (verified: SAC directory entry and welcome post of 26 November 2025), section 3 (logo uploaded to the cluster site October 2025) and section 2 (named contact person in the directory)."
-      },
-      {
-        "name": "ISO 9001",
-        "status": "claimed",
-        "text": "Claimed by the company (announced 28 May 2026). Certificate to be published: certification body, certificate number, scope and expiry date.",
-        "url": "",
-        "source": "docs/research/01-company-profile.md section 5 and section 3 (LinkedIn post of 28 May 2026; certification body, certificate number and scope not stated anywhere). The url is empty on purpose: a credential links only to a verifying page (docs/research/08-locomotive-design-blueprint.md section 8.4, badges)."
-      },
-      {
-        "name": "Aviation Suppliers Association",
-        "status": "claimed",
-        "text": "Claimed by the company (announced 15 July 2026). Membership number and directory listing to be published.",
-        "url": "",
-        "source": "docs/research/01-company-profile.md section 5 and section 3 (LinkedIn post of 15 July 2026; the ASA member directory could not be checked). The url is empty on purpose until a verifying directory page is confirmed."
-      }
-    ],
-    "source": "Status values follow docs/research/01-company-profile.md section 5 and site/content-brief/VOICE-AND-FACTS.md: only the Swiss Aerospace Cluster membership and the register entry are verified; ISO 9001 and the Aviation Suppliers Association membership are claimed by the company. No EASA or FAA approval is claimed or implied (01 section 5).",
-    "clientToConfirm": [
-      "ISO 9001: certification body, certificate number, scope, issue and expiry dates and a PDF of the certificate, so the row can move from claimed to verified and link to the certificate.",
-      "Aviation Suppliers Association: membership number, membership category and the directory page to link to.",
-      "Swiss Aerospace Cluster: confirm the membership start month (logo on the cluster site October 2025, welcome post 26 November 2025).",
-      "Confirm whether to add a row stating that no EASA or FAA approvals are held and none are required for consulting work (01 section 5), which pre-empts a common procurement question."
-    ]
-  },
-  "zug": {
-    "title": "Neutral ground in Zug",
-    "text": "The registered office is at Bahnhofplatz in Zug, in central Switzerland, a short drive from Zurich Airport. Meetings are by appointment: in Zug, at your offices or at the shop. When a lessor, an airline and an MRO need a neutral table, Zug is a practical place to meet.",
-    "image": {
-      "src": "zug-lake",
-      "alt": "Winter dawn over Lake Zug: a snow-covered old town and church tower on the shore, mist on the water and a snow-capped mountain behind",
-      "credit": "Generated illustration"
-    },
-    "source": "Address: docs/research/01-company-profile.md section 1 (registered address Bahnhofplatz, 6300 Zug, no house number in the register; Moneyhouse lists other companies at the same address, which points to a domicile address). Zug framing: docs/research/06-market-context-and-seo.md section 1.10 (use Zug for central Europe, proximity to Zurich Airport and the Zurich MRO cluster; neutral ground for multi-party disputes between lessor, airline and MRO; do not lead with tax; do not imply state endorsement) and docs/research/07-recommendations-and-brief.md section 2.2 (Swiss discretion pillar, office or meeting arrangement to be confirmed). Image key from site/content-brief/CONTENT-SCHEMA.md.",
-    "clientToConfirm": [
-      "Bahnhofplatz: supply the house number, and confirm whether it is a visitable office (map, opening hours) or a domicile address. The page says meetings are by appointment.",
-      "Confirm whether '30 minutes from Zurich Airport' may replace 'a short drive from Zurich Airport'.",
-      "Real photography of Zug or of the meeting room replaces the generated illustration at launch."
-    ]
-  },
-  "legal": {
-    "title": "Legal entity",
-    "lines": [
-      "Flight Hour Solution GmbH",
-      "Bahnhofplatz, 6300 Zug, Switzerland",
-      "UID CHE-196.248.398",
-      "Commercial register of the canton of Zug, CH-170.4.022.412-5, entered 26 September 2024",
-      "Managing director: Hubert Nowosad"
-    ],
-    "source": "docs/research/01-company-profile.md section 1 (legal name, legal form, UID CHE-196.248.398, CH-ID CH-170.4.022.412-5, registered address Bahnhofplatz 6300 Zug, register entry 26 September 2024) and section 2 (managing director). Entity naming per docs/research/07-recommendations-and-brief.md section 2.4 (GmbH in legal lines).",
-    "clientToConfirm": [
-      "VAT: 01 section 1 lists the VAT form CHE-196.248.398 MWST from Moneyhouse. Confirm VAT registration before adding 'VAT CHE-196.248.398 MWST' to the legal lines.",
-      "Registered translations of the name (Flight Hour Solution Sàrl, Sagl, LLC) are not shown. Confirm whether to add them.",
-      "Confirm the house number for Bahnhofplatz so the legal lines and the Impressum can carry the full address."
-    ]
-  },
-  "sources": [
-    "docs/research/01-company-profile.md section 1 (legal name Flight Hour Solution GmbH, Swiss GmbH, UID CHE-196.248.398, CH-ID CH-170.4.022.412-5, registered seat and address Bahnhofplatz 6300 Zug, statutes 4 September 2024, register entry 26 September 2024, SOGC publication 1 October 2024, share capital CHF 20,000 in 200 shares, status active, registered purpose; Zefix, SOGC, UID register, Moneyhouse)",
-    "docs/research/01-company-profile.md section 2 (Hubert Nowosad: co-founder, managing director, sole shareholder with 200 shares and sole signature since the July 2025 mutation; named contact in the Swiss Aerospace Cluster directory; Aero Norway background from a public LinkedIn post, role and title unverified; team-size signals; the former co-owner left in July 2025 and is not named on the site)",
-    "docs/research/01-company-profile.md section 3 (timeline: register entry 26 September 2024, ownership change 24 to 29 July 2025, Swiss Aerospace Cluster October to November 2025, ISO 9001 post 28 May 2026, ASA post 15 July 2026)",
-    "docs/research/01-company-profile.md section 4.2 (Swiss Aerospace Cluster directory: airlines, lessors, MROs and governmental operators worldwide; core competences) and section 4.3 (LinkedIn 2026: engine and aircraft sourcing, technical advisory, engine sales support)",
-    "docs/research/01-company-profile.md section 5 (Swiss Aerospace Cluster membership verified; ISO 9001 and Aviation Suppliers Association membership claimed; no EASA or FAA approvals claimed)",
-    "docs/research/01-company-profile.md section 10 (Zefix entity 1658864 URL; Swiss Aerospace Cluster directory URL)",
-    "docs/research/02-website-content-inventory.md section 4 (service taxonomy: shop visit management, workscope compilation and review, table inspection, test cell overview, lease and contract negotiation, LLP back-to-birth audit, maintenance reserves)",
-    "docs/research/05-competitor-benchmark.md section 4 (on-site representation vocabulary), section 5 items 2 and 10 (independence as a product; named team with former employers) and section 6 (trust-signal checklist: legal entity, UID, independence statement, memberships linked to certificates)",
-    "docs/research/06-market-context-and-seo.md section 1.10 (Zug framing, Zurich Airport and MRO cluster, neutral ground, no state endorsement), section 5.1 item 3 (independent of OEMs, MROs and lessors) and sections 5.2 and 5.3 (claims to avoid, tone)",
-    "docs/research/07-recommendations-and-brief.md section 2.1 (positioning line), section 2.2 (independence and Swiss discretion pillars), section 2.3 option 1 (Advisory and Assets lines with a written conflicts policy), section 2.4 (entity naming), section 5 (About page brief) and section 12 (decisions needed)",
-    "docs/research/08-locomotive-design-blueprint.md section 8.3 row 7 (people section: managing director, name, credentials, one paragraph) and section 8.4 (badges link only to a verifying page)",
-    "site/content-brief/VOICE-AND-FACTS.md (entity naming, no years-of-experience figure, team experience wording, membership status rules, independence wording) and site/content-brief/CONTENT-SCHEMA.md (about.json shape, image keys)"
+ "notes": "About page content following the About brief in 07 section 5 and the page-specific brief in the content task: story from 01, an independence statement with a written conflicts policy per 07 section 2.3 option 1, one team member (the managing director), credentials with verified or claimed status, a Zug section with the zug-lake illustration and the legal entity block. Section ids rendered by the route are story, independence, team, credentials, zug and legal; home.json links to /about#independence and /about#team. The first story paragraph is rendered as the page lead. Deliberately not said anywhere on this page: any years-of-experience figure (the company was founded in September 2024), the former co-owner's name, the Aero Norway background (role and title unverified in 01), the 30-minute travel time to Zurich Airport, EASA or FAA approvals (none held, none claimed, none needed for consulting) and any client name, case or testimonial. British English, no dashes, nothing left to fill in.",
+ "seoTitle": "About us: independent engine consultancy in Zug | Flight Hour Solution",
+ "metaDescription": "Flight Hour Solution GmbH: independent jet-engine management consultancy in Zug, founded 2024 and owned by its managing director, not by an MRO, lessor or OEM.",
+ "story": {
+  "title": "An independent engine consultancy, founded in Zug",
+  "paragraphs": [
+   "Flight Hour Solution is an independent jet-engine management consultancy, founded in Zug in 2024 and owned by its managing director.",
+   "The statutes were adopted on 4 September 2024. The company was entered in the commercial register of the canton of Zug on 26 September 2024 as a GmbH with a share capital of CHF 20,000. Since July 2025 it has been wholly owned by its managing director, Hubert Nowosad, who holds all 200 shares.",
+   "The registered purpose is plain: consulting services, technical expertise, training and knowledge transfer, cost optimisation and financial planning in the aviation industry. In practice that means jet-engine shop visit management, workscope compilation and review, contract negotiation, maintenance reserve calculations and records audits for airlines, lessors, MROs and government operators.",
+   "Two lines of work run under one name. Advisory is independent engine management consulting: shop visit management, workscopes, lease returns, contracts, data and records. Assets is engine and aircraft sourcing, sales support and listings. The two are kept apart and labelled, as the independence section below sets out.",
+   "The firm is small and led by its managing director. Table inspections and test-cell runs are attended in person. Between site visits the work is done from Zug, a short drive from Zurich Airport."
+  ],
+  "source": "Founding facts: docs/research/01-company-profile.md section 1 (statutes dated 4 September 2024, register entry 26 September 2024, GmbH, share capital CHF 20,000 in 200 shares of CHF 100, registered seat Zug; Zefix and SOGC) and section 3 (timeline). Ownership: 01 section 2 (mutation entered 24 July 2025, SOGC 29 July 2025: Hubert Nowosad holds 200 shares, 100 per cent, sole signature). Registered purpose: 01 section 1 (SOGC, translated from German). Services in practice: 01 section 4.2 (Swiss Aerospace Cluster directory: airlines, lessors, MROs and governmental operators worldwide; core competences) and docs/research/02-website-content-inventory.md section 4 (service taxonomy: shop visit management, workscope compilation and review, contract negotiation, maintenance reserve calculations, LLP back-to-birth audit). Two lines: docs/research/07-recommendations-and-brief.md section 2.3 option 1 and 01 section 4.3 (LinkedIn 2026: sourcing, technical advisory and engine sales support). On-site attendance: 02 section 4 (Dirty Condition / Table Inspection, Test Cell Overview) and docs/research/05-competitor-benchmark.md section 4 (on-site representation vocabulary). Zug and Zurich Airport: docs/research/06-market-context-and-seo.md section 1.10.",
+  "clientToConfirm": [
+   "Founding history: the register shows two founders in 2024 and one exit in July 2025. The page says only that the company has been wholly owned by its managing director since July 2025 and does not name the former co-owner. Confirm this treatment.",
+   "The firm is described as small and led by its managing director. Team-size signals conflict (register: one person; Swiss Aerospace Cluster directory: 4; LinkedIn: 11 to 50). Confirm both statements.",
+   "Confirm that table inspections and test-cell runs are attended in person by the managing director or a named colleague, and whether redelivery attendance or worldwide attendance may be added.",
+   "Distance to Zurich Airport is given as 'a short drive'. Confirm whether '30 minutes' (07 section 2.2, 06 section 1.10) may be used instead.",
+   "07 section 5 suggests the story should mention professionals from the engine-MRO world (Aero Norway and other backgrounds) once confirmed. Nothing of the kind is rendered until the client confirms names, roles and dates."
   ]
+ },
+ "independence": {
+  "title": "Independence, in writing",
+  "statement": "Flight Hour Solution is owned by its managing director, not by an MRO, lessor or OEM. Advisory work is done for the client alone.",
+  "policy": [
+   "Two lines, always labelled. Advisory is independent engine management consulting. Assets is engine and aircraft sourcing, sales support and listings. Every proposal, report and invoice names the line it belongs to.",
+   "On advisory work we act for the client alone. We take instructions from, report to and answer to the client who engages us, not to the MRO, the OEM or the counterparty to the lease or sale.",
+   "When we broker, market or source an engine or aircraft, we say so in writing before that asset is discussed.",
+   "An advisory client is never offered an asset we own or are marketing without written disclosure of our interest. Any such transaction runs under the Assets line, with its own engagement letter, and never as part of an advisory engagement.",
+   "If an Assets mandate and an advisory engagement touch the same engine, aircraft or counterparty, every client concerned is told before we continue, and may decline either."
+  ],
+  "source": "Ownership: docs/research/01-company-profile.md section 2 (Hubert Nowosad, a natural person, sole shareholder with 200 shares since July 2025; SOGC; Moneyhouse lists him as the only active member of management). Two labelled lines and the conflicts policy: docs/research/07-recommendations-and-brief.md section 2.3 option 1 ('when we broker an asset we say so; advisory clients are never sold our own inventory without disclosure') and section 2.2 (independence pillar). Independence as positioning: docs/research/06-market-context-and-seo.md section 5.1 item 3 and section 1.10 (no OEM, MRO, lessor or national-champion ownership; neutral ground for multi-party disputes); docs/research/05-competitor-benchmark.md section 5 item 2. Wording aligned with the footer disclosure in site.json and the independence block in home.json.",
+  "clientToConfirm": [
+   "Approve the five policy lines as the company's written conflicts policy. Policy 5 (same engine, aircraft or counterparty) goes beyond 07 section 2.3 and can be removed if not wanted.",
+   "Fee-only Advisory line: 07 section 2.3 describes Advisory as fee-only. This is not rendered until confirmed. If the company receives no commissions, referral fees or other payments from MROs, OEMs, lessors or parts suppliers on advisory work, add the policy line: 'On advisory work we accept no commission, referral fee or other payment from an MRO, OEM, lessor or parts supplier.'",
+   "Confidentiality: if wanted, add a policy line on non-disclosure agreements and data handling, for example: 'Client data stays inside the engagement. We sign non-disclosure agreements as a matter of course and never use one client's data in work for another.' Not rendered.",
+   "Confirm the name of the second line ('Assets', as used on the home page and in the footer) and that engine and aircraft sourcing is an official service line to present publicly."
+  ]
+ },
+ "team": {
+  "title": "Who you will work with",
+  "intro": "Engagements are led by the managing director, drawing on experience in engine shops and airline engineering.",
+  "people": [
+   {
+    "name": "Hubert Nowosad",
+    "role": "Managing Director",
+    "text": "Hubert Nowosad is the managing director and owner of Flight Hour Solution, and the company's named contact in the Swiss Aerospace Cluster directory. He leads the advisory work, from shop visit management and workscope review to contract negotiation and records audits, and sources engines and aircraft under the Assets line. He works from Zug and on site at the shop.",
+    "languages": [],
+    "linkedin": "",
+    "source": "docs/research/01-company-profile.md section 2 (co-founder, managing director, sole shareholder since July 2025, named contact person in the Swiss Aerospace Cluster directory, only active member of management per Moneyhouse). Services named: docs/research/02-website-content-inventory.md section 4; Assets line: 01 section 4.3 and docs/research/07-recommendations-and-brief.md section 2.3. Languages are not documented in 01, so the array is empty. No personal LinkedIn profile URL is documented in 01 (only a post URL by 'a Hubert Nowosad' and a profile named 'Flight Hour Solution GmbH' linked from the company page), so the field is empty.",
+    "clientToConfirm": [
+     "Confirm Hubert Nowosad as the public face with the title Managing Director, and supply a portrait for the person card.",
+     "Former employers and engine-family experience: 01 section 2 records a public LinkedIn post dated 31 October 2022 titled 'After 4 years at Aero Norway', pointing to roughly 2018 to 2022 at Aero Norway AS, the independent CFM56 overhaul shop at Stavanger. Role and title are unverified, so nothing about former employers is rendered. Confirm what may be named, with dates and titles.",
+     "Languages: none are documented. Supply the languages to show (for example English, German, Polish, French).",
+     "LinkedIn: supply the personal profile URL to link, or confirm the field stays empty.",
+     "Confirm that he personally leads the advisory work and the Assets line as described, and edit the text if colleagues lead parts of it."
+    ]
+   }
+  ],
+  "source": "docs/research/01-company-profile.md section 2 (people and team-size signals) and site/content-brief/VOICE-AND-FACTS.md (team experience stated without a years figure). Wording of the intro matches the people block in home.json.",
+  "clientToConfirm": [
+   "Other team members: the Swiss Aerospace Cluster directory says 4 employees or members, LinkedIn says 11 to 50, the commercial register names one person. Only Hubert Nowosad is shown. Confirm whether anyone else may be named, with title, portrait and consent.",
+   "Team experience is described as 'the team's experience in engine shops and airline engineering' with no years figure, per the copy rules. Confirm the description holds for the current team."
+  ]
+ },
+ "credentials": {
+  "title": "Registration, memberships and certification",
+  "items": [
+   {
+    "name": "Swiss commercial register",
+    "status": "verified",
+    "text": "Flight Hour Solution GmbH, entered in the commercial register of the canton of Zug on 26 September 2024. UID CHE-196.248.398. Status: active.",
+    "url": "https://www.zefix.ch/en/search/entity/list/firm/1658864",
+    "source": "docs/research/01-company-profile.md section 1 (Zefix entity 1658864, SOGC publication 1 October 2024, UID register: status active) and section 10 (register URLs)."
+   },
+   {
+    "name": "Swiss Aerospace Cluster",
+    "status": "verified",
+    "text": "Member since late 2025. Listed in the cluster's member directory, with Hubert Nowosad as the named contact.",
+    "url": "https://swiss-aerospace-cluster.ch/portfolio-item/flight-hour-solution/",
+    "source": "docs/research/01-company-profile.md section 5 (verified: SAC directory entry and welcome post of 26 November 2025), section 3 (logo uploaded to the cluster site October 2025) and section 2 (named contact person in the directory)."
+   },
+   {
+    "name": "ISO 9001",
+    "status": "claimed",
+    "text": "Claimed by the company (announced 28 May 2026). Certificate to be published: certification body, certificate number, scope and expiry date.",
+    "url": "",
+    "source": "docs/research/01-company-profile.md section 5 and section 3 (LinkedIn post of 28 May 2026; certification body, certificate number and scope not stated anywhere). The url is empty on purpose: a credential links only to a verifying page (docs/research/08-locomotive-design-blueprint.md section 8.4, badges)."
+   },
+   {
+    "name": "Aviation Suppliers Association",
+    "status": "claimed",
+    "text": "Claimed by the company (announced 15 July 2026). Membership number and directory listing to be published.",
+    "url": "",
+    "source": "docs/research/01-company-profile.md section 5 and section 3 (LinkedIn post of 15 July 2026; the ASA member directory could not be checked). The url is empty on purpose until a verifying directory page is confirmed."
+   }
+  ],
+  "source": "Status values follow docs/research/01-company-profile.md section 5 and site/content-brief/VOICE-AND-FACTS.md: only the Swiss Aerospace Cluster membership and the register entry are verified; ISO 9001 and the Aviation Suppliers Association membership are claimed by the company. No EASA or FAA approval is claimed or implied (01 section 5).",
+  "clientToConfirm": [
+   "ISO 9001: certification body, certificate number, scope, issue and expiry dates and a PDF of the certificate, so the row can move from claimed to verified and link to the certificate.",
+   "Aviation Suppliers Association: membership number, membership category and the directory page to link to.",
+   "Swiss Aerospace Cluster: confirm the membership start month (logo on the cluster site October 2025, welcome post 26 November 2025).",
+   "Confirm whether to add a row stating that no EASA or FAA approvals are held and none are required for consulting work (01 section 5), which pre-empts a common procurement question."
+  ]
+ },
+ "zug": {
+  "title": "Neutral ground in Zug",
+  "text": "The registered office is at Bahnhofplatz in Zug, in central Switzerland, a short drive from Zurich Airport. Meetings are by appointment: in Zug, at your offices or at the shop. When a lessor, an airline and an MRO need a neutral table, Zug is a practical place to meet.",
+  "image": {
+   "src": "zug-lake",
+   "alt": "Winter dawn over Lake Zug: a snow-covered old town and church tower on the shore, mist on the water and a snow-capped mountain behind",
+   "credit": "Generated illustration"
+  },
+  "source": "Address: docs/research/01-company-profile.md section 1 (registered address Bahnhofplatz, 6300 Zug, no house number in the register; Moneyhouse lists other companies at the same address, which points to a domicile address). Zug framing: docs/research/06-market-context-and-seo.md section 1.10 (use Zug for central Europe, proximity to Zurich Airport and the Zurich MRO cluster; neutral ground for multi-party disputes between lessor, airline and MRO; do not lead with tax; do not imply state endorsement) and docs/research/07-recommendations-and-brief.md section 2.2 (Swiss discretion pillar, office or meeting arrangement to be confirmed). Image key from site/content-brief/CONTENT-SCHEMA.md.",
+  "clientToConfirm": [
+   "Bahnhofplatz: supply the house number, and confirm whether it is a visitable office (map, opening hours) or a domicile address. The page says meetings are by appointment.",
+   "Confirm whether '30 minutes from Zurich Airport' may replace 'a short drive from Zurich Airport'.",
+   "Real photography of Zug or of the meeting room replaces the generated illustration at launch."
+  ]
+ },
+ "legal": {
+  "title": "Legal entity",
+  "lines": [
+   "Flight Hour Solution GmbH",
+   "Bahnhofplatz, 6300 Zug, Switzerland",
+   "UID CHE-196.248.398",
+   "Commercial register of the canton of Zug, CH-170.4.022.412-5, entered 26 September 2024",
+   "Managing director: Hubert Nowosad"
+  ],
+  "source": "docs/research/01-company-profile.md section 1 (legal name, legal form, UID CHE-196.248.398, CH-ID CH-170.4.022.412-5, registered address Bahnhofplatz 6300 Zug, register entry 26 September 2024) and section 2 (managing director). Entity naming per docs/research/07-recommendations-and-brief.md section 2.4 (GmbH in legal lines).",
+  "clientToConfirm": [
+   "VAT: 01 section 1 lists the VAT form CHE-196.248.398 MWST from Moneyhouse. Confirm VAT registration before adding 'VAT CHE-196.248.398 MWST' to the legal lines.",
+   "Registered translations of the name (Flight Hour Solution Sàrl, Sagl, LLC) are not shown. Confirm whether to add them.",
+   "Confirm the house number for Bahnhofplatz so the legal lines and the Impressum can carry the full address."
+  ]
+ },
+ "sources": [
+  "docs/research/01-company-profile.md section 1 (legal name Flight Hour Solution GmbH, Swiss GmbH, UID CHE-196.248.398, CH-ID CH-170.4.022.412-5, registered seat and address Bahnhofplatz 6300 Zug, statutes 4 September 2024, register entry 26 September 2024, SOGC publication 1 October 2024, share capital CHF 20,000 in 200 shares, status active, registered purpose; Zefix, SOGC, UID register, Moneyhouse)",
+  "docs/research/01-company-profile.md section 2 (Hubert Nowosad: co-founder, managing director, sole shareholder with 200 shares and sole signature since the July 2025 mutation; named contact in the Swiss Aerospace Cluster directory; Aero Norway background from a public LinkedIn post, role and title unverified; team-size signals; the former co-owner left in July 2025 and is not named on the site)",
+  "docs/research/01-company-profile.md section 3 (timeline: register entry 26 September 2024, ownership change 24 to 29 July 2025, Swiss Aerospace Cluster October to November 2025, ISO 9001 post 28 May 2026, ASA post 15 July 2026)",
+  "docs/research/01-company-profile.md section 4.2 (Swiss Aerospace Cluster directory: airlines, lessors, MROs and governmental operators worldwide; core competences) and section 4.3 (LinkedIn 2026: engine and aircraft sourcing, technical advisory, engine sales support)",
+  "docs/research/01-company-profile.md section 5 (Swiss Aerospace Cluster membership verified; ISO 9001 and Aviation Suppliers Association membership claimed; no EASA or FAA approvals claimed)",
+  "docs/research/01-company-profile.md section 10 (Zefix entity 1658864 URL; Swiss Aerospace Cluster directory URL)",
+  "docs/research/02-website-content-inventory.md section 4 (service taxonomy: shop visit management, workscope compilation and review, table inspection, test cell overview, lease and contract negotiation, LLP back-to-birth audit, maintenance reserves)",
+  "docs/research/05-competitor-benchmark.md section 4 (on-site representation vocabulary), section 5 items 2 and 10 (independence as a product; named team with former employers) and section 6 (trust-signal checklist: legal entity, UID, independence statement, memberships linked to certificates)",
+  "docs/research/06-market-context-and-seo.md section 1.10 (Zug framing, Zurich Airport and MRO cluster, neutral ground, no state endorsement), section 5.1 item 3 (independent of OEMs, MROs and lessors) and sections 5.2 and 5.3 (claims to avoid, tone)",
+  "docs/research/07-recommendations-and-brief.md section 2.1 (positioning line), section 2.2 (independence and Swiss discretion pillars), section 2.3 option 1 (Advisory and Assets lines with a written conflicts policy), section 2.4 (entity naming), section 5 (About page brief) and section 12 (decisions needed)",
+  "docs/research/08-locomotive-design-blueprint.md section 8.3 row 7 (people section: managing director, name, credentials, one paragraph) and section 8.4 (badges link only to a verifying page)",
+  "site/content-brief/VOICE-AND-FACTS.md (entity naming, no years-of-experience figure, team experience wording, membership status rules, independence wording) and site/content-brief/CONTENT-SCHEMA.md (about.json shape, image keys)"
+ ]
 }
