@@ -1,0 +1,403 @@
+{
+  "seoTitle": "Insights: technical notes on engine shop visits | Flight Hour Solution",
+  "metaDescription": "Technical notes from Flight Hour Solution on shop visit planning, workscopes, LEAP durability kits, maintenance reserves, USM and ECM alerts.",
+  "title": "Technical notes on engine shop visits",
+  "intro": "Short, sourced notes on the decisions that set an engine's cost: removal timing, visit type, workscope, material and lease compliance. Every figure carries its source.",
+  "articles": [
+    {
+      "slug": "planning-shop-visits-around-the-2026-capacity-crunch",
+      "title": "Planning shop visits around the 2026 capacity crunch",
+      "date": "2026-08-04",
+      "readingMinutes": 3,
+      "excerpt": "Turnaround times are up 35 per cent for legacy engines and 150 per cent for new-generation types. Planning rules that hold in a constrained market.",
+      "tags": [
+        "Shop visits",
+        "Removal planning",
+        "Capacity"
+      ],
+      "sections": [
+        {
+          "heading": "Where the numbers stand",
+          "paragraphs": [
+            "Bain's 2024 brief on engine maintenance put the peak of engine MRO demand in 2026 and expects capacity to stay constrained to the end of the decade. Over that period cumulative demand exceeds supply by nearly 17 per cent.",
+            "Against pre-pandemic norms, turnaround times are up 35 per cent or more for legacy engines and 150 per cent or more for new-generation engines. Slot waits have lengthened by two to three months, and by up to six in some cases.",
+            "Engine-stand data for the first half of 2026 points the same way, unevenly. CFM56-5A/B stand utilisation reached 92 per cent, against 77 per cent in 2025. V2500 project durations rose 9 per cent. CFM56-7B durations fell 17 per cent and LEAP-1A durations fell 8 per cent, so the picture differs by family."
+          ]
+        },
+        {
+          "heading": "Why the crunch will not clear quickly",
+          "paragraphs": [
+            "Oliver Wyman describes a bow wave of maintenance deferred during the pandemic, which now arrives as bottlenecks, longer turnaround times and fluctuating prices. Delivery delays add to it: 17,000 aircraft orders were unfilled at the start of 2026 and production ended 2025 at 24 per cent below 2019, so older engines fly longer and visit shops more often.",
+            "Labour is the slow variable. Bain expects US mechanic demand to grow 4 per cent by 2030 against a 1 per cent rise in the working-age population. Oliver Wyman counts 41 per cent of certified US mechanics over 60, with 45,000 retiring within a decade, and ARSA notes that new technicians need two to five years to reach full productivity."
+          ]
+        },
+        {
+          "heading": "Five planning rules that hold",
+          "paragraphs": [
+            "Rule one: plan removals from the engine, not the calendar. An engine typically needs three to five shop visits over its life, so each removal date should come from the EGT margin trend, the LLP limits and the slot lead time together, not from a fleet-wide assumption.",
+            "Rule two: secure the slot before the workscope is final. With waits of two to six months, the slot request goes out on a provisional workscope and a removal window, and is refined when the engine comes off. Waiting for a perfect workscope costs more than adjusting one.",
+            "Rule three: benchmark the quoted turnaround against independent data, not the shop's own history. Acumen's 2026 benchmarks put a CFM56 full overhaul at 90 to 120 days and a light visit near 45; a V2500 at 60 to 70 days; a PW4000 at 120 days or more. A quote far outside these ranges needs an explanation.",
+            "Rule four: treat material as part of the schedule. OEM parts demand outpaces supply by 10 to 20 per cent, and used serviceable material covers up to 30 per cent of part demand at some shops. Long-lead parts and repair routes should be identified at table inspection, not discovered at kitting.",
+            "Rule five: keep spare-engine cover and lease terms in the same model. A turnaround that slips from 60 to 90 days changes the spare-engine plan and, on a leased aircraft, can move a shop visit across a redelivery date. The model should show both effects before the workscope is approved."
+          ]
+        },
+        {
+          "heading": "What this means for a managed visit",
+          "paragraphs": [
+            "In a constrained market the value of shop visit management moves earlier: into removal planning, slot negotiation and workscope discipline. On-site presence at induction and table inspection then keeps findings, material decisions and the turnaround plan aligned while the engine is open.",
+            "Flight Hour Solution plans removals, negotiates slots and represents clients on site for CFM56, LEAP, V2500 and PW4000 visits. Send us your next workscope and removal window and we will tell you where the turnaround risk sits."
+          ]
+        }
+      ],
+      "sources": [
+        "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, 17 July 2024: engine MRO demand peaks in 2026 and stays constrained to the end of the decade; cumulative demand exceeds supply by nearly 17 per cent; turnaround times +35 per cent or more for legacy engines and +150 per cent or more for new-generation engines; slot waits +2 to 3 months, up to 6; OEM parts demand outpaces supply by 10 to 20 per cent; used serviceable material covers up to 30 per cent of part demand at some shops; US mechanic demand +4 per cent by 2030 against +1 per cent working-age population. https://www.bain.com/insights/get-a-step-ahead-of-the-engine-maintenance-capacity-crunch/ (docs/research/06-market-context-and-seo.md section 1.3, tag F)",
+        "Air Cargo Week, From PW1100G to CFM56: the engine maintenance trends shaping 2026, 17 July 2026, using EngineStands.com data: CFM56-5A/B stand utilisation 92 per cent in H1 2026 against 77 per cent in 2025; CFM56-7B project durations minus 17 per cent; V2500 durations plus 9 per cent; LEAP-1A durations minus 8 per cent. https://aircargoweek.com/from-pw1100g-to-cfm56-the-engine-maintenance-trends-shaping-2026/ (docs/research/06-market-context-and-seo.md section 1.2, tag F)",
+        "Oliver Wyman, Global Fleet and MRO Market Forecast 2026 to 2036, February 2026: the pandemic-era maintenance bow wave; 41 per cent of certified US mechanics over 60 and 45,000 to retire within a decade; 17,000 unfilled aircraft orders at the start of 2026; production 24 per cent below 2019 at the end of 2025. https://www.oliverwyman.com/our-expertise/insights/2026/feb/global-fleet-and-mro-market-forecast-2026-2036.html (docs/research/06-market-context-and-seo.md sections 1.3 and 1.6, tag F)",
+        "Aeronautical Repair Station Association, Market assessment (Oliver Wyman Vector, 18 March 2026): new technicians need two to five years to reach full productivity. https://arsa.org/market-assessment/ (docs/research/06-market-context-and-seo.md section 1.3, tag F)",
+        "Acumen Aviation, Why are engine shortages reshaping aircraft asset values in 2026, 15 June 2026: independent turnaround benchmarks, CFM56 full overhaul 90 to 120 days and light visit about 45 days; V2500 60 to 70 days; PW4000 120 days or more. https://www.acumen.aero/blogs/why-are-engine-shortages-reshaping-aircraft-asset-values-in-2026- (docs/research/06-market-context-and-seo.md section 1.2, tag F)",
+        "MTU Maintenance, civil maintenance overview: an engine typically needs three to five shop visits over its life. https://www.mtu.de/de/maintenance/zivile-maintenance/ (docs/research/06-market-context-and-seo.md section 1.2, tag F)"
+      ],
+      "image": {
+        "src": "engine-cradle",
+        "alt": "A shrouded turbofan engine strapped into a steel transport cradle on a warehouse floor",
+        "credit": "Generated illustration"
+      },
+      "notes": "Topic 2 in 06 section 4.3. The five rules are planning practice, not sourced statistics; the only figures are those listed in sources. Service names in the closing paragraph follow 02 section 4 (shop visit management, workscope compilation and review, table inspection).",
+      "clientToConfirm": [
+        "The closing paragraph says the firm negotiates slots. 06 section 5.2 warns against promising slot access; the wording promises negotiation support only. Confirm it is acceptable.",
+        "Confirm on-site representation is offered on all four families named (CFM56, LEAP, V2500, PW4000)."
+      ]
+    },
+    {
+      "slug": "quick-turn-hospital-visit-or-performance-restoration",
+      "title": "Quick-turn, hospital visit or performance restoration?",
+      "date": "2026-07-07",
+      "readingMinutes": 3,
+      "excerpt": "Three visit types, three cost bands and three sets of lease consequences. How the choice is made, and who should be in the room.",
+      "tags": [
+        "Workscope",
+        "Shop visits",
+        "Lease terms"
+      ],
+      "sections": [
+        {
+          "heading": "Three visits, one engine life",
+          "paragraphs": [
+            "An engine typically needs three to five shop visits over its life. Not all of them are the same event. The industry sorts visits into three types by depth of disassembly: the quick-turn, the hospital visit and the performance restoration. The type decides the workscope, the turnaround, the invoice and, on a leased engine, who pays.",
+            "A quick-turn addresses one finding with minimal disassembly: a fan blade set, a gearbox or accessory change, or a borescope finding that can be reached without splitting the core. The engine keeps its remaining life; nothing is restored.",
+            "A hospital visit goes deeper to fix a specific problem, often a module removal or a single-module repair, without a full restoration of the engine's performance margins. It buys time on wing but leaves the other modules in their existing condition.",
+            "A performance restoration is the full event: the core is disassembled, hot-section parts are inspected and repaired or replaced, life-limited parts at or near their limits are changed, and the engine leaves the test cell with restored EGT margin. It is the multi-million-dollar purchase, typically several million US dollars per visit, and the one that resets the engine's economic clock."
+          ]
+        },
+        {
+          "heading": "What the choice depends on",
+          "paragraphs": [
+            "The first input is the removal cause. A foreign-object strike on an engine with healthy margins points to a quick-turn. A hot-section distress finding on an engine whose EGT margin has been falling points to restoration, because a repair alone would send it back to the shop within a year or two.",
+            "The second input is remaining life. If several life-limited parts have limited cycles left, a hospital visit that ignores them delays a second, unavoidable disassembly. The LLP stub position, cycle by cycle, belongs on the same page as the borescope report.",
+            "The third input is cost per cycle rather than cost per visit. Repair costs on the CFM56 have risen 50 to 75 per cent since 2019, hot-section blade prices are up about 30 per cent and fan blade prices have doubled since 2020. In that environment the cheapest visit is rarely the cheapest year.",
+            "The fourth input is the shop's turnaround. Independent 2026 benchmarks put a CFM56 full overhaul at 90 to 120 days and a light visit near 45 days; a V2500 at 60 to 70 days. Where slot waits already run two to six months, a restoration must be planned around spare-engine cover, not squeezed into it."
+          ]
+        },
+        {
+          "heading": "Why the lease cares",
+          "paragraphs": [
+            "Lease documents draw the same line in their own language. Many define an Engine Basic Shop Visit or a Performance Restoration Shop Visit by reference to the OEM Workscope Planning Guide, and maintenance reserves or end-of-lease compensation are often released only for that class of visit.",
+            "A hospital visit that a lessee calls a restoration, or a restoration that falls short of the lease definition, is a common source of dispute. Maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to end in multi-million-dollar arguments. The visit type should be agreed with the lessor before induction, in writing."
+          ]
+        },
+        {
+          "heading": "Who decides, and when",
+          "paragraphs": [
+            "The decision is made twice. A provisional workscope is drafted from ECM data, borescope findings and LLP status before removal. It is confirmed or changed at table inspection, when the modules are open and the real condition is visible. That second decision is where an independent representative earns their day rate.",
+            "Flight Hour Solution compiles and reviews workscopes for CFM56, LEAP, V2500 and PW4000 engines, attends table inspections and reconciles the final invoice against the workscope that was approved. The visit type is the first line of that workscope."
+          ]
+        }
+      ],
+      "sources": [
+        "MTU Maintenance, civil maintenance overview: an engine typically needs three to five shop visits over its life. https://www.mtu.de/de/maintenance/zivile-maintenance/ (docs/research/06-market-context-and-seo.md section 1.2, tag F)",
+        "Magnetic Group, From CFM56 to LEAP, June 2025: CFM56 repair costs +50 to 75 per cent since 2019; hot-section blade prices +30 per cent since 2019; fan blade prices doubled since 2020. https://www.magneticgroup.co/from-cfm56-to-leap-navigating-the-turbulent-shift-to-next-generation-aircraft-engines/ (docs/research/06-market-context-and-seo.md section 1.2, tag F)",
+        "Acumen Aviation, Why are engine shortages reshaping aircraft asset values in 2026, 15 June 2026: turnaround benchmarks, CFM56 full overhaul 90 to 120 days and light visit about 45 days; V2500 60 to 70 days. https://www.acumen.aero/blogs/why-are-engine-shortages-reshaping-aircraft-asset-values-in-2026- (docs/research/06-market-context-and-seo.md section 1.2, tag F)",
+        "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, 17 July 2024: slot waits +2 to 3 months, up to 6 months in some cases. https://www.bain.com/insights/get-a-step-ahead-of-the-engine-maintenance-capacity-crunch/ (docs/research/06-market-context-and-seo.md section 1.3, tag F)",
+        "Acumen Aviation, Aircraft lease return conditions: common disputes and how to avoid them: maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes. https://www.acumen.aero/blogs/aircraft-lease-return-conditions-common-disputes-and-how-to-avoid-them (docs/research/06-market-context-and-seo.md section 1.7, tag F)",
+        "Law Insider, definition of Engine Basic Shop Visit, and Air Lease Review, The definition of Engine Basic Shop Visit, 4 February 2016: lease definitions of Engine Basic Shop Visit and Performance Restoration Shop Visit tied to the OEM Workscope Planning Guide. https://www.lawinsider.com/dictionary/engine-basic-shop-visit and https://airleasereviewblog.com/2016/02/04/the-definition-of-engine-basic-shop-visit/ (docs/research/06-market-context-and-seo.md section 1.7, tag F)"
+      ],
+      "image": {
+        "src": "table-inspection",
+        "alt": "Turbine blades laid out in rows on a light table, one held up by a gloved inspector",
+        "credit": "Generated illustration"
+      },
+      "notes": "Topic 3 in 06 section 4.3. The three visit-type descriptions are definitional (glossary terms quick-turn, hospital visit, performance restoration in 06 section 4.5) and carry no figures. 'Typically several million US dollars per visit' follows the copy implication in 06 section 1.2; the SAFE FLY per-visit ranges are deliberately not quoted (06 section 5.2). Services named in the closing paragraph are from 02 section 4: Workscope Compilation / Review, Dirty Condition / Table Inspection, Engine Overhaul / Repair Invoice Review.",
+      "clientToConfirm": [
+        "Confirm the firm's own preferred names for the three visit types (some shops say 'light', 'hospital' or 'repair' visit) so that the glossary and this note agree.",
+        "'Where an independent representative earns their day rate' implies day-rate pricing. Confirm that engagements are priced by the day, or reword to 'fee'."
+      ]
+    },
+    {
+      "slug": "leap-durability-kits-when-embodiment-pays-back",
+      "title": "LEAP durability kits: when embodiment pays back",
+      "date": "2026-09-15",
+      "readingMinutes": 3,
+      "excerpt": "The LEAP-1A and LEAP-1B now have certified hot-section durability upgrades. Whether to embody them at the next visit is a workscope decision, not a policy.",
+      "tags": [
+        "LEAP",
+        "Workscope",
+        "Durability"
+      ],
+      "sections": [
+        {
+          "heading": "What has been certified",
+          "paragraphs": [
+            "The LEAP has two separate durability stories. On the LEAP-1A, fuel-nozzle coking is addressed by a reverse-bleed system, and a high-pressure turbine durability kit was certified in December 2024. On the LEAP-1B, a high-pressure turbine and fuel-nozzle durability package was certified in 2026, with full production cut-over expected in early 2027.",
+            "Uptake on the 1A has been fast. CFM reported more than 1,200 HPT kits produced in under a year, with about 70 per cent of the LEAP-1A fleet on the reverse-bleed system and 40 per cent on the HPT kit. IBA's H2 2026 update notes LEAP values benefiting from these product improvements.",
+            "The claimed effect is large where it matters. GE Aerospace has said that in harsh environments a LEAP-1A stayed on wing about 1.5 years before the update and about four years with it, and that the kit more than doubles time on wing in severe conditions.",
+            "Those figures describe severe environments. The gain in benign operations has to be estimated from an operator's own removal history, not read across from the worst case."
+          ]
+        },
+        {
+          "heading": "Why it is a workscope decision",
+          "paragraphs": [
+            "Embodiment is not free and not instant. It adds parts, labour and test time to a visit that, for a new-generation engine, already runs 150 per cent or more longer than pre-pandemic norms. In the first half of 2026 LEAP-1A project durations fell 8 per cent while LEAP-1B durations rose 5 per cent, so the shop's turnaround differs by variant.",
+            "The payback question therefore has four terms: the extra cost and downtime of embodiment now; the avoided cost of an earlier removal later; the value of the extra time on wing in a market where slots wait two to six months; and the residual-value effect on a leased or financed engine.",
+            "Each term is engine-specific. An engine due for a full performance restoration anyway, with the core open and the HPT hardware already being replaced, carries a small incremental cost. An engine in for a quick-turn with healthy margins carries the full cost and gains little until its next planned removal."
+          ]
+        },
+        {
+          "heading": "When embodiment usually pays back",
+          "paragraphs": [
+            "Embodiment tends to pay back when the engine operates in hot or sandy conditions, when the HPT hardware is being replaced in any case, when the lease or financing rewards the upgraded configuration, and when the operator's own removal history shows durability-driven early removals.",
+            "It tends not to pay back, or not yet, when the engine is close to a planned lease return where the lessor has not asked for the upgrade, when the shop cannot supply the kit inside the planned turnaround, or when the environment is benign and the next removal is set by LLP limits rather than by hot-section distress.",
+            "For lessors the question is symmetrical. An upgraded engine coming back at redelivery may hold its value better; a lessee asked to fund a configuration change the lease did not foresee will push back. Early shop visits and unexpected module swaps are already complicating redelivery conditions that were drafted before these issues appeared."
+          ]
+        },
+        {
+          "heading": "What to fix before the visit",
+          "paragraphs": [
+            "Three things should be settled before induction. First, the configuration the lessor expects at redelivery, in writing. Second, kit availability and its effect on the quoted turnaround, confirmed by the shop. Third, the model that compares embodiment now with embodiment at the following visit, using the operator's own data rather than fleet averages.",
+            "Flight Hour Solution reviews LEAP-1A and LEAP-1B workscopes as an independent party, with no interest in the parts sold or the slot used. The durability decision is written into the workscope with its assumptions, so the invoice can later be reconciled against it."
+          ]
+        }
+      ],
+      "sources": [
+        "IBA, Engine and lease rate update H2 2026, 11 September 2026: LEAP-1A fuel-nozzle coking addressed by a reverse-bleed system fix; LEAP-1B HPT durability kit certified in 2026; LEAP values benefiting from product improvements. https://www.iba.aero/resources/articles/iba-engine-and-lease-rate-update-h2-2026/ (docs/research/06-market-context-and-seo.md section 1.4, tag F)",
+        "CFM International, CFM International reaches new milestones for LEAP engine maturity: LEAP-1A HPT durability kit certified December 2024; more than 1,200 kits produced in under a year; about 70 per cent of the LEAP-1A fleet on the reverse-bleed system and 40 per cent on the HPT kit. https://www.cfmaeroengines.com/press-articles/cfm-international-reaches-new-milestones---for-leap-engine-maturity (docs/research/06-market-context-and-seo.md section 1.4, tag S: figures seen in a search snippet, to be verified against the page before launch)",
+        "GE Aerospace, FAA certifies more durable hardware for CFM LEAP-1A engine: in harsh environments about 1.5 years on wing before the update against about four years with it; the kit more than doubles time on wing in severe environments. https://www.geaerospace.com/news/articles/faa-certifies-more-durable-hardware-cfm-leap-1a-engine (docs/research/06-market-context-and-seo.md section 1.4, tag S: to be verified before launch)",
+        "FlightGlobal, FAA approves LEAP-1B high-pressure turbine durability kit, July 2026, and GE Aerospace press release, CFM secures certification for LEAP-1B durability upgrades: LEAP-1B HPT and fuel-nozzle durability improvements certificated in July 2026; full production cut-over expected in early 2027. https://www.flightglobal.com/airframers/2026/07/faa-approves-leap-1b-high-pressure-turbine-durability-kit/ and https://www.geaerospace.com/news/press-releases/cfm-secures-certification-leap-1b-durability-upgrades (docs/research/06-market-context-and-seo.md section 1.4, tag S: to be verified before launch)",
+        "Air Cargo Week, From PW1100G to CFM56: the engine maintenance trends shaping 2026, 17 July 2026, using EngineStands.com data: LEAP-1A project durations minus 8 per cent and LEAP-1B durations plus 5 per cent in H1 2026. https://aircargoweek.com/from-pw1100g-to-cfm56-the-engine-maintenance-trends-shaping-2026/ (docs/research/06-market-context-and-seo.md section 1.2, tag F)",
+        "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, 17 July 2024: turnaround times +150 per cent or more for new-generation engines against pre-pandemic norms; slot waits +2 to 3 months, up to 6. https://www.bain.com/insights/get-a-step-ahead-of-the-engine-maintenance-capacity-crunch/ (docs/research/06-market-context-and-seo.md section 1.3, tag F)",
+        "ACC Aviation, Aircraft transitions and repossessions: 2025 market update: early shop visits and unexpected module swaps are complicating redelivery conditions that were not drafted to anticipate them. https://accaviation.com/aircraft-transitions-and-repossessions-2025-market-update/ (docs/research/06-market-context-and-seo.md section 1.7, tag F)"
+      ],
+      "image": {
+        "src": "cross-section",
+        "alt": "Line drawing of a two-spool turbofan engine in cross-section on a navy background",
+        "credit": "Generated illustration"
+      },
+      "notes": "Topic 4 in 06 section 4.3. The 'pays back' and 'does not pay back' lists are decision logic, not sourced outcomes; no payback period or saving is stated. Services named follow 02 section 4 (Workscope Compilation / Review, Engine Overhaul / Repair Invoice Review).",
+      "clientToConfirm": [
+        "Three sources are tagged S in 06 section 1.4 (CFM kit count and fleet percentages; GE Aerospace time-on-wing figures; FlightGlobal and GE Aerospace LEAP-1B certification date and 2027 cut-over). Verify each against the page before launch or delete the sentence that uses it.",
+        "IBA (tag F) places the LEAP-1B kit certification in H1 2026 while FlightGlobal (tag S) reports FAA certification on 18 July 2026. The article says 'in 2026' and 'July 2026' only in the source list; confirm the date to be used.",
+        "Confirm that the firm has reviewed LEAP-1A or LEAP-1B workscopes in practice; the closing paragraph states this as a current service.",
+        "'No interest in the parts sold or the slot used' relies on the conflicts policy (07 section 2.3). Confirm that the firm earns nothing from LEAP parts or slot placement."
+      ]
+    },
+    {
+      "slug": "maintenance-reserves-versus-actual-shop-visit-cost",
+      "title": "Maintenance reserves versus actual shop visit cost",
+      "date": "2026-09-01",
+      "readingMinutes": 3,
+      "excerpt": "Reserve rates set years ago meet 2026 invoices. Why the gap ends in dispute, and what to do before the redelivery clock starts.",
+      "tags": [
+        "Lessors",
+        "Maintenance reserves",
+        "Redelivery"
+      ],
+      "sections": [
+        {
+          "heading": "How the gap opens",
+          "paragraphs": [
+            "A maintenance reserve is a payment, per flight hour or cycle, that the lessee makes against the cost of the next major event. The rate is fixed when the lease is signed, usually with an escalation clause. The invoice arrives years later, at the price of that year.",
+            "Since 2019 that later price has moved a long way. CFM56 repair costs are up 50 to 75 per cent, hot-section blade prices about 30 per cent, and fan blade prices have doubled since 2020. Whether a reserve rate set before that inflation still covers the event depends on its escalation clause. That is the first number to check.",
+            "The gap is not only about price. Early shop visits, unexpected module swaps and reliability issues are complicating redelivery conditions that were not drafted to anticipate them. In 2025 transitions, MRO slots and correct documentation remained the major problems, and airline records standards often differed from lessor expectations."
+          ]
+        },
+        {
+          "heading": "Why it ends in dispute",
+          "paragraphs": [
+            "Maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes. The arguments concentrate on four points: life-limited-part valuations, deferred defects, incomplete back-to-birth records and where fair wear and tear ends.",
+            "Each point has a reserve dimension. LLP valuation decides how much reserve is released for parts replaced. Deferred defects decide whether a visit qualifies as the event the reserve was collected for. Records decide whether the claim can be proven at all. The boundary of wear and tear decides who pays for the rest.",
+            "Lenders have joined the conversation. Engine status is now scrutinised more closely, and engine records, LLP status and maintenance forecasts are expected to stay transparent through the lease. An aircraft with serviceable engines, strong records and manageable maintenance exposure may be worth more than a similar aircraft facing engine uncertainty."
+          ]
+        },
+        {
+          "heading": "Closing the gap before redelivery",
+          "paragraphs": [
+            "The first step is a reserve adequacy check, engine by engine: the reserve balance against a forecast of the next restoration at current prices, with the LLP stack costed cycle by cycle. The check should run at least a year before redelivery, because slot waits alone can run two to six months.",
+            "The second step is a records audit. LLP back-to-birth traceability, shop visit reports and release certificates are gathered and gaps are chased while the operator, the shop and the paperwork still exist. A missing document found at redelivery costs far more than one found twelve months earlier.",
+            "The third step is to agree the classification of any shop visit inside the redelivery window before induction: whether it is a performance restoration under the lease definition, which modules are included, and how a module swap will be treated. Silence here is where most claims are born.",
+            "The fourth step is a claim file built as the visit runs, not afterwards: the approved workscope, table-inspection findings, scrap tags, the invoice reconciled line by line and the test-cell result. A reserve claim presented with that file is settled; one presented without it is negotiated."
+          ]
+        },
+        {
+          "heading": "Both sides of the lease",
+          "paragraphs": [
+            "The same discipline serves the lessor. Workscope oversight during the lessee's visit protects the residual value the lessor will inherit, and a joint agreement on the event's classification removes the largest single source of end-of-lease argument.",
+            "Flight Hour Solution runs maintenance-reserve calculations and claim analysis, LLP back-to-birth audits and redelivery support for airlines and lessors, and is owned by neither an MRO nor a lessor. The work starts with the reserve adequacy check."
+          ]
+        }
+      ],
+      "sources": [
+        "Acumen Aviation, Aircraft lease return conditions: common disputes and how to avoid them: maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes; disputes centre on LLP valuations, deferred defects, incomplete back-to-birth records and the boundary of fair wear and tear. https://www.acumen.aero/blogs/aircraft-lease-return-conditions-common-disputes-and-how-to-avoid-them (docs/research/06-market-context-and-seo.md section 1.7, tag F)",
+        "Acumen Aviation, Aircraft maintenance reserves explained: how they work and why they matter: primer used for the description of reserve payments and escalation. https://www.acumen.aero/blogs/aircraft-maintenance-reserves-explained-how-they-work-and-why-they-matter (docs/research/06-market-context-and-seo.md section 1.7)",
+        "ACC Aviation, Aircraft transitions and repossessions: 2025 market update: in 2025 transitions the major problems remain MRO slots and correct documentation; airline records standards often differ from lessor expectations; reliability, early shop visits and unexpected module swaps are complicating redelivery conditions that were not drafted to anticipate them. https://accaviation.com/aircraft-transitions-and-repossessions-2025-market-update/ (docs/research/06-market-context-and-seo.md section 1.7, tag F)",
+        "Acumen Aviation, Why are engine shortages reshaping aircraft asset values in 2026, 15 June 2026: lenders scrutinise engine status more closely; engine records, LLP status and maintenance forecasts must stay transparent; aircraft with serviceable engines, strong records and manageable maintenance exposure may be worth more than similar aircraft facing engine uncertainty. https://www.acumen.aero/blogs/why-are-engine-shortages-reshaping-aircraft-asset-values-in-2026- (docs/research/06-market-context-and-seo.md sections 1.5 and 1.7, tag F)",
+        "Magnetic Group, From CFM56 to LEAP, June 2025: CFM56 repair costs +50 to 75 per cent since 2019; hot-section blade prices +30 per cent since 2019; fan blade prices doubled since 2020. https://www.magneticgroup.co/from-cfm56-to-leap-navigating-the-turbulent-shift-to-next-generation-aircraft-engines/ (docs/research/06-market-context-and-seo.md section 1.2, tag F)",
+        "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, 17 July 2024: slot waits +2 to 3 months, up to 6 months in some cases. https://www.bain.com/insights/get-a-step-ahead-of-the-engine-maintenance-capacity-crunch/ (docs/research/06-market-context-and-seo.md section 1.3, tag F)"
+      ],
+      "image": {
+        "src": "records-desk",
+        "alt": "Three engine log books, an open notebook, a tablet and a pair of callipers on a dark desk",
+        "credit": "Generated illustration"
+      },
+      "notes": "Topics 10 and 12 in 06 section 4.3 combined. The four-step method is practice, not a sourced statistic; 'at least a year before redelivery' is a recommendation. Services named follow 02 section 4 (Maintenance Reserve Calculations / Reserve Claim Analysis, LLP Back to Birth Trace Audit, Post-Shop Visit Documentation Audit). Ownership statement follows 01 section 2 (sole owner Hubert Nowosad since July 2025).",
+      "clientToConfirm": [
+        "'Owned by neither an MRO nor a lessor' follows 01 section 2. Confirm no MRO, lessor or OEM holds any stake or pays any commission.",
+        "Confirm that redelivery support is offered to both lessees and lessors, as the article states.",
+        "If the firm has a preferred lead time for the reserve adequacy check other than 'at least a year before redelivery', supply it."
+      ]
+    },
+    {
+      "slug": "used-serviceable-material-strategy-for-2026",
+      "title": "Used serviceable material: a strategy for 2026",
+      "date": "2026-06-23",
+      "readingMinutes": 3,
+      "excerpt": "USM meets up to 30 per cent of part demand at some shops, while teardown supply has shrunk. What a material policy needs in 2026.",
+      "tags": [
+        "Material",
+        "Supply chain",
+        "Cost"
+      ],
+      "sections": [
+        {
+          "heading": "Two numbers that do not agree",
+          "paragraphs": [
+            "Two facts define engine material in 2026. Bain finds that used serviceable material covers up to 30 per cent of part demand at some shops, while OEM parts demand outpaces supply by 10 to 20 per cent. Magnetic Group finds that teardown part harvesting runs about five times below its pre-2020 level.",
+            "Demand for USM is therefore high at the moment supply is thin. Delivery delays keep older aircraft flying instead of feeding teardowns: 17,000 orders were unfilled at the start of 2026 and production ended 2025 at 24 per cent below 2019.",
+            "Value works the same way. Aircraft with serviceable engines, strong records and manageable maintenance exposure may now be worth more than similar aircraft facing engine uncertainty, which keeps candidate teardown aircraft in service rather than in the parts market.",
+            "The price effect is visible in new parts too. CFM56 hot-section blade prices have risen about 30 per cent since 2019 and fan blade prices have doubled since 2020; repair costs on the family are up 50 to 75 per cent. Every workscope now contains a material decision worth a large share of the invoice."
+          ]
+        },
+        {
+          "heading": "What a material policy has to decide",
+          "paragraphs": [
+            "A material policy answers four questions before the engine is inducted. Which parts may be sourced as USM, and with what documentation. Where PMA parts and DER repairs are acceptable, and where the lease or the lessor forbids them. Who owns the removed material. And who checks the price of each route against the others.",
+            "Lease terms often govern the second question: whether PMA parts and DER repairs are permitted on the engine, and on what conditions. A lessee that fits them against the lease creates a redelivery problem larger than the saving. The policy has to be read against every lease in the fleet, not written once for the airline.",
+            "Documentation decides whether USM is an asset or a liability. Since the 2023 AOG Technics case of falsified part paperwork, traceability has become the first question buyers and lessors ask. A USM part without a clean release certificate and back-to-birth trace is not a cheaper part; it is a future finding."
+          ]
+        },
+        {
+          "heading": "Where the saving actually is",
+          "paragraphs": [
+            "The saving is rarely in the headline part price. It sits in the scrap review, where parts condemned by the shop are checked against manual limits and repair options; in material value extraction, where serviceable removed parts are recovered for the owner rather than left with the shop; and in avoiding long-lead new parts that stretch the turnaround.",
+            "The decision point is table inspection. That is when the shop's findings, the repair routes, the USM offers and the lead times can be put on one sheet, and when a representative in the room can still change the outcome. After kitting, the material decision has been made by default.",
+            "In a market where slot waits run two to six months and OEM parts demand outpaces supply, the schedule value of a USM route can exceed its price value. A part available now, with paperwork, can be worth more than a cheaper part that arrives after the test-cell date."
+          ]
+        },
+        {
+          "heading": "Who should hold the policy",
+          "paragraphs": [
+            "The shop has an interest in the material it sells and the repairs it performs. The parts broker has an interest in the parts it holds. The policy should therefore sit with the owner or operator, and the check on each route should be done by someone with no stake in which route is chosen.",
+            "Flight Hour Solution supports material sourcing and documentation audits, scrap review and material value extraction during shop visits. Where we broker material or an engine ourselves we say so, in line with our conflicts policy, so that the advisory check and the sale are never confused."
+          ]
+        }
+      ],
+      "sources": [
+        "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, 17 July 2024: used serviceable material covers up to 30 per cent of part demand at some shops; OEM parts demand outpaces supply by 10 to 20 per cent; slot waits +2 to 3 months, up to 6. https://www.bain.com/insights/get-a-step-ahead-of-the-engine-maintenance-capacity-crunch/ (docs/research/06-market-context-and-seo.md section 1.3, tag F)",
+        "Magnetic Group, From CFM56 to LEAP, June 2025: teardown part harvesting five times below pre-2020; CFM56 hot-section blade prices +30 per cent since 2019; fan blade prices doubled since 2020; CFM56 repair costs +50 to 75 per cent since 2019. https://www.magneticgroup.co/from-cfm56-to-leap-navigating-the-turbulent-shift-to-next-generation-aircraft-engines/ (docs/research/06-market-context-and-seo.md section 1.2, tag F)",
+        "Oliver Wyman, Global Fleet and MRO Market Forecast 2026 to 2036, February 2026: 17,000 unfilled aircraft orders at the start of 2026; production 24 per cent below 2019 at the end of 2025. https://www.oliverwyman.com/our-expertise/insights/2026/feb/global-fleet-and-mro-market-forecast-2026-2036.html (docs/research/06-market-context-and-seo.md section 1.6, tag F)",
+        "Acumen Aviation, Why are engine shortages reshaping aircraft asset values in 2026, 15 June 2026: aircraft with serviceable engines, strong records and manageable maintenance exposure may be worth more than similar aircraft facing engine uncertainty. https://www.acumen.aero/blogs/why-are-engine-shortages-reshaping-aircraft-asset-values-in-2026- (docs/research/06-market-context-and-seo.md section 1.5, tag F)",
+        "GA Telesis, Digital aircraft maintenance operations: the 2023 AOG Technics falsified-parts case accelerated part-traceability initiatives. https://www.gatelesis.com/digital-aircraft-maintenance-operations/ (docs/research/06-market-context-and-seo.md section 1.8, tag S: to be verified before launch)"
+      ],
+      "image": {
+        "src": "shop-floor",
+        "alt": "Three engines on wheeled stands in a bright engine shop, with a technician in the background",
+        "credit": "Generated illustration"
+      },
+      "notes": "Topic 9 in 06 section 4.3. The four policy questions and the 'schedule value' argument are practice, not sourced statistics; the 20 to 40 week lead-time and technician-shortfall figures in 06 section 1.3 are tagged S/V and are not used. Services named follow 02 section 4 (Support with Material Sourcing and Documentation Audit, Scrap Review and Material Value Extraction, Dirty Condition / Table Inspection). The conflicts-policy sentence follows 07 section 2.3 option 1.",
+      "clientToConfirm": [
+        "The AOG Technics reference is tagged S in 06 section 1.8. Verify against the GA Telesis page or another primary source, or delete the sentence.",
+        "Confirm the conflicts-policy wording: the article says the firm discloses when it brokers material or an engine. Confirm also whether the firm distributes parts (the ASA membership and the #AircraftParts hashtag in 01 section 4.3 suggest it), because the article must not imply otherwise.",
+        "Confirm whether the firm wants to state a position on PMA parts and DER repairs; the article keeps it to what the lease permits."
+      ]
+    },
+    {
+      "slug": "engine-condition-monitoring-alerts-pull-or-watch",
+      "title": "Engine condition monitoring alerts: pull or watch?",
+      "date": "2026-05-12",
+      "readingMinutes": 3,
+      "excerpt": "An EGT margin alert is a question, not an instruction. How an independent read of ECM and EHM data turns it into a removal decision.",
+      "tags": [
+        "ECM",
+        "Removal planning",
+        "Data"
+      ],
+      "sections": [
+        {
+          "heading": "What an alert actually says",
+          "paragraphs": [
+            "Engine condition monitoring watches a small set of cruise parameters over time: exhaust gas temperature margin, fuel flow, core speed, vibration and oil data. An alert means a parameter has shifted against its own trend or a fleet baseline. It does not say why, and it does not say when the engine must come off.",
+            "The OEM or the monitoring platform issues the alert and often a recommendation. That recommendation is written for a fleet, from the OEM's view of risk. The operator's question is narrower: this engine, this route network, this LLP position, this slot market.",
+            "The distinction matters more in 2026 than it did. Slot waits have lengthened by two to three months, and by up to six, and turnaround times are up 35 per cent or more on legacy engines. An early removal without a slot is an engine on a stand; a late one is an unplanned removal at the worst moment."
+          ]
+        },
+        {
+          "heading": "Four readings before a decision",
+          "paragraphs": [
+            "First, the rate of change. A step change in EGT margin after a known event, such as a bird strike or a water wash, reads differently from a steady decline over hundreds of cycles. The shape of the trend usually points to the module before a borescope confirms it.",
+            "Second, the corroboration. A margin shift with a matching change in fuel flow and core speed is a different case from a lone parameter. Vibration and oil data either support the hot-section story or point elsewhere. One line on a chart is rarely enough to schedule a shop visit.",
+            "Third, the borescope. A targeted inspection of the stage the trend implicates turns a statistical signal into a physical finding: distress, coating loss, a crack within or outside limits. The borescope report, not the alert, is what a shop will quote against.",
+            "Fourth, the calendar. The remaining margin at the current rate of loss is set against the LLP limits, the next planned removal, spare-engine cover and the slot lead time. If the engine can reach a planned window with margin to spare, watching is a decision, not a delay."
+          ]
+        },
+        {
+          "heading": "When to pull, when to watch",
+          "paragraphs": [
+            "Pull early when the trend is accelerating, when the borescope finding is close to a limit that would force an unplanned removal, when a slot is available inside the window and a later one is not, or when the LLP position means the visit is coming soon in any case and the workscope can absorb the finding.",
+            "Watch when the trend is flat after a known cause, when the finding is well inside limits and repeat inspections are practical, when spare-engine cover is thin and a slot is months away, or when the next planned removal already falls inside the projected margin life."
+          ]
+        },
+        {
+          "heading": "Why the independent read is worth paying for",
+          "paragraphs": [
+            "Lessors are starting to evaluate how well an aircraft is operated, not only its hours and cycles. A documented history of trend review, timely inspection and reasoned removal decisions reads as a lower-risk asset, and digital maintenance records improve liquidity, financeability and residual values.",
+            "That history is easier to produce when each alert is answered with a written read: what the data shows, what was inspected, what was decided and why. The same file supports the workscope at the next visit and the reserve claim after it.",
+            "Flight Hour Solution runs ECM and EHM monitoring programmes and on-wing performance reviews for CFM56, LEAP, V2500 and PW4000 fleets, and gives a second opinion on trend alerts and removal timing. The read is independent of the platform vendor, the shop and the OEM."
+          ]
+        }
+      ],
+      "sources": [
+        "Aviation Today, Digital maintenance, predictive analytics and the new lease economics of aircraft health, 1 May 2026: lessors are starting to evaluate how well an aircraft is operated rather than only hours and cycles; strong predictive-maintenance histories read as lower-risk assets; digital maintenance records improve liquidity, financeability and residual values. https://www.aviationtoday.com/2026/05/01/digital-maintenance-predictive-analytics-and-the-new-lease-economics-of-aircraft-health/ (docs/research/06-market-context-and-seo.md section 1.8, tag F)",
+        "Bain & Company, Get a step ahead of the engine maintenance capacity crunch, 17 July 2024: slot waits +2 to 3 months, up to 6; turnaround times +35 per cent or more for legacy engines against pre-pandemic norms. https://www.bain.com/insights/get-a-step-ahead-of-the-engine-maintenance-capacity-crunch/ (docs/research/06-market-context-and-seo.md section 1.3, tag F)",
+        "Sofema Aviation Services, Aviation engine condition monitoring (ECM) and cruise trend analysis considerations: methodology reference for the cruise parameters and trend reading described. https://sassofia.com/blog/aviation-engine-condition-monitoring-ecm-and-cruise-trend-analysis-considerations/ (docs/research/06-market-context-and-seo.md section 1.8)",
+        "Sofema Aviation Services, Optimising aircraft engine shop visit rate: the shop-visit-rate levers LLP management, workscope optimisation, reliability modifications and engine health monitoring. https://sassofia.com/blog/optimising-aircraft-engine-shop-visit-rate/ (docs/research/06-market-context-and-seo.md section 1.7, tag F)"
+      ],
+      "image": {
+        "src": "borescope",
+        "alt": "Gloved hands guiding a borescope probe into an inspection port on an engine case",
+        "credit": "Generated illustration"
+      },
+      "notes": "Topic 13 in 06 section 4.3. The four readings and the pull-or-watch lists are engineering practice with no figures; the only statistics are Bain's. The positioning follows the copy implication in 06 section 1.8 (independent interpreter of OEM and MRO data) and 07 section 2.2 (data-led pillar). Services named follow 02 section 4 (Fleet ECM/EHM Monitoring Programs, Engine On-Wing Performance Review, On-Wing Troubleshooting Advisory, Borescope Overview / Borescope Video Analysis). The vendor claims in 06 section 1.8 (65 per cent AI adoption, 25 to 35 per cent less downtime) are tagged V and are not used.",
+      "clientToConfirm": [
+        "Confirm that ECM/EHM monitoring is offered as a running programme (02 section 4 lists 'Fleet ECM/EHM Monitoring Programs') and not only as ad hoc reviews.",
+        "Confirm which monitoring platforms and data formats the firm can read (OEM portals, CAMP, airline exports), so the article can name them in a later revision if wanted.",
+        "A redacted sample trend report (07 section 2.2, data-led pillar) would strengthen this note; supply one if it may be shown."
+      ]
+    }
+  ],
+  "notes": "Six launch articles chosen from docs/research/06-market-context-and-seo.md section 4.3: topics 2 (turnaround times), 3 (visit types), 4 (LEAP durability kits), 10 with 12 (maintenance reserves, module swaps), 9 (used serviceable material) and 13 (ECM alerts). Topics 1, 14, 16 and 18 are the natural second wave. Each article's sources array is rendered on the page as a numbered list; every entry names the primary source, the figures taken from it, its URL and, in parentheses, the research document and section with the confidence tag from 06. Figures tagged S in 06 are used only where the article would be thin without them, are attributed to the publisher in the text and are listed in that article's clientToConfirm for verification before launch. No vendor cost ranges (SAFE FLY) are quoted; 'typically several million US dollars per visit' follows the copy implication in 06 section 1.2. Dates are editorial and follow a roughly monthly cadence from May to September 2026; none is later than 19 September 2026 and each is after the newest source it cites.",
+  "clientToConfirm": [
+    "Publication dates (12 May to 15 September 2026) are editorial; confirm or replace them with the actual publishing dates.",
+    "Each article closes with a short paragraph naming the services offered for CFM56, LEAP, V2500 and PW4000 engines, taken from the capabilities in 02 section 4. Confirm that the team has shop-visit experience on every family named, in particular LEAP.",
+    "Two articles refer to the conflicts policy (disclosure when the firm brokers an engine or material, 07 section 2.3 option 1). Confirm the policy wording used on the About page before launch.",
+    "The research references in parentheses at the end of each source entry (document, section, tag) can be removed at launch if the client prefers a plain public bibliography; the URLs and publisher names would remain.",
+    "Images are generated illustrations to be replaced by real photography at launch."
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "notes": "Glossary page per the page brief: forty terms taken from the glossary list in docs/research/06-market-context-and-seo.md section 4.5, the niche vocabulary in docs/research/05-competitor-benchmark.md section 4 and the company's own service taxonomy in docs/research/02-website-content-inventory.md section 4, in alphabetical order, each defined in one to three sentences of 60 words or fewer, with related terms cross-referenced by exact term name. The route sorts terms with localeCompare, builds a letter index from the first character of each term and renders related terms as anchor links made from a slug of the term string, so every related entry must match an existing term exactly (checked). Term names are written the way buyers search them (06 section 3.1: shop visit workscope, LLP stub life, maintenance reserves explained, GTF powder metal inspection explained). To keep the count at forty and cover the 05 vocabulary, five items from the 06 list are folded into neighbouring entries rather than dropped: stub life sits inside Life-limited part (LLP), hard time inside On-condition, the reverse bleed system inside Durability kit, Part-M inside CAMO, and the Maintenance Planning Document is left out as the least engine-specific item; quick-turn and hospital visit, and USM, PMA and DER repair, are separate entries because they are separate decisions. Definitions are neutral: they name no Flight Hour Solution service and make no claim about results, so the page reads as reference material; the closing band carries the call to action. Only figures tagged [F] or [S] in 06 section 1 are used, each with a source field on the term; no vendor cost or turnaround ranges are quoted (06 section 5.2). British English, no dashes, no years-of-experience claim, nothing left to fill in.",
+  "clientToConfirm": [
+    "Term selection: the forty terms follow the list in 06 section 4.5 plus Table inspection from 05 section 4 and the company's own service list. Five list items are folded into neighbouring entries (stub life, hard time, reverse bleed system, Part-M, Maintenance Planning Document dropped). Confirm the selection or name terms to swap in, for example mid-term inspection, invoice reconciliation, warranty claim, scrap review, expert witness or ISTAT appraisal from the 05 vocabulary.",
+    "Performance restoration: the entry says such a visit is 'typically several million US dollars for a narrowbody engine'. This follows the copy guidance in 06 section 1.2 (vendor ranges are not quoted; IBA reports shop-visit and LLP costs increased significantly) and is not an audited figure. Confirm the wording or remove the phrase.",
+    "Durability kit: the dates are snippet-level sources. CFM's press article gives December 2024 for the LEAP-1A HPT kit [S], FlightGlobal and GE Aerospace give 18 July 2026 for the LEAP-1B improvements [S], while IBA's H2 2026 update says the LEAP-1B kit was certified in H1 2026 [F]. The 'more than doubles time on wing in severe environments' statement is GE Aerospace's own claim [S]. Verify against the CFM and GE press releases before launch.",
+    "Powder-metal inspection: the 2015 to 2021 manufacturing window is a snippet-level figure [S] and the fleet figures (about 1,900 PW1000G-powered aircraft in service, about 770 in storage) are dated April 2026 [F]. Both will date; confirm a refresh cadence for the entry or remove the figures.",
+    "Full-life: the IBA figure (GE90-115BL full-life value above US$35 million, September 2026) will date. Confirm whether to keep a dated example in the glossary or replace it with a plain definition.",
+    "Neutral definitions: no entry names a Flight Hour Solution service. Confirm whether entries such as Table inspection, Workscope, Back-to-birth records and Test cell acceptance should end with a one-sentence 'what we do' line pointing to the service page, or stay as pure reference material.",
+    "Regulatory references are EASA and FAA (Part-145, Part-CAMO, EASA Form 1, FAA 8130-3, FAA Parts Manufacturer Approval, Designated Engineering Representative). Confirm whether Swiss FOCA should be mentioned and whether German equivalents (Triebwerk Shop Visit, Wartungsrücklagen, Leasingrückgabe) should be added for the planned German mirror (07 section 9).",
+    "Technical review: the team should check the definitions against its own practice, in particular the use of 'dirty fingerprint', the Engine Basic Shop Visit definition in the leases the company typically works with, the composition of a QEC, and the unit used for shop visit rate (visits per 1,000 engine flight hours).",
+    "The closing band reads 'A term you did not find? Ask us.' and uses the site-wide primary call to action. Confirm the wording."
+  ],
+  "seoTitle": "Engine shop visit and lease glossary | Flight Hour Solution",
+  "metaDescription": "Forty plain-English definitions of the terms used in engine shop visits, workscopes, lease returns and records, from AOG to Workscope Planning Guide.",
+  "title": "Engine management terms, plainly defined",
+  "intro": "Forty terms from shop visits, workscopes, leases and records, each defined in one to three sentences. Related terms are linked.",
+  "terms": [
+    {
+      "term": "AOG",
+      "definition": "Aircraft on ground: an aircraft that cannot fly until a fault is fixed or a part, often an engine, is supplied. AOG work takes priority over everything else and commands premium prices for parts, spare engines and labour, so spare-engine coverage and removal planning exist largely to avoid it.",
+      "related": ["Engine condition monitoring (ECM / EHM)", "Green time", "Time on wing"]
+    },
+    {
+      "term": "Back-to-birth records",
+      "definition": "The unbroken chain of documents that traces every life-limited part from manufacture through each installation, removal and shop visit to the present, proving the cycles it has consumed. Gaps stop a redelivery and cut an engine's value; incomplete records are among the main sources of end-of-lease disputes, alongside life-limited part valuations and deferred defects.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.7 (Acumen: end-of-lease disputes centre on LLP valuations, deferred defects, incomplete back-to-birth records and the boundary of fair wear and tear) [F]; docs/research/02-website-content-inventory.md section 4 (LLP Back to Birth Trace Audit in the company's service list)",
+      "related": ["Life-limited part (LLP)", "Redelivery conditions", "Serviceable tag (EASA Form 1, FAA 8130-3)"]
+    },
+    {
+      "term": "Borescope inspection (BSI)",
+      "definition": "Inspection of an engine's gas path through small access ports with an optical probe, on wing or in the shop, without disassembly. Findings on blades, vanes and the combustor are measured against the engine manual's limits and drive the decision to keep flying, repair or remove; a BSI is also standard at lease delivery and return.",
+      "related": ["Hospital visit", "Redelivery conditions", "Table inspection"]
+    },
+    {
+      "term": "CAMO",
+      "definition": "A continuing airworthiness management organisation, approved under EASA Part-CAMO (formerly Part-M Subpart G), that keeps the maintenance programme, records and airworthiness status of an aircraft or engine in order for its operator or owner. The CAMO plans and controls maintenance; a Part-145 organisation performs it. Engines between leases may be kept under an off-wing engine CAMO arrangement.",
+      "related": ["Part-145", "On-condition", "Back-to-birth records"]
+    },
+    {
+      "term": "DER repair",
+      "definition": "A repair scheme developed and approved by an FAA Designated Engineering Representative rather than by the engine manufacturer, offering an alternative to the OEM repair or a new part. Acceptance varies: some lessors and lease agreements exclude DER repairs and PMA parts, so the policy has to be settled before the workscope is agreed.",
+      "related": ["PMA part", "Used serviceable material (USM)", "Workscope"]
+    },
+    {
+      "term": "Dirty fingerprint",
+      "definition": "The findings recorded at the dirty table inspection, before parts are cleaned, documenting the condition in which an engine arrived at the shop. Lessors, lessees, insurers and warranty claims rely on it to attribute damage and cost to a period of operation, which is why the customer's representative should be present when it is taken.",
+      "related": ["Table inspection", "Teardown", "End-of-lease compensation"]
+    },
+    {
+      "term": "Durability kit",
+      "definition": "Redesigned hot-section hardware certified for an engine already in service to lengthen time on wing, embodied at a shop visit as a workscope decision. CFM's LEAP-1A high-pressure turbine kit (certified December 2024) is reported to more than double time on wing in severe environments; LEAP-1B improvements followed in July 2026. The related reverse bleed system addresses LEAP-1A fuel-nozzle coking.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.4 (CFM LEAP table: LEAP-1A HPT durability kit certified December 2024 [S]; GE Aerospace: the kit more than doubles time on wing in severe environments [S]; LEAP-1B HPT and fuel-nozzle durability improvements certificated 18 July 2026 [S]; IBA H2 2026: LEAP-1A fuel-nozzle coking addressed by the reverse bleed system [F]) and the copy implication that durability-kit embodiment is a workscope decision",
+      "related": ["Time on wing", "Workscope", "Powder-metal inspection"]
+    },
+    {
+      "term": "EGT margin",
+      "definition": "The difference between the exhaust gas temperature an engine reaches at full take-off thrust, corrected to standard conditions, and the limit certified for the type. Margin erodes as the engine deteriorates; when it nears zero the engine must come off for a performance restoration, so the EGT margin trend is the main input to removal planning.",
+      "related": ["Engine condition monitoring (ECM / EHM)", "Performance restoration", "Time on wing"]
+    },
+    {
+      "term": "End-of-lease compensation",
+      "definition": "The payment at redelivery that settles the gap between an engine's actual maintenance status and the status the lease requires, measured in life-limited part cycles used and hours since the last performance restoration. Under some leases it replaces monthly maintenance reserves; under others it is netted against the reserve balance. It is where most end-of-lease disputes arise.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.7 (Acumen: maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes) [F]",
+      "related": ["Maintenance reserves", "Redelivery conditions", "Half-life"]
+    },
+    {
+      "term": "Engine Basic Shop Visit",
+      "definition": "A term defined in many engine leases for a full shop visit that disassembles the engine and restores its modules to the levels in the Workscope Planning Guide, as distinct from a repair of one defect. Whether a visit qualifies decides whether maintenance reserves may be drawn and how redelivery status is measured, so the definition is negotiated with care.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.7 (lease-language background: Engine Basic Shop Visit and Performance Restoration Shop Visit definitions tied to the OEM Workscope Planning Guide; Law Insider and Air Lease Review) [F]",
+      "related": ["Performance restoration", "Workscope Planning Guide", "Maintenance reserves"]
+    },
+    {
+      "term": "Engine condition monitoring (ECM / EHM)",
+      "definition": "Trend analysis of flight-by-flight data (exhaust gas temperature, fuel flow, vibration, oil consumption) to catch deterioration or a fault before it forces an unscheduled removal. OEM and MRO platforms raise the alerts; an independent reading of the same data informs removal timing and workscope. Lessors now read a strong monitoring history as a sign of a lower-risk asset.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.8 (Aviation Today, 1 May 2026: lessors evaluating how well an aircraft is operated; strong predictive-maintenance histories read as lower-risk assets [F]; copy implication: the independent interpreter of OEM and MRO data); docs/research/02-website-content-inventory.md section 4 (Fleet ECM/EHM Monitoring Programs)",
+      "related": ["EGT margin", "Shop visit rate (SVR)", "AOG"]
+    },
+    {
+      "term": "Full-life",
+      "definition": "The maintenance condition of an engine fresh from a performance restoration with every life-limited part new, so that all of its maintenance value is intact. Appraisers deduct from the full-life value to reach the value of an engine in its actual status; IBA put the full-life value of a GE90-115BL above US$35 million in September 2026.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.2 (IBA engine and lease rate update H2 2026, 11 September 2026: GE90-115BL full-life value above US$35 m) [F]",
+      "related": ["Half-life", "Life-limited part (LLP)", "Performance restoration"]
+    },
+    {
+      "term": "Green time",
+      "definition": "The flying an engine can still do before its life-limited parts or performance margin run out, without a shop visit. A green-time engine is bought or leased to be flown out rather than overhauled. In today's shortage that remaining life carries a premium: aircraft with serviceable engines and strong records may be worth more than similar aircraft facing engine uncertainty.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.5 (Acumen: aircraft with serviceable engines, strong records and manageable maintenance exposure may be worth more than similar aircraft facing engine uncertainty) [F]",
+      "related": ["Life-limited part (LLP)", "Time on wing", "Part-out"]
+    },
+    {
+      "term": "Half-life",
+      "definition": "A notional maintenance status in which every life-limited part has half its cycles remaining and the engine is halfway to its next performance restoration. Appraisers quote values at half-life so that engines can be compared on equal terms, then adjust up or down for the engine's real status; leases often express redelivery conditions relative to it.",
+      "related": ["Full-life", "Redelivery conditions", "End-of-lease compensation"]
+    },
+    {
+      "term": "Hospital visit",
+      "definition": "A limited shop visit to correct a specific defect, such as a borescope finding or foreign object damage, with only the affected modules opened and no full performance restoration. It is faster and cheaper than a performance restoration, but it restores little margin, so the engine keeps much of its previous removal forecast.",
+      "related": ["Quick-turn", "Performance restoration", "Borescope inspection (BSI)"]
+    },
+    {
+      "term": "Life-limited part (LLP)",
+      "definition": "A rotating part (disc, shaft or spool) retired at a fixed cycle limit set by the manufacturer, whatever its condition. Remaining cycles on each LLP are traced back to birth and drive much of its value and next workscope. Cycles forfeited when a part is replaced early so the set reaches the next shop visit are its stub life.",
+      "related": ["Back-to-birth records", "Full-life", "On-condition"]
+    },
+    {
+      "term": "Maintenance reserves",
+      "definition": "Monthly payments by a lessee to the lessor, set per flight hour and per cycle, that fund the next performance restoration and life-limited part replacement and are reimbursed when the qualifying shop visit is done. Maintenance-reserve clauses and redelivery conditions are the two lease provisions most likely to cause multi-million-dollar disputes at lease end.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.7 (Acumen: the two lease provisions most likely to trigger multi-million-dollar end-of-lease disputes are maintenance-reserve clauses and redelivery conditions) [F]; docs/research/02-website-content-inventory.md section 4 (Maintenance Reserve Calculations / Reserve Claim Analysis)",
+      "related": ["End-of-lease compensation", "Engine Basic Shop Visit", "Redelivery conditions"]
+    },
+    {
+      "term": "Module",
+      "definition": "A turbofan is built as modules that can be removed, repaired and exchanged separately: the fan and booster, the core (high-pressure compressor, combustor and high-pressure turbine), the low-pressure turbine and the accessory gearbox. Workscopes, shop invoices and lease clauses are written module by module, so each module carries its own records, findings and cost.",
+      "related": ["Module swap", "Workscope", "Performance restoration"]
+    },
+    {
+      "term": "Module swap",
+      "definition": "Replacing a module with a serviceable one from another engine or the shop's pool instead of repairing the original, usually to shorten turnaround. It changes the engine's records, life-limited part status and value; unexpected module swaps and early shop visits are complicating redelivery conditions that were not drafted to anticipate them.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.7 (ACC Aviation, 2025 transitions and repossessions update: reliability, early shop visits and unexpected module swaps are complicating redelivery conditions that weren't drafted to anticipate these challenges) [F]",
+      "related": ["Module", "Redelivery conditions", "Back-to-birth records"]
+    },
+    {
+      "term": "On-condition",
+      "definition": "A maintenance philosophy under which a part or engine stays in service while inspections and monitoring show it within limits, instead of being overhauled at a fixed interval. Modern turbofans are maintained on condition, so there is no fixed overhaul date; the exception is life-limited parts, which are hard-time items retired at a set cycle limit whatever their condition.",
+      "related": ["Life-limited part (LLP)", "Engine condition monitoring (ECM / EHM)", "Borescope inspection (BSI)"]
+    },
+    {
+      "term": "Part-145",
+      "definition": "The EASA regulation under which a maintenance organisation is approved to carry out and certify maintenance on aircraft, engines and components; the FAA equivalent is the Part 145 repair station. An engine shop must hold the approval and rating for each engine type it works on, and its release document is the EASA Form 1 or FAA 8130-3.",
+      "related": ["CAMO", "Serviceable tag (EASA Form 1, FAA 8130-3)", "Shop visit"]
+    },
+    {
+      "term": "Part-out",
+      "definition": "The decision to retire an engine and sell its parts rather than pay for its next shop visit, taken when the restoration cost exceeds the value it would recover. Part-out value is the expected sale proceeds of the parts less the cost of teardown and selling, and it sets the floor value of every engine.",
+      "related": ["Teardown", "Used serviceable material (USM)", "Green time"]
+    },
+    {
+      "term": "Performance restoration",
+      "definition": "The full shop visit that returns an engine's EGT margin and performance to near-new levels, with the core disassembled and its modules refurbished to the Workscope Planning Guide, usually with life-limited parts replaced. It is the most expensive visit type, typically several million US dollars for a narrowbody engine, and the one leases and maintenance reserves are built around.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.2 (copy implication: vendor cost ranges are not quoted as fact, but a visit may be described as typically several million US dollars; IBA H2 2026: shop-visit and LLP costs increased significantly [F]) and section 1.7 (Performance Restoration Shop Visit as lease language tied to the Workscope Planning Guide) [F]",
+      "related": ["Engine Basic Shop Visit", "Workscope Planning Guide", "EGT margin", "Hospital visit"]
+    },
+    {
+      "term": "PMA part",
+      "definition": "A part produced under an FAA Parts Manufacturer Approval by a company other than the engine manufacturer, usually at a lower price than the OEM part. Many leases restrict or prohibit PMA parts in engines, and fitting them can affect an engine's value and its acceptance at redelivery, so the material policy belongs in the contract.",
+      "related": ["DER repair", "Used serviceable material (USM)", "Redelivery conditions"]
+    },
+    {
+      "term": "Powder-metal inspection",
+      "definition": "An inspection required by Pratt & Whitney after contaminated powdered metal was found in certain rotating parts of geared turbofan engines made from 2015 to 2021, taking engines off wing early to check or replace the parts. In April 2026 about 1,900 PW1000G-powered aircraft were in service and about 770 in storage; the A220 and E2 fleets are affected too.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.4 (PW1100G GTF table: affected powder used in parts made 2015 to 2021 [S]; FlightGlobal, 23 April 2026: about 1,900 PW1000G-powered jets in service and about 770 in storage [F]; A220 and E2 also need powder-metal inspections [F/S]; IBA H2 2026: PW1500G and PW1900G time-on-wing issues [F])",
+      "related": ["Durability kit", "AOG", "Time on wing"]
+    },
+    {
+      "term": "Power by the hour (PBH)",
+      "definition": "A maintenance agreement under which the operator pays a fixed rate per engine flight hour (a flight-hour agreement) and the provider, often the OEM, carries the cost and risk of shop visits within the agreed scope. Cost becomes predictable, but exclusions, escalation and end-of-term adjustments need scrutiny, and the choice between PBH and time-and-material is a negotiation in itself.",
+      "related": ["Time and material (T&M)", "Shop visit rate (SVR)", "Workscope"]
+    },
+    {
+      "term": "QEC",
+      "definition": "The quick engine change kit: the accessories, tubing, wiring, mounts and cowl fittings that dress a bare engine so it can be installed on a particular aircraft type. A QEC is often owned, valued and transferred separately from the engine, so its inventory is checked at delivery, sale and redelivery.",
+      "related": ["Redelivery conditions", "Serviceable tag (EASA Form 1, FAA 8130-3)"]
+    },
+    {
+      "term": "Quick-turn",
+      "definition": "The shortest form of shop visit: a minimal-scope repair, such as a fan blade or component replacement, done with little disassembly so the engine returns within days or weeks rather than months. Whether a defect justifies a quick-turn, a hospital visit or an earlier performance restoration is a workscope decision with a large cost difference either way.",
+      "related": ["Hospital visit", "Performance restoration", "Workscope"]
+    },
+    {
+      "term": "Redelivery conditions",
+      "definition": "The physical and documentary state an engine must be in when a lease ends: minimum life-limited part cycles remaining, hours since performance restoration, borescope condition, no deferred defects and complete back-to-birth records. In 2025 transitions the main problems remained MRO slots and correct documentation, and early shop visits and unexpected module swaps were straining conditions that older leases never anticipated.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.7 (ACC Aviation, 2025 transitions and repossessions update: the major problems remain MRO slots and correct documentation; reliability, early shop visits and unexpected module swaps are complicating redelivery conditions that weren't drafted to anticipate these challenges) [F]",
+      "related": ["End-of-lease compensation", "Back-to-birth records", "Half-life", "Module swap"]
+    },
+    {
+      "term": "Serviceable tag (EASA Form 1, FAA 8130-3)",
+      "definition": "The release certificate that travels with a part or engine after maintenance (EASA Form 1 in Europe, FAA 8130-3 in the US), issued by an approved maintenance organisation to confirm serviceability and the work done. A part without a valid release, or with an unserviceable tag, cannot be installed; a records audit checks every tag against the work invoiced.",
+      "related": ["Part-145", "Used serviceable material (USM)", "Back-to-birth records"]
+    },
+    {
+      "term": "Shop visit",
+      "definition": "An engine's removal from the aircraft for inspection, repair or overhaul in a shop, from induction through disassembly, repair, reassembly and test to release. An engine typically needs three to five shop visits over its life. Since the pandemic, turnaround times have risen 35 per cent or more for legacy engines and 150 per cent or more for new-generation engines.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.2 (MTU: an engine typically needs 3 to 5 shop visits over its life) [F] and section 1.3 (Bain, July 2024: turnaround times 35 per cent or more above pre-pandemic levels for legacy engines and 150 per cent or more for new-generation engines) [F]",
+      "related": ["Performance restoration", "Hospital visit", "Quick-turn", "Workscope"]
+    },
+    {
+      "term": "Shop visit rate (SVR)",
+      "definition": "The number of shop visits per 1,000 engine flight hours across a fleet, the standard measure of how often engines come off wing and therefore of what a fleet's engine maintenance will cost. The levers that lower it are life-limited part management, workscope optimisation, reliability modifications and engine health monitoring.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.7 (Sofema: shop-visit-rate levers are LLP management, workscope optimisation, reliability modifications and engine health monitoring) [F]",
+      "related": ["Time on wing", "Engine condition monitoring (ECM / EHM)", "Power by the hour (PBH)"]
+    },
+    {
+      "term": "Table inspection",
+      "definition": "The review of a disassembled engine's parts laid out on tables in the shop, first in dirty condition and again after cleaning, at which the shop's findings and proposed repairs are examined part by part and the workscope is confirmed. It is the point at which the customer's representative can challenge findings before repairs are ordered.",
+      "source": "docs/research/02-website-content-inventory.md section 4 (Dirty Condition / Table Inspection in the company's shop visit management list) and docs/research/05-competitor-benchmark.md section 4 (table and strip inspection vocabulary: dirty table inspections, attending strip inspections, table inspection subsequent to engine teardown)",
+      "related": ["Dirty fingerprint", "Workscope", "Borescope inspection (BSI)"]
+    },
+    {
+      "term": "Teardown",
+      "definition": "The disassembly of an engine that will not return to service, so its parts can be inspected, tagged and sold as used serviceable material or scrapped. A teardown valuation estimates what the parts will fetch and so sets the floor value of an engine; the supply of parts harvested from teardowns has fallen to a fifth of pre-2020 levels.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.2 (Magnetic Group, June 2025: teardown part harvesting five times below pre-2020 levels) [F]; docs/research/02-website-content-inventory.md section 4 (Engine Teardown Valuations; Scrap Review and Material Value Extraction)",
+      "related": ["Part-out", "Used serviceable material (USM)", "Dirty fingerprint"]
+    },
+    {
+      "term": "Test cell acceptance",
+      "definition": "The engine run in a test cell at the end of a shop visit, in which thrust, exhaust gas temperature margin, vibration, oil consumption and leaks are measured against the acceptance limits in the engine manual before the engine is released. The customer's representative reviews the results, because a marginal pass forecasts a shorter time on wing.",
+      "related": ["EGT margin", "Shop visit", "Serviceable tag (EASA Form 1, FAA 8130-3)"]
+    },
+    {
+      "term": "Time and material (T&M)",
+      "definition": "A maintenance contract under which the customer pays for the labour hours and materials actually used at each shop visit, at agreed rates, rather than a fixed rate per flight hour. It gives the customer full control of the workscope and full exposure to the invoice, which is why invoice review matters most under time-and-material terms.",
+      "related": ["Power by the hour (PBH)", "Workscope", "Shop visit"]
+    },
+    {
+      "term": "Time on wing",
+      "definition": "The hours or cycles an engine accumulates between installation and removal. It is the main measure of engine economics, because longer time on wing spreads the cost of a shop visit over more flying, which is why durability modifications, thrust derate and operating environment matter so much to cost per flight hour.",
+      "related": ["Shop visit rate (SVR)", "Durability kit", "EGT margin"]
+    },
+    {
+      "term": "Used serviceable material (USM)",
+      "definition": "Parts removed from torn-down engines, inspected, repaired where needed and released with a serviceable tag for reuse. USM covers up to 30 per cent of part demand at some shops, while teardown supply has fallen to a fifth of pre-2020 levels, so material strategy has become a cost lever that needs expertise rather than a default.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.3 (Bain: USM covers up to 30 per cent of part demand at some shops) [F], section 1.2 (Magnetic Group: teardown part harvesting five times below pre-2020) [F] and section 1.7 (USM strategy is now a cost lever that needs expertise, not a default)",
+      "related": ["Teardown", "PMA part", "DER repair", "Serviceable tag (EASA Form 1, FAA 8130-3)"]
+    },
+    {
+      "term": "Workscope",
+      "definition": "The list of inspection, repair and replacement tasks to be carried out on each module of an engine at a shop visit, agreed between the customer and the shop before induction and adjusted as findings emerge. It sets cost, turnaround time and the engine's condition on release, so compiling, reviewing and enforcing it is the core of shop visit management.",
+      "source": "docs/research/02-website-content-inventory.md section 4 (Workscope Compilation / Review) and docs/research/06-market-context-and-seo.md section 3.2 row 6 (definitional search results for shop visit workscope)",
+      "related": ["Workscope Planning Guide", "Table inspection", "Module", "Shop visit"]
+    },
+    {
+      "term": "Workscope Planning Guide",
+      "definition": "The engine manufacturer's document that recommends a workscope level for each module according to time since the last visit, findings and the build standard wanted, so that the engine reaches its next planned removal. Leases and maintenance agreements often reference it, and a performance restoration is expected to meet its minimum levels.",
+      "source": "docs/research/06-market-context-and-seo.md section 1.7 (lease-language background: Engine Basic Shop Visit and Performance Restoration Shop Visit definitions tied to the OEM Workscope Planning Guide) [F]",
+      "related": ["Workscope", "Engine Basic Shop Visit", "Performance restoration"]
+    }
+  ],
+  "sources": [
+    "docs/research/06-market-context-and-seo.md section 4.5 (glossary list of 40 plus entries: shop visit, performance restoration, quick-turn and hospital visit, workscope, Workscope Planning Guide, Engine Basic Shop Visit, module swap, core and modules, LLP and stub life, back-to-birth records, dirty fingerprint, green time, time on wing, EGT margin, ECM and EHM, borescope inspection, test cell acceptance, SVR, PBH and flight-hour agreement, T&M, USM, PMA and DER repair, maintenance reserves, end-of-lease compensation, redelivery conditions, half-life, full-life, on-condition, hard time, MPD, CAMO, Part-145, Part-M, AOG, durability kit, reverse bleed system, powder-metal inspection, QEC, serviceable and unserviceable tags, teardown, part-out). Basis for the term selection.",
+    "docs/research/05-competitor-benchmark.md section 4 (the vocabulary the niche uses: Dirty Condition / Table Inspection, strip inspection, BSI reviews, LLP Back to Birth Trace Audit, records audit, redelivery and transition management, ECM / EHM monitoring, test cell result analysis, maintenance reserve calculations, invoice reconciliation against workscope, part-out valuations, Power by the Hour programme assessment, off-wing engine CAMO, QEC inventory check, USM strategies and teardowns, DER and PMA) and section 5 item 8 (no direct competitor publishes a glossary). Basis for Table inspection and for the wording of several entries.",
+    "docs/research/02-website-content-inventory.md section 4 (the company's own service taxonomy: Workscope Compilation / Review, Dirty Condition / Table Inspection, Pre / Post Repair BSI Overview, Test Cell Overview, Engine Overhaul / Repair Invoice Review, Scrap Review and Material Value Extraction, LLP Back to Birth Trace Audit, Engine Teardown Valuations, Maintenance Reserve Calculations / Reserve Claim Analysis, Fleet ECM/EHM Monitoring Programs, Warranty Management) and section 11 (the taxonomy uses the industry's own vocabulary and should survive the rewrite). The definitions use the same vocabulary as the service pages.",
+    "docs/research/06-market-context-and-seo.md section 1.2 (MTU: three to five shop visits per engine life [F]; Magnetic Group: teardown part harvesting five times below pre-2020 [F]; IBA H2 2026: GE90-115BL full-life value above US$35 m, shop-visit and LLP costs increased significantly [F]; copy implication on 'several million US dollars per visit'; vendor cost and turnaround ranges tagged [V] are not quoted)",
+    "docs/research/06-market-context-and-seo.md section 1.3 (Bain, July 2024: turnaround times up 35 per cent or more for legacy and 150 per cent or more for new-generation engines; USM covers up to 30 per cent of part demand at some shops [F])",
+    "docs/research/06-market-context-and-seo.md section 1.4 (PW1100G powder-metal inspection: parts made 2015 to 2021 [S]; FlightGlobal, April 2026: about 1,900 in service and about 770 in storage [F]; A220 and E2 affected [F/S]; LEAP-1A HPT durability kit certified December 2024 [S]; GE Aerospace: more than doubles time on wing in severe environments [S]; LEAP-1B improvements certificated July 2026 [S]; IBA: reverse bleed system addresses LEAP-1A fuel-nozzle coking [F])",
+    "docs/research/06-market-context-and-seo.md section 1.5 (Acumen: aircraft with serviceable engines, strong records and manageable maintenance exposure may be worth more than similar aircraft facing engine uncertainty [F]) and section 1.7 (Acumen: maintenance-reserve clauses and redelivery conditions as the top dispute sources, incomplete back-to-birth records, LLP valuations and deferred defects [F]; ACC Aviation: MRO slots and documentation, early shop visits and unexpected module swaps [F]; Sofema: shop-visit-rate levers [F]; lease-language background on Engine Basic Shop Visit and the Workscope Planning Guide [F]) and section 1.8 (Aviation Today: lessors read strong monitoring histories as lower-risk assets [F]; the independent interpreter of OEM and MRO data)",
+    "docs/research/06-market-context-and-seo.md section 3.1 (search terms used as term names and phrasing: shop visit workscope, performance restoration shop visit vs quick turn, engine shop visit rate, LLP stub life, maintenance reserves explained, engine lease return conditions, green time engine, GTF powder metal inspection explained, power by the hour vs time and material) and section 3.2 row 6 (definitional search results for shop visit workscope are weak, so a glossary entry can rank)",
+    "docs/research/06-market-context-and-seo.md section 5.2 (claims to avoid: no vendor cost ranges as fact, no savings percentages, no OEM logos) and section 5.3 (plain, numerate, engineering-literate English; every number with a source)",
+    "docs/research/07-recommendations-and-brief.md section 4 (sitemap: glossary under resources; served at /glossary per site.json) and section 7 (phase 1 content plan: glossary with 40 terms)",
+    "site/content-brief/VOICE-AND-FACTS.md (British English, no dashes, banned words, only [F] or [S] figures from 06 section 1 with the source named, entity naming) and site/content-brief/CONTENT-SCHEMA.md (glossary.json shape: seoTitle, metaDescription, title, intro, terms with term, definition and related; 40 terms, alphabetical, one to three sentences)",
+    "site/app/src/content/site.json (Glossary in the secondary navigation at /glossary) and site/app/src/routes/glossary.tsx (terms sorted with localeCompare, letter index, related terms linked by a slug of the term name, closing band with the site-wide primary call to action)"
+  ]
+}

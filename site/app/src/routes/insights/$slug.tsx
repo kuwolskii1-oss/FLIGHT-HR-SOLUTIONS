@@ -3,7 +3,6 @@ import { PageMotion } from "@/components/site/PageMotion";
 
 import { StructuredData } from "@/components/StructuredData";
 import { ClosingBand } from "@/components/site/ClosingBand";
-import { MediaFrame } from "@/components/site/MediaFrame";
 import { PageIntro } from "@/components/site/PageIntro";
 import { Prose } from "@/components/site/Prose";
 import { Section } from "@/components/site/Section";
@@ -59,14 +58,13 @@ function ArticlePage() {
         lead={a.excerpt}
         meta={a.tags}
         theme="light"
+        image={a.image?.src}
+        imageAlt={a.image?.alt}
       />
-      <Section theme="light" id="article" as="article">
+      <Section theme="light" id="article" as="article" tight>
         <div className="o-grid">
           <div style={{ gridColumn: "1 / -1" }}>
-            {a.image ? <MediaFrame image={a.image.src} alt={a.image.alt} ratio="16x9" className="c-page-intro__media" /> : null}
-            <div style={{ marginTop: "var(--space-large)" }}>
-              <Prose sections={a.sections} />
-            </div>
+            <Prose sections={a.sections} />
             {a.sources?.length ? (
               <div style={{ marginTop: "var(--space-large)", maxWidth: "var(--measure)" }}>
                 <h2 className="c-h4">Sources</h2>

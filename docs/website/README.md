@@ -126,6 +126,9 @@ route at 390, 700, 1000 and 1440 px:
 
 ## Decisions the client must take before launch
 
+The full list of points the copy leaves open, page by page, is in `open-questions.md` beside this
+file. The six that gate a launch:
+
 1. The single phone number (three are in circulation) and whether WhatsApp moves to it.
 2. Whether the Assets line (engine and aircraft sourcing) is presented publicly and under what
    disclosure wording; whether the advisory line is fee-only.
