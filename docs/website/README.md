@@ -61,6 +61,22 @@ design system is stack-agnostic and was carried over unchanged. Two consequences
    the Higgsfield side (publishing to their community feed was not done, as it makes the site
    public on their marketplace).
 
+## Deployment record
+
+- Higgsfield website id `48176c0d-f47e-45a3-936f-789c3cdf7424`, slug `flighthoursolution`, live at
+  `https://flighthoursolution.higgsfield.app`. The platform repository holds the mirror of
+  `site/app` (commit "Build the Flight Hour Solution website", 20 September 2026, on top of the
+  scaffold and film-asset commits); its CI ran install, typecheck, lint, tests and the production
+  build and reported the deploy as live at 09:58 UTC.
+- The address still answers HTTP 401 ("unauthenticated") to anyone not signed in to Higgsfield,
+  so the live pages could not be inspected from outside; every check in this document was made
+  on the identical local build. Opening the site to the public (and the move to
+  `flighthoursolution.com`) is a platform-side step for the account owner.
+- The site is not listed on the Higgsfield community feed or entered in any contest.
+- Generation spend in this build session: 210.5 Higgsfield credits (the eleven illustration
+  renders and one wide render, 28.5; the fifteen-second film and one test clip, 182); the
+  account held 2,319 credits afterwards.
+
 ## Content provenance
 
 Every copy file in `site/app/src/content/` was written from the research dossier under the
