@@ -5,12 +5,14 @@ import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { PageIntro } from "@/components/site/PageIntro";
 import { Section, SectionHead } from "@/components/site/Section";
 import { Steps } from "@/components/site/Steps";
-import { assets, contact } from "@/site/content";
+import { assets } from "@/site/data/assets";
+import { contact } from "@/site/data/contact";
 import { pageHead } from "@/site/seo";
 import { capitalise, formatDate } from "@/site/format";
 
 export const Route = createFileRoute("/assets")({
-  head: () => pageHead({ title: assets.seoTitle.replace(/\s*\|\s*Flight Hour Solution$/i, ""), description: assets.metaDescription, path: "/assets" }),
+  loader: () => ({ title: assets.seoTitle.replace(/\s*\|\s*Flight Hour Solution$/i, ""), description: assets.metaDescription }),
+  head: ({ loaderData }) => pageHead({ title: loaderData?.title ?? "Assets", description: loaderData?.description ?? "", path: "/assets" }),
   component: AssetsPage,
 });
 

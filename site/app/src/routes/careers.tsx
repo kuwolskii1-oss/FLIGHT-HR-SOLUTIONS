@@ -3,11 +3,12 @@ import { PageMotion } from "@/components/site/PageMotion";
 
 import { PageIntro } from "@/components/site/PageIntro";
 import { Section, SectionHead } from "@/components/site/Section";
-import { careers } from "@/site/content";
+import { careers } from "@/site/data/careers";
 import { pageHead } from "@/site/seo";
 
 export const Route = createFileRoute("/careers")({
-  head: () => pageHead({ title: careers.seoTitle.replace(/\s*\|\s*Flight Hour Solution$/i, ""), description: careers.metaDescription, path: "/careers" }),
+  loader: () => ({ title: careers.seoTitle.replace(/\s*\|\s*Flight Hour Solution$/i, ""), description: careers.metaDescription }),
+  head: ({ loaderData }) => pageHead({ title: loaderData?.title ?? "Careers", description: loaderData?.description ?? "", path: "/careers" }),
   component: CareersPage,
 });
 

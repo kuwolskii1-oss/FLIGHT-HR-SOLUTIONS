@@ -6,11 +6,12 @@ import { MediaFrame } from "@/components/site/MediaFrame";
 import { PageIntro } from "@/components/site/PageIntro";
 import { RuledList } from "@/components/site/RuledList";
 import { Section } from "@/components/site/Section";
-import { engines } from "@/site/content";
+import { engines } from "@/site/data/engines";
 import { pageHead } from "@/site/seo";
 
 export const Route = createFileRoute("/engines/")({
-  head: () => pageHead({ title: "Engine families we manage", description: engines.hub.intro, path: "/engines" }),
+  loader: () => ({ description: engines.hub.intro }),
+  head: ({ loaderData }) => pageHead({ title: "Engine families we manage", description: loaderData?.description ?? "", path: "/engines" }),
   component: EnginesPage,
 });
 

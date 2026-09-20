@@ -73,8 +73,12 @@ confirms it.
 ## Build details worth knowing
 
 - Content is JSON per page under `site/app/src/content/`, typed in `src/site/types.ts` and loaded
-  through one module per file (`src/site/data/*.ts`), so a page only ships its own copy; the
-  header and footer read `site.json` alone.
+  through one module per file (`src/site/data/*.ts`). Routes read their page's module in a
+  loader and in the component, and the router splits loaders as well as components into their
+  own chunks (`codeSplittingOptions` in `vite.config.ts`), so a page's copy travels in that
+  page's chunk and the entry bundle carries only the shared `site.json`. A small Vite transform
+  strips the editorial fields no page renders (`sources`, `notes`, `clientToConfirm`) from the
+  JSON at import time; the files on disk keep them as the audit trail.
 - The stylesheet keeps the platform's Quanta Tailwind entry wired (the template requires it) but
   limits utility generation to the files the site renders, which took the shipped CSS from 82 kB
   to 54 kB gzipped. The site's own layer (`src/site/tokens.css`, `fonts.css`, `site.css`) is
@@ -118,8 +122,10 @@ route at 390, 700, 1000 and 1440 px:
 - Weight, home page, production assets: five desktop film segments 7.5 MB in total (mobile
   segments 4.6 MB), fetched progressively and within the platform's 32/16 MB ceilings; images
   0.7 MB across the page (0.45 MB on mobile); fonts 164 kB (four Plex files on the first
-  paint); CSS 54 kB gzipped; JavaScript about 190 kB gzipped for the first route including
-  React, the router, GSAP and Lenis. Other pages carry no film.
+  paint); CSS 54 kB gzipped; JavaScript 103 kB gzipped for the entry (React, the router, the
+  scroll engine, header and footer) plus the page's own chunk (home 16 kB of copy; the largest,
+  the services pages, 54 kB before compression) with GSAP and Lenis loaded after hydration.
+  Other pages carry no film.
 - Redirects, robots, sitemap, 404 pages for unknown services, engines, industries and articles,
   and the security headers (CSP with `media-src blob:`, HSTS, nosniff, referrer and permissions
   policies) were checked by request.

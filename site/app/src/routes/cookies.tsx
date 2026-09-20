@@ -3,17 +3,18 @@ import { PageMotion } from "@/components/site/PageMotion";
 
 import { PageIntro } from "@/components/site/PageIntro";
 import { Section } from "@/components/site/Section";
-import { legal } from "@/site/content";
+import { legal } from "@/site/data/legal";
 import { pageHead } from "@/site/seo";
 
-const doc = legal.cookies;
 
 export const Route = createFileRoute("/cookies")({
-  head: () => pageHead({ title: doc.title, description: "Cookies of Flight Hour Solution GmbH, Zug, Switzerland.", path: "/cookies", noindex: true }),
+  loader: () => ({ title: legal.cookies.title }),
+  head: ({ loaderData }) => pageHead({ title: loaderData?.title ?? "Cookies", description: "Cookies of Flight Hour Solution GmbH, Zug, Switzerland.", path: "/cookies", noindex: true }),
   component: Page,
 });
 
 function Page() {
+  const doc = legal.cookies;
   const sections = doc.sections as { title: string; lines?: string[]; paragraphs?: string[] }[];
   return (
     <main id="main" tabIndex={-1}>

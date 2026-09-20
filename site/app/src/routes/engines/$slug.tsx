@@ -9,7 +9,8 @@ import { TitledList } from "@/components/site/Prose";
 import { RuledList } from "@/components/site/RuledList";
 import { Section, SectionHead } from "@/components/site/Section";
 import { StatStrip } from "@/components/site/StatStrip";
-import { findFamily, services } from "@/site/content";
+import { findFamily } from "@/site/data/engines";
+import { services } from "@/site/data/services";
 import { pageHead } from "@/site/seo";
 
 export const Route = createFileRoute("/engines/$slug")({

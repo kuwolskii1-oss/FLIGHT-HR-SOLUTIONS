@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { site } from "@/site/content";
+import { site } from "@/site/data/site";
 import type { ContactContent, FormField } from "@/site/types";
 import { submitEnquiry } from "@/site/enquiry.functions";
 import { CtaSubmit } from "./Cta";

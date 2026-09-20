@@ -3,17 +3,18 @@ import { PageMotion } from "@/components/site/PageMotion";
 
 import { PageIntro } from "@/components/site/PageIntro";
 import { Section } from "@/components/site/Section";
-import { legal } from "@/site/content";
+import { legal } from "@/site/data/legal";
 import { pageHead } from "@/site/seo";
 
-const doc = legal.impressum;
 
 export const Route = createFileRoute("/impressum")({
-  head: () => pageHead({ title: doc.title, description: "Impressum of Flight Hour Solution GmbH, Zug, Switzerland.", path: "/impressum", noindex: true }),
+  loader: () => ({ title: legal.impressum.title }),
+  head: ({ loaderData }) => pageHead({ title: loaderData?.title ?? "Impressum", description: "Impressum of Flight Hour Solution GmbH, Zug, Switzerland.", path: "/impressum", noindex: true }),
   component: Page,
 });
 
 function Page() {
+  const doc = legal.impressum;
   const sections = doc.sections as { title: string; lines?: string[]; paragraphs?: string[] }[];
   return (
     <main id="main" tabIndex={-1}>

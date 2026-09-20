@@ -14,7 +14,10 @@ import { SmartLink } from "@/components/site/SmartLink";
 import { StatStrip } from "@/components/site/StatStrip";
 import { Steps } from "@/components/site/Steps";
 import { SITE_URL } from "@/site/config";
-import { about, home, site, sortedArticles } from "@/site/content";
+import { about } from "@/site/data/about";
+import { home } from "@/site/data/home";
+import { site } from "@/site/data/site";
+import { sortedArticles } from "@/site/data/insights";
 import { pageHead } from "@/site/seo";
 import { formatDate } from "@/site/format";
 
@@ -69,12 +72,8 @@ const ORG_SCHEMA = JSON.stringify({
 });
 
 export const Route = createFileRoute("/")({
-  head: () =>
-    pageHead({
-      title: `${site.company.shortName} | Independent jet-engine management, Zug`,
-      description: home.hero.sub,
-      path: "/",
-    }),
+  loader: () => ({ title: `${site.company.shortName} | Independent jet-engine management, Zug`, description: home.hero.sub }),
+  head: ({ loaderData }) => pageHead({ title: loaderData?.title ?? "Flight Hour Solution", description: loaderData?.description ?? "", path: "/" }),
   component: Index,
 });
 

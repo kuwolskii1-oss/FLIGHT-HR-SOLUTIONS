@@ -1,4 +1,4 @@
-import { site } from "@/site/content";
+import { site } from "@/site/data/site";
 import { SmartLink } from "./SmartLink";
 
 const YEAR = new Date().getFullYear();

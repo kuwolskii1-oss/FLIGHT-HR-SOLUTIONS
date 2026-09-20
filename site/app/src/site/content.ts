@@ -1,7 +1,8 @@
 /* Typed access to the JSON content files. The JSON is authored from the research dossier
  * (docs/research) and validated against site/content-brief/CONTENT-SCHEMA.md.
- * One module per file (./data) so a page only bundles the content it renders; this barrel
- * re-exports them for convenience. */
+ * One module per file (./data) so a page only bundles the content it renders. Components and
+ * routes import those modules directly (a shared barrel would pull every file into the entry
+ * chunk); this barrel only remains as a map of what exists. */
 export { site } from "./data/site";
 export { home } from "./data/home";
 export { services, findService } from "./data/services";

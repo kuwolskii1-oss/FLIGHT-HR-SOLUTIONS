@@ -61,7 +61,7 @@
   "source": "docs/research/01-company-profile.md section 2 (people and team-size signals) and site/content-brief/VOICE-AND-FACTS.md (team experience stated without a years figure). Wording of the intro matches the people block in home.json.",
   "clientToConfirm": [
    "Other team members: the Swiss Aerospace Cluster directory says 4 employees or members, LinkedIn says 11 to 50, the commercial register names one person. Only Hubert Nowosad is shown. Confirm whether anyone else may be named, with title, portrait and consent.",
-   "Team experience is described as 'the team's experience in engine shops and airline engineering' with no years figure, per the copy rules. Confirm the description holds for the current team."
+   "Experience is described as 'experience in engine shops and airline engineering' with no years figure and no reference to a wider team, per the copy rules. Confirm the description holds."
   ]
  },
  "credentials": {

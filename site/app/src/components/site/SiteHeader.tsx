@@ -1,6 +1,6 @@
 import { useRouterState } from "@tanstack/react-router";
 import { useEffect, useId, useRef, useState } from "react";
-import { site } from "@/site/content";
+import { site } from "@/site/data/site";
 import { CtaTalk } from "./Cta";
 import { SmartLink } from "./SmartLink";
 

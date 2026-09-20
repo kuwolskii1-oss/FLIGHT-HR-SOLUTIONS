@@ -6,11 +6,13 @@ import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { PageIntro } from "@/components/site/PageIntro";
 import { Section } from "@/components/site/Section";
 import { SITE_URL } from "@/site/config";
-import { contact, site } from "@/site/content";
+import { contact } from "@/site/data/contact";
+import { site } from "@/site/data/site";
 import { pageHead } from "@/site/seo";
 
 export const Route = createFileRoute("/contact")({
-  head: () => pageHead({ title: contact.seoTitle.replace(/\s*\|\s*Flight Hour Solution$/i, ""), description: contact.metaDescription, path: "/contact" }),
+  loader: () => ({ title: contact.seoTitle.replace(/\s*\|\s*Flight Hour Solution$/i, ""), description: contact.metaDescription }),
+  head: ({ loaderData }) => pageHead({ title: loaderData?.title ?? "Contact", description: loaderData?.description ?? "", path: "/contact" }),
   component: ContactPage,
 });
 

@@ -14,7 +14,9 @@ import { SmartLink } from "@/components/site/SmartLink";
 import { StatStrip } from "@/components/site/StatStrip";
 import { Steps } from "@/components/site/Steps";
 import { SITE_URL } from "@/site/config";
-import { engines, findService, services, site } from "@/site/content";
+import { engines } from "@/site/data/engines";
+import { findService, services } from "@/site/data/services";
+import { site } from "@/site/data/site";
 import { pageHead } from "@/site/seo";
 
 export const Route = createFileRoute("/services/$slug")({

@@ -1,5 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { engines, industries, insights, services } from "@/site/content";
+import { engines } from "@/site/data/engines";
+import { industries } from "@/site/data/industries";
+import { insights } from "@/site/data/insights";
+import { services } from "@/site/data/services";
 
 const STATIC: { path: string; priority: string; changefreq: string }[] = [
   { path: "/", priority: "1.0", changefreq: "weekly" },

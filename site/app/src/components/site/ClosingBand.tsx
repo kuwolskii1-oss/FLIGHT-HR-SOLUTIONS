@@ -1,5 +1,5 @@
 import { CtaClosing, CtaLink } from "./Cta";
-import { site } from "@/site/content";
+import { site } from "@/site/data/site";
 
 /** The standard closing statement on inner pages: one headline, the two fixed calls to action. */
 export function ClosingBand({ headline, sub }: { headline: string; sub?: string }) {

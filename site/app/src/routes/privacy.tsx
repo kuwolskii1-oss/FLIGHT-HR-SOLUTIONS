@@ -3,17 +3,18 @@ import { PageMotion } from "@/components/site/PageMotion";
 
 import { PageIntro } from "@/components/site/PageIntro";
 import { Section } from "@/components/site/Section";
-import { legal } from "@/site/content";
+import { legal } from "@/site/data/legal";
 import { pageHead } from "@/site/seo";
 
-const doc = legal.privacy;
 
 export const Route = createFileRoute("/privacy")({
-  head: () => pageHead({ title: doc.title, description: "Privacy of Flight Hour Solution GmbH, Zug, Switzerland.", path: "/privacy", noindex: true }),
+  loader: () => ({ title: legal.privacy.title }),
+  head: ({ loaderData }) => pageHead({ title: loaderData?.title ?? "Privacy", description: "Privacy of Flight Hour Solution GmbH, Zug, Switzerland.", path: "/privacy", noindex: true }),
   component: Page,
 });
 
 function Page() {
+  const doc = legal.privacy;
   const sections = doc.sections as { title: string; lines?: string[]; paragraphs?: string[] }[];
   return (
     <main id="main" tabIndex={-1}>

@@ -18,6 +18,23 @@ const QUANTA_ICONS_SHIM = fileURLToPath(
   new URL("./src/lib/quanta-icons.ts", import.meta.url),
 );
 
+
+// The content JSON under src/content carries editorial metadata that no page renders
+// (research sources, notes and the client's open questions). Strip those keys at import time
+// so they never reach the browser; the files on disk keep them as the audit trail.
+const CONTENT_META_KEYS = new Set(["sources", "clientToConfirm", "notes"]);
+const stripContentMeta = () => ({
+  name: "fhs-strip-content-meta",
+  enforce: "pre" as const,
+  transform(code: string, id: string) {
+    if (!/\/src\/content\/[^/]+\.json$/.test(id)) return null;
+    const stripped = JSON.stringify(JSON.parse(code), (key, value) =>
+      CONTENT_META_KEYS.has(key) ? undefined : value,
+    );
+    return { code: stripped, map: null };
+  },
+});
+
 export default defineConfig(({ command, mode }) => {
   const designInspectorEnabled = process.env.HF_DESIGN_INSPECTOR === "1" || mode === "design";
 
@@ -72,6 +89,7 @@ export default defineConfig(({ command, mode }) => {
       rollupOptions: { external: [/^cloudflare:/] },
     },
     plugins: [
+      stripContentMeta(),
       // Local SVG assets (e.g. the branded generate-button sparkle) import as
       // React components via `?react`. `icon: true` sizes them 1em; fill is
       // forced to currentColor so they color like text. Keep the viewBox so
@@ -99,6 +117,13 @@ export default defineConfig(({ command, mode }) => {
       // inside effects/handlers, or guarded with `typeof window !== "undefined"`.
       tanstackStart({
         server: { entry: "server" },
+        // Split route loaders into their own chunks as well as components: the loaders read
+        // the page's content module, so this keeps every page's copy out of the entry bundle.
+        router: {
+          codeSplittingOptions: {
+            defaultBehavior: [["component"], ["errorComponent"], ["notFoundComponent"], ["loader"]],
+          },
+        },
       }),
       higgsfieldDesignInspectorVitePlugin(designInspectorEnabled),
       react({

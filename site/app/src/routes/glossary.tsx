@@ -4,11 +4,12 @@ import { PageMotion } from "@/components/site/PageMotion";
 import { ClosingBand } from "@/components/site/ClosingBand";
 import { PageIntro } from "@/components/site/PageIntro";
 import { Section } from "@/components/site/Section";
-import { glossary } from "@/site/content";
+import { glossary } from "@/site/data/glossary";
 import { pageHead } from "@/site/seo";
 
 export const Route = createFileRoute("/glossary")({
-  head: () => pageHead({ title: glossary.seoTitle.replace(/\s*\|\s*Flight Hour Solution$/i, ""), description: glossary.metaDescription, path: "/glossary" }),
+  loader: () => ({ title: glossary.seoTitle.replace(/\s*\|\s*Flight Hour Solution$/i, ""), description: glossary.metaDescription }),
+  head: ({ loaderData }) => pageHead({ title: loaderData?.title ?? "Glossary", description: loaderData?.description ?? "", path: "/glossary" }),
   component: GlossaryPage,
 });
 

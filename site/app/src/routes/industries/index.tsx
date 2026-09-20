@@ -5,11 +5,12 @@ import { ClosingBand } from "@/components/site/ClosingBand";
 import { PageIntro } from "@/components/site/PageIntro";
 import { RuledList } from "@/components/site/RuledList";
 import { Section } from "@/components/site/Section";
-import { industries } from "@/site/content";
+import { industries } from "@/site/data/industries";
 import { pageHead } from "@/site/seo";
 
 export const Route = createFileRoute("/industries/")({
-  head: () => pageHead({ title: "Who we work for: airlines, lessors, MROs, government", description: industries.hub.intro, path: "/industries" }),
+  loader: () => ({ description: industries.hub.intro }),
+  head: ({ loaderData }) => pageHead({ title: "Who we work for: airlines, lessors, MROs, government", description: loaderData?.description ?? "", path: "/industries" }),
   component: IndustriesPage,
 });
 

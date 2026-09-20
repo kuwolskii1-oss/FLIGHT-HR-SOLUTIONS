@@ -6,11 +6,13 @@ import { LocalNav } from "@/components/site/LocalNav";
 import { MediaFrame } from "@/components/site/MediaFrame";
 import { PageIntro } from "@/components/site/PageIntro";
 import { Section, SectionHead } from "@/components/site/Section";
-import { about, site } from "@/site/content";
+import { about } from "@/site/data/about";
+import { site } from "@/site/data/site";
 import { pageHead } from "@/site/seo";
 
 export const Route = createFileRoute("/about")({
-  head: () => pageHead({ title: about.seoTitle.replace(/\s*\|\s*Flight Hour Solution$/i, ""), description: about.metaDescription, path: "/about" }),
+  loader: () => ({ title: about.seoTitle.replace(/\s*\|\s*Flight Hour Solution$/i, ""), description: about.metaDescription }),
+  head: ({ loaderData }) => pageHead({ title: loaderData?.title ?? "About", description: loaderData?.description ?? "", path: "/about" }),
   component: AboutPage,
 });
 

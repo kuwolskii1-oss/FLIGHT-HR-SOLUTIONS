@@ -6,16 +6,12 @@ import { PageIntro } from "@/components/site/PageIntro";
 import { RuledList } from "@/components/site/RuledList";
 import { Section, SectionHead } from "@/components/site/Section";
 import { SmartLink } from "@/components/site/SmartLink";
-import { services } from "@/site/content";
+import { services } from "@/site/data/services";
 import { pageHead } from "@/site/seo";
 
 export const Route = createFileRoute("/services/")({
-  head: () =>
-    pageHead({
-      title: "Services: engine shop-visit management and advisory",
-      description: services.hub.intro,
-      path: "/services",
-    }),
+  loader: () => ({ description: services.hub.intro }),
+  head: ({ loaderData }) => pageHead({ title: "Services: engine shop-visit management and advisory", description: loaderData?.description ?? "", path: "/services" }),
   component: ServicesPage,
 });
 

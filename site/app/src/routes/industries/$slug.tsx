@@ -7,7 +7,8 @@ import { MediaFrame } from "@/components/site/MediaFrame";
 import { PageIntro } from "@/components/site/PageIntro";
 import { RuledList } from "@/components/site/RuledList";
 import { Section, SectionHead } from "@/components/site/Section";
-import { findIndustry, services } from "@/site/content";
+import { findIndustry } from "@/site/data/industries";
+import { services } from "@/site/data/services";
 import { pageHead } from "@/site/seo";
 
 export const Route = createFileRoute("/industries/$slug")({

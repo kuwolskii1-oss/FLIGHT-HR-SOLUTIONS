@@ -8,7 +8,8 @@ import { Prose } from "@/components/site/Prose";
 import { Section } from "@/components/site/Section";
 import { SmartLink } from "@/components/site/SmartLink";
 import { SITE_URL } from "@/site/config";
-import { findArticle, site, sortedArticles } from "@/site/content";
+import { findArticle, sortedArticles } from "@/site/data/insights";
+import { site } from "@/site/data/site";
 import { pageHead } from "@/site/seo";
 import { formatDate } from "@/site/format";
 
