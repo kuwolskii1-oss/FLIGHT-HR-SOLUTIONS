@@ -85,10 +85,13 @@ confirms it.
   drives robots, sitemap and the `noindex` meta until the launch domain is live.
 - Redirects handled in the Worker (`src/server.ts`): trailing slashes, the old site's addresses
   (`/about-us`, `/career`, `/privacy-policy`, `/resources/glossary`) and the scaffold's `/app`.
-- The contact and asset forms post to a server function that sends through Resend when the
-  `RESEND_API_KEY`, `ENQUIRY_TO` and `ENQUIRY_FROM` bindings exist and otherwise hand the visitor a
-  prepared email (mailto) with the same fields, so the form never dead-ends. The key is set with
-  the platform's secrets tool, never in source.
+- The contact and asset forms are one component that renders whichever fields its content file
+  lists (the contact form: name, company, email, phone, role, engine family, need, message; the
+  asset form: name, company, email, asset type, engine or aircraft type, offered or wanted,
+  message). Both post to a server function that sends through Resend when the `RESEND_API_KEY`,
+  `ENQUIRY_TO` and `ENQUIRY_FROM` bindings exist and otherwise hand the visitor a prepared email
+  (mailto) with the same fields, so the form never dead-ends. A hidden honeypot field filters
+  automated submissions. The key is set with the platform's secrets tool, never in source.
 - Motion is split in two: a root provider that only runs Lenis and the GSAP ticker, and a
   route-level component that wires reveals, the steps progress rule and split headings after
   hydration, keyed on the pathname. This is what removed the hydration mismatches an earlier

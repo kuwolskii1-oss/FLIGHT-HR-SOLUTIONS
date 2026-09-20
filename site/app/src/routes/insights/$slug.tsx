@@ -11,7 +11,7 @@ import { SmartLink } from "@/components/site/SmartLink";
 import { SITE_URL } from "@/site/config";
 import { findArticle, site, sortedArticles } from "@/site/content";
 import { pageHead } from "@/site/seo";
-import { formatDate } from "../index";
+import { formatDate } from "@/site/format";
 
 export const Route = createFileRoute("/insights/$slug")({
   loader: ({ params }) => {

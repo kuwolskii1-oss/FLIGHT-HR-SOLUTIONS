@@ -1,0 +1,323 @@
+{
+  "notes": "Legal pages for Flight Hour Solution GmbH: Impressum, privacy notice (Swiss FADP and GDPR) and cookie notice. The routes impressum.tsx, privacy.tsx and cookies.tsx render each section title as an h2 and each line or paragraph as a p; the notes, source and clientToConfirm keys are never rendered. Facts about the company come from docs/research/01 and 02; facts about what the website does come from the site's own source code, checked on 19 September 2026 (see the sources array). The privacy notice describes the site as built: a Cloudflare Worker deployed through the Higgsfield website platform, a contact form and an asset request form (one component, two field sets) that are emailed through Resend and stored nowhere, self-hosted fonts, no analytics, no cookies of the site's own. If the platform, the email provider, the mailbox host or the analytics decision changes, the sections named in clientToConfirm must change with it.",
+  "clientToConfirm": [
+    "Counsel review: docs/research/07-recommendations-and-brief.md section 11 asks for the legal pages to be reviewed by counsel before launch. The liability, copyright, legal-basis, transfer and retention wording below is a working draft for that review, not final legal advice.",
+    "Launch domain: the notice speaks of this website rather than naming a domain because the site is currently served at flighthoursolution.higgsfield.app and is meant to move to flighthoursolution.com. Confirm the domain and whether the same platform serves it."
+  ],
+  "impressum": {
+    "title": "Impressum",
+    "notes": "Ordered as Swiss and German-speaking readers expect: entity, contact, register identifiers, management and responsibility for content, then website credits, liability and copyright. Entity naming per docs/research/07-recommendations-and-brief.md section 2.4: Flight Hour Solution GmbH in legal lines. The register lines match the Legal entity block in about.json and the Registered office block in contact.json.",
+    "sections": [
+      {
+        "title": "Company",
+        "lines": [
+          "Flight Hour Solution GmbH",
+          "Bahnhofplatz, 6300 Zug, Switzerland",
+          "A limited liability company (GmbH) under Swiss law with its registered seat in Zug.",
+          "Flight Hour Solution GmbH is a consultancy. It is not an approved maintenance organisation and holds no EASA or FAA approvals."
+        ],
+        "source": "docs/research/01-company-profile.md section 1 (legal name, legal form GmbH, registered seat Zug, registered address Bahnhofplatz, 6300 Zug, no house number in the register) and section 5 (no EASA or FAA approvals claimed; a consultancy needs none and the site must not imply any).",
+        "clientToConfirm": [
+          "House number for Bahnhofplatz: the commercial register gives none. Supply it so the Impressum, the footer and the contact page can carry the full postal address.",
+          "Registered translations of the name (Flight Hour Solution Sàrl, Sagl and LLC per 01 section 1) are not shown. Confirm whether to add them.",
+          "Confirm that the line on EASA and FAA approvals is wanted. It is there so that no reader takes the consultancy for an approved maintenance organisation (01 section 5, 06 section 5.2)."
+        ]
+      },
+      {
+        "title": "Contact",
+        "lines": [
+          "Email: contact@flighthoursolution.com",
+          "Phone: +41 76 595 88 61"
+        ],
+        "source": "docs/research/02-website-content-inventory.md section 2 (footer contact block: contact@flighthoursolution.com and +41 76 595 88 61) and docs/research/01-company-profile.md section 6 (contact@ is the general mailbox). Same values as site.json company.email and company.phoneDisplay.",
+        "clientToConfirm": [
+          "Primary phone: +41 76 595 88 61 is used site-wide (hero and contact page since April 2026). Two other numbers are in circulation, +41 76 418 63 50 (old header button and WhatsApp) and +41 76 358 84 90 (Swiss Aerospace Cluster directory). Confirm the one number for the Impressum."
+        ]
+      },
+      {
+        "title": "Commercial register and identifiers",
+        "lines": [
+          "Entered in the commercial register of the canton of Zug on 26 September 2024.",
+          "Company identification number (UID): CHE-196.248.398",
+          "Register number (CH-ID): CH-170.4.022.412-5",
+          "The register entry can be viewed on zefix.ch, the Swiss central business name index, under entity number 1658864."
+        ],
+        "source": "docs/research/01-company-profile.md section 1 (UID CHE-196.248.398, CH-ID CH-170.4.022.412-5, register entry 26 September 2024, Zug registry) and section 10 (Zefix entity 1658864, https://www.zefix.ch/en/search/entity/list/firm/1658864, checked reachable on 19 September 2026).",
+        "clientToConfirm": [
+          "VAT: Moneyhouse lists the VAT form CHE-196.248.398 MWST (01 section 1). Confirm VAT registration before a line VAT number: CHE-196.248.398 MWST is added here.",
+          "Share capital (CHF 20,000 per 01 section 1) is not shown. Confirm whether to add it; Swiss practice varies."
+        ]
+      },
+      {
+        "title": "Management and responsibility for content",
+        "lines": [
+          "Managing director: Hubert Nowosad",
+          "Responsible for the content of this website: Hubert Nowosad, managing director, at the address above."
+        ],
+        "source": "docs/research/01-company-profile.md section 2 (Hubert Nowosad, managing director and sole shareholder since the July 2025 mutation; the only registered person). Impressum contents per docs/research/07-recommendations-and-brief.md section 9 (legal row: GmbH, UID, address, managing director).",
+        "clientToConfirm": [
+          "Confirm that Hubert Nowosad is named publicly as managing director and as the person responsible for the website content (01 section 9, question 1)."
+        ]
+      },
+      {
+        "title": "Website, hosting and credits",
+        "lines": [
+          "This website is operated by Flight Hour Solution GmbH.",
+          "It is built and deployed on the Higgsfield website platform and served through Cloudflare's network. How personal data is handled is set out in the privacy notice.",
+          "Typefaces: IBM Plex Sans and IBM Plex Mono, used under the SIL Open Font License.",
+          "The illustrations are generated images made for this website. They show the kind of work described, not our clients' engines, premises or staff."
+        ],
+        "source": "site/README.md (Higgsfield website platform on a Cloudflare Worker; self-hosted IBM Plex under the SIL Open Font License; the film and eleven illustrations generated with Higgsfield on 19 September 2026, illustrations of the work, not photographs of the company) and docs/website/README.md (platform choice). Logo and colours are the client's own per docs/research/03-brand-assets.md.",
+        "clientToConfirm": [
+          "Real photography replaces the generated illustrations at launch (site/README.md, docs/research/07 section 6). When it does, replace the illustrations line with the photographer's credit and licence.",
+          "Confirm who owns the rights in the logo and wordmark (03 lists them as the client's own; the old site was built by a third-party agency, 04 section 8) so a trademark line can be added if wanted."
+        ]
+      },
+      {
+        "title": "Liability",
+        "lines": [
+          "We prepare the content of this website with care. We cannot guarantee that it is complete, correct or current at every moment and, to the extent the law allows, we accept no liability for loss arising from reliance on it.",
+          "Nothing on this website is technical advice on a specific engine or aircraft. Advice is given only under a written engagement.",
+          "Asset listings are indicative, subject to prior sale or lease, and are not binding offers.",
+          "Links to third-party websites are provided for information. We have no influence over their content and accept no responsibility for it."
+        ],
+        "source": "Standard disclaimer lines drafted for counsel review (docs/research/07-recommendations-and-brief.md section 11). The asset line reflects the Assets page, whose listings appeared on LinkedIn and may no longer be open (site/app/src/content/assets.json requestForm text; docs/research/01-company-profile.md section 4.3).",
+        "clientToConfirm": [
+          "Counsel to review the liability wording. Confirm whether a governing-law and place-of-jurisdiction clause (Swiss law, Zug) should be added; none is included in this draft."
+        ]
+      },
+      {
+        "title": "Copyright",
+        "lines": [
+          "The text, data and graphics on this website are protected by copyright. Unless stated otherwise, the rights belong to Flight Hour Solution GmbH.",
+          "Reproduction or distribution beyond personal, non-commercial use requires our written permission. Short quotations with attribution are welcome."
+        ],
+        "source": "Standard copyright lines drafted for counsel review (docs/research/07-recommendations-and-brief.md section 11). Provenance of the visuals: site/README.md.",
+        "clientToConfirm": [
+          "Counsel to confirm the copyright position on the generated illustrations, which are credited as generated images on every page."
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy notice",
+    "updated": "19 September 2026",
+    "notes": "Written for the site as built and checked in source on 19 September 2026, and again on 20 September 2026 after the asset request form gained its own fields: the contact form and the asset request form (one component, two field sets, subjects Website enquiry and Asset request) post to a server function that emails the enquiry through Resend to contact@flighthoursolution.com and stores nothing; without an API key the visitor's own email program opens instead. No database, object storage or key-value store is provisioned (app.manifest.json). No analytics, no third-party scripts, no third-party fonts. The route prints Last updated followed by the updated value. Each paragraph is kept under 60 words per the voice rules, so the notice reads as many short paragraphs rather than a wall of text.",
+    "clientToConfirm": [
+      "Email provider: the code integrates Resend (api.resend.com) and sends only when RESEND_API_KEY is configured in the hosting settings; ENQUIRY_TO defaults to contact@flighthoursolution.com. Confirm Resend is the provider used at launch, that its data processing terms are accepted, and which mailbox receives the enquiries. If a CRM is added (07 section 8 suggests HubSpot or Pipedrive), it must be named under Who receives your data.",
+      "Mailbox host: the company's mail was hosted at zenbox.pl (Cyber_Folks S.A., Poland) on the research date (04 section 1). 07 section 9 recommends moving to business mail (Google Workspace, Microsoft 365 or Infomaniak). If the mailbox moves before launch, replace zenbox.pl in the sections Email, phone and applications and Who receives your data, and revisit the transfer section if the new host is outside Switzerland and the EEA.",
+      "Higgsfield: confirm the legal entity behind the Higgsfield website platform, its address, its data processing terms and where it processes data, so the recipient and transfer sections can be made precise.",
+      "Cloudflare: confirm the data processing terms in force through the platform, the transfer mechanism (standard contractual clauses or the Swiss-US Data Privacy Framework) and the retention period of request logs and Worker logs (wrangler.jsonc has observability enabled). Replace the phrase the providers set the retention period with the actual period once known.",
+      "Provider locations: the notice says Cloudflare and Resend are based in the United States. Confirm the contracting entities and whether the platform contracts through European affiliates.",
+      "Retention of enquiries: no fixed period is stated, only the criterion once the matter is closed. Consider fixing a period (for example 24 months after the last contact) and adding it to How long we keep data.",
+      "Applications: confirm the retention practice for job applications and the mailbox they go to (careers page), and whether a candidate pool with consent is wanted.",
+      "Requests mailbox: requests are routed to contact@flighthoursolution.com. The old privacy policy used privacy@flighthoursolution.com (01 section 6, 02 section 8). Confirm which address is monitored and should appear.",
+      "Data protection responsibility: the notice names the managing director. Confirm this, and whether a data protection officer or adviser has been appointed (none is named).",
+      "EU representative: the company is in Switzerland and offers services to clients in the EU and EEA. Confirm with counsel whether a representative under Article 27 GDPR (and a UK representative) is needed; none is named.",
+      "Platform scripts: the site's own code sends error reports only to a hook if the platform injects one (window.__higgsfieldEvents) and loads the design inspector only in design mode. Check the production build for any script, sign-in frame or cookie injected by the platform; the review address currently requires a Higgsfield sign-in and the content security policy allows auth.higgsfield.app frames. If anything is injected in production, add it to the notice.",
+      "Content security policy: security-headers.server.ts still allows fonts.googleapis.com and fonts.gstatic.com although nothing requests them. Removing them keeps the no third-party fonts statement provably true (code change, not a content change).",
+      "Mailbox access: the security section says access to the mailbox is limited to the people who handle enquiries. Confirm this reflects practice."
+    ],
+    "sections": [
+      {
+        "title": "Who we are",
+        "paragraphs": [
+          "Flight Hour Solution GmbH, Bahnhofplatz, 6300 Zug, Switzerland, is the controller of the personal data described in this notice. You can reach us at contact@flighthoursolution.com or on +41 76 595 88 61. Data protection matters are handled by the managing director, Hubert Nowosad.",
+          "This notice explains what happens to personal data when you visit this website, use the contact form, write to us, work with us or apply for a role. It follows the revised Swiss Federal Act on Data Protection (FADP), in force since September 2023, and, where it applies to you, the EU General Data Protection Regulation (GDPR).",
+          "Under the FADP, a private company needs no separate legal basis for processing as long as it respects the principles of the Act: lawfulness, good faith, proportionality, purpose limitation and transparency. Where the GDPR applies, the legal basis is named in each section below."
+        ],
+        "source": "Controller details: docs/research/01-company-profile.md sections 1, 2 and 6; docs/research/02-website-content-inventory.md section 2. Revised FADP in force since September 2023 and GDPR relevance for EU clients: docs/research/01-company-profile.md section 8. FADP principles: Article 6 FADP (SR 235.1, see sources)."
+      },
+      {
+        "title": "The contact and asset request forms",
+        "paragraphs": [
+          "The form on the Contact page asks for your name, company, work email and message; role, phone, engine family and what you need are optional. The form on the Assets page asks for your name, company, email, the asset type, the engine or aircraft type and whether it is offered or wanted; a message is optional.",
+          "On both forms you tick a box to confirm that we may use these details to answer you and follow up. When you press send, the form posts to our server, which turns it into an email to contact@flighthoursolution.com and keeps no copy. Our reply goes to the address you gave. Nothing you enter is stored on the website.",
+          "If email delivery is not available, your own email program opens with the enquiry prepared, and you send it yourself from your own address.",
+          "A hidden field that people never see catches automated submissions. There is no CAPTCHA and no third-party bot check.",
+          "We use your entries to answer the enquiry, to follow it up and, if you instruct us, to prepare an engagement. Legal bases under the GDPR: your consent (Article 6(1)(a)) and steps taken at your request before a contract (Article 6(1)(b)). We use the entries for no other purpose."
+        ],
+        "source": "Fields and required flags: site/app/src/content/contact.json form.fields (name, company, email and message required; role, phone, engineFamily and need optional) and site/app/src/content/assets.json requestForm.fields (name, company, email, assetType, assetModel and need required; message optional), both enforced by site/app/src/components/site/EnquiryForm.tsx and the schema in site/app/src/site/enquiry.functions.ts (consent required on both). Assets page: site/app/src/routes/assets.tsx renders EnquiryForm with the assets.json fields, the contact.json consent text and success copy, and the subject Asset request. Server behaviour: enquiry.functions.ts (POST to a server function, email through api.resend.com to ENQUIRY_TO or contact@flighthoursolution.com with reply_to set to the visitor's address, nothing written to storage, mailto fallback when no key is configured, honeypot field website). No CAPTCHA: EnquiryForm.tsx. Legal bases: Article 6(1)(a) and (b) GDPR (see sources). Code checked 20 September 2026."
+      },
+      {
+        "title": "Server logs",
+        "paragraphs": [
+          "The website is built and deployed on the Higgsfield website platform and runs on Cloudflare's network. Like every web host, they record each request: your IP address, the date and time, the page requested, the referring page, your browser and operating system, and the response code.",
+          "These logs exist to run the site, to defend it against attacks and to find faults. We do not keep copies of them and we do not use them to identify visitors. The providers set the retention period. Legal basis under the GDPR: our legitimate interest in a secure, working website (Article 6(1)(f))."
+        ],
+        "source": "Platform and edge: site/README.md and docs/website/README.md (React 19 + TanStack Start on a Cloudflare Worker, deployed through the Higgsfield website tools); live check on 19 September 2026 (server: cloudflare on every response). Worker logging: site/app/wrangler.jsonc (observability enabled). The list of logged items is the standard content of web server access logs; the retention period is the provider's and is listed in clientToConfirm. Legal basis: Article 6(1)(f) GDPR."
+      },
+      {
+        "title": "Email, phone and applications",
+        "paragraphs": [
+          "If you email or call us, we process what you send or tell us in order to reply and to handle the matter. Our mailboxes are hosted by zenbox.pl (Cyber_Folks S.A.) in Poland, within the EU.",
+          "If you write to us on WhatsApp, your messages pass through WhatsApp's service under its own privacy terms.",
+          "If you apply for a role by email, we use your application to assess it and share it only with the people involved in the decision. Legal bases under the GDPR: steps taken at your request before a contract (Article 6(1)(b)) and our legitimate interest in answering correspondence (Article 6(1)(f))."
+        ],
+        "source": "Mailbox host: docs/research/04-technical-audit.md section 1 (MX records mx1, mx2 and mx3 at zenbox.pl; zenbox.pl operated by Cyber_Folks S.A., Poland) and docs/research/01-company-profile.md section 6 (mail hosted at zenbox.pl). WhatsApp link: docs/research/02-website-content-inventory.md section 2 and site.json company.whatsapp. Applications by email: site/app/src/routes/careers.tsx (mailto link under How to apply). Legal bases: Article 6(1)(b) and (f) GDPR."
+      },
+      {
+        "title": "Clients, suppliers and business contacts",
+        "paragraphs": [
+          "When you work with us as a client, a supplier, an engine shop or an authority, we process the business contact data of the people involved: names, roles, work contact details and the correspondence of the engagement. Legal bases under the GDPR: performance of a contract (Article 6(1)(b)) and our legitimate interest in running our business (Article 6(1)(f))."
+        ],
+        "source": "Audiences per docs/research/07-recommendations-and-brief.md section 3 (airlines, lessors, MROs, government operators, brokers) and docs/research/01-company-profile.md section 4. Legal bases: Article 6(1)(b) and (f) GDPR."
+      },
+      {
+        "title": "Who receives your data",
+        "paragraphs": [
+          "We do not sell personal data and we do not use it for advertising. The following service providers process data on our behalf, under data processing terms that bind them to our instructions and to confidentiality.",
+          "Higgsfield, the website platform on which the site is built and deployed, and Cloudflare, on whose network the site runs and which records the request logs described above.",
+          "Resend, the email delivery service that carries the contact form to our mailbox, and zenbox.pl (Cyber_Folks S.A., Poland), which hosts that mailbox.",
+          "Beyond these, we disclose personal data only to professional advisers bound by confidentiality, to authorities when the law requires it, or where necessary to establish, exercise or defend legal claims."
+        ],
+        "source": "Processors named per site/content-brief/VOICE-AND-FACTS.md (Legal: name actual processors, Cloudflare through the Higgsfield hosting platform, the contact form sends an email). Higgsfield and Cloudflare: site/README.md. Resend: site/app/src/site/enquiry.functions.ts (api.resend.com). Mailbox host: docs/research/04-technical-audit.md section 1. Data processing terms: to be confirmed, see clientToConfirm."
+      },
+      {
+        "title": "Transfers outside Switzerland and the EEA",
+        "paragraphs": [
+          "Cloudflare and Resend are companies based in the United States. Cloudflare runs a global network, so your requests are handled at the location nearest to you, which may be outside Switzerland and the European Economic Area. Higgsfield may also process data outside these areas.",
+          "For such transfers we rely on the safeguards in the providers' data processing terms: the European Commission's standard contractual clauses, with the additions the Swiss Federal Data Protection and Information Commissioner requires, or another mechanism recognised by Swiss and EU law. You can ask us which safeguard applies in a given case."
+        ],
+        "source": "Cross-border disclosure rules: Articles 16 and 17 FADP and Chapter V GDPR (Articles 44 to 49), see sources. Provider locations and the safeguards actually in place are to be confirmed by the client and counsel, see clientToConfirm; the paragraph is written so that it stays true under either standard contractual clauses or an adequacy-based mechanism."
+      },
+      {
+        "title": "How long we keep data",
+        "paragraphs": [
+          "Form enquiries and emails: for as long as it takes to answer and follow up. If no engagement follows, we delete them once the matter is closed.",
+          "Applications: until the decision on the application has been made and communicated, unless you ask us to keep your details for future roles.",
+          "Business records that document an engagement, such as contracts, invoices and the accounting records behind them, are kept for ten years, as the Swiss Code of Obligations requires.",
+          "Server logs: for the period set by the hosting providers, as described under Server logs."
+        ],
+        "source": "Ten-year retention of accounting records, vouchers and reports: Article 958f of the Swiss Code of Obligations (SR 220), see sources. Other periods are criteria rather than fixed durations; a fixed period for enquiries is proposed in clientToConfirm."
+      },
+      {
+        "title": "Your rights",
+        "paragraphs": [
+          "You can ask us what data we hold about you and receive a copy. You can ask us to correct it, delete it, restrict its use, or hand it over in a common electronic format. You can object to processing based on our legitimate interests, and withdraw consent at any time; withdrawal does not affect what was done before.",
+          "Write to contact@flighthoursolution.com or to the postal address above. We may ask you to confirm your identity before we answer. We reply within 30 days; if a request is complex, we tell you why we need longer.",
+          "You can also complain to a supervisory authority: in Switzerland, the Federal Data Protection and Information Commissioner (FDPIC, edoeb.admin.ch); in the EU or EEA, the data protection authority of the country where you live or work."
+        ],
+        "source": "Rights: Articles 25 (access, answer within 30 days), 28 (data portability) and 32 (rectification, deletion, objection) FADP; Articles 12(3) (one month), 15 to 21 and 77 (complaint) GDPR, see sources. FDPIC: https://www.edoeb.admin.ch/ (checked reachable on 19 September 2026)."
+      },
+      {
+        "title": "Security",
+        "paragraphs": [
+          "The site is delivered over an encrypted connection (HTTPS with HSTS) and sends strict security headers to your browser. Form entries travel encrypted to our server and on to the email service. Nothing you enter is stored on the website or its server, and access to our mailbox is limited to the people who handle enquiries."
+        ],
+        "source": "site/app/src/lib/security-headers.server.ts and site/app/src/server.ts (Strict-Transport-Security, Content-Security-Policy, X-Content-Type-Options, Referrer-Policy and Permissions-Policy on every response); site/app/app.manifest.json (no database, object storage or key-value store provisioned); site/README.md (no personal data stored on the server). Mailbox access practice: to be confirmed, see clientToConfirm."
+      },
+      {
+        "title": "Cookies, analytics and third-party content",
+        "paragraphs": [
+          "This website sets no cookies of its own and uses no analytics, no advertising tags, no social media plug-ins and no fonts loaded from third parties. Fonts, images and videos are served from our own host. We make no automated decisions about you and build no profiles. Details are in the cookie notice.",
+          "Links to LinkedIn, WhatsApp, the commercial register and the Swiss Aerospace Cluster lead to third-party sites. Nothing is sent to them until you follow a link; from then on their own privacy terms apply."
+        ],
+        "source": "Source review on 19 September 2026: no document.cookie, localStorage or sessionStorage use in the site's own code; no analytics dependency in site/app/package.json; site/app/src/routes/__root.tsx loads only same-origin stylesheets, fonts and scripts; site/app/src/site/fonts.css serves IBM Plex from /fonts; the film and illustrations live under /assets on the same host (site/README.md). External links: site.json (LinkedIn, WhatsApp, Zefix register URL) and the Swiss Aerospace Cluster membership URL."
+      },
+      {
+        "title": "Changes to this notice",
+        "paragraphs": [
+          "We update this notice when the website, our providers or the law change; the date at the top shows the current version. This version is dated 19 September 2026 and replaces the privacy policy of 22 November 2024."
+        ],
+        "source": "Date of this version per the page brief. Old policy date: docs/research/02-website-content-inventory.md section 8 (TermsFeed template, Last updated November 22, 2024) and docs/research/04-technical-audit.md section 7."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Cookie notice",
+    "notes": "States that only technically necessary storage is used, as the brief requires, and says what that means for this site: the browser cache, a read of the reduced-motion setting, and the possibility of a strictly necessary security cookie from the edge network. The site's own code sets no cookie and uses no browser storage (source review of 19 September 2026, repeated 20 September 2026); the root layout injects no theme or storage script, and the template's sidebar component, which sets a cookie, is not imported by any page. There is deliberately no consent banner: the old site showed a CookieYes banner although it set no analytics cookies (04 section 5).",
+    "clientToConfirm": [
+      "Cloudflare cookies: check the production site's response headers for any Set-Cookie header from the edge (for example a bot-protection cookie such as __cf_bm). The review address set none on 19 September 2026 but answered 401. If one appears, name it in What technically necessary means here; if none does, the sentence about a possible security cookie can be shortened.",
+      "Analytics: docs/research/07 section 9 recommends privacy-first analytics (Plausible or Fathom, EU-hosted) without a consent wall. None is installed. If one is added, this notice and the privacy notice section Cookies, analytics and third-party content must name it and its host, and the no analytics statements across the site must change.",
+      "Consent banner: confirm that no cookie banner is wanted. With only technically necessary storage, none is required under Swiss or EU rules; the old site's CookieYes banner is not carried over.",
+      "Production build: confirm that the launch site carries no Higgsfield preview sign-in frame or platform cookie (the review address currently requires a Higgsfield sign-in)."
+    ],
+    "sections": [
+      {
+        "title": "The short version",
+        "paragraphs": [
+          "This website sets no cookies of its own and stores nothing in your browser beyond what is technically necessary to deliver the pages. There is no analytics, no advertising and no consent banner, because there is nothing to consent to."
+        ],
+        "source": "Source review on 19 September 2026 (no cookie or browser storage use in the site's own code; no analytics dependency) and site/README.md (no analytics and no marketing cookies). Requirement: site/content-brief/VOICE-AND-FACTS.md, Legal (cookie notice stating that only technically necessary storage is used)."
+      },
+      {
+        "title": "What technically necessary means here",
+        "paragraphs": [
+          "Your browser keeps a temporary copy of pages, fonts, images and videos so that they load faster next time. This is the ordinary browser cache, not a cookie: it holds no personal data, sends nothing to us and clears itself under your browser's rules.",
+          "The site reads your browser's reduced-motion setting to decide whether to play animations and the home-page film. It reads the setting on each visit and stores nothing.",
+          "The network that serves the site (Cloudflare, through the Higgsfield hosting platform) may set a short-lived security cookie if it has to check that a visitor is not an automated client. Such a cookie is strictly necessary and holds no profile of you."
+        ],
+        "source": "Reduced-motion read through matchMedia with nothing stored: site/app/src/components/site/MotionProvider.tsx and PageMotion.tsx; film never fetched under reduced motion: docs/website/README.md. Edge network: site/README.md and the live check of 19 September 2026 (server: cloudflare, no Set-Cookie on the responses seen). The security-cookie sentence is conditional and is listed in clientToConfirm for a check against the production headers."
+      },
+      {
+        "title": "What we do not use",
+        "paragraphs": [
+          "No analytics or statistics cookies, no advertising or marketing cookies, no social media buttons, no embedded maps, no chat widgets and no fonts loaded from Google or any other third party. The typefaces, IBM Plex Sans and Mono, are served from our own host.",
+          "The contact form runs without a CAPTCHA. A hidden field that people never see filters automated submissions."
+        ],
+        "source": "site/app/src/site/fonts.css and site/app/src/routes/__root.tsx (self-hosted IBM Plex, no third-party requests); site/app/package.json (no analytics dependency); no map on the contact page per site/app/src/content/contact.json notes; honeypot and no CAPTCHA: site/app/src/components/site/EnquiryForm.tsx and site/app/src/site/enquiry.functions.ts. Contrast with the old site, which loaded Nunito from Google and a reCAPTCHA loader on every page: docs/research/04-technical-audit.md section 1."
+      },
+      {
+        "title": "Links to other sites",
+        "paragraphs": [
+          "Links to LinkedIn, WhatsApp, the commercial register (zefix.ch) and the Swiss Aerospace Cluster open those sites, which set their own cookies under their own notices. Nothing is loaded from them while you stay on this site."
+        ],
+        "source": "External links: site/app/src/content/site.json (company.linkedin, company.whatsapp, company.registerUrl, memberships url) and site/app/src/components/site/SiteFooter.tsx (plain links, no embedded widgets)."
+      },
+      {
+        "title": "Your choices",
+        "paragraphs": [
+          "There is nothing to accept or reject here. You can block or delete cookies for any site in your browser settings; this site keeps working without them.",
+          "If we ever add a tool that needs storage beyond the technically necessary, for example visitor statistics, we will update this notice first and ask before setting anything that is not strictly necessary."
+        ],
+        "source": "Commitment drafted from docs/research/07-recommendations-and-brief.md section 9 (analytics row: privacy-first analytics without a consent wall; GA4 only with consent); listed in clientToConfirm."
+      },
+      {
+        "title": "Legal basis",
+        "paragraphs": [
+          "Switzerland: Article 45c of the Telecommunications Act permits processing on your device if you are told about it, its purpose and how to refuse it, which this notice does. EU and EEA: Article 5(3) of the ePrivacy Directive exempts strictly necessary storage from consent. Personal data in server logs is covered by the privacy notice."
+        ],
+        "source": "Article 45c of the Swiss Telecommunications Act (SR 784.10) and Article 5(3) of Directive 2002/58/EC, see sources."
+      }
+    ]
+  },
+  "sources": [
+    "docs/research/01-company-profile.md section 1 (legal name Flight Hour Solution GmbH, legal form GmbH, UID CHE-196.248.398, CH-ID CH-170.4.022.412-5, registered seat Zug, registered address Bahnhofplatz 6300 Zug without house number, register entry 26 September 2024, share capital CHF 20,000, VAT form on Moneyhouse)",
+    "docs/research/01-company-profile.md section 2 (Hubert Nowosad, managing director and sole shareholder since July 2025, the only registered person)",
+    "docs/research/01-company-profile.md section 4.3 (engine and aircraft sourcing as a line of business, basis for the asset-listing disclaimer)",
+    "docs/research/01-company-profile.md section 5 (no EASA or FAA approvals claimed; a consultancy needs none and must not imply any)",
+    "docs/research/01-company-profile.md section 6 (contact@, sales@ and privacy@ mailboxes at flighthoursolution.com; mail hosted at zenbox.pl; the three phone numbers; WhatsApp link)",
+    "docs/research/01-company-profile.md section 8 (template privacy policy naming Poland; revised FADP in force since September 2023 and GDPR for EU clients; an Impressum with legal entity, UID and address expected and missing) and section 9 (open questions: public role of the managing director, primary phone, house number)",
+    "docs/research/01-company-profile.md section 10 (Zefix entity 1658864, https://www.zefix.ch/en/search/entity/list/firm/1658864)",
+    "docs/research/02-website-content-inventory.md section 2 (footer contact block: +41 76 595 88 61, contact@flighthoursolution.com, Bahnhofplatz 6300 Zug, WhatsApp; old form and consent wording; CookieYes banner on the old site)",
+    "docs/research/02-website-content-inventory.md section 8 (old privacy policy: TermsFeed template, Last updated November 22, 2024, names Poland, privacy@ contact, no controller, legal bases, retention or processors)",
+    "docs/research/03-brand-assets.md (logo and colours are the client's own; Nunito from Google Fonts on the old site flagged as a privacy issue; imagery licensing flags)",
+    "docs/research/04-technical-audit.md section 1 (old site hosted at zenbox.pl, Cyber_Folks S.A., Poland; MX records mx1, mx2, mx3 at zenbox.pl; Google Fonts and a reCAPTCHA loader on every old page; no analytics on the old site), section 5 (cookie banner shown although no analytics cookies were set), section 7 (privacy and legal findings) and section 9 item 2 (FADP/GDPR notice, Impressum and cookie notice as the fix)",
+    "docs/research/05-competitor-benchmark.md section 6 (trust-signal checklist: legal entity name, UID, registered Zug address, Impressum, privacy notice under the Swiss FADP and GDPR, cookie consent)",
+    "docs/research/06-market-context-and-seo.md section 5.2 (never imply approvals or clearances not held; do not present the firm as an MRO, lessor or parts supplier) and section 5.3 (plain English, short sentences)",
+    "docs/research/07-recommendations-and-brief.md section 2.4 (Flight Hour Solution GmbH in footer and Impressum, Flight Hour Solution in prose), section 3 (audiences), section 6 (real photography to replace stock and generated imagery), section 8 (CRM and spam protection options), section 9 (legal row: Impressum with GmbH, UID, address, managing director; FADP/GDPR notice naming processors; cookie notice matching actual cookies; analytics row; email row), section 10 item 2 and section 11 (legal pages reviewed by counsel)",
+    "docs/research/08-locomotive-design-blueprint.md section 8.3 row 10 (footer with company name, address, UID and the legal links Impressum, Privacy and Cookies)",
+    "site/README.md (Higgsfield website platform: React 19 + TanStack Start server-rendered on a Cloudflare Worker; review address flighthoursolution.higgsfield.app; contact form server function with RESEND_API_KEY, ENQUIRY_TO and ENQUIRY_FROM and an email fallback; no personal data stored on the server; no analytics and no marketing cookies; self-hosted IBM Plex under the SIL Open Font License; film and illustrations generated with Higgsfield on 19 September 2026)",
+    "docs/website/README.md (platform choice and deviations; the review address answers 401 to visitors not signed in to Higgsfield; reduced-motion users never fetch the film; email provider key and launch domain still to be decided)",
+    "site/app/src/site/enquiry.functions.ts (validated fields including assetType and assetModel; subject Website enquiry or Asset request; email through api.resend.com to ENQUIRY_TO or contact@flighthoursolution.com with reply_to set to the visitor; honeypot field; mailto fallback when no key is configured; nothing written to storage; only a status code logged on failure; checked 20 September 2026)",
+    "site/app/src/components/site/EnquiryForm.tsx, site/app/src/routes/assets.tsx and site/app/src/content/assets.json (one form component: the Contact page renders the contact.json fields, the Assets page the assets.json requestForm fields with the contact.json consent text and success copy and the subject Asset request; hidden honeypot field; no CAPTCHA; mailto fallback text; checked 20 September 2026)",
+    "site/app/src/routes/careers.tsx (applications by email through a mailto link under How to apply)",
+    "site/app/src/lib/security-headers.server.ts and site/app/src/server.ts (Strict-Transport-Security, Content-Security-Policy, X-Content-Type-Options, Referrer-Policy and Permissions-Policy on every response; legacy redirects; no Set-Cookie)",
+    "site/app/app.manifest.json (db, r2 and kv false, no durable object: no server-side storage provisioned) and site/app/wrangler.jsonc (Cloudflare Worker, observability enabled, assets served from the same origin)",
+    "site/app/src/routes/__root.tsx, site/app/src/site/fonts.css and site/app/src/styles.css (same-origin stylesheets, fonts and scripts only; IBM Plex Sans and Mono from /fonts; no analytics tag; lang en)",
+    "site/app/src/components/site/MotionProvider.tsx and PageMotion.tsx (prefers-reduced-motion read through matchMedia; no browser storage)",
+    "site/app/src/lib/higgsfield-error-reporting.ts and site/app/vite.config.ts (error hook fires only if the platform provides window.__higgsfieldEvents; design inspector enabled only with HF_DESIGN_INSPECTOR=1 or design mode)",
+    "Source review of site/app/src on 19 September 2026, repeated 20 September 2026: no localStorage, sessionStorage or document.cookie use in the site's own code; the root layout (src/routes/__root.tsx) injects no theme or storage script; the template sidebar component that sets a sidebar_state cookie is not imported by any page; no analytics dependency in site/app/package.json",
+    "Live check on 19 September 2026, repeated 20 September 2026: https://flighthoursolution.higgsfield.app answers with the header server: cloudflare and no Set-Cookie header; the review address returns 401 to visitors who are not signed in to Higgsfield",
+    "Swiss Federal Act on Data Protection (FADP, SR 235.1), https://www.fedlex.admin.ch/eli/cc/2022/491/en: principles (Article 6), cross-border disclosure (Articles 16 and 17), right of access with a 30-day answer (Article 25), data portability (Article 28), rectification, deletion and objection (Article 32)",
+    "EU General Data Protection Regulation (Regulation (EU) 2016/679), https://eur-lex.europa.eu/eli/reg/2016/679/oj: legal bases in Article 6(1)(a), (b) and (f); response within one month in Article 12(3); information duties in Article 13; rights in Articles 15 to 21; representative in Article 27; transfers in Articles 44 to 49; complaint in Article 77",
+    "Swiss Code of Obligations (SR 220), https://www.fedlex.admin.ch/eli/cc/27/317_321_377/en: ten-year retention of business records in Article 958f",
+    "Swiss Telecommunications Act (SR 784.10), https://www.fedlex.admin.ch/eli/cc/1997/2187_2187_2187/en: Article 45c on processing data on external equipment (information and the right to refuse)",
+    "EU ePrivacy Directive (Directive 2002/58/EC), https://eur-lex.europa.eu/eli/dir/2002/58/oj: Article 5(3) on storage of and access to information on terminal equipment and the strictly necessary exemption",
+    "Federal Data Protection and Information Commissioner (FDPIC), https://www.edoeb.admin.ch/ (Swiss supervisory authority; recognition of the EU standard contractual clauses with Swiss additions)",
+    "Provider locations: Cloudflare and Resend are United States companies according to their public terms; the contracting entities and data processing terms in force through the platform are to be confirmed (see privacy clientToConfirm)",
+    "site/content-brief/VOICE-AND-FACTS.md (Legal: Impressum with GmbH, UID CHE-196.248.398, address, managing director; privacy notice under the Swiss FADP and GDPR naming actual processors, Cloudflare through the Higgsfield hosting platform, the contact form sends an email, no analytics, no marketing cookies; cookie notice stating that only technically necessary storage is used; entity naming; no dashes; British English) and site/content-brief/CONTENT-SCHEMA.md (legal.json shape)",
+    "site/app/src/content/site.json, contact.json and about.json (legal entity lines, phone, email, WhatsApp, LinkedIn and register URL reused verbatim so the legal pages match the footer, the contact page and the About page)"
+  ]
+}

@@ -129,6 +129,10 @@ html.site.is-menu-open {
 .o-section--flush {
   padding-block: 0;
 }
+/* A document body that follows a page intro sits close under it. */
+.c-page-intro + .o-section--tight {
+  padding-top: var(--space-small);
+}
 .o-section--raised {
   background: var(--bg-raised);
 }
@@ -1076,6 +1080,10 @@ html.site.is-menu-open {
 }
 .c-prose > * + * {
   margin-top: var(--space-small);
+}
+.c-prose > :first-child > h2:first-child,
+.c-prose > h2:first-child {
+  margin-top: 0;
 }
 .c-prose h2 {
   margin-top: var(--space-large);

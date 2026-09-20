@@ -7,6 +7,7 @@ import { Section, SectionHead } from "@/components/site/Section";
 import { Steps } from "@/components/site/Steps";
 import { assets, contact } from "@/site/content";
 import { pageHead } from "@/site/seo";
+import { capitalise, formatDate } from "@/site/format";
 
 export const Route = createFileRoute("/assets")({
   head: () => pageHead({ title: assets.seoTitle.replace(/\s*\|\s*Flight Hour Solution$/i, ""), description: assets.metaDescription, path: "/assets" }),
@@ -42,8 +43,10 @@ function AssetsPage() {
               <tbody>
                 {assets.recentActivity.map((r, i) => (
                   <tr key={i}>
-                    <td className="c-mono">{r.date}</td>
-                    <td className="c-mono">{r.type}</td>
+                    <td className="c-mono">
+                      <time dateTime={r.date}>{formatDate(r.date)}</time>
+                    </td>
+                    <td className="c-mono">{capitalise(r.type)}</td>
                     <td>{r.item}</td>
                     <td>{r.text}</td>
                   </tr>
@@ -64,7 +67,11 @@ function AssetsPage() {
             </p>
           </div>
           <div className="c-split__main">
-            <EnquiryForm form={contact.form} id="asset-request" />
+            <EnquiryForm
+              form={assets.requestForm ? { ...contact.form, fields: assets.requestForm.fields } : contact.form}
+              id="asset-request"
+              variant="asset"
+            />
           </div>
         </div>
       </Section>

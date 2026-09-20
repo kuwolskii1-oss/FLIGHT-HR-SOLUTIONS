@@ -7,7 +7,7 @@ import { Section } from "@/components/site/Section";
 import { SmartLink } from "@/components/site/SmartLink";
 import { insights, sortedArticles } from "@/site/content";
 import { pageHead } from "@/site/seo";
-import { formatDate } from "../index";
+import { formatDate } from "@/site/format";
 
 export const Route = createFileRoute("/insights/")({
   head: () => pageHead({ title: insights.seoTitle.replace(/\s*\|\s*Flight Hour Solution$/i, ""), description: insights.metaDescription, path: "/insights" }),

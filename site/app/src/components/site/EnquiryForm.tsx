@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { site } from "@/site/content";
-import type { ContactContent } from "@/site/types";
+import type { ContactContent, FormField } from "@/site/types";
 import { submitEnquiry } from "@/site/enquiry.functions";
 import { CtaSubmit } from "./Cta";
 
@@ -11,91 +11,169 @@ type Status =
   | { kind: "mailto"; href: string }
   | { kind: "error"; message: string };
 
-const FIELD_KEYS = ["name", "company", "role", "email", "phone", "engineFamily", "need", "message"] as const;
+/* Every field the server accepts. A form renders the subset its content lists, in this order. */
+const FIELD_KEYS = ["name", "company", "email", "phone", "role", "assetType", "assetModel", "engineFamily", "need", "message"] as const;
+type FieldKey = (typeof FIELD_KEYS)[number];
 
-export function EnquiryForm({ form, id = "enquiry" }: { form: ContactContent["form"]; id?: string }) {
+const INPUT_TYPE: Partial<Record<FieldKey, string>> = { email: "email", phone: "tel" };
+const AUTOCOMPLETE: Partial<Record<FieldKey, string>> = {
+  name: "name",
+  company: "organization",
+  email: "email",
+  phone: "tel",
+  role: "organization-title",
+};
+const LINE_LABEL: Record<FieldKey, string> = {
+  name: "Name",
+  company: "Company",
+  email: "Email",
+  phone: "Phone",
+  role: "Role",
+  assetType: "Asset type",
+  assetModel: "Engine or aircraft type",
+  engineFamily: "Engine family",
+  need: "Need",
+  message: "Message",
+};
+
+export type EnquiryFormContent = Pick<
+  ContactContent["form"],
+  "fields" | "consentText" | "submitLabel" | "successTitle" | "successText" | "responsePromise"
+>;
+
+export function EnquiryForm({
+  form,
+  id = "enquiry",
+  variant = "enquiry",
+}: {
+  form: EnquiryFormContent;
+  id?: string;
+  /** "asset" labels the email as an asset request (offered or wanted). */
+  variant?: "enquiry" | "asset";
+}) {
   const [status, setStatus] = useState<Status>({ kind: "idle" });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const fields = FIELD_KEYS.map((k) => form.fields.find((f) => f.name === k)).filter((f): f is FormField => !!f);
+  const fieldByName = (name: FieldKey) => fields.find((f) => f.name === name);
+  const subject = variant === "asset" ? "Asset request" : "Website enquiry";
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const fd = new FormData(e.currentTarget);
+    const formEl = e.currentTarget;
+    const fd = new FormData(formEl);
     const values: Record<string, string> = {};
-    for (const k of FIELD_KEYS) values[k] = String(fd.get(k) ?? "");
+    for (const k of FIELD_KEYS) values[k] = String(fd.get(k) ?? "").trim();
     const consent = fd.get("consent") === "on";
     const nextErrors: Record<string, string> = {};
-    if (values.name.trim().length < 2) nextErrors.name = "Please enter your name.";
-    if (!values.company.trim()) nextErrors.company = "Please enter your company.";
-    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(values.email)) nextErrors.email = "Please enter a valid email address.";
-    if (values.message.trim().length < 10) nextErrors.message = "Please tell us a little more (at least 10 characters).";
+    for (const f of fields) {
+      const v = values[f.name] ?? "";
+      if (f.required && !v) nextErrors[f.name] = `Please fill in ${f.label.toLowerCase()}.`;
+    }
+    if (fieldByName("name") && values.name.length > 0 && values.name.length < 2) nextErrors.name = "Please enter your name.";
+    if (fieldByName("email") && values.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(values.email))
+      nextErrors.email = "Please enter a valid email address.";
+    if (fieldByName("message") && values.message && values.message.length < 10)
+      nextErrors.message = "Please tell us a little more (at least 10 characters).";
     if (!consent) nextErrors.consent = "Please confirm that we may use your details to reply.";
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length) return;
 
     setStatus({ kind: "busy" });
-    const mailto = buildMailto(values);
+    const mailto = buildMailto(subject, values);
     try {
       const result = await submitEnquiry({
-        data: { ...values, consent: true, website: String(fd.get("website") ?? "") },
+        data: { ...values, subject, consent: true, website: String(fd.get("website") ?? "") },
       });
       if (result.ok) {
         setStatus({ kind: "sent" });
-        e.currentTarget.reset();
+        formEl.reset();
       } else {
         setStatus({ kind: "mailto", href: mailto });
-        window.location.href = mailto;
+        window.location.assign(mailto);
       }
     } catch {
       setStatus({ kind: "mailto", href: mailto });
     }
   };
 
-  const fieldByName = (name: string) => form.fields.find((f) => f.name === name);
-  const textField = (name: (typeof FIELD_KEYS)[number], type = "text", autoComplete?: string) => {
-    const f = fieldByName(name);
-    if (!f) return null;
-    const err = errors[name];
+  const labelFor = (f: FormField) => (
+    <label className="c-field__label" htmlFor={`${id}-${f.name}`}>
+      {f.label} {f.required ? null : <small>(optional)</small>}
+    </label>
+  );
+  const errorFor = (f: FormField) =>
+    errors[f.name] ? (
+      <p className="c-field__error" id={`${id}-${f.name}-error`}>
+        {errors[f.name]}
+      </p>
+    ) : f.hint ? (
+      <p className="c-field__hint" id={`${id}-${f.name}-hint`}>
+        {f.hint}
+      </p>
+    ) : null;
+  const describedBy = (f: FormField) =>
+    errors[f.name] ? `${id}-${f.name}-error` : f.hint ? `${id}-${f.name}-hint` : undefined;
+
+  const renderField = (f: FormField) => {
+    const name = f.name as FieldKey;
+    if (name === "message") {
+      return (
+        <div className="c-field" key={name}>
+          {labelFor(f)}
+          <textarea
+            className="c-field__textarea"
+            id={`${id}-${name}`}
+            name={name}
+            required={f.required}
+            aria-required={f.required || undefined}
+            aria-invalid={errors[name] ? true : undefined}
+            aria-describedby={describedBy(f)}
+          />
+          {errorFor(f)}
+        </div>
+      );
+    }
+    if (f.type === "select") {
+      const options = f.options?.length ? f.options : name === "engineFamily" ? site.engineFamilies.map((x) => x.name) : [];
+      return (
+        <div className="c-field" key={name}>
+          {labelFor(f)}
+          <select
+            className="c-field__select"
+            id={`${id}-${name}`}
+            name={name}
+            defaultValue=""
+            required={f.required}
+            aria-required={f.required || undefined}
+            aria-invalid={errors[name] ? true : undefined}
+            aria-describedby={describedBy(f)}
+          >
+            <option value="">Please choose</option>
+            {options.map((o) => (
+              <option key={o} value={o}>
+                {o}
+              </option>
+            ))}
+          </select>
+          {errorFor(f)}
+        </div>
+      );
+    }
     return (
-      <div className="c-field">
-        <label className="c-field__label" htmlFor={`${id}-${name}`}>
-          {f.label} {f.required ? null : <small>(optional)</small>}
-        </label>
+      <div className="c-field" key={name}>
+        {labelFor(f)}
         <input
           className="c-field__input"
           id={`${id}-${name}`}
           name={name}
-          type={type}
+          type={INPUT_TYPE[name] ?? "text"}
           required={f.required}
           aria-required={f.required || undefined}
-          aria-invalid={err ? true : undefined}
-          aria-describedby={err ? `${id}-${name}-error` : undefined}
-          autoComplete={autoComplete}
+          aria-invalid={errors[name] ? true : undefined}
+          aria-describedby={describedBy(f)}
+          autoComplete={AUTOCOMPLETE[name]}
         />
-        {err ? (
-          <p className="c-field__error" id={`${id}-${name}-error`}>
-            {err}
-          </p>
-        ) : null}
-      </div>
-    );
-  };
-  const selectField = (name: (typeof FIELD_KEYS)[number], fallbackOptions: string[]) => {
-    const f = fieldByName(name);
-    if (!f) return null;
-    const options = f.options?.length ? f.options : fallbackOptions;
-    return (
-      <div className="c-field">
-        <label className="c-field__label" htmlFor={`${id}-${name}`}>
-          {f.label} {f.required ? null : <small>(optional)</small>}
-        </label>
-        <select className="c-field__select" id={`${id}-${name}`} name={name} defaultValue="">
-          <option value="">Please choose</option>
-          {options.map((o) => (
-            <option key={o} value={o}>
-              {o}
-            </option>
-          ))}
-        </select>
+        {errorFor(f)}
       </div>
     );
   };
@@ -109,50 +187,26 @@ export function EnquiryForm({ form, id = "enquiry" }: { form: ContactContent["fo
     );
   }
 
-  const messageField = fieldByName("message");
+  /* Short fields pair up in rows; selects and the message run full width. */
+  const rows: FormField[][] = [];
+  for (const f of fields) {
+    const wide = f.name === "message" || f.type === "select";
+    const last = rows[rows.length - 1];
+    if (!wide && last && last.length === 1 && last[0].type !== "select" && last[0].name !== "message") last.push(f);
+    else rows.push([f]);
+  }
+
   return (
     <form className="c-form" onSubmit={onSubmit} noValidate aria-labelledby={`${id}-title`}>
-      <div className="c-form__row">
-        {textField("name", "text", "name")}
-        {textField("company", "organization", "organization")}
-      </div>
-      <div className="c-form__row">
-        {textField("email", "email", "email")}
-        {textField("phone", "tel", "tel")}
-      </div>
-      <div className="c-form__row">
-        {textField("role", "text", "organization-title")}
-        {selectField(
-          "engineFamily",
-          site.engineFamilies.map((f) => f.name),
-        )}
-      </div>
-      {selectField("need", [])}
-      {messageField ? (
-        <div className="c-field">
-          <label className="c-field__label" htmlFor={`${id}-message`}>
-            {messageField.label}
-          </label>
-          <textarea
-            className="c-field__textarea"
-            id={`${id}-message`}
-            name="message"
-            required
-            aria-required="true"
-            aria-invalid={errors.message ? true : undefined}
-            aria-describedby={errors.message ? `${id}-message-error` : `${id}-message-hint`}
-          />
-          {errors.message ? (
-            <p className="c-field__error" id={`${id}-message-error`}>
-              {errors.message}
-            </p>
-          ) : messageField.hint ? (
-            <p className="c-field__hint" id={`${id}-message-hint`}>
-              {messageField.hint}
-            </p>
-          ) : null}
-        </div>
-      ) : null}
+      {rows.map((row) =>
+        row.length === 2 ? (
+          <div className="c-form__row" key={row.map((f) => f.name).join("+")}>
+            {row.map(renderField)}
+          </div>
+        ) : (
+          renderField(row[0])
+        ),
+      )}
       <div className="u-visually-hidden" aria-hidden="true">
         <label htmlFor={`${id}-website`}>Leave this field empty</label>
         <input id={`${id}-website`} name="website" type="text" tabIndex={-1} autoComplete="off" />
@@ -196,20 +250,12 @@ export function EnquiryForm({ form, id = "enquiry" }: { form: ContactContent["fo
   );
 }
 
-function buildMailto(v: Record<string, string>) {
-  const subject = `Website enquiry from ${v.name} (${v.company})`;
-  const body = [
-    `Name: ${v.name}`,
-    `Company: ${v.company}`,
-    v.role ? `Role: ${v.role}` : "",
-    `Email: ${v.email}`,
-    v.phone ? `Phone: ${v.phone}` : "",
-    v.engineFamily ? `Engine family: ${v.engineFamily}` : "",
-    v.need ? `Need: ${v.need}` : "",
-    "",
-    v.message,
-  ]
-    .filter(Boolean)
-    .join("\n");
+export function enquiryLines(v: Record<string, string | undefined>) {
+  return FIELD_KEYS.filter((k) => k !== "message" && v[k]).map((k) => `${LINE_LABEL[k]}: ${v[k]}`);
+}
+
+function buildMailto(subjectPrefix: string, v: Record<string, string>) {
+  const subject = `${subjectPrefix} from ${v.name} (${v.company})`;
+  const body = [...enquiryLines(v), "", v.message].join("\n");
   return `mailto:${site.company.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }

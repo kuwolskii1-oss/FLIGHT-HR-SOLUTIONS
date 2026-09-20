@@ -18,7 +18,7 @@ function Page() {
   return (
     <main id="main" tabIndex={-1}>
       <PageIntro eyebrow="Legal" title={doc.title} theme="light" lead={"updated" in doc ? `Last updated ${(doc as { updated: string }).updated}` : undefined} />
-      <Section theme="light" id="content">
+      <Section theme="light" id="content" tight>
         <div className="c-prose">
           {sections.map((s) => (
             <div key={s.title}>
