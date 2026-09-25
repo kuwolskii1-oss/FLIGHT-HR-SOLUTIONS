@@ -21,3 +21,11 @@ six); they share the brand world on purpose.
 - A scroll-drawn logo lock-up as the hero and signature move (fhs-za).
 - Pinned cued steps as the "how we work" device (fhs-za).
 - The one-question close with a single button (fhs-za).
+
+## Notes
+
+- 25 September 2026: the fhs-za row's World changed with the wayfinding UI refresh (night navy
+  and a cool cloud ground, Plex Sans Condensed display, Streamline Guidance pictograms, a
+  departure board, a boarding pass, a flight plan, a dusk-horizon footer with a curtain). Grammar,
+  nav, hero device, act shape, close and signature move are unchanged, so the row still stands.
+  See `docs/website-za/ui-refresh.md`.

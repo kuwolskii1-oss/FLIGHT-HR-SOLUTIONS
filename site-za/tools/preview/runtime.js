@@ -70,6 +70,7 @@
       if (changed && !section && !opts.first) bySlug[slug].focus({ preventScroll: true });
       segmentedAll();
       headerUpdate();
+      footerMeasure();
     };
     if (changed && !reduce && !opts.first && document.startViewTransition) {
       var vt = document.startViewTransition(swap);
@@ -152,6 +153,7 @@
 
   // ---- header: mobile panel ---------------------------------------------------------------------
   var menuOpen = false;
+  var menuHideTimer = 0;
   function focusables() { return $$('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])', menu); }
   function onMenuKey(e) {
     if (e.key === "Escape") { closeMenu(); burger.focus(); }
@@ -170,7 +172,9 @@
     burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     $(".t-icon-swap", burger).setAttribute("data-state", open ? "b" : "a");
     menu.setAttribute("data-open", String(open));
-    menu.hidden = !open;
+    clearTimeout(menuHideTimer);
+    if (open) menu.hidden = false;
+    else menuHideTimer = setTimeout(function () { if (!menuOpen) menu.hidden = true; }, 420);
     if (open) {
       menu.setAttribute("aria-modal", "true");
       header.classList.remove("is-hidden");
@@ -351,6 +355,63 @@
     raf = requestAnimationFrame(tick);
   });
 
+  // ---- footer: parallax (--fp) and the curtain (ports SiteFooter.tsx) -----------------------------------
+  var footerMeasure = function () {};
+  (function () {
+    var f = $(".c-footer");
+    if (!f) return;
+    if (reduce) { f.style.setProperty("--fp", "1"); return; }
+    var raf = 0;
+    var update = function () {
+      raf = 0;
+      var h = f.offsetHeight;
+      var start = root.scrollHeight - h;
+      var p = Math.min(1, Math.max(0, (window.scrollY + window.innerHeight - start) / Math.max(h, 1)));
+      f.style.setProperty("--fp", p.toFixed(4));
+    };
+    var onScroll = function () { if (!raf) raf = requestAnimationFrame(update); };
+    footerMeasure = function () {
+      root.classList.toggle("has-curtain", window.innerWidth >= 1000 && f.offsetHeight <= window.innerHeight - 24);
+      onScroll();
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", footerMeasure);
+  })();
+
+  // ---- door board: the kinetic list (ports DoorBoard.tsx; CSS hover stands in without GSAP) ------------
+  (function () {
+    var g = window.gsap, CE = window.CustomEase;
+    if (!g || !CE || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+    g.registerPlugin(CE);
+    var EASE = "fhs-board";
+    if (!g.parseEase(EASE)) CE.create(EASE, "0.65, 0.01, 0.05, 0.99");
+    var t = function (s) { return reduce ? 0 : s; };
+    $$(".c-board").forEach(function (board) {
+      board.classList.add("is-kinetic");
+      $$(".c-board__item", board).forEach(function (item) {
+        var fill = $(".c-board__fill", item), els = $$(".c-board__el", item), rolls = $$(".c-roll__line", item);
+        var enter = function () {
+          item.classList.add("is-active");
+          g.set(fill, { transformOrigin: "left center" });
+          g.to(fill, { scaleX: 1, duration: t(0.5), ease: EASE, overwrite: "auto" });
+          g.to(rolls, { yPercent: -100, duration: t(0.45), ease: EASE, overwrite: "auto" });
+          g.fromTo(els, { scale: 0.6, opacity: 0, rotation: -8, transformOrigin: "50% 50%" }, { scale: 1, opacity: 1, rotation: 0, duration: t(0.5), stagger: t(0.06), delay: t(0.08), ease: "power3.out", overwrite: "auto" });
+        };
+        var leave = function () {
+          item.classList.remove("is-active");
+          g.set(fill, { transformOrigin: "right center" });
+          g.to(fill, { scaleX: 0, duration: t(0.4), ease: EASE, overwrite: "auto" });
+          g.to(rolls, { yPercent: 0, duration: t(0.35), ease: EASE, overwrite: "auto" });
+          g.to(els, { scale: 0.85, opacity: 0, duration: t(0.25), ease: "power2.in", overwrite: "auto" });
+        };
+        item.addEventListener("pointerenter", enter);
+        item.addEventListener("pointerleave", leave);
+        item.addEventListener("focusin", function (e) { if (e.target.matches(":focus-visible")) enter(); });
+        item.addEventListener("focusout", leave);
+      });
+    });
+  })();
+
   // ---- start ------------------------------------------------------------------------------------------
   if (reduce) {
     root.classList.add("sc-reduce");
@@ -369,5 +430,6 @@
   headerUpdate();
   $$("form.c-form").forEach(conditional);
   window.addEventListener("hashchange", function () { var h = parseHash(); show(h.slug, h.section); });
-  window.addEventListener("load", function () { relayout(); segmentedAll(); });
+  footerMeasure();
+  window.addEventListener("load", function () { relayout(); segmentedAll(); footerMeasure(); });
 })();

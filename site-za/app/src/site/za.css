@@ -178,9 +178,15 @@
     display: none;
   }
 }
+/* On phones the urgent pill shows its icon only; the label stays in the accessibility tree. */
 @media (max-width: 560px) {
   .c-header__actions .c-cta-urgent--small span {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
   }
 }
 

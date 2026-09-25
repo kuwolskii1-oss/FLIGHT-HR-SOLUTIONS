@@ -4,3 +4,6 @@
 .c-skip{top:calc(env(safe-area-inset-top,0px) + var(--space-tiny))}
 .c-menu{top:env(safe-area-inset-top,0px)}
 main[hidden],.c-field[hidden]{display:none!important}
+/* The footer curtain: the site lifts #main off the footer; here every page's <main> carries a
+   prefixed id, so the rule targets the page bodies instead. */
+html.has-curtain main[data-page]{position:relative;z-index:1;background:var(--color-paper);box-shadow:0 40px 80px -30px rgb(0 0 0 / .65)}

@@ -4,6 +4,8 @@ import { site } from "@/site/data/site";
 import { CtaTalk, CtaUrgent } from "./Cta";
 import { SmartLink } from "./SmartLink";
 import { Chevron, Close, Menu } from "./Icons";
+import { PictoTile } from "./Pictogram";
+import { DOOR_PICTO } from "@/site/wayfinding";
 
 /**
  * Fixed header. Five doors and About as visible links on desktop, each with a dropdown of its
@@ -15,6 +17,8 @@ export function SiteHeader() {
   const headerRef = useRef<HTMLElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
+  // The panel stays mounted (not hidden) while its close choreography runs.
+  const [shown, setShown] = useState(false);
   const [dropdown, setDropdown] = useState<string | null>(null);
   const closing = useRef<number | null>(null);
   const menuId = useId();
@@ -35,7 +39,10 @@ export function SiteHeader() {
       header.classList.toggle("is-scrolled", y > 16);
       const goingDown = y > lastY + 4;
       const goingUp = y < lastY - 4;
-      if (!header.classList.contains("is-menu-open") && !header.classList.contains("has-dropdown")) {
+      if (
+        !header.classList.contains("is-menu-open") &&
+        !header.classList.contains("has-dropdown")
+      ) {
         if (goingDown && y > 360) header.classList.add("is-hidden");
         else if (goingUp || y < 120) header.classList.remove("is-hidden");
       }
@@ -84,7 +91,9 @@ export function SiteHeader() {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         closeDropdown();
-        header?.querySelector<HTMLElement>(`[data-group="${dropdown}"] .c-navgroup__toggle`)?.focus();
+        header
+          ?.querySelector<HTMLElement>(`[data-group="${dropdown}"] .c-navgroup__toggle`)
+          ?.focus();
       }
     };
     const onDown = (e: PointerEvent) => {
@@ -98,6 +107,19 @@ export function SiteHeader() {
     };
   }, [dropdown]);
 
+  const shownTimer = useRef<number | null>(null);
+  const setMenu = (next: boolean) => {
+    if (shownTimer.current) window.clearTimeout(shownTimer.current);
+    shownTimer.current = null;
+    if (next) {
+      setShown(true);
+      setOpen(true);
+    } else {
+      setOpen(false);
+      shownTimer.current = window.setTimeout(() => setShown(false), 420);
+    }
+  };
+
   // Mobile panel: body scroll lock, focus management, Escape and Tab trapping.
   useEffect(() => {
     const root = document.documentElement;
@@ -107,11 +129,16 @@ export function SiteHeader() {
     header?.classList.toggle("is-menu-open", open);
     if (!open || !menu) return;
     header?.classList.remove("is-hidden");
-    const focusable = () => Array.from(menu.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+    const focusable = () =>
+      Array.from(
+        menu.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        ),
+      );
     focusable()[0]?.focus({ preventScroll: true });
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        setOpen(false);
+        setMenu(false);
         header?.querySelector<HTMLElement>(".c-header__burger")?.focus();
       }
       if (e.key === "Tab") {
@@ -132,7 +159,9 @@ export function SiteHeader() {
     return () => document.removeEventListener("keydown", onKey);
   }, [open]);
 
-  const fine = () => typeof window !== "undefined" && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  const fine = () =>
+    typeof window !== "undefined" &&
+    window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
   return (
     <>
@@ -142,8 +171,22 @@ export function SiteHeader() {
       <header ref={headerRef} className="c-header" data-theme="dark">
         <div className="o-container c-header__inner">
           <SmartLink href="/" className="c-header__logo" aria-label={`${company.shortName}, home`}>
-            <img className="c-header__logo-img c-header__logo-img--on-dark" src="/brand/logo-light.svg" alt="" width={272} height={64} decoding="async" />
-            <img className="c-header__logo-img c-header__logo-img--on-light" src="/brand/logo.svg" alt="" width={272} height={64} decoding="async" />
+            <img
+              className="c-header__logo-img c-header__logo-img--on-dark"
+              src="/brand/logo-light.svg"
+              alt=""
+              width={272}
+              height={64}
+              decoding="async"
+            />
+            <img
+              className="c-header__logo-img c-header__logo-img--on-light"
+              src="/brand/logo.svg"
+              alt=""
+              width={272}
+              height={64}
+              decoding="async"
+            />
           </SmartLink>
           <nav className="c-header__nav" aria-label="Primary">
             <ul className="c-header__list">
@@ -177,11 +220,26 @@ export function SiteHeader() {
                     >
                       <Chevron width={14} height={14} />
                     </button>
-                    <div id={panelId} className={`c-dropdown t-dropdown${isOpen ? " is-open" : ""}`} data-origin="top-left">
+                    <div
+                      id={panelId}
+                      className={`c-dropdown t-dropdown${isOpen ? " is-open" : ""}`}
+                      data-origin="top-left"
+                    >
+                      {DOOR_PICTO[g.href.replace(/^\//, "")] ? (
+                        <PictoTile
+                          name={DOOR_PICTO[g.href.replace(/^\//, "")]}
+                          size="lg"
+                          className="c-dropdown__tile"
+                        />
+                      ) : null}
                       <ul className="c-dropdown__list">
                         {g.items.map((item) => (
                           <li key={item.href}>
-                            <SmartLink href={item.href} className="c-dropdown__link" tabIndex={isOpen ? 0 : -1}>
+                            <SmartLink
+                              href={item.href}
+                              className="c-dropdown__link"
+                              tabIndex={isOpen ? 0 : -1}
+                            >
                               <span>{item.label}</span>
                               {item.note ? <span className="c-badge">{item.note}</span> : null}
                             </SmartLink>
@@ -197,7 +255,14 @@ export function SiteHeader() {
           <div className="c-header__actions">
             <CtaUrgent href={cta.urgent.href} label={cta.urgent.label} small />
             <CtaTalk href={cta.primary.href} label={cta.primary.label} small />
-            <button type="button" className="c-header__burger" aria-expanded={open} aria-controls={menuId} aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen((v) => !v)}>
+            <button
+              type="button"
+              className="c-header__burger"
+              aria-expanded={open}
+              aria-controls={menuId}
+              aria-label={open ? "Close menu" : "Open menu"}
+              onClick={() => setMenu(!open)}
+            >
               <span className="t-icon-swap" data-state={open ? "b" : "a"}>
                 <span className="t-icon" data-icon="a">
                   <Menu width={22} height={22} />
@@ -210,17 +275,36 @@ export function SiteHeader() {
           </div>
         </div>
       </header>
-      <div ref={menuRef} id={menuId} className="c-menu t-panel-slide" data-open={open} role="dialog" aria-modal={open || undefined} aria-label="Menu" hidden={!open}>
+      <div
+        ref={menuRef}
+        id={menuId}
+        className="c-menu"
+        data-open={open}
+        role="dialog"
+        aria-modal={open || undefined}
+        aria-label="Menu"
+        hidden={!open && !shown}
+      >
+        <div className="c-menu__layers" aria-hidden="true">
+          <span className="c-menu__layer" />
+          <span className="c-menu__layer" />
+          <span className="c-menu__layer" />
+        </div>
         <div className="o-container c-menu__inner">
           <nav className="c-menu__primary" aria-label="Menu">
             <ul>
-              {groups.map((g) => (
-                <MenuGroup key={g.href} label={g.label} href={g.href} items={g.items} />
+              {groups.map((g, i) => (
+                <MenuGroup key={g.href} label={g.label} href={g.href} items={g.items} index={i} />
               ))}
-              <li>
-                <SmartLink href={nav.contact.href} className="c-menu__link">
-                  {nav.contact.label}
-                </SmartLink>
+              <li className="c-menu__item" style={{ ["--i" as string]: groups.length }}>
+                <div className="c-menu__row">
+                  <span className="c-menu__rise">
+                    <SmartLink href={nav.contact.href} className="c-menu__link">
+                      <PictoTile name="chat" size="sm" className="c-menu__tile" />
+                      {nav.contact.label}
+                    </SmartLink>
+                  </span>
+                </div>
               </li>
             </ul>
           </nav>
@@ -240,16 +324,37 @@ export function SiteHeader() {
   );
 }
 
-function MenuGroup({ label, href, items }: { label: string; href: string; items: { label: string; href: string; note?: string }[] }) {
+function MenuGroup({
+  label,
+  href,
+  items,
+  index,
+}: {
+  label: string;
+  href: string;
+  items: { label: string; href: string; note?: string }[];
+  index: number;
+}) {
   const [open, setOpen] = useState(false);
   const id = useId();
+  const picto = DOOR_PICTO[href.replace(/^\//, "")];
   return (
-    <li className="c-menu__item t-acc" data-open={open}>
+    <li className="c-menu__item t-acc" data-open={open} style={{ ["--i" as string]: index }}>
       <div className="c-menu__row">
-        <SmartLink href={href} className="c-menu__link">
-          {label}
-        </SmartLink>
-        <button type="button" className="c-menu__toggle" aria-expanded={open} aria-controls={id} aria-label={`${label} sections`} onClick={() => setOpen((v) => !v)}>
+        <span className="c-menu__rise">
+          <SmartLink href={href} className="c-menu__link">
+            {picto ? <PictoTile name={picto} size="sm" className="c-menu__tile" /> : null}
+            {label}
+          </SmartLink>
+        </span>
+        <button
+          type="button"
+          className="c-menu__toggle"
+          aria-expanded={open}
+          aria-controls={id}
+          aria-label={`${label} sections`}
+          onClick={() => setOpen((v) => !v)}
+        >
           <span className="t-acc-chevron">
             <Chevron width={18} height={18} />
           </span>

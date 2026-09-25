@@ -38,6 +38,7 @@
 @import "./site/site.css";
 @import "./site/transitions.css";
 @import "./site/za.css";
+@import "./site/wayfinding.css";
 
 @custom-variant dark (&:where([data-theme="default-dark"], [data-theme="default-dark"] *));
 

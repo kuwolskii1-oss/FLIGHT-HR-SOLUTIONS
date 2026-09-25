@@ -60,8 +60,8 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     check("no horizontal overflow (1440)", await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth));
     const broken = await page.evaluate(() => Array.from(document.images).filter((i) => i.offsetParent !== null && i.complete && i.naturalWidth === 0).map((i) => i.getAttribute("src")));
     check("no broken visible images", broken.length === 0, broken);
-    const fontsOk = await page.evaluate(async () => { await document.fonts.ready; const l = Array.from(document.fonts).filter((f) => f.status === "loaded").map((f) => f.family + " " + f.weight); return { sans: l.includes("IBM Plex Sans 400"), mono: l.includes("IBM Plex Mono 400"), body: getComputedStyle(document.body).fontFamily.startsWith('"IBM Plex Sans"') }; });
-    check("brand fonts loaded", fontsOk.sans && fontsOk.mono && fontsOk.body, fontsOk);
+    const fontsOk = await page.evaluate(async () => { await document.fonts.ready; const l = Array.from(document.fonts).filter((f) => f.status === "loaded").map((f) => f.family + " " + f.weight); return { sans: l.includes("IBM Plex Sans 400"), display: l.includes("IBM Plex Sans Condensed 600"), body: getComputedStyle(document.body).fontFamily.startsWith('"IBM Plex Sans"') }; });
+    check("brand fonts loaded", fontsOk.sans && fontsOk.display && fontsOk.body, fontsOk);
     await page.screenshot({ path: path.join(shots, "desktop-home-top.png") });
     const p0 = await page.evaluate(() => document.querySelector(".c-ident").style.getPropertyValue("--ident-p"));
     await page.evaluate(() => window.scrollTo(0, window.innerHeight * 1.2));
@@ -196,6 +196,27 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     if (accPage) check("page accordion opens", acc !== null && acc.open === "true" && acc.expanded === "true", { accPage, acc });
     else notes.push("skip page accordion (none in the markup)");
 
+    // door board: the kinetic hover, and the footer curtain at the bottom of the page
+    await page.goto(base);
+    await ready(page);
+    await page.evaluate(() => document.querySelector(".c-board").scrollIntoView({ block: "center" }));
+    await sleep(1400); // let the rows' entry reveal finish before pointing at one
+    await page.hover(".c-board__item:nth-child(2)");
+    await sleep(700);
+    const board = await page.evaluate(() => {
+      const item = document.querySelector(".c-board__item:nth-child(2)");
+      const fill = item.querySelector(".c-board__fill").getBoundingClientRect();
+      return { kinetic: document.querySelector(".c-board").classList.contains("is-kinetic"), active: item.classList.contains("is-active"), fillRatio: Math.round((fill.width / item.getBoundingClientRect().width) * 100) / 100 };
+    });
+    check("door board hover runs (GSAP)", board.kinetic && board.active && board.fillRatio > 0.95, board);
+    await page.mouse.move(5, 5);
+    await page.evaluate(async () => { await document.fonts.ready; window.scrollTo(0, document.documentElement.scrollHeight); });
+    await sleep(600);
+    await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight)); // again, after late reflow
+    await sleep(500);
+    const foot = await page.evaluate(() => ({ curtain: document.documentElement.classList.contains("has-curtain"), fp: getComputedStyle(document.querySelector(".c-footer")).getPropertyValue("--fp").trim(), pos: getComputedStyle(document.querySelector(".c-footer")).position }));
+    check("footer curtain and parallax at the bottom", foot.curtain && foot.pos === "sticky" && parseFloat(foot.fp) > 0.98, foot);
+
     check("desktop: no console/network errors", errs.length === 0, errs.slice(0, 8));
     await ctx.close();
   } catch (e) { check("desktop section completed", false, [String(e).split("\n")[0], ...errs.slice(0, 5)]); }
@@ -231,7 +252,7 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     await page.click(".c-header__burger");
     await sleep(300);
     await page.keyboard.press("Escape");
-    await sleep(200);
+    await sleep(520);
     check("escape closes menu and returns focus", await page.evaluate(() => document.querySelector(".c-menu").hidden && document.activeElement === document.querySelector(".c-header__burger")));
     await page.evaluate(() => window.scrollTo(0, 0));
     await sleep(300);

@@ -2,7 +2,7 @@
 
 `scrollcraft.js` and `scrollcraft.css` are the engine of the scroll-craft skill by Nate Herk (public release 0.3.0, 4 September 2026), supplied to this project as `scrollcraft.zip`. They are copied byte for byte: the skill's rule is never to edit the engine, because the verification harness and the mobile video fixes depend on it. Page-specific behaviour lives in `src/components/site` and `src/site/site.css`.
 
-The supplied archive carried no licence file. Confirm the licence terms with the skill's author before the public launch (listed in the open questions).
+Licence: MIT, Copyright (c) 2026 Nate Herk. The archive's `LICENSE` sits at its root, outside the skill folder, which is why the first reading missed it; the text is copied beside the engine here (`LICENSE`), as MIT requires. The full skill is saved in `.claude/skills/scroll-craft/` with the same licence.
 
 Engine facts that shape the site:
 

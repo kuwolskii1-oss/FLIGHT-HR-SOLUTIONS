@@ -213,6 +213,9 @@ const doc = [
   chrome.footer,
   `<script id="preview-config" type="application/json">${JSON.stringify(config).replace(/</g, "\\u003c")}</script>`,
   `<script>${engine}</script>`,
+  // GSAP for the door board, from the artifact host's allowed CDN (the site bundles the same 3.15.0).
+  `<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>`,
+  `<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/CustomEase.min.js"></script>`,
   `<script>${runtime}</script>`,
 ].join("\n");
 

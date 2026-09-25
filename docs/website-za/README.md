@@ -77,7 +77,10 @@ Method: `site-za/tools/qa/factors.js`, `qa.js`, `interact.js` and `forms.js` aga
 - Deploys: 05:33 UTC (first), 05:41 UTC (CSP font rule, link-only closings on form pages,
   reduced-motion flow, 560 ms reveals), about 06:08 UTC (full-screen home chapters, trimmed home
   copy, uncontrolled segmented radios) and about 06:15 UTC (first pinned step lit from the act's
-  first frame), which is the build recorded here.
+  first frame), which is the build the measured checks above describe.
+- 25 September 2026, about 15:35 UTC: the wayfinding UI refresh (`docs/website-za/ui-refresh.md`,
+  with its own measured table); platform status "deployed", no error. About 15:45 UTC: the same
+  build with the icon credit linking the licence (the build now recorded).
 - Raw measurements: `factors-run3.json` (all routes), `factors-home-final.json` (home after the
   last trim), `qa-report.json` (axe, console, weight per route).
 - Runbook: `site-za/DEPLOY.md`. Higgsfield credits used by this build: 0.5 for three images.
@@ -94,6 +97,8 @@ this run did not touch the Swiss site.
 The live address (https://flighthoursolution-za.higgsfield.app) is a Higgsfield staging host. It sends anonymous visitors to the Higgsfield sign-in page, so only the account that owns the site can open it. Until the site moves to the client's own hosting, a static preview of the same production build is published as a private Claude artifact. It opens without a login for anyone the owner shares it with:
 
 https://claude.ai/artifact/8kYTmqytexPbegjqZuARM2
+
+It was republished at the same address with the wayfinding UI refresh (version 3, 25 September 2026).
 
 What the preview is: the eleven server-rendered pages of the production build in one document, with the built stylesheet, the scroll engine and the header, menu, form and ident behaviour ported to plain script (`site-za/tools/preview/`). Pages are addressed by hash (`#engines`, `#parts.form`). Forms validate as on the live site but send nothing. Two things differ from the live site: there is no server round-trip on forms, and a page change is a same-document swap with the browser's view transition instead of a full navigation.
 
