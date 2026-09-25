@@ -24,6 +24,16 @@ export function ScrollCraftMount() {
     if (mounted) return;
     mounted = true;
     let cancelled = false;
+    // Reduced motion: no pinned stages at all. Every act flows, every cue is open (za.css), the
+    // ident is finished. Done before the engine collects the acts, so it never pins anything.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("sc-reduce");
+      document.querySelectorAll<HTMLElement>('[data-sc-act="pin"], [data-sc-act="scrub"], [data-sc-act="pan"]').forEach((el) => {
+        el.setAttribute("data-sc-act", "flow");
+        el.removeAttribute("data-sc-span");
+        el.removeAttribute("data-sc-dwell");
+      });
+    }
     const mount = () => {
       if (cancelled || !window.ScrollCraft) return;
       window.ScrollCraft.mount(document.body);

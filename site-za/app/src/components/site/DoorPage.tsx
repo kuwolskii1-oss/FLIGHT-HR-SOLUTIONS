@@ -175,7 +175,7 @@ export function DoorPage({ door, route, whatsappTemplate }: { door: Door; route:
         </div>
       </section>
 
-      <ClosingBand headline={site.cta.primary.label === "Get in touch" ? "Something else? Talk to us" : "Talk to us"} primary={site.cta.primary} urgent={site.cta.urgent} />
+      <ClosingBand headline={site.cta.primary.label === "Get in touch" ? "Something else? Talk to us" : "Talk to us"} primary={site.cta.primary} urgent={site.cta.urgent} linkOnly />
       <ScrollCraftMount />
     </main>
   );

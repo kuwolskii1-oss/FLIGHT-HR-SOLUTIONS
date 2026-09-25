@@ -20,7 +20,7 @@ const AXE = fs.readFileSync(require.resolve('axe-core/axe.min.js'), 'utf8');
       const ctx = await browser.newContext({ viewport: { width: w, height: isMobile ? 844 : 900 }, deviceScaleFactor: 1, isMobile, hasTouch: isMobile, reducedMotion: 'no-preference' });
       const page = await ctx.newPage();
       let bytes = 0, reqs = 0;
-      page.on('response', async (res) => { try { const b = await res.body(); bytes += b.length; reqs++; } catch {} });
+      page.on('response', async (res) => { try { const b = await res.body(); const cl = parseInt(res.headers()['content-length'] || '', 10); bytes += Number.isFinite(cl) && cl > 0 ? cl : b.length; reqs++; } catch {} });
       page.on('console', (m) => { if (m.type() === 'error') r.consoleErrors.push(`[${w}] ${m.text().slice(0, 200)}`); });
       page.on('pageerror', (e) => r.pageErrors.push(`[${w}] ${String(e).slice(0, 200)}`));
       const res = await page.goto(base + route, { waitUntil: 'networkidle', timeout: 60000 }).catch(e => { r.pageErrors.push(`[${w}] goto: ${e.message.slice(0, 120)}`); return null; });

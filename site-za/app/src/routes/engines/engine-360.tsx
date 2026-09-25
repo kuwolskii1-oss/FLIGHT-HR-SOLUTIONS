@@ -53,7 +53,7 @@ function Page() {
           <DoorForm form={{ ...engine360.form, intro: undefined }} route="engines" />
         </div>
       </section>
-      <ClosingBand headline="Something else on engines?" primary={site.cta.primary} urgent={site.cta.urgent} />
+      <ClosingBand headline="Something else on engines?" primary={site.cta.primary} urgent={site.cta.urgent} linkOnly />
       <ScrollCraftMount />
     </main>
   );

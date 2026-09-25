@@ -138,7 +138,7 @@
   padding: 0.15rem 0.45rem;
   border-radius: 999px;
   background: var(--color-orange);
-  color: var(--color-white);
+  color: var(--color-ink);
   font-family: var(--font-mono);
   font-size: 0.66rem;
   letter-spacing: var(--tracking-caps);
@@ -879,4 +879,47 @@ html.site body {
   .c-doorimg .c-media--16x9 {
     aspect-ratio: 4 / 3;
   }
+}
+
+/* ---------- reduced motion: nothing moves ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html.site *,
+  html.site *::before,
+  html.site *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+  .c-header.is-hidden {
+    transform: none;
+  }
+}
+
+/* The engine's flow reveal runs 620 ms; the client's factor table caps every animation at 600 ms.
+ * Duration only: the mechanism (opacity and transform on entry, once) is untouched. */
+[data-sc-in],
+[data-sc-stagger] > * {
+  transition-duration: 560ms;
+}
+
+/* Reduced motion, page side: every act flows (ScrollCraftMount rewrites the pinned ones before
+ * the engine mounts), every cue is open, the stepped lists stack. */
+html.sc-reduce [data-sc-cue],
+html.sc-reduce [data-sc-in],
+html.sc-reduce [data-sc-stagger] > * {
+  opacity: 1 !important;
+  transform: none !important;
+}
+html.sc-reduce .c-hero__stage,
+html.sc-reduce .c-cuesteps__stage {
+  min-height: 0;
+  padding-block: calc(var(--header-height) + var(--space-large)) var(--space-large);
+}
+html.sc-reduce .c-cuesteps__list {
+  gap: var(--space-medium);
+}
+html.sc-reduce .c-cuestep {
+  grid-area: auto;
+  pointer-events: auto;
 }

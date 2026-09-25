@@ -25,7 +25,7 @@ const ROUTES = ['/engines', '/aircraft', '/parts', '/charter', '/advisory', '/en
       const info = await el.evaluate(e => ({ tag: e.tagName.toLowerCase(), type: e.type, name: e.name || e.id, hidden: e.closest('[aria-hidden="true"]') !== null || e.tabIndex < 0 && e.type !== 'radio' }));
       if (info.hidden || info.name === 'website') continue;
       if (info.tag === 'select') { await el.selectOption({ index: 1 }); continue; }
-      if (info.type === 'checkbox') { await el.check({ force: true }); continue; }
+      if (info.type === 'checkbox') { await el.evaluate(e => { if (!e.checked) e.click(); }); continue; }
       if (info.type === 'radio') { const v = await el.getAttribute('value'); if (/yes|owned|buy|passengers|end buyer|one-way/i.test(v) || true) { await el.check({ force: true }); } continue; }
       const v = /email/i.test(info.name) ? 'qa@example.com' : /phone/i.test(info.name) ? '+27 11 000 0000' : /date/i.test(info.name) && info.type === 'date' ? '2026-11-03' : /number|quantity|size|count|weight/i.test(info.name) && info.type === 'number' ? '2' : /summary|message|description|mission|part/i.test(info.name) ? 'QA test text describing the requirement in one line.' : /company|organisation/i.test(info.name) ? 'QA Airline' : /^name$/i.test(info.name) ? 'QA Tester' : 'Test value';
       await el.fill(v);
