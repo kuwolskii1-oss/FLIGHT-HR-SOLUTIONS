@@ -100,3 +100,68 @@ The footer curtain engages at 1366 x 768, 1280 x 800, 1536 x 864 and 1440 x 900.
 - The template's `tests/landing-contract.test.ts` expects the home route to mention `ScrollScrub`;
   it failed before this refresh as well and does not block the platform's deploys.
 - The GE Aerospace and Joby motion studies from the first pass are still open.
+
+## Second pass: the runway hero, one list style, no page shortcuts (25 September 2026, evening)
+
+The client kept the UX and picked out the home page's "What do you need?" list as the elegance
+they want everywhere. They sent a reference for the home page (a travel landing page: an
+airliner head-on at sunset, full bleed; the links in a frosted pill with the wordmark centred;
+two frosted fact cards floating in the sky; a frosted panel on the runway holding a very large
+capitalised headline, a line of text and one button), and asked for the in-page navigation
+shortcuts to go, because the header already carries them.
+
+### What changed
+
+- **The home hero is a runway under glass** (`.c-runway`, `src/site/runway.css`). A generated
+  photograph (gpt_image_2_5): a plain white twin-engine airliner lifting off at golden hour, the
+  sun hidden behind the fuselage, navy sky at the top and a dark runway below. The first round
+  put the sun disc exactly where the headline sits, which no amount of glass makes readable, so
+  it was regenerated with the sun behind the aircraft. Desktop uses a 16:9 frame, phones a
+  separate 9:16 one; the WebP files are 27 to 88 KB. The headline sits on a glass panel over the
+  runway, in capitals in the display face, one sentence per line (the text is unchanged), with
+  the line and the one button beside it. Two glass cards float in the sky with facts that are
+  already on the page and can be checked: "5 steps, define to monitor" and the registration
+  number. They were added to `home.json` with their sources; there are no counts of clients,
+  years or deals. Glass is always tinted navy, and a scrim darkens the top of the photograph for
+  the header and the bottom for the panel, so no text depends on the photograph being dark.
+- **The ident no longer flies in the hero.** The pinned act is gone; the hero is one screen. The
+  photograph eases in by a few per cent and drifts slower than the page as the hero leaves, and
+  the cards drift faster (scroll-linked, transform only, still under reduced motion).
+- **The header floats as glass on every page.** The links sit in a pill on the left, the logo is
+  centred from 1200 px, and the urgent action and the burger are glass pills. The header now
+  takes its colours from what is under the logo rather than from the page's left edge, so a navy
+  board on a light section gets the white logo; photographs in light sections count as dark.
+- **Every list reads like the door board** (`InfoBoard.tsx`, `src/site/boards.css`). One navy
+  panel on a light ground, hairline rows, a pictogram tile and a big condensed title per row:
+  "What you can check" on the home page, each door's capabilities (one board with a row per
+  section; the section ids stay on the rows, so the header's dropdown links land on them), "How
+  we verify parts", "Who we serve" and "Our commitments" on About, and "What it is meant to do"
+  on Engine 360. These rows have no hover state, because they go nowhere; the door board keeps
+  its hover. Company details on About, the charter operator disclaimer and the Engine 360 status
+  note became navy signs of the same material.
+- **The page shortcuts are gone.** The "On this page" chips under the intro of the five door
+  pages and About repeated the header's dropdowns item for item; the component is deleted. The
+  short "Related" lists beside the forms stay: they point to things the header does not list
+  (the operator disclaimer, the transaction process, company details), so they are not
+  duplicates.
+- The old hero, card grid and door section styles were deleted with the markup that used them.
+
+### Checked (production build served locally)
+
+| Check | Factor | Measured |
+|---|---|---|
+| Words per screen, home | 60 or fewer | 47 at 1440 px, 40 at 375 px |
+| Buttons per screen | 1 | 1 on every page |
+| Longest animation, stagger | 600 ms, 80 ms | 560 ms, 70 ms |
+| Reduced motion | nothing moves, all visible | 0 pinned acts, 0 hidden cues, hero photograph still |
+| Horizontal overflow at 375 px | 0 | 0 |
+| axe-core, 11 routes | 0 | 0 |
+| Console errors, broken links | 0 | 0 |
+| First readable text, Fast 3G | under 2 s | home 1.79 to 1.83 s over three runs (about 1.7 s before this pass), other routes 1.55 to 1.74 s; 5.6 to 7.1 s on Slow 3G |
+| Weight per page | under 1 MB | 370 to 451 KB transferred (the home photograph adds 36 KB on a phone, 61 KB on a desktop) |
+| Keyboard and forms | as before | skip link, dropdowns, menu trap and Escape, section links landing on board rows, every form's validation and mail fallback pass |
+
+The hero photograph is deliberately not marked high priority. With the hint, first paint on
+Fast 3G rose to 1.87 s because the photograph competed with the stylesheet; without it the
+stylesheet goes first and the navy gradient behind the glass holds the place until the photo
+arrives. Raw measurements: `factors-runway.json`.

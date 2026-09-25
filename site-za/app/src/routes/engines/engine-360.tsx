@@ -5,6 +5,8 @@ import { engine360 } from "@/site/data/engine360";
 import { site } from "@/site/data/site";
 import { pageHead } from "@/site/seo";
 import { ScrollCraftMount } from "@/components/site/ScrollCraftMount";
+import { InfoBoard } from "@/components/site/InfoBoard";
+import { ITEM_PICTO } from "@/site/wayfinding";
 
 export const Route = createFileRoute("/engines/engine-360")({
   loader: () => ({ title: engine360.seoTitle, description: engine360.metaDescription }),
@@ -29,15 +31,15 @@ function Page() {
           <h2 id="what-title" className="c-h2" style={{ marginBottom: "var(--space-medium)" }}>
             What it is meant to do
           </h2>
-          <ul className="c-verify" data-sc-in data-sc-stagger="70">
-            {engine360.what.map((it) => (
-              <li className="c-verify__item" key={it.title}>
-                <h3 className="c-verify__title">{it.title}</h3>
-                <p className="c-verify__text">{it.text}</p>
-              </li>
-            ))}
-          </ul>
-          <p className="c-callout" style={{ marginTop: "var(--space-large)" }}>
+          <InfoBoard
+            rows={engine360.what.map((it) => ({
+              key: it.title,
+              title: it.title,
+              picto: ITEM_PICTO[it.title],
+              text: it.text,
+            }))}
+          />
+          <p className="c-callout" data-theme="dark" style={{ marginTop: "var(--space-large)" }}>
             {engine360.status}
           </p>
         </div>

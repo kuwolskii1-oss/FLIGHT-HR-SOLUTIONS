@@ -69,4 +69,8 @@ export const ITEM_PICTO: Record<string, PictogramName> = {
   "Owners, lessors and investors": "bank",
   Government: "museum",
   "Charter clients": "departure",
+  // engine 360: what it is meant to do
+  "Engine intelligence": "settings",
+  Status: "paper",
+  Exposure: "money",
 };

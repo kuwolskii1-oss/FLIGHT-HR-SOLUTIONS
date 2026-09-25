@@ -299,59 +299,6 @@
   padding-left: calc(2.25rem + 0.9rem);
 }
 
-/* ---------- hero: night, with the horizon glow the ident flies toward ---------- */
-.c-hero {
-  background:
-    radial-gradient(70% 55% at 82% 78%, rgb(238 114 3 / 0.2), transparent 62%),
-    radial-gradient(80% 70% at 0% 0%, rgb(28 32 92 / 0.95), transparent 70%),
-    linear-gradient(180deg, var(--color-navy-deep) 0%, var(--color-night) 100%);
-}
-/* The stage is the engine's sticky element (.sc-stage): never set its position here, or it
- * stops pinning. Sticky already positions the pseudo-elements below. */
-.c-hero__stage {
-  isolation: isolate;
-}
-.c-hero__stage::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image: var(--grain);
-  opacity: 0.07;
-  pointer-events: none;
-}
-.c-hero__stage::after {
-  content: "";
-  position: absolute;
-  left: var(--margin);
-  right: var(--margin);
-  bottom: clamp(2rem, 6vh, 4rem);
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.16) 30%, rgb(238 114 3 / 0.55) 78%, transparent);
-  pointer-events: none;
-}
-.c-hero .c-h1 {
-  font-size: clamp(3.2rem, 1.55rem + 6.1vw, 7.4rem);
-  line-height: 0.92;
-  color: var(--color-white);
-}
-.c-hero__copy {
-  max-width: 44rem;
-}
-.c-hero__sub {
-  max-width: 34ch;
-  color: var(--color-muted-dark);
-}
-.c-hero__ident {
-  max-width: 50rem;
-  filter: drop-shadow(0 30px 60px rgb(238 114 3 / 0.18));
-}
-@media (min-width: 1000px) {
-  .c-hero__inner {
-    grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
-  }
-}
-
 /* ---------- section heads ---------- */
 .c-stackhead {
   display: grid;
@@ -551,102 +498,36 @@
   --tile-ring: transparent;
 }
 @media (hover: hover) {
-  .c-board:not(.is-kinetic) .c-board__item:hover {
+  .c-board:not(.is-kinetic):not(.c-board--info) .c-board__item:hover {
     color: var(--color-ink);
   }
-  .c-board:not(.is-kinetic) .c-board__item:hover .c-board__fill {
+  .c-board:not(.is-kinetic):not(.c-board--info) .c-board__item:hover .c-board__fill {
     transform: scaleX(1);
     transition: transform var(--duration-very-slow) var(--ease-main);
   }
-  .c-board:not(.is-kinetic) .c-board__item:hover .c-board__el {
+  .c-board:not(.is-kinetic):not(.c-board--info) .c-board__item:hover .c-board__el {
     opacity: 1;
     transition: opacity var(--duration-very-slow) var(--ease-smooth-out) 80ms;
   }
-  .c-board:not(.is-kinetic) .c-board__item:hover :is(.c-board__text, .c-board__meta) {
+  .c-board:not(.is-kinetic):not(.c-board--info) .c-board__item:hover :is(.c-board__text, .c-board__meta) {
     color: rgb(18 21 46 / 0.8);
   }
-  .c-board:not(.is-kinetic) .c-board__item:hover .c-board__go {
+  .c-board:not(.is-kinetic):not(.c-board--info) .c-board__item:hover .c-board__go {
     background: var(--color-ink);
     box-shadow: none;
     color: var(--color-orange);
   }
-  .c-board:not(.is-kinetic) .c-board__item:hover .c-tile {
+  .c-board:not(.is-kinetic):not(.c-board--info) .c-board__item:hover .c-tile {
     --tile-bg: var(--color-ink);
     --tile-fg: var(--color-orange);
     --tile-ring: transparent;
   }
-  .c-board:not(.is-kinetic) .c-board__item:hover .c-roll__line {
+  .c-board:not(.is-kinetic):not(.c-board--info) .c-board__item:hover .c-roll__line {
     transform: translateY(-100%);
   }
 }
 
-/* ---------- credentials: what can be checked, verified, promised ---------- */
-.c-creds {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: var(--gutter);
-}
-.c-cred {
-  position: relative;
-  grid-column: span 12;
-  display: grid;
-  align-content: start;
-  gap: 0.6rem;
-  padding: clamp(1.25rem, 0.9rem + 1.3vw, 2.25rem);
-  border-radius: var(--radius-panel);
-  background: var(--card-bg);
-  box-shadow: inset 0 0 0 1px var(--card-ring);
-}
-.c-cred__tile {
-  margin-bottom: 0.75rem;
-}
-.c-cred__title {
-  font-size: var(--step-2);
-  font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: -0.005em;
-}
-.c-cred__text {
-  max-width: 46ch;
-  color: var(--fg-muted);
-}
-@media (min-width: 700px) {
-  .c-cred {
-    grid-column: span 6;
-  }
-}
-@media (min-width: 1100px) {
-  .c-creds--trust .c-cred:nth-child(4n + 1),
-  .c-creds--trust .c-cred:nth-child(4n + 4) {
-    grid-column: span 7;
-  }
-  .c-creds--trust .c-cred:nth-child(4n + 2),
-  .c-creds--trust .c-cred:nth-child(4n + 3) {
-    grid-column: span 5;
-  }
-  .c-creds--verify .c-cred {
-    grid-column: span 4;
-  }
-  .c-creds--verify .c-cred:nth-child(n + 4) {
-    grid-column: span 6;
-  }
-  .c-creds--commit .c-cred {
-    grid-column: span 4;
-  }
-}
-/* The last credential on the home page is the company itself: a navy card, the registration
- * number in the data face. */
-.c-creds--trust .c-cred:nth-child(4) {
-  --fg: var(--color-white);
-  --fg-muted: var(--color-muted-dark);
-  --tile-bg: rgb(255 255 255 / 0.08);
-  --tile-ring: rgb(255 255 255 / 0.16);
-  background:
-    radial-gradient(80% 120% at 100% 100%, rgb(238 114 3 / 0.18), transparent 60%),
-    var(--color-navy);
-  box-shadow: var(--shadow-float);
-  color: var(--fg);
-}
+/* ---------- the registration number in the data face ---------- */
 .c-regno {
   font-family: var(--font-mono);
   font-weight: 500;
@@ -654,13 +535,6 @@
   letter-spacing: 0.01em;
   white-space: nowrap;
   color: var(--fg);
-}
-.c-creds--trust .c-cred:nth-child(4) .c-regno {
-  display: block;
-  margin-block: 0.35rem 0.15rem;
-  font-size: var(--step-3);
-  line-height: 1.1;
-  color: var(--color-orange);
 }
 
 /* ---------- checklists ---------- */
@@ -1008,6 +882,12 @@ html.sc-reduce .c-fplan {
   opacity: 0.06;
   pointer-events: none;
 }
+/* An intro followed by an image band (the band is pulled up into the intro's padding by
+ * --space-large). With the section chips gone (the header's dropdowns carry them), the padding
+ * itself keeps the gap. */
+.c-page-intro--media {
+  padding-bottom: calc(var(--space-large) + var(--space-big));
+}
 .c-page-intro__title {
   max-width: 16ch;
 }
@@ -1124,76 +1004,10 @@ html.sc-reduce .c-fplan {
   }
 }
 
-/* ---------- local navigation as chips ---------- */
-.c-localnav {
-  border-top-color: var(--color-line-dark);
-}
-.c-localnav ul {
-  gap: 0.5rem;
-}
-.c-localnav a {
-  padding: 0.55rem 1rem;
-  border: 0;
-  border-radius: var(--radius-pill);
-  box-shadow: inset 0 0 0 1px var(--line);
-  color: var(--fg);
-  font-weight: 500;
-  transition:
-    background-color var(--duration-fast) var(--ease-smooth-out),
-    color var(--duration-fast) var(--ease-smooth-out);
-}
-@media (hover: hover) {
-  .c-localnav a:hover {
-    background: var(--color-white);
-    color: var(--color-ink);
-  }
-}
-.c-local-nav__list a {
-  font-family: var(--font-sans);
-  font-size: var(--step--1);
-  font-weight: 500;
-  letter-spacing: 0;
-  text-transform: none;
-}
-
 /* ---------- door image band and media ---------- */
 .c-doorimg .c-media,
 .c-page-intro__media .c-media {
   border-radius: var(--radius-panel);
-}
-
-/* ---------- door sections ---------- */
-.c-doorsec {
-  overflow: clip;
-}
-.c-doorsec__grid {
-  position: relative;
-  z-index: 1;
-}
-.c-doorsec__head {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: var(--space-small);
-  align-content: start;
-}
-.c-doorsec__title {
-  max-width: 14ch;
-  font-size: var(--step-4);
-}
-.c-doorsec__ambient {
-  position: absolute;
-  right: -3%;
-  bottom: -14%;
-  z-index: 0;
-  width: clamp(12rem, 28vw, 26rem);
-  height: auto;
-  color: var(--fg);
-  opacity: 0.045;
-  stroke-width: 0.55;
-  pointer-events: none;
-}
-.c-doorsec .c-lead {
-  max-width: 50ch;
 }
 
 /* ---------- scope accordions, signs, document card ---------- */

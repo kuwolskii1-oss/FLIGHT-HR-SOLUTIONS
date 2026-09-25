@@ -1,5 +1,5 @@
 {
- "notes": "Home page for the South African site. Seven blocks as fixed in CONTENT-SCHEMA.md, each 60 words or fewer including labels, one call to action per block and two in closing. Hero: the brief's positioning line and a subline that says what FHS does from South Africa, with no region beyond that because regions served are unknown. Hero secondary is omitted on purpose: one button per screen; the urgent action stays in the header. Ask: the five doors in nav order, one line naming who each door is for, and the brief's urgency band per door. The urgency value describes how quickly that visitor usually needs an answer (the brief's doors table); the component should label it as such, for example 'Typical timescale', and never present it as a response time, because none has been agreed. How: the brief's five steps condensed, using the brief's own words per step; the About page carries the full version. Trust: four things a visitor can check now (verification, process, group, company details) with a single link to the commitments on About; item hrefs are left out to keep one action per block. Engine360: 'is being designed' is the headline; the text names only status and exposure, as far as the brief goes. Group: the fixed group line as title; the Swiss company is described from the Swiss site's content and labelled as the Swiss company; the relationship word (subsidiary, sister or partner) is not rendered until confirmed; the link goes to the Swiss site so the visitor can check it. Closing: primary plus urgent, per the fixed labels. Nothing on this page states an address, phone, region, engine or aircraft type, approval, team member, client name, response time or year count. British English, no dashes as punctuation.",
+ "notes": "Home page for the South African site. Seven blocks as fixed in CONTENT-SCHEMA.md, each 60 words or fewer including labels, one call to action per block and two in closing. Hero: the brief's positioning line and a subline that says what FHS does from South Africa, with no region beyond that because regions served are unknown. Hero secondary is omitted on purpose: one button per screen; the urgent action stays in the header. Ask: the five doors in nav order, one line naming who each door is for, and the brief's urgency band per door. The urgency value describes how quickly that visitor usually needs an answer (the brief's doors table); the component should label it as such, for example 'Typical timescale', and never present it as a response time, because none has been agreed. How: the brief's five steps condensed, using the brief's own words per step; the About page carries the full version. Trust: four things a visitor can check now (verification, process, group, company details) with a single link to the commitments on About; item hrefs are left out to keep one action per block. Engine360: 'is being designed' is the headline; the text names only status and exposure, as far as the brief goes. Group: the fixed group line as title; the Swiss company is described from the Swiss site's content and labelled as the Swiss company; the relationship word (subsidiary, sister or partner) is not rendered until confirmed; the link goes to the Swiss site so the visitor can check it. Closing: primary plus urgent, per the fixed labels. Nothing on this page states an address, phone, region, engine or aircraft type, approval, team member, client name, response time or year count. British English, no dashes as punctuation. Hero facts: two short facts on glass over the photograph, both already stated lower on the page (the five steps, the registration number); no counts of clients, years or deals.",
  "sources": [
   "hero: brief section 7 (Turning the profile into web copy: 'Engine intelligence. Operational certainty.' as the South African hero line; a plain subline under the hero saying what FHS does) and section 1 (Which engines, aircraft and regions: regions unknown, so the subline says only 'from South Africa'). Label from CONTENT-SCHEMA.md fixed decisions.",
   "ask: brief section 2 (Five doors, not ten service lines: the doors table gives who comes in and the urgency band for each door; the homepage should ask 'What do you need?') and section 3 (Navigation: door order and hrefs).",
@@ -7,7 +7,8 @@
   "trust: brief section 4 (the verification process, the transaction process, the group link labelled as the group's, company facts), section 1 (Blocker: the address says TBA, so only the registration number and country are shown) and CONTENT-SCHEMA.md (registration number 2026/294346/07, registered 2026, fixed group line).",
   "engine360: brief section 1 (How to present Engine 360: early access with a waitlist, 'is being designed', never a live product), section 3 (the waitlist asks for fleet size, engine types and role) and the CONTENT-SCHEMA.md page brief (engine intelligence, status, exposure). Label from the fixed decisions.",
   "group: brief section 1 (The domain, and how to describe the link to the Swiss company: the line 'Part of the Flight Hour Solution group'; relationship to confirm) and section 4 (the group link, clearly labelled as the group's). Swiss company facts from site/app/src/content/site.json company (legal name Flight Hour Solution GmbH, city Zug, site URL) and site/app/src/content/about.json story and independence (independent jet-engine management consultancy; shop visit management, workscopes, lease returns, records).",
-  "closing: CONTENT-SCHEMA.md fixed labels (Get in touch to /contact; AOG on WhatsApp to /contact#urgent), brief section 3 (an urgent button visible on every screen) and section 6 (WhatsApp as the urgent channel)."
+  "closing: CONTENT-SCHEMA.md fixed labels (Get in touch to /contact; AOG on WhatsApp to /contact#urgent), brief section 3 (an urgent button visible on every screen) and section 6 (WhatsApp as the urgent channel).",
+  "hero facts: the five steps and their first and last names from the how block (brief section 4, How we work: Define ... Monitor); the registration number and country from CONTENT-SCHEMA.md company facts (2026/294346/07, South Africa), as in the trust block. Both are shown on the photograph so the first screen carries something a visitor can check."
  ],
  "hero": {
   "headline": "Engine intelligence. Operational certainty.",
@@ -16,7 +17,17 @@
    "label": "Get in touch",
    "href": "/contact",
    "kind": "primary"
-  }
+  },
+  "facts": [
+   {
+    "value": "5 steps",
+    "label": "Define to monitor"
+   },
+   {
+    "value": "2026/294346/07",
+    "label": "Registered in South Africa"
+   }
+  ]
  },
  "ask": {
   "title": "What do you need?",

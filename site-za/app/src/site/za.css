@@ -49,28 +49,6 @@
   }
 }
 
-/* ---------- hero (pinned act) ---------- */
-.c-hero__stage {
-  display: grid;
-  align-items: center;
-  min-height: 100svh;
-  padding-top: var(--header-height);
-}
-.c-hero__inner {
-  display: grid;
-  gap: var(--space-large);
-}
-.c-hero__ident {
-  max-width: 44rem;
-  margin-inline: auto;
-}
-@media (min-width: 1000px) {
-  .c-hero__inner {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-    align-items: center;
-  }
-}
-
 /* ---------- header: door groups and dropdowns ---------- */
 .c-header__list {
   display: flex;
@@ -504,74 +482,6 @@ html.site body {
 .c-bring li + li {
   margin-top: 0.2rem;
 }
-.c-localnav {
-  margin-top: var(--space-large);
-  padding-top: var(--space-tiny);
-  border-top: 1px solid var(--line);
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.c-localnav::-webkit-scrollbar {
-  display: none;
-}
-.c-localnav ul {
-  display: flex;
-  gap: 0.25rem 1.25rem;
-  white-space: nowrap;
-}
-.c-localnav a {
-  display: inline-block;
-  padding: 0.5rem 0;
-  font-size: var(--step--1);
-  color: var(--fg-muted);
-  border-bottom: 2px solid transparent;
-  transition: color var(--duration-micro) var(--ease-out), border-color var(--duration-micro) var(--ease-out);
-}
-@media (hover: hover) {
-  .c-localnav a:hover {
-    color: var(--fg);
-    border-color: var(--accent);
-  }
-}
-.c-doorsec__grid {
-  display: grid;
-  gap: var(--space-medium) var(--gutter);
-}
-@media (min-width: 900px) {
-  .c-doorsec__grid {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-    align-items: start;
-  }
-}
-.c-doorsec__head {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: var(--space-tiny);
-  align-items: baseline;
-}
-.c-doorsec__n {
-  font-family: var(--font-mono);
-  font-size: var(--step--1);
-  color: var(--accent-text);
-  font-variant-numeric: tabular-nums;
-}
-.c-doorsec__title {
-  max-width: 16ch;
-}
-.c-doorsec__body {
-  max-width: var(--measure);
-}
-.c-doorsec__bullets {
-  display: grid;
-  gap: 0.5rem;
-  margin-top: var(--space-small);
-  padding-left: 1.1rem;
-  list-style: disc;
-  color: var(--fg-muted);
-}
-.c-doorsec__bullets li::marker {
-  color: var(--accent);
-}
 
 /* ---------- pinned steps (one idea per screen) ---------- */
 .c-cuesteps__stage {
@@ -845,16 +755,6 @@ html.site body {
 .c-e360__title {
   margin-top: var(--space-tiny);
 }
-.c-hero__copy {
-  max-width: 34rem;
-}
-.c-hero__sub {
-  margin-top: var(--space-small);
-  max-width: 40ch;
-}
-.c-hero__cta {
-  margin-top: var(--space-medium);
-}
 .c-lines {
   display: grid;
   gap: 0.35rem;
@@ -917,7 +817,6 @@ html.sc-reduce [data-sc-stagger] > * {
   opacity: 1 !important;
   transform: none !important;
 }
-html.sc-reduce .c-hero__stage,
 html.sc-reduce .c-cuesteps__stage {
   min-height: 0;
   padding-block: calc(var(--header-height) + var(--space-large)) var(--space-large);

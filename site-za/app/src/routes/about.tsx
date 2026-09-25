@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ClosingBand } from "@/components/site/ClosingBand";
 import { CtaLink } from "@/components/site/Cta";
-import { LocalNav } from "@/components/site/LocalNav";
 import { MediaFrame } from "@/components/site/MediaFrame";
 import { Steps } from "@/components/site/Steps";
 import { about } from "@/site/data/about";
@@ -10,6 +9,7 @@ import { pageHead } from "@/site/seo";
 import { ScrollCraftMount } from "@/components/site/ScrollCraftMount";
 import { GroupRoute } from "@/components/site/GroupRoute";
 import { PictoTile } from "@/components/site/Pictogram";
+import { InfoBoard } from "@/components/site/InfoBoard";
 import { DOOR_PICTO, ITEM_PICTO } from "@/site/wayfinding";
 import { withRegistration } from "@/site/registration";
 
@@ -28,7 +28,7 @@ function Page() {
   const { intro, how, serve, commitments, team, company, group } = about;
   return (
     <main id="main" tabIndex={-1}>
-      <header data-theme="dark" className="c-page-intro" data-sc-act="flow">
+      <header data-theme="dark" className="c-page-intro c-page-intro--media" data-sc-act="flow">
         <div className="o-container" data-sc-in data-sc-stagger="70">
           <span className="c-eyebrow">
             <PictoTile name={DOOR_PICTO.about} size="sm" />
@@ -36,12 +36,6 @@ function Page() {
           </span>
           <h1 className="c-h1 c-h1--inner c-page-intro__title">{intro.headline}</h1>
           <p className="c-lead c-page-intro__lead">{intro.sub}</p>
-          <LocalNav
-            items={site.nav.about.items.map((i) => ({
-              label: i.label,
-              href: i.href.replace("/about", ""),
-            }))}
-          />
         </div>
       </header>
 
@@ -67,27 +61,21 @@ function Page() {
             </h2>
             {serve.intro ? <p className="c-lead c-muted">{serve.intro}</p> : null}
           </div>
-          <ul className="c-creds c-creds--serve" data-sc-in data-sc-stagger="70">
-            {serve.groups.map((g) => (
-              <li className="c-cred" key={g.title}>
-                {ITEM_PICTO[g.title] ? (
-                  <PictoTile name={ITEM_PICTO[g.title]} className="c-cred__tile" />
-                ) : null}
-                <h3 className="c-cred__title">{g.title}</h3>
-                <ul className="c-checks c-checks--tight">
-                  {g.items.map((i) => (
-                    <li key={i}>{i}</li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
+          <InfoBoard
+            columns
+            rows={serve.groups.map((g) => ({
+              key: g.title,
+              title: g.title,
+              picto: ITEM_PICTO[g.title],
+              list: g.items,
+            }))}
+          />
         </div>
       </section>
 
       <section
         id="commitments"
-        data-theme="deep"
+        data-theme="light"
         className="o-section"
         data-sc-act="flow"
         aria-labelledby="commitments-title"
@@ -98,24 +86,21 @@ function Page() {
               {commitments.title}
             </h2>
           </div>
-          <ul className="c-creds c-creds--commit" data-sc-in data-sc-stagger="70">
-            {commitments.items.map((it) => (
-              <li className="c-cred" key={it.title}>
-                {ITEM_PICTO[it.title] ? (
-                  <PictoTile name={ITEM_PICTO[it.title]} className="c-cred__tile" />
-                ) : null}
-                <h3 className="c-cred__title">{it.title}</h3>
-                <p className="c-cred__text">{it.text}</p>
-              </li>
-            ))}
-          </ul>
+          <InfoBoard
+            rows={commitments.items.map((it) => ({
+              key: it.title,
+              title: it.title,
+              picto: ITEM_PICTO[it.title],
+              text: it.text,
+            }))}
+          />
         </div>
       </section>
 
       <section
         id="team"
         data-theme="light"
-        className="o-section"
+        className="o-section o-section--raised"
         data-sc-act="flow"
         aria-labelledby="team-title"
       >
@@ -150,7 +135,7 @@ function Page() {
       <section
         id="company"
         data-theme="light"
-        className="o-section o-section--raised"
+        className="o-section"
         data-sc-act="flow"
         aria-labelledby="company-title"
       >
@@ -158,7 +143,7 @@ function Page() {
           <h2 id="company-title" className="c-h2">
             {company.title}
           </h2>
-          <ul className="c-lines c-docard">
+          <ul className="c-lines c-docard" data-theme="dark">
             {company.lines.map((l) => (
               <li key={l}>{withRegistration(l)}</li>
             ))}

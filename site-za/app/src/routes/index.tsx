@@ -2,11 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { StructuredData } from "@/components/StructuredData";
 import { ClosingBand } from "@/components/site/ClosingBand";
 import { CtaLink, CtaTalk } from "@/components/site/Cta";
-import { Ident } from "@/components/site/Ident";
 import { Steps } from "@/components/site/Steps";
 import { DoorBoard, type ShapeKind } from "@/components/site/DoorBoard";
 import { EngineDial } from "@/components/site/EngineDial";
 import { GroupRoute } from "@/components/site/GroupRoute";
+import { InfoBoard } from "@/components/site/InfoBoard";
 import { PictoTile } from "@/components/site/Pictogram";
 import { DOOR_PICTO, ITEM_PICTO } from "@/site/wayfinding";
 import { withRegistration } from "@/site/registration";
@@ -89,30 +89,57 @@ function Index() {
     <main id="main" tabIndex={-1}>
       <StructuredData json={ORG_SCHEMA} />
 
-      {/* 1. Recognition: the ident flies its route as the visitor scrolls and locks up into the logo. */}
+      {/* 1. Recognition: a runway at golden hour, the promise on glass, two facts to check. */}
       <section
-        className="c-hero"
+        className="c-runway"
         data-theme="deep"
-        data-sc-act="pin"
-        data-sc-span="2.6"
+        data-sc-act="flow"
         aria-labelledby="hero-title"
       >
-        <div data-sc-stage className="c-hero__stage">
-          <div className="o-container c-hero__inner">
-            <div className="c-hero__copy" data-sc-cue="0 0.94 0 0.05">
-              <h1 id="hero-title" className="c-h1">
-                {hero.headline}
-              </h1>
-              <p className="c-lead c-hero__sub">{hero.sub}</p>
-              <div className="c-hero__cta">
-                <CtaTalk href={hero.cta.href} label={hero.cta.label} />
-              </div>
+        <picture className="c-runway__photo" aria-hidden="true">
+          <source
+            media="(max-width: 699px)"
+            srcSet="/assets/img/hero-runway-tall-750.webp 750w, /assets/img/hero-runway-tall-1200.webp 1200w"
+            sizes="100vw"
+            width={1200}
+            height={2122}
+          />
+          <img
+            src="/assets/img/hero-runway-1800.webp"
+            srcSet="/assets/img/hero-runway-900.webp 900w, /assets/img/hero-runway-1800.webp 1800w, /assets/img/hero-runway-2600.webp 2600w"
+            sizes="100vw"
+            alt=""
+            width={1800}
+            height={1018}
+            decoding="async"
+          />
+        </picture>
+        <div className="o-container c-runway__frame">
+          {hero.facts?.length ? (
+            <ul className="c-runway__facts" aria-label="At a glance">
+              {hero.facts.map((f) => (
+                <li className="c-glass c-runway__fact" key={f.value}>
+                  <span className="c-runway__value">{withRegistration(f.value)}</span>
+                  <span className="c-runway__label">{f.label}</span>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+          <div className="c-glass c-runway__panel">
+            <h1 id="hero-title" className="c-runway__title">
+              {/* One sentence per line; the text itself is unchanged. (No lookbehind in the
+                  pattern: Safari before 16.4 cannot parse one, and it would stop the bundle.) */}
+              {(hero.headline.match(/[^.]+(?:\.|$)/g) ?? [hero.headline]).map((line, i) => (
+                <span className="c-runway__line" key={line}>
+                  {i ? " " : null}
+                  {line.trim()}
+                </span>
+              ))}
+            </h1>
+            <div className="c-runway__foot">
+              <p className="c-runway__sub">{hero.sub}</p>
+              <CtaTalk href={hero.cta.href} label={hero.cta.label} />
             </div>
-            <Ident
-              className="c-hero__ident"
-              tone="white"
-              title="Flight Hour Solution ident: the plane flies its route and the swoosh forms behind it"
-            />
           </div>
         </div>
       </section>
@@ -160,17 +187,14 @@ function Index() {
             </h2>
             <p className="c-lead c-muted">{trust.text}</p>
           </div>
-          <ul className="c-creds c-creds--trust" data-sc-in data-sc-stagger="70">
-            {trust.items.map((it) => (
-              <li className="c-cred" key={it.title}>
-                {ITEM_PICTO[it.title] ? (
-                  <PictoTile name={ITEM_PICTO[it.title]} className="c-cred__tile" />
-                ) : null}
-                <h3 className="c-cred__title">{it.title}</h3>
-                <p className="c-cred__text">{withRegistration(it.text)}</p>
-              </li>
-            ))}
-          </ul>
+          <InfoBoard
+            rows={trust.items.map((it) => ({
+              key: it.title,
+              title: it.title,
+              picto: ITEM_PICTO[it.title],
+              text: withRegistration(it.text),
+            }))}
+          />
           {trust.cta ? (
             <div style={{ marginTop: "var(--space-large)" }}>
               <CtaLink href={trust.cta.href} label={trust.cta.label} />

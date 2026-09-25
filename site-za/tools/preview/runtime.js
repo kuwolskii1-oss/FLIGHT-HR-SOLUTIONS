@@ -85,7 +85,7 @@
   var headerReset = function () {};
   (function () {
     var lastY = window.scrollY, ticking = false;
-    var probeY = function () { return Math.min(header.offsetHeight * 0.6, 40); };
+    var logo = $(".c-header__logo", header);
     var update = function () {
       ticking = false;
       var y = window.scrollY;
@@ -96,13 +96,19 @@
         else if (goingUp || y < 120) header.classList.remove("is-hidden");
       }
       lastY = y;
-      var els = document.elementsFromPoint(Math.min(24, window.innerWidth - 1), probeY());
+      // What is under the logo decides (a navy board on a light section still gets the white
+      // logo); a photograph in a light section counts as dark. Same rule as SiteHeader.tsx.
+      var r = logo ? logo.getBoundingClientRect() : null;
+      var px = r ? Math.min(Math.max(r.left + r.width / 2, 0), window.innerWidth - 1) : 24;
+      var py = r ? Math.max(1, r.top + r.height / 2) : 40;
+      var els = document.elementsFromPoint(px, py);
       var beneath = null;
       for (var i = 0; i < els.length; i++) {
         if (!header.contains(els[i]) && !els[i].closest(".c-menu")) { beneath = els[i]; break; }
       }
-      var themed = beneath && beneath.closest("[data-theme]");
-      var theme = (themed && themed.getAttribute("data-theme")) || "light";
+      var themedEl = beneath && beneath.closest("[data-theme]");
+      var themed = (themedEl && themedEl.getAttribute("data-theme")) || "light";
+      var theme = themed === "light" && beneath && beneath.closest("img, video, .c-media") ? "dark" : themed;
       if (header.getAttribute("data-theme") !== theme) header.setAttribute("data-theme", theme);
     };
     var onScroll = function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } };

@@ -63,11 +63,15 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     const fontsOk = await page.evaluate(async () => { await document.fonts.ready; const l = Array.from(document.fonts).filter((f) => f.status === "loaded").map((f) => f.family + " " + f.weight); return { sans: l.includes("IBM Plex Sans 400"), display: l.includes("IBM Plex Sans Condensed 600"), body: getComputedStyle(document.body).fontFamily.startsWith('"IBM Plex Sans"') }; });
     check("brand fonts loaded", fontsOk.sans && fontsOk.display && fontsOk.body, fontsOk);
     await page.screenshot({ path: path.join(shots, "desktop-home-top.png") });
-    const p0 = await page.evaluate(() => document.querySelector(".c-ident").style.getPropertyValue("--ident-p"));
-    await page.evaluate(() => window.scrollTo(0, window.innerHeight * 1.2));
+    const photo = () => page.evaluate(() => { const i = document.querySelector("main:not([hidden]) .c-runway__photo img"); return i ? { t: getComputedStyle(i).transform, loaded: i.complete && i.naturalWidth > 0 } : null; });
+    const p0 = await photo();
+    check("hero photograph loaded", !!p0 && p0.loaded, p0);
+    await page.evaluate(() => window.scrollTo(0, window.innerHeight * 0.5));
     await sleep(700);
-    const p1 = await page.evaluate(() => document.querySelector(".c-ident").style.getPropertyValue("--ident-p"));
-    check("ident advances with scroll", parseFloat(p1) > parseFloat(p0) + 0.1, { p0, p1 });
+    const p1 = await photo();
+    check("hero photograph drifts with scroll", !!p1 && p1.t !== p0.t, { p0: p0 && p0.t, p1: p1 && p1.t });
+    const panel = await page.evaluate(() => { const el = document.querySelector("main:not([hidden]) .c-runway__panel"); const f = document.querySelectorAll("main:not([hidden]) .c-runway__fact").length; return { glass: !!el && getComputedStyle(el).backdropFilter.includes("blur"), facts: f }; });
+    check("hero glass panel and two facts", panel.glass && panel.facts === 2, panel);
     await page.screenshot({ path: path.join(shots, "desktop-home-scrolled.png") });
     await page.evaluate(() => window.scrollTo(0, 0));
     await sleep(400);
@@ -280,8 +284,12 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     check("rm: sc-reduce set", await page.evaluate(() => document.documentElement.classList.contains("sc-reduce")));
     const rmPins = await page.evaluate(() => document.querySelectorAll('[data-sc-act="pin"]').length);
     check("rm: no pinned acts", rmPins === 0, rmPins);
-    const rmIdent = await page.evaluate(() => document.querySelector(".c-ident").style.getPropertyValue("--ident-p"));
-    check("rm: ident still", rmIdent === "1", rmIdent);
+    const rm0 = await page.evaluate(() => getComputedStyle(document.querySelector("main:not([hidden]) .c-runway__photo img")).transform);
+    await page.evaluate(() => window.scrollTo(0, window.innerHeight * 0.5));
+    await sleep(500);
+    const rm1 = await page.evaluate(() => getComputedStyle(document.querySelector("main:not([hidden]) .c-runway__photo img")).transform);
+    await page.evaluate(() => window.scrollTo(0, 0));
+    check("rm: hero photograph still", rm0 === rm1, { rm0, rm1 });
     const hidden = await page.evaluate(async () => {
       const h = document.documentElement.scrollHeight;
       for (let y = 0; y < h; y += 500) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 60)); }

@@ -80,7 +80,15 @@ Method: `site-za/tools/qa/factors.js`, `qa.js`, `interact.js` and `forms.js` aga
   first frame), which is the build the measured checks above describe.
 - 25 September 2026, about 15:35 UTC: the wayfinding UI refresh (`docs/website-za/ui-refresh.md`,
   with its own measured table); platform status "deployed", no error. About 15:45 UTC: the same
-  build with the icon credit linking the licence (the build now recorded).
+  build with the icon credit linking the licence.
+- 25 September 2026, about 17:40 UTC: the second UI pass (`docs/website-za/ui-refresh.md`,
+  "Second pass"): the home hero as a golden-hour runway under glass, glass header pills with the
+  logo centred, every list on the site in the door board's look, and the in-page section chips
+  removed (platform commit `9c40741`); platform status "deployed", no error. About 17:48 UTC:
+  the same build with the headline split written without a regular-expression lookbehind (Safari
+  before 16.4 cannot parse one, which would have stopped the scripts on older iPhones) and the
+  intro spacing set by a class instead of `:has()` (platform commit `8939dff`). This is the
+  build now recorded; its measurements are in `factors-runway.json`.
 - Raw measurements: `factors-run3.json` (all routes), `factors-home-final.json` (home after the
   last trim), `qa-report.json` (axe, console, weight per route).
 - Runbook: `site-za/DEPLOY.md`. Higgsfield credits used by this build: 0.5 for three images.
@@ -98,8 +106,8 @@ The live address (https://flighthoursolution-za.higgsfield.app) is a Higgsfield 
 
 https://claude.ai/artifact/8kYTmqytexPbegjqZuARM2
 
-It was republished at the same address with the wayfinding UI refresh (version 3, 25 September 2026).
+It was republished at the same address with the wayfinding UI refresh (version 3) and with the second UI pass (version 4, 25 September 2026).
 
-What the preview is: the eleven server-rendered pages of the production build in one document, with the built stylesheet, the scroll engine and the header, menu, form and ident behaviour ported to plain script (`site-za/tools/preview/`). Pages are addressed by hash (`#engines`, `#parts.form`). Forms validate as on the live site but send nothing. Two things differ from the live site: there is no server round-trip on forms, and a page change is a same-document swap with the browser's view transition instead of a full navigation.
+What the preview is: the eleven server-rendered pages of the production build in one document, with the built stylesheet, the scroll engine and the header, menu, form, door board and footer behaviour ported to plain script (`site-za/tools/preview/`). Pages are addressed by hash (`#engines`, `#parts.form`). Forms validate as on the live site but send nothing. Two things differ from the live site: there is no server round-trip on forms, and a page change is a same-document swap with the browser's view transition instead of a full navigation.
 
 To rebuild it after a new production build: start the build locally as described in `site-za/tools/README.md` (the production server on port 4700), then run `node site-za/tools/preview/build-preview.mjs` and `node site-za/tools/preview/check-preview.js`. The output folder is not committed; publish `out/index.html` with its supporting files to the same artifact address.

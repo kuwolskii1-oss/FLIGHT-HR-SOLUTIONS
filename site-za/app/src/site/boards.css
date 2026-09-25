@@ -1,0 +1,155 @@
+/* Boards: the look of the home page's "What do you need?" list, carried to every list on the site
+ * (docs/website-za/ui-refresh.md, second pass). One navy panel on a light ground, hairline rows,
+ * big condensed titles, a pictogram tile, quiet text. Rows that go somewhere are DoorBoard (hover
+ * fill, arrow); rows that are read are InfoBoard (.c-board--info), which never pretends to be
+ * clickable: no fill, no arrow, no hover state. No motion of its own beyond the shared reveal. */
+
+/* ---------- information rows ---------- */
+.c-board--info .c-board__item {
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "tile title"
+    "body body"
+    "aside aside";
+  align-items: center;
+}
+.c-board--info .c-board__item:not(:has(> .c-board__tile)) {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "title"
+    "body"
+    "aside";
+}
+.c-board--info .c-board__title {
+  font-size: var(--step-4);
+  line-height: 1;
+  text-wrap: balance;
+}
+.c-board__body {
+  grid-area: body;
+  display: grid;
+  gap: 0.9rem;
+  align-content: start;
+}
+/* Inside the body the text is an ordinary grid child, not the board row's "text" area. */
+.c-board--info .c-board__text {
+  grid-area: auto;
+  max-width: 52ch;
+  font-size: var(--step-0);
+  line-height: 1.5;
+}
+.c-board__aside {
+  grid-area: aside;
+  color: var(--fg-muted);
+  font-size: var(--step--1);
+  font-weight: 500;
+}
+.c-board--info .c-checks {
+  margin-top: 0;
+}
+.c-board--info .c-checks li {
+  color: var(--fg-muted);
+}
+.c-board--info .c-board__item:has(a:focus-visible) {
+  box-shadow: none;
+}
+.c-board .c-regno {
+  font-size: 1.1em;
+  color: var(--color-orange);
+}
+.c-board__item[id] {
+  scroll-margin-top: calc(var(--header-height) + var(--space-small));
+}
+
+/* Large rows: a door's capabilities, each a title, a paragraph and a short checklist. */
+.c-board--lg .c-board__item {
+  padding-block: clamp(1.5rem, 1rem + 2vw, 2.75rem);
+}
+.c-board--lg .c-board__text {
+  font-size: var(--step-1);
+  line-height: 1.45;
+  color: rgb(255 255 255 / 0.88);
+}
+
+@media (min-width: 700px) {
+  .c-checks--cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--space-small);
+  }
+}
+@media (min-width: 900px) {
+  .c-board--info .c-board__item {
+    grid-template-columns: auto minmax(0, 5fr) minmax(0, 7fr);
+    grid-template-areas: "tile title body";
+    gap: var(--space-small) clamp(1rem, 0.4rem + 1.4vw, 2.25rem);
+  }
+  .c-board--info .c-board__item:not(:has(> .c-board__tile)) {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    grid-template-areas: "title body";
+  }
+  .c-board--info.c-board--aside .c-board__item {
+    grid-template-columns: auto minmax(0, 4fr) minmax(0, 5fr) minmax(0, 3fr);
+    grid-template-areas: "tile title body aside";
+  }
+  .c-board--lg .c-board__item {
+    align-items: start;
+  }
+  .c-board--lg .c-board__tile {
+    margin-top: 0.15rem;
+  }
+}
+
+/* The urgent row keeps its orange sign. */
+.c-board__item--urgent .c-tile {
+  --tile-bg: var(--color-orange);
+  --tile-fg: var(--color-ink);
+  --tile-ring: transparent;
+}
+
+/* ---------- company details as a small board ---------- */
+.c-docard {
+  display: grid;
+  gap: 0;
+  max-width: 42rem;
+  margin-top: var(--space-medium);
+  padding: 0.5rem clamp(1.1rem, 0.6rem + 1.6vw, 2rem);
+  border: 0;
+  border-radius: var(--radius-panel);
+  background:
+    radial-gradient(60% 90% at 100% 0%, rgb(238 114 3 / 0.1), transparent 60%),
+    linear-gradient(180deg, var(--color-navy) 0%, var(--color-navy-mid) 100%);
+  box-shadow: var(--shadow-float);
+  color: var(--fg);
+}
+.c-docard li {
+  padding-block: 1rem;
+  color: var(--fg-muted);
+}
+.c-docard li + li {
+  border-top: 1px solid var(--color-line-dark);
+}
+.c-docard li:first-child {
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  font-weight: 600;
+  line-height: 1.05;
+  color: var(--fg);
+}
+
+/* ---------- signs: the operator disclaimer and the status note, as navy information signs ---------- */
+.c-sign,
+.c-callout {
+  border-radius: var(--radius-panel);
+  background:
+    radial-gradient(60% 90% at 100% 0%, rgb(238 114 3 / 0.1), transparent 60%),
+    linear-gradient(180deg, var(--color-navy) 0%, var(--color-navy-mid) 100%);
+  box-shadow: var(--shadow-float);
+  color: var(--fg);
+}
+.c-callout {
+  padding: clamp(1.1rem, 0.8rem + 1vw, 1.75rem) clamp(1.35rem, 1rem + 1.2vw, 2.25rem);
+  border-left: 0;
+  box-shadow:
+    inset 4px 0 0 var(--color-orange),
+    var(--shadow-float);
+}

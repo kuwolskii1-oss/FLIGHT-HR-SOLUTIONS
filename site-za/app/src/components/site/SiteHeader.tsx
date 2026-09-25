@@ -12,6 +12,8 @@ import { DOOR_PICTO } from "@/site/wayfinding";
  * sections (transitions.dev menu dropdown); below 1000 px a burger opens a panel with an
  * accordion per door. The urgent action and the primary action are reachable from every
  * screen. The header reads the theme of the section beneath it and hides on scroll down.
+ * From 1200 px the links sit in a glass pill on the left and the logo is centred, so the
+ * markup runs links, logo, actions in reading order; narrower screens put the logo first.
  */
 export function SiteHeader() {
   const headerRef = useRef<HTMLElement>(null);
@@ -32,7 +34,7 @@ export function SiteHeader() {
     if (!header) return;
     let lastY = window.scrollY;
     let ticking = false;
-    const probeY = () => Math.min(header.offsetHeight * 0.6, 40);
+    const logo = header.querySelector<HTMLElement>(".c-header__logo");
     const update = () => {
       ticking = false;
       const y = window.scrollY;
@@ -47,11 +49,16 @@ export function SiteHeader() {
         else if (goingUp || y < 120) header.classList.remove("is-hidden");
       }
       lastY = y;
+      // Read what is under the logo, the one mark with no glass behind it: a navy board on a
+      // light section must still get the white logo. Photographs count as dark.
+      const r = logo?.getBoundingClientRect();
+      const px = r ? Math.min(Math.max(r.left + r.width / 2, 0), window.innerWidth - 1) : 24;
+      const py = r ? Math.max(1, r.top + r.height / 2) : 40;
       const beneath = document
-        .elementsFromPoint(Math.min(24, window.innerWidth - 1), probeY())
+        .elementsFromPoint(px, py)
         .find((el) => !header.contains(el) && !el.closest(".c-menu"));
-      const themed = beneath?.closest<HTMLElement>("[data-theme]");
-      const theme = themed?.dataset.theme ?? "light";
+      const themed = beneath?.closest<HTMLElement>("[data-theme]")?.dataset.theme ?? "light";
+      const theme = themed === "light" && beneath?.closest("img, video, .c-media") ? "dark" : themed;
       if (header.dataset.theme !== theme) header.dataset.theme = theme;
     };
     const onScroll = () => {
@@ -170,24 +177,6 @@ export function SiteHeader() {
       </a>
       <header ref={headerRef} className="c-header" data-theme="dark">
         <div className="o-container c-header__inner">
-          <SmartLink href="/" className="c-header__logo" aria-label={`${company.shortName}, home`}>
-            <img
-              className="c-header__logo-img c-header__logo-img--on-dark"
-              src="/brand/logo-light.svg"
-              alt=""
-              width={272}
-              height={64}
-              decoding="async"
-            />
-            <img
-              className="c-header__logo-img c-header__logo-img--on-light"
-              src="/brand/logo.svg"
-              alt=""
-              width={272}
-              height={64}
-              decoding="async"
-            />
-          </SmartLink>
           <nav className="c-header__nav" aria-label="Primary">
             <ul className="c-header__list">
               {groups.map((g) => {
@@ -252,6 +241,24 @@ export function SiteHeader() {
               })}
             </ul>
           </nav>
+          <SmartLink href="/" className="c-header__logo" aria-label={`${company.shortName}, home`}>
+            <img
+              className="c-header__logo-img c-header__logo-img--on-dark"
+              src="/brand/logo-light.svg"
+              alt=""
+              width={272}
+              height={64}
+              decoding="async"
+            />
+            <img
+              className="c-header__logo-img c-header__logo-img--on-light"
+              src="/brand/logo.svg"
+              alt=""
+              width={272}
+              height={64}
+              decoding="async"
+            />
+          </SmartLink>
           <div className="c-header__actions">
             <CtaUrgent href={cta.urgent.href} label={cta.urgent.label} small />
             <CtaTalk href={cta.primary.href} label={cta.primary.label} small />

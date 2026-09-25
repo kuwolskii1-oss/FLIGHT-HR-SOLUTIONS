@@ -5,7 +5,7 @@ import { Accordion } from "./Accordion";
 import { ClosingBand } from "./ClosingBand";
 import { CtaLink, CtaTalk } from "./Cta";
 import { DoorForm } from "./DoorForm";
-import { LocalNav } from "./LocalNav";
+import { InfoBoard } from "./InfoBoard";
 import { MediaFrame } from "./MediaFrame";
 import { DOOR_IMAGES } from "@/site/images";
 import { Steps } from "./Steps";
@@ -15,9 +15,10 @@ import { Pictogram, PictoTile } from "./Pictogram";
 import { DOOR_PICTO, ITEM_PICTO, SECTION_PICTO } from "@/site/wayfinding";
 
 /**
- * One door page. Order: what this is (intro with who, timing and what to bring), the sections
- * (four to six capabilities, each a screen), the door's process or verification, the full scope
- * for procurement readers, the form, the closing. One call to action per screen.
+ * One door page. Order: what this is (intro with who, timing and what to bring), the capabilities
+ * (two to six, one board with a row each), the door's process or verification, the full scope
+ * for procurement readers, the form, the closing. One call to action per screen. Section links
+ * live in the header's dropdowns only; the page repeats none of them.
  */
 export function DoorPage({
   door,
@@ -28,15 +29,13 @@ export function DoorPage({
   route: RouteKey;
   whatsappTemplate?: string;
 }) {
-  const nav = [
-    ...door.sections.map((s) => ({ label: s.title, href: `#${s.id}` })),
-    ...(door.process ? [{ label: door.process.title, href: "#process" }] : []),
-    ...(door.verify ? [{ label: door.verify.title, href: "#verify" }] : []),
-    { label: door.form.title, href: "#form" },
-  ];
   return (
     <main id="main" tabIndex={-1}>
-      <header data-theme="dark" className="c-page-intro c-door-intro" data-sc-act="flow">
+      <header
+        data-theme="dark"
+        className={`c-page-intro c-door-intro${DOOR_IMAGES[door.slug] ? " c-page-intro--media" : ""}`}
+        data-sc-act="flow"
+      >
         <div className="o-container">
           <div className="c-door-intro__grid" data-sc-in data-sc-stagger="70">
             <div>
@@ -98,7 +97,6 @@ export function DoorPage({
               <div className="c-pass__stub" aria-hidden="true" />
             </div>
           </div>
-          <LocalNav items={nav} />
         </div>
       </header>
 
@@ -116,45 +114,30 @@ export function DoorPage({
         </section>
       ) : null}
 
-      {door.sections.map((s, i) => (
-        <section
-          key={s.id}
-          id={s.id}
-          data-theme={i % 2 ? "light" : "light"}
-          className={`o-section c-doorsec${i % 2 ? " o-section--raised" : ""}`}
-          data-sc-act="flow"
-          aria-labelledby={`${s.id}-title`}
-        >
-          <div className="o-container c-doorsec__grid" data-sc-in data-sc-stagger="70">
-            <div className="c-doorsec__head">
-              {SECTION_PICTO[s.id] ? (
-                <PictoTile name={SECTION_PICTO[s.id]} className="c-doorsec__tile" />
-              ) : null}
-              <h2 id={`${s.id}-title`} className="c-h2 c-doorsec__title">
-                {s.title}
-              </h2>
-            </div>
-            <div className="c-doorsec__body">
-              <p className="c-lead">{s.text}</p>
-              {s.bullets?.length ? (
-                <ul className="c-checks">
-                  {s.bullets.map((b) => (
-                    <li key={b}>{b}</li>
-                  ))}
-                </ul>
-              ) : null}
-              {i === door.sections.length - 1 && s.href ? (
-                <div style={{ marginTop: "var(--space-medium)" }}>
-                  <CtaLink href={s.href} label={door.form.submitLabel} />
-                </div>
-              ) : null}
-            </div>
-          </div>
-          {SECTION_PICTO[s.id] ? (
-            <Pictogram name={SECTION_PICTO[s.id]} size="100%" className="c-doorsec__ambient" />
-          ) : null}
-        </section>
-      ))}
+      {/* The capabilities as one board: each row keeps its section id, so the header's dropdown
+          links still land on it. */}
+      <div data-theme="light" className="o-section c-caps" data-sc-act="flow">
+        <div className="o-container">
+          <InfoBoard
+            headingLevel={2}
+            size="lg"
+            rows={door.sections.map((s, i) => ({
+              key: s.id,
+              id: s.id,
+              title: s.title,
+              picto: SECTION_PICTO[s.id],
+              text: s.text,
+              list: s.bullets,
+              after:
+                i === door.sections.length - 1 && s.href ? (
+                  <div className="c-board__cta">
+                    <CtaLink href={s.href} label={door.form.submitLabel} light />
+                  </div>
+                ) : null,
+            }))}
+          />
+        </div>
+      </div>
 
       {door.process ? (
         <Steps
@@ -181,17 +164,14 @@ export function DoorPage({
               </h2>
               {door.verify.intro ? <p className="c-lead c-muted">{door.verify.intro}</p> : null}
             </div>
-            <ul className="c-creds c-creds--verify" data-sc-in data-sc-stagger="70">
-              {door.verify.items.map((it) => (
-                <li className="c-cred" key={it.title}>
-                  {ITEM_PICTO[it.title] ? (
-                    <PictoTile name={ITEM_PICTO[it.title]} className="c-cred__tile" />
-                  ) : null}
-                  <h3 className="c-cred__title">{it.title}</h3>
-                  <p className="c-cred__text">{it.text}</p>
-                </li>
-              ))}
-            </ul>
+            <InfoBoard
+              rows={door.verify.items.map((it) => ({
+                key: it.title,
+                title: it.title,
+                picto: ITEM_PICTO[it.title],
+                text: it.text,
+              }))}
+            />
           </div>
         </section>
       ) : null}
@@ -235,7 +215,7 @@ export function DoorPage({
           aria-label="Operator disclaimer"
         >
           <div className="o-container">
-            <div className="c-sign">
+            <div className="c-sign" data-theme="dark">
               <PictoTile name="information-desk-symbol" className="c-sign__tile" />
               <p className="c-sign__text">{door.disclaimer}</p>
             </div>

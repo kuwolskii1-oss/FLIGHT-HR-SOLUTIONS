@@ -103,7 +103,14 @@ export const SiteContent = z.object({
 });
 
 export const HomeContent = z.object({
-  hero: z.object({ headline: short, sub: short, cta: Cta, secondary: Cta.optional() }),
+  hero: z.object({
+    headline: short,
+    sub: short,
+    cta: Cta,
+    secondary: Cta.optional(),
+    /** Two checkable facts shown on glass over the hero photograph (value large, label small). */
+    facts: z.array(z.object({ value: short, label: short })).max(2).optional(),
+  }),
   ask: z.object({
     title: short,
     doors: z.array(z.object({ slug: short, title: short, text: short, href: short, urgency: short })).length(5),

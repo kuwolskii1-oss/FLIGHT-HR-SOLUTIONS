@@ -1,0 +1,307 @@
+/* Runway: the home page opens on a runway at golden hour, and the header floats over every page
+ * as glass (docs/website-za/ui-refresh.md, second pass).
+ *
+ * The photograph is the brand's two colours found in the world: navy sky, orange light behind
+ * the aircraft. Glass carries the words over it: the promise and the one action in a panel on
+ * the dark runway, two checkable facts floating in the sky, the links in a pill. Glass is never
+ * the only thing between text and a bright area: every glass surface is tinted navy, and a scrim
+ * darkens the top of the photograph for the header and the bottom for the panel.
+ *
+ * Motion: scroll-linked only. The photograph eases in by a few per cent and drifts slower than
+ * the page while the hero leaves; the fact cards drift faster. Nothing moves on its own, and
+ * with reduced motion nothing moves at all. */
+
+/* ---------- glass ---------- */
+.c-glass {
+  background:
+    linear-gradient(135deg, rgb(255 255 255 / 0.16), rgb(255 255 255 / 0.04) 60%),
+    rgb(10 13 34 / 0.34);
+  -webkit-backdrop-filter: blur(22px) saturate(150%);
+  backdrop-filter: blur(22px) saturate(150%);
+  box-shadow:
+    inset 0 0 0 1px rgb(255 255 255 / 0.2),
+    inset 0 1px 0 rgb(255 255 255 / 0.28),
+    0 30px 60px -32px rgb(8 11 28 / 0.7);
+  color: var(--color-white);
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .c-glass {
+    background: rgb(12 16 34 / 0.78);
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .c-glass {
+    background: rgb(12 16 34 / 0.92);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+/* ---------- the hero ---------- */
+.c-runway {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  min-height: max(40rem, 100svh);
+  overflow: clip;
+  color: var(--color-white);
+  /* Stands in for the photograph until it arrives, so white type is readable from the first paint. */
+  background:
+    radial-gradient(40% 45% at 50% 38%, rgb(238 150 60 / 0.55), transparent 70%),
+    linear-gradient(180deg, var(--color-navy-mid) 0%, rgb(96 60 60) 42%, rgb(40 26 24) 70%, var(--color-night) 100%);
+}
+.c-runway__photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+.c-runway__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 42%;
+  transform-origin: 50% 40%;
+  transform: scale(1.04);
+}
+@media (min-width: 700px) and (prefers-reduced-motion: no-preference) {
+  html:not(.sc-reduce) .c-runway__photo img {
+    transform:
+      translate3d(0, calc((var(--sc-p, 0.5) - 0.5) * 22vh), 0)
+      scale(calc(1.04 + (var(--sc-p, 0.5) - 0.5) * 0.14));
+    will-change: transform;
+  }
+}
+/* Scrim: a little night at the top for the header, a little more at the bottom for the panel. */
+.c-runway::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgb(8 11 28 / 0.55) 0%, rgb(8 11 28 / 0) 24%),
+    linear-gradient(0deg, rgb(8 11 28 / 0.62) 0%, rgb(8 11 28 / 0.18) 34%, rgb(8 11 28 / 0) 52%);
+  pointer-events: none;
+}
+.c-runway__frame {
+  position: relative;
+  display: grid;
+  align-content: end;
+  gap: var(--gutter);
+  padding-top: calc(var(--header-height) + var(--space-medium));
+  padding-bottom: clamp(1rem, 3.2vh, 2.25rem);
+}
+
+/* The facts: two small glass cards in the sky. */
+.c-runway__facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--gutter);
+}
+.c-runway__fact {
+  display: grid;
+  align-content: start;
+  gap: 0.35rem;
+  padding: clamp(0.85rem, 0.6rem + 0.8vw, 1.35rem) clamp(1rem, 0.7rem + 1vw, 1.6rem);
+  border-radius: var(--radius-panel);
+}
+.c-runway__value {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 1.1rem + 2.1vw, 3.1rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.c-runway__value .c-regno {
+  font-family: var(--font-mono);
+  font-size: 0.6em;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: inherit;
+}
+.c-runway__label {
+  font-size: var(--step--1);
+  font-weight: 500;
+  line-height: 1.3;
+  color: rgb(255 255 255 / 0.84);
+}
+@media (min-width: 1000px) {
+  .c-runway__facts {
+    position: absolute;
+    inset: 0 var(--margin);
+    display: block;
+    pointer-events: none;
+  }
+  .c-runway__fact {
+    position: absolute;
+    min-width: 13.5rem;
+    pointer-events: auto;
+  }
+  .c-runway__fact:nth-child(1) {
+    left: 0;
+    top: 41%;
+  }
+  .c-runway__fact:nth-child(2) {
+    right: 0;
+    top: 21%;
+  }
+  html:not(.sc-reduce) .c-runway__fact:nth-child(1) {
+    transform: translate3d(0, calc((var(--sc-p, 0.5) - 0.5) * -14vh), 0);
+  }
+  html:not(.sc-reduce) .c-runway__fact:nth-child(2) {
+    transform: translate3d(0, calc((var(--sc-p, 0.5) - 0.5) * -24vh), 0);
+  }
+}
+
+/* The panel: the promise and the one action, on the runway. */
+.c-runway__panel {
+  display: grid;
+  gap: clamp(1rem, 0.6rem + 1.2vw, 1.75rem);
+  padding: clamp(1.35rem, 0.8rem + 2.4vw, 3.25rem);
+  border-radius: calc(var(--radius-panel) + 8px);
+}
+.c-runway__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.35rem, 0.9rem + 5.3vw, 6.6rem);
+  font-weight: 600;
+  line-height: 0.92;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-wrap: balance;
+  color: var(--color-white);
+}
+.c-runway__line {
+  display: block;
+}
+.c-runway__foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-small) var(--space-medium);
+}
+.c-runway__sub {
+  max-width: 52ch;
+  font-size: var(--step-1);
+  line-height: 1.4;
+  color: rgb(255 255 255 / 0.88);
+}
+@media (max-width: 699px) {
+  .c-runway__photo img {
+    object-position: 50% 30%;
+  }
+  .c-runway__sub {
+    font-size: var(--step-0);
+  }
+}
+
+/* ---------- header: glass pills over every page ---------- */
+.c-header {
+  --glass-fill: rgb(12 16 34 / 0.5);
+  --glass-edge: rgb(255 255 255 / 0.2);
+  --glass-shine: rgb(255 255 255 / 0.16);
+}
+.c-header[data-theme="light"] {
+  --glass-fill: rgb(255 255 255 / 0.7);
+  --glass-edge: rgb(18 21 46 / 0.1);
+  --glass-shine: rgb(255 255 255 / 0.9);
+}
+/* The bar itself stays clear; the pills carry the glass. Hidden, it clears its own shadows too. */
+.c-header.is-scrolled {
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .c-header.is-hidden {
+    transform: translateY(calc(-100% - 2rem));
+  }
+}
+.c-header__burger,
+.c-header .c-cta-urgent--small,
+.c-header__nav {
+  background: var(--glass-fill);
+  box-shadow:
+    inset 0 0 0 1px var(--glass-edge),
+    inset 0 1px 0 var(--glass-shine),
+    0 12px 30px -18px rgb(8 11 28 / 0.55);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(160%);
+  transition:
+    background-color var(--duration-ui) var(--ease-out),
+    box-shadow var(--duration-ui) var(--ease-out),
+    color var(--duration-micro) var(--ease-out);
+}
+.c-header .c-cta-urgent--small {
+  border: 0;
+}
+.c-header__burger {
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-right: 0;
+  border-radius: 50%;
+}
+.c-header.is-menu-open :is(.c-header__burger, .c-cta-urgent--small) {
+  --glass-fill: rgb(255 255 255 / 0.08);
+  --glass-edge: rgb(255 255 255 / 0.2);
+  --glass-shine: rgb(255 255 255 / 0.12);
+}
+@media (min-width: 1000px) {
+  .c-header__nav {
+    align-items: center;
+    height: 2.9rem;
+    padding: 0 0.6rem 0 1.2rem;
+    border-radius: var(--radius-pill);
+  }
+  .c-header__list {
+    gap: 0.35rem;
+  }
+  .c-header .c-dropdown {
+    top: calc(100% + 0.95rem);
+  }
+  /* A bridge over the gap under the pill, so the pointer can reach an open dropdown. */
+  .c-header .c-dropdown::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .c-header__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+  }
+  .c-header__nav {
+    justify-self: start;
+  }
+  .c-header__logo {
+    justify-self: center;
+  }
+  .c-header__actions {
+    justify-self: end;
+  }
+  .c-header__logo img {
+    width: 10.5rem;
+    height: 2.45rem;
+  }
+}
+@media (max-width: 1199px) {
+  .c-header__logo {
+    order: -1;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .c-header {
+    --glass-fill: rgb(12 16 34 / 0.92);
+  }
+  .c-header[data-theme="light"] {
+    --glass-fill: rgb(255 255 255 / 0.96);
+  }
+}
