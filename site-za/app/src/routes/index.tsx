@@ -64,7 +64,7 @@ function Index() {
       </section>
 
       {/* 2. Orientation: five doors. */}
-      <section id="ask" data-theme="light" className="o-section o-section--raised" data-sc-act="flow" aria-labelledby="ask-title">
+      <section id="ask" data-theme="light" className="o-section o-section--raised c-chapter" data-sc-act="flow" aria-labelledby="ask-title">
         <div className="o-container">
           <h2 id="ask-title" className="c-h2" style={{ marginBottom: "var(--space-medium)" }}>
             {ask.title}
@@ -93,7 +93,7 @@ function Index() {
       </section>
 
       {/* 4. Proof: what can be checked. */}
-      <section id="trust" data-theme="light" className="o-section" data-sc-act="flow" aria-labelledby="trust-title">
+      <section id="trust" data-theme="light" className="o-section c-chapter" data-sc-act="flow" aria-labelledby="trust-title">
         <div className="o-container">
           <div className="c-section-head">
             <div className="c-section-head__title">
@@ -120,7 +120,7 @@ function Index() {
       </section>
 
       {/* 5. Engine 360, early access. */}
-      <section id="engine-360" data-theme="deep" className="o-section" data-sc-act="flow" aria-labelledby="e360-title">
+      <section id="engine-360" data-theme="deep" className="o-section c-chapter" data-sc-act="flow" aria-labelledby="e360-title">
         <div className="o-container c-e360" data-sc-in data-sc-stagger="70">
           <div>
             <span className="c-badge">{engine360.badge}</span>
@@ -138,7 +138,7 @@ function Index() {
       </section>
 
       {/* 6. Reassurance: the group. */}
-      <section id="group" data-theme="light" className="o-section" data-sc-act="flow" aria-labelledby="group-title">
+      <section id="group" data-theme="light" className="o-section c-chapter" data-sc-act="flow" aria-labelledby="group-title">
         <div className="o-container" data-sc-in data-sc-stagger="70">
           <span className="c-eyebrow">{site.group.line}</span>
           <h2 id="group-title" className="c-h2">

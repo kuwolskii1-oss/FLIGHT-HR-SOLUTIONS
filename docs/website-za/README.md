@@ -53,7 +53,7 @@ Method: `site-za/tools/qa/factors.js`, `qa.js`, `interact.js` and `forms.js` aga
 
 | Check | Factor | Measured |
 |---|---|---|
-| Words per viewport-height screen, home | 60 or fewer | 48 in the busiest screen after the trust block was trimmed (66 before); door pages 71 to 125, About 165, legal pages up to 260 (long-form by design) |
+| Words per viewport-height screen, home | 60 or fewer | 41 at 1440 px and 59 at 375 px in the busiest screen (66 before the chapters were sized to a screen and three lines trimmed); door pages 71 to 125, About 165, legal pages up to 260 (long-form by design) |
 | Calls to action (buttons) per screen | 1 | 1 on every page; door lists and text links reported separately |
 | Headline length | 8 words or fewer | 7 at most |
 | Body paragraph length | 40 words or fewer | 38 at most on the pages; the privacy notice has one paragraph of 55 |
@@ -75,7 +75,10 @@ Method: `site-za/tools/qa/factors.js`, `qa.js`, `interact.js` and `forms.js` aga
   25 September 2026 05:13 UTC with the `scroll-scrub` website template; the template's `app/`
   was replaced wholesale by `site-za/app` (only `app/packages` is the platform's).
 - Deploys: 05:33 UTC (first), 05:41 UTC (CSP font rule, link-only closings on form pages,
-  reduced-motion flow, 560 ms reveals), and the final one recorded below.
+  reduced-motion flow, 560 ms reveals), and the final one at the time recorded in the git log of
+  this file (full-screen home chapters, trimmed home copy, uncontrolled segmented radios).
+- Raw measurements: `factors-run3.json` (all routes), `factors-home-final.json` (home after the
+  last trim), `qa-report.json` (axe, console, weight per route).
 - Runbook: `site-za/DEPLOY.md`. Higgsfield credits used by this build: 0.5 for three images.
 
 ## Finding on the Swiss site

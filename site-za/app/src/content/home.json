@@ -124,7 +124,7 @@
  "engine360": {
   "badge": "Early access",
   "title": "Engine 360 is being designed",
-  "text": "Engine intelligence covering status and exposure. The waitlist asks for fleet size, engine types and role.",
+  "text": "Engine intelligence covering status and exposure. The waitlist asks for your fleet and role.",
   "cta": {
    "label": "Join the early access list",
    "href": "/engines/engine-360",
@@ -133,7 +133,7 @@
  },
  "group": {
   "title": "Part of the Flight Hour Solution group",
-  "text": "The Swiss company, Flight Hour Solution GmbH in Zug, is an independent jet-engine management consultancy working on shop visits, workscopes, lease returns and records.",
+  "text": "The Swiss company, Flight Hour Solution GmbH in Zug, is an independent jet-engine management consultancy.",
   "cta": {
    "label": "Visit the Swiss site",
    "href": "https://flighthoursolution.com",
@@ -142,7 +142,7 @@
  },
  "closing": {
   "headline": "Tell us what you need",
-  "sub": "Pick a door above, or send a general message. For an aircraft on the ground, use WhatsApp.",
+  "sub": "Pick a door above, or send a general message. Aircraft on the ground? Use WhatsApp.",
   "cta": {
    "label": "Get in touch",
    "href": "/contact",

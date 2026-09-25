@@ -1,0 +1,137 @@
+{
+ "routes": {
+  "/": {
+   "consoleErrors": [],
+   "pageErrors": [],
+   "axe": [],
+   "weightKB": 363,
+   "requests": 17,
+   "status": 200,
+   "title": "Flight Hour Solution | Engine intelligence. Operational certainty.",
+   "h1": [
+    "Engine intelligence. Operational certainty."
+   ]
+  },
+  "/engines": {
+   "consoleErrors": [],
+   "pageErrors": [],
+   "axe": [],
+   "weightKB": 467,
+   "requests": 21,
+   "status": 200,
+   "title": "Engine management from South Africa | Flight Hour Solution | Flight Hour Solution",
+   "h1": [
+    "Engine decisions, made on verified records"
+   ]
+  },
+  "/engines/engine-360": {
+   "consoleErrors": [],
+   "pageErrors": [],
+   "axe": [],
+   "weightKB": 361,
+   "requests": 17,
+   "status": 200,
+   "title": "Engine 360 early access | Flight Hour Solution | Flight Hour Solution",
+   "h1": [
+    "Engine 360 is being designed"
+   ]
+  },
+  "/aircraft": {
+   "consoleErrors": [],
+   "pageErrors": [],
+   "axe": [],
+   "weightKB": 507,
+   "requests": 21,
+   "status": 200,
+   "title": "Buy, sell or lease an aircraft | Flight Hour Solution | Flight Hour Solution",
+   "h1": [
+    "Buy, sell or lease an aircraft"
+   ]
+  },
+  "/parts": {
+   "consoleErrors": [],
+   "pageErrors": [],
+   "axe": [],
+   "weightKB": 446,
+   "requests": 21,
+   "status": 200,
+   "title": "Aircraft parts, verified before you pay | Flight Hour Solution | Flight Hour Solution",
+   "h1": [
+    "Aircraft parts, verified before you pay"
+   ]
+  },
+  "/charter": {
+   "consoleErrors": [],
+   "pageErrors": [],
+   "axe": [],
+   "weightKB": 391,
+   "requests": 21,
+   "status": 200,
+   "title": "Charter flights for passengers and cargo | Flight Hour Solution | Flight Hour Solution",
+   "h1": [
+    "Charter flights for passengers and cargo"
+   ]
+  },
+  "/advisory": {
+   "consoleErrors": [],
+   "pageErrors": [],
+   "axe": [],
+   "weightKB": 569,
+   "requests": 21,
+   "status": 200,
+   "title": "Aviation advisory in South Africa | Flight Hour Solution | Flight Hour Solution",
+   "h1": [
+    "Advice before you decide"
+   ]
+  },
+  "/about": {
+   "consoleErrors": [],
+   "pageErrors": [],
+   "axe": [],
+   "weightKB": 396,
+   "requests": 19,
+   "status": 200,
+   "title": "About us: how we work | Flight Hour Solution South Africa | Flight Hour Solution",
+   "h1": [
+    "Who we are and how we work"
+   ]
+  },
+  "/contact": {
+   "consoleErrors": [],
+   "pageErrors": [],
+   "axe": [],
+   "weightKB": 361,
+   "requests": 16,
+   "status": 200,
+   "title": "Contact | Flight Hour Solution South Africa | Flight Hour Solution",
+   "h1": [
+    "Tell us what you need"
+   ]
+  },
+  "/privacy": {
+   "consoleErrors": [],
+   "pageErrors": [],
+   "axe": [],
+   "weightKB": 357,
+   "requests": 15,
+   "status": 200,
+   "title": "Privacy notice | Flight Hour Solution",
+   "h1": [
+    "Privacy notice"
+   ]
+  },
+  "/legal": {
+   "consoleErrors": [],
+   "pageErrors": [],
+   "axe": [],
+   "weightKB": 356,
+   "requests": 15,
+   "status": 200,
+   "title": "Legal | Flight Hour Solution",
+   "h1": [
+    "Legal"
+   ]
+  }
+ },
+ "measured": "2026-09-25, production build served locally, widths 390/700/1000/1440"
+}

@@ -923,3 +923,14 @@ html.sc-reduce .c-cuestep {
   grid-area: auto;
   pointer-events: auto;
 }
+
+/* Home chapters: one idea per screen. From tablet width up each chapter takes a full viewport
+ * and centres its content, so any screen the visitor stops on holds one message. */
+@media (min-width: 900px) {
+  .c-chapter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100svh;
+  }
+}
