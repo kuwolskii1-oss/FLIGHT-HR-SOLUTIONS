@@ -7,6 +7,7 @@ import { DoorBoard, type ShapeKind } from "@/components/site/DoorBoard";
 import { EngineDial } from "@/components/site/EngineDial";
 import { GroupRoute } from "@/components/site/GroupRoute";
 import { InfoBoard } from "@/components/site/InfoBoard";
+import { Reel } from "@/components/site/Reel";
 import { PictoTile } from "@/components/site/Pictogram";
 import { DOOR_PICTO, ITEM_PICTO } from "@/site/wayfinding";
 import { withRegistration } from "@/site/registration";
@@ -66,6 +67,9 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+/** A company registration number, set in the data face wherever it appears. */
+const REGNO = /^\d{4}\/\d{6}\/\d{2}$/;
+
 const DOOR_SHAPE: Record<string, ShapeKind> = {
   engines: "fan",
   aircraft: "contrail",
@@ -119,7 +123,9 @@ function Index() {
             <ul className="c-runway__facts" aria-label="At a glance">
               {hero.facts.map((f) => (
                 <li className="c-glass c-runway__fact" key={f.value}>
-                  <span className="c-runway__value">{withRegistration(f.value)}</span>
+                  <span className="c-runway__value">
+                    <Reel value={f.value} className={REGNO.test(f.value) ? "c-regno" : ""} />
+                  </span>
                   <span className="c-runway__label">{f.label}</span>
                 </li>
               ))}

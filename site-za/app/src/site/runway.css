@@ -305,3 +305,62 @@
     --glass-fill: rgb(255 255 255 / 0.96);
   }
 }
+
+/* ---------- spinning counter (Reel.tsx; transitions.dev "Spinning counter", adapted) ---------- */
+/* Every character sits in a box one cell tall with its glyph set on the cell's own line height,
+ * so the reels and the text between them share one baseline. Each reel strip holds two turns of
+ * 0 to 9 as generated content (no text nodes); at rest it shows its digit on the first turn and
+ * lands on the same digit on the second. */
+.c-reel {
+  --reel-cell: 1.2em;
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  line-height: var(--reel-cell);
+  vertical-align: bottom;
+}
+.c-reel__face {
+  display: inline-flex;
+  align-items: flex-start;
+  height: var(--reel-cell);
+}
+.c-reel__run {
+  display: inline-block;
+  height: var(--reel-cell);
+  white-space: pre;
+}
+.c-reel__col {
+  position: relative;
+  display: inline-block;
+  width: 1ch;
+  height: var(--reel-cell);
+  overflow: hidden;
+  /* Soft edges instead of a hard crop; the digit itself sits clear of the fade. */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 16%, black 84%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 16%, black 84%, transparent 100%);
+}
+.c-reel__strip {
+  display: block;
+  transform: translateY(calc(var(--d) * var(--reel-cell) * -1));
+}
+.c-reel__strip::before {
+  content: "0\A 1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9\A 0\A 1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9";
+  display: block;
+  line-height: var(--reel-cell);
+  text-align: center;
+  white-space: pre;
+}
+.c-reel__strip.is-landed {
+  transform: translateY(calc((var(--d) + 10) * var(--reel-cell) * -1));
+}
+.c-reel__defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+@media (prefers-reduced-motion: reduce) {
+  .c-reel__strip {
+    transition: none !important;
+    filter: none !important;
+  }
+}

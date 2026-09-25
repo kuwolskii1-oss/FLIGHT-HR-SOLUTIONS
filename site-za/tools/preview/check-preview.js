@@ -72,6 +72,9 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     check("hero photograph drifts with scroll", !!p1 && p1.t !== p0.t, { p0: p0 && p0.t, p1: p1 && p1.t });
     const panel = await page.evaluate(() => { const el = document.querySelector("main:not([hidden]) .c-runway__panel"); const f = document.querySelectorAll("main:not([hidden]) .c-runway__fact").length; return { glass: !!el && getComputedStyle(el).backdropFilter.includes("blur"), facts: f }; });
     check("hero glass panel and two facts", panel.glass && panel.facts === 2, panel);
+    await sleep(1600);
+    const reels = await page.evaluate(() => [...document.querySelectorAll("main:not([hidden]) .c-reel")].map((r) => ({ value: r.querySelector(".u-visually-hidden").textContent, reels: r.querySelectorAll(".c-reel__strip").length, landed: r.querySelectorAll(".c-reel__strip.is-landed").length, blurLeft: r.querySelectorAll('.c-reel__strip[style*="filter: url"]').length })));
+    check("fact reels turn and land on the true numbers", reels.length === 2 && reels.every((r) => r.reels > 0 && r.landed === r.reels && r.blurLeft === 0), reels);
     await page.screenshot({ path: path.join(shots, "desktop-home-scrolled.png") });
     await page.evaluate(() => window.scrollTo(0, 0));
     await sleep(400);
@@ -290,6 +293,8 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     const rm1 = await page.evaluate(() => getComputedStyle(document.querySelector("main:not([hidden]) .c-runway__photo img")).transform);
     await page.evaluate(() => window.scrollTo(0, 0));
     check("rm: hero photograph still", rm0 === rm1, { rm0, rm1 });
+    const rmReels = await page.evaluate(() => document.querySelectorAll(".c-reel__strip.is-landed").length);
+    check("rm: fact reels do not turn", rmReels === 0, rmReels);
     const hidden = await page.evaluate(async () => {
       const h = document.documentElement.scrollHeight;
       for (let y = 0; y < h; y += 500) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 60)); }

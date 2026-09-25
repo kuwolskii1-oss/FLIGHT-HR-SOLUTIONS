@@ -161,6 +161,23 @@ shortcuts to go, because the header already carries them.
 | Weight per page | under 1 MB | 370 to 451 KB transferred (the home photograph adds 36 KB on a phone, 61 KB on a desktop) |
 | Keyboard and forms | as before | skip link, dropdowns, menu trap and Escape, section links landing on board rows, every form's validation and mail fallback pass |
 
+### The spinning counter (added the same evening)
+
+The client supplied transitions.dev's "Spinning counter" and suggested it for a line about more
+than 40 years in the business. That line is not on this site and cannot be: it comes from the
+old Swiss website ("Our Team with more than 40 years experience", the Swiss team's combined
+experience), this company was registered in 2026, the brief makes showing the Swiss engineers
+conditional on their working South African jobs, and the content rules block any years figure
+(`site-za/content-brief/CONTENT-SCHEMA.md`). The counter went where the page already shows
+numbers that can be checked: the two glass fact cards in the hero, whose digits turn once and
+land reel by reel, like a departure board settling (`Reel.tsx`, styles in `runway.css`).
+
+Adapted to the brief: 560 ms per reel and 60 ms between reels (the original is 1400 ms and
+90 ms); the digits are drawn as generated content, so the number exists once as real text for
+screen readers and copying; the page is server-rendered on the true digits and the turn starts
+from them, so no wrong number ever shows, with or without scripts; reduced motion gets no turn.
+If the client confirms a years figure it can stand on, a third card can turn to it the same way.
+
 The hero photograph is deliberately not marked high priority. With the hint, first paint on
 Fast 3G rose to 1.87 s because the photograph competed with the stylesheet; without it the
 stylesheet goes first and the navy gradient behind the glass holds the place until the photo

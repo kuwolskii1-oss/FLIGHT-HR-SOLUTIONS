@@ -418,6 +418,43 @@
     });
   })();
 
+  // ---- spinning counter (Reel.tsx) --------------------------------------------------------------------
+  // Same turn as the site: each reel turns once from its digit and lands on it again, 560 ms a reel,
+  // 60 ms between reels, a vertical blur that fades as it slows. Reduced motion: no turn.
+  (function () {
+    if (reduce || !window.IntersectionObserver) return;
+    var DUR = 560, STAGGER = 60, BLUR = 3;
+    $$(".c-reel").forEach(function (reel) {
+      var strips = $$(".c-reel__strip", reel), filters = $$("filter", reel), blurs = $$("feGaussianBlur", reel);
+      var spin = function () {
+        strips.forEach(function (s, i) {
+          if (filters[i]) s.style.filter = "url(#" + filters[i].id + ")";
+          s.style.transition = "transform " + DUR + "ms cubic-bezier(0.16, 1, 0.3, 1) " + i * STAGGER + "ms";
+          s.classList.add("is-landed");
+        });
+        var t0 = performance.now();
+        var tick = function (now) {
+          var running = false;
+          blurs.forEach(function (b, i) {
+            var t = (now - t0 - i * STAGGER) / DUR;
+            var y = t <= 0 || t >= 1 ? 0 : BLUR * (1 - t) * (1 - t);
+            b.setAttribute("stdDeviation", "0 " + y.toFixed(2));
+            if (t < 1) running = true;
+          });
+          if (running) requestAnimationFrame(tick);
+          else strips.forEach(function (s) { s.style.filter = ""; });
+        };
+        requestAnimationFrame(tick);
+      };
+      var io = new IntersectionObserver(function (entries) {
+        if (!entries.some(function (e) { return e.isIntersecting; })) return;
+        io.disconnect();
+        (document.fonts ? document.fonts.ready : Promise.resolve()).then(function () { requestAnimationFrame(spin); });
+      }, { threshold: 0.6 });
+      io.observe(reel);
+    });
+  })();
+
   // ---- start ------------------------------------------------------------------------------------------
   if (reduce) {
     root.classList.add("sc-reduce");

@@ -87,8 +87,10 @@ Method: `site-za/tools/qa/factors.js`, `qa.js`, `interact.js` and `forms.js` aga
   removed (platform commit `9c40741`); platform status "deployed", no error. About 17:48 UTC:
   the same build with the headline split written without a regular-expression lookbehind (Safari
   before 16.4 cannot parse one, which would have stopped the scripts on older iPhones) and the
-  intro spacing set by a class instead of `:has()` (platform commit `8939dff`). This is the
-  build now recorded; its measurements are in `factors-runway.json`.
+  intro spacing set by a class instead of `:has()` (platform commit `8939dff`); its
+  measurements are in `factors-runway.json`. About 18:05 UTC: the spinning counter on the
+  hero's two fact cards (platform commit `ed282f6`), with the home page measured again
+  (unchanged: 47 words per screen, 560 ms longest animation, 1.83 s first text on Fast 3G).
 - Raw measurements: `factors-run3.json` (all routes), `factors-home-final.json` (home after the
   last trim), `qa-report.json` (axe, console, weight per route).
 - Runbook: `site-za/DEPLOY.md`. Higgsfield credits used by this build: 0.5 for three images.
@@ -106,7 +108,7 @@ The live address (https://flighthoursolution-za.higgsfield.app) is a Higgsfield 
 
 https://claude.ai/artifact/8kYTmqytexPbegjqZuARM2
 
-It was republished at the same address with the wayfinding UI refresh (version 3) and with the second UI pass (version 4, 25 September 2026).
+It was republished at the same address with the wayfinding UI refresh (version 3), the second UI pass (version 4) and the spinning counter (version 6, 25 September 2026).
 
 What the preview is: the eleven server-rendered pages of the production build in one document, with the built stylesheet, the scroll engine and the header, menu, form, door board and footer behaviour ported to plain script (`site-za/tools/preview/`). Pages are addressed by hash (`#engines`, `#parts.form`). Forms validate as on the live site but send nothing. Two things differ from the live site: there is no server round-trip on forms, and a page change is a same-document swap with the browser's view transition instead of a full navigation.
 
