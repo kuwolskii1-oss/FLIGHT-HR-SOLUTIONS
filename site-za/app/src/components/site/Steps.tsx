@@ -23,7 +23,9 @@ export function Steps({ steps, title, intro, id, theme = "light", pinned = steps
               {steps.map((s, i) => {
                 const from = (i / n) * 0.86;
                 const to = i === n - 1 ? undefined : ((i + 1) / n) * 0.86 + 0.12;
-                const cue = to === undefined ? `${from.toFixed(2)}` : `${from.toFixed(2)} ${Math.min(0.98, to).toFixed(2)}`;
+                // The first step greets (third value 0): it is lit from the act's first frame, so the
+                // stage never shows the heading alone. The last step holds to the end of the act.
+                const cue = to === undefined ? `${from.toFixed(2)}` : i === 0 ? `0 ${Math.min(0.98, to).toFixed(2)} 0` : `${from.toFixed(2)} ${Math.min(0.98, to).toFixed(2)}`;
                 return (
                   <li className="c-cuestep" key={s.n} data-sc-cue={cue} data-sc-rise="18">
                     <span className="c-cuestep__n">{s.n}</span>
