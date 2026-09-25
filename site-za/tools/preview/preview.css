@@ -1,0 +1,6 @@
+/* Preview-only additions: the page runs inside a host frame that pads the root by the phone's
+   safe area, and stacks every route in one document (one <main> shown at a time). */
+.c-header{top:env(safe-area-inset-top,0px)}
+.c-skip{top:calc(env(safe-area-inset-top,0px) + var(--space-tiny))}
+.c-menu{top:env(safe-area-inset-top,0px)}
+main[hidden],.c-field[hidden]{display:none!important}

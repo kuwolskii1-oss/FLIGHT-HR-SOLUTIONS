@@ -8,3 +8,8 @@ site/app/.wrangler/
 site/app/.vinxi/
 site/tools/node_modules/
 site/tools/qa/out/
+# Generated verification and preview output
+site-za/tools/qa/out/
+site-za/tools/preview/out/
+site-za/tools/preview/files.json
+site-za/tools/preview/shots/

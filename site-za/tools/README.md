@@ -26,3 +26,7 @@ production server.
 ## Deploy helpers
 
 `deploy/mkzip.sh` and `deploy/overlay.sh` are the two halves of the runbook in `../DEPLOY.md`.
+
+## preview/
+
+A no-login preview of the beta for people without access to the staging host. `build-preview.mjs` fetches the server-rendered HTML of every route from the local production server (port 4700), keeps one header and footer, stacks the eleven `<main>` elements in one document (one visible at a time, chosen by the URL hash), rewrites links and asset paths, inlines the built stylesheet and the scroll engine, and appends `runtime.js`, a plain-script port of the client behaviour (header, menu, accordions, segmented controls, form validation, the ident). `preview.css` holds the few host-frame adjustments. `check-preview.js` walks the result in Chromium inside a stand-in for the host's page skeleton: navigation, deep links, history, forms, menu, keyboard, reduced motion, console and network errors. Output goes to `out/` (ignored by git).

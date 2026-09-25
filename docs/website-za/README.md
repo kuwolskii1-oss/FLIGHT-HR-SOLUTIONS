@@ -88,3 +88,13 @@ The same Content-Security-Policy refusal of the template's inlined IBM Plex Mono
 applies to `site/app` (its `font-src` lacks `data:`), so its live pages log the same console
 errors. One-line fix in `site/app/src/lib/security-headers.server.ts`; not applied here because
 this run did not touch the Swiss site.
+
+## Viewing the beta without a login
+
+The live address (https://flighthoursolution-za.higgsfield.app) is a Higgsfield staging host. It sends anonymous visitors to the Higgsfield sign-in page, so only the account that owns the site can open it. Until the site moves to the client's own hosting, a static preview of the same production build is published as a private Claude artifact. It opens without a login for anyone the owner shares it with:
+
+https://claude.ai/artifact/8kYTmqytexPbegjqZuARM2
+
+What the preview is: the eleven server-rendered pages of the production build in one document, with the built stylesheet, the scroll engine and the header, menu, form and ident behaviour ported to plain script (`site-za/tools/preview/`). Pages are addressed by hash (`#engines`, `#parts.form`). Forms validate as on the live site but send nothing. Two things differ from the live site: there is no server round-trip on forms, and a page change is a same-document swap with the browser's view transition instead of a full navigation.
+
+To rebuild it after a new production build: start the build locally as described in `site-za/tools/README.md` (the production server on port 4700), then run `node site-za/tools/preview/build-preview.mjs` and `node site-za/tools/preview/check-preview.js`. The output folder is not committed; publish `out/index.html` with its supporting files to the same artifact address.
