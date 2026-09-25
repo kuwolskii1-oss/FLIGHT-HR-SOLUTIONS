@@ -1,0 +1,211 @@
+WEBSITE BUILD PROMPT: RESEARCH, CRITIQUE, BUILD, VERIFY
+As of 24 September 2026
+
+======================================================================
+1. PURPOSE AND HOW TO USE
+======================================================================
+This is the prompt for a first (beta) version of a client website: four agents run
+in order, a human approves the blueprint in the middle, and the result is iterated
+with the client afterwards. Fill in every bracket in the client brief before running
+anything; an empty brief is the main reason a beta comes out generic.
+
+1. Fill the client brief (section 2) and keep the design principles (section 3) as
+   they are, adjusting only the numbers.
+2. Run Agent 1 (research) and Agent 2 (critic). Read the blueprint the critic produces.
+3. Approve or edit the blueprint. Nothing is built before this step.
+4. Run Agent 3 (build), then Agent 4 (verify). Failures go back to Agent 3 until the
+    factors pass.
+5. Review the beta with the client, then iterate on the same repository.
+
+Paste sections 2 to 9 into the run as one prompt; the agent headings are the stage
+boundaries.
+
+======================================================================
+2. CLIENT BRIEF (FILL IN BEFORE RUNNING)
+======================================================================
+Everything the agents may state about the client comes from this section and the
+sources it names. Anything not here is unknown and must be marked for the client,
+never invented.
+
+Client:                [name, what they do, one paragraph]
+Audience:              [who visits, what they already know, what they need]
+Goal:                  A visitor should [the one action] within [10] seconds of landing
+Sources of truth:      [folder or links: facts, existing copy, brand assets, photography]
+Pages:                 [list; keep it short for a beta]
+Fixed brand elements:  [logo, colours, typefaces, tone]
+Run budget:            [token or time cap for the whole run]; stop and report if reached
+
+Rules that apply to every agent: no invented facts, clients, figures or quotes or numbers ; open points go into a list for the client; British or
+American English as the client uses it; no dashes as punctuation.
+
+======================================================================
+3. DESIGN PRINCIPLES (BINDING ON EVERY AGENT)
+======================================================================
+The site must look elegant and move well crated UX with good flow and cutting edge animations without costing the visitor a second of
+orientation. each principle below is a factor 
+Agent 4 can measure.
+
+Simplicity
+- One idea per screen: each viewport-height section carries one message and at most
+  one call to action. A visitor never sees two competing buttons.
+- Less reading: headlines of 8 words or fewer, body paragraphs of 40 words or fewer,
+  and no paragraph a visitor must read to know where to click. Longer material moves
+  to a detail page or an expandable block.
+- Less clutter: at most two typefaces, one accent colour, no cards inside cards.
+- Obvious navigation: primary links visible on desktop, a burger menu on mobile, the
+  logo returns home, and the contact action is reachable from every screen without
+  scrolling back.
+
+Elegance
+- A strict type scale and spacing scale, defined as tokens and used exclusively.
+- Colour does work: the accent marks actions.
+
+
+Motion
+- UI must have optimised cool scroll animations and css transitions.
+- Purpose first: motion shows where something came from, confirms an action, or
+  guides the eye to the next step. Motion that does none of these is removed.
+- Transform and opacity only. Hover and feedback 200 ms; reveals 400 to 600 ms;
+  ease-out curves. Nothing bounces, nothing loops, nothing plays while the page loads.
+- Reveals happen once, on first entry, staggered no more than 80 ms apart, and never
+  hide content the visitor is already looking at. Text is readable in the first frame
+  on a slow connection.
+- Scrolling stays native or lightly smoothed: no scroll-jacking, no sections that trap
+  the wheel, no horizontal scroll on touch devices.
+- Interaction never waits for a transition: forms, menus and links respond within
+  200 ms.
+
+Flow
+- The page order tells one story: what this is, why it matters, proof, how to start, customer reassurance.
+- Every section ends with the natural next step, a link or the next section, never a
+  dead end.
+- Mobile is designed first: the same story, fewer words, the same single action per
+  screen.
+
+======================================================================
+4. AGENT 1: RESEARCH
+======================================================================
+Find 5-7 different award-listed sites that serve the same audience and do the same job as the
+client, and record how each one works. Use the browser automation tool (Playwright or
+equivalent); do not rely on search snippets or memory.
+
+For each site, record with the URL and a screenshot:
+- Navigation model: what is visible on desktop, what sits behind the menu, how the
+  contact action is reached.
+- Section order on the home page and what each section is for.
+- Type scale (sizes and weights in use), spacing and grid.
+- Motion: what moves, durations and easings, whether scrolling is smoothed, how
+  reduced motion is handled.
+- Image treatment: photography, illustration, film, and how text sits on it.
+- Why the page is understood within ten seconds, in one sentence.
+
+Rules: study, do not copy. No assets, no copy text, no identifiable layouts are taken
+from any site. Relevance means same industry, same audience and same visitor job;
+award status alone is not relevance. Output one record per site plus a one-paragraph
+note on what the five have in common.
+
+======================================================================
+5. AGENT 2: CRITIC
+======================================================================
+Turn the research into one coherent blueprint, not a pile of parts. A site assembled
+from five studios' patterns looks assembled; the critic's job is to choose.
+
+1. Score every recorded pattern from 1 to 5 on six criteria: fit to the client's
+   audience, clarity within ten seconds, accessibility cost, performance cost and originality (a pattern that would be recognisable as another
+   studio's work scores 1).
+2. Choose one primary reference for the design system (type, spacing, grid, motion
+   grammar) and at most four borrowed patterns from the other sites.
+3. Write the blueprint: a one-sentence concept; design tokens (colours, type scale,
+   spacing scale, motion durations and easings); the navigation model (visible primary
+   links on desktop, burger on mobile); a page-by-page section plan with the single
+   call to action per screen; the motion principles from section 3 restated for this
+   site; and a rejected list with one reason each.
+4. Check the blueprint against every factor in section 3 and against the client brief
+   before returning it.
+
+Stop after two rounds at most. Return the blueprint and the scoring table; do not
+return the raw research.
+
+======================================================================
+6. HUMAN CHECKPOINT
+======================================================================
+The blueprint is approved by a person before Agent 3 starts. Five minutes here saves
+a rebuild.
+
+[ ] The concept sentence is one you would say to the client.
+[ ] Every page has one clear action and the section order tells the story in section 3.
+[ ] The primary reference is a fit for the client, not merely the most impressive site
+    found.
+[ ] Nothing in the blueprint would be recognisable as another studio's work.
+[ ] The open questions for the client are listed and none of them blocks the beta.
+
+Edit the blueprint directly if something is wrong; do not send it back to the critic
+for another round unless the primary reference is the wrong choice.
+
+======================================================================
+7. AGENT 3: BUILD
+======================================================================
+Implement the approved blueprint as [stack] in [repository], page by page, and deliver
+a running beta with every open question for the client listed.
+
+- Copy comes from the sources of truth in section 2, shortened and clarified to the
+  factors in section 3, never invented. Ambiguous phrases are rewritten into plain
+  ones; facts keep their sources. Anything the sources do not support is left out and
+  listed for the client.
+- Design tokens from the blueprint are the only colours, sizes and spacings used; no
+  ad hoc values.
+- Icons: one licensed set only (Lucide or Phosphor), used for meaning, never
+  decoration.
+- Imagery: the client's own photography where it exists; otherwise Higgsfield-generated
+  placeholders within the credit budget, each marked as placeholder in the hand-over
+  note.
+- Motion follows section 3 exactly; scrolling is native or lightly0 smoothed/has inetria with a
+  reduced-motion fallback that removes it.
+- Navigation: primary links visible on desktop, a burger menu on mobile, the contact
+  action reachable from every screen.
+- Legal pages, metadata, social preview, sitemap.
+- Deliver the repository, a short build note (what was made, what is placeholder, how
+  to run it) and the open-questions list.
+
+======================================================================
+8. AGENT 4: VERIFY
+======================================================================
+Measure the beta against the Factors below on a local build at 375, 768 and 1440 px
+wide, fix what fails or send it back to Agent 3, and report the numbers. A beta is
+done only when every row passes.
+
+Check                                          Factors
+---------------------------------------------  ----------------------------------------
+Words per viewport-height screen               60 or fewer on the home page
+Calls to action per screen                     1
+Headline length                                8 words or fewer
+Body paragraph length                          40 words or fewer
+Longest animation                              600 ms
+Animations that block interaction              0
+Reveal stagger                                 80 ms or less between items
+prefers-reduced-motion                         no movement, all content visible
+Scroll on touch devices                        native, no horizontal scroll, no trapped wheel
+Accessibility (axe-core, WCAG 2.2 AA)          0 violations on every page
+Console errors and broken internal links       0
+Time to first readable text, throttled 3G      under 2 seconds
+Page weight excluding film or video            under 1 MB
+Keyboard                                       every action reachable; menu traps focus
+                                               and closes on Escape
+Facts                                          every figure on the site traces to a
+                                               source in section 2
+
+Report the measured value for each row, not only pass or fail, so the next iteration
+knows where the margins are.
+
+======================================================================
+9. GUARDRAILS
+======================================================================
+- Originality: reference sites are closely studied for their systems and patterns; no asset,
+  sentence or identifiable layout is reproduced. The critic's originality score
+  enforces it, and the human checkpoint confirms it.
+- Cost: The critic runs at most two rounds; the builder gets at most three verify rounds before a person looks.
+- Ownership: the repository, hosting account, domain and secrets belong to the client
+  or the studio, never to a third-party platform.
+- Truth: nothing is stated about the client that the sources do not support.s
+- Done means: the verify table passes, the build note and open-questions list exist,
+  and the client can open the beta on a link that does not require a login.

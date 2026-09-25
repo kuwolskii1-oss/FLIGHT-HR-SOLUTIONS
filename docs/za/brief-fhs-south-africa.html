@@ -1,0 +1,256 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>FHS South Africa Web Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#F1F3EF;--surface:#FFFFFF;--ink:#121B23;--ink-2:#46525D;--ink-3:#6A7580;
+  --rule:#D7DCD5;--rule-2:#BFC6BE;--sign:#0B1117;--yellow:#F4C21B;--on-yellow:#121B23;
+  --link:#1D5C88;--blk-bg:#FBE8E4;--blk-fg:#9E2517;--dec-bg:#FCF1C7;--dec-fg:#634C00;
+  --bld-bg:#E2EDF5;--bld-fg:#1D5C88;--note-bg:#E9ECE6;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#0D1318;--surface:#141D25;--ink:#E3E8EC;--ink-2:#AAB5BF;--ink-3:#85919C;
+    --rule:#25313B;--rule-2:#34424F;--sign:#05080B;--link:#8ABFE4;
+    --blk-bg:#3A1611;--blk-fg:#F6A194;--dec-bg:#372D0A;--dec-fg:#F3D670;
+    --bld-bg:#12283A;--bld-fg:#9DCAEB;--note-bg:#1A242D;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0D1318;--surface:#141D25;--ink:#E3E8EC;--ink-2:#AAB5BF;--ink-3:#85919C;
+  --rule:#25313B;--rule-2:#34424F;--sign:#05080B;--link:#8ABFE4;
+  --blk-bg:#3A1611;--blk-fg:#F6A194;--dec-bg:#372D0A;--dec-fg:#F3D670;
+  --bld-bg:#12283A;--bld-fg:#9DCAEB;--note-bg:#1A242D;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:880px;margin:0 auto;padding-inline:20px;padding-block:40px 96px}
+a{color:var(--link)}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.1;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,6vw,50px);letter-spacing:.005em}
+h2{font-size:28px;display:flex;align-items:center;gap:12px;margin-bottom:14px}
+h3{font-size:20px;font-weight:500;margin:26px 0 8px}
+p{margin:0 0 12px;max-width:66ch}
+ul{margin:0 0 12px;padding-left:20px;max-width:66ch}
+li{margin-bottom:6px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:10px}
+.lede{font-size:18px;color:var(--ink-2);max-width:62ch;margin-top:14px}
+.sign{font-family:var(--display);font-weight:600;font-size:20px;background:var(--sign);color:var(--yellow);border:2px solid var(--yellow);border-radius:3px;min-width:38px;height:34px;display:inline-flex;align-items:center;justify-content:center;padding:0 8px;flex:none}
+.revblock{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));border:1px solid var(--rule-2);background:var(--surface);margin-top:28px}
+.revblock div{padding:10px 14px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.revblock b{display:block;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:2px}
+.revblock span{font-size:14.5px}
+section{margin-top:56px}
+.tbl{overflow-x:auto;border:1px solid var(--rule-2);background:var(--surface);margin:14px 0 8px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;line-height:1.5;min-width:640px}
+th{font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;text-align:left;color:var(--ink-2);padding:10px 12px;border-bottom:1px solid var(--rule-2);background:var(--note-bg)}
+td{padding:11px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600}
+.tag{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;vertical-align:2px}
+.t-blk{background:var(--blk-bg);color:var(--blk-fg)}
+.t-dec{background:var(--dec-bg);color:var(--dec-fg)}
+.t-bld{background:var(--bld-bg);color:var(--bld-fg)}
+.items{display:grid;gap:0;border:1px solid var(--rule-2);background:var(--surface);margin-top:14px}
+.item{display:grid;grid-template-columns:92px 1fr;gap:14px;padding:14px 16px;border-bottom:1px solid var(--rule)}
+.item:last-child{border-bottom:0}
+.item h4{margin:0 0 4px;font-size:16px;font-weight:600}
+.item p{margin:0;font-size:15px;color:var(--ink-2)}
+.mono{font-family:var(--mono);font-size:13.5px}
+.nav{border:1px solid var(--rule-2);background:var(--surface);margin-top:14px}
+.navbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;padding:12px 16px;border-bottom:1px solid var(--rule)}
+.navbar .brand{font-family:var(--display);font-weight:600;font-size:18px;margin-right:auto}
+.navbar .lnk{font-size:14.5px;font-weight:500}
+.navbar .lnk.on{box-shadow:inset 0 -2px 0 var(--yellow)}
+.btn{font-size:13.5px;font-weight:600;padding:6px 12px;border-radius:3px;background:var(--yellow);color:var(--on-yellow)}
+.btn-ghost{font-size:13.5px;font-weight:600;padding:5px 11px;border-radius:3px;border:1.5px solid var(--ink);color:var(--ink)}
+.mega{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px 20px;padding:16px}
+.mega h5{margin:0 0 6px;font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.05em;text-transform:uppercase}
+.mega ul{list-style:none;padding:0;margin:0;font-size:14px;color:var(--ink-2)}
+.mega li{margin-bottom:3px}
+.foot{padding:10px 16px;border-top:1px solid var(--rule);font-size:13px;color:var(--ink-3)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0;border:1px solid var(--rule-2);background:var(--surface);margin-top:14px}
+.step{padding:12px 14px;border-right:1px solid var(--rule)}
+.step:last-child{border-right:0}
+.step b{font-family:var(--display);font-size:18px;font-weight:600;display:block}
+.step span{font-size:14px;color:var(--ink-2)}
+.callout{background:var(--note-bg);border-left:4px solid var(--yellow);padding:12px 16px;margin:16px 0;max-width:70ch}
+.callout p:last-child{margin:0}
+.check{list-style:none;padding:0;max-width:none;columns:2 300px;column-gap:28px}
+.check li{padding-left:26px;position:relative;break-inside:avoid}
+.check li::before{content:"";position:absolute;left:0;top:5px;width:14px;height:14px;border:1.5px solid var(--ink-3);border-radius:2px}
+@media (max-width:560px){.item{grid-template-columns:1fr;gap:6px}.step{border-right:0;border-bottom:1px solid var(--rule)}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Website UX brief · South Africa</div>
+    <h1>Flight Hour Solution (Pty) Ltd: what the new site needs</h1>
+    <p class="lede">This brief is based on the FHS South Africa corporate profile and a review of flighthoursolution.com, the related Swiss company's site. The South African company covers much more ground than the Swiss site: ten service lines, sixteen client types, and visitors ranging from lessors to pilgrimage groups. So the site's first job is to route each visitor to the right door quickly, and the second is to earn trust as a company registered in 2026.</p>
+    <div class="revblock">
+      <div><b>Document</b><span>FHS-ZA web brief</span></div>
+      <div><b>Revision</b><span>A · 24 Sep 2026</span></div>
+      <div><b>For</b><span>Website build team, MD</span></div>
+      <div><b>Sources</b><span>Corporate profile (.docx), live Swiss site</span></div>
+    </div>
+  </header>
+
+  <section id="blockers">
+    <h2><span class="sign">1</span>Settle these before design starts</h2>
+    <p>Most of these come from gaps in the profile. Several would make the site look unreliable, or cause legal trouble, if it launched without them.</p>
+    <div class="items">
+      <div class="item"><div><span class="tag t-dec">Decide</span></div><div><h4>The domain, and how to describe the link to the Swiss company</h4><p>The profile lists www.flighthoursolution.com, which is the related Swiss company's site. Two options work: a section of that site (<span class="mono">/za</span>), or a separate <span class="mono">flighthoursolution.co.za</span>. The recommendation is the .co.za site, because the South African services, legal entity and privacy law are all different. Put a country switch on both sites and a clear line such as “Part of the Flight Hour Solution group”. Confirm the exact relationship first (subsidiary, sister company or partner) so that wording is accurate. Email stays on the group domain (confirmed: Thupudi@flighthoursolution.com). A .co.za site with .com email is common and reinforces the group link. Register flighthoursolution.co.za either way, if it's still available.</p></div></div>
+      <div class="item"><div><span class="tag t-blk">Blocker</span></div><div><h4>The address says “TBA”</h4><p>Nobody will buy an aircraft, an engine or a part from a trader with no physical address or phone number. South African law also expects the registered name, registration number and physical address on business websites (Companies Act s32; ECTA s43 where anything is sold online).</p></div></div>
+      <div class="item"><div><span class="tag t-dec">Decide</span></div><div><h4>What FHS holds itself vs. what partners hold</h4><p>List only real approvals and accreditations: SACAA-related approvals, parts-distribution accreditation, B-BBEE level, CSD registration. The profile itself commits to “avoiding unsupported technical or commercial claims”, and the site copy has to meet the same standard.</p></div></div>
+      <div class="item"><div><span class="tag t-dec">Decide</span></div><div><h4>Who the team is</h4><p>The profile names only the MD. The Swiss company's engineers and their 40+ years of engine experience are the strongest trust asset the new site has. If they will actually work on South African engine jobs, show them on the team page, labelled as group colleagues. Add two to four named people based in South Africa as well.</p></div></div>
+      <div class="item"><div><span class="tag t-dec">Decide</span></div><div><h4>Which engines, aircraft and regions</h4><p>The profile never says which engine or aircraft types FHS covers, or where it operates (South Africa, SADC, all of Africa?). Visitors check both before they get in touch. The Swiss site lists CFM56, LEAP, V2500, PW4000, Honeywell 131-9 APUs, TPE331 and TFE731. Reuse that list only for engines the group will actually support for South African clients.</p></div></div>
+      <div class="item"><div><span class="tag t-dec">Decide</span></div><div><h4>How to present Engine 360</h4><p>It's still in development. Present it as early access with a waitlist, never as a live product. The profile already says “is being designed”, so keep that wording.</p></div></div>
+    </div>
+  </section>
+
+  <section id="doors">
+    <h2><span class="sign">2</span>Five doors, not ten service lines</h2>
+    <p>The profile's ten sections overlap. Maintenance reserves come up in three of them, lease return in two, and ACMI in two (sections 5 and 8). Group everything into five doors, each matching a different kind of visitor with a different level of urgency:</p>
+    <div class="tbl"><table>
+      <thead><tr><th style="width:18%">Door</th><th style="width:12%">Profile §</th><th style="width:22%">Who comes in</th><th style="width:13%">Urgency</th><th>What they bring</th></tr></thead>
+      <tbody>
+        <tr><td>Engines</td><td class="mono">1, 2, 3</td><td>Airlines, lessors, engine owners, MROs</td><td>Weeks to months</td><td>Engine type, aircraft, the issue, owned or leased, timing. Records only after an NDA.</td></tr>
+        <tr><td>Aircraft</td><td class="mono">4, 5, 8, 9</td><td>Airlines, new operators, investors, government</td><td>Months</td><td>Buy, sell, dry lease or ACMI. Aircraft type or the mission, budget or monthly rate, start date and term, base.</td></tr>
+        <tr><td>Parts</td><td class="mono">6</td><td>Maintenance controllers, MROs, operators</td><td>Hours (AOG) to weeks</td><td>Part number, quantity, condition, release certificate needed, delivery airport.</td></tr>
+        <tr><td>Charter</td><td class="mono">7</td><td>Corporates, government, mining, pilgrimage, humanitarian</td><td>Days to weeks</td><td>Route, dates, passenger count or cargo weight and dimensions.</td></tr>
+        <tr><td>Advisory</td><td class="mono">10</td><td>Investors, owners, government, start-up airlines</td><td>Months</td><td>A project description, and the stage it's at.</td></tr>
+      </tbody>
+    </table></div>
+    <p>Charter bookers and lessors want completely different things. A mining logistics manager has no reason to see LLP stack analysis. The homepage should ask “What do you need?” and offer these five doors before anything else.</p>
+  </section>
+
+  <section id="nav">
+    <h2><span class="sign">3</span>Navigation</h2>
+    <p>The five doors become the top menu, plus About. An urgent button stays visible on every screen size, because AOG parts buyers and charter requests often arrive from a phone.</p>
+    <div class="nav" role="img" aria-label="Proposed navigation: Engines, Aircraft, Parts, Charter, Advisory, About, an urgent WhatsApp button and a Get in touch button, with the Engines menu expanded">
+      <div class="navbar">
+        <span class="brand">Flight Hour Solution</span>
+        <span class="lnk on">Engines ▾</span><span class="lnk">Aircraft ▾</span><span class="lnk">Parts</span><span class="lnk">Charter ▾</span><span class="lnk">Advisory ▾</span><span class="lnk">About ▾</span>
+        <span class="lnk">ZA ▾</span><span class="btn-ghost">AOG · WhatsApp</span><span class="btn">Get in touch</span>
+      </div>
+      <div class="mega">
+        <div><h5>Engines</h5><ul><li>Technical status and records</li><li>LLPs and remaining life</li><li>Shop visits and MRO coordination</li><li>Maintenance reserves</li><li>Lease return and redelivery</li><li>Engine sales and leasing</li><li>Engine 360 <span class="tag t-dec">Early access</span></li></ul></div>
+        <div><h5>Aircraft</h5><ul><li>Buy an aircraft</li><li>Sell an aircraft</li><li>Dry lease</li><li>ACMI and wet lease</li><li>Aircraft management</li></ul></div>
+        <div><h5>Parts</h5><ul><li>One page: request form, categories, AOG line, how we verify parts</li></ul></div>
+        <div><h5>Charter</h5><ul><li>Corporate and VIP</li><li>Group and pilgrimage</li><li>Government</li><li>Cargo, mining, humanitarian</li></ul></div>
+        <div><h5>Advisory</h5><ul><li>Fleet planning, lease vs. buy</li><li>Due diligence</li><li>Aircraft recovery</li><li>Tenders and investor packs</li></ul></div>
+        <div><h5>About</h5><ul><li>How we work</li><li>Who we serve</li><li>Our commitments</li><li>Team and company details</li></ul></div>
+      </div>
+      <div class="foot">ZA ▾ = country switch to the Swiss site. Footer: “Part of the Flight Hour Solution group” · registered name and number 2026/294346/07 · physical address · POPIA privacy notice · PAIA manual (if required) · charter operator disclaimer · B-BBEE and CSD (if held) · careers</div>
+    </div>
+    <h3>Why each menu is grouped this way</h3>
+    <ul>
+      <li><b>Engines stays first.</b> The profile calls engine management its primary focus, and “Engine intelligence” is the positioning line.</li>
+      <li><b>Engine 360 isn't a top-level item until it launches.</b> It gets a homepage band and a menu entry with an Early access badge. A waitlist form can ask for fleet size, engine types and role, which doubles as market research.</li>
+      <li><b>Parts is a single page.</b> Buyers arrive with a part number, not a category. Sixteen product categories don't need sixteen pages.</li>
+      <li><b>ACMI is merged into Aircraft.</b> It appears in both section 5 and section 8 of the profile, and it's one decision for the customer.</li>
+      <li><b>Aircraft management goes under Aircraft,</b> because the same owners and investors are the audience.</li>
+    </ul>
+  </section>
+
+  <section id="trust">
+    <h2><span class="sign">4</span>Trust is the main design problem</h2>
+    <p>A company registered in 2026 that trades aircraft, engines and parts will be checked hard. Buyers in these markets are wary of unverified sellers and chains of brokers. The profile's strongest material is its verification process, and at the moment none of that is visible to a site visitor. Put it on the site.</p>
+    <h3>Publish the “How we work” sequence</h3>
+    <p>The profile's five steps are a real sequence, so numbering them is justified. Put them on the About page and a condensed version on the homepage:</p>
+    <div class="steps">
+      <div class="step"><b>1 Define</b><span>Requirement, specs, timeline</span></div>
+      <div class="step"><b>2 Verify</b><span>Records, counterparties, status</span></div>
+      <div class="step"><b>3 Structure</b><span>Deal, lease or maintenance plan</span></div>
+      <div class="step"><b>4 Execute</b><span>Inspections, payments, delivery</span></div>
+      <div class="step"><b>5 Monitor</b><span>Performance and exposure</span></div>
+    </div>
+    <h3>Show the transaction process on the Aircraft and Parts pages</h3>
+    <p>The profile's nine-step major-transaction process (LOI → proof of funds → documents → escrow → inspection → purchase agreement → release) tells serious buyers what to expect. It also turns away people who aren't ready to transact, before they take up the team's time. Show it as a simple timeline.</p>
+    <h3>Add a “How we verify parts” section</h3>
+    <p>Include traceability, release documentation, certification status, incident and accident history, and remaining life. The profile already lists all of these, and they are what an AOG buyer checks before paying.</p>
+    <h3>Add the charter disclaimer</h3>
+    <div class="callout"><p>The profile already states that FHS isn't the operating airline and that flights are operated by licensed operators under their own Air Operator Certificates. Put this on every charter page and on every charter quote. It protects the company and it tells a government or corporate buyer that the booking is legitimate.</p></div>
+    <h3>Add proof, as soon as there is some</h3>
+    <ul>
+      <li>Team bios, with prior employers (airline, MRO, OEM, lessor)</li>
+      <li>The group link. The Swiss company's engine experience and capabilities can go on the site, as long as they're clearly labelled as the group's.</li>
+      <li>Anonymized case examples after the first jobs. Until then, show the group's and the team's experience.</li>
+      <li>Company facts in the footer: registration number, address, and the MD's name</li>
+    </ul>
+  </section>
+
+  <section id="forms">
+    <h2><span class="sign">5</span>One form per door</h2>
+    <p>A single generic contact form fits nobody here. A charter request and a parts request need completely different fields. Each form should ask only for what the customer is willing to share at first contact.</p>
+    <div class="tbl"><table>
+      <thead><tr><th style="width:15%">Form</th><th>Fields</th><th style="width:30%">Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Engines</td><td>Issue (dropdown) · engine type · aircraft type · owned or leased · timing · region · serial number (optional)</td><td>Say “We sign an NDA before asking for records.” Don't ask for uploads.</td></tr>
+        <tr><td>Aircraft</td><td>Buy / sell / dry lease / ACMI · aircraft type <i>or</i> mission (seats, payload, range) · budget or monthly rate · start date and term · base country · end buyer or acting for one</td><td>New airlines and governments often know the mission, not the type. Leave proof of funds to step 2 of the process.</td></tr>
+        <tr><td>Parts</td><td>Part number · description · quantity · condition (new, overhauled, serviceable, as removed) · release certificate needed · delivery airport · aircraft type · AOG yes/no</td><td>Allow several lines, or a spreadsheet upload for RFQs. An AOG answer of yes routes the request to WhatsApp.</td></tr>
+        <tr><td>Charter</td><td>Passengers or cargo · from · to · dates · one-way or return · passenger count, or cargo weight, dimensions and dangerous goods · date flexibility</td><td>Show which currency quotes are given in. The operator disclaimer goes under the button.</td></tr>
+        <tr><td>Advisory</td><td>Organisation type · project summary · stage · timeframe</td><td>Keep it short. This is a conversation starter.</td></tr>
+      </tbody>
+    </table></div>
+    <p>Every form needs a POPIA consent checkbox and a link to the privacy notice. Route each form to the person who handles that line of business. Charter and parts requests go stale within hours.</p>
+    <p>Don't publish the MD's personal address as the only contact. Set up role addresses on the group domain, for example charter@, parts@ and aog@, and forward them to whoever handles each door. People can then be added or replaced without changing the site. The Swiss company already uses contact@flighthoursolution.com, so agree the new addresses with whoever runs the group's email.</p>
+  </section>
+
+  <section id="sa">
+    <h2><span class="sign">6</span>South African specifics</h2>
+    <ul>
+      <li><b>Build mobile-first and keep pages light.</b> Most South African traffic is on phones and data is expensive. Compress images and skip autoplay video in the hero.</li>
+      <li><b>Make WhatsApp the urgent channel.</b> It's the default for business across the region. Use pre-filled messages for AOG parts and charter quotes, so the first message already contains the part number or route.</li>
+      <li><b>Comply with POPIA.</b> This means a privacy notice, a consent checkbox, and an Information Officer registered with the Information Regulator. Check whether a PAIA manual is required, and link it in the footer if so.</li>
+      <li><b>Show B-BBEE and CSD for government buyers.</b> The profile lists government institutions and state-owned airlines as clients. Their procurement teams look for a B-BBEE level (certificate or EME affidavit) and a CSD supplier number. Show both if FHS holds them.</li>
+      <li><b>State the currency.</b> Aircraft, engines and parts trade in USD. Charter may be quoted in ZAR. Say which on each form.</li>
+      <li><b>Give availability in SAST.</b> For example, “AOG replies within 2 hours, 07:00–22:00 SAST”. Only promise what the team can actually staff.</li>
+      <li><b>Consider French and Portuguese later.</b> Mining and humanitarian charter work in the DRC, Mozambique and Angola may justify a French and Portuguese Charter section. English is enough at launch.</li>
+    </ul>
+  </section>
+
+  <section id="copy">
+    <h2><span class="sign">7</span>Turning the profile into web copy</h2>
+    <ul>
+      <li><b>Cut the long lists.</b> The profile has about 170 bullet points, which suits a tender document but not a web page. Each web page should lead with the problem and the outcome, then show four to six grouped capabilities. The full list can go in an expandable “Full scope” section for procurement readers.</li>
+      <li><b>Use one brand across both companies.</b> The same logo, colours and “Keeps you flying” tagline should appear on both sites, so a visitor who switches country knows it's the same group. “Engine intelligence. Operational certainty.” can be the South African hero line, or the whole group can adopt it.</li>
+      <li><b>Add a plain subline under the hero.</b> The positioning line alone doesn't say what FHS does. Something like: “Engine management, aircraft and parts sourcing, and charter for airlines, lessors and operators across [region].”</li>
+      <li><b>Keep the careful wording.</b> Phrases like “through appropriately approved MROs” and “subject to aircraft availability” are there on purpose. Don't let copywriting turn them into promises.</li>
+    </ul>
+  </section>
+
+  <section id="launch">
+    <h2><span class="sign">8</span>Launch checklist</h2>
+    <ul class="check">
+      <li>Domain decided (.co.za recommended)</li>
+      <li>Exact relationship with the Swiss company confirmed, for site wording</li>
+      <li>Country switch on both sites</li>
+      <li>Shared brand assets from the Swiss site (logo, colours)</li>
+      <li>Swiss site fixes before linking to it (homepage typo, two phone numbers, Polish skip link)</li>
+      <li>Physical address and SA phone number</li>
+      <li>WhatsApp Business number, with staffed hours</li>
+      <li>Two to four team bios, with photos</li>
+      <li>Real list of approvals and accreditations</li>
+      <li>Engine and aircraft types covered</li>
+      <li>Regions served</li>
+      <li>Five forms, each routed to a named inbox</li>
+      <li>Role email addresses (charter@, parts@, aog@) on the group domain</li>
+      <li>Response-time commitments per door</li>
+      <li>POPIA notice, consent and Information Officer</li>
+      <li>Charter operator disclaimer in place</li>
+      <li>Engine 360 waitlist form</li>
+      <li>Registration number in the footer</li>
+      <li>Analytics set up for each door's form</li>
+    </ul>
+  </section>
+</div>
+
+</body></html>
