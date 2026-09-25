@@ -17,7 +17,7 @@ export const Route = createFileRoute("/engines/engine-360")({
 function Page() {
   return (
     <main id="main" tabIndex={-1}>
-      <header data-theme="deep" className="c-page-intro" data-sc-act="flow">
+      <header data-theme="light" className="c-page-intro" data-sc-act="flow">
         <div className="o-container" data-sc-in data-sc-stagger="70">
           <span className="c-badge">{engine360.badge}</span>
           <h1 className="c-h1 c-h1--inner c-page-intro__title" style={{ marginTop: "var(--space-tiny)" }}>
@@ -39,7 +39,7 @@ function Page() {
               text: it.text,
             }))}
           />
-          <p className="c-callout" data-theme="dark" style={{ marginTop: "var(--space-large)" }}>
+          <p className="c-callout" data-theme="light" style={{ marginTop: "var(--space-large)" }}>
             {engine360.status}
           </p>
         </div>

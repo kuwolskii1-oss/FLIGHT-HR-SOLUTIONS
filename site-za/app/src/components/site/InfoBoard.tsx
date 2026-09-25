@@ -45,7 +45,7 @@ export function InfoBoard({
   return (
     <ul
       className={`c-board c-board--info c-board--${size}${hasAside ? " c-board--aside" : ""}`}
-      data-theme="dark"
+      data-theme="light"
       data-sc-in
       data-sc-stagger="70"
       aria-label={label}

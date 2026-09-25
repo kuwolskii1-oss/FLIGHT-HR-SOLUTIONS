@@ -1,6 +1,7 @@
 /* Flight Hour Solution design tokens. Generated from docs/research/08-locomotive-design-blueprint.md section 8.2,
  * with the South African wayfinding refresh (docs/website-za/ui-refresh.md): a cool cloud ground tinted
- * toward the brand navy instead of the paper cream, a condensed display face, radius and shadow roles.
+ * toward the brand navy instead of the paper cream, radius and shadow roles; and the clear-sky pass: a
+ * white ground with mist sections, Jost for display, navigation and actions.
  * Fluid values run from a 390 px to a 1440 px viewport (Utopia method). Do not hand-edit the clamp() maths;
  * regenerate with the script in docs/research/data/locomotive/tools if the scale changes. */
 
@@ -14,6 +15,8 @@
   --color-night: #080b1c;
   --color-navy-mid: #151948;
   --color-white: #ffffff;
+  --color-mist: #f3f5f9;
+  --color-haze: #e9edf5;
   --color-orange: #ee7203;
   --color-orange-text: #a84e00;
   --color-muted: #545872;
@@ -29,7 +32,7 @@
   /* type */
   --font-sans: "IBM Plex Sans", "Plex Sans Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", "Plex Mono Fallback", ui-monospace, SFMono-Regular, Menlo, monospace;
-  --font-display: "IBM Plex Sans Condensed", "Plex Condensed Fallback", "Arial Narrow", var(--font-sans);
+  --font-display: "Jost", "Jost Fallback", "Futura", "Avenir Next", var(--font-sans);
   --step--2: clamp(0.750rem, 0.727rem + 0.095vw, 0.812rem);
   --step--1: clamp(0.875rem, 0.840rem + 0.143vw, 0.969rem);
   --step-0: clamp(1.062rem, 1.016rem + 0.190vw, 1.188rem);
@@ -84,8 +87,8 @@
 
 /* Section themes. Sections set data-theme; components read the semantic tokens. */
 [data-theme="light"] {
-  --bg: var(--color-paper);
-  --bg-raised: var(--color-white);
+  --bg: var(--color-white);
+  --bg-raised: var(--color-mist);
   --fg: var(--color-ink);
   --fg-muted: var(--color-muted);
   --line: var(--color-line);

@@ -24,7 +24,7 @@ function Page() {
   const doc = legal.legal;
   return (
     <main id="main" tabIndex={-1}>
-      <header data-theme="dark" className="c-page-intro">
+      <header data-theme="light" className="c-page-intro">
         <div className="o-container">
           <h1 className="c-h1 c-h1--inner c-page-intro__title">{doc.title}</h1>
           {doc.intro ? <p className="c-lead c-page-intro__lead">{doc.intro}</p> : null}

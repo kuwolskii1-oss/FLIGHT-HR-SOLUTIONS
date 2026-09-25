@@ -28,7 +28,7 @@ function Page() {
   const { intro, how, serve, commitments, team, company, group } = about;
   return (
     <main id="main" tabIndex={-1}>
-      <header data-theme="dark" className="c-page-intro c-page-intro--media" data-sc-act="flow">
+      <header data-theme="light" className="c-page-intro c-page-intro--media" data-sc-act="flow">
         <div className="o-container" data-sc-in data-sc-stagger="70">
           <span className="c-eyebrow">
             <PictoTile name={DOOR_PICTO.about} size="sm" />
@@ -143,7 +143,7 @@ function Page() {
           <h2 id="company-title" className="c-h2">
             {company.title}
           </h2>
-          <ul className="c-lines c-docard" data-theme="dark">
+          <ul className="c-lines c-docard" data-theme="light">
             {company.lines.map((l) => (
               <li key={l}>{withRegistration(l)}</li>
             ))}
@@ -156,7 +156,7 @@ function Page() {
 
       <section
         id="group"
-        data-theme="dark"
+        data-theme="light"
         className="o-section"
         data-sc-act="flow"
         aria-labelledby="group-title"
@@ -177,7 +177,7 @@ function Page() {
               {group.text}
             </p>
             <div style={{ marginTop: "var(--space-medium)" }}>
-              <CtaLink href={group.cta.href} label={group.cta.label} light />
+              <CtaLink href={group.cta.href} label={group.cta.label} />
             </div>
           </div>
           <GroupRoute />

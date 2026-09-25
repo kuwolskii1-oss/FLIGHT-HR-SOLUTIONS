@@ -108,7 +108,7 @@ export function DoorBoard({
   }, []);
 
   return (
-    <ul ref={ref} className="c-board" data-theme="dark" data-sc-in data-sc-stagger="70">
+    <ul ref={ref} className="c-board" data-theme="light" data-sc-in data-sc-stagger="70">
       {items.map((d) => (
         <li className="c-board__item" key={d.key}>
           <span className="c-board__fill" aria-hidden="true" />

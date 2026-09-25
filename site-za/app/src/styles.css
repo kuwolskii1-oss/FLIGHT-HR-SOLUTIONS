@@ -40,7 +40,7 @@
 @import "./site/za.css";
 @import "./site/wayfinding.css";
 @import "./site/boards.css";
-@import "./site/runway.css";
+@import "./site/clearsky.css";
 
 @custom-variant dark (&:where([data-theme="default-dark"], [data-theme="default-dark"] *));
 

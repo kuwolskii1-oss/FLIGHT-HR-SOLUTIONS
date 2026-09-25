@@ -1,0 +1,643 @@
+/* Clear sky: the South African site after the client's third reference, a bright flight-booking
+ * landing page (docs/website-za/ui-refresh.md, "Third pass"). A white ground with mist sections,
+ * rounded white cards with hairline rings, circular icon chips, pill controls, one navy action
+ * colour with orange kept for small signals, and Jost for display, navigation and actions. The
+ * home page opens on a centred promise over an aircraft that flies out of its capsule frame. The
+ * footer stays the one dark ground, with its horizon and parallax.
+ *
+ * Loaded last (styles.css); it restyles the layers underneath rather than repeating them. Motion
+ * is unchanged apart from the hero, which is scroll-linked and still under reduced motion. */
+
+:root {
+  --header-height: 4.75rem;
+  --radius-card: 28px;
+  --ring-card: 0 0 0 1px var(--color-line);
+  --shadow-card: 0 1px 2px rgb(18 21 46 / 0.04), 0 32px 64px -44px rgb(18 21 46 / 0.4);
+}
+@media (min-width: 1000px) {
+  :root {
+    --header-height: 7.25rem;
+  }
+}
+[data-theme="light"] {
+  --tile-bg: var(--color-mist);
+  --tile-fg: var(--color-ink);
+  --tile-ring: var(--color-line);
+  --card-bg: var(--color-white);
+  --card-ring: var(--color-line);
+}
+html.site,
+html.site body {
+  background-color: var(--color-white);
+}
+
+/* ---------- type: Jost, medium weight, sentence case ---------- */
+.c-h1,
+.c-h2,
+.c-h3,
+.c-band__title,
+.c-cuestep__title,
+.c-board__title,
+.c-footer__tagline {
+  font-weight: 500;
+  letter-spacing: -0.012em;
+}
+.c-h1,
+.c-h1--inner,
+.c-h2,
+.c-h2--xl,
+.c-cuesteps .c-h2 {
+  line-height: 1.04;
+}
+
+/* ---------- icon chips: circles, mist on light ---------- */
+.c-tile,
+.c-tile--sm,
+.c-tile--lg {
+  border-radius: 50%;
+}
+
+/* ---------- actions: navy pills ---------- */
+.c-cta-talk,
+.c-cta-closing,
+.c-cta-submit {
+  background: var(--color-navy);
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-weight: 500;
+  box-shadow:
+    0 1px 0 rgb(255 255 255 / 0.14) inset,
+    0 14px 28px -16px rgb(28 32 92 / 0.7);
+}
+@media (hover: hover) {
+  .c-cta-talk:hover,
+  .c-cta-closing:hover,
+  .c-cta-submit:hover {
+    background: var(--color-navy-mid);
+  }
+}
+.c-chip {
+  background: var(--color-white);
+  color: var(--color-navy);
+}
+
+/* ---------- header: a grey utility strip over a white row ---------- */
+.c-header {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  color: var(--color-ink);
+  box-shadow: 0 1px 0 var(--color-line);
+}
+.c-header.is-scrolled {
+  background-color: var(--color-white);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow:
+    0 1px 0 var(--color-line),
+    0 12px 30px -26px rgb(18 21 46 / 0.35);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .c-header.is-hidden {
+    transform: translateY(calc(-100% - 1.5rem));
+  }
+}
+.c-header.is-menu-open {
+  background: transparent;
+  color: var(--color-white);
+  box-shadow: none;
+}
+.c-header__inner {
+  flex: 1;
+  height: auto;
+}
+.c-util {
+  display: none;
+  flex: none;
+  background: var(--color-mist);
+  color: var(--color-muted);
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+}
+.c-util__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-small);
+  height: 2.5rem;
+}
+.c-util__links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+.c-util__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--color-muted);
+  transition: color var(--duration-micro) var(--ease-out);
+}
+.c-util__link .c-picto {
+  stroke-width: 1.6;
+}
+.c-util__link--urgent {
+  color: var(--color-orange-text);
+  font-weight: 500;
+}
+@media (hover: hover) {
+  .c-util__link:hover {
+    color: var(--color-ink);
+  }
+}
+.c-header__logo img {
+  width: 9.5rem;
+  height: 2.25rem;
+}
+.c-navlink {
+  color: var(--color-muted);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  transition: color var(--duration-micro) var(--ease-out);
+}
+.c-navlink:hover,
+.c-navlink[aria-current="page"] {
+  color: var(--color-ink);
+}
+.c-navlink[aria-current="page"] {
+  font-weight: 500;
+}
+/* The reference's marker under the current link: a short row of dots, here in the brand orange. */
+.c-navlink::after {
+  left: 50%;
+  right: auto;
+  bottom: -0.2rem;
+  width: 1.5rem;
+  height: 4px;
+  background: radial-gradient(circle, var(--color-orange) 0 1.5px, transparent 1.9px) 0 50% / 0.375rem 4px repeat-x;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+}
+.c-navlink:hover::after,
+.c-navlink[aria-current="page"]::after {
+  transform: translateX(-50%) scaleX(1);
+  transform-origin: center;
+}
+.c-navgroup__toggle {
+  color: var(--color-muted);
+}
+.c-header .c-cta-urgent--small {
+  border: 0;
+  background: var(--color-mist);
+  color: var(--color-ink);
+}
+.c-header__burger {
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-right: 0;
+  border-radius: 50%;
+  background: var(--color-mist);
+}
+.c-header.is-menu-open :is(.c-header__burger, .c-cta-urgent--small) {
+  background: rgb(255 255 255 / 0.1);
+  color: var(--color-white);
+}
+@media (min-width: 1000px) {
+  .c-util {
+    display: block;
+  }
+  .c-header__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+  }
+  .c-header__nav {
+    justify-self: center;
+  }
+  .c-header__list {
+    gap: 1.6rem;
+  }
+  .c-header__actions {
+    justify-self: end;
+  }
+  /* The urgent line lives in the strip on wide screens. */
+  .c-header__actions .c-cta-urgent--small {
+    display: none;
+  }
+  .c-header .c-dropdown {
+    top: calc(100% + 1.1rem);
+  }
+  .c-header .c-dropdown::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 1.2rem;
+  }
+}
+.c-dropdown {
+  border-radius: 22px;
+}
+
+/* ---------- home hero: a centred promise, an aircraft flying out of its capsule ---------- */
+.c-sky {
+  position: relative;
+  overflow-x: clip;
+  padding-top: calc(var(--header-height) + clamp(2rem, 1rem + 3vw, 3.75rem));
+  padding-bottom: var(--space-large);
+  background: var(--bg);
+  color: var(--fg);
+}
+.c-sky__head {
+  display: grid;
+  justify-items: center;
+  gap: clamp(0.9rem, 0.6rem + 0.8vw, 1.25rem);
+  text-align: center;
+}
+.c-sky__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.35rem, 1.1rem + 3.9vw, 4.6rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+.c-sky__line {
+  display: block;
+}
+.c-sky__sub {
+  max-width: 52ch;
+  color: var(--fg-muted);
+  font-size: var(--step-0);
+  line-height: 1.55;
+}
+.c-sky__stage {
+  position: relative;
+  width: min(100%, 66rem);
+  aspect-ratio: 2.8;
+  margin: clamp(1.75rem, 1rem + 2.4vw, 3.25rem) auto 0;
+}
+.c-sky__photo,
+.c-sky__plane {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 46%;
+}
+/* The sky is a capsule inset from the frame; the aircraft is the same photograph cut out, drawn
+ * on top without the clip, so its wings run past the capsule's rounded ends. */
+.c-sky__photo {
+  clip-path: inset(0 7% round 999px);
+}
+.c-sky__plane {
+  z-index: 1;
+  filter: drop-shadow(0 16px 22px rgb(18 21 46 / 0.14));
+}
+@media (max-width: 699px) {
+  .c-sky__stage {
+    aspect-ratio: 2688 / 1152;
+  }
+  .c-sky__photo {
+    clip-path: inset(0 6% round 999px);
+  }
+}
+@media (min-width: 700px) and (prefers-reduced-motion: no-preference) {
+  html:not(.sc-reduce) .c-sky__plane {
+    transform:
+      translate3d(0, calc((var(--sc-p, 0.5) - 0.5) * -16vh), 0)
+      scale(calc(1 + (var(--sc-p, 0.5) - 0.5) * 0.12));
+  }
+  html:not(.sc-reduce) .c-sky__photo {
+    transform: translate3d(0, calc((var(--sc-p, 0.5) - 0.5) * 6vh), 0);
+  }
+}
+/* The card under the capsule: the facts as fields with round icon chips, and the one action. */
+.c-sky__card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem 2rem;
+  max-width: 64rem;
+  margin: clamp(1.5rem, 1rem + 2vw, 2.75rem) auto 0;
+  padding: clamp(1rem, 0.8rem + 0.8vw, 1.5rem) clamp(1.1rem, 0.7rem + 1.6vw, 2rem);
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  box-shadow: var(--ring-card), var(--shadow-card);
+}
+.c-sky__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem clamp(1.5rem, 1rem + 2vw, 3rem);
+}
+.c-sky__fact {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "icon value"
+    "icon label";
+  align-items: center;
+  column-gap: 0.9rem;
+}
+.c-sky__icon {
+  grid-area: icon;
+  width: 3rem;
+  height: 3rem;
+}
+.c-sky__value {
+  grid-area: value;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+.c-sky__value .c-regno {
+  font-size: 0.85em;
+  color: inherit;
+}
+.c-sky__label {
+  grid-area: label;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+@media (max-width: 699px) {
+  .c-sky__card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .c-sky__facts {
+    flex-direction: column;
+  }
+}
+
+/* ---------- section heads, centred as in the reference ---------- */
+.c-stackhead,
+.c-ask__title {
+  margin-inline: auto;
+  text-align: center;
+}
+.c-stackhead .c-lead {
+  margin-inline: auto;
+}
+.c-ask__title {
+  max-width: 18ch;
+}
+
+/* ---------- boards: white cards with hairline rows ---------- */
+.c-board {
+  --color-primary: rgb(28 32 92 / 0.055);
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  box-shadow: var(--ring-card), var(--shadow-card);
+  color: var(--color-ink);
+}
+.c-board__item {
+  border-radius: 20px;
+}
+.c-board__item + .c-board__item::before {
+  background: var(--color-line);
+}
+.c-board__text,
+.c-board--info .c-checks li {
+  color: var(--color-muted);
+}
+.c-board--lg .c-board__text {
+  color: var(--color-ink);
+}
+.c-board__meta .c-picto {
+  color: var(--color-orange-text);
+}
+.c-board__shape {
+  color: rgb(28 32 92 / 0.14);
+}
+.c-board__go {
+  background: var(--color-navy);
+  box-shadow: none;
+  color: var(--color-white);
+}
+.c-board__item.is-active .c-board__go {
+  background: var(--color-orange);
+  color: var(--color-ink);
+}
+.c-board__item.is-active .c-tile {
+  --tile-bg: var(--color-navy);
+  --tile-fg: var(--color-white);
+}
+.c-board__item.is-active .c-board__meta .c-picto {
+  color: var(--color-orange-text);
+}
+.c-board__item:has(a:focus-visible) {
+  box-shadow: inset 0 0 0 3px var(--color-orange);
+}
+@media (hover: hover) {
+  .c-board:not(.is-kinetic):not(.c-board--info) .c-board__item:hover .c-board__go {
+    background: var(--color-orange);
+    color: var(--color-ink);
+  }
+  .c-board:not(.is-kinetic):not(.c-board--info) .c-board__item:hover .c-tile {
+    --tile-bg: var(--color-navy);
+    --tile-fg: var(--color-white);
+  }
+}
+.c-board .c-regno {
+  color: var(--color-orange-text);
+}
+/* Door capabilities sit on mist so their card reads as one object. */
+.c-caps {
+  background: var(--color-mist);
+}
+
+/* ---------- inner page intros and the boarding pass ---------- */
+.c-page-intro {
+  background: var(--color-white);
+}
+.c-page-intro::before {
+  display: none;
+}
+.c-page-intro__lead {
+  color: var(--color-muted);
+}
+.c-pass {
+  background: var(--color-mist);
+  border: 1px solid var(--color-line);
+}
+.c-pass dd li {
+  background: var(--color-white);
+}
+
+/* ---------- door and about images as capsules ---------- */
+.c-doorimg .c-media {
+  aspect-ratio: 2.5;
+  border-radius: 999px;
+  box-shadow: 0 30px 60px -40px rgb(18 21 46 / 0.45);
+}
+@media (max-width: 699px) {
+  .c-doorimg .c-media,
+  .c-doorimg .c-media--16x9 {
+    aspect-ratio: 2;
+  }
+}
+
+/* ---------- signs, the status note and the company card: white cards ---------- */
+.c-sign,
+.c-docard {
+  background: var(--color-white);
+  box-shadow: var(--ring-card), var(--shadow-card);
+  color: var(--color-ink);
+}
+.c-sign,
+.c-docard,
+.c-callout {
+  border-radius: var(--radius-card);
+}
+.c-callout {
+  background: var(--color-white);
+  box-shadow:
+    inset 4px 0 0 var(--color-orange),
+    var(--ring-card),
+    var(--shadow-card);
+  color: var(--color-ink);
+}
+.c-docard li {
+  color: var(--color-muted);
+}
+.c-docard li + li {
+  border-top-color: var(--color-line);
+}
+.c-docard li:first-child {
+  color: var(--color-ink);
+}
+
+/* ---------- Engine 360: the dial on white ---------- */
+.c-dial__track {
+  stroke: var(--color-line-strong);
+}
+.c-dial__tick {
+  stroke: rgb(18 21 46 / 0.22);
+}
+.c-dial__tick--major {
+  stroke: var(--color-navy);
+}
+.c-dial__face {
+  box-shadow:
+    0 0 0 1px var(--color-line),
+    0 40px 80px -40px rgb(18 21 46 / 0.5);
+}
+
+/* ---------- the link after the steps, and the closing band ---------- */
+.c-howlink {
+  background: var(--bg);
+}
+.c-band {
+  background: var(--color-mist);
+  text-align: center;
+}
+.c-band::before {
+  display: none;
+}
+.c-band__inner {
+  display: grid;
+  justify-items: center;
+}
+.c-band__title {
+  max-width: 16ch;
+  font-size: clamp(2.6rem, 1.2rem + 4.4vw, 5.25rem);
+  line-height: 1.04;
+}
+.c-band__text {
+  margin-inline: auto;
+  color: var(--color-muted);
+}
+.c-band__actions {
+  justify-content: center;
+}
+.c-band__mark path {
+  fill: var(--color-navy);
+  opacity: 0.05;
+}
+
+/* ---------- spinning counter (Reel.tsx; transitions.dev "Spinning counter", adapted) ---------- */
+/* Every character sits in a box one cell tall with its glyph set on the cell's own line height,
+ * so the reels and the text between them share one baseline. Each reel strip holds two turns of
+ * 0 to 9 as generated content (no text nodes); at rest it shows its digit on the first turn and
+ * lands on the same digit on the second. */
+.c-reel {
+  --reel-cell: 1.2em;
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  line-height: var(--reel-cell);
+  vertical-align: bottom;
+}
+.c-reel__face {
+  display: inline-flex;
+  align-items: flex-start;
+  height: var(--reel-cell);
+}
+.c-reel__run {
+  display: inline-block;
+  height: var(--reel-cell);
+  white-space: pre;
+}
+.c-reel__col {
+  position: relative;
+  display: inline-block;
+  width: 1ch;
+  height: var(--reel-cell);
+  overflow: hidden;
+  /* Soft edges instead of a hard crop; the digit itself sits clear of the fade. */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 16%, black 84%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 16%, black 84%, transparent 100%);
+}
+.c-reel__strip {
+  display: block;
+  transform: translateY(calc(var(--d) * var(--reel-cell) * -1));
+}
+.c-reel__strip::before {
+  content: "0\A 1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9\A 0\A 1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9";
+  display: block;
+  line-height: var(--reel-cell);
+  text-align: center;
+  white-space: pre;
+}
+.c-reel__strip.is-landed {
+  transform: translateY(calc((var(--d) + 10) * var(--reel-cell) * -1));
+}
+.c-reel__defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+@media (prefers-reduced-motion: reduce) {
+  .c-reel__strip {
+    transition: none !important;
+    filter: none !important;
+  }
+}
+
+/* ---------- forms: a white card on mist ---------- */
+.c-formsec,
+.c-formsec.o-section--raised {
+  background: var(--color-mist);
+}
+.c-formsec .c-form {
+  border-radius: var(--radius-card);
+  box-shadow: var(--ring-card), var(--shadow-card);
+}
+
+/* ---------- the phone menu stays navy, so its action inverts ---------- */
+.c-menu .c-cta-talk {
+  background: var(--color-white);
+  color: var(--color-navy);
+}
+.c-menu .c-cta-talk .c-chip {
+  background: var(--color-navy);
+  color: var(--color-white);
+}

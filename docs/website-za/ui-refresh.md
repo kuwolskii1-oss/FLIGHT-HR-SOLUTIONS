@@ -182,3 +182,57 @@ The hero photograph is deliberately not marked high priority. With the hint, fir
 Fast 3G rose to 1.87 s because the photograph competed with the stylesheet; without it the
 stylesheet goes first and the navy gradient behind the glass holds the place until the photo
 arrives. Raw measurements: `factors-runway.json`.
+
+## Third pass: clear sky (25 September 2026, night)
+
+The client sent a third reference, a bright flight-booking landing page, and asked for the whole
+UI to be modelled on it: a grey utility strip over a white navigation row with centred links, a
+dotted marker under the current link and one blue pill; a centred headline; a capsule-shaped sky
+photograph whose aircraft breaks out past the capsule's ends; a rounded white card of fields
+with round icon chips and a round action button; one accent colour on a white ground.
+
+### How it maps onto this site
+
+- **Header** (`SiteHeader.tsx`, `src/site/clearsky.css`). The strip carries what this site has
+  in place of the reference's support, language and sign-in links: the group line, "AOG on
+  WhatsApp" (the urgent action, in the orange text colour), the general inbox and the Swiss site.
+  The row below holds the logo, the five doors and About with their dropdowns, and "Get in touch"
+  as a navy pill. The current page is marked with a short row of orange dots. The header is solid
+  and light on every page, so it no longer reads the section beneath it. On phones the strip
+  folds away and the urgent action stays as an icon next to the menu button.
+- **Hero.** The headline and line are centred. The photograph (gpt_image_2_5: a plain white
+  twin-engine airliner head-on in a blue sky) is clipped to a capsule, and the aircraft, cut out
+  of the same photograph with Higgsfield's background remover, is drawn on top without the clip,
+  so its wings run past the capsule's ends as in the reference. On scroll the aircraft rises and
+  grows a little while the capsule drifts the other way. The card below holds the two facts as
+  fields with round icon chips and their spinning counters, and the one action. The reference's
+  class tabs and search fields have no honest counterpart here (this site books nothing), so the
+  card carries facts, not controls.
+- **Colour and type.** A white ground with mist sections (`--color-mist`), hairline rings instead
+  of heavy panels, one navy action colour (the reference's blue, taken from the brand's navy
+  rather than a new blue) and orange kept for small signals: the current-page dots, the urgent
+  line, checklist ticks, the counters' focus. Jost (OFL), a geometric sans in the Futura manner
+  like the reference's, for headings, navigation and actions; IBM Plex Sans stays for reading.
+- **Everything else.** Every board is now a white rounded card with hairline rows, round icon
+  chips and a round navy arrow that turns orange on hover; inner page intros are white, the
+  boarding pass a mist card, door and About images capsules like the hero's, the steps, Engine
+  360 dial, group route, signs, company card and forms all on light grounds, and the closing band
+  a centred mist panel. The phone menu keeps its navy layers (its button inverts to white), and
+  the footer stays the one dark ground with its dusk horizon and parallax.
+
+### Checked (production build served locally)
+
+| Check | Factor | Measured |
+|---|---|---|
+| Words per screen, home | 60 or fewer | 56 at 1440 px, 36 at 375 px |
+| Buttons per screen | 1 | 1 on every page |
+| Longest animation, stagger | 600 ms, 80 ms | 560 ms, 70 ms |
+| Reduced motion | nothing moves, all visible | 0 pinned acts, 0 hidden cues, aircraft and counters still |
+| axe-core, 11 routes | 0 | 0 |
+| Console errors, broken links | 0 | 0 |
+| First readable text, Fast 3G | under 2 s | home 1.85 s, engines 1.58 s, contact 1.74 s |
+| Weight per page | under 1 MB | 399 to 466 KB on a phone (the sky and the cut-out are 25 and 23 KB there) |
+| Keyboard, menu and forms | as before | all pass; the preview's 49 checks pass |
+
+The stylesheets are layered: `clearsky.css` is loaded last and restyles the wayfinding and board
+layers underneath rather than rewriting them, so a later pass can still reach any earlier look.

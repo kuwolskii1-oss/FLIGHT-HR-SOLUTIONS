@@ -24,7 +24,7 @@ export function ClosingBand({
   return (
     <section
       className="c-band"
-      data-theme="dark"
+      data-theme="light"
       data-sc-act="flow"
       aria-labelledby="closing-title"
     >
@@ -40,11 +40,11 @@ export function ClosingBand({
         {sub ? <p className="c-band__text">{sub}</p> : null}
         <div className="c-band__actions c-cta-row">
           {linkOnly ? (
-            <CtaLink href={primary.href} label={primary.label} light />
+            <CtaLink href={primary.href} label={primary.label} />
           ) : (
             <CtaClosing href={primary.href} label={primary.label} />
           )}
-          {urgent ? <CtaLink href={urgent.href} label={urgent.label} light /> : null}
+          {urgent ? <CtaLink href={urgent.href} label={urgent.label} /> : null}
         </div>
       </div>
     </section>

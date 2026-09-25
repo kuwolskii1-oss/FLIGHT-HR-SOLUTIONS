@@ -93,57 +93,65 @@ function Index() {
     <main id="main" tabIndex={-1}>
       <StructuredData json={ORG_SCHEMA} />
 
-      {/* 1. Recognition: a runway at golden hour, the promise on glass, two facts to check. */}
-      <section
-        className="c-runway"
-        data-theme="deep"
-        data-sc-act="flow"
-        aria-labelledby="hero-title"
-      >
-        <picture className="c-runway__photo" aria-hidden="true">
-          <source
-            media="(max-width: 699px)"
-            srcSet="/assets/img/hero-runway-tall-750.webp 750w, /assets/img/hero-runway-tall-1200.webp 1200w"
-            sizes="100vw"
-            width={1200}
-            height={2122}
-          />
+      {/* 1. Recognition: the promise, centred, over an aircraft that flies out of its frame. */}
+      <section className="c-sky" data-theme="light" data-sc-act="flow" aria-labelledby="hero-title">
+        <div className="o-container c-sky__head">
+          <h1 id="hero-title" className="c-sky__title">
+            {/* One sentence per line; the text itself is unchanged. (No lookbehind in the
+                pattern: Safari before 16.4 cannot parse one, and it would stop the bundle.) */}
+            {(hero.headline.match(/[^.]+(?:\.|$)/g) ?? [hero.headline]).map((line, i) => (
+              <span className="c-sky__line" key={line}>
+                {i ? " " : null}
+                {line.trim()}
+              </span>
+            ))}
+          </h1>
+          <p className="c-sky__sub">{hero.sub}</p>
+        </div>
+        {/* The sky is clipped to a capsule; the aircraft, cut out of the same photograph, is not,
+            so its wings reach past the capsule's ends. */}
+        <div className="c-sky__stage" aria-hidden="true">
           <img
-            src="/assets/img/hero-runway-1800.webp"
-            srcSet="/assets/img/hero-runway-900.webp 900w, /assets/img/hero-runway-1800.webp 1800w, /assets/img/hero-runway-2600.webp 2600w"
-            sizes="100vw"
+            className="c-sky__photo"
+            src="/assets/img/hero-sky-1800.webp"
+            srcSet="/assets/img/hero-sky-900.webp 900w, /assets/img/hero-sky-1800.webp 1800w, /assets/img/hero-sky-2600.webp 2600w"
+            sizes="(min-width: 1200px) 1100px, 100vw"
             alt=""
             width={1800}
-            height={1018}
+            height={771}
             decoding="async"
           />
-        </picture>
-        <div className="o-container c-runway__frame">
-          {hero.facts?.length ? (
-            <ul className="c-runway__facts" aria-label="At a glance">
-              {hero.facts.map((f) => (
-                <li className="c-glass c-runway__fact" key={f.value}>
-                  <span className="c-runway__value">
-                    <Reel value={f.value} className={REGNO.test(f.value) ? "c-regno" : ""} />
-                  </span>
-                  <span className="c-runway__label">{f.label}</span>
-                </li>
-              ))}
-            </ul>
-          ) : null}
-          <div className="c-glass c-runway__panel">
-            <h1 id="hero-title" className="c-runway__title">
-              {/* One sentence per line; the text itself is unchanged. (No lookbehind in the
-                  pattern: Safari before 16.4 cannot parse one, and it would stop the bundle.) */}
-              {(hero.headline.match(/[^.]+(?:\.|$)/g) ?? [hero.headline]).map((line, i) => (
-                <span className="c-runway__line" key={line}>
-                  {i ? " " : null}
-                  {line.trim()}
-                </span>
-              ))}
-            </h1>
-            <div className="c-runway__foot">
-              <p className="c-runway__sub">{hero.sub}</p>
+          <img
+            className="c-sky__plane"
+            src="/assets/img/hero-plane-1800.webp"
+            srcSet="/assets/img/hero-plane-900.webp 900w, /assets/img/hero-plane-1800.webp 1800w, /assets/img/hero-plane-2600.webp 2600w"
+            sizes="(min-width: 1200px) 1100px, 100vw"
+            alt=""
+            width={1800}
+            height={771}
+            decoding="async"
+          />
+        </div>
+        <div className="o-container">
+          <div className="c-sky__card">
+            {hero.facts?.length ? (
+              <ul className="c-sky__facts" aria-label="At a glance">
+                {hero.facts.map((f) => (
+                  <li className="c-sky__fact" key={f.value}>
+                    <PictoTile
+                      name={REGNO.test(f.value) ? "passports" : "stairs"}
+                      size="sm"
+                      className="c-sky__icon"
+                    />
+                    <span className="c-sky__value">
+                      <Reel value={f.value} className={REGNO.test(f.value) ? "c-regno" : ""} />
+                    </span>
+                    <span className="c-sky__label">{f.label}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+            <div className="c-sky__cta">
               <CtaTalk href={hero.cta.href} label={hero.cta.label} />
             </div>
           </div>
@@ -167,14 +175,14 @@ function Index() {
       </section>
 
       {/* 3. How it works: one step per screen. */}
-      <Steps id="how" steps={how.steps} title={how.title} intro={how.intro} theme="dark" />
+      <Steps id="how" steps={how.steps} title={how.title} intro={how.intro} theme="light" />
       <section
-        data-theme="deep"
+        data-theme="light"
         className="o-section o-section--tight c-howlink"
         aria-label="How we work, continued"
       >
         <div className="o-container">
-          <CtaLink href={how.cta.href} label={how.cta.label} light />
+          <CtaLink href={how.cta.href} label={how.cta.label} />
         </div>
       </section>
 
@@ -182,7 +190,7 @@ function Index() {
       <section
         id="trust"
         data-theme="light"
-        className="o-section c-chapter"
+        className="o-section o-section--raised c-chapter"
         data-sc-act="flow"
         aria-labelledby="trust-title"
       >
@@ -212,7 +220,7 @@ function Index() {
       {/* 5. Engine 360, early access. */}
       <section
         id="engine-360"
-        data-theme="deep"
+        data-theme="light"
         className="o-section c-chapter"
         data-sc-act="flow"
         aria-labelledby="e360-title"
@@ -230,7 +238,7 @@ function Index() {
               {engine360.text}
             </p>
             <div style={{ marginTop: "var(--space-medium)" }}>
-              <CtaLink href={engine360.cta.href} label={engine360.cta.label} light />
+              <CtaLink href={engine360.cta.href} label={engine360.cta.label} />
             </div>
           </div>
           <EngineDial />

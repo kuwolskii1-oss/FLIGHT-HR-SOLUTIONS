@@ -91,6 +91,10 @@ Method: `site-za/tools/qa/factors.js`, `qa.js`, `interact.js` and `forms.js` aga
   measurements are in `factors-runway.json`. About 18:05 UTC: the spinning counter on the
   hero's two fact cards (platform commit `ed282f6`), with the home page measured again
   (unchanged: 47 words per screen, 560 ms longest animation, 1.83 s first text on Fast 3G).
+- 25 September 2026, about 18:40 UTC: the third UI pass, clear sky (`ui-refresh.md`, "Third
+  pass"): a light site modelled on the client's flight-booking reference, with the aircraft
+  breaking out of its capsule on the home page (platform commit `3b55bb2`); platform status
+  "deployed", no error. This is the build now recorded.
 - Raw measurements: `factors-run3.json` (all routes), `factors-home-final.json` (home after the
   last trim), `qa-report.json` (axe, console, weight per route).
 - Runbook: `site-za/DEPLOY.md`. Higgsfield credits used by this build: 0.5 for three images.
@@ -108,7 +112,7 @@ The live address (https://flighthoursolution-za.higgsfield.app) is a Higgsfield 
 
 https://claude.ai/artifact/8kYTmqytexPbegjqZuARM2
 
-It was republished at the same address with the wayfinding UI refresh (version 3), the second UI pass (version 4) and the spinning counter (version 6, 25 September 2026).
+It was republished at the same address with the wayfinding UI refresh (version 3), the second UI pass (version 4), the spinning counter (version 6) and the clear-sky pass (version 7, 25 September 2026).
 
 What the preview is: the eleven server-rendered pages of the production build in one document, with the built stylesheet, the scroll engine and the header, menu, form, door board and footer behaviour ported to plain script (`site-za/tools/preview/`). Pages are addressed by hash (`#engines`, `#parts.form`). Forms validate as on the live site but send nothing. Two things differ from the live site: there is no server round-trip on forms, and a page change is a same-document swap with the browser's view transition instead of a full navigation.
 

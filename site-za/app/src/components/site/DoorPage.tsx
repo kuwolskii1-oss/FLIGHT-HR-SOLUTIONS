@@ -32,7 +32,7 @@ export function DoorPage({
   return (
     <main id="main" tabIndex={-1}>
       <header
-        data-theme="dark"
+        data-theme="light"
         className={`c-page-intro c-door-intro${DOOR_IMAGES[door.slug] ? " c-page-intro--media" : ""}`}
         data-sc-act="flow"
       >
@@ -131,7 +131,7 @@ export function DoorPage({
               after:
                 i === door.sections.length - 1 && s.href ? (
                   <div className="c-board__cta">
-                    <CtaLink href={s.href} label={door.form.submitLabel} light />
+                    <CtaLink href={s.href} label={door.form.submitLabel} />
                   </div>
                 ) : null,
             }))}
@@ -145,7 +145,7 @@ export function DoorPage({
           steps={door.process.steps}
           title={door.process.title}
           intro={door.process.intro}
-          theme="dark"
+          theme="light"
         />
       ) : null}
 
@@ -215,7 +215,7 @@ export function DoorPage({
           aria-label="Operator disclaimer"
         >
           <div className="o-container">
-            <div className="c-sign" data-theme="dark">
+            <div className="c-sign" data-theme="light">
               <PictoTile name="information-desk-symbol" className="c-sign__tile" />
               <p className="c-sign__text">{door.disclaimer}</p>
             </div>

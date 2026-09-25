@@ -47,7 +47,7 @@ function Page() {
     : null;
   return (
     <main id="main" tabIndex={-1}>
-      <header data-theme="dark" className="c-page-intro" data-sc-act="flow">
+      <header data-theme="light" className="c-page-intro" data-sc-act="flow">
         <div className="o-container" data-sc-in data-sc-stagger="70">
           <span className="c-eyebrow">
             <PictoTile name={DOOR_PICTO.contact} size="sm" />
@@ -74,7 +74,7 @@ function Page() {
 
       <section
         id="urgent"
-        data-theme="deep"
+        data-theme="light"
         className="o-section"
         data-sc-act="flow"
         aria-labelledby="urgent-title"

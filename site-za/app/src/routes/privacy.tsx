@@ -14,7 +14,7 @@ function Page() {
   const doc = legal.privacy;
   return (
     <main id="main" tabIndex={-1}>
-      <header data-theme="dark" className="c-page-intro">
+      <header data-theme="light" className="c-page-intro">
         <div className="o-container">
           <span className="c-eyebrow">Updated {doc.updated}</span>
           <h1 className="c-h1 c-h1--inner c-page-intro__title">{doc.title}</h1>

@@ -53,10 +53,11 @@ everything the site needs is in git.
 1. `website_repo_access` with operation `checkout` for the website id. It returns
    `checkout_path` and reserves the hosted sandbox for 15 minutes.
 2. `sandbox_exec` (timeout 120 seconds) with the contents of `site-za/tools/deploy/overlay.sh`
-   written to a file and run as `bash overlay.sh '<download url>' '<checkout_path>'`. The script
-   replaces everything under `app/` except `app/packages`, keeps the repository root (the CI
-   workflow) untouched, stages and commits. It ends with `SANDBOX_COMMIT_DONE`. The sandbox is
-   discarded about ten seconds after a call returns, so push straight away.
+   written to a file and run as `bash overlay.sh '<download url>' '<checkout_path>' '<commit
+   message>'` (the message is optional). The script replaces everything under `app/` except
+   `app/packages`, keeps the repository root (the CI workflow) untouched, stages and commits.
+   It ends with `SANDBOX_COMMIT_DONE`. The sandbox is discarded about ten seconds after a call
+   returns, so push straight away.
 3. `website_repo_access` with operation `push`.
 
 ## 5. Deploy and confirm

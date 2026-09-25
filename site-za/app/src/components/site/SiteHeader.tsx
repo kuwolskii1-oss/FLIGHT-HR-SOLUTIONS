@@ -4,16 +4,16 @@ import { site } from "@/site/data/site";
 import { CtaTalk, CtaUrgent } from "./Cta";
 import { SmartLink } from "./SmartLink";
 import { Chevron, Close, Menu } from "./Icons";
-import { PictoTile } from "./Pictogram";
+import { Pictogram, PictoTile } from "./Pictogram";
 import { DOOR_PICTO } from "@/site/wayfinding";
 
 /**
- * Fixed header. Five doors and About as visible links on desktop, each with a dropdown of its
- * sections (transitions.dev menu dropdown); below 1000 px a burger opens a panel with an
- * accordion per door. The urgent action and the primary action are reachable from every
- * screen. The header reads the theme of the section beneath it and hides on scroll down.
- * From 1200 px the links sit in a glass pill on the left and the logo is centred, so the
- * markup runs links, logo, actions in reading order; narrower screens put the logo first.
+ * Fixed header in two rows, after the client's clear-sky reference: a grey utility strip (the
+ * group line, the urgent line, the general inbox, the Swiss site) and a white row with the logo,
+ * the five doors and About as links with dropdowns of their sections (transitions.dev menu
+ * dropdown), and the one filled action. Below 1000 px the strip folds away, the urgent action
+ * stays as an icon and a burger opens a panel with an accordion per door. The header is solid and
+ * light on every page, and hides on scroll down.
  */
 export function SiteHeader() {
   const headerRef = useRef<HTMLElement>(null);
@@ -28,13 +28,12 @@ export function SiteHeader() {
   const { nav, cta, company, group } = site;
   const groups = [...nav.doors, nav.about];
 
-  // Scroll state and section theme, written straight to the DOM (no re-renders per frame).
+  // Scroll state, written straight to the DOM (no re-renders per frame).
   useEffect(() => {
     const header = headerRef.current;
     if (!header) return;
     let lastY = window.scrollY;
     let ticking = false;
-    const logo = header.querySelector<HTMLElement>(".c-header__logo");
     const update = () => {
       ticking = false;
       const y = window.scrollY;
@@ -49,17 +48,6 @@ export function SiteHeader() {
         else if (goingUp || y < 120) header.classList.remove("is-hidden");
       }
       lastY = y;
-      // Read what is under the logo, the one mark with no glass behind it: a navy board on a
-      // light section must still get the white logo. Photographs count as dark.
-      const r = logo?.getBoundingClientRect();
-      const px = r ? Math.min(Math.max(r.left + r.width / 2, 0), window.innerWidth - 1) : 24;
-      const py = r ? Math.max(1, r.top + r.height / 2) : 40;
-      const beneath = document
-        .elementsFromPoint(px, py)
-        .find((el) => !header.contains(el) && !el.closest(".c-menu"));
-      const themed = beneath?.closest<HTMLElement>("[data-theme]")?.dataset.theme ?? "light";
-      const theme = themed === "light" && beneath?.closest("img, video, .c-media") ? "dark" : themed;
-      if (header.dataset.theme !== theme) header.dataset.theme = theme;
     };
     const onScroll = () => {
       if (!ticking) {
@@ -175,8 +163,56 @@ export function SiteHeader() {
       <a className="c-skip" href="#main">
         Skip to content
       </a>
-      <header ref={headerRef} className="c-header" data-theme="dark">
+      <header ref={headerRef} className="c-header" data-theme="light">
+        <div className="c-util">
+          <div className="o-container c-util__inner">
+            <p className="c-util__group">{group.line}</p>
+            <ul className="c-util__links">
+              <li>
+                <SmartLink href={cta.urgent.href} className="c-util__link c-util__link--urgent">
+                  <Pictogram name="alarm-bell" size={16} />
+                  {cta.urgent.label}
+                </SmartLink>
+              </li>
+              <li>
+                <a href={`mailto:${company.emails.general}`} className="c-util__link">
+                  <Pictogram name="send" size={16} />
+                  {company.emails.general}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={group.swiss.href}
+                  className="c-util__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Pictogram name="globe" size={16} />
+                  {group.swiss.label} site
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div className="o-container c-header__inner">
+          <SmartLink href="/" className="c-header__logo" aria-label={`${company.shortName}, home`}>
+            <img
+              className="c-header__logo-img c-header__logo-img--on-dark"
+              src="/brand/logo-light.svg"
+              alt=""
+              width={272}
+              height={64}
+              decoding="async"
+            />
+            <img
+              className="c-header__logo-img c-header__logo-img--on-light"
+              src="/brand/logo.svg"
+              alt=""
+              width={272}
+              height={64}
+              decoding="async"
+            />
+          </SmartLink>
           <nav className="c-header__nav" aria-label="Primary">
             <ul className="c-header__list">
               {groups.map((g) => {
@@ -241,24 +277,6 @@ export function SiteHeader() {
               })}
             </ul>
           </nav>
-          <SmartLink href="/" className="c-header__logo" aria-label={`${company.shortName}, home`}>
-            <img
-              className="c-header__logo-img c-header__logo-img--on-dark"
-              src="/brand/logo-light.svg"
-              alt=""
-              width={272}
-              height={64}
-              decoding="async"
-            />
-            <img
-              className="c-header__logo-img c-header__logo-img--on-light"
-              src="/brand/logo.svg"
-              alt=""
-              width={272}
-              height={64}
-              decoding="async"
-            />
-          </SmartLink>
           <div className="c-header__actions">
             <CtaUrgent href={cta.urgent.href} label={cta.urgent.label} small />
             <CtaTalk href={cta.primary.href} label={cta.primary.label} small />
