@@ -1,0 +1,8 @@
+# Notice: scroll-craft
+
+- **What:** the `scroll-craft` agent skill by Nate Herk (AI Automation Society), copied unchanged from the `scroll-craft/` folder of the archive: `SKILL.md`, `CHANGELOG.md`, `engine/`, `references/`, `scripts/` and `templates/` (24 files).
+- **Where it came from:** supplied by the user for this project on 25 September 2026 as `scrollcraft.zip`. It is public release 0.3.0 (4 September 2026), packaged from revision `0b816225945e45380397d6a0487efa3c98916858` of https://github.com/nateherkai/scroll-craft.
+- **Licence:** MIT, Copyright (c) 2026 Nate Herk. The archive does include a licence file: `LICENSE` sits at the archive root, outside the skill folder. It is copied here unchanged as `LICENSE`, because MIT requires the notice to travel with copies. An earlier note that the archive carried no licence file was wrong.
+- **Not copied:** the archive's root files `SOURCE-README.md` (the project README; its screenshots and video were not in the archive), `START-HERE.txt` (setup notes) and `.env.example` (a template for a kie.ai API key; no key included).
+- **Engine:** `engine/scrollcraft.js` and `engine/scrollcraft.css` are also vendored, byte for byte, in `site-za/app/src/vendor/scrollcraft/` (see the NOTICE.md there). That notice still says the archive carried no licence file, so it needs the same correction and the MIT text beside the vendored engine.
+- **Needs:** Node 18 or newer, a full ffmpeg build, and playwright-core with Chrome. Generating images or video through kie.ai needs the user's own `KIE_AI_API_KEY` and costs credits; keep keys out of published files.

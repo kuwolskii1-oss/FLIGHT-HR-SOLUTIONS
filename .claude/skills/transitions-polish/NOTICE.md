@@ -1,0 +1,8 @@
+# Notice: transitions-polish
+
+- **What:** the `transitions-polish` agent skill from Transitions.dev, an add-on to `transitions-dev` for tuning motion that already exists against the motion-token scale. Copied unchanged: `SKILL.md`, `_root.css` and `_refine-rules.md`. It links to `../transitions-dev/SKILL.md`, which sits beside it in `.claude/skills/transitions-dev/`.
+- **Source:** https://transitions.dev, repository https://github.com/Jakubantalik/transitions.dev, folder `skills/transitions-polish/` on branch `main`.
+- **Author:** Jakub Antalik.
+- **Retrieved:** 25 September 2026, file by file from raw.githubusercontent.com. The folder could not be listed directly, so it was fetched as the three files its `SKILL.md` references. Nothing else checked (the repository README, the `transitions-dev` skill and the author's npm packages) points to further files in it.
+- **Licence:** the repository has no LICENSE file. Its terms page (`terms.html`, "Terms & License", last updated July 2026) allows the transitions to be used in unlimited personal and commercial projects, modified freely and shipped to users as part of a product, and asks for no attribution; it forbids redistributing the library itself, that is repackaging, reselling or publishing the collection or a substantial part of it as a competing transitions library, template pack or component kit. The MIT licence on the same page covers only the tooling (the Refine tool and the `transitions-dev` CLI).
+- **In this repository:** kept for building this project's own sites. Do not publish this folder as part of a standalone library or pack.
