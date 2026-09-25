@@ -13,6 +13,7 @@ const ROUTES = ['/engines', '/aircraft', '/parts', '/charter', '/advisory', '/en
     const posts = []; page.on('request', r => { if (r.method() === 'POST') posts.push(r.url().slice(0, 90)); });
     let navigatedTo = null; page.on('framenavigated', f => { if (f === page.mainFrame() && !f.url().startsWith(base)) navigatedTo = f.url().slice(0, 120); });
     await page.goto(base + route, { waitUntil: 'networkidle' });
+    await page.waitForFunction(() => document.documentElement.classList.contains('sc-ready'), null, { timeout: 15000 }).catch(() => {});
     const form = await page.$('form.c-form');
     if (!form) { console.log(route, 'NO FORM'); await ctx.close(); continue; }
     const fields = await form.$$eval('input:not([type=hidden]):not([name=website]), select, textarea', els => els.map(e => `${e.tagName.toLowerCase()}#${e.name}${e.required ? '*' : ''}${e.type ? ':' + e.type : ''}`));
@@ -26,7 +27,7 @@ const ROUTES = ['/engines', '/aircraft', '/parts', '/charter', '/advisory', '/en
       if (info.hidden || info.name === 'website') continue;
       if (info.tag === 'select') { await el.selectOption({ index: 1 }); continue; }
       if (info.type === 'checkbox') { await el.evaluate(e => { if (!e.checked) e.click(); }); continue; }
-      if (info.type === 'radio') { const v = await el.getAttribute('value'); if (/yes|owned|buy|passengers|end buyer|one-way/i.test(v) || true) { await el.check({ force: true }); } continue; }
+      if (info.type === 'radio') { await el.evaluate(e => { if (!e.checked) e.click(); }); continue; }
       const v = /email/i.test(info.name) ? 'qa@example.com' : /phone/i.test(info.name) ? '+27 11 000 0000' : /date/i.test(info.name) && info.type === 'date' ? '2026-11-03' : /number|quantity|size|count|weight/i.test(info.name) && info.type === 'number' ? '2' : /summary|message|description|mission|part/i.test(info.name) ? 'QA test text describing the requirement in one line.' : /company|organisation/i.test(info.name) ? 'QA Airline' : /^name$/i.test(info.name) ? 'QA Tester' : 'Test value';
       await el.fill(v);
     }

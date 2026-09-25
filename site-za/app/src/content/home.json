@@ -1,111 +1,171 @@
 {
-  "notes": "Home page for the South African site. Seven blocks as fixed in CONTENT-SCHEMA.md, each 60 words or fewer including labels, one call to action per block and two in closing. Hero: the brief's positioning line and a subline that says what FHS does from South Africa, with no region beyond that because regions served are unknown. Hero secondary is omitted on purpose: one button per screen; the urgent action stays in the header. Ask: the five doors in nav order, one line naming who each door is for, and the brief's urgency band per door. The urgency value describes how quickly that visitor usually needs an answer (the brief's doors table); the component should label it as such, for example 'Typical timescale', and never present it as a response time, because none has been agreed. How: the brief's five steps condensed, using the brief's own words per step; the About page carries the full version. Trust: four things a visitor can check now (verification, process, group, company details) with a single link to the commitments on About; item hrefs are left out to keep one action per block. Engine360: 'is being designed' is the headline; the text names only status and exposure, as far as the brief goes. Group: the fixed group line as title; the Swiss company is described from the Swiss site's content and labelled as the Swiss company; the relationship word (subsidiary, sister or partner) is not rendered until confirmed; the link goes to the Swiss site so the visitor can check it. Closing: primary plus urgent, per the fixed labels. Nothing on this page states an address, phone, region, engine or aircraft type, approval, team member, client name, response time or year count. British English, no dashes as punctuation.",
-  "sources": [
-    "hero: brief section 7 (Turning the profile into web copy: 'Engine intelligence. Operational certainty.' as the South African hero line; a plain subline under the hero saying what FHS does) and section 1 (Which engines, aircraft and regions: regions unknown, so the subline says only 'from South Africa'). Label from CONTENT-SCHEMA.md fixed decisions.",
-    "ask: brief section 2 (Five doors, not ten service lines: the doors table gives who comes in and the urgency band for each door; the homepage should ask 'What do you need?') and section 3 (Navigation: door order and hrefs).",
-    "how: brief section 4 (Trust is the main design problem: publish the How we work sequence; five numbered steps Define, Verify, Structure, Execute, Monitor with their descriptors; a condensed version on the homepage).",
-    "trust: brief section 4 (the verification process, the transaction process, the group link labelled as the group's, company facts), section 1 (Blocker: the address says TBA, so only the registration number and country are shown) and CONTENT-SCHEMA.md (registration number 2026/294346/07, registered 2026, fixed group line).",
-    "engine360: brief section 1 (How to present Engine 360: early access with a waitlist, 'is being designed', never a live product), section 3 (the waitlist asks for fleet size, engine types and role) and the CONTENT-SCHEMA.md page brief (engine intelligence, status, exposure). Label from the fixed decisions.",
-    "group: brief section 1 (The domain, and how to describe the link to the Swiss company: the line 'Part of the Flight Hour Solution group'; relationship to confirm) and section 4 (the group link, clearly labelled as the group's). Swiss company facts from site/app/src/content/site.json company (legal name Flight Hour Solution GmbH, city Zug, site URL) and site/app/src/content/about.json story and independence (independent jet-engine management consultancy; shop visit management, workscopes, lease returns, records).",
-    "closing: CONTENT-SCHEMA.md fixed labels (Get in touch to /contact; AOG on WhatsApp to /contact#urgent), brief section 3 (an urgent button visible on every screen) and section 6 (WhatsApp as the urgent channel)."
-  ],
-  "hero": {
-    "headline": "Engine intelligence. Operational certainty.",
-    "sub": "From South Africa: engine management, aircraft and parts sourcing, charter and advisory for airlines, lessors and operators.",
-    "cta": { "label": "Get in touch", "href": "/contact", "kind": "primary" }
-  },
-  "ask": {
-    "title": "What do you need?",
-    "doors": [
-      {
-        "slug": "engines",
-        "title": "Engines",
-        "text": "For airlines, lessors, engine owners and MROs.",
-        "href": "/engines",
-        "urgency": "Weeks to months"
-      },
-      {
-        "slug": "aircraft",
-        "title": "Aircraft",
-        "text": "For airlines, new operators, investors and government.",
-        "href": "/aircraft",
-        "urgency": "Months"
-      },
-      {
-        "slug": "parts",
-        "title": "Parts",
-        "text": "For maintenance controllers, MROs and operators.",
-        "href": "/parts",
-        "urgency": "Hours (AOG) to weeks"
-      },
-      {
-        "slug": "charter",
-        "title": "Charter",
-        "text": "For corporates, government, mining, pilgrimage and humanitarian groups.",
-        "href": "/charter",
-        "urgency": "Days to weeks"
-      },
-      {
-        "slug": "advisory",
-        "title": "Advisory",
-        "text": "For investors, owners, government and start-up airlines.",
-        "href": "/advisory",
-        "urgency": "Months"
-      }
-    ]
-  },
-  "how": {
-    "title": "How we work",
-    "intro": "Five steps, in this order.",
-    "steps": [
-      { "n": "1", "title": "Define", "text": "Requirement, specs, timeline" },
-      { "n": "2", "title": "Verify", "text": "Records, counterparties, status" },
-      { "n": "3", "title": "Structure", "text": "Deal, lease or maintenance plan" },
-      { "n": "4", "title": "Execute", "text": "Inspections, payments, delivery" },
-      { "n": "5", "title": "Monitor", "text": "Performance and exposure" }
-    ],
-    "cta": { "label": "Read how we work", "href": "/about#how", "kind": "link" }
-  },
-  "trust": {
-    "title": "What you can check",
-    "text": "Registered in 2026, we expect to be checked. Here is where to start.",
-    "items": [
-      { "title": "Verification", "text": "Records, counterparties and status, checked before we confirm anything." },
-      { "title": "Process", "text": "Five numbered steps, and nine for a major transaction." },
-      { "title": "Group", "text": "Part of the Flight Hour Solution group." },
-      { "title": "Company details", "text": "Registration number 2026/294346/07, South Africa." }
-    ],
-    "cta": { "label": "Read our commitments", "href": "/about#commitments", "kind": "link" }
-  },
-  "engine360": {
-    "badge": "Early access",
-    "title": "Engine 360 is being designed",
-    "text": "Engine intelligence covering status and exposure. The waitlist asks for fleet size, engine types and role.",
-    "cta": { "label": "Join the early access list", "href": "/engines/engine-360", "kind": "secondary" }
-  },
-  "group": {
-    "title": "Part of the Flight Hour Solution group",
-    "text": "The Swiss company, Flight Hour Solution GmbH in Zug, is an independent jet-engine management consultancy working on shop visits, workscopes, lease returns and records.",
-    "cta": { "label": "Visit the Swiss site", "href": "https://flighthoursolution.com", "kind": "link" }
-  },
-  "closing": {
-    "headline": "Tell us what you need",
-    "sub": "Pick a door above, or send a general message. For an aircraft on the ground, use WhatsApp.",
-    "cta": { "label": "Get in touch", "href": "/contact", "kind": "primary" },
-    "urgent": { "label": "AOG on WhatsApp", "href": "/contact#urgent", "kind": "secondary" }
-  },
-  "clientToConfirm": [
-    "Regions served: the hero subline says only 'from South Africa'. Confirm whether FHS serves South Africa, SADC or all of Africa so the subline can name it (brief section 1).",
-    "Exact relationship to the Swiss company (subsidiary, sister company or partner). The group band uses only the fixed line 'Part of the Flight Hour Solution group' and describes the Swiss company; the wording is adjusted once confirmed (brief section 1).",
-    "Confirm that the Swiss company may be described here, from its own site, as an independent jet-engine management consultancy in Zug working on shop visits, workscopes, lease returns and records, and that the group band may link to flighthoursolution.com.",
-    "WhatsApp Business number and staffed hours. The urgent action and the closing line point to /contact#urgent until the number exists (brief sections 6 and 8).",
-    "Engine 360: confirm that 'status and exposure' describes what it is being designed to do, and whether anything else may be named on the home page (brief section 1).",
-    "Urgency bands in the ask block (weeks to months; months; hours (AOG) to weeks; days to weeks; months) come from the brief's doors table and describe the visitor's usual timescale, not a response promise. Confirm the bands and, separately, any response-time commitment per door before one is rendered (brief section 8).",
-    "Client types per door in the ask block follow the brief's doors table. Confirm the Charter grouping 'corporates, government, mining, pilgrimage and humanitarian groups'.",
-    "The five steps use the brief's words (Define: Requirement, specs, timeline; Verify: Records, counterparties, status; Structure: Deal, lease or maintenance plan; Execute: Inspections, payments, delivery; Monitor: Performance and exposure). Confirm these match the profile.",
-    "Company details on the home page show the registration number and country only. Supply the physical address and South African phone number (brief section 1, blocker) so the trust block and footer can carry them.",
-    "Engine and aircraft types covered are not named on the home page. Confirm the list before the Engines door line or the hero subline mentions any (brief section 1).",
-    "Tone check for the MD: the trust block opens with 'Registered in 2026, we expect to be checked.' Confirm this is acceptable, or supply a preferred line.",
-    "The hero shows a single button, Get in touch, and no second button; the AOG action stays in the header on every screen. Confirm."
+ "notes": "Home page for the South African site. Seven blocks as fixed in CONTENT-SCHEMA.md, each 60 words or fewer including labels, one call to action per block and two in closing. Hero: the brief's positioning line and a subline that says what FHS does from South Africa, with no region beyond that because regions served are unknown. Hero secondary is omitted on purpose: one button per screen; the urgent action stays in the header. Ask: the five doors in nav order, one line naming who each door is for, and the brief's urgency band per door. The urgency value describes how quickly that visitor usually needs an answer (the brief's doors table); the component should label it as such, for example 'Typical timescale', and never present it as a response time, because none has been agreed. How: the brief's five steps condensed, using the brief's own words per step; the About page carries the full version. Trust: four things a visitor can check now (verification, process, group, company details) with a single link to the commitments on About; item hrefs are left out to keep one action per block. Engine360: 'is being designed' is the headline; the text names only status and exposure, as far as the brief goes. Group: the fixed group line as title; the Swiss company is described from the Swiss site's content and labelled as the Swiss company; the relationship word (subsidiary, sister or partner) is not rendered until confirmed; the link goes to the Swiss site so the visitor can check it. Closing: primary plus urgent, per the fixed labels. Nothing on this page states an address, phone, region, engine or aircraft type, approval, team member, client name, response time or year count. British English, no dashes as punctuation.",
+ "sources": [
+  "hero: brief section 7 (Turning the profile into web copy: 'Engine intelligence. Operational certainty.' as the South African hero line; a plain subline under the hero saying what FHS does) and section 1 (Which engines, aircraft and regions: regions unknown, so the subline says only 'from South Africa'). Label from CONTENT-SCHEMA.md fixed decisions.",
+  "ask: brief section 2 (Five doors, not ten service lines: the doors table gives who comes in and the urgency band for each door; the homepage should ask 'What do you need?') and section 3 (Navigation: door order and hrefs).",
+  "how: brief section 4 (Trust is the main design problem: publish the How we work sequence; five numbered steps Define, Verify, Structure, Execute, Monitor with their descriptors; a condensed version on the homepage).",
+  "trust: brief section 4 (the verification process, the transaction process, the group link labelled as the group's, company facts), section 1 (Blocker: the address says TBA, so only the registration number and country are shown) and CONTENT-SCHEMA.md (registration number 2026/294346/07, registered 2026, fixed group line).",
+  "engine360: brief section 1 (How to present Engine 360: early access with a waitlist, 'is being designed', never a live product), section 3 (the waitlist asks for fleet size, engine types and role) and the CONTENT-SCHEMA.md page brief (engine intelligence, status, exposure). Label from the fixed decisions.",
+  "group: brief section 1 (The domain, and how to describe the link to the Swiss company: the line 'Part of the Flight Hour Solution group'; relationship to confirm) and section 4 (the group link, clearly labelled as the group's). Swiss company facts from site/app/src/content/site.json company (legal name Flight Hour Solution GmbH, city Zug, site URL) and site/app/src/content/about.json story and independence (independent jet-engine management consultancy; shop visit management, workscopes, lease returns, records).",
+  "closing: CONTENT-SCHEMA.md fixed labels (Get in touch to /contact; AOG on WhatsApp to /contact#urgent), brief section 3 (an urgent button visible on every screen) and section 6 (WhatsApp as the urgent channel)."
+ ],
+ "hero": {
+  "headline": "Engine intelligence. Operational certainty.",
+  "sub": "From South Africa: engine management, aircraft and parts sourcing, charter and advisory for airlines, lessors and operators.",
+  "cta": {
+   "label": "Get in touch",
+   "href": "/contact",
+   "kind": "primary"
+  }
+ },
+ "ask": {
+  "title": "What do you need?",
+  "doors": [
+   {
+    "slug": "engines",
+    "title": "Engines",
+    "text": "For airlines, lessors, engine owners and MROs.",
+    "href": "/engines",
+    "urgency": "Weeks to months"
+   },
+   {
+    "slug": "aircraft",
+    "title": "Aircraft",
+    "text": "For airlines, new operators, investors and government.",
+    "href": "/aircraft",
+    "urgency": "Months"
+   },
+   {
+    "slug": "parts",
+    "title": "Parts",
+    "text": "For maintenance controllers, MROs and operators.",
+    "href": "/parts",
+    "urgency": "Hours (AOG) to weeks"
+   },
+   {
+    "slug": "charter",
+    "title": "Charter",
+    "text": "For corporates, government, mining, pilgrimage and humanitarian groups.",
+    "href": "/charter",
+    "urgency": "Days to weeks"
+   },
+   {
+    "slug": "advisory",
+    "title": "Advisory",
+    "text": "For investors, owners, government and start-up airlines.",
+    "href": "/advisory",
+    "urgency": "Months"
+   }
   ]
+ },
+ "how": {
+  "title": "How we work",
+  "intro": "Five steps, in this order.",
+  "steps": [
+   {
+    "n": "1",
+    "title": "Define",
+    "text": "Requirement, specs, timeline"
+   },
+   {
+    "n": "2",
+    "title": "Verify",
+    "text": "Records, counterparties, status"
+   },
+   {
+    "n": "3",
+    "title": "Structure",
+    "text": "Deal, lease or maintenance plan"
+   },
+   {
+    "n": "4",
+    "title": "Execute",
+    "text": "Inspections, payments, delivery"
+   },
+   {
+    "n": "5",
+    "title": "Monitor",
+    "text": "Performance and exposure"
+   }
+  ],
+  "cta": {
+   "label": "Read how we work",
+   "href": "/about#how",
+   "kind": "link"
+  }
+ },
+ "trust": {
+  "title": "What you can check",
+  "text": "Registered in 2026, we expect to be checked.",
+  "items": [
+   {
+    "title": "Verification",
+    "text": "Records, counterparties and status, checked before we confirm."
+   },
+   {
+    "title": "Process",
+    "text": "Five numbered steps, nine for a major transaction."
+   },
+   {
+    "title": "Group",
+    "text": "Part of the Flight Hour Solution group."
+   },
+   {
+    "title": "Company details",
+    "text": "Registration number 2026/294346/07, South Africa."
+   }
+  ],
+  "cta": {
+   "label": "Read our commitments",
+   "href": "/about#commitments",
+   "kind": "link"
+  }
+ },
+ "engine360": {
+  "badge": "Early access",
+  "title": "Engine 360 is being designed",
+  "text": "Engine intelligence covering status and exposure. The waitlist asks for fleet size, engine types and role.",
+  "cta": {
+   "label": "Join the early access list",
+   "href": "/engines/engine-360",
+   "kind": "secondary"
+  }
+ },
+ "group": {
+  "title": "Part of the Flight Hour Solution group",
+  "text": "The Swiss company, Flight Hour Solution GmbH in Zug, is an independent jet-engine management consultancy working on shop visits, workscopes, lease returns and records.",
+  "cta": {
+   "label": "Visit the Swiss site",
+   "href": "https://flighthoursolution.com",
+   "kind": "link"
+  }
+ },
+ "closing": {
+  "headline": "Tell us what you need",
+  "sub": "Pick a door above, or send a general message. For an aircraft on the ground, use WhatsApp.",
+  "cta": {
+   "label": "Get in touch",
+   "href": "/contact",
+   "kind": "primary"
+  },
+  "urgent": {
+   "label": "AOG on WhatsApp",
+   "href": "/contact#urgent",
+   "kind": "secondary"
+  }
+ },
+ "clientToConfirm": [
+  "Regions served: the hero subline says only 'from South Africa'. Confirm whether FHS serves South Africa, SADC or all of Africa so the subline can name it (brief section 1).",
+  "Exact relationship to the Swiss company (subsidiary, sister company or partner). The group band uses only the fixed line 'Part of the Flight Hour Solution group' and describes the Swiss company; the wording is adjusted once confirmed (brief section 1).",
+  "Confirm that the Swiss company may be described here, from its own site, as an independent jet-engine management consultancy in Zug working on shop visits, workscopes, lease returns and records, and that the group band may link to flighthoursolution.com.",
+  "WhatsApp Business number and staffed hours. The urgent action and the closing line point to /contact#urgent until the number exists (brief sections 6 and 8).",
+  "Engine 360: confirm that 'status and exposure' describes what it is being designed to do, and whether anything else may be named on the home page (brief section 1).",
+  "Urgency bands in the ask block (weeks to months; months; hours (AOG) to weeks; days to weeks; months) come from the brief's doors table and describe the visitor's usual timescale, not a response promise. Confirm the bands and, separately, any response-time commitment per door before one is rendered (brief section 8).",
+  "Client types per door in the ask block follow the brief's doors table. Confirm the Charter grouping 'corporates, government, mining, pilgrimage and humanitarian groups'.",
+  "The five steps use the brief's words (Define: Requirement, specs, timeline; Verify: Records, counterparties, status; Structure: Deal, lease or maintenance plan; Execute: Inspections, payments, delivery; Monitor: Performance and exposure). Confirm these match the profile.",
+  "Company details on the home page show the registration number and country only. Supply the physical address and South African phone number (brief section 1, blocker) so the trust block and footer can carry them.",
+  "Engine and aircraft types covered are not named on the home page. Confirm the list before the Engines door line or the hero subline mentions any (brief section 1).",
+  "Tone check for the MD: the trust block opens with 'Registered in 2026, we expect to be checked.' Confirm this is acceptable, or supply a preferred line.",
+  "The hero shows a single button, Get in touch, and no second button; the AOG action stays in the header on every screen. Confirm."
+ ]
 }

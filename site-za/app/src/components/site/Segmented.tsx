@@ -2,7 +2,8 @@ import { useEffect, useRef } from "react";
 
 /**
  * A segmented control built from real radio inputs, so keyboard and screen readers get a
- * radio group, with the transitions.dev sliding pill behind the checked option.
+ * radio group, with the transitions.dev sliding pill behind the checked option. The inputs are
+ * uncontrolled on purpose: a tap that lands before hydration still sticks.
  */
 export function Segmented({ name, idBase, options, value, onChange, invalid, describedBy }: { name: string; idBase: string; options: string[]; value: string; onChange: (v: string) => void; invalid?: boolean; describedBy?: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -37,7 +38,7 @@ export function Segmented({ name, idBase, options, value, onChange, invalid, des
       <span className="t-tabs-pill" aria-hidden="true" />
       {options.map((o, i) => (
         <label className="c-segmented__option t-tab" key={o}>
-          <input type="radio" name={name} id={`${idBase}-${i}`} value={o} checked={value === o} onChange={() => onChange(o)} />
+          <input type="radio" name={name} id={`${idBase}-${i}`} value={o} defaultChecked={value === o} onChange={() => onChange(o)} />
           <span>{o}</span>
         </label>
       ))}

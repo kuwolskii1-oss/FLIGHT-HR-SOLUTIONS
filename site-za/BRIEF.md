@@ -41,7 +41,7 @@ lands exactly on the logo.**
 | 3 | Confidence | Five numbered steps, one per screen, in the order the company actually works |
 | 4 | Reassurance | What you can check: verification, process, group, company details |
 | 5 | Curiosity | Engine 360, early access, honestly described as being designed |
-| 6 | Resolve | The group line, then one closing question and the two actions |
+| 6 | Resolve | The group line, then one closing question with one button and the urgent action as a link |
 
 The peak is act 1 (the lock-up). It gets the largest span on the page (2.6 viewport-heights), the
 quiet ground of the paper canvas and the only pinned stage before the steps. Nothing else on the
@@ -55,9 +55,10 @@ flow (close). Four families (pin, flow, cue, reveal) and never the same device t
 the pinned level. No scrub clips: the brief bans autoplay video and the mobile byte budget is the
 constraint that matters.
 
-Door pages: flow intro → flow sections → pin with cues (the door's process) or flow list with a
-progress rule drawn from --sc-p (nine-step transaction) → flow (verification grid) → accordion
-(full scope) → form → close.
+Door pages: flow intro → image revealed on scroll → flow sections → pin with cues (the door's
+process) or flow list with a progress rule drawn from --sc-p (nine-step transaction) → flow
+(verification grid) → accordion (full scope) → form (the only button on the page) → close with
+links only.
 
 ## Taste floor, applied
 
@@ -68,8 +69,8 @@ no scroll cues, no `01 / 06` counters, no em dashes, no custom cursors, no inven
 
 ## Reduced motion and no JavaScript
 
-The ident renders complete. Cues and reveals show their final state. Pinned acts still pin (the
-stage is `position: sticky`) but nothing translates. Forms post nothing without JavaScript: the
+The ident renders complete. Every pinned act is rewritten to a flow act before the engine mounts,
+so nothing pins; cues and reveals show their final state; the stepped lists stack. Forms post nothing without JavaScript: the
 submit button opens a prepared email instead of a GET that would put personal data in the URL.
 
 ## Fingerprint row
