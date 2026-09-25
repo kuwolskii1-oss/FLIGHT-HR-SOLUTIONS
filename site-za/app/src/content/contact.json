@@ -1,0 +1,105 @@
+{
+  "notes": "Contact page for Flight Hour Solution (Pty) Ltd. Every statement comes from site-za/content-brief/brief.txt and the fixed decisions in CONTENT-SCHEMA.md; nothing is taken from memory or industry knowledge. Nothing is taken from the Swiss site's content either, because this page carries no group facts (the country switch and the group line live in site.json). Decisions: (1) The five door cards link straight to each door's form (/engines#form and so on), because a visitor on the contact page has already decided to make contact. Each card names who the door is for and what to have ready, from the brief's section 2 table, so the visitor can pick a door without reading a paragraph. (2) The urgent block carries the fixed urgent label and href (AOG on WhatsApp, /contact#urgent). The route component swaps in the WhatsApp deep link with the AOG template once company.whatsapp is set in site.json, and meanwhile shows the aog@ inbox. urgent.hours is empty because no staffed hours exist; the component omits the line. The block covers AOG parts only; charter quotes have their own WhatsApp template on the charter page. (3) channels holds the one general inbox, hello@flighthoursolution.com, a proposal on the group domain that matches site.json company.emails.general. No phone, no WhatsApp number and no personal address are published; the brief says not to publish the MD's personal address as the only contact. (4) office.title is set because the schema requires a title; office.lines is empty because the profile gives the address as TBA, and the component renders nothing for an empty list. (5) The general form follows the fixed field list: name, organisation, email, phone, which door, message. The door select lists the five doors plus Other; it is informational, since the form routes to one inbox. form.id is 'form', as on the engines, parts and Engine 360 forms, so DoorForm's aria-labelledby resolves to the route's h2#form-title. The route's section also has id form, so the builder may pass a distinct id prop to DoorForm if the duplicate id is not wanted. (6) No currencyNote, disclaimer or responsePromise: no money changes hands on the general form and no response time is committed. (7) No response times, hours, regions, approvals, figures or years anywhere on the page. British English, no dashes as punctuation, headlines 8 words or fewer, paragraphs 40 words or fewer, one call to action per block.",
+  "seoTitle": "Contact | Flight Hour Solution South Africa",
+  "metaDescription": "Engine, aircraft, parts, charter and advisory enquiries for Flight Hour Solution (Pty) Ltd, South Africa. One form per door, and a WhatsApp line for aircraft on ground.",
+  "title": "Tell us what you need",
+  "intro": "Each door has its own form, routed to the team for that line. Aircraft on ground? Use the WhatsApp line. For anything else, send a message below.",
+  "doors": [
+    {
+      "label": "Engines",
+      "href": "/engines#form",
+      "text": "Airlines, lessors, engine owners and MROs. Have the engine type, the issue and your timing ready. Records only after an NDA."
+    },
+    {
+      "label": "Aircraft",
+      "href": "/aircraft#form",
+      "text": "Airlines, new operators, investors and government. Buy, sell, dry lease or ACMI. Have the aircraft type or the mission ready."
+    },
+    {
+      "label": "Parts",
+      "href": "/parts#form",
+      "text": "Maintenance controllers, MROs and operators. Have the part number, quantity, condition and delivery airport ready."
+    },
+    {
+      "label": "Charter",
+      "href": "/charter#form",
+      "text": "Corporates, government, mining, pilgrimage and humanitarian groups. Have the route, dates and passenger count or cargo weight ready."
+    },
+    {
+      "label": "Advisory",
+      "href": "/advisory#form",
+      "text": "Investors, owners, government and start-up airlines. Have a project description and its stage ready."
+    }
+  ],
+  "urgent": {
+    "title": "Aircraft on ground?",
+    "text": "WhatsApp is the urgent channel. Put the part number, quantity, condition and delivery airport in the first message.",
+    "cta": { "label": "AOG on WhatsApp", "href": "/contact#urgent", "kind": "secondary" },
+    "hours": ""
+  },
+  "channels": [
+    {
+      "label": "Email",
+      "value": "hello@flighthoursolution.com",
+      "href": "mailto:hello@flighthoursolution.com",
+      "note": "General enquiries"
+    }
+  ],
+  "office": {
+    "title": "Office",
+    "lines": []
+  },
+  "general": {
+    "id": "form",
+    "title": "General enquiry",
+    "intro": "For anything that does not fit a door. Say which door comes closest and we will route it.",
+    "fields": [
+      { "name": "name", "label": "Name", "type": "text", "required": true, "width": "half" },
+      { "name": "organisation", "label": "Organisation", "type": "text", "required": true, "width": "half" },
+      { "name": "email", "label": "Email", "type": "email", "required": true, "width": "half" },
+      { "name": "phone", "label": "Phone", "type": "tel", "required": false, "width": "half" },
+      {
+        "name": "door",
+        "label": "Which door",
+        "type": "select",
+        "required": true,
+        "options": ["Engines", "Aircraft", "Parts", "Charter", "Advisory", "Other"],
+        "hint": "Not sure? Choose Other.",
+        "width": "full"
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "What you need, and by when.",
+        "width": "full"
+      }
+    ],
+    "submitLabel": "Send message",
+    "consentText": "I consent to Flight Hour Solution (Pty) Ltd processing these details under POPIA to answer this message, as set out in the privacy notice.",
+    "routeTo": "hello@flighthoursolution.com",
+    "successTitle": "Message received",
+    "successText": "Thank you. Your message has gone to the general inbox and we will reply by email. For an aircraft on ground, use the WhatsApp line."
+  },
+  "sources": [
+    "seoTitle, metaDescription, title, intro: brief section 2 (the site's first job is to route each visitor to the right door quickly; the homepage asks 'What do you need?' and offers the five doors before anything else), section 3 (an urgent button stays visible on every screen size because AOG parts buyers and charter requests often arrive from a phone), section 5 (one form per door; a single generic contact form fits nobody; route each form to the person who handles that line) and section 6 (make WhatsApp the urgent channel); CONTENT-SCHEMA.md page brief for contact.json (route to the five doors, the urgent WhatsApp block, channels, office lines empty, general form).",
+    "doors: brief section 2 table. Engines: airlines, lessors, engine owners, MROs; engine type, aircraft, the issue, owned or leased, timing; records only after an NDA. Aircraft: airlines, new operators, investors, government; buy, sell, dry lease or ACMI; aircraft type or the mission, budget or monthly rate, start date and term, base. Parts: maintenance controllers, MROs, operators; part number, quantity, condition, release certificate needed, delivery airport. Charter: corporates, government, mining, pilgrimage, humanitarian; route, dates, passenger count or cargo weight and dimensions. Advisory: investors, owners, government, start-up airlines; a project description and the stage it is at. Hrefs: CONTENT-SCHEMA.md fixed decisions (door routes) and the validator sitemap (the #form anchor on each door).",
+    "urgent: brief section 3 (urgent button on every screen size), section 5 (an AOG answer of yes routes the request to WhatsApp; charter and parts requests go stale within hours), section 6 (WhatsApp as the urgent channel; pre-filled messages so the first message already contains the part number; give availability in SAST and only promise what the team can actually staff) and section 8 (WhatsApp Business number with staffed hours still on the launch checklist); CONTENT-SCHEMA.md labels (urgent action 'AOG on WhatsApp' to /contact#urgent, upgraded to the WhatsApp deep link once the number exists). Hours are empty because the brief gives none.",
+    "channels: brief section 1 (email stays on the group domain flighthoursolution.com) and section 5 (do not publish the MD's personal address as the only contact; set up role addresses on the group domain and agree them with whoever runs the group's email); CONTENT-SCHEMA.md forms paragraph (hello@ for general, proposed and flagged). The address matches site.json company.emails.general.",
+    "office: brief section 1 (the address says TBA; South African law expects the registered name, registration number and physical address on business websites) and section 8 (physical address and SA phone number on the launch checklist); CONTENT-SCHEMA.md unknown facts list (physical address, South African phone, staffed hours). Lines are empty until supplied.",
+    "general form: brief section 5 (every form needs a POPIA consent checkbox and a link to the privacy notice; route each form to the person who handles that line of business; role addresses on the group domain) and CONTENT-SCHEMA.md forms paragraph (contact general fields: name, organisation, email, phone, which door as a select of the five plus Other, message; submit label 'Send message'; consentText names POPIA and links the privacy notice; routeTo hello@ on the group domain)."
+  ],
+  "clientToConfirm": [
+    "WhatsApp Business number and its staffed hours in SAST: neither exists yet. urgent.hours is empty, and the urgent button goes to /contact#urgent until site.json company.whatsapp is set, when the component upgrades it to the WhatsApp deep link with the AOG template. Publish only hours the team can actually staff.",
+    "South African telephone number: none is published, because the brief gives none. Supply one and say whether it should appear as a channel on this page as well as in the footer.",
+    "Physical address: the profile says TBA, so office.lines is empty and no map is shown. Supply the address and say whether visitors may call in or meet by appointment.",
+    "General inbox: hello@flighthoursolution.com is a proposal on the group domain, matching site.json. Agree it with whoever runs the group's email (the Swiss company already uses contact@flighthoursolution.com) and set who it forwards to. The MD's personal address confirmed in the brief is not published anywhere.",
+    "Routing of general messages: the form sends everything to the general inbox, and the 'Which door' answer travels in the message so it can be forwarded by hand. Confirm this, or ask the builder to route by the chosen door once the role inboxes exist.",
+    "Response time: none is stated on this page, for the general form or for AOG. Commit to one per door, in SAST, only if the team can staff it (brief section 8 lists response-time commitments per door).",
+    "Charter quotes by WhatsApp: the brief asks for pre-filled WhatsApp messages for AOG parts and for charter quotes. The urgent block here covers AOG parts only; the charter template lives on the charter page. Confirm whether a second WhatsApp route for charter belongs on this page.",
+    "Door cards link straight to each door's form (/engines#form and so on). Confirm, or have them open the top of each door page instead.",
+    "Form wording: approve the title 'General enquiry', the door select with Other, the optional phone field, and the consent sentence, which names POPIA and links the privacy notice (the notice itself is a draft for legal review).",
+    "Information Officer: POPIA requests sent through this form reach the general inbox. Name the Information Officer registered with the Information Regulator so the privacy notice and this page can say where such requests go."
+  ]
+}

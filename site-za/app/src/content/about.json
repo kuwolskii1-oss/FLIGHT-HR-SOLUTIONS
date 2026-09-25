@@ -1,0 +1,123 @@
+{
+  "notes": "About page for the South African site, following the about.json page brief in CONTENT-SCHEMA.md. Sections in render order: intro, how (#how), serve (#serve), commitments (#commitments), team (#team), company (#company), group (#group). Decisions: (1) The five steps use the brief's words verbatim as the first sentence of each step; the second sentence of steps 2, 3 and 4 repeats careful wording the brief gives elsewhere (NDA before records, appropriately approved MROs, the nine-step transaction process); steps 1 and 5 carry a plain gloss only. (2) Who we serve groups the client types from the brief's doors table, plus 'government institutions and state-owned airlines' from brief section 6, into four groups; items are names only, no counts, no regions. (3) Commitments are six short items, each with a place to check it: what FHS does and does not do, the careful wording, verification before claims, NDA before records, the charter operator disclaimer verbatim, and POPIA consent. (4) Team is an intro only; people is empty because the profile names only the MD's role, not a name, and no South African or group colleague is confirmed. (5) Company details carry the four facts the brief gives (legal name, registration number, registered 2026, South Africa); the address line is omitted until supplied. (6) The group block uses the fixed group line as its title and describes the Swiss company from the Swiss site's content, labelled as the Swiss company; the relationship word is not rendered until confirmed; the link goes to the Swiss site so the visitor can check it. Known minor: 'licensed' in the charter operator disclaimer is flagged by the validator as American spelling; it is the correct British participle and the brief's fixed wording, so it stays. Nothing on this page states an address, phone, region, engine or aircraft type, approval, team member, client name, response time or year count. British English, no dashes as punctuation, headlines 8 words or fewer, paragraphs 40 words or fewer.",
+  "seoTitle": "About us: how we work | Flight Hour Solution South Africa",
+  "metaDescription": "Flight Hour Solution (Pty) Ltd, South Africa, registered 2026: how we work in five steps, who we serve, our commitments, team and company details.",
+  "intro": {
+    "headline": "Who we are and how we work",
+    "sub": "Flight Hour Solution (Pty) Ltd is a South African company, registered in 2026. We coordinate engine management, source aircraft and parts, arrange charter and advise. We do not overhaul, repair or operate aircraft ourselves."
+  },
+  "how": {
+    "title": "How we work",
+    "intro": "Five steps, in the order they happen.",
+    "steps": [
+      { "n": "1", "title": "Define", "text": "Requirement, specs, timeline. We agree what you need, and by when, before anything is sourced." },
+      { "n": "2", "title": "Verify", "text": "Records, counterparties, status. We sign an NDA before asking for records." },
+      { "n": "3", "title": "Structure", "text": "Deal, lease or maintenance plan. Shop visits go through appropriately approved MROs." },
+      { "n": "4", "title": "Execute", "text": "Inspections, payments, delivery. Major transactions follow the nine-step process, from letter of intent to release." },
+      { "n": "5", "title": "Monitor", "text": "Performance and exposure, tracked after delivery." }
+    ]
+  },
+  "serve": {
+    "title": "Who we serve",
+    "intro": "Four groups, five doors. Start with the door that matches you.",
+    "groups": [
+      {
+        "title": "Airlines, operators and MROs",
+        "items": ["Airlines", "Start-up airlines and new operators", "Operators and maintenance controllers", "MROs"]
+      },
+      {
+        "title": "Owners, lessors and investors",
+        "items": ["Lessors", "Engine owners", "Aircraft owners", "Investors"]
+      },
+      {
+        "title": "Government",
+        "items": ["Government institutions", "State-owned airlines"]
+      },
+      {
+        "title": "Charter clients",
+        "items": ["Corporates", "Mining", "Pilgrimage groups", "Humanitarian organisations"]
+      }
+    ]
+  },
+  "commitments": {
+    "title": "Our commitments",
+    "items": [
+      {
+        "title": "We arrange, coordinate and advise",
+        "text": "Flight Hour Solution arranges, coordinates, sources, verifies and advises. It does not overhaul, repair or operate aircraft itself."
+      },
+      {
+        "title": "Careful wording",
+        "text": "Engine work goes through appropriately approved MROs. Charter and ACMI are subject to aircraft availability. We do not make technical or commercial claims we cannot support.",
+        "href": "/engines#shop-visits"
+      },
+      {
+        "title": "Verification before claims",
+        "text": "Records, counterparties and status are checked before we confirm anything. For parts: traceability, release documentation, certification status, incident and accident history, remaining life.",
+        "href": "/parts#verify"
+      },
+      {
+        "title": "NDA before records",
+        "text": "We sign an NDA before asking for records. The engine form asks about the engine, the aircraft, the issue and timing. No uploads.",
+        "href": "/engines#form"
+      },
+      {
+        "title": "Licensed operators",
+        "text": "Flight Hour Solution is not the operating airline. Flights are operated by licensed operators under their own Air Operator Certificates. This appears on every charter page and quote.",
+        "href": "/legal#disclaimer"
+      },
+      {
+        "title": "Personal information under POPIA",
+        "text": "Every form has a consent checkbox and a link to the privacy notice. We use personal information to answer the request it came with.",
+        "href": "/privacy"
+      }
+    ]
+  },
+  "team": {
+    "title": "Team",
+    "intro": "The company is led by its managing director. Each door's form goes to the person who handles that line of business, so use the door that fits your request.",
+    "people": []
+  },
+  "company": {
+    "title": "Company details",
+    "lines": [
+      "Flight Hour Solution (Pty) Ltd",
+      "Registration number 2026/294346/07",
+      "Registered in 2026",
+      "South Africa"
+    ]
+  },
+  "group": {
+    "title": "Part of the Flight Hour Solution group",
+    "text": "The Swiss company, Flight Hour Solution GmbH in Zug, is an independent jet-engine management consultancy working on shop visit management, workscopes, lease returns, contracts and records.",
+    "cta": { "label": "Visit the Swiss site", "href": "https://flighthoursolution.com", "kind": "link" }
+  },
+  "sources": [
+    "intro: brief header and title (Flight Hour Solution (Pty) Ltd, South Africa); brief section 1 opening (a company registered in 2026); brief section 2 doors table (the five lines of work: engines, aircraft, parts, charter, advisory); CONTENT-SCHEMA.md voice rule (FHS arranges, coordinates, sources, verifies and advises; it does not overhaul, repair or operate aircraft itself).",
+    "how: brief section 4 (Publish the How we work sequence: five numbered steps Define, Verify, Structure, Execute, Monitor with the descriptors Requirement, specs, timeline; Records, counterparties, status; Deal, lease or maintenance plan; Inspections, payments, delivery; Performance and exposure; full version on the About page). Step 2 second sentence: brief section 5 forms table (Say 'We sign an NDA before asking for records'). Step 3 second sentence: brief section 7 (keep 'through appropriately approved MROs'). Step 4 second sentence: brief section 4 (nine-step major-transaction process from LOI to release).",
+    "serve: brief section 2 doors table (Engines: airlines, lessors, engine owners, MROs; Aircraft: airlines, new operators, investors, government; Parts: maintenance controllers, MROs, operators; Charter: corporates, government, mining, pilgrimage, humanitarian; Advisory: investors, owners, government, start-up airlines); brief section 3 (aircraft management sits under Aircraft because the same owners and investors are the audience); brief section 6 (the profile lists government institutions and state-owned airlines as clients).",
+    "commitments: CONTENT-SCHEMA.md voice rule and brief sections 4 and 7 (FHS arranges and coordinates; keep the careful wording 'through appropriately approved MROs' and 'subject to aircraft availability'); brief section 1 (the profile commits to avoiding unsupported technical or commercial claims); brief section 4 (How we verify parts: traceability, release documentation, certification status, incident and accident history, remaining life; the charter disclaimer: FHS is not the operating airline, flights are operated by licensed operators under their own Air Operator Certificates, on every charter page and quote); brief section 5 (NDA before records, no uploads; every form needs a POPIA consent checkbox and a link to the privacy notice); brief section 6 (Comply with POPIA).",
+    "team: brief section 1 (Who the team is: the profile names only the MD, without a name); brief section 5 (route each form to the person who handles that line of business). No person is rendered.",
+    "company: brief header (Flight Hour Solution (Pty) Ltd); brief section 3 footer line (registration number 2026/294346/07); brief section 1 (registered in 2026; the address says TBA, so the address line is omitted); CONTENT-SCHEMA.md page brief (legal name, registration number, registered 2026, country).",
+    "group: brief section 1 (the line 'Part of the Flight Hour Solution group'; the exact relationship, subsidiary, sister company or partner, is to be confirmed, so no relationship word is rendered) and brief section 4 (the Swiss company's capabilities may go on the site if clearly labelled as the group's). Swiss company facts from site/app/src/content/site.json company block (legal name Flight Hour Solution GmbH, city Zug, site URL) and site/app/src/content/about.json story and independence blocks (independent jet-engine management consultancy; shop visit management, workscopes, lease returns, contracts, records). Link label matches home.json so one destination keeps one label."
+  ],
+  "clientToConfirm": [
+    "Managing director's name: the profile names only the MD's role. The team block says 'led by its managing director' and the company details omit the name until it is supplied (brief section 1 and section 4, company facts).",
+    "Team members: supply two to four named people based in South Africa, with title, prior employers (airline, MRO, OEM, lessor), portrait and consent, for team.people (brief section 1 and section 8). The array is empty until then.",
+    "Group colleagues: confirm whether the Swiss company's engineers will actually work on South African engine jobs. Only then may they be shown on this page, labelled as group colleagues (brief section 1). No years-of-experience figure will be rendered either way.",
+    "Exact relationship to the Swiss company (subsidiary, sister company or partner). The group block uses only the fixed line 'Part of the Flight Hour Solution group' until the wording is confirmed (brief section 1).",
+    "Confirm that the Swiss company may be described here, from its own site, as an independent jet-engine management consultancy in Zug working on shop visit management, workscopes, lease returns, contracts and records, and that the block may link to flighthoursolution.com.",
+    "Physical address: the profile says TBA. The company details show legal name, registration number, registered 2026 and country only. The brief notes that the Companies Act expects the registered name, registration number and physical address on business websites (brief section 1, blocker).",
+    "Full registration date: 'registered 2026' is all the brief gives. Supply the date if it should appear in the company details.",
+    "Five steps: the first sentence of each step uses the brief's words. The second sentences (agreeing scope before sourcing; NDA before records; shop visits through appropriately approved MROs; the nine-step transaction process; tracking after delivery) are glosses drawn from elsewhere in the brief. If the corporate profile carries its own step descriptions, supply them to replace the glosses (brief section 4).",
+    "Nine-step process in step 4: the brief shows it on the Aircraft and Parts pages. Confirm it applies to every major transaction, including engines, as the step implies.",
+    "Who we serve: the four groups (airlines, operators and MROs; owners, lessors and investors; government; charter clients) are a grouping of the client types in the brief's doors table plus 'government institutions and state-owned airlines' from brief section 6. Confirm the grouping and the names, in particular 'aircraft owners' (from the aircraft management audience) and 'humanitarian organisations'.",
+    "Commitment 'We do not make technical or commercial claims we cannot support' restates the profile's commitment to avoiding unsupported technical or commercial claims (brief section 1). Confirm it may stand as a public commitment.",
+    "Commitment 'Licensed operators' says the disclaimer appears on every charter page and quote. Confirm the quote documents carry it (brief section 4).",
+    "POPIA: the commitment names the consent checkbox and the privacy notice only. Confirm the Information Officer registered with the Information Regulator before the page names one, and whether a PAIA manual is required (brief section 6).",
+    "Approvals and accreditations: none is named on this page. If a credentials block is wanted, supply the real list (SACAA-related approvals, parts-distribution accreditation, B-BBEE level, CSD number) with certificate numbers (brief section 1 and section 6).",
+    "Regions served and engine and aircraft types covered are not named on this page. Confirm both before either is added (brief section 1).",
+    "Response times: none is stated. Confirm any commitment per door before one is rendered anywhere (brief section 6 and section 8).",
+    "Team intro says each door's form goes to the person who handles that line of business. Confirm the role inboxes and who each one forwards to, so the statement holds at launch (brief section 5)."
+  ]
+}

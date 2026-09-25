@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ClosingBand } from "@/components/site/ClosingBand";
 import { CtaLink } from "@/components/site/Cta";
 import { LocalNav } from "@/components/site/LocalNav";
+import { MediaFrame } from "@/components/site/MediaFrame";
 import { Steps } from "@/components/site/Steps";
 import { about } from "@/site/data/about";
 import { site } from "@/site/data/site";
@@ -26,6 +27,12 @@ function Page() {
           <LocalNav items={site.nav.about.items.map((i) => ({ label: i.label, href: i.href.replace("/about", "") }))} />
         </div>
       </header>
+
+      <section data-theme="light" className="c-doorimg" data-sc-act="flow" aria-hidden="true">
+        <div className="o-container">
+          <MediaFrame image="apron-dawn" alt="" ratio="16x9" reveal="up" sizes="100vw" />
+        </div>
+      </section>
 
       <Steps id="how" steps={how.steps} title={how.title} intro={how.intro} theme="light" />
 

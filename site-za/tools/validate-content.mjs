@@ -25,7 +25,7 @@ const ROUTES = new Set([
 ]);
 const SKIP = new Set(["notes", "sources", "clientToConfirm", "source", "href", "src", "slug", "seoTitle", "id", "name", "routeTo", "n", "timezone", "kind", "type", "status", "width", "showWhen", "field", "equals", "value", "registrationNumber", "phone", "whatsapp", "updated"]);
 const BANNED = /\b(world-leading|one-stop|holistic|seamless(?:ly)?|elevate|unleash|next-gen|revolutioni[sz]e|innovative|cutting-edge|passionate|synergy|best-in-class|state-of-the-art|leverage|unrivalled|unparalleled|trusted partner|end-to-end|bespoke)\b/i;
-const AMERICAN = /\b(color|colors|organize[sd]?|optimize[sd]?|analyze[sd]?|center|centers|program|programs|license[sd]?\b(?! to)|favor|honor|catalog)\b/;
+const AMERICAN = /\b(color|colors|organize[sd]?|optimize[sd]?|analyze[sd]?|center|centers|program|programs|favor|honor|catalog)\b/;
 const words = (s) => s.trim().split(/\s+/).filter(Boolean).length;
 
 const data = {};

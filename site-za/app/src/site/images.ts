@@ -19,12 +19,12 @@ export const IMAGES: Record<string, SiteImage> = {
   "cross-section": { key: "cross-section", ...{ w: 1800, h: 1018 }, alt: "Line drawing of a turbofan engine in cross section" },
   "charter-apron": { key: "charter-apron", ...R16x9, alt: "Business jet parked on a quiet apron at dusk with storm clouds in the distance" },
   "parts-store": { key: "parts-store", ...R16x9, alt: "Aircraft parts store with tagged components on steel shelving and an inspection bench" },
-  "apron-dawn": { key: "apron-dawn", ...R16x9, alt: "Airliner with an open engine cowl on a maintenance apron at dawn" },
+  "apron-dawn": { key: "apron-dawn", ...R16x9, alt: "Business jet on a maintenance apron at dawn with a stand and a ground power unit beside it" },
 };
 /** The image that opens each door page. */
 export const DOOR_IMAGES: Record<string, string> = {
   engines: "hero-engine-stand",
-  aircraft: "apron-dawn",
+  aircraft: "apron-dusk",
   parts: "parts-store",
   charter: "charter-apron",
   advisory: "records-desk",
