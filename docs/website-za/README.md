@@ -75,8 +75,9 @@ Method: `site-za/tools/qa/factors.js`, `qa.js`, `interact.js` and `forms.js` aga
   25 September 2026 05:13 UTC with the `scroll-scrub` website template; the template's `app/`
   was replaced wholesale by `site-za/app` (only `app/packages` is the platform's).
 - Deploys: 05:33 UTC (first), 05:41 UTC (CSP font rule, link-only closings on form pages,
-  reduced-motion flow, 560 ms reveals), and the final one at the time recorded in the git log of
-  this file (full-screen home chapters, trimmed home copy, uncontrolled segmented radios).
+  reduced-motion flow, 560 ms reveals), about 06:08 UTC (full-screen home chapters, trimmed home
+  copy, uncontrolled segmented radios) and about 06:15 UTC (first pinned step lit from the act's
+  first frame), which is the build recorded here.
 - Raw measurements: `factors-run3.json` (all routes), `factors-home-final.json` (home after the
   last trim), `qa-report.json` (axe, console, weight per route).
 - Runbook: `site-za/DEPLOY.md`. Higgsfield credits used by this build: 0.5 for three images.
