@@ -1,0 +1,194 @@
+{
+  "notes": "Site-wide content for Flight Hour Solution (Pty) Ltd. Every fact about the South African company comes from site-za/content-brief/brief.txt; the only facts it gives are the legal name, registered 2026, registration number 2026/294346/07, the group email domain, the tagline shared across both sites and the positioning line. Everything else the schema asks for (address, phone, WhatsApp, staffed hours, managing director, Information Officer, relationship to the Swiss company) is unknown and left empty; components omit those lines until the client supplies them, and each gap is listed in clientToConfirm. Decisions taken here: (1) nav.doors follows the fixed table in CONTENT-SCHEMA.md in order and with its hrefs; the Engine 360 menu entry uses label 'Engine 360' with note 'Early access' so the component can render the badge the brief asks for, never a live-product label. (2) Parts is one page; its four anchors are listed as items so a menu or an on-page jump list can use them, but the brief's nav mock shows Parts without a dropdown, so the builder may render Parts as a plain link. (3) nav.about has one item for team and company details pointing to /about#team; the company block (#company) follows it on the page. (4) cta.primary and cta.urgent carry the fixed labels; the urgent link goes to /contact#urgent and the component upgrades it to a WhatsApp deep link once company.whatsapp is set. (5) whatsappTemplates are the pre-filled first messages the brief asks for; the square brackets are slots the visitor completes, and the component may replace them with form values where it has them. (6) footer.badges lists B-BBEE and CSD as to-confirm; the component shows a badge only when status is held. (7) footer.disclaimer is the charter operator disclaimer in the brief's wording. Known minor: 'licensed' in footer.disclaimer is flagged as American spelling by the validator; it is the correct British participle and the brief's fixed wording, so it stays. British English, no dashes as punctuation, no figures, years or regions beyond the brief.",
+  "company": {
+    "legalName": "Flight Hour Solution (Pty) Ltd",
+    "shortName": "Flight Hour Solution",
+    "tagline": "Keeps you flying",
+    "positioning": "Engine intelligence. Operational certainty.",
+    "registrationNumber": "2026/294346/07",
+    "address": [],
+    "phone": "",
+    "phoneDisplay": "",
+    "whatsapp": "",
+    "whatsappDisplay": "",
+    "emails": {
+      "general": "hello@flighthoursolution.com",
+      "engines": "engines@flighthoursolution.com",
+      "aircraft": "aircraft@flighthoursolution.com",
+      "parts": "parts@flighthoursolution.com",
+      "aog": "aog@flighthoursolution.com",
+      "charter": "charter@flighthoursolution.com",
+      "advisory": "advisory@flighthoursolution.com"
+    },
+    "founded": "2026",
+    "managingDirector": "",
+    "informationOfficer": "",
+    "country": "South Africa"
+  },
+  "group": {
+    "line": "Part of the Flight Hour Solution group",
+    "relationship": "",
+    "swiss": {
+      "label": "Switzerland",
+      "href": "https://flighthoursolution.com",
+      "note": "The Swiss company's site: Flight Hour Solution GmbH, Zug."
+    }
+  },
+  "nav": {
+    "doors": [
+      {
+        "label": "Engines",
+        "href": "/engines",
+        "items": [
+          { "label": "Technical status and records", "href": "/engines#status" },
+          { "label": "LLPs and remaining life", "href": "/engines#llp" },
+          { "label": "Shop visits and MRO coordination", "href": "/engines#shop-visits" },
+          { "label": "Maintenance reserves", "href": "/engines#reserves" },
+          { "label": "Lease return and redelivery", "href": "/engines#lease-return" },
+          { "label": "Engine sales and leasing", "href": "/engines#sales-leasing" },
+          { "label": "Engine 360", "href": "/engines/engine-360", "note": "Early access" }
+        ]
+      },
+      {
+        "label": "Aircraft",
+        "href": "/aircraft",
+        "items": [
+          { "label": "Buy an aircraft", "href": "/aircraft#buy" },
+          { "label": "Sell an aircraft", "href": "/aircraft#sell" },
+          { "label": "Dry lease", "href": "/aircraft#dry-lease" },
+          { "label": "ACMI and wet lease", "href": "/aircraft#acmi" },
+          { "label": "Aircraft management", "href": "/aircraft#management" }
+        ]
+      },
+      {
+        "label": "Parts",
+        "href": "/parts",
+        "items": [
+          { "label": "Parts request form", "href": "/parts#form" },
+          { "label": "Parts categories", "href": "/parts#categories" },
+          { "label": "AOG line", "href": "/parts#aog" },
+          { "label": "How we verify parts", "href": "/parts#verify" }
+        ]
+      },
+      {
+        "label": "Charter",
+        "href": "/charter",
+        "items": [
+          { "label": "Corporate and VIP", "href": "/charter#corporate" },
+          { "label": "Group and pilgrimage", "href": "/charter#group" },
+          { "label": "Government", "href": "/charter#government" },
+          { "label": "Cargo, mining and humanitarian", "href": "/charter#cargo" }
+        ]
+      },
+      {
+        "label": "Advisory",
+        "href": "/advisory",
+        "items": [
+          { "label": "Fleet planning and lease versus buy", "href": "/advisory#fleet" },
+          { "label": "Due diligence", "href": "/advisory#due-diligence" },
+          { "label": "Aircraft recovery", "href": "/advisory#recovery" },
+          { "label": "Tenders and investor packs", "href": "/advisory#tenders" }
+        ]
+      }
+    ],
+    "about": {
+      "label": "About",
+      "href": "/about",
+      "items": [
+        { "label": "How we work", "href": "/about#how" },
+        { "label": "Who we serve", "href": "/about#serve" },
+        { "label": "Our commitments", "href": "/about#commitments" },
+        { "label": "Team and company details", "href": "/about#team" }
+      ]
+    },
+    "contact": { "label": "Contact", "href": "/contact" }
+  },
+  "cta": {
+    "primary": { "label": "Get in touch", "href": "/contact", "kind": "primary" },
+    "urgent": { "label": "AOG on WhatsApp", "href": "/contact#urgent", "kind": "secondary" }
+  },
+  "hours": {
+    "aog": "",
+    "office": "",
+    "timezone": "SAST"
+  },
+  "currency": {
+    "assets": "Aircraft, engines and parts are quoted in US dollars.",
+    "charter": "Charter may be quoted in rand."
+  },
+  "whatsappTemplates": {
+    "aog": "AOG parts request from the Flight Hour Solution website. Part number: [part number]. Quantity: [quantity]. Condition: [new, overhauled, serviceable or as removed]. Aircraft type: [aircraft type]. Deliver to: [airport]. Contact: [name, company, phone].",
+    "charter": "Charter quote request from the Flight Hour Solution website. Passengers or cargo: [which]. From: [airport or city]. To: [airport or city]. Dates: [dates]. One-way or return: [which]. Passenger count, or cargo weight and dimensions: [details]. Contact: [name, organisation, phone]."
+  },
+  "footer": {
+    "legalLine": "Flight Hour Solution (Pty) Ltd, registration number 2026/294346/07, South Africa.",
+    "disclaimer": "Flight Hour Solution is not the operating airline. Flights are operated by licensed operators under their own Air Operator Certificates.",
+    "groups": [
+      {
+        "title": "Services",
+        "links": [
+          { "label": "Engines", "href": "/engines" },
+          { "label": "Aircraft", "href": "/aircraft" },
+          { "label": "Parts", "href": "/parts" },
+          { "label": "Charter", "href": "/charter" },
+          { "label": "Advisory", "href": "/advisory" },
+          { "label": "Engine 360", "href": "/engines/engine-360", "note": "Early access" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About", "href": "/about" },
+          { "label": "How we work", "href": "/about#how" },
+          { "label": "Our commitments", "href": "/about#commitments" },
+          { "label": "Contact", "href": "/contact" }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          { "label": "Privacy notice", "href": "/privacy", "note": "POPIA" },
+          { "label": "Company details", "href": "/legal#company" },
+          { "label": "Charter operator disclaimer", "href": "/legal#disclaimer" },
+          { "label": "PAIA manual", "href": "/legal#paia" }
+        ]
+      }
+    ],
+    "badges": [
+      { "name": "B-BBEE level", "status": "to-confirm" },
+      { "name": "CSD supplier number", "status": "to-confirm" }
+    ]
+  },
+  "sources": [
+    "company: brief header and title (Flight Hour Solution (Pty) Ltd, South Africa); brief section 1 (registered in 2026; group email domain flighthoursolution.com; address 'TBA' so the address array is empty; the profile names only the MD, without a name); brief section 3 footer line (registration number 2026/294346/07); brief section 7 (tagline 'Keeps you flying' shared across both sites; hero line 'Engine intelligence. Operational certainty.'); brief section 5 and CONTENT-SCHEMA.md forms paragraph (role inboxes on the group domain, proposed); CONTENT-SCHEMA.md unknown facts list (managing director, Information Officer left empty).",
+    "group: brief section 1 (group line 'Part of the Flight Hour Solution group'; the exact relationship, subsidiary, sister company or partner, is to be confirmed, so relationship is empty); brief section 3 (ZA country switch to the Swiss site); CONTENT-SCHEMA.md fixed decisions (country switch label 'Switzerland', href https://flighthoursolution.com). The Swiss entity name and city in group.swiss.note come from site/app/src/content/site.json company block (Flight Hour Solution GmbH, Zug) and are labelled as the Swiss company's.",
+    "nav: brief section 3 (five doors plus About as the top menu; sub-items per door; Engine 360 as a menu entry with an Early access badge; Parts as one page); CONTENT-SCHEMA.md fixed decisions table (labels, hrefs and anchor ids in order; About and Contact routes).",
+    "cta: CONTENT-SCHEMA.md labels ('Get in touch' to /contact; 'AOG on WhatsApp' to /contact#urgent); brief section 3 (an urgent button visible on every screen size) and section 6 (WhatsApp as the urgent channel).",
+    "hours: brief section 6 (availability in SAST; only promise what the team can actually staff) and section 8 (WhatsApp Business number with staffed hours still to be set). No hours are stated, so aog and office are empty.",
+    "currency: brief section 6 (aircraft, engines and parts trade in USD; charter may be quoted in ZAR) and CONTENT-SCHEMA.md forms paragraph (currency note wording).",
+    "whatsappTemplates: brief section 6 (pre-filled messages for AOG parts and charter quotes so the first message already contains the part number or route); brief section 5 forms table (the parts fields: part number, quantity, condition, aircraft type, delivery airport; the charter fields: passengers or cargo, from, to, dates, one-way or return, passenger count or cargo weight and dimensions).",
+    "footer.legalLine: brief section 1 (Companies Act s32 expects registered name, registration number and physical address; address withheld until supplied) and section 3 (registered name and number 2026/294346/07 in the footer).",
+    "footer.disclaimer: brief section 4 (FHS is not the operating airline; flights are operated by licensed operators under their own Air Operator Certificates) and CONTENT-SCHEMA.md careful-wording rule.",
+    "footer.groups: brief section 3 footer list (group line, privacy notice, PAIA manual if required, charter operator disclaimer) and CONTENT-SCHEMA.md routes (/privacy, /legal with company details, disclaimer and PAIA note; About anchors).",
+    "footer.badges: brief section 3 footer list (B-BBEE and CSD if held) and section 6 (government procurement teams look for a B-BBEE level and a CSD supplier number; show both if FHS holds them); section 1 (list only real approvals and accreditations)."
+  ],
+  "clientToConfirm": [
+    "Physical address: the profile says TBA. company.address is empty and the footer legal line carries no address until one is supplied. The brief notes that South African law expects the registered name, registration number and physical address on business websites.",
+    "South African telephone number, and how it should be displayed. company.phone and phoneDisplay are empty; no phone link is rendered.",
+    "WhatsApp Business number. company.whatsapp is empty, so the urgent button goes to /contact#urgent instead of a WhatsApp deep link until the number exists.",
+    "Staffed hours for the AOG line and the office, stated in SAST. hours.aog and hours.office are empty; only hours the team can actually staff should be published. No response time is stated anywhere on the site until the client commits to one per door.",
+    "Managing director's name, for the company facts in the footer and on the About and legal pages. company.managingDirector is empty because the profile names only the MD's role.",
+    "Information Officer registered with the Information Regulator, as POPIA requires. company.informationOfficer is empty.",
+    "Role inboxes: hello@, engines@, aircraft@, parts@, aog@, charter@ and advisory@ on flighthoursolution.com are proposals. Agree them with whoever runs the group's email (the Swiss company already uses contact@flighthoursolution.com) and set who each one forwards to. The MD's personal address confirmed in the brief is not published anywhere on the site.",
+    "Exact relationship to the Swiss company (subsidiary, sister company or partner). group.relationship is empty; only the line 'Part of the Flight Hour Solution group' is used meanwhile.",
+    "Domain: the brief recommends flighthoursolution.co.za. Confirm the domain and that the country switch label 'Switzerland' and the reciprocal switch on the Swiss site are wanted.",
+    "B-BBEE level (certificate or EME affidavit) and CSD supplier number. Both badges are marked to-confirm and are not shown until held.",
+    "SACAA-related approvals and any parts-distribution accreditation: none is rendered. Supply the real list, with certificate numbers, before any approval is named.",
+    "PAIA manual: confirm whether one is required. The footer link points to the PAIA note on the legal page until a manual exists.",
+    "Careers: the brief's footer list includes a careers link, but no careers page is in the sitemap. Confirm whether a careers page or a mailto link is wanted.",
+    "Tagline 'Keeps you flying' and positioning line 'Engine intelligence. Operational certainty.': confirm both sites use the same tagline and that the positioning line is the South African hero line.",
+    "Registration date: 'registered 2026' is all the brief gives. Supply the full registration date if it should appear in the company details.",
+    "WhatsApp templates: approve the wording of the two pre-filled messages and confirm whether the site should fill them from the form or leave the slots for the visitor to complete.",
+    "Currency: confirm that charter quotes may be given in rand and that aircraft, engine and parts prices are quoted in US dollars, as stated in the currency block."
+  ]
+}

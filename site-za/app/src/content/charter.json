@@ -1,0 +1,205 @@
+{
+  "notes": "Charter door for the South African site. Every fact comes from site-za/content-brief/brief.txt; for charter the brief gives only the audience (corporates, government, mining, pilgrimage, humanitarian), the urgency band (days to weeks), what the visitor brings (route, dates, passenger count or cargo weight and dimensions), the four sub-items, the form fields and notes, the currency line (charter may be quoted in ZAR) and two pieces of careful wording: 'subject to aircraft availability' and the operator disclaimer (FHS is not the operating airline; flights are operated by licensed operators under their own Air Operator Certificates). Decisions: (1) The hero leads with what the visitor brings and the outcome (a quote), names the operator arrangement in the brief's words and keeps 'subject to aircraft availability'; the call to action is the fixed submit label pointing to #form. (2) Four short sections with the fixed anchor ids in order, one per audience; each says who it is for, what to send and that the quote is subject to aircraft availability, and each links to #form so the visitor knows where to click without reading. Bullets reuse the form's own fields so a visitor can prepare. (3) The operator disclaimer appears twice in the brief's exact wording: as the door-level disclaimer (with the availability line) and under the form button. Elsewhere the page says 'an operator flying under its own Air Operator Certificate' so the careful wording is not diluted. (4) No process block: the brief gives the nine-step transaction process for the Aircraft and Parts pages only, and no charter sequence, so none is invented. No verify block (Parts carries it), no fullScope (the digest carries none of profile section 7's lists), no image. (5) Form: the fixed twelve fields with plain labels; passengers or cargo, from, to, dates, the count or weight, name and email are required; 'Dimensions and dangerous goods' shows only when Cargo is selected; date flexibility options are proposals; consentText names POPIA and the privacy notice, and the component links 'privacy notice' to /privacy; routeTo is the proposed charter@ inbox; currencyNote follows the brief (charter may be quoted in rand) and says the quote states its currency; no responsePromise because no response time has been agreed. (6) The verbs describing FHS are arrange and quote; FHS does not operate aircraft, and the page says so. (7) The government section says every quote carries the operator disclaimer, which brief section 4 asks for on every charter quote, and that it states its currency, which follows brief section 5. Nothing on this page names an aircraft type, an operator, a region, a client, a price, a response time, a year count, an approval or a team member. Known minors: 'licensed' appears in the two disclaimers and is flagged by the validator as American spelling; it is the correct British participle and the brief's fixed wording, so it stays. British English, no dashes as punctuation, no exclamation marks. Expected validator result for this file: no blockers, no majors, two minors (licensed, twice).",
+  "sources": [
+    "slug, name, seoTitle, metaDescription: brief section 3 (Navigation: Charter door and its four sub-items), section 4 (the operator disclaimer) and section 1 (Which engines, aircraft and regions: types and regions unknown, so none are named; only South Africa is stated). Route and anchors from CONTENT-SCHEMA.md fixed decisions.",
+    "hero: brief section 2 (doors table: Charter for corporates, government, mining, pilgrimage, humanitarian; what they bring: route, dates, passenger count or cargo weight and dimensions), section 4 (Add the charter disclaimer: FHS is not the operating airline; flights are operated by licensed operators under their own Air Operator Certificates), section 7 (keep 'subject to aircraft availability'; lead with the problem and the outcome). Call to action label and href from CONTENT-SCHEMA.md labels (Charter: Request a charter quote, href #form).",
+    "who, urgency, bring: brief section 2 doors table, Charter row (who comes in; urgency Days to weeks; what they bring: route, dates, passenger count or cargo weight and dimensions). 'Pilgrimage groups' also from the brief's introduction (visitors ranging from lessors to pilgrimage groups).",
+    "sections: brief section 3 (four sub-items, in order), section 2 (a mining logistics manager as a charter visitor; charter bookers arrive with route, dates and load), section 4 (the disclaimer tells a government or corporate buyer that the booking is legitimate; put it on every charter quote), section 5 (form fields: passengers or cargo, from, to, dates, one-way or return, passenger count or cargo weight, dimensions and dangerous goods, date flexibility; show which currency quotes are given in), section 6 (government institutions and state-owned airlines are listed as clients; procurement teams; charter may be quoted in ZAR), section 7 (keep 'subject to aircraft availability'). CONTENT-SCHEMA.md voice rule: FHS arranges and coordinates; it does not operate aircraft.",
+    "disclaimer: brief section 4 (Add the charter disclaimer: on every charter page and every charter quote) and section 7 (keep 'subject to aircraft availability'); CONTENT-SCHEMA.md careful-wording rule (the disclaimer on the charter page and under the charter form).",
+    "form: brief section 5 (One form per door: Charter fields and notes; show which currency quotes are given in; the operator disclaimer goes under the button; POPIA consent checkbox and privacy notice link; route each form to the person who handles that line; charter requests go stale within hours; role addresses on the group domain), section 6 (charter may be quoted in ZAR; comply with POPIA) and CONTENT-SCHEMA.md forms paragraph (fixed field list, submit label 'Request a charter quote', consentText, routeTo charter@, currencyNote, disclaimer). No response time: brief section 6 (only promise what the team can staff) and section 8 (response-time commitments per door still open).",
+    "related: brief section 3 (ACMI and wet lease under Aircraft; footer: charter operator disclaimer, registered name and number) and CONTENT-SCHEMA.md routes (/aircraft#acmi, /legal#disclaimer, /legal#company) with the labels site.json already uses for those destinations."
+  ],
+  "slug": "charter",
+  "name": "Charter",
+  "seoTitle": "Charter flights for passengers and cargo | Flight Hour Solution",
+  "metaDescription": "Charter for passengers and cargo through Flight Hour Solution (Pty) Ltd, South Africa. Send the route, dates and load for a quote. Flights are flown by operators under their own Air Operator Certificates.",
+  "hero": {
+    "headline": "Charter flights for passengers and cargo",
+    "sub": "Send the route, dates and passenger count or cargo weight. We arrange the flight with an operator flying under its own Air Operator Certificate and send you a quote, subject to aircraft availability.",
+    "cta": { "label": "Request a charter quote", "href": "#form", "kind": "primary" }
+  },
+  "who": ["Corporates", "Government", "Mining", "Pilgrimage groups", "Humanitarian organisations"],
+  "urgency": "Days to weeks",
+  "bring": [
+    "Route: from and to",
+    "Dates, one-way or return",
+    "Passenger count, or cargo weight and dimensions"
+  ],
+  "sections": [
+    {
+      "id": "corporate",
+      "title": "Corporate and VIP",
+      "text": "For companies and their VIP passengers. Give the route, the dates, the passenger count and whether it is one-way or return. We come back with a quote, subject to aircraft availability.",
+      "bullets": [
+        "Route and dates",
+        "One-way or return",
+        "Passenger count"
+      ],
+      "href": "#form"
+    },
+    {
+      "id": "group",
+      "title": "Group and pilgrimage",
+      "text": "For groups and pilgrimage travel. Give the passenger count, the route and the dates, and say how flexible the dates are. The quote follows, subject to aircraft availability.",
+      "bullets": [
+        "Route and dates",
+        "Passenger count",
+        "Date flexibility"
+      ],
+      "href": "#form"
+    },
+    {
+      "id": "government",
+      "title": "Government",
+      "text": "For government institutions. Give the route, the dates and the passengers or cargo. Every quote states its currency and carries the operator disclaimer, so procurement can check that the booking is legitimate.",
+      "bullets": [
+        "Route and dates",
+        "Passengers, or cargo weight",
+        "Operator disclaimer on every quote"
+      ],
+      "href": "#form"
+    },
+    {
+      "id": "cargo",
+      "title": "Cargo, mining and humanitarian",
+      "text": "Cargo for mining and humanitarian operations. Give the route, the dates, the weight and dimensions, and declare any dangerous goods. We arrange the flight and quote, subject to aircraft availability.",
+      "bullets": [
+        "Route and dates",
+        "Cargo weight and dimensions",
+        "Dangerous goods, declared",
+        "Date flexibility"
+      ],
+      "href": "#form"
+    }
+  ],
+  "disclaimer": "Flight Hour Solution is not the operating airline. Flights are operated by licensed operators under their own Air Operator Certificates. Charter is subject to aircraft availability.",
+  "form": {
+    "id": "charter-quote",
+    "title": "Your charter request",
+    "intro": "Give the route, the dates and the load. Quotes are subject to aircraft availability.",
+    "fields": [
+      {
+        "name": "load",
+        "label": "Passengers or cargo",
+        "type": "segmented",
+        "required": true,
+        "options": ["Passengers", "Cargo"],
+        "width": "full"
+      },
+      {
+        "name": "from",
+        "label": "From",
+        "type": "text",
+        "required": true,
+        "placeholder": "Airport or city",
+        "width": "half"
+      },
+      {
+        "name": "to",
+        "label": "To",
+        "type": "text",
+        "required": true,
+        "placeholder": "Airport or city",
+        "width": "half"
+      },
+      {
+        "name": "dates",
+        "label": "Dates",
+        "type": "text",
+        "required": true,
+        "hint": "Outbound date, and the return date if there is one.",
+        "width": "half"
+      },
+      {
+        "name": "journey",
+        "label": "One-way or return",
+        "type": "segmented",
+        "options": ["One-way", "Return"],
+        "width": "half"
+      },
+      {
+        "name": "count",
+        "label": "Passenger count, or cargo weight",
+        "type": "text",
+        "required": true,
+        "hint": "How many passengers, or the total cargo weight.",
+        "width": "half"
+      },
+      {
+        "name": "flexibility",
+        "label": "Date flexibility",
+        "type": "select",
+        "options": ["Fixed dates", "A day or two either side", "A week or more either side"],
+        "width": "half"
+      },
+      {
+        "name": "cargoDetails",
+        "label": "Dimensions and dangerous goods",
+        "type": "textarea",
+        "hint": "Dimensions of the largest items, and whether any item is dangerous goods.",
+        "showWhen": { "field": "load", "equals": "Cargo" },
+        "width": "full"
+      },
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "required": true,
+        "width": "half"
+      },
+      {
+        "name": "organisation",
+        "label": "Organisation",
+        "type": "text",
+        "width": "half"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true,
+        "width": "half"
+      },
+      {
+        "name": "phone",
+        "label": "Phone",
+        "type": "tel",
+        "hint": "With the country code.",
+        "width": "half"
+      }
+    ],
+    "submitLabel": "Request a charter quote",
+    "consentText": "I consent to Flight Hour Solution (Pty) Ltd processing these details under POPIA to answer this request, as described in the privacy notice.",
+    "routeTo": "charter@flighthoursolution.com",
+    "currencyNote": "Charter may be quoted in rand. The quote states its currency.",
+    "disclaimer": "Flight Hour Solution is not the operating airline. Flights are operated by licensed operators under their own Air Operator Certificates.",
+    "successTitle": "Request received",
+    "successText": "Thank you. We will reply by email. The quote states its currency and carries the operator disclaimer."
+  },
+  "related": [
+    { "label": "ACMI and wet lease", "href": "/aircraft#acmi", "note": "An aircraft with crew for a term, not a single flight." },
+    { "label": "Charter operator disclaimer", "href": "/legal#disclaimer", "note": "The full wording." },
+    { "label": "Company details", "href": "/legal#company", "note": "Registered name and registration number." }
+  ],
+  "clientToConfirm": [
+    "Audience wording: the brief lists corporates, government, mining, pilgrimage and humanitarian. The page renders 'Pilgrimage groups', 'Humanitarian organisations' and, in the section text, 'government institutions' (brief section 6). Confirm these expansions.",
+    "Mining and humanitarian: the section covers cargo only because the brief groups the three under cargo. Confirm whether these clients also charter passenger flights, for example crew rotations, so the section can say so.",
+    "Currency: 'Charter may be quoted in rand' is the brief's wording (section 6). Confirm whether charter quotes are given in rand, in US dollars or in either, and approve the sentence 'The quote states its currency'.",
+    "Quote content: the page says every quote carries the operator disclaimer (brief section 4) and states its currency (brief section 5). Confirm that quotes are issued this way.",
+    "Date flexibility options (Fixed dates; A day or two either side; A week or more either side) are proposals. Confirm or replace them.",
+    "Cargo details: the 'Dimensions and dangerous goods' field shows only when Cargo is selected. Confirm, and say whether dangerous goods should be a separate yes or no question with a description.",
+    "Required fields: passengers or cargo, from, to, dates, passenger count or cargo weight, name and email are required; one-way or return, date flexibility, cargo details, organisation and phone are optional. Confirm.",
+    "Route inbox: charter@flighthoursolution.com is a proposal. The brief says charter requests go stale within hours, so confirm the inbox and name who it forwards to (brief section 5).",
+    "Response time: none is stated for the charter door and no responsePromise is rendered. Confirm any commitment, in SAST, before one appears (brief sections 6 and 8).",
+    "WhatsApp: the brief asks for a pre-filled WhatsApp message for charter quotes (section 6). This page relies on the site-wide urgent button, whose fixed label reads 'AOG on WhatsApp'. Confirm whether the charter page should carry its own WhatsApp route with the charter template once the number exists.",
+    "Regions: none are named. The brief mentions the DRC, Mozambique and Angola only as a reason to consider French and Portuguese later, so they are not rendered. Confirm which regions, if any, the page may name (brief section 1).",
+    "Operators and aircraft: no operator partner and no aircraft category is named. Confirm whether either may appear, and on what evidence (brief section 1: list only what is real).",
+    "Government buyers: the section makes no mention of B-BBEE or CSD because neither is confirmed as held. Once they are, confirm whether the section should point to them (brief section 6).",
+    "Full scope: no expandable Full scope block is rendered because the digest carries none of profile section 7's charter list. Supply it if a procurement-facing list is wanted (brief section 7).",
+    "Process: no step sequence is shown on this page because the brief gives the nine-step transaction process for the Aircraft and Parts pages only. Confirm whether a 'how a charter quote works' sequence exists to publish.",
+    "Related link note: ACMI and wet lease is described as 'an aircraft with crew for a term, not a single flight'. This is a plain expansion of the term, not a profile fact. Confirm the wording.",
+    "Form copy: approve the intro, the hints, the consent sentence, the currency note, the disclaimer under the button and the success message.",
+    "Languages: the brief says English is enough at launch and French and Portuguese may follow for charter. Confirm that no translated section is wanted now.",
+    "Imagery: no image is set for this door. Supply photography or approve a marked placeholder for the build."
+  ]
+}

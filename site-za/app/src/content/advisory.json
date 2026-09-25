@@ -1,0 +1,219 @@
+{
+  "notes": "Advisory door for Flight Hour Solution (Pty) Ltd. Every statement about the South African company comes from site-za/content-brief/brief.txt. For advisory the brief gives only: the audience (investors, owners, government, start-up airlines), the urgency band (months), what the visitor brings (a project description and the stage it is at), the four sub-items (fleet planning and lease versus buy, due diligence, aircraft recovery, tenders and investor packs), the form fields (organisation type, project summary, stage, timeframe, name, organisation, email, phone) and the note that the form is a conversation starter and should stay short. Decisions: (1) The hero leads with the four things a visitor can ask for and the outcome the brief supports (verified records rather than unsupported claims, from the profile's own commitment quoted in brief section 1), then the next step; the call to action is the fixed submit label 'Start the conversation' pointing to #form. (2) Four short sections with the fixed anchor ids in order. Each says who it is for, what to send and what FHS does, using only the brief's verbs (verify, structure, coordinate, advise, help build) and the words of the five-step sequence in brief section 4. Bullets reuse the form's fields and the sequence so a visitor can prepare without reading the paragraph. Each section carries href '#form'; the component renders the button on the last section and the local nav gives the rest their next step. (3) 'Aircraft recovery' and 'Tenders and investor packs' are given in the brief as titles only, so their sections stay general and the scope is flagged for the client rather than invented. (4) The process block is the brief's five-step How we work sequence (brief section 4), which the brief calls a real sequence for the company's work; it is shown here because the door brief asks for the door's process or verification block, and due diligence maps onto step 2. No nine-step transaction process: the brief assigns that to Aircraft and Parts, so it is linked from related instead. No verify block: Parts carries it. No fullScope: the digest carries none of profile section 10's list. No disclaimer at door level: none applies to advisory. (5) Form: the fixed eight fields with plain labels; organisation type, project summary, stage, name and email are required; organisation, timeframe and phone are optional to keep it short as the brief asks. The select options are proposals and are flagged. The NDA line under the button reuses the company commitment the brief states for records (NDA before records), because the project summary is free text and a visitor might otherwise paste records; it is flagged. No currencyNote: the brief gives currency for aircraft, engines, parts and charter only. No responsePromise: none has been agreed. form.id is 'advisory-project' so the form element's id does not collide with the section id 'form' that the hero call to action targets. (6) The group appears only as the fixed country switch in related ('Switzerland'), described from site/app/src/content/about.json as the group's engine consultancy in Zug; nothing on this page says the Swiss team works on South African projects, because the brief leaves that to be confirmed. (7) Nothing on this page names a client, a region, a figure, a fee, a response time, a year count, an approval, a team member or a case example. British English, no dashes as punctuation, no exclamation marks, headlines 8 words or fewer, paragraphs 40 words or fewer, bullets 8 words or fewer. Expected validator result for this file: no blockers, no majors, no minors.",
+  "sources": [
+    "slug, name, seoTitle, metaDescription: brief section 3 (Navigation: Advisory door and its four sub-items) and section 1 (Which engines, aircraft and regions: types and regions unknown, so none are named; only South Africa is stated). Route, anchor ids and slug from CONTENT-SCHEMA.md fixed decisions.",
+    "hero: brief section 2 (doors table, Advisory row: investors, owners, government, start-up airlines; a project description and the stage it is at), section 1 (the profile commits to avoiding unsupported technical or commercial claims), section 4 (Verify: records, counterparties, status), section 5 (the advisory form is a conversation starter), section 7 (lead with the problem and the outcome). Call to action label and href from CONTENT-SCHEMA.md labels (Advisory: Start the conversation, href #form).",
+    "who, urgency, bring: brief section 2 doors table, Advisory row (who comes in; urgency Months; what they bring: a project description, and the stage it is at) and section 5 (the form asks timeframe).",
+    "sections.fleet: brief section 3 (Fleet planning, lease vs. buy), section 2 and section 5 (Aircraft row: aircraft type or the mission as seats, payload and range; budget or monthly rate; start date and term; new airlines and governments often know the mission, not the type), section 2 (maintenance reserves come up in three profile sections) and section 4 (Structure: deal, lease or maintenance plan; Monitor: performance and exposure).",
+    "sections.due-diligence: brief section 3 (Due diligence), section 4 (Trust is the main design problem: buyers are wary of unverified sellers and chains of brokers; Verify: records, counterparties, status; the verification process is the profile's strongest material), section 2 and section 5 (records only after an NDA; say 'We sign an NDA before asking for records'), section 1 (no unsupported technical or commercial claims).",
+    "sections.recovery: brief section 3 (Aircraft recovery, title only), section 2 (Advisory audience: investors and owners; what they bring: a project description and the stage it is at) and section 4 (Verify: records, counterparties, status; Structure; Execute: inspections, payments, delivery). CONTENT-SCHEMA.md voice rule: FHS arranges, coordinates, verifies and advises.",
+    "sections.tenders: brief section 3 (Tenders and investor packs, title only), section 2 (Advisory audience: investors and government), section 6 (government institutions and state-owned airlines are listed as clients; their procurement teams check the supplier), section 1 (the profile commits to avoiding unsupported technical or commercial claims; list only what is real) and section 4 (Verify before claims).",
+    "process: brief section 4 (Publish the 'How we work' sequence: the profile's five steps are a real sequence, so numbering them is justified; Define: requirement, specs, timeline; Verify: records, counterparties, status; Structure: deal, lease or maintenance plan; Execute: inspections, payments, delivery; Monitor: performance and exposure) and section 5 (NDA before records). Wording matches home.json and engines.json.",
+    "form: brief section 5 (One form per door: Advisory fields organisation type, project summary, stage, timeframe; keep it short, this is a conversation starter; POPIA consent checkbox and privacy notice link; route each form to the person who handles that line; role addresses on the group domain), section 2 (records only after an NDA) and CONTENT-SCHEMA.md forms paragraph (fixed field list plus name, organisation, email, phone; submit label 'Start the conversation'; consentText names POPIA; routeTo advisory@ flagged). Select options are written from the audience and the 'months' urgency; they are choices, not claims. No currency note: CONTENT-SCHEMA.md lists currency for aircraft, engines, parts and charter only. No response time: brief section 6 (only promise what the team can staff) and section 8 (response-time commitments per door still open).",
+    "related: brief section 3 (Aircraft sub-item Buy an aircraft; Engines sub-item Technical status and records; About sub-item How we work; footer: registered name and number), section 4 (show the transaction process on the Aircraft page; the group link may go on the site if labelled as the group's) and CONTENT-SCHEMA.md routes and labels (country switch 'Switzerland' to https://flighthoursolution.com). The Swiss company's name, city and description come from site/app/src/content/site.json (Flight Hour Solution GmbH, Zug) and site/app/src/content/about.json (independent jet-engine management consultancy)."
+  ],
+  "slug": "advisory",
+  "name": "Advisory",
+  "seoTitle": "Aviation advisory in South Africa | Flight Hour Solution",
+  "metaDescription": "Fleet planning and lease versus buy, due diligence, aircraft recovery, tenders and investor packs. Flight Hour Solution (Pty) Ltd, South Africa. Send the project and its stage.",
+  "hero": {
+    "headline": "Advice before you decide",
+    "sub": "Fleet planning, due diligence, aircraft recovery, tenders and investor packs, each built on verified records rather than unsupported claims. Send a short project description and the stage it is at. We start with a conversation.",
+    "cta": { "label": "Start the conversation", "href": "#form", "kind": "primary" }
+  },
+  "who": ["Investors", "Owners", "Government", "Start-up airlines"],
+  "urgency": "Months",
+  "bring": [
+    "A project description",
+    "The stage it is at",
+    "A timeframe, if you have one"
+  ],
+  "sections": [
+    {
+      "id": "fleet",
+      "title": "Fleet planning and lease versus buy",
+      "text": "Starting an airline, or adding aircraft? Bring the mission if you do not know the type yet: seats, payload and range. We set out lease versus buy, with the maintenance plan and exposure each carries.",
+      "bullets": [
+        "Mission: seats, payload and range",
+        "Budget or monthly rate",
+        "Start date and term",
+        "Lease versus buy, side by side",
+        "Maintenance plan and exposure"
+      ],
+      "href": "#form"
+    },
+    {
+      "id": "due-diligence",
+      "title": "Due diligence",
+      "text": "Before you buy, lease or invest, we verify the claims behind the deal. Records are reviewed after an NDA, counterparties are checked and the technical status is confirmed. You get findings before you commit, not after.",
+      "bullets": [
+        "Records, after an NDA",
+        "Counterparties",
+        "Technical status",
+        "Engine records and LLPs",
+        "Findings before you commit"
+      ],
+      "href": "#form"
+    },
+    {
+      "id": "recovery",
+      "title": "Aircraft recovery",
+      "text": "For owners and investors with an aircraft to recover. Send a summary of the situation and the stage it is at. We verify records, counterparties and status, then structure the plan and coordinate it through to delivery.",
+      "bullets": [
+        "Where things stand, in a few lines",
+        "Records, counterparties and status verified",
+        "A plan, then inspections and delivery"
+      ],
+      "href": "#form"
+    },
+    {
+      "id": "tenders",
+      "title": "Tenders and investor packs",
+      "text": "Preparing a tender, or an investor pack? Tell us the project, the stage and the deadline. We help build the technical and commercial case on verified records, so it holds up when procurement or an investor checks it.",
+      "bullets": [
+        "Project, stage and deadline",
+        "Technical and commercial case",
+        "Built on verified records",
+        "No unsupported technical or commercial claims"
+      ],
+      "href": "#form"
+    }
+  ],
+  "process": {
+    "title": "How we work on your project",
+    "intro": "Every advisory project runs through the same five steps, in this order.",
+    "steps": [
+      { "n": "1", "title": "Define", "text": "Your requirement, the specs and the timeline." },
+      { "n": "2", "title": "Verify", "text": "Records after an NDA, counterparties and status." },
+      { "n": "3", "title": "Structure", "text": "The deal, the lease or the maintenance plan." },
+      { "n": "4", "title": "Execute", "text": "Inspections, payments and delivery, coordinated." },
+      { "n": "5", "title": "Monitor", "text": "Performance and exposure after delivery." }
+    ]
+  },
+  "form": {
+    "id": "advisory-project",
+    "title": "Your project",
+    "intro": "A short summary is enough. This form starts a conversation, not a proposal.",
+    "fields": [
+      {
+        "name": "organisationType",
+        "label": "Organisation type",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Investor",
+          "Aircraft or engine owner",
+          "Government institution",
+          "State-owned airline",
+          "Start-up airline",
+          "Airline or operator",
+          "Lessor",
+          "Other"
+        ],
+        "width": "full"
+      },
+      {
+        "name": "projectSummary",
+        "label": "Project summary",
+        "type": "textarea",
+        "required": true,
+        "hint": "A few lines on what you want to do and where it stands. No records yet: we sign an NDA first.",
+        "width": "full"
+      },
+      {
+        "name": "stage",
+        "label": "Stage",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Early idea",
+          "Planning or business case",
+          "Tender or investor process open",
+          "Transaction under way",
+          "In operation"
+        ],
+        "width": "half"
+      },
+      {
+        "name": "timeframe",
+        "label": "Timeframe",
+        "type": "select",
+        "required": false,
+        "options": [
+          "Within a month",
+          "One to three months",
+          "Three to twelve months",
+          "Not fixed yet"
+        ],
+        "width": "half"
+      },
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "required": true,
+        "width": "half"
+      },
+      {
+        "name": "organisation",
+        "label": "Organisation",
+        "type": "text",
+        "required": false,
+        "width": "half"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true,
+        "width": "half"
+      },
+      {
+        "name": "phone",
+        "label": "Phone",
+        "type": "tel",
+        "required": false,
+        "hint": "With the country code.",
+        "width": "half"
+      }
+    ],
+    "submitLabel": "Start the conversation",
+    "consentText": "I consent to Flight Hour Solution (Pty) Ltd processing these details under POPIA to answer this request, as described in the privacy notice.",
+    "routeTo": "advisory@flighthoursolution.com",
+    "disclaimer": "We sign an NDA before asking for records.",
+    "successTitle": "Summary received",
+    "successText": "Thank you. We will reply by email to arrange a conversation. We sign an NDA before asking for any records."
+  },
+  "related": [
+    { "label": "Buy an aircraft", "href": "/aircraft#buy", "note": "When the plan becomes a purchase." },
+    { "label": "The transaction process", "href": "/aircraft#process", "note": "What a major purchase or sale looks like, step by step." },
+    { "label": "Technical status and records", "href": "/engines#status", "note": "Engine records and LLPs, on the Engines door." },
+    { "label": "How we work", "href": "/about#how", "note": "The five steps in full." },
+    { "label": "Company details", "href": "/legal#company", "note": "Registered name and registration number, for procurement." },
+    { "label": "Switzerland", "href": "https://flighthoursolution.com", "note": "Flight Hour Solution GmbH, the group's engine consultancy in Zug." }
+  ],
+  "clientToConfirm": [
+    "Aircraft recovery: the brief gives only the title. Confirm what the service covers (for example recovering an aircraft from a lessee in default, a grounded or stranded aircraft, or an aircraft returning from storage) so the section can say so. Until then it stays general.",
+    "Tenders and investor packs: the brief gives only the title. Confirm whether FHS helps clients answer tenders, helps government bodies prepare them, or both, and what an investor pack contains, so the section can name the deliverable.",
+    "Fleet planning: the section says FHS sets out lease versus buy with the maintenance plan and exposure each carries. Confirm the deliverable (a written comparison, a model, a recommendation) and whether aircraft management (Aircraft door) should be cross-linked here.",
+    "Due diligence: the section covers records, counterparties and technical status, the brief's Verify step, and links engine records and LLPs to the Engines door. Confirm whether due diligence is offered on aircraft, engines and counterparties alike, and whether a written report is the output.",
+    "Process: the five-step How we work sequence (brief section 4) is shown as the advisory process. Confirm that advisory projects run all five steps, including Execute and Monitor, or say where an advisory engagement normally ends so the block can be cut to match.",
+    "Organisation type options (Investor; Aircraft or engine owner; Government institution; State-owned airline; Start-up airline; Airline or operator; Lessor; Other) are proposals drawn from the client types the brief names. Confirm or replace them.",
+    "Stage options (Early idea; Planning or business case; Tender or investor process open; Transaction under way; In operation) are proposals. Confirm or replace them.",
+    "Timeframe options (Within a month; One to three months; Three to twelve months; Not fixed yet) are proposals matched to the 'months' urgency. Confirm or replace them.",
+    "Required fields: organisation type, project summary, stage, name and email are required; timeframe, organisation and phone are optional, to keep the form short as the brief asks. Confirm.",
+    "NDA line: 'We sign an NDA before asking for records' is shown under the button and in the project summary hint. The brief states it for the Engines form; it is reused here because the summary is free text and visitors might otherwise paste records. Confirm it applies to advisory.",
+    "Route inbox: advisory@flighthoursolution.com is a proposal. Confirm the address and name who it forwards to (brief section 5).",
+    "Response time: none is stated for the advisory door and no responsePromise is rendered. Confirm any commitment, in SAST, before one appears (brief sections 6 and 8).",
+    "Currency and fees: no currency note is rendered because the brief gives currency only for aircraft, engines, parts and charter. Confirm whether advisory fees are quoted in rand or US dollars, and whether the page should say anything about fees at all.",
+    "Full scope: no expandable Full scope block is rendered because the digest carries none of profile section 10's list. Supply the profile's advisory list if a procurement-facing accordion is wanted (brief section 7).",
+    "Group link: the Swiss company is linked as 'Switzerland' and described in the related note as the group's engine consultancy in Zug (from the Swiss site's own content). Confirm the exact relationship wording (subsidiary, sister company or partner) and whether the Swiss company's advisory work may be referenced on this page as the group's (brief sections 1 and 4).",
+    "Group engineers: nothing on this page says the Swiss team works on South African projects. Confirm whether they will, so the About page can name them as group colleagues (brief section 1).",
+    "Regions: none are named anywhere on the page. Confirm which regions, if any, the advisory door may name (brief section 1).",
+    "Government readers: the tenders section makes no mention of B-BBEE or CSD because neither is confirmed as held. Once they are, confirm whether this section should point to them (brief section 6).",
+    "Case examples: none are shown. The brief allows anonymised case examples after the first jobs (section 4); supply them when available, with the client's consent.",
+    "Page name: the seoTitle calls the door 'Aviation advisory in South Africa'. Confirm 'aviation advisory' as the public description, or supply the term the company uses.",
+    "Form copy: approve the intro, the hints, the consent sentence, the NDA line under the button and the success message.",
+    "Imagery: no image is set for this door. Supply photography or approve a marked stand-in for the build."
+  ]
+}

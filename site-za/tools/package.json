@@ -1,0 +1,9 @@
+{
+  "name": "fhs-site-tools",
+  "private": true,
+  "description": "Quality checks and deploy helpers for the Flight Hour Solution website (see README.md)",
+  "devDependencies": {
+    "axe-core": "^4.10.2",
+    "playwright": "^1.56.1"
+  }
+}

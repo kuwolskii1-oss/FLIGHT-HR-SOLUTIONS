@@ -1,0 +1,285 @@
+FHS South Africa Web Brief
+- 
+- 
+- 
+
+ Website UX brief · South Africa
+
+ Flight Hour Solution (Pty) Ltd: what the new site needs
+
+ This brief is based on the FHS South Africa corporate profile and a review of flighthoursolution.com, the related Swiss company's site. The South African company covers much more ground than the Swiss site: ten service lines, sixteen client types, and visitors ranging from lessors to pilgrimage groups. So the site's first job is to route each visitor to the right door quickly, and the second is to earn trust as a company registered in 2026.
+
+ DocumentFHS-ZA web brief
+
+ RevisionA · 24 Sep 2026
+
+ ForWebsite build team, MD
+
+ SourcesCorporate profile (.docx), live Swiss site
+
+ 1Settle these before design starts
+
+ Most of these come from gaps in the profile. Several would make the site look unreliable, or cause legal trouble, if it launched without them.
+
+ Decide
+The domain, and how to describe the link to the Swiss company
+The profile lists www.flighthoursolution.com, which is the related Swiss company's site. Two options work: a section of that site (/za), or a separate flighthoursolution.co.za. The recommendation is the .co.za site, because the South African services, legal entity and privacy law are all different. Put a country switch on both sites and a clear line such as “Part of the Flight Hour Solution group”. Confirm the exact relationship first (subsidiary, sister company or partner) so that wording is accurate. Email stays on the group domain (confirmed: Thupudi@flighthoursolution.com). A .co.za site with .com email is common and reinforces the group link. Register flighthoursolution.co.za either way, if it's still available.
+
+ Blocker
+The address says “TBA”
+Nobody will buy an aircraft, an engine or a part from a trader with no physical address or phone number. South African law also expects the registered name, registration number and physical address on business websites (Companies Act s32; ECTA s43 where anything is sold online).
+
+ Decide
+What FHS holds itself vs. what partners hold
+List only real approvals and accreditations: SACAA-related approvals, parts-distribution accreditation, B-BBEE level, CSD registration. The profile itself commits to “avoiding unsupported technical or commercial claims”, and the site copy has to meet the same standard.
+
+ Decide
+Who the team is
+The profile names only the MD. The Swiss company's engineers and their 40+ years of engine experience are the strongest trust asset the new site has. If they will actually work on South African engine jobs, show them on the team page, labelled as group colleagues. Add two to four named people based in South Africa as well.
+
+ Decide
+Which engines, aircraft and regions
+The profile never says which engine or aircraft types FHS covers, or where it operates (South Africa, SADC, all of Africa?). Visitors check both before they get in touch. The Swiss site lists CFM56, LEAP, V2500, PW4000, Honeywell 131-9 APUs, TPE331 and TFE731. Reuse that list only for engines the group will actually support for South African clients.
+
+ Decide
+How to present Engine 360
+It's still in development. Present it as early access with a waitlist, never as a live product. The profile already says “is being designed”, so keep that wording.
+
+ 2Five doors, not ten service lines
+
+ The profile's ten sections overlap. Maintenance reserves come up in three of them, lease return in two, and ACMI in two (sections 5 and 8). Group everything into five doors, each matching a different kind of visitor with a different level of urgency:
+
+ | | Door
+ | Profile §
+ | Who comes in
+ | Urgency
+ | What they bring
+
+ | Engines
+ | 1, 2, 3
+ | Airlines, lessors, engine owners, MROs
+ | Weeks to months
+ | Engine type, aircraft, the issue, owned or leased, timing. Records only after an NDA.
+
+ | Aircraft
+ | 4, 5, 8, 9
+ | Airlines, new operators, investors, government
+ | Months
+ | Buy, sell, dry lease or ACMI. Aircraft type or the mission, budget or monthly rate, start date and term, base.
+
+ | Parts
+ | 6
+ | Maintenance controllers, MROs, operators
+ | Hours (AOG) to weeks
+ | Part number, quantity, condition, release certificate needed, delivery airport.
+
+ | Charter
+ | 7
+ | Corporates, government, mining, pilgrimage, humanitarian
+ | Days to weeks
+ | Route, dates, passenger count or cargo weight and dimensions.
+
+ | Advisory
+ | 10
+ | Investors, owners, government, start-up airlines
+ | Months
+ | A project description, and the stage it's at.
+
+ Charter bookers and lessors want completely different things. A mining logistics manager has no reason to see LLP stack analysis. The homepage should ask “What do you need?” and offer these five doors before anything else.
+
+ 3Navigation
+
+ The five doors become the top menu, plus About. An urgent button stays visible on every screen size, because AOG parts buyers and charter requests often arrive from a phone.
+
+ Flight Hour Solution
+ Engines ▾Aircraft ▾PartsCharter ▾Advisory ▾About ▾
+ ZA ▾AOG · WhatsAppGet in touch
+
+ Engines
+- Technical status and records
+- LLPs and remaining life
+- Shop visits and MRO coordination
+- Maintenance reserves
+- Lease return and redelivery
+- Engine sales and leasing
+- Engine 360 Early access
+
+ Aircraft
+- Buy an aircraft
+- Sell an aircraft
+- Dry lease
+- ACMI and wet lease
+- Aircraft management
+
+ Parts
+- One page: request form, categories, AOG line, how we verify parts
+
+ Charter
+- Corporate and VIP
+- Group and pilgrimage
+- Government
+- Cargo, mining, humanitarian
+
+ Advisory
+- Fleet planning, lease vs. buy
+- Due diligence
+- Aircraft recovery
+- Tenders and investor packs
+
+ About
+- How we work
+- Who we serve
+- Our commitments
+- Team and company details
+
+ ZA ▾ = country switch to the Swiss site. Footer: “Part of the Flight Hour Solution group” · registered name and number 2026/294346/07 · physical address · POPIA privacy notice · PAIA manual (if required) · charter operator disclaimer · B-BBEE and CSD (if held) · careers
+
+ Why each menu is grouped this way
+
+ - Engines stays first. The profile calls engine management its primary focus, and “Engine intelligence” is the positioning line.
+
+ - Engine 360 isn't a top-level item until it launches. It gets a homepage band and a menu entry with an Early access badge. A waitlist form can ask for fleet size, engine types and role, which doubles as market research.
+
+ - Parts is a single page. Buyers arrive with a part number, not a category. Sixteen product categories don't need sixteen pages.
+
+ - ACMI is merged into Aircraft. It appears in both section 5 and section 8 of the profile, and it's one decision for the customer.
+
+ - Aircraft management goes under Aircraft, because the same owners and investors are the audience.
+
+ 4Trust is the main design problem
+
+ A company registered in 2026 that trades aircraft, engines and parts will be checked hard. Buyers in these markets are wary of unverified sellers and chains of brokers. The profile's strongest material is its verification process, and at the moment none of that is visible to a site visitor. Put it on the site.
+
+ Publish the “How we work” sequence
+
+ The profile's five steps are a real sequence, so numbering them is justified. Put them on the About page and a condensed version on the homepage:
+
+ 1 DefineRequirement, specs, timeline
+
+ 2 VerifyRecords, counterparties, status
+
+ 3 StructureDeal, lease or maintenance plan
+
+ 4 ExecuteInspections, payments, delivery
+
+ 5 MonitorPerformance and exposure
+
+ Show the transaction process on the Aircraft and Parts pages
+
+ The profile's nine-step major-transaction process (LOI → proof of funds → documents → escrow → inspection → purchase agreement → release) tells serious buyers what to expect. It also turns away people who aren't ready to transact, before they take up the team's time. Show it as a simple timeline.
+
+ Add a “How we verify parts” section
+
+ Include traceability, release documentation, certification status, incident and accident history, and remaining life. The profile already lists all of these, and they are what an AOG buyer checks before paying.
+
+ Add the charter disclaimer
+
+ The profile already states that FHS isn't the operating airline and that flights are operated by licensed operators under their own Air Operator Certificates. Put this on every charter page and on every charter quote. It protects the company and it tells a government or corporate buyer that the booking is legitimate.
+
+ Add proof, as soon as there is some
+
+ - Team bios, with prior employers (airline, MRO, OEM, lessor)
+
+ - The group link. The Swiss company's engine experience and capabilities can go on the site, as long as they're clearly labelled as the group's.
+
+ - Anonymized case examples after the first jobs. Until then, show the group's and the team's experience.
+
+ - Company facts in the footer: registration number, address, and the MD's name
+
+ 5One form per door
+
+ A single generic contact form fits nobody here. A charter request and a parts request need completely different fields. Each form should ask only for what the customer is willing to share at first contact.
+
+ | | Form
+ | Fields
+ | Notes
+
+ | Engines
+ | Issue (dropdown) · engine type · aircraft type · owned or leased · timing · region · serial number (optional)
+ | Say “We sign an NDA before asking for records.” Don't ask for uploads.
+
+ | Aircraft
+ | Buy / sell / dry lease / ACMI · aircraft type or mission (seats, payload, range) · budget or monthly rate · start date and term · base country · end buyer or acting for one
+ | New airlines and governments often know the mission, not the type. Leave proof of funds to step 2 of the process.
+
+ | Parts
+ | Part number · description · quantity · condition (new, overhauled, serviceable, as removed) · release certificate needed · delivery airport · aircraft type · AOG yes/no
+ | Allow several lines, or a spreadsheet upload for RFQs. An AOG answer of yes routes the request to WhatsApp.
+
+ | Charter
+ | Passengers or cargo · from · to · dates · one-way or return · passenger count, or cargo weight, dimensions and dangerous goods · date flexibility
+ | Show which currency quotes are given in. The operator disclaimer goes under the button.
+
+ | Advisory
+ | Organisation type · project summary · stage · timeframe
+ | Keep it short. This is a conversation starter.
+
+ Every form needs a POPIA consent checkbox and a link to the privacy notice. Route each form to the person who handles that line of business. Charter and parts requests go stale within hours.
+
+ Don't publish the MD's personal address as the only contact. Set up role addresses on the group domain, for example charter@, parts@ and aog@, and forward them to whoever handles each door. People can then be added or replaced without changing the site. The Swiss company already uses contact@flighthoursolution.com, so agree the new addresses with whoever runs the group's email.
+
+ 6South African specifics
+
+ - Build mobile-first and keep pages light. Most South African traffic is on phones and data is expensive. Compress images and skip autoplay video in the hero.
+
+ - Make WhatsApp the urgent channel. It's the default for business across the region. Use pre-filled messages for AOG parts and charter quotes, so the first message already contains the part number or route.
+
+ - Comply with POPIA. This means a privacy notice, a consent checkbox, and an Information Officer registered with the Information Regulator. Check whether a PAIA manual is required, and link it in the footer if so.
+
+ - Show B-BBEE and CSD for government buyers. The profile lists government institutions and state-owned airlines as clients. Their procurement teams look for a B-BBEE level (certificate or EME affidavit) and a CSD supplier number. Show both if FHS holds them.
+
+ - State the currency. Aircraft, engines and parts trade in USD. Charter may be quoted in ZAR. Say which on each form.
+
+ - Give availability in SAST. For example, “AOG replies within 2 hours, 07:00–22:00 SAST”. Only promise what the team can actually staff.
+
+ - Consider French and Portuguese later. Mining and humanitarian charter work in the DRC, Mozambique and Angola may justify a French and Portuguese Charter section. English is enough at launch.
+
+ 7Turning the profile into web copy
+
+ - Cut the long lists. The profile has about 170 bullet points, which suits a tender document but not a web page. Each web page should lead with the problem and the outcome, then show four to six grouped capabilities. The full list can go in an expandable “Full scope” section for procurement readers.
+
+ - Use one brand across both companies. The same logo, colours and “Keeps you flying” tagline should appear on both sites, so a visitor who switches country knows it's the same group. “Engine intelligence. Operational certainty.” can be the South African hero line, or the whole group can adopt it.
+
+ - Add a plain subline under the hero. The positioning line alone doesn't say what FHS does. Something like: “Engine management, aircraft and parts sourcing, and charter for airlines, lessors and operators across [region].”
+
+ - Keep the careful wording. Phrases like “through appropriately approved MROs” and “subject to aircraft availability” are there on purpose. Don't let copywriting turn them into promises.
+
+ 8Launch checklist
+
+ - Domain decided (.co.za recommended)
+
+ - Exact relationship with the Swiss company confirmed, for site wording
+
+ - Country switch on both sites
+
+ - Shared brand assets from the Swiss site (logo, colours)
+
+ - Swiss site fixes before linking to it (homepage typo, two phone numbers, Polish skip link)
+
+ - Physical address and SA phone number
+
+ - WhatsApp Business number, with staffed hours
+
+ - Two to four team bios, with photos
+
+ - Real list of approvals and accreditations
+
+ - Engine and aircraft types covered
+
+ - Regions served
+
+ - Five forms, each routed to a named inbox
+
+ - Role email addresses (charter@, parts@, aog@) on the group domain
+
+ - Response-time commitments per door
+
+ - POPIA notice, consent and Information Officer
+
+ - Charter operator disclaimer in place
+
+ - Engine 360 waitlist form
+
+ - Registration number in the footer
+
+ - Analytics set up for each door's form

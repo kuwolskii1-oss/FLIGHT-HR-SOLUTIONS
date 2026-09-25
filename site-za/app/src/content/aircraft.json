@@ -1,0 +1,213 @@
+{
+  "notes": "Aircraft door for the South African site. Every fact comes from site-za/content-brief/brief.txt; the brief gives only the audience, the urgency band, what the visitor brings, the five sub-items, the form fields and notes, the currency, the careful wording 'subject to aircraft availability' and the names of seven steps of the nine-step transaction process. Decisions: (1) Hero leads with the problem the brief names (buyers wary of unverified sellers and chains of brokers) and the outcome (records and counterparties verified before the deal is structured); the hero call to action is the fixed submit label pointing to #form. (2) Five sections with the fixed anchor ids in order. Each states who it is for and what to bring, using the form's own fields as bullets so the visitor can prepare without reading; each section links to #form, except Aircraft management, which links to /contact because the fixed 'need' field has no Management option. (3) The verbs describing FHS are source, verify, structure, arrange, coordinate, monitor; FHS does not operate aircraft, and the ACMI text says so. (4) 'Subject to aircraft availability' appears in the ACMI section text, its bullets and the door-level disclaimer. (5) Process: the brief names seven of the nine steps (letter of intent, proof of funds, documents, escrow, inspection, purchase agreement, release). Only those seven are rendered, numbered 1 to 7, with one-line texts that restate the step name or the brief's How we work words (verify records, counterparties and status; inspections, payments, delivery); the two missing steps are flagged, not invented, and no step count is stated on the page. (6) No verify block (Parts carries it), no fullScope (the digest carries none of the profile's aircraft lists), no image. (7) Form: the fixed eleven fields with plain labels; only need, aircraft type or mission, name and email are required; the budget field doubles as asking price for a seller via its hint; proof of funds is named as step 2 under the button; currency note per the brief (US dollars); consentText names POPIA and the privacy notice, and the component links 'privacy notice' to /privacy; routeTo is the proposed aircraft@ inbox; no responsePromise because no response time has been agreed. (8) Definitions of dry lease (aircraft without crew) and ACMI (aircraft, crew, maintenance and insurance) are plain expansions of the terms, flagged for confirmation. Nothing on this page names an aircraft type, region, client, price, response time, year count, approval or team member. British English, no dashes as punctuation, no exclamation marks. Expected validator result for this file: no blockers, no majors, no minors.",
+  "sources": [
+    "slug, name, seoTitle, metaDescription: brief section 3 (Navigation: Aircraft door and its five sub-items) and section 1 (Which engines, aircraft and regions: types and regions unknown, so none are named; only South Africa is stated). Route and anchors from CONTENT-SCHEMA.md fixed decisions.",
+    "hero: brief section 2 (doors table: Aircraft for airlines, new operators, investors, government; buy, sell, dry lease or ACMI), section 4 (Trust is the main design problem: buyers in these markets are wary of unverified sellers and chains of brokers; the verification process is the strongest material; How we work step 2 Verify: records, counterparties, status; step 3 Structure: deal, lease or maintenance plan) and section 7 (lead with the problem and the outcome). Call to action label and href from CONTENT-SCHEMA.md labels (Aircraft: Send aircraft requirement, href #form).",
+    "who, urgency, bring: brief section 2 doors table, Aircraft row (who comes in; urgency Months; what they bring: buy, sell, dry lease or ACMI; aircraft type or the mission, budget or monthly rate, start date and term, base).",
+    "sections: brief section 3 (five sub-items, in order) and its reasoning (ACMI merged into Aircraft because it is one decision for the customer; aircraft management under Aircraft because the same owners and investors are the audience); section 5 forms table, Aircraft row (mission as seats, payload, range; new airlines and governments often know the mission, not the type; proof of funds at step 2); section 4 (the process order: proof of funds before documents; How we work: Verify records, counterparties, status; Structure deal, lease or maintenance plan; Monitor performance and exposure); section 7 (keep 'subject to aircraft availability'); section 6 (aircraft trade in USD). CONTENT-SCHEMA.md voice rule: FHS arranges, coordinates, sources, verifies and advises and does not operate aircraft itself.",
+    "process: brief section 4 (Show the transaction process on the Aircraft and Parts pages: the profile's nine-step major-transaction process, LOI, proof of funds, documents, escrow, inspection, purchase agreement, release; shown as a simple timeline; it tells serious buyers what to expect and turns away people who are not ready) and section 5 (leave proof of funds to step 2). Step texts reuse the How we work words from section 4 (Verify: records, counterparties, status; Execute: inspections, payments, delivery).",
+    "disclaimer: brief section 7 (Keep the careful wording: 'subject to aircraft availability') and CONTENT-SCHEMA.md voice rule (charter and ACMI).",
+    "form: brief section 5 (One form per door: Aircraft fields buy/sell/dry lease/ACMI, aircraft type or mission with seats, payload, range, budget or monthly rate, start date and term, base country, end buyer or acting for one; notes on mission versus type and proof of funds; POPIA consent checkbox and privacy notice link; route each form to the person who handles that line; role addresses on the group domain), section 6 (state the currency: aircraft trade in USD; comply with POPIA) and CONTENT-SCHEMA.md forms paragraph (fixed field list, submit label 'Send aircraft requirement', consentText, routeTo aircraft@, currencyNote). No response time: brief section 6 (only promise what the team can staff) and section 8 (response-time commitments per door still open).",
+    "related: brief section 3 (Advisory sub-items: fleet planning and lease versus buy, due diligence; Charter door; Engines sub-items: technical status and records, LLPs and remaining life) and CONTENT-SCHEMA.md routes and labels."
+  ],
+  "slug": "aircraft",
+  "name": "Aircraft",
+  "seoTitle": "Buy, sell or lease an aircraft | Flight Hour Solution",
+  "metaDescription": "Buy, sell, dry lease or ACMI through Flight Hour Solution (Pty) Ltd, South Africa. Give the type or the mission; we verify records and counterparties first.",
+  "hero": {
+    "headline": "Buy, sell or lease an aircraft",
+    "sub": "Buyers in this market are wary of unverified sellers and chains of brokers. We verify records and counterparties first, then structure the purchase, sale, dry lease or ACMI.",
+    "cta": { "label": "Send aircraft requirement", "href": "#form", "kind": "primary" }
+  },
+  "who": ["Airlines", "New operators", "Investors", "Government"],
+  "urgency": "Months",
+  "bring": [
+    "Buy, sell, dry lease or ACMI",
+    "Aircraft type, or the mission",
+    "Budget or monthly rate",
+    "Start date and term",
+    "Base country"
+  ],
+  "sections": [
+    {
+      "id": "buy",
+      "title": "Buy an aircraft",
+      "text": "Know the type, or only the mission? Either works. Give seats, payload and range if the type is open. We source candidates, verify records and counterparties, and structure the purchase.",
+      "bullets": [
+        "Aircraft type, or the mission",
+        "Budget, in US dollars",
+        "Start date",
+        "Base country",
+        "End buyer, or acting for one"
+      ],
+      "href": "#form"
+    },
+    {
+      "id": "sell",
+      "title": "Sell an aircraft",
+      "text": "Buyers are verified before your records move. A buyer shows proof of funds at step 2; documents follow at step 3. Tell us the aircraft, the asking price and when it is available.",
+      "bullets": [
+        "Aircraft type",
+        "Asking price, in US dollars",
+        "Available from",
+        "Base country",
+        "Owner, or acting for one"
+      ],
+      "href": "#form"
+    },
+    {
+      "id": "dry-lease",
+      "title": "Dry lease",
+      "text": "The aircraft without crew, for a term and a monthly rate. Tell us the type or mission, the rate you can work with, the start date and term, and the base country.",
+      "bullets": [
+        "Aircraft type, or the mission",
+        "Monthly rate, in US dollars",
+        "Start date and term",
+        "Base country"
+      ],
+      "href": "#form"
+    },
+    {
+      "id": "acmi",
+      "title": "ACMI and wet lease",
+      "text": "Aircraft, crew, maintenance and insurance from an operator, subject to aircraft availability. We arrange it; we do not operate the aircraft. Tell us the mission, dates, term and base country.",
+      "bullets": [
+        "Mission: seats, payload, range",
+        "Start date and term",
+        "Base country",
+        "Subject to aircraft availability"
+      ],
+      "href": "#form"
+    },
+    {
+      "id": "management",
+      "title": "Aircraft management",
+      "text": "For owners and investors who hold an aircraft. We structure the maintenance plan, then monitor performance and exposure. Start with a message.",
+      "href": "/contact"
+    }
+  ],
+  "process": {
+    "title": "The transaction process",
+    "intro": "For a major purchase or sale, in this order. Proof of funds comes at step 2, never at first contact.",
+    "steps": [
+      { "n": "1", "title": "Letter of intent", "text": "Both sides set out the intended deal in writing." },
+      { "n": "2", "title": "Proof of funds", "text": "The buyer shows proof of funds. Not asked for on the form." },
+      { "n": "3", "title": "Documents", "text": "Documents are exchanged. Records, counterparties and status are verified." },
+      { "n": "4", "title": "Escrow", "text": "Funds go into escrow." },
+      { "n": "5", "title": "Inspection", "text": "The aircraft is inspected." },
+      { "n": "6", "title": "Purchase agreement", "text": "The purchase agreement is signed." },
+      { "n": "7", "title": "Release", "text": "Funds are released and the aircraft is delivered." }
+    ]
+  },
+  "disclaimer": "ACMI and wet lease are subject to aircraft availability.",
+  "form": {
+    "id": "aircraft-requirement",
+    "title": "Your aircraft requirement",
+    "intro": "Give the aircraft type, or the mission if you know seats, payload and range but not the type yet.",
+    "fields": [
+      {
+        "name": "need",
+        "label": "What do you need?",
+        "type": "segmented",
+        "required": true,
+        "options": ["Buy", "Sell", "Dry lease", "ACMI"],
+        "hint": "For aircraft management, send a message from the contact page.",
+        "width": "full"
+      },
+      {
+        "name": "aircraft",
+        "label": "Aircraft type or mission",
+        "type": "text",
+        "required": true,
+        "placeholder": "Type, or seats, payload and range",
+        "hint": "If the type is open, give the mission: seats, payload and range.",
+        "width": "full"
+      },
+      {
+        "name": "budget",
+        "label": "Budget or monthly rate",
+        "type": "text",
+        "hint": "In US dollars. For a sale, the asking price.",
+        "width": "half"
+      },
+      {
+        "name": "timing",
+        "label": "Start date and term",
+        "type": "text",
+        "hint": "For a sale, when the aircraft is available.",
+        "width": "half"
+      },
+      {
+        "name": "baseCountry",
+        "label": "Base country",
+        "type": "text",
+        "width": "half"
+      },
+      {
+        "name": "actingAs",
+        "label": "You are",
+        "type": "segmented",
+        "options": ["End buyer or owner", "Acting for one"],
+        "width": "half"
+      },
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "required": true,
+        "width": "half"
+      },
+      {
+        "name": "company",
+        "label": "Company",
+        "type": "text",
+        "width": "half"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true,
+        "width": "half"
+      },
+      {
+        "name": "phone",
+        "label": "Phone",
+        "type": "tel",
+        "hint": "With the country code.",
+        "width": "half"
+      }
+    ],
+    "submitLabel": "Send aircraft requirement",
+    "consentText": "I consent to Flight Hour Solution (Pty) Ltd processing these details under POPIA to answer this enquiry, as described in the privacy notice.",
+    "routeTo": "aircraft@flighthoursolution.com",
+    "currencyNote": "Aircraft are quoted in US dollars.",
+    "disclaimer": "Proof of funds is requested at step 2 of the transaction process, not with this form.",
+    "successTitle": "Requirement received",
+    "successText": "Thank you. We will reply by email. Proof of funds and documents come later, at steps 2 and 3 of the process."
+  },
+  "related": [
+    { "label": "Fleet planning and lease versus buy", "href": "/advisory#fleet", "note": "Undecided between leasing and buying." },
+    { "label": "Due diligence", "href": "/advisory#due-diligence", "note": "Before you commit to a deal." },
+    { "label": "Engines", "href": "/engines", "note": "Records and LLPs on the aircraft you are buying." },
+    { "label": "Charter", "href": "/charter", "note": "For flights, not a lease." }
+  ],
+  "clientToConfirm": [
+    "Transaction process: the brief names seven of the profile's nine steps (letter of intent, proof of funds, documents, escrow, inspection, purchase agreement, release). Supply the two missing steps and their position, confirm the order, and approve the one-line text under each step; the page numbers the seven it has and states no step count.",
+    "Aircraft types: none are named on the page, in placeholders or in examples. Confirm the types FHS covers before any appear (brief section 1).",
+    "Regions: only South Africa is stated. Confirm whether the page may name South Africa, SADC or Africa (brief section 1).",
+    "Aircraft management: the fixed 'need' field has Buy, Sell, Dry lease and ACMI only, so the management section sends visitors to the contact page. Confirm whether to add Management as an option or keep the contact route. Also confirm what the service comprises; the text uses only the How we work words (structure the maintenance plan, monitor performance and exposure) because the digest gives nothing else.",
+    "ACMI: 'subject to aircraft availability' is used in the section, its bullets and the door disclaimer, and the text says FHS arranges and does not operate the aircraft. Confirm whether the charter operator disclaimer (not the operating airline; flights operated by licensed operators under their own Air Operator Certificates) should also appear under ACMI.",
+    "Definitions: dry lease is described as 'the aircraft without crew' and ACMI as 'aircraft, crew, maintenance and insurance from an operator'. These are plain expansions of the terms, not profile facts. Confirm the wording.",
+    "Sell section: it says a buyer shows proof of funds at step 2 and documents follow at step 3, taken from the process order. Confirm this is how FHS runs a sale mandate.",
+    "Buy section: 'We source candidates, verify records and counterparties, and structure the purchase' is built from the How we work steps. Confirm it describes the buy service.",
+    "Currency: aircraft are quoted in US dollars (brief section 6). Confirm that dry lease rates and ACMI are also quoted in US dollars, and whether rand ever applies.",
+    "Route inbox: aircraft@flighthoursolution.com is a proposal. Confirm it and set who it forwards to (brief section 5).",
+    "Required fields: need, aircraft type or mission, name and email are required; budget, timing, base country, acting as, company and phone are optional. Confirm.",
+    "Response time: none is stated for the aircraft door and no responsePromise is rendered. Confirm any commitment before one appears (brief sections 6 and 8).",
+    "Full scope: no expandable Full scope block is rendered because the digest carries none of the profile's section 4, 5, 8 and 9 lists. Supply them if a procurement-facing list is wanted (brief section 7).",
+    "Related links: fleet planning and lease versus buy, due diligence, engines (records and LLPs) and charter. Confirm the set and the one-line notes.",
+    "Form copy: approve the intro, the hints, the consent sentence, the proof of funds line under the button and the success message.",
+    "Imagery: no image is set for this door. Supply photography or approve a marked placeholder for the build."
+  ]
+}

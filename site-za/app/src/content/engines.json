@@ -1,0 +1,185 @@
+{
+  "notes": "Engines door for Flight Hour Solution (Pty) Ltd. Every statement about the South African company comes from site-za/content-brief/brief.txt; nothing is taken from memory or industry knowledge. Decisions: (1) sections use the six fixed anchor ids from CONTENT-SCHEMA.md in order, each with href '#form' as the next step, so a visitor can act from any section without reading further. (2) form.id is 'form' because DoorForm renders the form element with id = form.id and the fixed hero call to action and nav anchor are '#form'; the route ('engines') and the form title still identify the form in submissions. (3) The careful wording 'through appropriately approved MROs' is kept verbatim in the shop visits section and the Execute step, with the plain statement that FHS does not overhaul or repair engines itself; FHS arranges, coordinates, sources, verifies and advises. (4) The engine type options are the Swiss site's family list, offered only as form choices, never rendered as coverage; the brief says to reuse the list only for engines the group will actually support, so it is flagged. (5) No fullScope block: the profile's section 1 to 3 lists are not in the brief, so a procurement accordion would only repeat the six sections; flagged for the client. (6) No responsePromise, no region, no figures, no years: the brief gives none. (7) Engine 360 appears only in related, with the note 'Early access'; the Monitor step says it 'is being designed', the brief's fixed wording. (8) The group's Swiss company is linked in related with the fixed country switch label 'Switzerland' and described from site/app/src/content/about.json (independent jet-engine management consultancy, Zug), labelled as the group's. (9) No image key: imagery is placed by the build agent and marked as placeholder in the hand-over note. British English, no dashes as punctuation, headlines 8 words or fewer, paragraphs 40 words or fewer, bullets 8 words or fewer.",
+  "slug": "engines",
+  "name": "Engines",
+  "seoTitle": "Engine management from South Africa | Flight Hour Solution",
+  "metaDescription": "Engine records, LLPs, shop visits through appropriately approved MROs, reserves, redelivery, sales and leasing. Flight Hour Solution (Pty) Ltd, South Africa.",
+  "hero": {
+    "headline": "Engine decisions, made on verified records",
+    "sub": "Records, LLPs, shop visits, reserves, redelivery, sales and leasing, for airlines, lessors, engine owners and MROs. We verify before you commit, and we sign an NDA before asking for records.",
+    "cta": { "label": "Send engine enquiry", "href": "#form", "kind": "primary" }
+  },
+  "who": ["Airlines", "Lessors", "Engine owners", "MROs"],
+  "urgency": "Weeks to months",
+  "bring": ["Engine type and aircraft", "The issue", "Owned or leased", "Timing", "Records only after an NDA"],
+  "sections": [
+    {
+      "id": "status",
+      "title": "Technical status and records",
+      "text": "Every engine decision starts with what the records show. We review the records and confirm the technical status before you commit to a deal, a shop visit or a return.",
+      "bullets": ["Records reviewed after an NDA", "Technical status confirmed", "Findings before you commit"],
+      "href": "#form"
+    },
+    {
+      "id": "llp",
+      "title": "LLPs and remaining life",
+      "text": "Remaining life on life-limited parts drives value, timing and exposure. We check the LLP stack against the records and set out what is left, before a purchase, a lease or a return.",
+      "bullets": ["LLP stack analysis", "Remaining life against the records", "Exposure set out before you decide"],
+      "href": "#form"
+    },
+    {
+      "id": "shop-visits",
+      "title": "Shop visits and MRO coordination",
+      "text": "We coordinate shop visits through appropriately approved MROs. We do not overhaul or repair engines ourselves. Requirement, specs and timeline are agreed first; inspections, payments and delivery are followed through.",
+      "bullets": ["Requirement, specs and timeline agreed first", "Through appropriately approved MROs", "Inspections, payments and delivery followed through"],
+      "href": "#form"
+    },
+    {
+      "id": "reserves",
+      "title": "Maintenance reserves",
+      "text": "Whether you pay reserves or hold them, the plan has to match the engine's real status. We help structure the maintenance plan and track exposure over the lease term.",
+      "bullets": ["Plan structured on status and remaining life", "Exposure tracked over the lease"],
+      "href": "#form"
+    },
+    {
+      "id": "lease-return",
+      "title": "Lease return and redelivery",
+      "text": "Redelivery is where records, status and return conditions meet. We check them against each other early and coordinate inspections through to handover, for lessee or lessor.",
+      "bullets": ["Records and status checked early", "Return conditions against actual status", "Inspections coordinated to handover"],
+      "href": "#form"
+    },
+    {
+      "id": "sales-leasing",
+      "title": "Engine sales and leasing",
+      "text": "Buying, selling or leasing an engine. We source against your requirement, verify records and counterparties, and structure the deal through inspection, payment and delivery. Engines are quoted in US dollars.",
+      "bullets": ["Sourcing against your requirement", "Records and counterparties verified first", "Structured through to payment and delivery", "Quoted in US dollars"],
+      "href": "#form"
+    }
+  ],
+  "process": {
+    "title": "How we work on engines",
+    "intro": "Five steps, in this order, on every engine job.",
+    "steps": [
+      { "n": "1", "title": "Define", "text": "Your requirement, the specs and the timeline." },
+      { "n": "2", "title": "Verify", "text": "Records after an NDA, counterparties and status." },
+      { "n": "3", "title": "Structure", "text": "The deal, the lease or the maintenance plan." },
+      { "n": "4", "title": "Execute", "text": "Inspections, payments and delivery, with shop work through appropriately approved MROs." },
+      { "n": "5", "title": "Monitor", "text": "Performance and exposure after delivery. Engine 360 is being designed for this." }
+    ]
+  },
+  "form": {
+    "id": "form",
+    "title": "Engine enquiry",
+    "intro": "Tell us the engine, the issue and the timing. No uploads: we sign an NDA before asking for records.",
+    "fields": [
+      {
+        "name": "issue",
+        "label": "The issue",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Technical status and records",
+          "LLPs and remaining life",
+          "Shop visit or MRO coordination",
+          "Maintenance reserves",
+          "Lease return or redelivery",
+          "Buying, selling or leasing an engine",
+          "Something else"
+        ],
+        "width": "full"
+      },
+      {
+        "name": "engineType",
+        "label": "Engine type",
+        "type": "select",
+        "required": true,
+        "options": ["CFM56", "LEAP", "V2500", "PW4000", "APU", "TPE331 or TFE731", "Other or not sure"],
+        "width": "half"
+      },
+      {
+        "name": "aircraftType",
+        "label": "Aircraft type",
+        "type": "text",
+        "required": false,
+        "hint": "The aircraft the engine is on or meant for.",
+        "width": "half"
+      },
+      {
+        "name": "ownership",
+        "label": "Owned or leased",
+        "type": "segmented",
+        "required": true,
+        "options": ["Owned", "Leased"],
+        "width": "half"
+      },
+      {
+        "name": "timing",
+        "label": "Timing",
+        "type": "select",
+        "required": true,
+        "options": ["As soon as possible", "Within weeks", "Within months", "Planning ahead"],
+        "width": "half"
+      },
+      {
+        "name": "region",
+        "label": "Region or country",
+        "type": "text",
+        "required": true,
+        "hint": "Where the engine or aircraft is now.",
+        "width": "half"
+      },
+      {
+        "name": "serialNumber",
+        "label": "Engine serial number",
+        "type": "text",
+        "required": false,
+        "hint": "Helps us prepare. Records come only after an NDA.",
+        "width": "half"
+      },
+      { "name": "name", "label": "Name", "type": "text", "required": true, "width": "half" },
+      { "name": "company", "label": "Company", "type": "text", "required": true, "width": "half" },
+      { "name": "email", "label": "Email", "type": "email", "required": true, "width": "half" },
+      { "name": "phone", "label": "Phone", "type": "tel", "required": false, "width": "half" }
+    ],
+    "submitLabel": "Send engine enquiry",
+    "consentText": "I consent to Flight Hour Solution (Pty) Ltd processing these details under POPIA to answer this enquiry, as set out in the privacy notice.",
+    "routeTo": "engines@flighthoursolution.com",
+    "currencyNote": "Engines are quoted in US dollars.",
+    "disclaimer": "We sign an NDA before asking for records.",
+    "successTitle": "Engine enquiry received",
+    "successText": "Thank you. Your enquiry has gone to the engines inbox and we will reply by email. We sign an NDA before asking for any records."
+  },
+  "related": [
+    { "label": "Engine 360", "href": "/engines/engine-360", "note": "Early access" },
+    { "label": "Aircraft", "href": "/aircraft", "note": "Buy, sell, dry lease or ACMI" },
+    { "label": "Due diligence", "href": "/advisory#due-diligence", "note": "Advisory, before a transaction" },
+    { "label": "Switzerland", "href": "https://flighthoursolution.com", "note": "Flight Hour Solution GmbH, the group's engine consultancy in Zug" }
+  ],
+  "sources": [
+    "slug, name, sections ids and titles, related Engine 360 entry: brief section 3 (Engines menu: Technical status and records, LLPs and remaining life, Shop visits and MRO coordination, Maintenance reserves, Lease return and redelivery, Engine sales and leasing, Engine 360 with an Early access badge; engines stays first because the profile calls engine management its primary focus) and CONTENT-SCHEMA.md fixed decisions table (anchor ids in order, slug value).",
+    "hero: brief section 2 table (Engines door: who comes in, what they bring, records only after an NDA); brief section 4 (Verify step: records, counterparties, status); brief section 7 (lead with the problem and the outcome); CONTENT-SCHEMA.md labels (hero call to action 'Send engine enquiry' to #form).",
+    "who, urgency, bring: brief section 2 table, Engines row (airlines, lessors, engine owners, MROs; weeks to months; engine type, aircraft, the issue, owned or leased, timing; records only after an NDA).",
+    "sections.status: brief section 2 (records only after an NDA), section 4 (Verify: records, counterparties, status; the verification process is the profile's strongest material) and section 5 (say 'We sign an NDA before asking for records').",
+    "sections.llp: brief section 2 (LLP stack analysis is the engines audience's material), section 3 (LLPs and remaining life), section 4 (remaining life as a verification item; Monitor: performance and exposure).",
+    "sections.shop-visits: brief section 7 (keep 'through appropriately approved MROs' verbatim), section 4 (Define: requirement, specs, timeline; Execute: inspections, payments, delivery) and CONTENT-SCHEMA.md voice rule (FHS arranges and coordinates; it does not overhaul or repair itself).",
+    "sections.reserves: brief section 2 (maintenance reserves appear in three profile sections), section 4 (Structure: deal, lease or maintenance plan; Monitor: performance and exposure).",
+    "sections.lease-return: brief section 2 (lease return appears in two profile sections), section 4 (Verify: records and status; Execute: inspections and delivery), section 2 table (airlines and lessors both use this door).",
+    "sections.sales-leasing: brief section 4 (Verify: records and counterparties; Structure: deal or lease; Execute: inspections, payments, delivery), section 6 (engines trade in US dollars) and CONTENT-SCHEMA.md voice rule (FHS sources).",
+    "process: brief section 4 (the five numbered steps and their words: Define, Verify, Structure, Execute, Monitor), section 5 (NDA before records), section 7 (approved MROs wording) and section 1 (Engine 360 'is being designed'; CONTENT-SCHEMA.md: engine intelligence, status, exposure).",
+    "form: brief section 5 (Engines form fields: issue, engine type, aircraft type, owned or leased, timing, region, serial number optional; NDA line; no uploads; POPIA consent and privacy notice link; route to the person who handles the line, role addresses on the group domain), section 6 (currency: engines in USD), section 1 (the Swiss site's engine family list, used only as form options) and CONTENT-SCHEMA.md forms paragraph (fixed field list, options, submit label 'Send engine enquiry', routeTo engines@, currencyNote). Issue and timing options are written to match the six sections and the 'weeks to months' urgency; they are choices, not claims.",
+    "related: brief section 3 (Engine 360 early access; Aircraft door covers buy, sell, dry lease and ACMI; Advisory covers due diligence), section 4 (the group link may go on the site if labelled as the group's) and CONTENT-SCHEMA.md (country switch label 'Switzerland' to https://flighthoursolution.com). The Swiss company's name, city and description come from site/app/src/content/site.json (Flight Hour Solution GmbH, Zug) and site/app/src/content/about.json (independent jet-engine management consultancy)."
+  ],
+  "clientToConfirm": [
+    "Engine types covered: the form offers CFM56, LEAP, V2500, PW4000, APU, TPE331 or TFE731 and Other or not sure. This is the Swiss site's family list used as choices only; nowhere on the page is it stated as coverage. Confirm which families the group will actually support for South African clients, and the options will be cut to that list.",
+    "Regions served: no region is named anywhere on the page. The form asks for region or country as free text. Confirm the regions to name once decided.",
+    "Full scope for procurement readers: the corporate profile's engine sections (1 to 3) are not in the brief, so no 'Full scope' accordion is rendered. Supply the profile's engine list to add one.",
+    "Response time: no reply time is stated on this page or under the form. Commit to one for engine enquiries, stated in SAST, only if the team can staff it.",
+    "Inbox: engines@flighthoursolution.com is a proposal. Confirm the address and who it forwards to.",
+    "Own approvals: the page says FHS coordinates shop visits through appropriately approved MROs and does not overhaul or repair engines itself. Confirm that Flight Hour Solution (Pty) Ltd holds no maintenance approval of its own; if a SACAA or other approval exists, supply it and the wording will be adjusted.",
+    "Group engineers: the Swiss company is linked in the related block, labelled as the group's. Confirm whether its engineers will work on South African engine jobs; if so, they can be named on the About page as group colleagues.",
+    "Both sides of a lease: the reserves and lease return sections address lessors and lessees alike, because the brief lists airlines, lessors and engine owners as engine visitors. Confirm FHS acts for either side.",
+    "Form choices: approve the issue options (the six sections plus Something else) and the timing options (As soon as possible, Within weeks, Within months, Planning ahead), and whether Owned or leased needs a third choice for MROs or agents acting for an owner.",
+    "Currency: the section and the form say engines are quoted in US dollars, as the brief states. Confirm.",
+    "Engine 360: the Monitor step says Engine 360 'is being designed' for performance and exposure monitoring. Confirm this description holds until launch."
+  ]
+}

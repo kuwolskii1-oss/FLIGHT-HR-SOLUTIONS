@@ -1,0 +1,84 @@
+{
+  "notes": "Engine 360 early access page for Flight Hour Solution (Pty) Ltd. Every statement about the South African company comes from site-za/content-brief/brief.txt; nothing is taken from memory, industry knowledge or the Swiss site. The Swiss content files (site/app/src/content/site.json and about.json) do not mention Engine 360, so no group fact is used on this page. Decisions: (1) The brief's fixed wording 'is being designed' is the h1, the status callout and the line under the button; the page never uses the words live, launched or available now, and the validator checks for them. (2) What it is meant to do is limited to the three things the page brief names: engine intelligence, status and exposure. Each item is one sentence. No feature, screen, date, price or client is described. (3) The route renders the item title and text only, so the what items carry no href; the status callout and the sub both point the visitor to the list below, and the route adds the closing band with the primary and urgent actions, so every section ends in a next step. (4) The form asks only the five things the brief and CONTENT-SCHEMA.md fix for the waitlist: role, fleet size, engine types, organisation, email. Contact details come last, as on the other door forms. Role is a select whose options are the Engines door audience from brief section 2 plus Other; fleet size is a number field and optional; engine types is free text so that several types can be listed and no coverage list is implied. (5) form.id is 'form', as on the other doors: the route's h2 has id 'form-title' and the form component sets aria-labelledby to form.id plus '-title', so a different id would break the label. The route also gives the form section id 'form', which duplicates the form element id; the build agent should pass a distinct id to DoorForm and match the h2 id, and the content does not depend on which one is chosen. (6) routeTo is engines@ because the route passes route 'engines' to the form component and no separate Engine 360 inbox exists in site.json; flagged. (7) No currencyNote: no money is involved. No responsePromise: the brief gives none. No name field: the fixed field list has none; flagged. (8) The line 'we will write to you when access opens' describes what a waitlist is for and is flagged for the client, as is the line that the answers help shape what is built, which rests on brief section 3 (the waitlist doubles as market research). British English, no dashes as punctuation, headline 5 words, every paragraph and hint under 40 words.",
+  "seoTitle": "Engine 360 early access | Flight Hour Solution",
+  "metaDescription": "Engine 360 is being designed by Flight Hour Solution (Pty) Ltd, South Africa: engine intelligence on status and exposure. Join the early access list.",
+  "badge": "Early access",
+  "headline": "Engine 360 is being designed",
+  "sub": "Engine intelligence on the status and exposure of your engines. It is still in development. Join the early access list below and we will write to you when access opens.",
+  "what": [
+    {
+      "title": "Engine intelligence",
+      "text": "Verified information on your engines, set out so that a decision on a shop visit, a lease or a sale starts from facts."
+    },
+    {
+      "title": "Status",
+      "text": "Where each engine stands: technical status, records and remaining life, as verified rather than as assumed."
+    },
+    {
+      "title": "Exposure",
+      "text": "What each engine could cost, and when, over the lease or ownership term."
+    }
+  ],
+  "status": "Engine 360 is being designed. This page describes the intent, not a finished product. The early access list is below.",
+  "form": {
+    "id": "form",
+    "title": "Engine 360 waitlist",
+    "intro": "Five short questions. Your role, fleet and engine types help shape what is built.",
+    "fields": [
+      {
+        "name": "role",
+        "label": "Your role",
+        "type": "select",
+        "required": true,
+        "options": ["Airline or operator", "Lessor", "Engine owner", "MRO", "Other"],
+        "width": "half"
+      },
+      {
+        "name": "fleetSize",
+        "label": "Fleet size",
+        "type": "number",
+        "required": false,
+        "hint": "Number of aircraft, if it applies.",
+        "width": "half"
+      },
+      {
+        "name": "engineTypes",
+        "label": "Engine types",
+        "type": "text",
+        "required": true,
+        "hint": "List as many as apply.",
+        "width": "full"
+      },
+      { "name": "organisation", "label": "Organisation", "type": "text", "required": true, "width": "half" },
+      { "name": "email", "label": "Email", "type": "email", "required": true, "width": "half" }
+    ],
+    "submitLabel": "Join the early access list",
+    "consentText": "I consent to Flight Hour Solution (Pty) Ltd processing these details under POPIA to keep me on the Engine 360 early access list and to write to me about it, as set out in the privacy notice.",
+    "routeTo": "engines@flighthoursolution.com",
+    "disclaimer": "Engine 360 is being designed. Joining the list places no obligation on you.",
+    "successTitle": "You are on the list",
+    "successText": "Thank you. Your details have gone to the engines inbox. We will write to this email address when early access opens."
+  },
+  "sources": [
+    "badge, headline, status, form.disclaimer: brief section 1 (How to present Engine 360: still in development; present it as early access with a waitlist, never as a live product; the profile says 'is being designed', keep that wording) and section 3 (Engine 360 is not a top-level item until it launches; it gets a homepage band and a menu entry with an Early access badge). Fixed wording restated in CONTENT-SCHEMA.md voice rules and page brief.",
+    "sub and what: CONTENT-SCHEMA.md page brief for engine360.json (what it is meant to do only as far as the brief says: engine intelligence, status, exposure); brief section 3 ('Engine intelligence' is the positioning line and engine management is the primary focus); brief section 4 (Verify: records, counterparties, status; Monitor: performance and exposure); brief section 2 (LLP stack analysis and remaining life as engines-door material). 'Still in development' is the brief's own phrase from section 1.",
+    "form fields, title and intro: brief section 3 (a waitlist form can ask for fleet size, engine types and role, which doubles as market research) and CONTENT-SCHEMA.md forms paragraph (Engine 360 waitlist: role, fleet size, engine types, email, organisation; submit label 'Join the early access list'). Role options: brief section 2, Engines row (airlines, lessors, engine owners, MROs) plus Other.",
+    "form.consentText and form.routeTo: brief section 5 (every form needs a POPIA consent checkbox and a link to the privacy notice; route each form to whoever handles that line of business; role addresses on the group domain) and section 6 (comply with POPIA). CONTENT-SCHEMA.md forms paragraph (consentText names POPIA and links the privacy notice; routeTo is a proposed role inbox on the group domain, flagged). The inbox is engines@ because the route passes 'engines' to the form component and site.json lists no Engine 360 address.",
+    "seoTitle and metaDescription: brief section 1 (Engine 360 wording) and CONTENT-SCHEMA.md (legal name Flight Hour Solution (Pty) Ltd, South Africa; engine intelligence, status, exposure).",
+    "successTitle and successText: brief section 1 (early access with a waitlist) and section 5 (route to the inbox for the line of business). No response time is stated because the brief gives none (section 8 lists response-time commitments as still to be decided)."
+  ],
+  "clientToConfirm": [
+    "What Engine 360 does: the page names only engine intelligence, status and exposure, each in one sentence. Confirm these three, and say whether anything more may be stated, for example performance, which the brief's Monitor step pairs with exposure.",
+    "Wording: 'is being designed' and 'still in development' are used throughout, as the brief requires. Confirm this still holds, and whether any timeframe may be given (none is).",
+    "Whose product: the meta description attributes Engine 360 to Flight Hour Solution (Pty) Ltd because the South African profile describes it. Confirm, and say whether the Swiss company is involved so the page can say so.",
+    "Inbox: waitlist entries go to engines@flighthoursolution.com, a proposed address, because the form is routed through the engines door. Confirm, or name a separate address such as engine360@ and it will be added to site.json.",
+    "Role options: Airline or operator, Lessor, Engine owner, MRO, Other. These are the Engines door audience from the brief, used as choices. Confirm, replace, or say whether role should mean job title instead.",
+    "Fleet size: a number field, optional, hinted as number of aircraft. Confirm, or say whether engines should be counted instead and whether the field should be required.",
+    "Engine types: free text so several types can be listed and no coverage list is implied. Confirm, or supply the list of types to offer as choices once the engines covered are decided.",
+    "Name field: the brief's waitlist list has no name field, so none is asked. Confirm whether to add one; the reply will otherwise be addressed to the organisation.",
+    "What joining the list means: the page says we will write to this email address when early access opens and that joining places no obligation. Confirm this is the intent and that there is no cost or term attached to early access.",
+    "Use of the answers: the form intro says role, fleet and engine types help shape what is built, on the basis that the brief says the waitlist doubles as market research. Confirm this may be said, and that the privacy notice covers this use of the details.",
+    "Response time: none is stated on the page or in the success message. Commit to one only if the team can staff it.",
+    "Form label: the form is titled 'Engine 360 waitlist' and the h1 says 'Engine 360 is being designed'. Confirm the product name is written 'Engine 360' with a space and no trade mark symbol."
+  ]
+}
