@@ -92,7 +92,7 @@
       var y = window.scrollY;
       header.classList.toggle("is-scrolled", y > 16);
       var goingDown = y > lastY + 4, goingUp = y < lastY - 4;
-      if (!header.classList.contains("is-menu-open") && !header.classList.contains("has-dropdown")) {
+      if (!header.classList.contains("is-menu-open") && !header.classList.contains("has-dropdown") && !header.classList.contains("is-search-open")) {
         if (goingDown && y > 360) header.classList.add("is-hidden");
         else if (goingUp || y < 120) header.classList.remove("is-hidden");
       }
@@ -533,6 +533,37 @@
     };
     if (window.ResizeObserver) new ResizeObserver(measure).observe(art);
     measure();
+  });
+
+  // ---- the Parts engine viewer, its request dialog and the header search -------------------------------
+  // The site's own modules (src/site/parts/viewer.ts, request.ts, src/site/search/ui.ts), bundled into
+  // window.FHSClient by build-preview.mjs. Links in search results map to this document's addresses.
+  var routeSlug = {};
+  cfg.pages.forEach(function (p) { routeSlug[p.route] = p.slug; });
+  function previewHref(href) {
+    if (!href || href.charAt(0) !== "/") return href;
+    var hash = href.indexOf("#"), pathPart = hash < 0 ? href : href.slice(0, hash), frag = hash < 0 ? "" : href.slice(hash + 1);
+    var slug = routeSlug[pathPart.replace(/\/$/, "") || "/"];
+    if (!slug) return href;
+    return frag ? "#" + slug + "." + frag : "#" + slug;
+  }
+  var client = window.FHSClient;
+  if (client) {
+    $$("main[data-page] .c-pv[data-pv]").forEach(function (root) {
+      client.mountPartsViewer(root);
+      client.mountPartsRequest(root);
+    });
+    $$("[data-search]").forEach(function (root) {
+      client.mountSiteSearch(root, { loadEntries: function () { return Promise.resolve(cfg.search || []); }, hrefFor: previewHref });
+    });
+  }
+  // A form filled in from the request dialog drops the errors of an earlier attempt on those fields.
+  document.addEventListener("fhs:prefill", function (e) {
+    var form = e.target, names = (e.detail && e.detail.names) || [];
+    names.forEach(function (n) {
+      var wrap = form.querySelector('.c-field[data-field="' + n + '"]');
+      if (wrap) setError(wrap, "");
+    });
   });
 
   // ---- start ------------------------------------------------------------------------------------------

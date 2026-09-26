@@ -11,6 +11,8 @@
 // Usage: node build-preview.mjs [base-url] [out-dir]
 import { createRequire } from "node:module";
 import fs from "node:fs";
+import os from "node:os";
+import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -199,11 +201,19 @@ const fontFiles = new Set();
 for (const m of css.matchAll(/url\((['"]?)((?:assets|fonts)\/[^)'"]+\.woff2)/g)) fontFiles.add(m[2]);
 
 const engine = fs.readFileSync(path.join(app, "src/vendor/scrollcraft/scrollcraft.js"), "utf8");
+// The Parts viewer, its request dialog and the header search: the site's own modules, bundled
+// with Bun (it resolves the app's "@/" paths) into one script, and the search index they read.
+const bunBin = process.env.BUN || "bun";
+const clientFile = path.join(os.tmpdir(), "fhs-preview-client.js");
+execFileSync(bunBin, ["build", path.join(here, "client.ts"), "--format=iife", "--target=browser", "--minify", `--outfile=${clientFile}`], { cwd: app, stdio: ["ignore", "ignore", "inherit"] });
+const client = fs.readFileSync(clientFile, "utf8");
+const searchEntries = JSON.parse(execFileSync(bunBin, [path.join(here, "entries-json.ts")], { cwd: app, encoding: "utf8" }));
 const runtime = fs.readFileSync(path.join(here, "runtime.js"), "utf8");
 const previewCss = fs.readFileSync(path.join(here, "preview.css"), "utf8");
 
 const config = {
-  pages: pages.map((p) => ({ slug: p.slug, title: p.title })),
+  pages: pages.map((p) => ({ slug: p.slug, route: p.route, title: p.title })),
+  search: searchEntries,
   inbox: INBOX,
   identEnd: identPaths.end,
 };
@@ -221,6 +231,7 @@ const doc = [
   // GSAP for the door board, from the artifact host's allowed CDN (the site bundles the same 3.15.0).
   `<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>`,
   `<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/CustomEase.min.js"></script>`,
+  `<script>${client.replace(/<\/script/gi, "<\\/script")}</script>`,
   `<script>${runtime}</script>`,
 ].join("\n");
 
@@ -248,6 +259,8 @@ for (const m of doc.matchAll(/(?:src|srcset|href)="([^"]*)"/g)) {
 }
 // Images named in inline styles, such as the dithered intro grids (IntroDither's --dither-d/-m).
 for (const m of doc.matchAll(/url\((?:&quot;|['"])?((?:assets\/img|brand)\/[^)"'&]+)/g)) used.add(m[1]);
+// The viewer's posters for every stop: only the first is in the markup, the rest are named in code.
+for (const f of fs.readdirSync(path.join(app, "public/assets/img/parts-viewer"))) used.add(`assets/img/parts-viewer/${f}`);
 for (const u of used) {
   const from = path.join(app, "public", u);
   if (fs.existsSync(from)) copy(u, from);

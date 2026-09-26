@@ -18,11 +18,15 @@ export const PHONE_MEDIA = "(max-width: 699px)";
 /** When the card shows the 4:5 poster: phones held upright. A phone on its side gets the wide set. */
 export const POSTER_TALL_MEDIA = "(max-width: 699px) and (orientation: portrait)";
 
-/** The poster files for a family and its stop: the desktop set (2.35:1) and the phone set (4:5). */
-export const posterFiles = (key: string, az: number) => ({
-  wide1600: `${POSTER_BASE}${key}-${az}-1600.webp`,
-  wide800: `${POSTER_BASE}${key}-${az}-800.webp`,
-  tall800: `${POSTER_BASE}${key}-${az}-tall-800.webp`,
+/**
+ * The poster files for a family and its stop: the desktop set (2.35:1) and the phone set (4:5).
+ * `base` lets viewer.ts reuse the folder of the poster the server rendered, so the files resolve
+ * wherever the page is served from (the no-login preview serves them relatively).
+ */
+export const posterFiles = (key: string, az: number, base: string = POSTER_BASE) => ({
+  wide1600: `${base}${key}-${az}-1600.webp`,
+  wide800: `${base}${key}-${az}-800.webp`,
+  tall800: `${base}${key}-${az}-tall-800.webp`,
 });
 
 /**

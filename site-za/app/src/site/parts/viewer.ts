@@ -63,6 +63,8 @@ export function mountPartsViewer(root: HTMLElement): () => void {
   const nextBtn = q<HTMLButtonElement>("[data-pv-next]");
   const live = q<HTMLElement>("[data-pv-live]");
   const poster = q<HTMLImageElement>("[data-pv-poster]");
+  // The folder of the poster the server rendered: the other stops' posters live beside it.
+  const posterBase = (poster?.getAttribute("src") ?? "").replace(/[^/]*$/, "") || undefined;
   const posterTall = q<HTMLSourceElement>("[data-pv-poster-tall]");
   const glHost = q<HTMLElement>("[data-pv-gl]");
   const leaders = Array.from(root.querySelectorAll<SVGPathElement>("[data-pv-leader]"));
@@ -427,7 +429,7 @@ export function mountPartsViewer(root: HTMLElement): () => void {
       placeCallout();
       return;
     }
-    const f = posterFiles(families[family].key, STOPS[family]);
+    const f = posterFiles(families[family].key, STOPS[family], posterBase);
     const swap = () => {
       poster.srcset = `${f.wide800} 800w, ${f.wide1600} 1600w`;
       poster.src = f.wide1600;

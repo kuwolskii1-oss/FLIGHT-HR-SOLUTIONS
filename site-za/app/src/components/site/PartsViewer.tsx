@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import type { Door } from "@/site/types";
-import { site } from "@/site/data/site";
 import { POSTER_TALL_MEDIA, posterFiles, STOPS } from "@/site/parts/viewer-config";
+import { PartsRequestDialog, partsViewerConfig } from "./PartsRequestDialog";
 import { Pictogram } from "./Pictogram";
 
 /**
@@ -29,8 +29,11 @@ export function PartsViewer({ door }: { door: Door }) {
         if (cancelled) return;
         cleanups.push(m.mountPartsViewer(root));
       });
-      // Builder B: the request dialog mounts here on the same root, as
-      // import("@/site/parts/request").then((m) => { if (!cancelled) cleanups.push(m.mountPartsRequest(root)); })
+      // The request dialog mounts on the same root; the viewer opens it with "pv:request".
+      void import("@/site/parts/request").then((m) => {
+        if (cancelled) return;
+        cleanups.push(m.mountPartsRequest(root));
+      });
     }
     return () => {
       cancelled = true;
@@ -46,22 +49,8 @@ export function PartsViewer({ door }: { door: Door }) {
   const first = viewer.families[0];
   const files = posterFiles(first.key, STOPS[0]);
 
-  const field = (name: string) => {
-    const f = door.form.fields.find((x) => x.name === name);
-    return f ? { label: f.label, options: f.options, hint: f.hint } : undefined;
-  };
-  const config = {
-    families: viewer.families,
-    strings: viewer,
-    fields: {
-      partNumber: field("partNumber"),
-      quantity: field("quantity"),
-      condition: field("condition"),
-      aog: field("aog"),
-    },
-    whatsapp: site.company.whatsapp,
-    template: site.whatsappTemplates.aog,
-  };
+  // One shape for the viewer and the request dialog (PartsRequestDialog owns it).
+  const config = partsViewerConfig(door);
 
   return (
     <section
@@ -169,8 +158,8 @@ export function PartsViewer({ door }: { door: Door }) {
 
         <p className="c-pv__hint">{viewer.hint}</p>
 
-        {/* Builder B's request dialog renders here, inside this section so request.ts finds it
-            from the root: <PartsRequestDialog door={door} /> (src/components/site/PartsRequestDialog.tsx). */}
+        {/* The request dialog sits inside this section, so request.ts finds it from the root. */}
+        <PartsRequestDialog door={door} />
       </div>
     </section>
   );

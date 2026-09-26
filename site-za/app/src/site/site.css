@@ -1129,6 +1129,8 @@ html.site.is-menu-open {
 }
 .c-field {
   display: grid;
+  /* a field beside a taller neighbour (one with a hint) keeps its label and input at the top */
+  align-content: start;
   gap: 0.4rem;
 }
 .c-field__label {
