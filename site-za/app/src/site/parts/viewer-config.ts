@@ -9,6 +9,15 @@ export const STOPS = [45, 135, 225, 315] as const;
 
 export const POSTER_BASE = "/assets/img/parts-viewer/";
 
+/**
+ * The phone layout (parts-viewer.css switches at the same width): the tabs sit under the card and
+ * the two turn buttons are round buttons in its bottom corners. viewer.ts reads this query rather
+ * than the stage width, which is narrower than the viewport and would disagree with the CSS.
+ */
+export const PHONE_MEDIA = "(max-width: 699px)";
+/** When the card shows the 4:5 poster: phones held upright. A phone on its side gets the wide set. */
+export const POSTER_TALL_MEDIA = "(max-width: 699px) and (orientation: portrait)";
+
 /** The poster files for a family and its stop: the desktop set (2.35:1) and the phone set (4:5). */
 export const posterFiles = (key: string, az: number) => ({
   wide1600: `${POSTER_BASE}${key}-${az}-1600.webp`,

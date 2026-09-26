@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import type { Door } from "@/site/types";
 import { site } from "@/site/data/site";
-import { posterFiles, STOPS } from "@/site/parts/viewer-config";
+import { POSTER_TALL_MEDIA, posterFiles, STOPS } from "@/site/parts/viewer-config";
 import { Pictogram } from "./Pictogram";
 
 /**
@@ -89,7 +89,7 @@ export function PartsViewer({ door }: { door: Door }) {
               the leader line. All decorative: the tab panel below carries the text equivalent. */}
           <div className="c-pv__media" aria-hidden="true">
             <picture>
-              <source media="(max-width: 699px)" srcSet={files.tall800} width={800} height={1000} data-pv-poster-tall="" />
+              <source media={POSTER_TALL_MEDIA} srcSet={files.tall800} width={800} height={1000} data-pv-poster-tall="" />
               <img
                 className="c-pv__poster"
                 data-pv-poster=""
@@ -115,7 +115,7 @@ export function PartsViewer({ door }: { door: Door }) {
           </div>
 
           <div className="c-pv__bar" data-pv-bar="">
-            <button type="button" className="c-pv__turn c-pv__turn--prev" data-pv-prev="" aria-label={viewer.back}>
+            <button type="button" className="c-pv__turn c-pv__turn--prev" data-pv-prev="" aria-label={viewer.previousFamily}>
               <Pictogram name="left-arrow" size={20} />
             </button>
             <div className="c-pv__tabs t-tabs" role="tablist" aria-labelledby={titleId} data-pv-tabs="">
@@ -136,7 +136,7 @@ export function PartsViewer({ door }: { door: Door }) {
                 </button>
               ))}
             </div>
-            <button type="button" className="c-pv__turn c-pv__turn--next" data-pv-next="" aria-label={viewer.next}>
+            <button type="button" className="c-pv__turn c-pv__turn--next" data-pv-next="" aria-label={viewer.nextFamily}>
               <Pictogram name="left-arrow" size={20} />
             </button>
           </div>

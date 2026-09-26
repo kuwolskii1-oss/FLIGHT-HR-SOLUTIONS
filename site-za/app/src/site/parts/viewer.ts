@@ -14,7 +14,7 @@
  * - while `root.dataset.pvBusy === "1"` the viewer ignores keys, drags and buttons.
  */
 import type { EngineStage, Insets } from "./scene";
-import { POSTERS, posterFiles, STOPS } from "./viewer-config";
+import { PHONE_MEDIA, POSTER_TALL_MEDIA, POSTERS, posterFiles, STOPS } from "./viewer-config";
 
 type Family = { key: string; name: string };
 type Strings = { prompt: string; promptContinue: string };
@@ -70,9 +70,14 @@ export function mountPartsViewer(root: HTMLElement): () => void {
   const lines = q<SVGSVGElement>("[data-pv-lines]");
   const promptEl = callout.querySelector<HTMLElement>("[data-pv-prompt]");
   const names = Array.from(root.querySelectorAll<HTMLElement>("[data-pv-name]"));
+  const caption = q<HTMLElement>("[data-pv-caption]");
 
   const reducedMq = window.matchMedia("(prefers-reduced-motion: reduce)");
   const reduced = () => reducedMq.matches;
+  // The layout switch follows the viewport, like the CSS: the stage is narrower than the viewport,
+  // so testing its own width would call a 744 px tablet a phone while the CSS lays it out as one.
+  const phoneMq = window.matchMedia(PHONE_MEDIA);
+  const tallPosterMq = window.matchMedia(POSTER_TALL_MEDIA);
   const busy = () => root.dataset.pvBusy === "1";
 
   let family = Math.max(0, tabs.findIndex((t) => t.getAttribute("aria-selected") === "true"));
@@ -96,9 +101,17 @@ export function mountPartsViewer(root: HTMLElement): () => void {
 
   /* ---------------------------------------------------------------- selection */
 
+  // Where the pill was last put, so a relayout only moves it when the tab under it has changed
+  // (a late web font), and never cuts short a slide that is under way.
+  let pillAt = "";
+  const pillTarget = () => {
+    const tab = tabs[family];
+    return tab ? `${tab.offsetLeft}:${tab.offsetWidth}` : "";
+  };
   const movePill = (animate: boolean) => {
     const tab = tabs[family];
     if (!pill || !tab) return;
+    pillAt = pillTarget();
     const prev = pill.style.transition;
     if (!animate) pill.style.transition = "none";
     pill.style.transform = `translateX(${tab.offsetLeft}px)`;
@@ -260,10 +273,16 @@ export function mountPartsViewer(root: HTMLElement): () => void {
     }
   }
 
+  /** The caption's bottom edge in stage pixels when it sits over the top half of the card (phones). */
+  const captionBottomOnTop = (s: DOMRect): number | null => {
+    const cap = caption?.getBoundingClientRect();
+    if (!cap || !cap.height || cap.top - s.top >= s.height / 2) return null;
+    return cap.bottom - s.top;
+  };
+
   const insets = (): Insets => {
     const s = stageBox.getBoundingClientRect();
-    const cap = q<HTMLElement>("[data-pv-caption]")?.getBoundingClientRect();
-    const narrow = s.width < 700;
+    const narrow = phoneMq.matches;
     // The controls over the bottom of the card: the bar on desktop; on phones (where the bar is
     // display: contents) the round Back and Next buttons, the tabs sitting under the card.
     let controlsTop = s.bottom;
@@ -271,11 +290,13 @@ export function mountPartsViewer(root: HTMLElement): () => void {
       const r = el?.getBoundingClientRect();
       if (r && r.height > 0 && r.top < s.bottom && r.bottom > s.top) controlsTop = Math.min(controlsTop, r.top);
     }
-    // On phones the caption sits over the top of the card; keep the engine clear of it.
-    // On phones also leave the callout a line of its own between the caption and the engine.
+    // On phones the caption sits over the top of the card; keep the engine clear of it. In a
+    // card taller than wide also leave the callout a line of its own between the caption and the
+    // engine; a phone on its side has room for it beside the engine instead.
+    const capBottom = captionBottomOnTop(s);
     const top =
-      narrow && cap && cap.top - s.top < s.height / 2
-        ? cap.bottom - s.top + 8 + callout!.offsetHeight * 0.8
+      capBottom !== null
+        ? capBottom + 8 + (s.height > s.width ? callout!.offsetHeight * 0.8 : 0)
         : Math.max(16, s.height * 0.05);
     return {
       top,
@@ -287,15 +308,20 @@ export function mountPartsViewer(root: HTMLElement): () => void {
 
   type Anchor = { x: number; y: number; l: number; t: number; r: number; b: number };
 
-  /** The anchor and bounds on the displayed poster, through object-fit: cover maths. */
-  const posterAnchor = (): Anchor | null => {
-    if (!poster || !poster.naturalWidth) return null;
-    const set = poster.naturalWidth / poster.naturalHeight < 1 ? POSTERS.tall : POSTERS.wide;
+  /**
+   * The anchor and bounds on the displayed poster, through object-fit: cover maths. Before the
+   * poster has loaded, or when it failed to load, the stored fractions are laid on the stage at
+   * the size the poster would have, so the callout keeps its place and stays usable.
+   */
+  const posterAnchor = (): Anchor => {
+    const loaded = !!poster && poster.naturalWidth > 0;
+    const tall = loaded ? poster.naturalWidth / poster.naturalHeight < 1 : tallPosterMq.matches;
+    const set = tall ? POSTERS.tall : POSTERS.wide;
     const s = set.stops[family];
     const W = stageBox.clientWidth;
     const Hh = stageBox.clientHeight;
-    const iw = poster.naturalWidth;
-    const ih = poster.naturalHeight;
+    const iw = loaded ? poster.naturalWidth : set.w;
+    const ih = loaded ? poster.naturalHeight : set.h;
     const k = Math.max(W / iw, Hh / ih);
     const ox = (W - iw * k) / 2;
     const oy = (Hh - ih * k) / 2;
@@ -321,20 +347,24 @@ export function mountPartsViewer(root: HTMLElement): () => void {
     const W = stageBox.clientWidth;
     const Hh = stageBox.clientHeight;
     const ins = insets();
-    const narrow = W < 700;
-    const capBox = q<HTMLElement>("[data-pv-caption]");
-    const safeTop = narrow && capBox ? capBox.offsetTop + capBox.offsetHeight + 8 : 12;
-    const safe = { l: 12, t: safeTop, r: W - 12, b: Hh - ins.bottom - 4 };
+    const s = stageBox.getBoundingClientRect();
     const bw = callout!.offsetWidth;
     const bh = callout!.offsetHeight;
+    // The label stays inside the card, above the controls and, when the caption sits over the top
+    // of the card (phones), below the caption. The controls win if the two ever meet: a covered
+    // caption is better than a covered button.
+    const capBottom = captionBottomOnTop(s);
+    const safe = { l: 12, t: capBottom !== null ? capBottom + 8 : 12, r: W - 12, b: Hh - ins.bottom - 4 };
+    if (safe.t > safe.b - bh) safe.t = Math.max(12, safe.b - bh);
+    // Picture missing (poster failed to load, no WebGL): keep the label, drop the line and dot.
+    stageBox.classList.toggle("is-picture-missing", mode === "poster" && !!poster && poster.complete && !poster.naturalWidth);
     const side = A.x < (A.l + A.r) / 2 ? -1 : 1;
     const gap = clamp(W * 0.05, 28, 72);
     const lift = clamp(Hh * 0.13, 34, 90);
 
     // Things the label must not cover: the caption (and the bar, kept out by `safe`).
-    const s = stageBox.getBoundingClientRect();
     const obstacles: Rect[] = [];
-    const cap = q<HTMLElement>("[data-pv-caption]")?.getBoundingClientRect();
+    const cap = caption?.getBoundingClientRect();
     if (cap && cap.width) obstacles.push({ l: cap.left - s.left - 6, t: cap.top - s.top - 6, r: cap.right - s.left + 6, b: cap.bottom - s.top + 6 });
     const engine: Rect = { l: A.l, t: A.t, r: A.r, b: A.b };
     const overlap = (a: Rect, b: Rect) => Math.max(0, Math.min(a.r, b.r) - Math.max(a.l, b.l)) * Math.max(0, Math.min(a.b, b.b) - Math.max(a.t, b.t));
@@ -563,8 +593,9 @@ export function mountPartsViewer(root: HTMLElement): () => void {
       else setMoving(false);
       return;
     }
-    // Settle on the nearest stop, nudged by a flick.
-    const projected = az + clamp(vel * 140, -60, 60);
+    // Settle on the nearest stop, nudged by a flick; no flick if the pointer rested before release.
+    const flick = e.timeStamp - lastT > 120 ? 0 : vel;
+    const projected = az + clamp(flick * 140, -60, 60);
     const k = Math.round((projected - 45) / 90);
     const to = 45 + k * 90;
     select(mod(k, 4), "drag", 0, false);
@@ -619,24 +650,39 @@ export function mountPartsViewer(root: HTMLElement): () => void {
 
   /* ---------------------------------------------------------------- WebGL start */
 
+  /** Sizes the renderer and re-fits the camera; returns false when nothing it depends on changed. */
+  let fitAt = "";
   const sizeStage = () => {
-    if (!stage) return;
+    if (!stage) return false;
     const w = stageBox.clientWidth;
     const h = stageBox.clientHeight;
     const coarse = window.matchMedia("(pointer: coarse)").matches || w < 700;
     const dpr = Math.min(window.devicePixelRatio || 1, coarse ? 1.5 : 2);
-    stage.setSize(w, h, dpr, insets());
+    const ins = insets();
+    const key = [w, h, dpr, ins.top, ins.right, ins.bottom, ins.left].join(",");
+    if (key === fitAt) return false;
+    fitAt = key;
+    stage.setSize(w, h, dpr, ins);
     dirty = true;
     kick();
+    return true;
   };
 
-  const ro = new ResizeObserver(() => {
-    movePill(false);
-    if (stage) sizeStage();
-    else if (!moving) placeCallout();
-  });
-  ro.observe(stageBox);
+  // Relayout when the card changes size, and also when the tabs, the callout or the caption do:
+  // web fonts arriving after mount widen the tabs (the pill must follow) and change the label's
+  // size (the callout is placed from its measured box, and on phones the fit keeps room for it).
+  const relayout = () => {
+    if (disposed) return;
+    if (pillTarget() !== pillAt) movePill(false);
+    else root.classList.toggle("is-tabs-scroll", tablist.scrollWidth > tablist.clientWidth + 1);
+    if (sizeStage()) return; // the next frame renders and places the callout
+    if (!moving) placeCallout();
+  };
+  const ro = new ResizeObserver(relayout);
+  for (const el of [stageBox, tablist, callout, caption, ...tabs]) if (el) ro.observe(el);
   cleanups.push(() => ro.disconnect());
+  void document.fonts?.ready.then(relayout);
+  on(phoneMq, "change", relayout);
 
   const fallback = () => {
     mode = "poster";
@@ -703,7 +749,13 @@ export function mountPartsViewer(root: HTMLElement): () => void {
   select(family, "init");
   pillReady = true;
   root.classList.add("is-mounted");
-  if (poster && !poster.complete) poster.addEventListener("load", () => mode === "poster" && placeCallout(), { once: true });
+  if (poster) {
+    const onPoster = () => {
+      if (mode === "poster" && !moving) placeCallout();
+    };
+    on(poster, "load", onPoster);
+    on(poster, "error", onPoster);
+  }
   placeCallout();
   const onMq = () => {
     if (reduced()) anim = null;

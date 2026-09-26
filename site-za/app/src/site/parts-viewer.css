@@ -13,7 +13,8 @@
 .c-pv__stage {
   position: relative;
   isolation: isolate;
-  height: clamp(26rem, 64svh, 42rem);
+  /* The 82svh cap keeps the whole card (engine and bar) in view on short landscape screens. */
+  height: min(clamp(26rem, 64svh, 42rem), 82svh);
   border-radius: var(--radius-panel);
   touch-action: pan-y;
   -webkit-user-select: none;
@@ -100,6 +101,12 @@
   opacity: 1;
   transition-duration: 240ms;
   transition-delay: 60ms;
+}
+/* Poster mode with the picture missing (it failed to load): the label stays, the line and the
+   dot on the engine go. */
+.c-pv__stage.is-picture-missing .c-pv__lines,
+.c-pv__stage.is-picture-missing .c-pv__poster {
+  visibility: hidden;
 }
 .c-pv__leader {
   fill: none;
@@ -353,7 +360,10 @@
 
 /* ---------- phones: a taller-than-wide frame, the bar across the card ---------- */
 @media (max-width: 699px) {
+  /* A definite width keeps the card full width when the height cap applies (a phone on its
+     side): with width auto, aspect-ratio would carry the cap over and shrink the card to a strip. */
   .c-pv__stage {
+    width: 100%;
     height: auto;
     min-width: 0;
     max-height: 82svh;
@@ -428,6 +438,20 @@
   }
   .c-pv__hint {
     display: none;
+  }
+}
+/* A phone on its side: the card is wide and short, so the caption moves down between the two
+   round turn buttons and the height above the engine goes to the engine and the callout. */
+@media (max-width: 699px) and (orientation: landscape) {
+  .c-pv__caption {
+    top: auto;
+    bottom: 2rem;
+    left: 50%;
+    width: max-content;
+    max-width: calc(100% - 7.75rem);
+    border-radius: var(--radius-pill);
+    text-align: center;
+    translate: -50% 50%;
   }
 }
 

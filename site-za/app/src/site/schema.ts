@@ -153,6 +153,9 @@ export const Door = z.object({
       illustration: short,
       families: z.array(z.object({ key: short, name: short })).length(4),
       hint: short,
+      /** Names of the round turn buttons beside the family tabs (the dialog has its own Back and Next). */
+      previousFamily: short,
+      nextFamily: short,
       prompt: short,
       promptContinue: short,
       requestTitle: short,
