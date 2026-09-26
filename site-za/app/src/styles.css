@@ -46,6 +46,7 @@
 @import "./site/parts-viewer.css";
 @import "./site/dither.css";
 @import "./site/parts-request.css";
+@import "./site/search.css";
 
 @custom-variant dark (&:where([data-theme="default-dark"], [data-theme="default-dark"] *));
 
