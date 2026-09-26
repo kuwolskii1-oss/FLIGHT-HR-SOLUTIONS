@@ -229,6 +229,11 @@
     "aog": "AOG parts request from the Flight Hour Solution website. Part number: [part number]. Quantity: [quantity]. Condition: [new, overhauled, serviceable or as removed]. Aircraft type: [aircraft type]. Deliver to: [airport]. Contact: [name, company, phone].",
     "charter": "Charter quote request from the Flight Hour Solution website. Passengers or cargo: [which]. From: [airport or city]. To: [airport or city]. Dates: [dates]. One-way or return: [which]. Passenger count, or cargo weight and dimensions: [details]. Contact: [name, organisation, phone]."
   },
+  "aogWhatsApp": {
+    "before": "For an aircraft on ground, the quickest route is WhatsApp.",
+    "link": "Send this request on WhatsApp",
+    "after": ". You can still send the form as well."
+  },
   "footer": {
     "legalLine": "Flight Hour Solution (Pty) Ltd, registration number 2026/294346/07, South Africa.",
     "disclaimer": "Flight Hour Solution is not the operating airline. Flights are operated by licensed operators under their own Air Operator Certificates.",

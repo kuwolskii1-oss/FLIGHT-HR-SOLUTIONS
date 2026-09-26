@@ -17,11 +17,29 @@ const AUTOCOMPLETE: Record<string, string> = {
 };
 const EMAIL = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 
+/** A WhatsApp deep link with a prepared message, or null until the number exists in site.json. */
+export function whatsappLink(number: string | undefined, text: string | undefined): string | null {
+  const digits = (number ?? "").replace(/[^0-9]/g, "");
+  return digits && text ? `https://wa.me/${digits}?text=${encodeURIComponent(text)}` : null;
+}
+
+/** Dispatched on the form by src/site/parts/fill-form.ts after it wrote fields. */
+const PREFILL_EVENT = "fhs:prefill";
+/** Dispatched on the form (bubbling) once the enquiry was sent; the Parts request dialog then
+ * clears its draft (src/site/parts/request.ts). */
+const SENT_EVENT = "fhs:sent";
+
 /**
  * Renders any form described in the content (one per door, the waitlist and the general form).
  * Validation happens on submit: the first invalid field shakes, shows its message and takes
  * focus. A sent form shows the success check; without an email provider the visitor's mail
  * program opens with the request prepared for the door's inbox.
+ *
+ * Prefill: the Parts page's request dialog writes its answers straight into this uncontrolled
+ * form, then dispatches `fhs:prefill` on it. The listener clears stale errors for the names it
+ * wrote and keeps the filled note shown at the top of the form (fill-form reveals the same note
+ * with plain DOM first, so it also works in the preview, which runs no React). Once the form is
+ * sent it dispatches `fhs:sent`, so the dialog starts the next request empty.
  */
 export function DoorForm({ form, route, id = form.id, whatsappTemplate }: { form: Form; route: RouteKey; id?: string; whatsappTemplate?: string }) {
   const [status, setStatus] = useState<Status>({ kind: "idle" });
@@ -29,8 +47,28 @@ export function DoorForm({ form, route, id = form.id, whatsappTemplate }: { form
   const [values, setValues] = useState<Record<string, string>>(() =>
     Object.fromEntries(form.fields.filter((f) => f.type === "segmented" && f.options?.length).map((f) => [f.name, ""])),
   );
+  const [filled, setFilled] = useState("");
   const formRef = useRef<HTMLFormElement>(null);
   const inbox = site.company.emails[route];
+
+  useEffect(() => {
+    const el = formRef.current;
+    if (!el) return;
+    const onPrefill = (e: Event) => {
+      const detail = (e as CustomEvent<{ names?: string[]; note?: string }>).detail ?? {};
+      const names = Array.isArray(detail.names) ? detail.names : [];
+      if (names.length)
+        setErrors((prev) => {
+          if (!names.some((n) => n in prev)) return prev;
+          const next = { ...prev };
+          for (const n of names) delete next[n];
+          return next;
+        });
+      if (detail.note) setFilled(detail.note);
+    };
+    el.addEventListener(PREFILL_EVENT, onPrefill);
+    return () => el.removeEventListener(PREFILL_EVENT, onPrefill);
+  }, [status.kind]);
   const visible = form.fields.filter((f) => !f.showWhen || values[f.showWhen.field] === f.showWhen.equals);
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -64,6 +102,7 @@ export function DoorForm({ form, route, id = form.id, whatsappTemplate }: { form
         data: { formId: form.id, formTitle: form.title, route, lines, replyTo: replyTo || `${route}@flighthoursolution.com`, consent: true, website: String(fd.get("website") ?? "") },
       });
       if (result.ok) {
+        el.dispatchEvent(new CustomEvent(SENT_EVENT, { bubbles: true, detail: { formId: form.id } }));
         setStatus({ kind: "sent" });
         el.reset();
       } else {
@@ -117,6 +156,7 @@ export function DoorForm({ form, route, id = form.id, whatsappTemplate }: { form
         <Segmented
           name={f.name}
           idBase={fieldId(f)}
+          labelledBy={`${fieldId(f)}-label`}
           options={f.options ?? []}
           value={values[f.name] ?? ""}
           onChange={(val) => setValues((s) => ({ ...s, [f.name]: val }))}
@@ -127,17 +167,30 @@ export function DoorForm({ form, route, id = form.id, whatsappTemplate }: { form
     return <input className="c-field__input t-input" type={f.type === "checkbox" ? "text" : f.type} inputMode={f.type === "tel" ? "tel" : f.type === "number" ? "numeric" : undefined} {...common} />;
   };
 
-  const wa = whatsappTemplate && site.company.whatsapp ? `https://wa.me/${site.company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(whatsappTemplate)}` : null;
+  const wa = whatsappLink(site.company.whatsapp, whatsappTemplate);
   const aog = visible.find((f) => f.name === "aog");
   const aogYes = aog && /^yes/i.test(values.aog ?? "");
 
   return (
     <form ref={formRef} className="c-form" onSubmit={onSubmit} noValidate aria-labelledby={`${id}-title`} id={id}>
+      {/* Hidden until a request from the engine families viewer fills the form (fill-form.ts). */}
+      <p className="c-form__filled" data-form-filled tabIndex={-1} role="status" hidden={!filled}>
+        <span className="c-form__filled-icon" aria-hidden="true">
+          <svg viewBox="0 0 20 20" width={14} height={14} fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" focusable="false">
+            <path d="M4.5 10.5l3.6 3.6L15.5 6.5" />
+          </svg>
+        </span>
+        <span data-form-filled-text>{filled}</span>
+      </p>
       {form.intro ? <p className="c-form__intro">{form.intro}</p> : null}
       <div className="c-form__grid">
         {visible.map((f) => (
           <div className={`c-field t-input-wrap${errors[f.name] ? " is-error" : ""}${f.width === "half" ? " c-field--half" : ""}`} key={f.name} data-field={f.name}>
-            <label className="c-field__label" htmlFor={f.type === "segmented" || f.type === "radio" ? `${fieldId(f)}-0` : fieldId(f)}>
+            <label
+              className="c-field__label"
+              id={f.type === "segmented" || f.type === "radio" ? `${fieldId(f)}-label` : undefined}
+              htmlFor={f.type === "segmented" || f.type === "radio" ? `${fieldId(f)}-0` : fieldId(f)}
+            >
               {f.label} {f.required ? null : <small>(optional)</small>}
             </label>
             {control(f)}
@@ -154,11 +207,11 @@ export function DoorForm({ form, route, id = form.id, whatsappTemplate }: { form
       </div>
       {aogYes && wa ? (
         <p className="c-form__aog" role="status">
-          For an aircraft on ground, the quickest route is WhatsApp.{" "}
+          {site.aogWhatsApp.before}{" "}
           <a href={wa} target="_blank" rel="noopener noreferrer">
-            Send this request on WhatsApp
+            {site.aogWhatsApp.link}
           </a>
-          . You can still send the form as well.
+          {site.aogWhatsApp.after}
         </p>
       ) : null}
       <div className="u-visually-hidden" aria-hidden="true">

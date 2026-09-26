@@ -5,7 +5,26 @@ import { useEffect, useRef } from "react";
  * radio group, with the transitions.dev sliding pill behind the checked option. The inputs are
  * uncontrolled on purpose: a tap that lands before hydration still sticks.
  */
-export function Segmented({ name, idBase, options, value, onChange, invalid, describedBy }: { name: string; idBase: string; options: string[]; value: string; onChange: (v: string) => void; invalid?: boolean; describedBy?: string }) {
+export function Segmented({
+  name,
+  idBase,
+  options,
+  value,
+  onChange,
+  invalid,
+  describedBy,
+  labelledBy,
+}: {
+  name: string;
+  idBase: string;
+  options: string[];
+  value: string;
+  onChange: (v: string) => void;
+  invalid?: boolean;
+  describedBy?: string;
+  /** Id of the visible label that names the radio group. */
+  labelledBy?: string;
+}) {
   const ref = useRef<HTMLDivElement>(null);
   const first = useRef(true);
   useEffect(() => {
@@ -34,7 +53,7 @@ export function Segmented({ name, idBase, options, value, onChange, invalid, des
     return () => window.removeEventListener("resize", onResize);
   }, [value, options.length]);
   return (
-    <div ref={ref} className={`c-segmented t-tabs${invalid ? " is-invalid" : ""}`} role="radiogroup" aria-describedby={describedBy} aria-invalid={invalid || undefined}>
+    <div ref={ref} className={`c-segmented t-tabs${invalid ? " is-invalid" : ""}`} role="radiogroup" aria-labelledby={labelledBy} aria-describedby={describedBy} aria-invalid={invalid || undefined}>
       <span className="t-tabs-pill" aria-hidden="true" />
       {options.map((o, i) => (
         <label className="c-segmented__option t-tab" key={o}>

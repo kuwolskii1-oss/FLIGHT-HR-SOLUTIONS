@@ -63,6 +63,10 @@
     "addRow": "Add another part",
     "removeRow": "Remove part",
     "alsoIn": "Also in this request",
+    "partCount": {
+      "one": "1 part",
+      "other": "{n} parts"
+    },
     "next": "Next",
     "back": "Back",
     "finish": "Finish request",
