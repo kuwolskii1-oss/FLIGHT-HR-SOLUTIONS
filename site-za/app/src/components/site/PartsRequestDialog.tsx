@@ -2,7 +2,7 @@ import { memo, type SVGProps } from "react";
 import type { Door } from "@/site/types";
 import type { PvConfig } from "@/site/parts/request";
 import { site } from "@/site/data/site";
-import { AOG_WHATSAPP, whatsappLink } from "./DoorForm";
+import { whatsappLink } from "./DoorForm";
 import { Close } from "./Icons";
 import { Pictogram } from "./Pictogram";
 
@@ -32,10 +32,12 @@ export function partsViewerConfig(door: Door): PvConfig | null {
     const f = door.form.fields.find((x) => x.name === name);
     return f ? { label: f.label, options: f.options, hint: f.hint } : undefined;
   };
+  const [partNumber, quantity, condition, aog] = ["partNumber", "quantity", "condition", "aog"].map(pick);
+  if (!partNumber || !quantity || !condition || !aog) return null;
   return {
     families: v.families,
     strings: v,
-    fields: { partNumber: pick("partNumber"), quantity: pick("quantity"), condition: pick("condition"), aog: pick("aog") },
+    fields: { partNumber, quantity, condition, aog },
     whatsapp: site.company.whatsapp,
     template: site.whatsappTemplates.aog,
   };
@@ -219,11 +221,11 @@ export const PartsRequestDialog = memo(function PartsRequestDialog({ door }: { d
               fills the message with the part numbers typed so far. */}
           <div role="status" className="c-preq__wa-live">
             <p className="c-form__aog c-preq__wa" data-preq-wa hidden>
-              {AOG_WHATSAPP.before}{" "}
+              {site.aogWhatsApp.before}{" "}
               <a href={wa ?? undefined} data-preq-wa-link target="_blank" rel="noopener noreferrer">
-                {AOG_WHATSAPP.link}
+                {site.aogWhatsApp.link}
               </a>
-              {AOG_WHATSAPP.after}
+              {site.aogWhatsApp.after}
             </p>
           </div>
           <Foot back={v.back} next={v.finish} />

@@ -17,13 +17,6 @@ const AUTOCOMPLETE: Record<string, string> = {
 };
 const EMAIL = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 
-/** The AOG WhatsApp line under the form (the Parts request dialog shows the same line). */
-export const AOG_WHATSAPP = {
-  before: "For an aircraft on ground, the quickest route is WhatsApp.",
-  link: "Send this request on WhatsApp",
-  after: ". You can still send the form as well.",
-};
-
 /** A WhatsApp deep link with a prepared message, or null until the number exists in site.json. */
 export function whatsappLink(number: string | undefined, text: string | undefined): string | null {
   const digits = (number ?? "").replace(/[^0-9]/g, "");
@@ -32,6 +25,9 @@ export function whatsappLink(number: string | undefined, text: string | undefine
 
 /** Dispatched on the form by src/site/parts/fill-form.ts after it wrote fields. */
 const PREFILL_EVENT = "fhs:prefill";
+/** Dispatched on the form (bubbling) once the enquiry was sent; the Parts request dialog then
+ * clears its draft (src/site/parts/request.ts). */
+const SENT_EVENT = "fhs:sent";
 
 /**
  * Renders any form described in the content (one per door, the waitlist and the general form).
@@ -42,7 +38,8 @@ const PREFILL_EVENT = "fhs:prefill";
  * Prefill: the Parts page's request dialog writes its answers straight into this uncontrolled
  * form, then dispatches `fhs:prefill` on it. The listener clears stale errors for the names it
  * wrote and keeps the filled note shown at the top of the form (fill-form reveals the same note
- * with plain DOM first, so it also works in the preview, which runs no React).
+ * with plain DOM first, so it also works in the preview, which runs no React). Once the form is
+ * sent it dispatches `fhs:sent`, so the dialog starts the next request empty.
  */
 export function DoorForm({ form, route, id = form.id, whatsappTemplate }: { form: Form; route: RouteKey; id?: string; whatsappTemplate?: string }) {
   const [status, setStatus] = useState<Status>({ kind: "idle" });
@@ -105,6 +102,7 @@ export function DoorForm({ form, route, id = form.id, whatsappTemplate }: { form
         data: { formId: form.id, formTitle: form.title, route, lines, replyTo: replyTo || `${route}@flighthoursolution.com`, consent: true, website: String(fd.get("website") ?? "") },
       });
       if (result.ok) {
+        el.dispatchEvent(new CustomEvent(SENT_EVENT, { bubbles: true, detail: { formId: form.id } }));
         setStatus({ kind: "sent" });
         el.reset();
       } else {
@@ -209,11 +207,11 @@ export function DoorForm({ form, route, id = form.id, whatsappTemplate }: { form
       </div>
       {aogYes && wa ? (
         <p className="c-form__aog" role="status">
-          {AOG_WHATSAPP.before}{" "}
+          {site.aogWhatsApp.before}{" "}
           <a href={wa} target="_blank" rel="noopener noreferrer">
-            {AOG_WHATSAPP.link}
+            {site.aogWhatsApp.link}
           </a>
-          {AOG_WHATSAPP.after}
+          {site.aogWhatsApp.after}
         </p>
       ) : null}
       <div className="u-visually-hidden" aria-hidden="true">

@@ -12,10 +12,11 @@
 html.is-preq-open {
   overflow: hidden;
 }
-/* Keep the scrollbar's room so the page does not shift sideways behind the panel. Not on the
- * bottom sheet, which must reach both edges. */
+/* Keep the scrollbar's room so the page does not shift sideways behind the panel (request.ts
+ * adds has-preq-gutter only where the scrollbar takes room). Not on the bottom sheet, which must
+ * reach both edges. */
 @media (min-width: 700px) {
-  html.is-preq-open {
+  html.is-preq-open.has-preq-gutter {
     scrollbar-gutter: stable;
   }
 }
@@ -23,6 +24,7 @@ html.is-preq-open {
 /* ---------- the dialog ---------- */
 .c-preq {
   --preq-pad: clamp(1.25rem, 1.05rem + 0.6vw, 1.625rem);
+  --preq-pad-b: var(--preq-pad);
   position: fixed;
   inset: auto;
   left: 50%;
@@ -30,7 +32,8 @@ html.is-preq-open {
   width: min(27.5rem, calc(100vw - 2rem));
   max-width: none;
   height: auto;
-  max-height: calc(100dvh - 2rem);
+  /* request.ts caps the height to the band beside the callout when the viewport is short. */
+  max-height: var(--preq-max-h, calc(100dvh - 2rem));
   margin: 0;
   padding: 0;
   border: 0;
@@ -111,20 +114,32 @@ html.is-preq-open {
   container: preq / inline-size;
   display: grid;
   gap: 1.25rem;
-  max-height: calc(100dvh - 2rem);
-  padding: calc(var(--preq-pad) - 0.25rem) var(--preq-pad) var(--preq-pad);
+  max-height: var(--preq-max-h, calc(100dvh - 2rem));
+  /* The head and each step's buttons carry the top and bottom padding (they stick). */
+  padding: 0 var(--preq-pad);
   border-radius: inherit;
   overflow: auto;
   overscroll-behavior: contain;
 }
 
 /* ---------- head: family chip, title, Close ---------- */
+/* When a long request makes the panel scroll, the head (with Close) and the step's buttons stay
+ * in view; a hairline marks the edge that content scrolls under (request.ts sets is-scrolled and
+ * has-more on the panel). At rest both look exactly as they would without sticking. */
 .c-preq__head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: start;
   gap: 0.7rem 1rem;
-  padding-top: 0.25rem;
+  margin: 0 calc(-1 * var(--preq-pad)) -0.75rem;
+  padding: var(--preq-pad) var(--preq-pad) 0.75rem;
+  background: var(--color-white);
+}
+.c-preq__panel.is-scrolled .c-preq__head {
+  box-shadow: 0 1px 0 var(--color-line);
 }
 .c-preq__family {
   grid-column: 1;
@@ -488,8 +503,13 @@ html.is-preq-open {
     border-radius: 1.625rem;
   }
 }
-.c-preq__wa-live:empty {
-  display: none;
+/* The WhatsApp line's live region stays in the page (so the line is announced when it appears)
+ * but takes no row of the step's grid, and so no gap, while the line is hidden. */
+.c-preq__form {
+  position: relative;
+}
+.c-preq__wa-live:has(> [hidden]) {
+  position: absolute;
 }
 .c-preq .c-preq__wa {
   margin-top: 0;
@@ -500,11 +520,19 @@ html.is-preq-open {
 
 /* ---------- actions ---------- */
 .c-preq__foot {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin-top: 0.35rem;
+  margin: -0.4rem calc(-1 * var(--preq-pad)) 0;
+  padding: 0.75rem var(--preq-pad) var(--preq-pad-b);
+  background: var(--color-white);
+}
+.c-preq__panel.has-more .c-preq__foot {
+  box-shadow: 0 -1px 0 var(--color-line);
 }
 .c-preq__next {
   margin-left: auto;
@@ -555,9 +583,11 @@ html.is-preq-open {
   .c-preq::before {
     display: none !important;
   }
+  .c-preq {
+    --preq-pad-b: calc(var(--preq-pad) + env(safe-area-inset-bottom, 0px));
+  }
   .c-preq__panel {
     max-height: calc(100dvh - 2.5rem);
-    padding-bottom: calc(var(--preq-pad) + env(safe-area-inset-bottom, 0px));
   }
 }
 

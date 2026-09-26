@@ -19,6 +19,8 @@ export type DraftRow = { key: string; family: number; partNumber: string; quanti
 export type Draft = { rows: DraftRow[]; condition: string; aog: string };
 
 export const PREFILL_EVENT = "fhs:prefill";
+/** DoorForm dispatches this on its form (bubbling) once the enquiry was sent; the draft is then cleared. */
+export const SENT_EVENT = "fhs:sent";
 const LINES_ATTR = "prefillLines"; // data-prefill-lines on the part number field
 
 /** A quantity as the whole number the dialog validated (1 when it is missing or malformed). */

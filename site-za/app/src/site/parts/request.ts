@@ -21,13 +21,13 @@
  * attributes relative to the root, and generated ids derive from the dialog's live id.
  */
 import type { Door } from "@/site/types";
-import { fillPartsForm, addPartNumber, filledRows, partLines, quantityOf, type Draft, type DraftRow } from "./fill-form";
+import { fillPartsForm, addPartNumber, filledRows, partLines, quantityOf, SENT_EVENT, type Draft, type DraftRow } from "./fill-form";
 
 export type PvFieldConfig = { label: string; options?: string[]; hint?: string };
 export type PvConfig = {
   families: { key: string; name: string }[];
   strings: NonNullable<Door["viewer"]>;
-  fields: { partNumber?: PvFieldConfig; quantity?: PvFieldConfig; condition?: PvFieldConfig; aog?: PvFieldConfig };
+  fields: { partNumber: PvFieldConfig; quantity: PvFieldConfig; condition: PvFieldConfig; aog: PvFieldConfig };
   whatsapp: string;
   template: string;
 };
@@ -42,11 +42,14 @@ const CLOSE_MS = 150;
 
 type RowError = { field: "partNumber" | "quantity"; msg: string };
 
+/** The section's config, or null when it is missing or incomplete (then the dialog does not mount). */
 export function readPvConfig(root: HTMLElement): PvConfig | null {
   try {
     const cfg = JSON.parse(root.dataset.pvConfig || "null") as PvConfig | null;
-    if (!cfg || !Array.isArray(cfg.families) || !cfg.families.length || !cfg.strings) return null;
-    cfg.fields = cfg.fields || {};
+    if (!cfg || !Array.isArray(cfg.families) || !cfg.families.length || !cfg.strings?.partCount) return null;
+    // Every label, option and message comes from the Parts form's own fields: no fallback copy.
+    const f = cfg.fields;
+    if (!f?.partNumber?.label || !f.quantity?.label || !f.condition?.options?.length || !f.aog?.options?.length) return null;
     return cfg;
   } catch {
     return null;
@@ -70,8 +73,10 @@ function takeSearchHandoff(root: HTMLElement) {
   } catch {}
 }
 
-const plural = (n: number) => `${n} ${n === 1 ? "part" : "parts"}`;
-const lower = (s: string | undefined, fallback: string) => (s || fallback).toLowerCase();
+/** "1 part", "2 parts": the words come from the content (viewer.partCount). */
+const partCount = (strings: PvConfig["strings"], n: number) => (n === 1 ? strings.partCount.one : strings.partCount.other.replace("{n}", String(n)));
+/** A row nobody typed in: no part number and the default quantity. */
+const isBlank = (r: DraftRow) => !r.partNumber.trim() && (r.quantity === "1" || r.quantity === "");
 
 /* Row markup. Labels, names and ids are filled in per row; the icon is the site's thin cross. */
 const ROW_HTML = `<div class="c-field c-preq__pn"><label class="c-field__label"></label><input class="c-field__input t-input" type="text" name="partNumber" spellcheck="false" autocapitalize="characters" autocomplete="off" maxlength="80" aria-required="true"></div><div class="c-field c-preq__qty"><label class="c-field__label"></label><input class="c-field__input t-input" type="text" name="quantity" inputmode="numeric" autocomplete="off" maxlength="6" aria-required="true"></div>`;
@@ -94,8 +99,9 @@ export function mountPartsRequest(root: HTMLElement): () => void {
 
   const S = cfg.strings;
   const names = cfg.families.map((f) => f.name);
-  const pnLabel = cfg.fields.partNumber?.label || "Part number";
-  const qtyLabel = cfg.fields.quantity?.label || "Quantity";
+  const pnLabel = cfg.fields.partNumber.label;
+  const qtyLabel = cfg.fields.quantity.label;
+  const plural = (n: number) => partCount(S, n);
   const forms = Object.fromEntries(STEPS.map((s) => [s, q<HTMLFormElement>(`form[data-preq-step="${s}"]`)])) as Record<StepName, HTMLFormElement | null>;
   const rowsEl = q<HTMLOListElement>("[data-preq-rows]");
   const addBtn = q<HTMLButtonElement>("[data-preq-add]");
@@ -130,7 +136,7 @@ export function mountPartsRequest(root: HTMLElement): () => void {
         .filter((r): r is DraftRow => !!r && validFamily(r.family) && typeof r.partNumber === "string")
         .slice(0, MAX_ROWS)
         .map((r) => ({ key: newKey(), family: r.family, partNumber: r.partNumber.slice(0, 80), quantity: /^\d{0,6}$/.test(String(r.quantity)) ? String(r.quantity) : "1" }));
-      const opts = (f?: PvFieldConfig) => f?.options ?? [];
+      const opts = (f: PvFieldConfig) => f.options ?? [];
       if (typeof saved.condition === "string" && opts(cfg.fields.condition).includes(saved.condition)) state.draft.condition = saved.condition;
       if (typeof saved.aog === "string" && opts(cfg.fields.aog).includes(saved.aog)) state.draft.aog = saved.aog;
       if (saved.step && STEPS.includes(saved.step) && validFamily(saved.stepFamily)) {
@@ -450,12 +456,12 @@ export function mountPartsRequest(root: HTMLElement): () => void {
     const rows = familyRows();
     let first: { key: string; field: RowError["field"] } | null = null;
     if (!filledCount() && rows[0]) {
-      state.errors.set(rows[0].key, { field: "partNumber", msg: `Please fill in ${lower(pnLabel, "part number")}.` });
+      state.errors.set(rows[0].key, { field: "partNumber", msg: `Please fill in ${pnLabel.toLowerCase()}.` });
       first = { key: rows[0].key, field: "partNumber" };
     } else {
       for (const r of rows) {
         if (r.partNumber.trim() && !/^[1-9]\d*$/.test(r.quantity)) {
-          state.errors.set(r.key, { field: "quantity", msg: `Please fill in ${lower(qtyLabel, "quantity")}.` });
+          state.errors.set(r.key, { field: "quantity", msg: `Please fill in ${qtyLabel.toLowerCase()}.` });
           first ??= { key: r.key, field: "quantity" };
         }
       }
@@ -470,118 +476,275 @@ export function mountPartsRequest(root: HTMLElement): () => void {
     return false;
   }
 
+  // While the dialog fades out it is inert, and a late Enter does nothing (Escape never turns
+  // into Finish request).
+  const live = () => state.open && !state.closing;
   on(forms.parts, "submit", (e: Event) => {
     e.preventDefault();
-    if (validateParts()) go("condition", 1);
+    if (live() && validateParts()) go("condition", 1);
   });
   on(forms.condition, "submit", (e: Event) => {
     e.preventDefault();
+    if (!live()) return;
     if (state.draft.condition) return go("aog", 1);
-    choiceError("condition", `Please choose ${lower(cfg.fields.condition?.label, "condition")}.`);
+    choiceError("condition", `Please choose ${cfg.fields.condition.label.toLowerCase()}.`);
     shake(seg("condition"));
     seg("condition")?.querySelector<HTMLInputElement>("input")?.focus();
   });
   on(forms.aog, "submit", (e: Event) => {
     e.preventDefault();
+    if (!live()) return;
     if (state.draft.aog) return finish();
-    choiceError("aog", `Please choose ${lower(cfg.fields.aog?.label, "aircraft on ground")}.`);
+    choiceError("aog", `Please choose ${cfg.fields.aog.label.toLowerCase()}.`);
     shake(seg("aog"));
     seg("aog")?.querySelector<HTMLInputElement>("input")?.focus();
   });
   dialog.querySelectorAll<HTMLButtonElement>("[data-preq-back]").forEach((btn) =>
     on(btn, "click", () => {
       const i = STEPS.indexOf(state.step);
-      if (i > 0) go(STEPS[i - 1], -1);
+      if (live() && i > 0) go(STEPS[i - 1], -1);
     }),
   );
 
   // ---- placement ----------------------------------------------------------------------------
-  // Desktop: beside the callout that opened it (right if there is room, else left, else above or
-  // below), clamped inside the viewport, scaling from the callout. Below 700 px: a bottom sheet
-  // (CSS only; the inline position is cleared).
+  // Desktop: beside the callout that opened it, with a notch pointing at it: to its right when
+  // there is room, else to its left, else under it or over it. When none of those fits where the
+  // page is, the page scrolls (at once, before the panel shows) just enough for the panel to fit
+  // under or over the callout; when even that is too tall for the viewport, the panel takes the
+  // band under (or over) the callout and scrolls inside it. Only a viewport too small for a
+  // useful band gets the position that covers the callout least, and then no notch. Below
+  // 700 px: a bottom sheet (CSS only; the inline position is cleared).
+  type Side = "right" | "left" | "below" | "above" | "";
+  type Box = { left: number; top: number; right: number; bottom: number };
   const M = 16;
   const GAP = 16;
   const NOTCH_END = 26; // keeps the notch clear of the 20 px corners
-  let anchor: { x: number; y: number } | null = null;
-  let side: "right" | "left" | "below" | "above" | "" = "";
-  // The notch and the scale origin both point at the callout's centre.
+  const MIN_BAND = 352; // a shorter band would leave too little of a step in view
+  const panel = q(".c-preq__panel");
+  let placed: Side = "";
+  const openerRect = (): DOMRect | null => {
+    const r = state.opener?.isConnected ? state.opener.getBoundingClientRect() : null;
+    return r && (r.width || r.height) ? r : null;
+  };
+  const overlap = (a: Box, b: Box) =>
+    Math.max(0, Math.min(a.right, b.right) - Math.max(a.left, b.left)) * Math.max(0, Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top));
+  /** The top of the band the panel may use when the page scrolls up and the site header comes back. */
+  const safeTop = () => Math.max(M, (document.querySelector<HTMLElement>(".c-header")?.offsetHeight ?? 0) + 8);
+  /** The viewport, and the top of the band the panel may use (under the site header while it shows). */
+  function frame(h: number) {
+    const vw = document.documentElement.clientWidth;
+    const vh = window.innerHeight;
+    const headerBottom = document.querySelector<HTMLElement>(".c-header")?.getBoundingClientRect().bottom ?? 0;
+    const minTop = headerBottom > 0 && vh - headerBottom - 8 - M >= h ? headerBottom + 8 : M;
+    return { vw, vh, minTop };
+  }
+  /** Scrolls the page by `dy` at once and returns how far it really moved. */
+  function scrollPage(dy: number): number {
+    const y0 = window.scrollY;
+    if (Math.abs(dy) >= 1) window.scrollBy({ top: dy, behavior: "instant" });
+    return window.scrollY - y0;
+  }
+  /** Caps the panel's height (it scrolls inside), or lifts the cap. */
+  function cap(px: number | null) {
+    if (px === null) dialog.style.removeProperty("--preq-max-h");
+    else dialog.style.setProperty("--preq-max-h", `${Math.floor(px)}px`);
+  }
+  /** The panel's full height, up to the viewport (its content scrolls beyond that). */
+  const fullHeight = () => Math.min(panel?.scrollHeight ?? dialog.offsetHeight, window.innerHeight - 2 * M);
+  const head = q(".c-preq__head");
+  /** Marks the edges that content scrolls under, so the sticky head and buttons show a hairline. */
+  function edges() {
+    if (!panel) return;
+    panel.classList.toggle("is-scrolled", panel.scrollTop > 1);
+    panel.classList.toggle("has-more", panel.scrollHeight - panel.clientHeight - panel.scrollTop > 1);
+  }
+  /** Scrolls the panel so `el` sits clear of the sticky head and buttons. */
+  function reveal(el: Element | null | undefined) {
+    if (!panel || !(el instanceof HTMLElement) || el === panel || !panel.contains(el) || !el.getClientRects().length) return;
+    if (panel.scrollHeight <= panel.clientHeight + 1) return;
+    const foot = forms[state.step]?.querySelector<HTMLElement>(".c-preq__foot");
+    if (head?.contains(el) || foot?.contains(el)) return;
+    const pr = panel.getBoundingClientRect();
+    const from = Math.max(pr.top, head?.getBoundingClientRect().bottom ?? pr.top) + 8;
+    const to = Math.min(pr.bottom, foot?.getBoundingClientRect().top ?? pr.bottom) - 8;
+    const ar = el.getBoundingClientRect();
+    if (ar.bottom > to) panel.scrollTop += ar.bottom - to;
+    else if (ar.top < from) panel.scrollTop -= from - ar.top;
+  }
+  /** The focused field stays in view; in the last row at the limit, so does the note under it. */
+  function revealActive() {
+    const active = document.activeElement;
+    reveal(active);
+    if (state.step === "parts" && limitEl?.textContent && rowsEl?.lastElementChild?.contains(active)) reveal(limitEl);
+  }
+  on(panel, "scroll", edges);
+  on(dialog, "focusin", () => window.requestAnimationFrame(revealActive));
+  // The scale origin points at the callout's centre, and so does the notch, but only while the
+  // callout sits clear of the panel and faces the edge the notch is on.
   function aim(left: number, top: number, w: number, h: number) {
     const st = dialog.style;
-    if (!anchor) {
+    const r = openerRect();
+    if (!r) {
       st.removeProperty("transform-origin");
       st.removeProperty("--preq-notch");
       delete dialog.dataset.side;
       return;
     }
+    const ax = r.left + r.width / 2;
+    const ay = r.top + r.height / 2;
+    st.transformOrigin = `${Math.round(Math.max(0, Math.min(w, ax - left)))}px ${Math.round(Math.max(0, Math.min(h, ay - top)))}px`;
+    const within = (v: number, from: number, size: number) => v >= from + NOTCH_END / 2 && v <= from + size - NOTCH_END / 2;
+    const facing =
+      placed === "right"
+        ? left >= r.right - 1 && within(ay, top, h)
+        : placed === "left"
+          ? left + w <= r.left + 1 && within(ay, top, h)
+          : placed === "below"
+            ? top >= r.bottom - 1 && within(ax, left, w)
+            : placed === "above"
+              ? top + h <= r.top + 1 && within(ax, left, w)
+              : false;
     const along = (v: number, size: number) => Math.round(Math.max(NOTCH_END, Math.min(size - NOTCH_END, v)));
-    const ox = Math.max(0, Math.min(w, anchor.x - left));
-    const oy = Math.max(0, Math.min(h, anchor.y - top));
-    st.transformOrigin = `${Math.round(ox)}px ${Math.round(oy)}px`;
-    if (side === "right" || side === "left") st.setProperty("--preq-notch", `${along(anchor.y - top, h)}px`);
-    else st.setProperty("--preq-notch", `${along(anchor.x - left, w)}px`);
-    if (side) dialog.dataset.side = side;
+    if (placed === "right" || placed === "left") st.setProperty("--preq-notch", `${along(ay - top, h)}px`);
+    else st.setProperty("--preq-notch", `${along(ax - left, w)}px`);
+    if (facing) dialog.dataset.side = placed;
     else delete dialog.dataset.side;
   }
-  function place() {
+  function place(first = false) {
     const st = dialog.style;
+    cap(null);
     if (sheetMq.matches) {
       for (const p of ["left", "top", "transform-origin", "--preq-notch"]) st.removeProperty(p);
       delete dialog.dataset.side;
+      placed = "";
       return;
     }
-    const vw = document.documentElement.clientWidth;
-    const vh = window.innerHeight;
     const w = dialog.offsetWidth;
     const h = dialog.offsetHeight;
-    const r = state.opener?.isConnected ? state.opener.getBoundingClientRect() : null;
-    // Stay below the site header when it is showing and the dialog still fits under it.
-    const headerBottom = document.querySelector<HTMLElement>(".c-header")?.getBoundingClientRect().bottom ?? 0;
-    const minTop = headerBottom > 0 && vh - headerBottom - 8 - M >= h ? headerBottom + 8 : M;
+    let { vw, vh, minTop } = frame(h);
     const clampX = (x: number) => Math.max(M, Math.min(x, vw - w - M));
     const clampY = (y: number) => Math.max(minTop, Math.min(y, vh - h - M));
-    let left: number;
-    let top: number;
-    anchor = r && (r.width || r.height) ? { x: r.left + r.width / 2, y: r.top + r.height / 2 } : null;
-    if (!r || !anchor) {
-      side = "";
-      left = clampX((vw - w) / 2);
-      top = clampY((vh - h) / 2);
-    } else if (r.right + GAP + w <= vw - M) {
-      side = "right";
-      left = r.right + GAP;
-      top = clampY(anchor.y - h / 2);
-    } else if (r.left - GAP - w >= M) {
-      side = "left";
-      left = r.left - GAP - w;
-      top = clampY(anchor.y - h / 2);
-    } else {
-      left = clampX(anchor.x - w / 2);
-      side = r.bottom + GAP + h <= vh - M ? "below" : "above";
-      top = side === "below" ? r.bottom + GAP : clampY(r.top - GAP - h);
+    let r = openerRect();
+    let side: Side = "";
+    let left = clampX((vw - w) / 2);
+    let top = clampY((vh - h) / 2);
+    let height = h;
+    if (r) {
+      const fits = (c: DOMRect) => ({
+        right: c.right + GAP + w <= vw - M,
+        left: c.left - GAP - w >= M,
+        below: Math.max(c.bottom + GAP, minTop) + h <= vh - M,
+        above: c.top - GAP - h >= minTop,
+      });
+      let fit = fits(r);
+      const none = () => !fit.right && !fit.left && !fit.below && !fit.above;
+      const top0 = safeTop();
+      // The page scrolls the least that lets the panel sit under the callout or over it. When
+      // the two do not fit one over the other, it scrolls the least that gives the panel the
+      // whole band under or over the callout. Scrolling up brings the site header back, so its
+      // height stays free at the top either way.
+      const room = vh - M - top0 - r.height - GAP;
+      if (first && none() && room >= Math.min(h, MIN_BAND)) {
+        const stack = h <= room;
+        const down = stack ? r.bottom + GAP + h - (vh - M) : r.top - top0;
+        const up = stack ? r.top - GAP - h - top0 : r.bottom - (vh - M);
+        scrollPage(Math.abs(down) <= Math.abs(up) ? down : up);
+        r = openerRect() ?? r;
+        ({ vw, vh, minTop } = frame(h));
+        fit = fits(r);
+      }
+      const ax = r.left + r.width / 2;
+      const ay = r.top + r.height / 2;
+      const bandBelow = vh - M - Math.max(r.bottom + GAP, minTop);
+      const bandAbove = r.top - GAP - Math.max(minTop, top0);
+      if (fit.right) {
+        side = "right";
+        left = r.right + GAP;
+        top = clampY(ay - h / 2);
+      } else if (fit.left) {
+        side = "left";
+        left = r.left - GAP - w;
+        top = clampY(ay - h / 2);
+      } else if (fit.below) {
+        side = "below";
+        left = clampX(ax - w / 2);
+        top = Math.max(r.bottom + GAP, minTop);
+      } else if (fit.above) {
+        side = "above";
+        left = clampX(ax - w / 2);
+        top = r.top - GAP - h;
+      } else if (Math.max(bandBelow, bandAbove) >= MIN_BAND) {
+        side = bandBelow >= bandAbove ? "below" : "above";
+        height = Math.min(h, side === "below" ? bandBelow : bandAbove);
+        cap(height);
+        left = clampX(ax - w / 2);
+        top = side === "below" ? Math.max(r.bottom + GAP, minTop) : r.top - GAP - height;
+      } else {
+        // Too small a viewport for any of those: where the panel covers the callout least.
+        const options: [Side, number, number][] = [
+          ["right", clampX(r.right + GAP), clampY(ay - h / 2)],
+          ["left", clampX(r.left - GAP - w), clampY(ay - h / 2)],
+          ["below", clampX(ax - w / 2), clampY(r.bottom + GAP)],
+          ["above", clampX(ax - w / 2), clampY(r.top - GAP - h)],
+        ];
+        let least = Infinity;
+        for (const [s, x, y] of options) {
+          const covered = overlap({ left: x, top: y, right: x + w, bottom: y + h }, r);
+          if (covered < least) [least, side, left, top] = [covered, s, x, y];
+        }
+      }
     }
-    // A notch only makes sense when the callout is actually beside the edge it points from.
-    if ((side === "right" || side === "left") && (anchor!.y < top + NOTCH_END / 2 || anchor!.y > top + h - NOTCH_END / 2)) side = "";
+    placed = side;
     st.left = `${Math.round(left)}px`;
     st.top = `${Math.round(top)}px`;
-    aim(left, top, w, h);
+    aim(left, top, w, height);
   }
-  // When a step grows (rows added, an error shown) keep the top where it is unless the dialog
-  // would leave the viewport; it never jumps back and forth while someone types.
+  // When a step grows or shrinks (rows added, an error shown, the next step) the panel keeps its
+  // place and never jumps back and forth while someone types. Over the callout it grows upwards;
+  // under the callout it grows downwards, and when it would leave the viewport the page scrolls
+  // with it so the pair stays together, then the panel scrolls inside the band that is left.
+  // Beside the callout (or covering it on a tiny viewport) it only stays inside the viewport.
   function keepInView() {
-    if (!state.open || sheetMq.matches) return;
+    if (!state.open || state.closing || !dialog.open) return;
+    if (!sheetMq.matches) follow();
+    revealActive();
+    edges();
+  }
+  function follow() {
     const w = dialog.offsetWidth;
-    const h = dialog.offsetHeight;
+    const vh = window.innerHeight;
     const left = Number.parseFloat(dialog.style.left || "0");
     let top = Number.parseFloat(dialog.style.top || "0");
-    const max = Math.max(M, window.innerHeight - h - M);
-    if (top > max) {
-      top = max;
-      dialog.style.top = `${Math.round(top)}px`;
+    let height = dialog.offsetHeight;
+    const r = openerRect();
+    const top0 = safeTop();
+    if (placed === "below" && r) {
+      const full = fullHeight();
+      const over = top + full - (vh - M);
+      if (over > 0) top -= scrollPage(Math.min(over, Math.max(0, r.top - top0)));
+      const band = vh - M - top;
+      height = full <= band ? full : Math.max(band, Math.min(full, MIN_BAND));
+      cap(full <= band ? null : height);
+      if (top + height > vh - M) top = vh - M - height;
+    } else if (placed === "above" && r) {
+      const full = fullHeight();
+      const { minTop } = frame(full);
+      let bottom = r.top - GAP;
+      if (bottom - full < minTop) bottom += -scrollPage(-Math.min(minTop - (bottom - full), Math.max(0, vh - M - r.bottom)));
+      const band = bottom - minTop;
+      height = full <= band ? full : Math.max(band, Math.min(full, MIN_BAND));
+      cap(full <= band ? null : height);
+      top = Math.max(M, bottom - height);
+    } else {
+      top = Math.max(M, Math.min(top, vh - height - M));
     }
-    aim(left, top, w, h);
+    dialog.style.top = `${Math.round(top)}px`;
+    aim(left, top, w, height);
   }
+  // The dialog resizes with its step; a capped panel does not, but its step form still does.
   const ro = typeof ResizeObserver !== "undefined" ? new ResizeObserver(() => keepInView()) : null;
   ro?.observe(dialog);
+  for (const s of STEPS) if (forms[s]) ro?.observe(forms[s]!);
   on(window, "resize", () => {
     if (!state.open) return;
     place();
@@ -599,7 +762,8 @@ export function mountPartsRequest(root: HTMLElement): () => void {
     }
     if (state.step === "parts") {
       const inputs = Array.from(rowsEl?.querySelectorAll<HTMLInputElement>('input[name="partNumber"]') ?? []);
-      (inputs.find((i) => !i.value.trim()) ?? inputs[inputs.length - 1])?.focus();
+      // No row for this family (the request is at its 20-row limit): the step heading.
+      (inputs.find((i) => !i.value.trim()) ?? inputs[inputs.length - 1] ?? form.querySelector<HTMLElement>(".c-preq__h"))?.focus();
     } else {
       const bar = seg(state.step);
       (bar?.querySelector<HTMLInputElement>("input:checked") ?? bar?.querySelector<HTMLInputElement>("input"))?.focus();
@@ -611,12 +775,19 @@ export function mountPartsRequest(root: HTMLElement): () => void {
     window.clearTimeout(state.closing);
     state.closing = 0;
     state.family = validFamily(family) ? family : 0;
+    if (state.opener && state.opener !== from) ro?.unobserve(state.opener);
     state.opener = from;
+    // The viewer relabels its callout from pv:draft while the dialog is open ("Continue your
+    // request"); the notch follows the callout's new size, and is dropped if it grows under the panel.
+    if (from) ro?.observe(from);
     state.finishing = false;
     // Reopening for the same family returns to the step the visitor left; another family starts
     // at its part numbers, which is the only step that differs between families.
     if (state.stepFamily !== state.family) state.step = "parts";
-    if (!familyRows().length) state.draft.rows.push({ key: newKey(), family: state.family, partNumber: "", quantity: "1" });
+    // Rows another family was opened with but never typed in are not part of the request, so they
+    // never count toward the 20-row limit. A family with no rows gets a blank one while there is room.
+    state.draft.rows = state.draft.rows.filter((r) => r.family === state.family || !isBlank(r));
+    if (!familyRows().length && state.draft.rows.length < MAX_ROWS) state.draft.rows.push({ key: newKey(), family: state.family, partNumber: "", quantity: "1" });
     state.errors.clear();
     choiceError("condition", "");
     choiceError("aog", "");
@@ -624,6 +795,7 @@ export function mountPartsRequest(root: HTMLElement): () => void {
     renderRows();
     renderAlso();
     dialog.classList.remove("is-open", "is-closing");
+    dialog.inert = false;
     try {
       if (typeof dialog.showModal === "function") dialog.showModal();
       else dialog.setAttribute("open", "");
@@ -632,9 +804,13 @@ export function mountPartsRequest(root: HTMLElement): () => void {
     }
     state.open = true;
     root.dataset.pvBusy = "1";
-    document.documentElement.classList.add("is-preq-open");
+    // Keep the scrollbar's room while the page is locked, so nothing shifts sideways behind the
+    // panel; only where the scrollbar takes room (overlay scrollbars take none).
+    const html = document.documentElement;
+    html.classList.toggle("has-preq-gutter", window.innerWidth - html.clientWidth > 0);
+    html.classList.add("is-preq-open");
     showStep(state.step, 0);
-    place();
+    place(true);
     void dialog.offsetWidth;
     dialog.classList.add("is-open");
     initialFocus();
@@ -645,6 +821,8 @@ export function mountPartsRequest(root: HTMLElement): () => void {
     if (!state.open || state.closing) return;
     dialog.classList.remove("is-open");
     dialog.classList.add("is-closing");
+    // Nothing inside takes input while it fades out.
+    dialog.inert = true;
     const done = () => {
       state.closing = 0;
       if (dialog.open) {
@@ -664,8 +842,9 @@ export function mountPartsRequest(root: HTMLElement): () => void {
     if (!state.open) return;
     state.open = false;
     dialog.classList.remove("is-open", "is-closing");
+    dialog.inert = false;
     delete root.dataset.pvBusy;
-    document.documentElement.classList.remove("is-preq-open");
+    document.documentElement.classList.remove("is-preq-open", "has-preq-gutter");
     if (state.finishing) {
       state.finishing = false;
       afterFinish();
@@ -686,15 +865,19 @@ export function mountPartsRequest(root: HTMLElement): () => void {
     // The next time the dialog opens it starts at part numbers, with the answers kept.
     state.step = "parts";
     save();
-    if (!form) return;
+    if (!form) {
+      // The form was already sent (it shows its thank-you panel): nothing to fill, focus goes back.
+      if (state.opener?.isConnected) state.opener.focus({ preventScroll: true });
+      return;
+    }
     const { note } = fillPartsForm(form, snapshot, names, { note: S.filled });
     const target = note ?? form;
     if (note) note.focus({ preventScroll: true });
     const header = document.querySelector<HTMLElement>(".c-header");
     const y = form.getBoundingClientRect().top + window.scrollY;
-    const goingUp = y < window.scrollY;
-    // Scrolling down hides the fixed header; scrolling up shows it, so leave room for it then.
-    const offset = (goingUp ? header?.offsetHeight ?? 0 : 0) + 24;
+    // Room for the fixed header whichever way the page moves: on the live site it hides on the
+    // way down, but the preview's header stays, and the note must not sit under it.
+    const offset = (header?.offsetHeight ?? 0) + 24;
     window.scrollTo({ top: Math.max(0, y - offset), behavior: reduce() ? "instant" : "smooth" });
     if (!note) target.querySelector<HTMLElement>("textarea, input, select")?.focus({ preventScroll: true });
   }
@@ -725,6 +908,23 @@ export function mountPartsRequest(root: HTMLElement): () => void {
     open(Number(d.family ?? 0), d.from instanceof HTMLElement ? d.from : null);
   });
   on(root, "pv:ready", () => emitDraft(true));
+  // The header search on this page can store a part number and follow a link to #form: only the
+  // hash changes, so the handoff is read then too.
+  on(window, "hashchange", () => takeSearchHandoff(root));
+  // Once the Parts form is sent, the request is done: the draft is cleared and the callout goes
+  // back to its first prompt.
+  on(document, SENT_EVENT, (e: Event) => {
+    const form = e.target instanceof Element ? e.target.closest("form") : null;
+    if (!form || form !== pageForm(root) || state.open) return;
+    state.draft = { rows: [], condition: "", aog: "" };
+    state.step = "parts";
+    state.stepFamily = -1;
+    state.errors.clear();
+    try {
+      window.sessionStorage.removeItem(DRAFT_KEY);
+    } catch {}
+    emitDraft();
+  });
   emitDraft(true);
 
   return () => {
@@ -737,6 +937,6 @@ export function mountPartsRequest(root: HTMLElement): () => void {
       } catch {}
     }
     delete root.dataset.pvBusy;
-    document.documentElement.classList.remove("is-preq-open");
+    document.documentElement.classList.remove("is-preq-open", "has-preq-gutter");
   };
 }

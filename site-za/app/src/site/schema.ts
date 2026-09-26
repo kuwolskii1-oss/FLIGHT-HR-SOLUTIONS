@@ -104,6 +104,9 @@ export const SiteContent = z.object({
   hours: z.object({ aog: str, office: str, timezone: short }),
   currency: z.object({ assets: short, charter: short }),
   whatsappTemplates: z.object({ aog: short, charter: short }),
+  /** The line under a form (and in the Parts request dialog) once "aircraft on ground" is Yes and
+   * company.whatsapp is set: before, the link text, after. */
+  aogWhatsApp: z.object({ before: short, link: short, after: short }),
   footer: z.object({
     legalLine: short,
     disclaimer: short,
@@ -160,6 +163,8 @@ export const Door = z.object({
       addRow: short,
       removeRow: short,
       alsoIn: short,
+      /** "1 part", "{n} parts": the step summary and the "Also in this request" counts. */
+      partCount: z.object({ one: short, other: short.regex(/\{n\}/) }),
       next: short,
       back: short,
       finish: short,

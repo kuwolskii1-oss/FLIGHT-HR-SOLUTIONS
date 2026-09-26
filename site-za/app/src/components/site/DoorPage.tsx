@@ -1,6 +1,4 @@
-import { useEffect, useRef, useState } from "react";
 import type { Door } from "@/site/types";
-import { PartsRequestDialog, partsViewerConfig } from "./PartsRequestDialog";
 import type { RouteKey } from "@/site/enquiry.functions";
 import { site } from "@/site/data/site";
 import { Accordion } from "./Accordion";
@@ -104,9 +102,6 @@ export function DoorPage({
           </div>
         </div>
       </header>
-
-      {/* TEMPORARY for Builder B, the integrator replaces it with PartsViewer. */}
-      {door.viewer ? <TemporaryPartsViewer door={door} /> : null}
 
       {/* The capabilities as one board: each row keeps its section id, so the header's dropdown
           links still land on it. */}
@@ -263,101 +258,5 @@ export function DoorPage({
       />
       <ScrollCraftMount />
     </main>
-  );
-}
-
-/**
- * TEMPORARY for Builder B, the integrator replaces it with PartsViewer. A stand-in for the engine
- * viewer section so the request dialog can be built and tested: the same root (`c-pv`, data-pv,
- * data-pv-config), a family picker in place of the orbit, and a callout button that dispatches
- * `pv:request` as the viewer will. It honours `data-pv-busy` and relabels the callout on
- * `pv:draft`, as the contract asks of the viewer.
- */
-function TemporaryPartsViewer({ door }: { door: Door }) {
-  const ref = useRef<HTMLElement>(null);
-  const [family, setFamily] = useState(0);
-  const [total, setTotal] = useState(0);
-  const v = door.viewer;
-  const config = partsViewerConfig(door);
-  useEffect(() => {
-    const root = ref.current;
-    if (!root) return;
-    let cleanup: (() => void) | undefined;
-    let cancelled = false;
-    const onDraft = (e: Event) => setTotal((e as CustomEvent<{ total: number }>).detail?.total ?? 0);
-    root.addEventListener("pv:draft", onDraft);
-    void import("@/site/parts/request").then((m) => {
-      if (!cancelled) cleanup = m.mountPartsRequest(root);
-    });
-    return () => {
-      cancelled = true;
-      cleanup?.();
-      root.removeEventListener("pv:draft", onDraft);
-    };
-  }, []);
-  if (!v || !config) return null;
-  const request = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const root = ref.current;
-    if (!root || root.dataset.pvBusy) return;
-    root.dispatchEvent(new CustomEvent("pv:request", { detail: { family, from: e.currentTarget } }));
-  };
-  return (
-    <section
-      ref={ref}
-      id={v.id}
-      className="c-pv o-section"
-      data-theme="light"
-      data-pv
-      data-pv-config={JSON.stringify(config)}
-      aria-labelledby={`${v.id}-title`}
-    >
-      <div className="o-container">
-        <div className="c-stackhead">
-          <h2 id={`${v.id}-title`} className="c-h2 c-h2--xl">
-            {v.title}
-          </h2>
-          <p className="c-lead c-muted">{v.intro}</p>
-        </div>
-        <div
-          data-temp-stage
-          style={{
-            position: "relative",
-            minHeight: "clamp(26rem, 64svh, 42rem)",
-            borderRadius: "var(--radius-panel)",
-            background: "var(--color-mist) center / cover no-repeat",
-            overflow: "hidden",
-          }}
-        >
-          <button
-            type="button"
-            className="c-cta-talk c-cta-talk--small"
-            data-temp-callout
-            onClick={request}
-            style={{ position: "absolute", left: "44%", top: "22%" }}
-          >
-            <span>
-              {v.families[family].name}: {total > 0 ? v.promptContinue : v.prompt}
-            </span>
-          </button>
-          <div style={{ position: "absolute", left: "1rem", bottom: "1rem", display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-            {v.families.map((f, i) => (
-              <button
-                type="button"
-                key={f.key}
-                data-temp-family={i}
-                aria-pressed={i === family}
-                onClick={() => {
-                  if (!ref.current?.dataset.pvBusy) setFamily(i);
-                }}
-                style={{ minHeight: "2.75rem", padding: "0 0.9rem", borderRadius: "999px", background: "var(--color-white)", border: 0, fontWeight: i === family ? 700 : 500 }}
-              >
-                {f.name}
-              </button>
-            ))}
-          </div>
-        </div>
-        <PartsRequestDialog door={door} />
-      </div>
-    </section>
   );
 }
