@@ -91,6 +91,16 @@ export const SiteContent = z.object({
     contact: LinkItem,
   }),
   cta: z.object({ primary: Cta, urgent: Cta }),
+  /** The header search (components/site/SiteSearch.tsx). */
+  search: z.object({
+    label: short,
+    placeholder: short,
+    button: short,
+    close: short,
+    suggestions: short,
+    noResults: short,
+    requestPart: short,
+  }),
   hours: z.object({ aog: str, office: str, timezone: short }),
   currency: z.object({ assets: short, charter: short }),
   whatsappTemplates: z.object({ aog: short, charter: short }),
@@ -134,6 +144,30 @@ export const Door = z.object({
   sections: z
     .array(z.object({ id: short, title: short, text: short, bullets: z.array(short).max(6).optional(), href: str.optional() }))
     .min(1),
+  /** Parts only: the engine families viewer and its request dialog (components/site/PartsViewer.tsx). */
+  viewer: z
+    .object({
+      id: short,
+      title: short,
+      intro: short,
+      illustration: short,
+      families: z.array(z.object({ key: short, name: short })).length(4),
+      hint: short,
+      prompt: short,
+      promptContinue: short,
+      requestTitle: short,
+      steps: z.object({ parts: short, condition: short, aog: short }),
+      addRow: short,
+      removeRow: short,
+      alsoIn: short,
+      next: short,
+      back: short,
+      finish: short,
+      close: short,
+      rowLimit: short,
+      filled: short,
+    })
+    .optional(),
   process: z.object({ title: short, intro: str.optional(), steps: z.array(Step).min(3) }).optional(),
   verify: z.object({ title: short, intro: str.optional(), items: z.array(Item).min(3) }).optional(),
   fullScope: z.object({ title: short, intro: str.optional(), groups: z.array(z.object({ title: short, items: z.array(short) })) }).optional(),

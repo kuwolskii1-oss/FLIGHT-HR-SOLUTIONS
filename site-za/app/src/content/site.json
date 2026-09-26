@@ -40,54 +40,131 @@
         "label": "Engines",
         "href": "/engines",
         "items": [
-          { "label": "Technical status and records", "href": "/engines#status" },
-          { "label": "LLPs and remaining life", "href": "/engines#llp" },
-          { "label": "Shop visits and MRO coordination", "href": "/engines#shop-visits" },
-          { "label": "Maintenance reserves", "href": "/engines#reserves" },
-          { "label": "Lease return and redelivery", "href": "/engines#lease-return" },
-          { "label": "Engine sales and leasing", "href": "/engines#sales-leasing" },
-          { "label": "Engine 360", "href": "/engines/engine-360", "note": "Early access" }
+          {
+            "label": "Technical status and records",
+            "href": "/engines#status"
+          },
+          {
+            "label": "LLPs and remaining life",
+            "href": "/engines#llp"
+          },
+          {
+            "label": "Shop visits and MRO coordination",
+            "href": "/engines#shop-visits"
+          },
+          {
+            "label": "Maintenance reserves",
+            "href": "/engines#reserves"
+          },
+          {
+            "label": "Lease return and redelivery",
+            "href": "/engines#lease-return"
+          },
+          {
+            "label": "Engine sales and leasing",
+            "href": "/engines#sales-leasing"
+          },
+          {
+            "label": "Engine 360",
+            "href": "/engines/engine-360",
+            "note": "Early access"
+          }
         ]
       },
       {
         "label": "Aircraft",
         "href": "/aircraft",
         "items": [
-          { "label": "Buy an aircraft", "href": "/aircraft#buy" },
-          { "label": "Sell an aircraft", "href": "/aircraft#sell" },
-          { "label": "Dry lease", "href": "/aircraft#dry-lease" },
-          { "label": "ACMI and wet lease", "href": "/aircraft#acmi" },
-          { "label": "Aircraft management", "href": "/aircraft#management" }
+          {
+            "label": "Buy an aircraft",
+            "href": "/aircraft#buy"
+          },
+          {
+            "label": "Sell an aircraft",
+            "href": "/aircraft#sell"
+          },
+          {
+            "label": "Dry lease",
+            "href": "/aircraft#dry-lease"
+          },
+          {
+            "label": "ACMI and wet lease",
+            "href": "/aircraft#acmi"
+          },
+          {
+            "label": "Aircraft management",
+            "href": "/aircraft#management"
+          }
         ]
       },
       {
         "label": "Parts",
         "href": "/parts",
         "items": [
-          { "label": "Parts request form", "href": "/parts#form" },
-          { "label": "Parts categories", "href": "/parts#categories" },
-          { "label": "AOG line", "href": "/parts#aog" },
-          { "label": "How we verify parts", "href": "/parts#verify" }
+          {
+            "label": "Parts request form",
+            "href": "/parts#form"
+          },
+          {
+            "label": "Parts by engine family",
+            "href": "/parts#engine-families"
+          },
+          {
+            "label": "Parts categories",
+            "href": "/parts#categories"
+          },
+          {
+            "label": "AOG line",
+            "href": "/parts#aog"
+          },
+          {
+            "label": "How we verify parts",
+            "href": "/parts#verify"
+          }
         ]
       },
       {
         "label": "Charter",
         "href": "/charter",
         "items": [
-          { "label": "Corporate and VIP", "href": "/charter#corporate" },
-          { "label": "Group and pilgrimage", "href": "/charter#group" },
-          { "label": "Government", "href": "/charter#government" },
-          { "label": "Cargo, mining and humanitarian", "href": "/charter#cargo" }
+          {
+            "label": "Corporate and VIP",
+            "href": "/charter#corporate"
+          },
+          {
+            "label": "Group and pilgrimage",
+            "href": "/charter#group"
+          },
+          {
+            "label": "Government",
+            "href": "/charter#government"
+          },
+          {
+            "label": "Cargo, mining and humanitarian",
+            "href": "/charter#cargo"
+          }
         ]
       },
       {
         "label": "Advisory",
         "href": "/advisory",
         "items": [
-          { "label": "Fleet planning and lease versus buy", "href": "/advisory#fleet" },
-          { "label": "Due diligence", "href": "/advisory#due-diligence" },
-          { "label": "Aircraft recovery", "href": "/advisory#recovery" },
-          { "label": "Tenders and investor packs", "href": "/advisory#tenders" }
+          {
+            "label": "Fleet planning and lease versus buy",
+            "href": "/advisory#fleet"
+          },
+          {
+            "label": "Due diligence",
+            "href": "/advisory#due-diligence"
+          },
+          {
+            "label": "Aircraft recovery",
+            "href": "/advisory#recovery"
+          },
+          {
+            "label": "Tenders and investor packs",
+            "href": "/advisory#tenders"
+          }
         ]
       }
     ],
@@ -95,17 +172,49 @@
       "label": "About",
       "href": "/about",
       "items": [
-        { "label": "How we work", "href": "/about#how" },
-        { "label": "Who we serve", "href": "/about#serve" },
-        { "label": "Our commitments", "href": "/about#commitments" },
-        { "label": "Team and company details", "href": "/about#team" }
+        {
+          "label": "How we work",
+          "href": "/about#how"
+        },
+        {
+          "label": "Who we serve",
+          "href": "/about#serve"
+        },
+        {
+          "label": "Our commitments",
+          "href": "/about#commitments"
+        },
+        {
+          "label": "Team and company details",
+          "href": "/about#team"
+        }
       ]
     },
-    "contact": { "label": "Contact", "href": "/contact" }
+    "contact": {
+      "label": "Contact",
+      "href": "/contact"
+    }
   },
   "cta": {
-    "primary": { "label": "Get in touch", "href": "/contact", "kind": "primary" },
-    "urgent": { "label": "AOG on WhatsApp", "href": "/contact#urgent", "kind": "secondary" }
+    "primary": {
+      "label": "Get in touch",
+      "href": "/contact",
+      "kind": "primary"
+    },
+    "urgent": {
+      "label": "AOG on WhatsApp",
+      "href": "/contact#urgent",
+      "kind": "secondary"
+    }
+  },
+  "search": {
+    "label": "Search the site",
+    "placeholder": "Search pages, services and forms",
+    "button": "Search",
+    "close": "Close search",
+    "suggestions": "Where to start",
+    "noResults": "No match. Try a service such as engines, parts, charter or AOG.",
+    "requestPart": "Request part"
   },
   "hours": {
     "aog": "",
@@ -127,36 +236,86 @@
       {
         "title": "Services",
         "links": [
-          { "label": "Engines", "href": "/engines" },
-          { "label": "Aircraft", "href": "/aircraft" },
-          { "label": "Parts", "href": "/parts" },
-          { "label": "Charter", "href": "/charter" },
-          { "label": "Advisory", "href": "/advisory" },
-          { "label": "Engine 360", "href": "/engines/engine-360", "note": "Early access" }
+          {
+            "label": "Engines",
+            "href": "/engines"
+          },
+          {
+            "label": "Aircraft",
+            "href": "/aircraft"
+          },
+          {
+            "label": "Parts",
+            "href": "/parts"
+          },
+          {
+            "label": "Charter",
+            "href": "/charter"
+          },
+          {
+            "label": "Advisory",
+            "href": "/advisory"
+          },
+          {
+            "label": "Engine 360",
+            "href": "/engines/engine-360",
+            "note": "Early access"
+          }
         ]
       },
       {
         "title": "Company",
         "links": [
-          { "label": "About", "href": "/about" },
-          { "label": "How we work", "href": "/about#how" },
-          { "label": "Our commitments", "href": "/about#commitments" },
-          { "label": "Contact", "href": "/contact" }
+          {
+            "label": "About",
+            "href": "/about"
+          },
+          {
+            "label": "How we work",
+            "href": "/about#how"
+          },
+          {
+            "label": "Our commitments",
+            "href": "/about#commitments"
+          },
+          {
+            "label": "Contact",
+            "href": "/contact"
+          }
         ]
       },
       {
         "title": "Legal",
         "links": [
-          { "label": "Privacy notice", "href": "/privacy", "note": "POPIA" },
-          { "label": "Company details", "href": "/legal#company" },
-          { "label": "Charter operator disclaimer", "href": "/legal#disclaimer" },
-          { "label": "PAIA manual", "href": "/legal#paia" }
+          {
+            "label": "Privacy notice",
+            "href": "/privacy",
+            "note": "POPIA"
+          },
+          {
+            "label": "Company details",
+            "href": "/legal#company"
+          },
+          {
+            "label": "Charter operator disclaimer",
+            "href": "/legal#disclaimer"
+          },
+          {
+            "label": "PAIA manual",
+            "href": "/legal#paia"
+          }
         ]
       }
     ],
     "badges": [
-      { "name": "B-BBEE level", "status": "to-confirm" },
-      { "name": "CSD supplier number", "status": "to-confirm" }
+      {
+        "name": "B-BBEE level",
+        "status": "to-confirm"
+      },
+      {
+        "name": "CSD supplier number",
+        "status": "to-confirm"
+      }
     ]
   },
   "sources": [
@@ -170,7 +329,8 @@
     "footer.legalLine: brief section 1 (Companies Act s32 expects registered name, registration number and physical address; address withheld until supplied) and section 3 (registered name and number 2026/294346/07 in the footer).",
     "footer.disclaimer: brief section 4 (FHS is not the operating airline; flights are operated by licensed operators under their own Air Operator Certificates) and CONTENT-SCHEMA.md careful-wording rule.",
     "footer.groups: brief section 3 footer list (group line, privacy notice, PAIA manual if required, charter operator disclaimer) and CONTENT-SCHEMA.md routes (/privacy, /legal with company details, disclaimer and PAIA note; About anchors).",
-    "footer.badges: brief section 3 footer list (B-BBEE and CSD if held) and section 6 (government procurement teams look for a B-BBEE level and a CSD supplier number; show both if FHS holds them); section 1 (list only real approvals and accreditations)."
+    "footer.badges: brief section 3 footer list (B-BBEE and CSD if held) and section 6 (government procurement teams look for a B-BBEE level and a CSD supplier number; show both if FHS holds them); section 1 (list only real approvals and accreditations).",
+    "search: the client's message of 26 September 2026 (a search icon in the header that expands into a search field and takes people to the relevant pages and sections). The results come from this file's navigation and each page's own titles and section headings."
   ],
   "clientToConfirm": [
     "Physical address: the profile says TBA. company.address is empty and the footer legal line carries no address until one is supplied. The brief notes that South African law expects the registered name, registration number and physical address on business websites.",

@@ -7,24 +7,89 @@
   "hero": {
     "headline": "Aircraft parts, verified before you pay",
     "sub": "Send the part number, quantity, condition and delivery airport. We check traceability and release documentation before you pay. Aircraft on ground? Use the WhatsApp line.",
-    "cta": { "label": "Send parts request", "href": "#form", "kind": "primary" }
+    "cta": {
+      "label": "Send parts request",
+      "href": "#form",
+      "kind": "primary"
+    }
   },
-  "who": ["Maintenance controllers", "MROs", "Operators"],
+  "who": [
+    "Maintenance controllers",
+    "MROs",
+    "Operators"
+  ],
   "urgency": "Hours (AOG) to weeks",
-  "bring": ["Part number", "Quantity", "Condition", "Release certificate needed", "Delivery airport"],
+  "bring": [
+    "Part number",
+    "Quantity",
+    "Condition",
+    "Release certificate needed",
+    "Delivery airport"
+  ],
+  "viewer": {
+    "id": "engine-families",
+    "title": "Parts by engine family",
+    "intro": "Turn the engine to your engine family and request parts by part number. When you finish, the request form below is filled in for you.",
+    "illustration": "The engine shown is an illustration, not a specific model.",
+    "families": [
+      {
+        "key": "pw",
+        "name": "Pratt & Whitney"
+      },
+      {
+        "key": "honeywell",
+        "name": "Honeywell"
+      },
+      {
+        "key": "iae",
+        "name": "IAE"
+      },
+      {
+        "key": "cfm",
+        "name": "CFM"
+      }
+    ],
+    "hint": "Turn the engine with the arrow keys, the buttons or by dragging.",
+    "prompt": "Request a part",
+    "promptContinue": "Continue your request",
+    "requestTitle": "Request parts",
+    "steps": {
+      "parts": "Part numbers",
+      "condition": "Condition",
+      "aog": "Aircraft on ground"
+    },
+    "addRow": "Add another part",
+    "removeRow": "Remove part",
+    "alsoIn": "Also in this request",
+    "next": "Next",
+    "back": "Back",
+    "finish": "Finish request",
+    "close": "Close",
+    "rowLimit": "For more than 20 parts, email a spreadsheet to parts@flighthoursolution.com.",
+    "filled": "Filled in from your request: part numbers, quantity, condition and aircraft on ground. Add the rest below."
+  },
   "sections": [
     {
       "id": "categories",
       "title": "Every category, one page",
       "text": "Buyers arrive with a part number, not a category, so every category comes through this one page. Send the number, quantity and condition you need; for a list, paste several lines or email a spreadsheet.",
-      "bullets": ["One form for every category", "New, overhauled, serviceable or as removed", "Several lines or a spreadsheet for RFQs", "Quoted in US dollars"],
+      "bullets": [
+        "One form for every category",
+        "New, overhauled, serviceable or as removed",
+        "Several lines or a spreadsheet for RFQs",
+        "Quoted in US dollars"
+      ],
       "href": "#form"
     },
     {
       "id": "aog",
       "title": "AOG line",
       "text": "For an aircraft on ground, WhatsApp is the urgent channel. Put the part number, quantity, condition and delivery airport in the first message. On the form, answer Yes to AOG and the WhatsApp route appears.",
-      "bullets": ["WhatsApp for an aircraft on ground", "Part number in the first message", "Answer Yes to AOG on the form"],
+      "bullets": [
+        "WhatsApp for an aircraft on ground",
+        "Part number in the first message",
+        "Answer Yes to AOG on the form"
+      ],
       "href": "/contact#urgent"
     }
   ],
@@ -32,11 +97,26 @@
     "title": "How we verify parts",
     "intro": "The checks we make before you pay.",
     "items": [
-      { "title": "Traceability", "text": "The part's documented history, back through each owner." },
-      { "title": "Release documentation", "text": "A release certificate that matches the part and its stated condition." },
-      { "title": "Certification status", "text": "The certification the part carries, and whether it still stands." },
-      { "title": "Incident and accident history", "text": "Whether the part was on an aircraft involved in an incident or accident." },
-      { "title": "Remaining life", "text": "The life left on a life-limited part, checked against its records." }
+      {
+        "title": "Traceability",
+        "text": "The part's documented history, back through each owner."
+      },
+      {
+        "title": "Release documentation",
+        "text": "A release certificate that matches the part and its stated condition."
+      },
+      {
+        "title": "Certification status",
+        "text": "The certification the part carries, and whether it still stands."
+      },
+      {
+        "title": "Incident and accident history",
+        "text": "Whether the part was on an aircraft involved in an incident or accident."
+      },
+      {
+        "title": "Remaining life",
+        "text": "The life left on a life-limited part, checked against its records."
+      }
     ]
   },
   "form": {
@@ -73,7 +153,12 @@
         "label": "Condition",
         "type": "select",
         "required": true,
-        "options": ["New", "Overhauled", "Serviceable", "As removed"],
+        "options": [
+          "New",
+          "Overhauled",
+          "Serviceable",
+          "As removed"
+        ],
         "width": "half"
       },
       {
@@ -81,7 +166,11 @@
         "label": "Release certificate needed",
         "type": "select",
         "required": true,
-        "options": ["Yes", "No", "Not sure"],
+        "options": [
+          "Yes",
+          "No",
+          "Not sure"
+        ],
         "hint": "If you need a particular certificate, name it in the description.",
         "width": "half"
       },
@@ -105,14 +194,41 @@
         "label": "Aircraft on ground",
         "type": "segmented",
         "required": true,
-        "options": ["Yes", "No"],
+        "options": [
+          "Yes",
+          "No"
+        ],
         "hint": "Yes means the aircraft is grounded waiting for this part.",
         "width": "full"
       },
-      { "name": "name", "label": "Name", "type": "text", "required": true, "width": "half" },
-      { "name": "company", "label": "Company", "type": "text", "required": true, "width": "half" },
-      { "name": "email", "label": "Email", "type": "email", "required": true, "width": "half" },
-      { "name": "phone", "label": "Phone", "type": "tel", "required": false, "width": "half" }
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "required": true,
+        "width": "half"
+      },
+      {
+        "name": "company",
+        "label": "Company",
+        "type": "text",
+        "required": true,
+        "width": "half"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true,
+        "width": "half"
+      },
+      {
+        "name": "phone",
+        "label": "Phone",
+        "type": "tel",
+        "required": false,
+        "width": "half"
+      }
     ],
     "submitLabel": "Send parts request",
     "consentText": "I consent to Flight Hour Solution (Pty) Ltd processing these details under POPIA to answer this request, as set out in the privacy notice.",
@@ -123,10 +239,26 @@
     "successText": "Thank you. Your request has gone to the parts inbox and we will reply by email. For an aircraft on ground, use the WhatsApp line as well."
   },
   "related": [
-    { "label": "AOG on WhatsApp", "href": "/contact#urgent", "note": "The urgent channel for an aircraft on ground" },
-    { "label": "Engines", "href": "/engines", "note": "Records, LLPs, shop visits and reserves" },
-    { "label": "Aircraft", "href": "/aircraft", "note": "Buy, sell, dry lease or ACMI" },
-    { "label": "How we work", "href": "/about#how", "note": "Define, verify, structure, execute, monitor" }
+    {
+      "label": "AOG on WhatsApp",
+      "href": "/contact#urgent",
+      "note": "The urgent channel for an aircraft on ground"
+    },
+    {
+      "label": "Engines",
+      "href": "/engines",
+      "note": "Records, LLPs, shop visits and reserves"
+    },
+    {
+      "label": "Aircraft",
+      "href": "/aircraft",
+      "note": "Buy, sell, dry lease or ACMI"
+    },
+    {
+      "label": "How we work",
+      "href": "/about#how",
+      "note": "Define, verify, structure, execute, monitor"
+    }
   ],
   "sources": [
     "slug, name, one-page structure and anchors: brief section 3 (Parts menu: one page with request form, categories, AOG line and how we verify parts; 'Parts is a single page. Buyers arrive with a part number, not a category. Sixteen product categories don't need sixteen pages.') and CONTENT-SCHEMA.md fixed decisions table (anchor ids form, categories, aog, verify; slug value parts).",
@@ -136,7 +268,8 @@
     "sections.aog: brief section 2 (urgency: hours for AOG), brief section 3 (an urgent button visible on every screen, because AOG parts buyers often arrive from a phone), brief section 5 ('An AOG answer of yes routes the request to WhatsApp'), brief section 6 ('Make WhatsApp the urgent channel', pre-filled messages so the first message already contains the part number) and CONTENT-SCHEMA.md (urgent action to /contact#urgent, upgraded to the WhatsApp deep link once the number exists).",
     "verify: brief section 4 ('Add a How we verify parts section. Include traceability, release documentation, certification status, incident and accident history, and remaining life. The profile already lists all of these, and they are what an AOG buyer checks before paying.') and CONTENT-SCHEMA.md page brief (Parts carries verify with those five items). The one-line glosses are plain-word definitions of each term, not added claims.",
     "form: brief section 5 (Parts form fields: part number, description, quantity, condition with the four options, release certificate needed, delivery airport, aircraft type, AOG yes or no; allow several lines or a spreadsheet for RFQs; AOG yes routes to WhatsApp; POPIA consent checkbox and privacy notice link; route each form to the person who handles that line; role addresses such as parts@ and aog@ on the group domain), brief section 6 (currency: parts in USD), and CONTENT-SCHEMA.md forms paragraph (fixed field list, submit label 'Send parts request', routeTo parts@, currencyNote, spreadsheet by email, the AOG WhatsApp line written as the form disclaimer).",
-    "related: brief section 3 (the five doors; Engines and Aircraft menus) and section 4 (the How we work sequence on the About page); CONTENT-SCHEMA.md labels (urgent action 'AOG on WhatsApp' to /contact#urgent) and routes (/about#how)."
+    "related: brief section 3 (the five doors; Engines and Aircraft menus) and section 4 (the How we work sequence on the About page); CONTENT-SCHEMA.md labels (urgent action 'AOG on WhatsApp' to /contact#urgent) and routes (/about#how).",
+    "viewer: the client's message of 26 September 2026 (a turning engine on a stand in a warehouse on the Parts page; the four engine families Pratt & Whitney, Honeywell, IAE and CFM in that order; a request per family by part number and quantity, then condition, then aircraft on ground, then the form below filled in). Condition and AOG options and labels come from the form fields above, so the two cannot drift."
   ],
   "clientToConfirm": [
     "Product categories: the brief says the corporate profile lists sixteen product categories but does not name them, so the categories section names none and there is no 'Full scope' accordion. Supply the list to render it in the categories section and in an accordion for procurement readers.",
@@ -152,6 +285,8 @@
     "Verification wording: the five checks (traceability, release documentation, certification status, incident and accident history, remaining life) are the brief's list, each with a plain one-line gloss. Confirm the glosses describe what the team actually checks on every parts request.",
     "Stock or sourcing: the page describes sourcing against a part number. Confirm whether Flight Hour Solution (Pty) Ltd also holds its own stock, in which case the categories section can say so.",
     "Regions, delivery airports and aircraft types: none are named. The form asks for the delivery airport and the aircraft type as free text. Confirm the regions and aircraft types to name once decided.",
-    "Form choices: approve the AOG label 'Aircraft on ground' with its hint, the part number field accepting several lines, and the description field being optional."
+    "Form choices: approve the AOG label 'Aircraft on ground' with its hint, the part number field accepting several lines, and the description field being optional.",
+    "Engine families: the page names Pratt & Whitney, Honeywell, IAE and CFM as the families you take part requests for, from your message. Confirm the list and the order, and whether any other family belongs there. The names appear as plain text only, with no logos.",
+    "Quantity on the form: a request from the engine viewer can hold several part numbers, each with its own quantity, written one per line in the part number field; the single Quantity field is filled with the total. Confirm, or say if the Quantity field should become optional."
   ]
 }
