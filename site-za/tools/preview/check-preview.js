@@ -78,25 +78,53 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     const reels = await page.evaluate(() => [...document.querySelectorAll("main:not([hidden]) .c-reel")].map((r) => ({ value: r.querySelector(".u-visually-hidden").textContent, reels: r.querySelectorAll(".c-reel__strip").length, landed: r.querySelectorAll(".c-reel__strip.is-landed").length, blurLeft: r.querySelectorAll('.c-reel__strip[style*="filter: url"]').length })));
     check("fact reels turn and land on the true numbers", reels.length === 2 && reels.every((r) => r.reels > 0 && r.landed === r.reels && r.blurLeft === 0), reels);
     await page.screenshot({ path: path.join(shots, "desktop-home-scrolled.png") });
-    // Flight plan: one step at a time, the aircraft flies, each waypoint lights with its step, and
-    // the sky goes from sunset to night.
-    const plan = async (p) => {
+    // How we work: the stairs. All five names on screen from the start; the line walks down them,
+    // lighting each step and showing its words, with the orange dot where it is; it ends at the link.
+    const stairs = async (p) => {
       await page.evaluate((p) => { const s = document.getElementById("home.how"); const top = s.getBoundingClientRect().top + scrollY; window.scrollTo({ top: top + p * (s.offsetHeight - innerHeight), behavior: "instant" }); }, p);
       await sleep(300);
       return page.evaluate(() => {
         const s = document.getElementById("home.how");
-        const op = [...s.querySelectorAll(".c-cuestep")].map((li) => +getComputedStyle(li).opacity);
-        const lit = [...s.querySelectorAll(".c-route__dot")].filter((d) => ((c) => (c.startsWith("color(") ? +c.split(" ")[1] * 255 : +c.match(/\d+/)[0]))(getComputedStyle(d).backgroundColor) > 200).length;
-        return { shown: op.filter((o) => o > 0.5).length, step: op.findIndex((o) => o > 0.5) + 1, lit, jet: getComputedStyle(s.querySelector(".c-route__jet")).transform, sunset: +(+getComputedStyle(s.querySelector(".c-dusk__sunset")).opacity).toFixed(2), stars: +(+getComputedStyle(s.querySelector(".c-dusk__stars")).opacity).toFixed(2) };
+        const li = [...s.querySelectorAll(".c-stair")];
+        const tip = li.map((l) => +getComputedStyle(l.querySelector(".c-stair__tip")).opacity);
+        const onScreen = li.filter((l) => { const r = l.querySelector(".c-stair__title").getBoundingClientRect(); return r.top >= 0 && r.bottom <= innerHeight && +getComputedStyle(l.querySelector(".c-stair__title")).opacity === 1; }).length;
+        const t = li[li.length - 1].querySelector(".c-stair__tip").getBoundingClientRect();
+        const c = s.querySelector(".c-stairs__cta").getBoundingClientRect();
+        return { act: s.getAttribute("data-sc-act"), names: onScreen, lit: li.filter((l) => +getComputedStyle(l.querySelector(".c-stair__text")).opacity > 0.5).length, here: tip.findIndex((o) => o > 0.5) + 1, tips: tip.filter((o) => o > 0.5).length, digits: /\d/.test(s.querySelector(".c-stairs__list").textContent), end: { dx: Math.round(c.right - (t.left + t.width / 2)), dy: Math.round(c.top - t.bottom) } };
       });
     };
-    const f0 = await plan(0.05);
-    const f1 = await plan(0.55);
-    await page.screenshot({ path: path.join(shots, "desktop-flightplan.png") });
-    const f2 = await plan(0.95);
-    check("flight plan: one step at a time, lit with its waypoint", [f0, f1, f2].every((f) => f.shown === 1 && f.lit === f.step) && f0.step === 1 && f1.step === 4 && f2.step === 5, { f0, f1, f2 });
-    check("flight plan: the aircraft flies the route", f0.jet !== f1.jet && f1.jet !== f2.jet, [f0.jet, f1.jet, f2.jet]);
-    check("flight plan: sunset to night", f0.sunset > 0.8 && f2.sunset < 0.1 && f0.stars === 0 && f2.stars > 0.5, { f0: [f0.sunset, f0.stars], f2: [f2.sunset, f2.stars] });
+    const f0 = await stairs(0.05);
+    const f1 = await stairs(0.55);
+    await page.screenshot({ path: path.join(shots, "desktop-stairs.png") });
+    const f2 = await stairs(0.95);
+    check("how we work: pinned, every step name on screen from the start", f0.act === "pin" && f0.names === 5, f0);
+    check("how we work: the line lights the steps in order, one dot where it is", f0.lit === 1 && f0.here === 1 && f1.lit === 4 && f1.here === 4 && f2.lit === 5 && f2.here === 5 && [f0, f1, f2].every((f) => f.tips === 1), { f0, f1, f2 });
+    check("how we work: the line ends at the link, no numbers", Math.abs(f2.end.dx) < 24 && f2.end.dy >= 0 && f2.end.dy < 60 && !f2.digits, f2);
+    // Engine 360: the lens rests on the fan; over the card, the lens follows the pointer and the label
+    // grows beside the cursor; off the card, the label goes and the lens returns to the fan.
+    await page.evaluate(() => { const s = document.getElementById("home.engine-360"); window.scrollTo({ top: s.getBoundingClientRect().top + scrollY - (innerHeight - s.offsetHeight) / 2, behavior: "instant" }); });
+    await page.mouse.move(2, 2);
+    await sleep(700);
+    const e360 = () => page.evaluate(() => {
+      const art = document.querySelector('main[data-page="home"] .c-e360__art'), card = art.parentElement, r = art.getBoundingClientRect();
+      const m = (el) => { const t = new DOMMatrix(getComputedStyle(el).transform); return [Math.round(t.m41), Math.round(t.m42)]; };
+      const lit = card.querySelector(".c-e360__drawing--lit");
+      const c = card.getBoundingClientRect();
+      return { art: [Math.round(r.left), Math.round(r.top), Math.round(r.width), Math.round(r.height)], card: [Math.round(c.left), Math.round(c.top), Math.round(c.right), Math.round(c.bottom)], lens: m(card.querySelector(".c-e360__lens")), tag: m(card.querySelector(".c-peek")), peek: card.classList.contains("is-peeking"), pill: +getComputedStyle(card.querySelector(".c-peek__pill")).opacity, filter: getComputedStyle(lit).filter, filterEl: !!document.getElementById("home.e360-lit"), loaded: lit.complete && lit.naturalWidth > 0 };
+    });
+    const e0 = await e360();
+    const near = (a, b, tol) => Math.abs(a[0] - b[0]) <= tol && Math.abs(a[1] - b[1]) <= tol;
+    check("engine 360: the drawing loads and the lens rests on the fan, lit orange", e0.loaded && !e0.peek && e0.pill === 0 && near(e0.lens, [e0.art[2] * 0.19, e0.art[3] * 0.5], 3) && /home\.e360-lit/.test(e0.filter) && e0.filterEl, e0);
+    const at = [e0.art[0] + e0.art[2] * 0.45, e0.art[1] + e0.art[3] * 0.4].map(Math.round);
+    await page.mouse.move(at[0], at[1], { steps: 8 });
+    await sleep(700);
+    const e1 = await e360();
+    await page.screenshot({ path: path.join(shots, "desktop-e360-hover.png") });
+    check("engine 360: over the card, the label grows beside the cursor and the lens follows", e1.peek && e1.pill === 1 && near(e1.tag, [at[0] + 16, at[1] + 20], 3) && near(e1.lens, [at[0] - e1.art[0], at[1] - e1.art[1]], 4), { at, e1 });
+    await page.mouse.move(at[0], e1.card[1] - 30, { steps: 6 });
+    await sleep(700);
+    const e2 = await e360();
+    check("engine 360: off the card the label goes and the lens returns to the fan", !e2.peek && e2.pill === 0 && near(e2.lens, [e2.art[2] * 0.19, e2.art[3] * 0.5], 3), e2);
     await page.evaluate(() => window.scrollTo(0, 0));
     await sleep(400);
 
@@ -248,7 +276,6 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     // Intro backgrounds: the photographs are the intros' dithered backgrounds, no longer a band below.
     const intros = await page.evaluate(() => ({ bands: document.querySelectorAll(".c-doorimg").length, dithered: [...document.querySelectorAll("main[data-page]")].filter((m) => m.querySelector(".c-page-intro .c-dither")).map((m) => m.dataset.page) }));
     check("intro backgrounds: six dithered intros, no image band", intros.bands === 0 && intros.dithered.length === 6, intros);
-    check("how we work: no number in the step card", await page.evaluate(() => document.querySelectorAll(".c-cuestep__n").length === 0));
     // Page switch: the page leaves at once and the next arrives with its picture already decoded.
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
     await sleep(400);
@@ -318,6 +345,8 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     await page.screenshot({ path: path.join(shots, "mobile-engines.png") });
     const mgrid = await page.evaluate(() => { const g = document.querySelector('main[data-page="engines"] .c-dither__grid'); return (getComputedStyle(g).backgroundImage.match(/dither\/([^"')]+)/) || [])[1]; });
     check("mobile: the intro uses the phone dither grid", /-m\.png$/.test(mgrid || ""), mgrid);
+    const mPeek = await page.evaluate(() => getComputedStyle(document.querySelector('main[data-page="home"] .c-peek')).display);
+    check("mobile: no cursor label on a touch screen", mPeek === "none", mPeek);
     check("mobile: no console/network errors", errs.length === 0, errs.slice(0, 8));
     await ctx.close();
   } catch (e) { check("mobile section completed", false, [String(e).split("\n")[0], ...errs.slice(0, 5)]); }
@@ -349,8 +378,8 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
       return els.filter((el) => parseFloat(getComputedStyle(el).opacity) < 0.99).map((el) => el.className.toString().slice(0, 40));
     });
     check("rm: nothing left hidden on home", hidden.length === 0, hidden.slice(0, 6));
-    const rmPlan = await page.evaluate(() => { const s = document.getElementById("home.how"); return { steps: [...s.querySelectorAll(".c-cuestep")].filter((li) => +getComputedStyle(li).opacity > 0.99).length, lit: [...s.querySelectorAll(".c-route__dot")].filter((d) => ((c) => (c.startsWith("color(") ? +c.split(" ")[1] * 255 : +c.match(/\d+/)[0]))(getComputedStyle(d).backgroundColor) > 200).length }; });
-    check("rm: every step listed, the route shown flown", rmPlan.steps === 5 && rmPlan.lit === 5, rmPlan);
+    const rmPlan = await page.evaluate(() => { const s = document.getElementById("home.how"); const li = [...s.querySelectorAll(".c-stair")]; return { act: s.getAttribute("data-sc-act"), words: li.filter((l) => +getComputedStyle(l.querySelector(".c-stair__text")).opacity > 0.99).length, drawn: li.filter((l) => getComputedStyle(l, "::after").transform === "none" || new DOMMatrix(getComputedStyle(l, "::after").transform).a > 0.99).length, dotAtEnd: +getComputedStyle(li[li.length - 1].querySelector(".c-stair__tip")).opacity > 0.99 }; });
+    check("rm: the stairs flow, drawn to the end with every step's words", rmPlan.act === "flow" && rmPlan.words === 5 && rmPlan.drawn === 5 && rmPlan.dotAtEnd, rmPlan);
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
     await sleep(300);
     await page.locator('.c-header a[href="#about"]').first().click();

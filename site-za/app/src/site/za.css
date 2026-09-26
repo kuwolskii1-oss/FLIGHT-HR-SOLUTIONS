@@ -565,7 +565,7 @@ html.site body {
   margin-top: 0.2rem;
 }
 
-/* Pinned steps: see flightplan.css. */
+/* Pinned steps: see stairs.css. */
 /* Flow variant: the rule is drawn from the act's own progress. */
 .c-steps--flow .c-step {
   max-width: none;
@@ -762,19 +762,6 @@ html.site body {
 .c-trust__text {
   margin-top: 0.4rem;
   color: var(--fg-muted);
-}
-.c-e360 {
-  display: grid;
-  gap: var(--space-medium);
-  align-items: center;
-}
-@media (min-width: 900px) {
-  .c-e360 {
-    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
-  }
-}
-.c-e360__title {
-  margin-top: var(--space-tiny);
 }
 .c-lines {
   display: grid;

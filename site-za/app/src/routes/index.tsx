@@ -4,7 +4,7 @@ import { ClosingBand } from "@/components/site/ClosingBand";
 import { CtaLink, CtaTalk } from "@/components/site/Cta";
 import { Steps } from "@/components/site/Steps";
 import { DoorBoard, type ShapeKind } from "@/components/site/DoorBoard";
-import { EngineDial } from "@/components/site/EngineDial";
+import { EngineBlueprint } from "@/components/site/EngineBlueprint";
 import { GroupRoute } from "@/components/site/GroupRoute";
 import { InfoBoard } from "@/components/site/InfoBoard";
 import { Reel } from "@/components/site/Reel";
@@ -175,17 +175,15 @@ function Index() {
         </div>
       </section>
 
-      {/* 3. How it works: one step per screen. */}
-      <Steps id="how" steps={how.steps} title={how.title} intro={how.intro} theme="light" />
-      <section
-        data-theme="light"
-        className="o-section o-section--tight c-howlink"
-        aria-label="How we work, continued"
-      >
-        <div className="o-container">
-          <CtaLink href={how.cta.href} label={how.cta.label} />
-        </div>
-      </section>
+      {/* 3. How it works: five steps down a staircase that ends at the link to read more. */}
+      <Steps
+        id="how"
+        steps={how.steps}
+        title={how.title}
+        intro={how.intro}
+        theme="light"
+        cta={how.cta}
+      />
 
       {/* 4. Proof: what can be checked. */}
       <section
@@ -218,31 +216,29 @@ function Index() {
         </div>
       </section>
 
-      {/* 5. Engine 360, early access. */}
+      {/* 5. Engine 360, early access: the engine as a drawing still on the board. With a mouse over
+          the card, a lens follows the pointer and an "Early access" label rides beside it. */}
       <section
         id="engine-360"
         data-theme="light"
-        className="o-section c-chapter"
+        className="o-section c-chapter c-e360sec"
         data-sc-act="flow"
         aria-labelledby="e360-title"
       >
-        <div className="o-container c-e360" data-sc-in data-sc-stagger="70">
-          <div className="c-e360__copy">
-            <span className="c-badge">{engine360.badge}</span>
-            <h2 id="e360-title" className="c-h2 c-h2--xl c-e360__title">
-              {engine360.title}
-            </h2>
-            <p
-              className="c-lead c-muted"
-              style={{ marginTop: "var(--space-small)", maxWidth: "40ch" }}
-            >
-              {engine360.text}
-            </p>
-            <div style={{ marginTop: "var(--space-medium)" }}>
-              <CtaLink href={engine360.cta.href} label={engine360.cta.label} />
+        <div className="o-container">
+          <div className="c-e360" data-theme="deep">
+            <div className="c-e360__copy" data-sc-in data-sc-stagger="70">
+              <span className="c-badge">{engine360.badge}</span>
+              <h2 id="e360-title" className="c-h2 c-h2--xl c-e360__title">
+                {engine360.title}
+              </h2>
+              <p className="c-lead c-muted c-e360__text">{engine360.text}</p>
+              <div className="c-e360__cta">
+                <CtaLink href={engine360.cta.href} label={engine360.cta.label} />
+              </div>
             </div>
+            <EngineBlueprint label={engine360.badge} />
           </div>
-          <EngineDial />
         </div>
       </section>
 

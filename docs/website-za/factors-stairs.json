@@ -1,0 +1,1277 @@
+{
+ "/": {
+  "375": {
+   "maxWordsPerScreen": 37,
+   "wordsBands": {
+    "0": 34,
+    "1": 36,
+    "2": 36,
+    "3": 18,
+    "4": 12,
+    "5": 37,
+    "6": 26,
+    "7": 33,
+    "8": 23,
+    "9": 3
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "8": 1
+   },
+   "maxLinksPerScreen": 1,
+   "longestHeadline": {
+    "t": "Part of the Flight Hour Solution group",
+    "n": 7
+   },
+   "longestParagraph": {
+    "t": "From South Africa: engine management, aircraft and",
+    "n": 17
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "span.c-reel__strip",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 11.1,
+   "weightKB": 453,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   },
+   "firstTextMsFast3G": 1904,
+   "firstTextMsSlow3G": 7284
+  },
+  "768": {
+   "maxWordsPerScreen": 48,
+   "wordsBands": {
+    "0": 34,
+    "1": 48,
+    "2": 35,
+    "3": 7,
+    "4": 21,
+    "5": 35,
+    "6": 19,
+    "7": 33,
+    "8": 26
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "8": 1
+   },
+   "maxLinksPerScreen": 1,
+   "longestHeadline": {
+    "t": "Part of the Flight Hour Solution group",
+    "n": 7
+   },
+   "longestParagraph": {
+    "t": "From South Africa: engine management, aircraft and",
+    "n": 17
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "span.c-reel__strip",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 10.2,
+   "weightKB": 453,
+   "videoKB": 0,
+   "consoleErrors": []
+  },
+  "1440": {
+   "maxWordsPerScreen": 48,
+   "wordsBands": {
+    "0": 21,
+    "1": 48,
+    "2": 34,
+    "3": 21,
+    "4": 4,
+    "5": 45,
+    "6": 26,
+    "7": 33,
+    "8": 26
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "1": 1,
+    "8": 1
+   },
+   "maxLinksPerScreen": 1,
+   "longestHeadline": {
+    "t": "Part of the Flight Hour Solution group",
+    "n": 7
+   },
+   "longestParagraph": {
+    "t": "From South Africa: engine management, aircraft and",
+    "n": 17
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "span.c-reel__strip",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 9.8,
+   "weightKB": 549,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   }
+  }
+ },
+ "/engines": {
+  "375": {
+   "maxWordsPerScreen": 92,
+   "wordsBands": {
+    "0": 48,
+    "1": 27,
+    "2": 92,
+    "3": 82,
+    "4": 60,
+    "5": 66,
+    "6": 57,
+    "7": 48,
+    "8": 28,
+    "9": 53
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "9": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Engine decisions, made on verified records",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Remaining life on life-limited parts drives value,",
+    "n": 32
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 11.9,
+   "weightKB": 369,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   },
+   "firstTextMsFast3G": 1604,
+   "firstTextMsSlow3G": 5740
+  },
+  "768": {
+   "maxWordsPerScreen": 132,
+   "wordsBands": {
+    "0": 56,
+    "1": 61,
+    "2": 132,
+    "3": 112,
+    "4": 64,
+    "6": 33,
+    "7": 81,
+    "8": 22
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "8": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Engine decisions, made on verified records",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Remaining life on life-limited parts drives value,",
+    "n": 32
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 10,
+   "weightKB": 373,
+   "videoKB": 0,
+   "consoleErrors": []
+  },
+  "1440": {
+   "maxWordsPerScreen": 144,
+   "wordsBands": {
+    "0": 71,
+    "1": 46,
+    "2": 144,
+    "3": 100,
+    "4": 64,
+    "6": 55,
+    "7": 70,
+    "8": 11
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "7": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Engine decisions, made on verified records",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Remaining life on life-limited parts drives value,",
+    "n": 32
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 9.7,
+   "weightKB": 405,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   }
+  }
+ },
+ "/engines/engine-360": {
+  "375": {
+   "maxWordsPerScreen": 74,
+   "wordsBands": {
+    "0": 45,
+    "1": 74,
+    "2": 37,
+    "3": 66
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "3": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "What it is meant to do",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Engine intelligence on the status and exposure of ",
+    "n": 30
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.o-container",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 5.9,
+   "weightKB": 371,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   },
+   "firstTextMsFast3G": 1620,
+   "firstTextMsSlow3G": 5860
+  },
+  "768": {
+   "maxWordsPerScreen": 76,
+   "wordsBands": {
+    "0": 68,
+    "1": 68,
+    "2": 76,
+    "3": 10
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "2": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "What it is meant to do",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Engine intelligence on the status and exposure of ",
+    "n": 30
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.o-container",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 4.5,
+   "weightKB": 371,
+   "videoKB": 0,
+   "consoleErrors": []
+  },
+  "1440": {
+   "maxWordsPerScreen": 93,
+   "wordsBands": {
+    "0": 43,
+    "1": 76,
+    "2": 93,
+    "3": 10
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "2": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "What it is meant to do",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Engine intelligence on the status and exposure of ",
+    "n": 30
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.o-container",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 4.7,
+   "weightKB": 394,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   }
+  }
+ },
+ "/aircraft": {
+  "375": {
+   "maxWordsPerScreen": 101,
+   "wordsBands": {
+    "0": 49,
+    "1": 27,
+    "2": 101,
+    "3": 94,
+    "4": 54,
+    "5": 68,
+    "6": 37,
+    "7": 84,
+    "8": 53,
+    "9": 27
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "8": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Buy, sell or lease an aircraft",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Buyers are verified before your records move. A bu",
+    "n": 33
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 11.7,
+   "weightKB": 379,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   },
+   "firstTextMsFast3G": 1612,
+   "firstTextMsSlow3G": 5728
+  },
+  "768": {
+   "maxWordsPerScreen": 136,
+   "wordsBands": {
+    "0": 73,
+    "1": 52,
+    "2": 136,
+    "3": 64,
+    "4": 77,
+    "5": 47,
+    "6": 109,
+    "7": 36
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "7": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Buy, sell or lease an aircraft",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Buyers are verified before your records move. A bu",
+    "n": 33
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 9.1,
+   "weightKB": 382,
+   "videoKB": 0,
+   "consoleErrors": []
+  },
+  "1440": {
+   "maxWordsPerScreen": 140,
+   "wordsBands": {
+    "0": 73,
+    "1": 52,
+    "2": 140,
+    "3": 62,
+    "4": 66,
+    "5": 44,
+    "6": 121,
+    "7": 30,
+    "8": 6
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "7": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Buy, sell or lease an aircraft",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Buyers are verified before your records move. A bu",
+    "n": 33
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 9.2,
+   "weightKB": 413,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   }
+  }
+ },
+ "/parts": {
+  "375": {
+   "maxWordsPerScreen": 100,
+   "wordsBands": {
+    "0": 42,
+    "1": 22,
+    "2": 100,
+    "3": 38,
+    "4": 53,
+    "5": 54,
+    "6": 47,
+    "7": 58,
+    "8": 11
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "7": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Aircraft parts, verified before you pay",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Buyers arrive with a part number, not a category, ",
+    "n": 35
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 10.5,
+   "weightKB": 369,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   },
+   "firstTextMsFast3G": 1604,
+   "firstTextMsSlow3G": 5724
+  },
+  "768": {
+   "maxWordsPerScreen": 93,
+   "wordsBands": {
+    "0": 60,
+    "1": 61,
+    "2": 71,
+    "3": 65,
+    "4": 64,
+    "5": 93,
+    "6": 11
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "5": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Aircraft parts, verified before you pay",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Buyers arrive with a part number, not a category, ",
+    "n": 35
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 7.8,
+   "weightKB": 372,
+   "videoKB": 0,
+   "consoleErrors": []
+  },
+  "1440": {
+   "maxWordsPerScreen": 82,
+   "wordsBands": {
+    "0": 60,
+    "1": 61,
+    "2": 70,
+    "3": 64,
+    "4": 82,
+    "5": 77,
+    "6": 11
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "5": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Aircraft parts, verified before you pay",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Buyers arrive with a part number, not a category, ",
+    "n": 35
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 7.8,
+   "weightKB": 404,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   }
+  }
+ },
+ "/charter": {
+  "375": {
+   "maxWordsPerScreen": 90,
+   "wordsBands": {
+    "0": 54,
+    "1": 26,
+    "2": 78,
+    "3": 90,
+    "4": 39,
+    "5": 47,
+    "6": 47,
+    "7": 49
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "7": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Charter flights for passengers and cargo",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Send the route, dates and passenger count or cargo",
+    "n": 33
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 9.9,
+   "weightKB": 367,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   },
+   "firstTextMsFast3G": 1592,
+   "firstTextMsSlow3G": 5728
+  },
+  "768": {
+   "maxWordsPerScreen": 117,
+   "wordsBands": {
+    "0": 70,
+    "1": 49,
+    "2": 117,
+    "3": 50,
+    "4": 67,
+    "5": 71,
+    "6": 6
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "5": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Charter flights for passengers and cargo",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Send the route, dates and passenger count or cargo",
+    "n": 33
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 7.4,
+   "weightKB": 370,
+   "videoKB": 0,
+   "consoleErrors": []
+  },
+  "1440": {
+   "maxWordsPerScreen": 124,
+   "wordsBands": {
+    "0": 77,
+    "1": 42,
+    "2": 124,
+    "3": 35,
+    "4": 82,
+    "5": 64,
+    "6": 6
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "5": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Charter flights for passengers and cargo",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Send the route, dates and passenger count or cargo",
+    "n": 33
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 7.3,
+   "weightKB": 402,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   }
+  }
+ },
+ "/advisory": {
+  "375": {
+   "maxWordsPerScreen": 101,
+   "wordsBands": {
+    "0": 51,
+    "1": 26,
+    "2": 101,
+    "3": 71,
+    "4": 77,
+    "5": 37,
+    "7": 41,
+    "8": 58,
+    "9": 22
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "9": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Fleet planning and lease versus buy",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Preparing a tender, or an investor pack? Tell us t",
+    "n": 38
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 11.7,
+   "weightKB": 368,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   },
+   "firstTextMsFast3G": 1616,
+   "firstTextMsSlow3G": 5736
+  },
+  "768": {
+   "maxWordsPerScreen": 114,
+   "wordsBands": {
+    "0": 71,
+    "1": 64,
+    "2": 114,
+    "3": 86,
+    "4": 28,
+    "5": 7,
+    "6": 61,
+    "7": 47,
+    "8": 6
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "7": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Fleet planning and lease versus buy",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Preparing a tender, or an investor pack? Tell us t",
+    "n": 38
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 9.3,
+   "weightKB": 371,
+   "videoKB": 0,
+   "consoleErrors": []
+  },
+  "1440": {
+   "maxWordsPerScreen": 152,
+   "wordsBands": {
+    "0": 71,
+    "1": 64,
+    "2": 152,
+    "3": 48,
+    "4": 28,
+    "5": 20,
+    "6": 82,
+    "7": 19
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "0": 1,
+    "6": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Fleet planning and lease versus buy",
+    "n": 6
+   },
+   "longestParagraph": {
+    "t": "Preparing a tender, or an investor pack? Tell us t",
+    "n": 38
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.c-door-intro__grid",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 9,
+   "weightKB": 403,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   }
+  }
+ },
+ "/about": {
+  "375": {
+   "maxWordsPerScreen": 107,
+   "wordsBands": {
+    "0": 42,
+    "1": 74,
+    "3": 29,
+    "4": 23,
+    "5": 56,
+    "6": 107,
+    "7": 37,
+    "8": 52,
+    "9": 9,
+    "10": 6
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "10": 1
+   },
+   "maxLinksPerScreen": 1,
+   "longestHeadline": {
+    "t": "Who we are and how we work",
+    "n": 7
+   },
+   "longestParagraph": {
+    "t": "Flight Hour Solution (Pty) Ltd is a South African ",
+    "n": 34
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.o-container",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 12.3,
+   "weightKB": 387,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   },
+   "firstTextMsFast3G": 1584,
+   "firstTextMsSlow3G": 5868
+  },
+  "768": {
+   "maxWordsPerScreen": 136,
+   "wordsBands": {
+    "0": 42,
+    "1": 74,
+    "3": 40,
+    "4": 39,
+    "5": 136,
+    "6": 43,
+    "7": 50,
+    "8": 11
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "8": 1
+   },
+   "maxLinksPerScreen": 2,
+   "longestHeadline": {
+    "t": "Who we are and how we work",
+    "n": 7
+   },
+   "longestParagraph": {
+    "t": "Flight Hour Solution (Pty) Ltd is a South African ",
+    "n": 34
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.o-container",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 10.3,
+   "weightKB": 389,
+   "videoKB": 0,
+   "consoleErrors": []
+  },
+  "1440": {
+   "maxWordsPerScreen": 161,
+   "wordsBands": {
+    "0": 42,
+    "1": 52,
+    "2": 61,
+    "3": 15,
+    "4": 161,
+    "5": 30,
+    "6": 26,
+    "7": 37,
+    "8": 11
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "8": 1
+   },
+   "maxLinksPerScreen": 1,
+   "longestHeadline": {
+    "t": "Who we are and how we work",
+    "n": 7
+   },
+   "longestParagraph": {
+    "t": "Flight Hour Solution (Pty) Ltd is a South African ",
+    "n": 34
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.o-container",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 9.3,
+   "weightKB": 421,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   }
+  }
+ },
+ "/contact": {
+  "375": {
+   "maxWordsPerScreen": 71,
+   "wordsBands": {
+    "0": 58,
+    "1": 71,
+    "2": 41,
+    "3": 28,
+    "4": 34
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "4": 1
+   },
+   "maxLinksPerScreen": 0,
+   "longestHeadline": {
+    "t": "Tell us what you need",
+    "n": 5
+   },
+   "longestParagraph": {
+    "t": "Each door has its own form, routed to the team for",
+    "n": 27
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.o-container",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 6.7,
+   "weightKB": 401,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   },
+   "firstTextMsFast3G": 1764,
+   "firstTextMsSlow3G": 6432
+  },
+  "768": {
+   "maxWordsPerScreen": 71,
+   "wordsBands": {
+    "0": 58,
+    "1": 71,
+    "2": 64,
+    "3": 39
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "3": 1
+   },
+   "maxLinksPerScreen": 0,
+   "longestHeadline": {
+    "t": "Tell us what you need",
+    "n": 5
+   },
+   "longestParagraph": {
+    "t": "Each door has its own form, routed to the team for",
+    "n": 27
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.o-container",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 5.1,
+   "weightKB": 401,
+   "videoKB": 0,
+   "consoleErrors": []
+  },
+  "1440": {
+   "maxWordsPerScreen": 93,
+   "wordsBands": {
+    "0": 36,
+    "1": 93,
+    "2": 61,
+    "3": 42
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 1,
+   "ctaBands": {
+    "3": 1
+   },
+   "maxLinksPerScreen": 0,
+   "longestHeadline": {
+    "t": "Tell us what you need",
+    "n": 5
+   },
+   "longestParagraph": {
+    "t": "Each door has its own form, routed to the team for",
+    "n": 27
+   },
+   "longestAnimationMs": 560,
+   "longestAnimationOn": "div.o-container",
+   "maxStaggerMs": 70,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 4.9,
+   "weightKB": 424,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   }
+  }
+ },
+ "/privacy": {
+  "375": {
+   "maxWordsPerScreen": 187,
+   "wordsBands": {
+    "0": 90,
+    "1": 165,
+    "2": 187,
+    "3": 121,
+    "4": 52
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 0,
+   "ctaBands": {},
+   "maxLinksPerScreen": 0,
+   "longestHeadline": {
+    "t": "Who we share it with",
+    "n": 5
+   },
+   "longestParagraph": {
+    "t": "Form submissions are delivered to our inboxes by a",
+    "n": 55
+   },
+   "longestAnimationMs": 500,
+   "longestAnimationOn": "span.c-roll__line",
+   "maxStaggerMs": 0,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 6.3,
+   "weightKB": 375,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   },
+   "firstTextMsFast3G": 1584,
+   "firstTextMsSlow3G": 5692
+  },
+  "768": {
+   "maxWordsPerScreen": 263,
+   "wordsBands": {
+    "0": 124,
+    "1": 263,
+    "2": 228
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 0,
+   "ctaBands": {},
+   "maxLinksPerScreen": 0,
+   "longestHeadline": {
+    "t": "Who we share it with",
+    "n": 5
+   },
+   "longestParagraph": {
+    "t": "Form submissions are delivered to our inboxes by a",
+    "n": 55
+   },
+   "longestAnimationMs": 500,
+   "longestAnimationOn": "span.c-roll__line",
+   "maxStaggerMs": 0,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 4.2,
+   "weightKB": 375,
+   "videoKB": 0,
+   "consoleErrors": []
+  },
+  "1440": {
+   "maxWordsPerScreen": 235,
+   "wordsBands": {
+    "0": 65,
+    "1": 235,
+    "2": 229,
+    "3": 86
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 0,
+   "ctaBands": {},
+   "maxLinksPerScreen": 0,
+   "longestHeadline": {
+    "t": "Who we share it with",
+    "n": 5
+   },
+   "longestParagraph": {
+    "t": "Form submissions are delivered to our inboxes by a",
+    "n": 55
+   },
+   "longestAnimationMs": 500,
+   "longestAnimationOn": "span.c-roll__line",
+   "maxStaggerMs": 0,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 4.6,
+   "weightKB": 398,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   }
+  }
+ },
+ "/legal": {
+  "375": {
+   "maxWordsPerScreen": 129,
+   "wordsBands": {
+    "0": 72,
+    "1": 129,
+    "2": 79
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 0,
+   "ctaBands": {},
+   "maxLinksPerScreen": 0,
+   "longestHeadline": {
+    "t": "Charter operator disclaimer",
+    "n": 3
+   },
+   "longestParagraph": {
+    "t": "We take care to keep the site accurate and we do n",
+    "n": 39
+   },
+   "longestAnimationMs": 500,
+   "longestAnimationOn": "span.c-roll__line",
+   "maxStaggerMs": 0,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 4.4,
+   "weightKB": 374,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   },
+   "firstTextMsFast3G": 1580,
+   "firstTextMsSlow3G": 5708
+  },
+  "768": {
+   "maxWordsPerScreen": 195,
+   "wordsBands": {
+    "0": 85,
+    "1": 195
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 0,
+   "ctaBands": {},
+   "maxLinksPerScreen": 0,
+   "longestHeadline": {
+    "t": "Charter operator disclaimer",
+    "n": 3
+   },
+   "longestParagraph": {
+    "t": "We take care to keep the site accurate and we do n",
+    "n": 39
+   },
+   "longestAnimationMs": 500,
+   "longestAnimationOn": "span.c-roll__line",
+   "maxStaggerMs": 0,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 3,
+   "weightKB": 374,
+   "videoKB": 0,
+   "consoleErrors": []
+  },
+  "1440": {
+   "maxWordsPerScreen": 195,
+   "wordsBands": {
+    "0": 65,
+    "1": 195,
+    "2": 20
+   },
+   "footerWords": 91,
+   "maxCtasPerScreen": 0,
+   "ctaBands": {},
+   "maxLinksPerScreen": 0,
+   "longestHeadline": {
+    "t": "Charter operator disclaimer",
+    "n": 3
+   },
+   "longestParagraph": {
+    "t": "We take care to keep the site accurate and we do n",
+    "n": 39
+   },
+   "longestAnimationMs": 500,
+   "longestAnimationOn": "span.c-roll__line",
+   "maxStaggerMs": 0,
+   "horizontalOverflow": 0,
+   "scrollHeightVh": 3.2,
+   "weightKB": 397,
+   "videoKB": 0,
+   "consoleErrors": [],
+   "reducedMotion": {
+    "identStill": true,
+    "hiddenContent": [],
+    "pinnedActs": 0
+   }
+  }
+ }
+}

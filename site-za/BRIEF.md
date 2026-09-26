@@ -65,7 +65,9 @@ links only.
 One type family (IBM Plex Sans, mono for labels), six colour roles from the shared brand tokens,
 one accent (orange) that marks actions, no pure black, paper canvas, measure 60 to 65ch, UI
 transitions 150 to 400 ms ease-out from the transitions.dev token scale, focus-visible everywhere,
-no scroll cues, no `01 / 06` counters, no em dashes, no custom cursors, no invented figures.
+no scroll cues, no `01 / 06` counters, no em dashes, no custom cursors (the "Early access" label that
+rides beside the system cursor over the Engine 360 card was the client's request, and the cursor itself
+stays), no invented figures.
 
 ## Reduced motion and no JavaScript
 

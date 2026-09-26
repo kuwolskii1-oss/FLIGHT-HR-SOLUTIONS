@@ -573,7 +573,7 @@
   gap: 0.45rem;
 }
 
-/* Pinned steps (the flight plan): see flightplan.css. */
+/* Pinned steps (the staircase): see stairs.css. */
 /* Flow variant (more than six steps): waypoint rings on the rule. */
 .c-steps--flow .c-step::before {
   width: 1rem;
@@ -594,70 +594,6 @@
   font-size: var(--step-3);
   font-weight: 600;
   line-height: 1.05;
-}
-
-/* ---------- Engine 360: the dial ---------- */
-.c-e360 {
-  gap: var(--space-large);
-}
-@media (min-width: 900px) {
-  .c-e360 {
-    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
-  }
-}
-.c-e360__title {
-  margin-top: var(--space-small);
-}
-.c-dial {
-  --dial-p: clamp(0, (var(--sc-p, 1) - 0.12) * 2.4, 1);
-  position: relative;
-  width: min(100%, 32rem);
-  aspect-ratio: 1;
-  margin-inline: auto;
-}
-.c-dial__ring {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-}
-.c-dial__track {
-  fill: none;
-  stroke: var(--color-line-dark);
-  stroke-width: 1.5;
-}
-.c-dial__arc {
-  fill: none;
-  stroke: var(--color-orange);
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: calc(1000 * (1 - var(--dial-p)));
-}
-.c-dial__tick {
-  stroke: rgb(255 255 255 / 0.3);
-  stroke-width: 1.5;
-}
-.c-dial__tick--major {
-  stroke: var(--color-white);
-  stroke-width: 2.5;
-}
-.c-dial__face {
-  position: absolute;
-  inset: 8.5%;
-  overflow: hidden;
-  border-radius: 50%;
-  box-shadow:
-    0 0 0 1px rgb(255 255 255 / 0.14),
-    0 40px 90px -30px rgb(0 0 0 / 0.75);
-}
-.c-dial__face img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 42%;
-  transform: scale(1.4);
 }
 
 /* ---------- the group as a route ---------- */
@@ -731,12 +667,6 @@
 .c-groute__label--to {
   right: 30%;
   top: 83%;
-}
-
-/* The link that continues the pinned steps sits on the same night ground. */
-.c-howlink {
-  padding-top: 0;
-  background: var(--color-navy-deep);
 }
 
 /* ---------- inner page intros ---------- */
@@ -1130,9 +1060,7 @@ html.has-curtain .c-footer {
 
 /* ---------- reduced motion: every device at its end state ---------- */
 @media (prefers-reduced-motion: reduce) {
-  .c-dial,
   .c-groute {
-    --dial-p: 1;
     --route-p: 1;
   }
   .c-footer__skyimg,

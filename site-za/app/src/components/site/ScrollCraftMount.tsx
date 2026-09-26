@@ -34,6 +34,16 @@ export function ScrollCraftMount() {
         el.removeAttribute("data-sc-dwell");
       });
     }
+    // A pinned stage taller than the screen would be cut off for as long as it is pinned (long
+    // steps on a short laptop screen): that act flows instead. Measured before the engine sizes
+    // anything, when each stage is exactly as tall as its content needs.
+    document.querySelectorAll<HTMLElement>('[data-sc-act="pin"]').forEach((el) => {
+      const stage = el.querySelector<HTMLElement>("[data-sc-stage]");
+      if (stage && stage.offsetHeight > window.innerHeight + 1) {
+        el.setAttribute("data-sc-act", "flow");
+        el.removeAttribute("data-sc-span");
+      }
+    });
     const mount = () => {
       if (cancelled || !window.ScrollCraft) return;
       window.ScrollCraft.mount(document.body);

@@ -1,0 +1,176 @@
+/* Engine 360 as a drawing still on the board: the home section (routes/index.tsx) and its
+ * EngineBlueprint (components/site/EngineBlueprint.tsx).
+ *
+ * The product is being designed, so it is shown as a design drawing: the engine's cross-section
+ * on its own blueprint ground (--color-blueprint is sampled from the image, so the drawing needs
+ * no edge), under the board's faint grid. The drawing sits dimmed; a lens turns the lines under it
+ * orange. The lens rests on the fan, and with a mouse in the section it follows the pointer while
+ * the "Early access" label grows out of the cursor and rides beside it. The lens is a window: the
+ * lens box and the lit drawing inside it move in opposite directions by transform, so following
+ * the pointer repaints nothing. The label is fixed to the viewport and placed by the same script.
+ *
+ * Motion: the label grows in 260 ms (opacity, scale from 0.6 at the cursor, blur) and shrinks back
+ * in 150 ms; the lens and label trail the pointer by easing each frame towards it. Under reduced
+ * motion both follow the pointer exactly and the label only fades. */
+
+.c-e360 {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  min-height: clamp(30rem, 72svh, 44rem);
+  padding: clamp(2rem, 1rem + 4vw, 4.5rem);
+  border-radius: var(--radius-panel);
+  background: var(--color-blueprint);
+  color: var(--fg);
+}
+/* the board's grid, over the drawing and under the words */
+.c-e360::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background:
+    linear-gradient(rgb(255 255 255 / 0.05) 1px, transparent 1px) 0 0 / 2.5rem 2.5rem,
+    linear-gradient(90deg, rgb(255 255 255 / 0.05) 1px, transparent 1px) 0 0 / 2.5rem 2.5rem;
+  pointer-events: none;
+}
+.c-e360__copy {
+  position: relative;
+  z-index: 2;
+  max-width: min(35rem, 44%);
+}
+.c-e360__title {
+  margin-top: var(--space-tiny);
+  color: var(--fg);
+}
+.c-e360__text {
+  max-width: 34ch;
+  margin-top: var(--space-small);
+  text-wrap: pretty;
+}
+.c-e360__cta {
+  margin-top: var(--space-medium);
+}
+
+/* ---------- the drawing and its lens ---------- */
+.c-e360__art {
+  /* the lens's radius */
+  --lens: clamp(6.5rem, 11vw, 10.5rem);
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 37%;
+  width: 84%;
+  aspect-ratio: 1800 / 1018;
+  container-type: size;
+  transform: translateY(-50%);
+}
+.c-e360__drawing {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.62;
+}
+.c-e360__lens {
+  position: absolute;
+  top: calc(-1 * var(--lens));
+  left: calc(-1 * var(--lens));
+  width: calc(2 * var(--lens));
+  height: calc(2 * var(--lens));
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-mask-image: radial-gradient(closest-side, black 52%, transparent);
+  mask-image: radial-gradient(closest-side, black 52%, transparent);
+  will-change: transform;
+}
+.c-e360__lit {
+  position: absolute;
+  top: var(--lens);
+  left: var(--lens);
+  width: 100cqw;
+  height: 100cqh;
+  will-change: transform;
+}
+.c-e360__drawing--lit {
+  opacity: 1;
+}
+.c-e360__filter {
+  position: absolute;
+  overflow: hidden;
+}
+
+@media (max-width: 899px) {
+  .c-e360 {
+    align-items: start;
+    min-height: 0;
+    padding-bottom: 0;
+  }
+  .c-e360__copy {
+    max-width: 35rem;
+  }
+  .c-e360__art {
+    position: relative;
+    top: auto;
+    left: -4%;
+    width: 170%;
+    margin-top: var(--space-medium);
+    transform: none;
+  }
+}
+
+/* ---------- the label beside the cursor ---------- */
+.c-peek {
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+.c-peek__pill {
+  display: block;
+  padding: 0.45rem 0.8rem 0.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-orange);
+  box-shadow: 0 10px 24px -10px rgb(8 11 28 / 0.55);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  opacity: 0;
+  filter: blur(2px);
+  transform: scale(0.6);
+  transform-origin: 0 0;
+  transition:
+    opacity 150ms var(--ease-out),
+    transform 150ms var(--ease-out),
+    filter 150ms var(--ease-out);
+}
+.is-peeking .c-peek__pill {
+  opacity: 1;
+  filter: none;
+  transform: none;
+  transition-duration: 260ms;
+  transition-timing-function: var(--ease-out-strong);
+}
+/* no cursor, no label; and none while the page is leaving */
+@media (hover: none) {
+  .c-peek {
+    display: none;
+  }
+}
+html.is-leaving .c-peek {
+  visibility: hidden;
+}
+@media (prefers-reduced-motion: reduce) {
+  .c-peek__pill,
+  .is-peeking .c-peek__pill {
+    filter: none;
+    transform: none;
+    transition: opacity 120ms linear;
+  }
+}

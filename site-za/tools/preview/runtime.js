@@ -1,6 +1,7 @@
 /* Preview runtime: plain-script ports of the site's client behaviour (header, menu, accordions,
-   segmented controls, form validation, the ident) plus a hash router that shows one page at a
-   time. Forms send nothing from the preview. */
+   segmented controls, form validation, the ident, the page transition, the Engine 360 lens and
+   label, the pin-or-flow measure) plus a hash router that shows one page at a time. Forms send
+   nothing from the preview. */
 (function () {
   "use strict";
   var cfg = JSON.parse(document.getElementById("preview-config").textContent);
@@ -482,6 +483,58 @@
     });
   }
 
+  // ---- Engine 360: the lens and the label beside the cursor (EngineBlueprint.tsx) ----------------------
+  // The lens rests on the fan; with a mouse over the card it follows the pointer, and the "Early
+  // access" label grows out of the cursor and rides beside it. Both move by transform only.
+  $$(".c-e360__art").forEach(function (art) {
+    var lens = $(".c-e360__lens", art), lit = $(".c-e360__lit", art), card = art.parentElement, tag = $(".c-peek", card);
+    if (!lens || !lit || !card || !tag) return;
+    var REST_X = 0.19, REST_Y = 0.5, LENS = 0.2, TAG = 0.35, OFF_X = 16, OFF_Y = 20;
+    var w = 0, h = 0, lx = 0, ly = 0, lxTo = 0, lyTo = 0, tx = 0, ty = 0, txTo = 0, tyTo = 0, px = 0, py = 0;
+    var inside = false, raf = 0;
+    var paint = function () {
+      lens.style.transform = "translate3d(" + lx + "px," + ly + "px,0)";
+      lit.style.transform = "translate3d(" + -lx + "px," + -ly + "px,0)";
+      tag.style.transform = "translate3d(" + tx + "px," + ty + "px,0)";
+    };
+    var frame = function () {
+      raf = 0;
+      lx += (lxTo - lx) * (reduce ? 1 : LENS); ly += (lyTo - ly) * (reduce ? 1 : LENS);
+      tx += (txTo - tx) * (reduce ? 1 : TAG); ty += (tyTo - ty) * (reduce ? 1 : TAG);
+      paint();
+      if (Math.abs(lxTo - lx) + Math.abs(lyTo - ly) + Math.abs(txTo - tx) + Math.abs(tyTo - ty) > 0.4) raf = requestAnimationFrame(frame);
+    };
+    var kick = function () { if (!raf) raf = requestAnimationFrame(frame); };
+    var aim = function () {
+      var r = art.getBoundingClientRect();
+      lxTo = px - r.left; lyTo = py - r.top; txTo = px + OFF_X; tyTo = py + OFF_Y;
+    };
+    var home = function () { lxTo = w * REST_X; lyTo = h * REST_Y; };
+    var showTag = function () { inside = true; aim(); tx = txTo; ty = tyTo; card.classList.add("is-peeking"); kick(); };
+    var hideTag = function () { if (!inside) return; inside = false; card.classList.remove("is-peeking"); home(); kick(); };
+    card.addEventListener("pointerenter", function (e) { if (e.pointerType !== "mouse") return; px = e.clientX; py = e.clientY; showTag(); });
+    card.addEventListener("pointermove", function (e) {
+      if (e.pointerType !== "mouse") return;
+      px = e.clientX; py = e.clientY;
+      if (!inside) { showTag(); return; }
+      aim(); kick();
+    });
+    card.addEventListener("pointerleave", hideTag);
+    window.addEventListener("scroll", function () {
+      if (!inside) return;
+      var r = card.getBoundingClientRect();
+      if (px < r.left || px > r.right || py < r.top || py > r.bottom) { hideTag(); return; }
+      aim(); kick();
+    }, { passive: true });
+    var measure = function () {
+      w = art.clientWidth; h = art.clientHeight;
+      if (inside || !w) return;
+      home(); lx = lxTo; ly = lyTo; paint();
+    };
+    if (window.ResizeObserver) new ResizeObserver(measure).observe(art);
+    measure();
+  });
+
   // ---- start ------------------------------------------------------------------------------------------
   if (reduce) {
     root.classList.add("sc-reduce");
@@ -491,6 +544,17 @@
       el.removeAttribute("data-sc-dwell");
     });
   }
+  // A pinned stage taller than the screen would be cut off while pinned: that act flows instead
+  // (ScrollCraftMount.tsx). Each page is shown for a moment to be measured, before the engine sizes
+  // anything.
+  $$('[data-sc-act="pin"]').forEach(function (el) {
+    var stage = $("[data-sc-stage]", el), main = el.closest("main");
+    if (!stage || !main) return;
+    var was = main.hidden;
+    main.hidden = false;
+    if (stage.offsetHeight > window.innerHeight + 1) { el.setAttribute("data-sc-act", "flow"); el.removeAttribute("data-sc-span"); }
+    main.hidden = was;
+  });
   var start = parseHash();
   show(start.slug, start.section, { first: true, noScroll: true });
   if (window.ScrollCraft) window.ScrollCraft.mount(document.body);

@@ -523,26 +523,7 @@ html.site body {
   color: var(--color-ink);
 }
 
-/* ---------- Engine 360: the dial on white ---------- */
-.c-dial__track {
-  stroke: var(--color-line-strong);
-}
-.c-dial__tick {
-  stroke: rgb(18 21 46 / 0.22);
-}
-.c-dial__tick--major {
-  stroke: var(--color-navy);
-}
-.c-dial__face {
-  box-shadow:
-    0 0 0 1px var(--color-line),
-    0 40px 80px -40px rgb(18 21 46 / 0.5);
-}
-
-/* ---------- the link after the steps, and the closing band ---------- */
-.c-howlink {
-  background: var(--bg);
-}
+/* ---------- the closing band ---------- */
 .c-band {
   background: var(--color-mist);
   text-align: center;

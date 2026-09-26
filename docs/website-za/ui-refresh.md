@@ -393,3 +393,109 @@ Home's first text moved by 20 to 60 ms against the sunset pass (the stylesheet g
 0.4 KB compressed); on the local server, which speaks HTTP/1.1, the stylesheet shares the line with
 the 121 KB application script, which the live host's HTTP/2 prioritises behind it. Raw
 measurements: `factors-dither.json`.
+
+## Sixth pass: the stairs and the blueprint (26 September 2026)
+
+The client still did not like How we work and asked for it and the Engine 360 section to be
+redesigned. In the new Engine 360 the cursor should grow an "Early access" label that hovers beside
+it, but only in that section. The client also sent a second video on design
+(youtu.be/eQEaFxM9Z4Y); its sponsored segment, 7:23 to 8:50, was ignored.
+
+### What the video asks of a design
+
+- **Visual debt.** Every element added brings new decisions to manage. Keep what earns its place.
+- **Compression.** One decision doing several jobs. In the video, one orange dot is at once the
+  focal point, the location, the active state and part of the identity.
+- **Exit point.** Design where the eye leaves a layout, not only where it enters.
+- **Memory hierarchy.** What people remember afterwards, which a distinctive device decides more
+  than size.
+- **Explanation tax.** Every second spent working out how a design communicates is taken from what
+  it communicates.
+- **Hidden rules.** Dark and dense reads heavy, isolation adds weight and the top of a frame is
+  heavy. Tight and heavy type urges, loose and thin type calms. Controlled imbalance beats perfect
+  symmetry. Layering runs impact, then message, then meaning.
+
+### How we work: the stairs
+
+The dusk panel carried a sky, a sun, stars, an arc, an aircraft and five waypoints with labels, and
+it named the current step twice: visual debt, and a picture to decode. It was centred and static,
+and it ended on nothing.
+
+- **The stairs.** The step names stand on stairs that run from the heading down to the link
+  "Read how we work". All five names are on screen from the start, so the process reads at a glance
+  and the five words are what stays.
+- **The line.** One line walks down the stairs as the act plays. It lights each name as it reaches
+  it and shows that step's words.
+- **The dot.** An orange dot marks where the line is. It is the mark the navigation uses for the
+  page you are on, so one device does several jobs.
+- **The end.** The line stops at the link, which is the exit point. The route still ahead is dotted.
+- **Composition.** A diagonal from the heading at top left to the link at bottom right: controlled
+  imbalance. The eye enters at the heading and leaves at the link, towards the next section.
+- **Construction** (`Steps.tsx`, `src/site/stairs.css`). The stairs are the steps' own boxes. Each
+  step sits on the diagonal of an n by n grid, with its riser down the box's left edge and its
+  tread along the bottom edge, so the stairs always fit the words. A long name reaches over the
+  empty space to its right, and a step's words may use all the width to the list's edge. On phones
+  the stairs turn steep, each step set in a little.
+- **Pin or flow.** The act pins where it fits one screen and flows where it does not, drawing as it
+  comes into view. `ScrollCraftMount` measures each pinned stage before the engine mounts.
+  - Pinned: Home, Advisory and Engines at 1440 x 900; Home and Advisory at 1366 x 768; every page
+    at 390 x 844.
+  - Flowing: About, which has the longest steps, and screens shorter than about 720 px.
+- **Reduced motion.** The act flows, drawn to the end, with every step's words.
+- **Contrast.** Names not yet reached are a pale slate at 3.3:1 on white, used for large text only.
+- **Home's link.** "Read how we work" moved from its own strip under the steps to where the line
+  ends.
+- **Removed:** `flightplan.css` and the dusk colours it alone used.
+
+### Engine 360: the blueprint
+
+- **The drawing.** The product is being designed, so it is shown as a design drawing. The engine's
+  cross-section, an image already in the set and not used before, sits on its own blueprint ground
+  (`--color-blueprint`, sampled from the image, so the drawing has no edge) under the board's faint
+  grid, on a navy card. The words are on the left; the engine comes in from the right edge with its
+  intake towards them.
+- **The lens.** A lens turns the lines under it orange: an SVG colour filter keeps the navy ground
+  and turns the pale lines orange. At rest it sits on the fan, the section's focal point.
+- **The label.** With a mouse over the card, the lens follows the pointer and an "Early access"
+  label grows out of the cursor and rides beside it. The label grows in 260 ms (opacity, scale from
+  0.6 at the cursor, blur); off the card it shrinks back in 150 ms and the lens returns to the fan.
+- **Only over the card.** The section's white margins do not read as Engine 360, so neither the
+  label nor the lens reacts there.
+- **Touch and reduced motion.** Touch screens get the resting lens and no label. Under reduced
+  motion both follow the pointer exactly and the label only fades.
+- **Not a custom cursor.** The system cursor stays; the label rides beside it at the client's
+  request, so the brief's "no custom cursors" still holds.
+- **Cost.** Everything moves by transform only. The lens is a window: the lens box and the lit
+  drawing inside it move in opposite directions, so following the pointer repaints nothing. One
+  lazy-loaded image replaces the dial's photograph (the cross-section: 41 KB on phones, 133 KB on
+  desktop).
+- **Removed:** `EngineDial.tsx` and the dial styles.
+- **Preview.** `runtime.js` ports the lens, the label and the pin-or-flow measure.
+  `build-preview.mjs` renames the filter reference with the page's other ids.
+
+### Checked (production build served locally)
+
+| Check | Factor | Measured |
+|---|---|---|
+| Words per screen, home | 60 or fewer | 48 at 1440 px, 37 at 375 px |
+| Buttons per screen | 1 | 1 on every page |
+| Longest animation, stagger | 600 ms, 80 ms | 560 ms, 70 ms (the label grows in 260 ms) |
+| Reduced motion | nothing moves, all visible | 0 pinned acts, 0 hidden cues, the stairs drawn to the end |
+| axe-core, 11 routes | 0 | 0 |
+| Console errors, broken links | 0 | 0 |
+| Content validator | 0 findings | 0 |
+| First readable text, Fast 3G | under 2 s | home 1.90 s, other pages 1.58 to 1.76 s |
+| Weight per page | under 1 MB | 367 to 453 KB on a phone |
+| Keyboard, menu and forms | as before | all pass |
+| Preview checks | all pass | 62 pass |
+
+Eight preview checks are new:
+
+- How we work, three checks: it pins with every name on screen; the line lights the steps in order
+  with one dot; it ends at the link and shows no numbers.
+- Engine 360, three checks: the lens rests on the fan, lit orange; over the card the label grows
+  beside the cursor and the lens follows; off the card the label goes and the lens returns.
+- No label on a touch screen.
+- Under reduced motion the stairs show drawn to the end.
+
+Raw measurements: `factors-stairs.json`.

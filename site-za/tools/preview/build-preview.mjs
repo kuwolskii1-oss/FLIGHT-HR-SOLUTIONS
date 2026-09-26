@@ -102,6 +102,11 @@ const transform = ({ html, slug, routeToSlug, wantChrome }) => {
         if (m && ids.has(m[1])) el.setAttribute(a, `url(#${prefix}.${m[1]})`);
       }
     });
+    // an inline url(#id), as the Engine 360 lens's filter reference
+    root.querySelectorAll("[style]").forEach((el) => {
+      const st = el.getAttribute("style");
+      if (st && st.includes("url(#")) el.setAttribute("style", st.replace(/url\(#([^)]+)\)/g, (m, id) => (ids.has(id) ? `url(#${prefix}.${id})` : m)));
+    });
     // aria-labelledby on the root itself
     for (const a of listAttrs) {
       const v = root.getAttribute(a);
