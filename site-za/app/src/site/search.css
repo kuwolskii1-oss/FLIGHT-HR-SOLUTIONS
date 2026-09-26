@@ -10,7 +10,7 @@
 .c-search {
   --search-size: 2.75rem;
   --search-open: 280ms;
-  --search-close: 180ms;
+  --search-close: 200ms;
   flex: none;
   width: var(--search-size);
   height: var(--search-size);
@@ -135,7 +135,9 @@
 .c-search__submit {
   display: grid;
   flex: none;
-  align-items: center;
+  place-items: center;
+  /* 44 px to press even where the navy disc inside is 34 px (phones) */
+  min-width: var(--search-size);
   height: 100%;
   padding: 0;
   border: 0;
@@ -220,6 +222,7 @@
 
 /* Phones: no leading magnifier; Search is a round button with the magnifier (named "Search"). */
 [data-search-mode="narrow"] .c-search__row {
+  gap: 0.625rem;
   padding-left: 1rem;
 }
 [data-search-mode="narrow"] .c-search__glyph {
@@ -228,6 +231,12 @@
 [data-search-mode="narrow"] .c-search__face {
   width: 2.125rem;
   padding: 0;
+}
+/* The button stays 44 px wide to press: its disc sits at its right end, and the empty 10 px on
+   its left lie over the row's gap, so the field loses no width to it. */
+[data-search-mode="narrow"] .c-search__submit {
+  justify-items: end;
+  margin-left: calc(2.125rem - var(--search-size));
 }
 [data-search-mode="narrow"] .c-search__submit-icon {
   display: block;
@@ -342,12 +351,16 @@
   overflow-wrap: anywhere;
 }
 .c-search__page {
+  /* Up to two lines, so a page's own description reads to its end on a phone. */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   overflow: hidden;
   color: var(--color-muted);
   font-size: 0.8125rem;
   line-height: 1.4;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  text-wrap: pretty;
 }
 .c-search__badge {
   margin-left: 0.35rem;
@@ -357,9 +370,15 @@
   background: linear-gradient(transparent 60%, var(--color-glow) 60%);
   color: inherit;
 }
+.c-search__option--request .c-search__title {
+  line-height: 1.45;
+}
 .c-search__pn {
   padding: 0.05em 0.45em;
   border-radius: 6px;
+  /* A long part number that wraps keeps a whole chip on each line. */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
   background: var(--color-haze);
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.02em;
@@ -405,6 +424,17 @@
 .c-search__option--request.is-active .c-search__tile {
   background: var(--color-orange);
   color: var(--color-ink);
+}
+
+/* Phones: the arrow column gives its width to the text (the active row keeps its mist and chip). */
+@media (max-width: 699px) {
+  .c-search__option {
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+    padding-right: 0.75rem;
+  }
+  .c-search__go {
+    display: none;
+  }
 }
 
 /* ---------- header fit: a third round button on phones, a fourth item on desktop ---------- */

@@ -40,7 +40,7 @@ type Prepared = { entry: Entry; title: string[]; titleText: string; page: string
 export const PART_PREFILL_KEY = "fhs-part-prefill";
 const MAX_RESULTS = 8;
 const OPEN_MS = 280;
-const CLOSE_MS = 180;
+const CLOSE_MS = 200;
 const LIST_CLOSE_MS = 150;
 const ANNOUNCE_MS = 700;
 
@@ -71,11 +71,27 @@ export function prepare(entry: Entry): Prepared {
 
 const startsAny = (list: string[], t: string) => list.some((w) => w.startsWith(t));
 
+/** "forms" also finds "form", "leases" "lease": a query word's plural s is dropped when it has to be. */
+const singular = (t: string) => (t.length >= 4 && t.endsWith("s") && !t.endsWith("ss") ? t.slice(0, -1) : "");
+/** The query words and their singulars, for marking matches. */
+export const markTokens = (tokens: string[]) => [...new Set(tokens.flatMap((t) => [t, singular(t)].filter(Boolean)))];
+
+function scoreWord(p: Prepared, t: string) {
+  if (p.title.includes(t)) return 120;
+  if (startsAny(p.title, t)) return 110;
+  if (startsAny(p.page, t)) return 40;
+  if (p.keywords.includes(t)) return 30;
+  if (startsAny(p.keywords, t)) return 25;
+  if (startsAny(p.text, t)) return 10;
+  if (t.length >= 3 && p.titleText.includes(t)) return 8;
+  return 0;
+}
+
 /**
- * Every word of the query must match somewhere. A word that starts a word of the title scores
- * highest (a whole word more), then the page name, then the keywords and the text. A query the
- * title starts with, and a door whose name matches, get a little more. Ties go to the shorter
- * title.
+ * Every word of the query must match somewhere (a plural word may match as its singular). A word
+ * that starts a word of the title scores highest (a whole word more), then the page name, then
+ * the keywords and the text. A query the title starts with, and a door whose name matches, get a
+ * little more. Ties go to the shorter title.
  */
 export function rank(index: Prepared[], query: string): Entry[] {
   const tokens = wordsOf(query);
@@ -87,14 +103,8 @@ export function rank(index: Prepared[], query: string): Entry[] {
     let every = true;
     let inTitle = false;
     for (const t of tokens) {
-      let s = 0;
-      if (p.title.includes(t)) s = 120;
-      else if (startsAny(p.title, t)) s = 110;
-      else if (startsAny(p.page, t)) s = 40;
-      else if (p.keywords.includes(t)) s = 30;
-      else if (startsAny(p.keywords, t)) s = 25;
-      else if (startsAny(p.text, t)) s = 10;
-      else if (t.length >= 3 && p.titleText.includes(t)) s = 8;
+      const one = singular(t);
+      const s = scoreWord(p, t) || (one ? Math.max(0, scoreWord(p, one) - 1) : 0);
       if (!s) {
         every = false;
         break;
@@ -206,6 +216,7 @@ export function mountSiteSearch(root: HTMLElement, options: SearchOptions): () =
   let listTimer = 0;
   let announceTimer = 0;
   let uncoverTimer = 0;
+  let pendingFrame = 0;
 
   const load = () => {
     loading ??= options
@@ -391,7 +402,8 @@ export function mountSiteSearch(root: HTMLElement, options: SearchOptions): () =
     mode = !tokens.length ? "suggest" : found.length ? "results" : "none";
     current = mode === "results" ? found : suggestions.map((entry): Result => ({ kind: "entry", entry }));
 
-    list.replaceChildren(...current.map((r, i) => renderOption(r, i, mode === "results" ? tokens : [])));
+    const marks = mode === "results" ? markTokens(tokens) : [];
+    list.replaceChildren(...current.map((r, i) => renderOption(r, i, marks)));
     empty.hidden = mode !== "none";
     head.hidden = mode === "results";
     const labelledBy = mode === "results" ? label?.id : head.id;
@@ -464,64 +476,99 @@ export function mountSiteSearch(root: HTMLElement, options: SearchOptions): () =
     if (!node.matches("a[href], button, input, select, textarea, [tabindex]")) node.tabIndex = -1;
     node.focus({ preventScroll: true });
   };
+  const shown = (node: Element) => node.getClientRects().length > 0;
 
-  /** A result on this page: scroll to its section and move focus to the section's heading. */
-  const goToSection = (hash: string) => {
-    const target = document.getElementById(decodeURIComponent(hash));
-    if (!target) return false;
-    closeSearch(false, true);
-    scrollToEl(target);
-    const heading = target.matches("h1, h2, h3, h4")
-      ? target
-      : (target.querySelector<HTMLElement>("h1, h2, h3, h4") ?? target);
-    focusQuietly(heading);
-    return true;
+  /**
+   * The link is followed inside this document to a part that is not showing yet (the preview shows
+   * one page at a time): once its page shows, focus goes to the node, as it does on the site.
+   */
+  const focusWhenShown = (node: HTMLElement) => {
+    window.cancelAnimationFrame(pendingFrame);
+    let frames = 90;
+    const tick = () => {
+      if (shown(node)) focusQuietly(node);
+      else if (--frames > 0) pendingFrame = window.requestAnimationFrame(tick);
+    };
+    pendingFrame = window.requestAnimationFrame(tick);
   };
 
   /**
-   * "Request part": on the parts page the part number goes straight into its form; from any
-   * other page it waits in sessionStorage for the parts page to read, and the link goes there.
+   * Where a site href lands from here: the href as this document uses it (hrefFor maps
+   * /parts#verify to the preview's own #parts.verify), whether it is this document, and the element
+   * its fragment names. The fragment is resolved as the browser resolves a link's fragment, from
+   * the mapped href, so the preview's renamed ids resolve as well as the site's.
    */
-  const requestPart = (partNumber: string) => {
-    const field = document.querySelector<HTMLTextAreaElement | HTMLInputElement>(
-      'form.c-form [name="partNumber"]',
-    );
-    if (field) {
-      const lines = field.value.split(/\r?\n/).map((l) => l.trim());
-      if (!lines.includes(partNumber)) {
-        field.value = field.value.trim() ? `${field.value.replace(/\s+$/, "")}\n${partNumber}` : partNumber;
-      }
-      field.dispatchEvent(new Event("input", { bubbles: true }));
-      field.form?.dispatchEvent(
-        new CustomEvent("fhs:prefill", { bubbles: true, detail: { names: ["partNumber"] } }),
-      );
-      // The form is on this page and showing: take the visitor to the field.
-      if (field.getClientRects().length) {
-        closeSearch(false, true);
-        scrollToEl(field.closest<HTMLElement>("section") ?? field);
-        field.focus({ preventScroll: true });
-        return true;
-      }
+  const resolve = (siteHref: string) => {
+    const url = new URL(hrefFor(siteHref), window.location.href);
+    const path = (p: string) => p.replace(/\/$/, "") || "/";
+    const here = url.origin === window.location.origin && path(url.pathname) === path(window.location.pathname);
+    const id = here && url.hash ? decodeURIComponent(url.hash.slice(1)) : "";
+    return { here, hash: url.hash, target: id ? document.getElementById(id) : null };
+  };
+
+  const headingOf = (target: HTMLElement) =>
+    target.matches("h1, h2, h3, h4") ? target : (target.querySelector<HTMLElement>("h1, h2, h3, h4") ?? target);
+
+  /** A result on this page: scroll to its section and move focus to the section's heading. */
+  const goToSection = (target: HTMLElement | null) => {
+    if (!target) return false;
+    if (!shown(target)) {
+      focusWhenShown(headingOf(target));
       return false;
     }
+    closeSearch(false, true);
+    scrollToEl(target);
+    focusQuietly(headingOf(target));
+    return true;
+  };
+
+  /** The part number waits in sessionStorage for the parts page (parts/request.ts reads it). */
+  const stash = (partNumber: string) => {
     try {
       sessionStorage.setItem(PART_PREFILL_KEY, JSON.stringify({ partNumber }));
     } catch {
       /* storage blocked: the parts page opens without the part number */
     }
+  };
+
+  /**
+   * "Request part": when the parts form is in this document (on the parts page, or in the
+   * preview), the part number goes straight into it, found inside the form section the request
+   * link names; from any other page it waits in sessionStorage and the link goes there.
+   */
+  const requestPart = (partNumber: string) => {
+    const { target } = resolve(config.request.href);
+    const field = target?.querySelector<HTMLTextAreaElement | HTMLInputElement>(
+      'form.c-form [name="partNumber"]',
+    );
+    if (!field) {
+      stash(partNumber);
+      return false;
+    }
+    const lines = field.value.split(/\r?\n/).map((l) => l.trim());
+    if (!lines.includes(partNumber)) {
+      field.value = field.value.trim() ? `${field.value.replace(/\s+$/, "")}\n${partNumber}` : partNumber;
+    }
+    field.dispatchEvent(new Event("input", { bubbles: true }));
+    field.form?.dispatchEvent(
+      new CustomEvent("fhs:prefill", { bubbles: true, detail: { names: ["partNumber"] } }),
+    );
+    // The form is showing: take the visitor to the field. Otherwise the link shows its page.
+    if (shown(field)) {
+      closeSearch(false, true);
+      scrollToEl(target ?? field);
+      field.focus({ preventScroll: true });
+      return true;
+    }
+    focusWhenShown(field);
     return false;
   };
 
   /** Returns true when handled here; false lets the link navigate as a link. */
   const handle = (r: Result) => {
     if (r.kind === "request" && r.query) return requestPart(r.query);
-    const url = new URL(r.entry.href, window.location.href);
-    const here = window.location.pathname.replace(/\/$/, "") || "/";
-    const there = url.pathname.replace(/\/$/, "") || "/";
-    if (url.origin === window.location.origin && there === here && url.hash) {
-      return goToSection(url.hash.slice(1));
-    }
-    return false;
+    const { here, hash, target } = resolve(r.entry.href);
+    return here && hash ? goToSection(target) : false;
   };
 
   /* ---------- events ---------- */
@@ -582,12 +629,40 @@ export function mountSiteSearch(root: HTMLElement, options: SearchOptions): () =
     else input.focus({ preventScroll: true });
   };
 
+  const optionOf = (e: Event) => (e.target as Element).closest<HTMLAnchorElement>("[role='option']");
+  /**
+   * A Request part row opened in a new tab (Ctrl or Cmd click, middle click). A tab the browser
+   * opens from a link starts with empty sessionStorage; one opened by script starts with a copy of
+   * this tab's. So the row opens the tab itself with the part number stored, then takes it back
+   * out of this tab, which is not going to the parts page. If the tab is blocked, the browser opens
+   * the link as usual (without the part number).
+   */
+  const openRequestTab = (e: MouseEvent, a: HTMLAnchorElement, partNumber: string) => {
+    stash(partNumber);
+    if (window.open(a.href, "_blank")) e.preventDefault();
+    try {
+      sessionStorage.removeItem(PART_PREFILL_KEY);
+    } catch {
+      /* storage blocked */
+    }
+  };
   const onListClick = (e: MouseEvent) => {
-    const a = (e.target as Element).closest<HTMLAnchorElement>("[role='option']");
-    if (!a) return;
+    const a = optionOf(e);
+    const r = a ? current[Number(a.dataset.index)] : undefined;
+    if (!a || !r) return;
+    const newTab = (e.ctrlKey || e.metaKey) && !e.altKey && !e.shiftKey;
+    if (e.button === 0 && newTab && r.kind === "request" && r.query) {
+      openRequestTab(e, a, r.query);
+      return;
+    }
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-    const r = current[Number(a.dataset.index)];
-    if (r && handle(r)) e.preventDefault();
+    if (handle(r)) e.preventDefault();
+  };
+  // A middle click opens a new tab without a click event.
+  const onListAux = (e: MouseEvent) => {
+    const a = optionOf(e);
+    const r = a ? current[Number(a.dataset.index)] : undefined;
+    if (a && e.button === 1 && r?.kind === "request" && r.query) openRequestTab(e, a, r.query);
   };
   // Keep focus in the input while choosing with a pointer.
   const onListDown = (e: PointerEvent) => {
@@ -606,11 +681,12 @@ export function mountSiteSearch(root: HTMLElement, options: SearchOptions): () =
     input.focus({ preventScroll: true });
   };
 
+  // Focus left the search (Tab past it, a click elsewhere): it collapses, so the nav it covers
+  // comes back. What was typed stays, and reopening selects it.
   const onFocusOut = () => {
     window.setTimeout(() => {
       if (!open || !document.hasFocus() || root.contains(document.activeElement)) return;
-      hideList();
-      if (!input.value.trim()) closeSearch(false);
+      closeSearch(false);
     }, 0);
   };
   const onFocusIn = (e: FocusEvent) => {
@@ -624,6 +700,9 @@ export function mountSiteSearch(root: HTMLElement, options: SearchOptions): () =
   };
   const onExternalClose = () => closeSearch(false, true);
   const onPageHide = () => closeSearch(false, true);
+  // A result followed as a link inside this document (a fragment the page could not find, or the
+  // preview's one-document pages) leaves the page where it was: the search closes there too.
+  const onHashChange = () => closeSearch(false, true);
 
   toggle.addEventListener("click", onToggle);
   toggle.addEventListener("pointerenter", onPrefetch);
@@ -634,6 +713,7 @@ export function mountSiteSearch(root: HTMLElement, options: SearchOptions): () =
   form.addEventListener("submit", onSubmit);
   form.addEventListener("pointerdown", onBarDown);
   list.addEventListener("click", onListClick);
+  list.addEventListener("auxclick", onListAux);
   results.addEventListener("pointerdown", onListDown);
   list.addEventListener("pointermove", onListMove);
   root.addEventListener("keydown", onRootKeyDown);
@@ -642,6 +722,7 @@ export function mountSiteSearch(root: HTMLElement, options: SearchOptions): () =
   root.addEventListener("fhs:search-close", onExternalClose);
   window.addEventListener("resize", onResize);
   window.addEventListener("pagehide", onPageHide);
+  window.addEventListener("hashchange", onHashChange);
   root.dataset.searchReady = "1";
 
   return () => {
@@ -655,6 +736,7 @@ export function mountSiteSearch(root: HTMLElement, options: SearchOptions): () =
     form.removeEventListener("submit", onSubmit);
     form.removeEventListener("pointerdown", onBarDown);
     list.removeEventListener("click", onListClick);
+    list.removeEventListener("auxclick", onListAux);
     results.removeEventListener("pointerdown", onListDown);
     list.removeEventListener("pointermove", onListMove);
     root.removeEventListener("keydown", onRootKeyDown);
@@ -663,10 +745,12 @@ export function mountSiteSearch(root: HTMLElement, options: SearchOptions): () =
     root.removeEventListener("fhs:search-close", onExternalClose);
     window.removeEventListener("resize", onResize);
     window.removeEventListener("pagehide", onPageHide);
+    window.removeEventListener("hashchange", onHashChange);
     window.clearTimeout(hideTimer);
     window.clearTimeout(listTimer);
     window.clearTimeout(announceTimer);
     window.clearTimeout(uncoverTimer);
+    window.cancelAnimationFrame(pendingFrame);
     delete root.dataset.searchReady;
   };
 }

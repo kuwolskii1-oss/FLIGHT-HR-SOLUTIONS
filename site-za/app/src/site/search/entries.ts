@@ -40,7 +40,11 @@ const DOORS: Door[] = [engines, aircraft, parts, charter, advisory];
 /** "Aircraft parts, verified before you pay | Flight Hour Solution" to its first part. */
 const lead = (seoTitle: string) => seoTitle.split(" | ")[0].trim();
 const words = (...parts: (string | undefined)[]) => parts.filter(Boolean).join(" ");
-/** A form is found by its fields and its button, and by the word the placeholder promises. */
+/**
+ * A form is found by its fields and its button, and by the word "form": the search placeholder
+ * (site.search.placeholder) promises forms, and five of the seven form titles do not say it. The
+ * word is only matched, never shown.
+ */
 const formWords = (form: Form) => [...form.fields.map((f) => f.label), form.submitLabel, "form"];
 
 export function buildSearchEntries(): Entry[] {
