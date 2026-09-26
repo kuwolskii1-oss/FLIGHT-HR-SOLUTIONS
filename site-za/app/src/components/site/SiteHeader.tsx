@@ -5,6 +5,7 @@ import { CtaTalk, CtaUrgent } from "./Cta";
 import { SmartLink } from "./SmartLink";
 import { Chevron, Close, Menu } from "./Icons";
 import { Pictogram, PictoTile } from "./Pictogram";
+import { SiteSearch } from "./SiteSearch";
 import { DOOR_PICTO } from "@/site/wayfinding";
 
 /**
@@ -13,7 +14,8 @@ import { DOOR_PICTO } from "@/site/wayfinding";
  * the five doors and About as links with dropdowns of their sections (transitions.dev menu
  * dropdown), and the one filled action. Below 1000 px the strip folds away, the urgent action
  * stays as an icon and a burger opens a panel with an accordion per door. The header is solid and
- * light on every page, and hides on scroll down.
+ * light on every page, and hides on scroll down. The search button (SiteSearch) sits before the
+ * one action on desktop and next to the burger on phones; while search is open the header stays.
  */
 export function SiteHeader() {
   const headerRef = useRef<HTMLElement>(null);
@@ -42,7 +44,8 @@ export function SiteHeader() {
       const goingUp = y < lastY - 4;
       if (
         !header.classList.contains("is-menu-open") &&
-        !header.classList.contains("has-dropdown")
+        !header.classList.contains("has-dropdown") &&
+        !header.classList.contains("is-search-open")
       ) {
         if (goingDown && y > 360) header.classList.add("is-hidden");
         else if (goingUp || y < 120) header.classList.remove("is-hidden");
@@ -114,6 +117,18 @@ export function SiteHeader() {
       shownTimer.current = window.setTimeout(() => setShown(false), 420);
     }
   };
+
+  // Opening search (search/ui.ts) closes any open dropdown and the phone menu.
+  useEffect(() => {
+    const header = headerRef.current;
+    if (!header) return;
+    const onSearchOpen = () => {
+      if (dropdown) closeDropdown();
+      if (open) setMenu(false);
+    };
+    header.addEventListener("fhs:search-open", onSearchOpen);
+    return () => header.removeEventListener("fhs:search-open", onSearchOpen);
+  });
 
   // Mobile panel: body scroll lock, focus management, Escape and Tab trapping.
   useEffect(() => {
@@ -213,7 +228,7 @@ export function SiteHeader() {
               decoding="async"
             />
           </SmartLink>
-          <nav className="c-header__nav" aria-label="Primary">
+          <nav className="c-header__nav" aria-label="Primary" data-search-area>
             <ul className="c-header__list">
               {groups.map((g) => {
                 const isOpen = dropdown === g.href;
@@ -279,6 +294,7 @@ export function SiteHeader() {
           </nav>
           <div className="c-header__actions">
             <CtaUrgent href={cta.urgent.href} label={cta.urgent.label} small />
+            <SiteSearch />
             <CtaTalk href={cta.primary.href} label={cta.primary.label} small />
             <button
               type="button"
@@ -286,7 +302,14 @@ export function SiteHeader() {
               aria-expanded={open}
               aria-controls={menuId}
               aria-label={open ? "Close menu" : "Open menu"}
-              onClick={() => setMenu(!open)}
+              onClick={() => {
+                if (!open) {
+                  headerRef.current
+                    ?.querySelector("[data-search]")
+                    ?.dispatchEvent(new CustomEvent("fhs:search-close"));
+                }
+                setMenu(!open);
+              }}
             >
               <span className="t-icon-swap" data-state={open ? "b" : "a"}>
                 <span className="t-icon" data-icon="a">
