@@ -1,5 +1,6 @@
 /* South African site additions: the ident, the door navigation, the menu accordion, the forms'
- * segmented controls and check, the urgent action, and the cross-document view transition.
+ * segmented controls and check, the urgent action, and the page transitions (the leaving state and
+ * the cross-document view transition).
  * Everything else comes from site.css (shared brand layer) and transitions.css. */
 
 /* ---------- cross-document navigation ---------- */
@@ -9,16 +10,97 @@
 .c-header {
   view-transition-name: site-header;
 }
-::view-transition-old(root),
+/* The header stays put; the page under it leaves (already faded by the leaving state below) and
+ * the next one rises in. */
+::view-transition-old(root) {
+  animation: page-out 180ms var(--ease-out) both;
+}
 ::view-transition-new(root) {
-  animation-duration: 220ms;
-  animation-timing-function: var(--ease-out);
+  animation: page-in 320ms var(--ease-out) both;
+}
+@keyframes page-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+}
+/* Browsers without cross-document transitions get the same entrance (the head script in
+ * __root.tsx sets the class only after an internal link was followed). */
+html.is-arriving main,
+html.is-arriving .c-footer {
+  animation: page-in 320ms var(--ease-out) both;
+}
+
+/* Leaving a page (PageTransition.tsx): from the click, the content fades and a line sweeps the top
+ * edge until the next page replaces this one, so a slow response never reads as a dead click. The
+ * line waits 120 ms, so a prefetched page that arrives at once shows no flash of it. */
+.c-progress {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 200;
+  height: 3px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.c-progress__bar {
+  display: block;
+  width: 36%;
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(90deg, transparent, var(--color-orange) 35%, var(--color-sun));
+  transform: translateX(-100%);
+}
+html.is-leaving .c-progress {
+  opacity: 1;
+  transition: opacity 160ms var(--ease-out) 120ms;
+}
+html.is-leaving .c-progress__bar {
+  animation: progress-sweep 600ms cubic-bezier(0.45, 0, 0.2, 1) 120ms infinite;
+}
+@keyframes progress-sweep {
+  to {
+    transform: translateX(280%);
+  }
+}
+html.is-leaving main,
+html.is-leaving .c-footer {
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition:
+    opacity 240ms var(--ease-out),
+    transform 240ms var(--ease-out);
+}
+/* A dropdown still open under the pointer settles away with the page. */
+html.is-leaving .t-dropdown {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms var(--ease-out);
 }
 @media (prefers-reduced-motion: reduce) {
   ::view-transition-group(*),
   ::view-transition-old(*),
   ::view-transition-new(*) {
     animation: none !important;
+  }
+  html.is-arriving main,
+  html.is-arriving .c-footer {
+    animation: none;
+  }
+  html.is-leaving main,
+  html.is-leaving .c-footer {
+    transform: none;
+  }
+  /* no sweep: the line simply shows, full width */
+  html.is-leaving .c-progress__bar {
+    width: 100%;
+    animation: none;
+    transform: none;
   }
 }
 
@@ -710,20 +792,6 @@ html.site body {
   letter-spacing: var(--tracking-caps);
   text-transform: uppercase;
   color: var(--fg-muted);
-}
-.c-doorimg {
-  padding-block: 0;
-  background: var(--bg);
-  color: var(--fg);
-}
-.c-doorimg .c-media {
-  margin-top: calc(-1 * var(--space-large));
-  box-shadow: 0 24px 60px -30px rgb(12 16 34 / 0.45);
-}
-@media (max-width: 699px) {
-  .c-doorimg .c-media--16x9 {
-    aspect-ratio: 4 / 3;
-  }
 }
 
 /* ---------- reduced motion: nothing moves ---------- */

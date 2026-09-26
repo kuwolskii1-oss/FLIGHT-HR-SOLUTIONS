@@ -6,7 +6,7 @@ import { ClosingBand } from "./ClosingBand";
 import { CtaLink, CtaTalk } from "./Cta";
 import { DoorForm } from "./DoorForm";
 import { InfoBoard } from "./InfoBoard";
-import { MediaFrame } from "./MediaFrame";
+import { IntroDither } from "./IntroDither";
 import { DOOR_IMAGES } from "@/site/images";
 import { Steps } from "./Steps";
 import { SmartLink } from "./SmartLink";
@@ -29,13 +29,16 @@ export function DoorPage({
   route: RouteKey;
   whatsappTemplate?: string;
 }) {
+  const image = DOOR_IMAGES[door.slug];
   return (
     <main id="main" tabIndex={-1}>
+      {/* The door's photograph is the intro's background, as a light dither (IntroDither). */}
       <header
         data-theme="light"
-        className={`c-page-intro c-door-intro${DOOR_IMAGES[door.slug] ? " c-page-intro--media" : ""}`}
+        className={`c-page-intro c-door-intro${image ? " c-page-intro--dither" : ""}`}
         data-sc-act="flow"
       >
+        {image ? <IntroDither image={image} /> : null}
         <div className="o-container">
           <div className="c-door-intro__grid" data-sc-in data-sc-stagger="70">
             <div>
@@ -99,20 +102,6 @@ export function DoorPage({
           </div>
         </div>
       </header>
-
-      {DOOR_IMAGES[door.slug] ? (
-        <section data-theme="light" className="c-doorimg" data-sc-act="flow" aria-hidden="true">
-          <div className="o-container">
-            <MediaFrame
-              image={door.image?.src ?? DOOR_IMAGES[door.slug]}
-              alt=""
-              ratio="16x9"
-              reveal="up"
-              sizes="100vw"
-            />
-          </div>
-        </section>
-      ) : null}
 
       {/* The capabilities as one board: each row keeps its section id, so the header's dropdown
           links still land on it. */}

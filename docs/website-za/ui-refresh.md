@@ -316,3 +316,80 @@ the same harness shows the stylesheet grew by under 1 KB compressed; the rest is
 throttled connection shares bandwidth between the stylesheet and the page's scripts, which varies
 between runs (36 ms apart on a second trace). It stays inside the 2 s budget. Raw measurements:
 `factors-sunset.json`.
+
+## Fifth pass: dithered intros, a page transition (26 September 2026)
+
+The client pointed to the dithered hero on browserbase.com and asked for the photographs that sat
+below each nav page's intro to become the intro's background in a lighter version of that effect,
+optimised; for a transition between pages to hide the moments a page takes to load; and for the
+number in the middle of How we work to go, since the arc already numbers the steps.
+
+### Dithered intro backgrounds
+
+Browserbase draws its hero through a coarse grid: each cell one colour from a small palette, the
+tones mixed by a dither pattern, every cell a round dot with the page showing where dots meet. The
+light version here uses the same grammar with four tints of the brand navy (and a peach for
+strongly warm light), so each intro keeps a white ground and its text keeps its contrast.
+
+- **Where.** Engines, Aircraft, Parts, Charter, Advisory and About. The capsule image bands below
+  those intros are gone; each photograph is now its intro's background, full strength at the foot
+  (a space kept open for it) and a faint texture behind the words (32 %, which keeps the grey lead
+  text at 5.1:1 over the darkest dot). On phones it is a band at the foot, under the boarding pass.
+- **How it is made.** `site-za/tools/img/dither.js` reduces each photograph to a grid (200 x 140
+  cells for desktop, 80 x 66 for phones), stretches its tones, maps them (the dark hangar and
+  store scenes inverted, so the lit subject is drawn in dots on white; the apron, desk and charter
+  scenes not, so the dark scene takes the dots and the bright subject stays white), and quantises
+  them with Atkinson error diffusion. It writes a 4-bit indexed PNG with one pixel per cell.
+- **How it is drawn.** `IntroDither.tsx` and `src/site/dither.css`: the grid is scaled up
+  pixel-exact (8 px cells on desktop, 5 px on phones, whole pixels at every common screen density)
+  and a CSS mask one cell in size draws each cell as a round dot. Image and mask start at the
+  grid's own corner, so dots and cells always line up; the checks confirm crisp single-colour dots
+  at twice the pixel density.
+- **Cost.** 2 to 5 KB per page for desktop and about 1 KB for phones, and only the grid for the
+  current layout is downloaded. No script, nothing animated, so nothing repaints on scroll. The
+  door pages got lighter: 368 to 379 KB on a phone, where the 900 px photographs used to load.
+
+### Page transition
+
+Pages load as full documents, and the browser keeps showing the old page, unchanged, until the
+next one is ready, so a slow response read as a click that did nothing.
+
+- **Leaving** (`PageTransition.tsx`, `za.css`): the moment an internal link is followed, the page
+  content fades and lifts away, an open dropdown settles, and a thin orange line sweeps the top edge
+  until the next page replaces this one (it waits 120 ms, so a page that is already fetched shows no
+  flash of it). Links within the same page, new-tab clicks and downloads are left alone; a page
+  restored from the back-forward cache comes back unfaded; a navigation stopped by the visitor
+  unfades after eight seconds.
+- **Arriving**: the cross-document view transition keeps the header in place, lets the old page go
+  and brings the new one up from 12 px below (320 ms). Browsers without cross-document
+  transitions get the same entrance from a small head script, only after an internal link.
+- **Faster, too**: the hover prefetch already in place (speculation rules) means most pages are
+  fetched before the click.
+- **Preview**: the same leaving state, and the swap waits until the next page's first screen (its
+  images and dither grid) is decoded: at least 200 ms, so the fade reads, at most 900 ms.
+- Every animation is 600 ms or less (the line repeats a 600 ms sweep); under reduced motion the
+  line shows still and nothing moves.
+
+### How we work
+
+The gold number above the step's title is gone; the lit waypoint on the arc carries it, and the
+list is still an ordered list for assistive technology.
+
+### Checked (production build served locally)
+
+| Check | Factor | Measured |
+|---|---|---|
+| Words per screen, home | 60 or fewer | 48 at 1440 px, 35 at 375 px |
+| Buttons per screen | 1 | 1 on every page |
+| Longest animation, stagger | 600 ms, 80 ms | 560 ms, 70 ms (the line's sweep repeats at 600 ms) |
+| Reduced motion | nothing moves, all visible | 0 pinned acts, 0 hidden cues, the page switch immediate |
+| axe-core, 11 routes | 0 | 0 |
+| Console errors, broken links | 0 | 0 |
+| First readable text, Fast 3G | under 2 s | home 1.92 to 1.96 s over three runs, other pages 1.56 to 1.78 s |
+| Weight per page | under 1 MB | 368 to 453 KB on a phone |
+| Keyboard, menu and forms | as before | all pass; the preview's 59 checks pass (5 new: six dithered intros, no step number, the page switch, the phone grid, the reduced-motion switch) |
+
+Home's first text moved by 20 to 60 ms against the sunset pass (the stylesheet grew by under
+0.4 KB compressed); on the local server, which speaks HTTP/1.1, the stylesheet shares the line with
+the 121 KB application script, which the live host's HTTP/2 prioritises behind it. Raw
+measurements: `factors-dither.json`.

@@ -29,6 +29,15 @@ export const DOOR_IMAGES: Record<string, string> = {
   charter: "charter-apron",
   advisory: "records-desk",
 };
+/** The photograph behind About's intro (the doors take theirs from DOOR_IMAGES). */
+export const ABOUT_IMAGE = "apron-dawn";
+/**
+ * An intro photograph as dither grids, one pixel per cell (site-za/tools/img/dither.js): `d` for
+ * desktop (200 x 140 cells), `m` for phones (80 x 66). Regenerate when a photograph changes.
+ */
+export function ditherSources(key: string) {
+  return { d: `/assets/img/dither/${key}-d.png`, m: `/assets/img/dither/${key}-m.png` };
+}
 export function imageSources(key: string) {
   return {
     src: `/assets/img/${key}-900.webp`,

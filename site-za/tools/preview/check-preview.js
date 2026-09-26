@@ -245,6 +245,29 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     const foot = await page.evaluate(() => ({ curtain: document.documentElement.classList.contains("has-curtain"), fp: getComputedStyle(document.querySelector(".c-footer")).getPropertyValue("--fp").trim(), pos: getComputedStyle(document.querySelector(".c-footer")).position }));
     check("footer curtain and parallax at the bottom", foot.curtain && foot.pos === "sticky" && parseFloat(foot.fp) > 0.98, foot);
 
+    // Intro backgrounds: the photographs are the intros' dithered backgrounds, no longer a band below.
+    const intros = await page.evaluate(() => ({ bands: document.querySelectorAll(".c-doorimg").length, dithered: [...document.querySelectorAll("main[data-page]")].filter((m) => m.querySelector(".c-page-intro .c-dither")).map((m) => m.dataset.page) }));
+    check("intro backgrounds: six dithered intros, no image band", intros.bands === 0 && intros.dithered.length === 6, intros);
+    check("how we work: no number in the step card", await page.evaluate(() => document.querySelectorAll(".c-cuestep__n").length === 0));
+    // Page switch: the page leaves at once and the next arrives with its picture already decoded.
+    await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
+    await sleep(400);
+    const from = await visible(page);
+    const to = from === "parts" ? "charter" : "parts";
+    await page.route("**/dither/**", async (route) => { await sleep(300); await route.continue(); });
+    await page.locator(`.c-header a[href="#${to}"]`).first().click();
+    await sleep(120);
+    const mid = await page.evaluate(() => ({ leaving: document.documentElement.classList.contains("is-leaving"), page: [...document.querySelectorAll("main[data-page]")].find((m) => !m.hidden).dataset.page }));
+    await page.waitForSelector(`main[data-page="${to}"]:not([hidden])`, { timeout: 3000 });
+    await sleep(500);
+    const arrived = await page.evaluate((to) => {
+      const g = document.querySelector(`main[data-page="${to}"] .c-dither__grid`);
+      const name = (getComputedStyle(g).backgroundImage.match(/dither\/([^"')]+)/) || [])[1];
+      return { leaving: document.documentElement.classList.contains("is-leaving"), grid: name, fetched: performance.getEntriesByType("resource").some((e) => e.name.endsWith("dither/" + name)) };
+    }, to);
+    await page.unroute("**/dither/**");
+    check("page switch: leaves at once, arrives with its picture ready", mid.leaving && mid.page === from && !arrived.leaving && /-d\.png$/.test(arrived.grid || "") && arrived.fetched, { from, to, mid, arrived });
+
     check("desktop: no console/network errors", errs.length === 0, errs.slice(0, 8));
     await ctx.close();
   } catch (e) { check("desktop section completed", false, [String(e).split("\n")[0], ...errs.slice(0, 5)]); }
@@ -293,6 +316,8 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     await sleep(400);
     check("header returns on scroll up", await page.evaluate(() => !document.querySelector(".c-header").classList.contains("is-hidden")));
     await page.screenshot({ path: path.join(shots, "mobile-engines.png") });
+    const mgrid = await page.evaluate(() => { const g = document.querySelector('main[data-page="engines"] .c-dither__grid'); return (getComputedStyle(g).backgroundImage.match(/dither\/([^"')]+)/) || [])[1]; });
+    check("mobile: the intro uses the phone dither grid", /-m\.png$/.test(mgrid || ""), mgrid);
     check("mobile: no console/network errors", errs.length === 0, errs.slice(0, 8));
     await ctx.close();
   } catch (e) { check("mobile section completed", false, [String(e).split("\n")[0], ...errs.slice(0, 5)]); }
@@ -326,6 +351,12 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     check("rm: nothing left hidden on home", hidden.length === 0, hidden.slice(0, 6));
     const rmPlan = await page.evaluate(() => { const s = document.getElementById("home.how"); return { steps: [...s.querySelectorAll(".c-cuestep")].filter((li) => +getComputedStyle(li).opacity > 0.99).length, lit: [...s.querySelectorAll(".c-route__dot")].filter((d) => ((c) => (c.startsWith("color(") ? +c.split(" ")[1] * 255 : +c.match(/\d+/)[0]))(getComputedStyle(d).backgroundColor) > 200).length }; });
     check("rm: every step listed, the route shown flown", rmPlan.steps === 5 && rmPlan.lit === 5, rmPlan);
+    await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
+    await sleep(300);
+    await page.locator('.c-header a[href="#about"]').first().click();
+    await sleep(60);
+    const rmNav = await page.evaluate(() => ({ leaving: document.documentElement.classList.contains("is-leaving"), shown: !document.querySelector('main[data-page="about"]').hidden }));
+    check("rm: page switch is immediate, no leaving state", rmNav.shown && !rmNav.leaving, rmNav);
     check("rm: no console/network errors", errs.length === 0, errs.slice(0, 8));
     await ctx.close();
   } catch (e) { check("reduced-motion section completed", false, [String(e).split("\n")[0], ...errs.slice(0, 5)]); }

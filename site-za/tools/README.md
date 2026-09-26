@@ -23,10 +23,19 @@ build machine) and axe-core in `site-za/tools/node_modules` (`npm install axe-co
 `<base>` is `http://127.0.0.1:4600` for the dev server or `http://127.0.0.1:4700` for the
 production server.
 
+## Images
+
+`NODE_PATH=/opt/node22/lib/node_modules node img/dither.js` (from the repo root) turns the six
+intro photographs into the dithered intro backgrounds: one small indexed PNG per page and layout
+in `app/public/assets/img/dither/` (200 x 140 cells for desktop, 80 x 66 for phones, each pixel one
+cell), which the site scales up and draws as dots (`app/src/site/dither.css`). Per-photograph
+settings (invert, strength, gamma, crop focus) sit at the top of the script. Run it again when an
+intro photograph changes.
+
 ## Deploy helpers
 
 `deploy/mkzip.sh` and `deploy/overlay.sh` are the two halves of the runbook in `../DEPLOY.md`.
 
 ## preview/
 
-A no-login preview of the beta for people without access to the staging host. `build-preview.mjs` fetches the server-rendered HTML of every route from the local production server (port 4700), keeps one header and footer, stacks the eleven `<main>` elements in one document (one visible at a time, chosen by the URL hash), rewrites links and asset paths, inlines the built stylesheet and the scroll engine, and appends `runtime.js`, a plain-script port of the client behaviour (header, menu, accordions, segmented controls, form validation, the ident). `preview.css` holds the few host-frame adjustments. `check-preview.js` walks the result in Chromium inside a stand-in for the host's page skeleton: navigation, deep links, history, forms, menu, keyboard, reduced motion, console and network errors. Output goes to `out/` (ignored by git).
+A no-login preview of the beta for people without access to the staging host. `build-preview.mjs` fetches the server-rendered HTML of every route from the local production server (port 4700), keeps one header and footer, stacks the eleven `<main>` elements in one document (one visible at a time, chosen by the URL hash), rewrites links and asset paths, inlines the built stylesheet and the scroll engine, and appends `runtime.js`, a plain-script port of the client behaviour (header, menu, accordions, segmented controls, form validation, the ident, the page transition). `preview.css` holds the few host-frame adjustments. `check-preview.js` walks the result in Chromium inside a stand-in for the host's page skeleton: navigation, deep links, history, forms, menu, keyboard, reduced motion, console and network errors. Output goes to `out/` (ignored by git).

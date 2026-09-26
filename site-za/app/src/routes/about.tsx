@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ClosingBand } from "@/components/site/ClosingBand";
 import { CtaLink } from "@/components/site/Cta";
-import { MediaFrame } from "@/components/site/MediaFrame";
+import { IntroDither } from "@/components/site/IntroDither";
 import { Steps } from "@/components/site/Steps";
 import { about } from "@/site/data/about";
 import { site } from "@/site/data/site";
@@ -12,6 +12,7 @@ import { PictoTile } from "@/components/site/Pictogram";
 import { InfoBoard } from "@/components/site/InfoBoard";
 import { DOOR_PICTO, ITEM_PICTO } from "@/site/wayfinding";
 import { withRegistration } from "@/site/registration";
+import { ABOUT_IMAGE } from "@/site/images";
 
 export const Route = createFileRoute("/about")({
   loader: () => ({ title: about.seoTitle, description: about.metaDescription }),
@@ -28,7 +29,8 @@ function Page() {
   const { intro, how, serve, commitments, team, company, group } = about;
   return (
     <main id="main" tabIndex={-1}>
-      <header data-theme="light" className="c-page-intro c-page-intro--media" data-sc-act="flow">
+      <header data-theme="light" className="c-page-intro c-page-intro--dither" data-sc-act="flow">
+        <IntroDither image={ABOUT_IMAGE} />
         <div className="o-container" data-sc-in data-sc-stagger="70">
           <span className="c-eyebrow">
             <PictoTile name={DOOR_PICTO.about} size="sm" />
@@ -38,12 +40,6 @@ function Page() {
           <p className="c-lead c-page-intro__lead">{intro.sub}</p>
         </div>
       </header>
-
-      <section data-theme="light" className="c-doorimg" data-sc-act="flow" aria-hidden="true">
-        <div className="o-container">
-          <MediaFrame image="apron-dawn" alt="" ratio="16x9" reveal="up" sizes="100vw" />
-        </div>
-      </section>
 
       <Steps id="how" steps={how.steps} title={how.title} intro={how.intro} theme="light" />
 

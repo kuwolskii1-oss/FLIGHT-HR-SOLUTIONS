@@ -241,6 +241,8 @@ for (const m of doc.matchAll(/(?:src|srcset|href)="([^"]*)"/g)) {
     if (/^(assets\/img|brand)\//.test(u)) used.add(u);
   }
 }
+// Images named in inline styles, such as the dithered intro grids (IntroDither's --dither-d/-m).
+for (const m of doc.matchAll(/url\((?:&quot;|['"])?((?:assets\/img|brand)\/[^)"'&]+)/g)) used.add(m[1]);
 for (const u of used) {
   const from = path.join(app, "public", u);
   if (fs.existsSync(from)) copy(u, from);

@@ -756,12 +756,6 @@
   opacity: 0.06;
   pointer-events: none;
 }
-/* An intro followed by an image band (the band is pulled up into the intro's padding by
- * --space-large). With the section chips gone (the header's dropdowns carry them), the padding
- * itself keeps the gap. */
-.c-page-intro--media {
-  padding-bottom: calc(var(--space-large) + var(--space-big));
-}
 .c-page-intro__title {
   max-width: 16ch;
 }
@@ -878,8 +872,7 @@
   }
 }
 
-/* ---------- door image band and media ---------- */
-.c-doorimg .c-media,
+/* ---------- media ---------- */
 .c-page-intro__media .c-media {
   border-radius: var(--radius-panel);
 }

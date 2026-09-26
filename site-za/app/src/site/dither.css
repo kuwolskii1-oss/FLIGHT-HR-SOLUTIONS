@@ -1,0 +1,67 @@
+/* Dithered intro backgrounds (components/site/IntroDither.tsx), the light version of a dot-matrix
+ * dither. Each intro's photograph comes as a small grid of pale tones, one pixel per cell
+ * (site-za/tools/img/dither.js: about 4 KB for desktop, about 1 KB for phones). The grid is scaled
+ * up pixel-exact, every cell a whole number of pixels, and a mask one cell in size draws each cell
+ * as a round dot with the page showing between. Image and mask both start at the grid's own
+ * corner, so dots and cells always line up. The foot of the intro is left open for the picture;
+ * behind the words it fades to a faint texture. No script, nothing animated. */
+
+.c-page-intro--dither {
+  --dither-foot: clamp(15rem, 10rem + 14vw, 24rem);
+  padding-bottom: calc(var(--space-large) + var(--dither-foot));
+}
+.c-dither {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-mask: linear-gradient(
+    to top,
+    black 0,
+    black calc(var(--dither-foot) - 3rem),
+    rgb(0 0 0 / 0.32) calc(var(--dither-foot) + 9rem),
+    rgb(0 0 0 / 0.32) 100%
+  );
+  mask: linear-gradient(
+    to top,
+    black 0,
+    black calc(var(--dither-foot) - 3rem),
+    rgb(0 0 0 / 0.32) calc(var(--dither-foot) + 9rem),
+    rgb(0 0 0 / 0.32) 100%
+  );
+}
+.c-dither__grid {
+  --cell: 5px;
+  --cols: 80;
+  --rows: 66;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: calc(var(--cols) * var(--cell));
+  height: calc(var(--rows) * var(--cell));
+  /* a margin, not a transform, so the grid sits on whole pixels */
+  margin-left: calc(var(--cols) * var(--cell) / -2);
+  background: var(--dither-m) 0 0 / 100% 100% no-repeat;
+  image-rendering: pixelated;
+  -webkit-mask: radial-gradient(
+      circle at center,
+      black calc(var(--cell) * 0.34),
+      transparent calc(var(--cell) * 0.41)
+    )
+    0 0 / var(--cell) var(--cell);
+  mask: radial-gradient(
+      circle at center,
+      black calc(var(--cell) * 0.34),
+      transparent calc(var(--cell) * 0.41)
+    )
+    0 0 / var(--cell) var(--cell);
+}
+@media (min-width: 700px) {
+  .c-dither__grid {
+    --cell: 8px;
+    --cols: 200;
+    --rows: 140;
+    background-image: var(--dither-d);
+  }
+}

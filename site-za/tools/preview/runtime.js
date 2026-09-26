@@ -61,6 +61,7 @@
     var changed = current !== slug;
     if (changed) { closeMenu(); closeDropdown(); }
     var swap = function () {
+      root.classList.remove("is-leaving");
       mains.forEach(function (m) { m.hidden = m.getAttribute("data-page") !== slug; });
       current = slug;
       document.title = titles[slug] || document.title;
@@ -440,6 +441,47 @@
     });
   })();
 
+  // ---- page transitions (PageTransition.tsx and za.css on the live site) ----------------------------
+  // A link to another page puts this one into the leaving state at once (the content fades, a line
+  // sweeps the top edge); meanwhile the next page's first screen is fetched and decoded, so it does
+  // not arrive with its pictures still loading. The swap waits at least 200 ms, so the fade reads as
+  // a transition, and at most 900 ms, then runs under the view transition in show().
+  if (!$(".c-progress")) {
+    var progress = document.createElement("div");
+    progress.className = "c-progress";
+    progress.setAttribute("aria-hidden", "true");
+    progress.innerHTML = '<span class="c-progress__bar"></span>';
+    document.body.appendChild(progress);
+  }
+  function preload(main) {
+    var waits = [];
+    $$("img", main).slice(0, 8).forEach(function (img) {
+      img.loading = "eager";
+      if (img.decode) waits.push(img.decode().catch(function () {}));
+    });
+    var d = $(".c-dither", main);
+    if (d) {
+      var v = getComputedStyle(d).getPropertyValue(window.matchMedia("(min-width: 700px)").matches ? "--dither-d" : "--dither-m");
+      var m = /url\((['"]?)([^'")]+)\1\)/.exec(v || "");
+      if (m) {
+        var im = new Image();
+        im.src = m[2];
+        if (im.decode) waits.push(im.decode().catch(function () {}));
+      }
+    }
+    return Promise.all(waits);
+  }
+  var navId = 0;
+  function go(h) {
+    var id = ++navId;
+    if (h.slug === current || reduce || !bySlug[h.slug]) { show(h.slug, h.section); return; }
+    root.classList.add("is-leaving");
+    var wait = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+    Promise.race([Promise.all([preload(bySlug[h.slug]), wait(200)]), wait(900)]).then(function () {
+      if (id === navId) show(h.slug, h.section);
+    });
+  }
+
   // ---- start ------------------------------------------------------------------------------------------
   if (reduce) {
     root.classList.add("sc-reduce");
@@ -457,7 +499,7 @@
   segmentedAll();
   headerUpdate();
   $$("form.c-form").forEach(conditional);
-  window.addEventListener("hashchange", function () { var h = parseHash(); show(h.slug, h.section); });
+  window.addEventListener("hashchange", function () { go(parseHash()); });
   footerMeasure();
   window.addEventListener("load", function () { relayout(); segmentedAll(); footerMeasure(); });
 })();

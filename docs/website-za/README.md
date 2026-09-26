@@ -99,8 +99,11 @@ Method: `site-za/tools/qa/factors.js`, `qa.js`, `interact.js` and `forms.js` aga
   pass"): the doubled hero aircraft fixed by giving the sky and the aircraft separate layers, a
   sunset hero, and the pinned steps redrawn as one evening's flight (platform commit `00616ff`);
   platform status "deployed", no error. Measurements in `factors-sunset.json`. About 01:20 UTC:
-  the same build with the flight plan limited to two steps or more (platform commit `cc8d59f`),
-  the build now recorded.
+  the same build with the flight plan limited to two steps or more (platform commit `cc8d59f`).
+- 26 September 2026, about 03:15 UTC: the fifth UI pass (`ui-refresh.md`, "Fifth pass"): the
+  nav pages' photographs as dithered intro backgrounds, a page transition that covers the wait
+  between pages, and no step number in How we work (platform commit `0c59ab0`); platform status
+  "deployed", no error. Measurements in `factors-dither.json`. This is the build now recorded.
 - Raw measurements: `factors-run3.json` (all routes), `factors-home-final.json` (home after the
   last trim), `qa-report.json` (axe, console, weight per route).
 - Runbook: `site-za/DEPLOY.md`. Higgsfield credits used by this build: 0.5 for three images.
@@ -118,7 +121,7 @@ The live address (https://flighthoursolution-za.higgsfield.app) is a Higgsfield 
 
 https://claude.ai/artifact/8kYTmqytexPbegjqZuARM2
 
-It was republished at the same address with the wayfinding UI refresh (version 3), the second UI pass (version 4), the spinning counter (version 6), the clear-sky pass (version 7, 25 September 2026) and the sunset pass (version 8, 26 September 2026).
+It was republished at the same address with the wayfinding UI refresh (version 3), the second UI pass (version 4), the spinning counter (version 6), the clear-sky pass (version 7, 25 September 2026), the sunset pass (version 8) and the dithered intros with the page transition (version 9, 26 September 2026).
 
 What the preview is: the eleven server-rendered pages of the production build in one document, with the built stylesheet, the scroll engine and the header, menu, form, door board and footer behaviour ported to plain script (`site-za/tools/preview/`). Pages are addressed by hash (`#engines`, `#parts.form`). Forms validate as on the live site but send nothing. Two things differ from the live site: there is no server round-trip on forms, and a page change is a same-document swap with the browser's view transition instead of a full navigation.
 

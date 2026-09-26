@@ -9,6 +9,7 @@ import { reportHiggsfieldError } from "../lib/higgsfield-error-reporting";
 import appMetaJson from "../app-meta.json";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
+import { PageTransition } from "@/components/site/PageTransition";
 import { CtaLink } from "@/components/site/Cta";
 import { INDEXABLE, SITE_NAME, SITE_URL, THEME_COLOR } from "@/site/config";
 
@@ -64,6 +65,14 @@ function buildHead(meta: AppMeta) {
       { name: "twitter:image", content: absoluteImage },
     ],
     scripts: [
+      // Arriving from another page of the site in a browser without cross-document view
+      // transitions: start the same entrance (za.css, PageTransition.tsx). Runs before first paint.
+      {
+        children:
+          "try{if(sessionStorage.getItem('fhs-nav')){sessionStorage.removeItem('fhs-nav');" +
+          "if(!('onpagereveal' in window)&&!matchMedia('(prefers-reduced-motion: reduce)').matches)" +
+          "document.documentElement.classList.add('is-arriving')}}catch(e){}",
+      },
       {
         type: "speculationrules",
         children: JSON.stringify({ prefetch: [{ where: { and: [{ href_matches: "/*" }, { not: { href_matches: "/app*" } }] }, eagerness: "moderate" }] }),
@@ -179,6 +188,7 @@ function RootComponent() {
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
       <SiteFooter />
+      <PageTransition />
     </QueryClientProvider>
   );
 }

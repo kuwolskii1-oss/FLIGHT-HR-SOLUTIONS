@@ -93,7 +93,8 @@ export function Steps({
             <ol className="c-cuesteps__list" aria-label={`${title}, ${n} steps`}>
               {steps.map((s, i) => (
                 <li className="c-cuestep" key={s.n} data-sc-cue={cue(i)} data-sc-rise="1.2">
-                  <span className="c-cuestep__n">{s.n}</span>
+                  {/* No number here: the lit waypoint on the arc carries it, and the list itself
+                      is ordered for assistive technology. */}
                   <span className="c-cuestep__title">{s.title}</span>
                   <span className="c-cuestep__text">{s.text}</span>
                 </li>

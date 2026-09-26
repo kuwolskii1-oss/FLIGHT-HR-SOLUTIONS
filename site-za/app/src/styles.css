@@ -42,6 +42,7 @@
 @import "./site/boards.css";
 @import "./site/clearsky.css";
 @import "./site/flightplan.css";
+@import "./site/dither.css";
 
 @custom-variant dark (&:where([data-theme="default-dark"], [data-theme="default-dark"] *));
 

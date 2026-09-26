@@ -493,19 +493,6 @@ html.site body {
   background: var(--color-white);
 }
 
-/* ---------- door and about images as capsules ---------- */
-.c-doorimg .c-media {
-  aspect-ratio: 2.5;
-  border-radius: 999px;
-  box-shadow: 0 30px 60px -40px rgb(18 21 46 / 0.45);
-}
-@media (max-width: 699px) {
-  .c-doorimg .c-media,
-  .c-doorimg .c-media--16x9 {
-    aspect-ratio: 2;
-  }
-}
-
 /* ---------- signs, the status note and the company card: white cards ---------- */
 .c-sign,
 .c-docard {
