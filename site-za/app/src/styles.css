@@ -43,6 +43,7 @@
 @import "./site/clearsky.css";
 @import "./site/stairs.css";
 @import "./site/e360.css";
+@import "./site/parts-viewer.css";
 @import "./site/dither.css";
 
 @custom-variant dark (&:where([data-theme="default-dark"], [data-theme="default-dark"] *));

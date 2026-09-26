@@ -50,6 +50,8 @@
       }
     ],
     "hint": "Turn the engine with the arrow keys, the buttons or by dragging.",
+    "previousFamily": "Previous engine family",
+    "nextFamily": "Next engine family",
     "prompt": "Request a part",
     "promptContinue": "Continue your request",
     "requestTitle": "Request parts",
