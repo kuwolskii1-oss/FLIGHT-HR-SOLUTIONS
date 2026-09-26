@@ -66,6 +66,8 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     const photo = () => page.evaluate(() => { const i = document.querySelector("main:not([hidden]) .c-sky__plane"); const sky = document.querySelector("main:not([hidden]) .c-sky__photo"); return i && sky ? { t: getComputedStyle(i).transform, loaded: i.complete && i.naturalWidth > 0 && sky.complete && sky.naturalWidth > 0 } : null; });
     const p0 = await photo();
     check("hero sky and aircraft cut-out loaded", !!p0 && p0.loaded, p0);
+    const layers = await page.evaluate(() => [".c-sky__photo", ".c-sky__plane"].map((c) => (document.querySelector("main:not([hidden]) " + c).currentSrc || "").split("/").pop()));
+    check("hero sky is its own plate, the aircraft its own layer", /^hero-sunset-/.test(layers[0]) && /^hero-jet-/.test(layers[1]), layers);
     await page.evaluate(() => window.scrollTo(0, window.innerHeight * 0.5));
     await sleep(700);
     const p1 = await photo();
@@ -76,6 +78,25 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
     const reels = await page.evaluate(() => [...document.querySelectorAll("main:not([hidden]) .c-reel")].map((r) => ({ value: r.querySelector(".u-visually-hidden").textContent, reels: r.querySelectorAll(".c-reel__strip").length, landed: r.querySelectorAll(".c-reel__strip.is-landed").length, blurLeft: r.querySelectorAll('.c-reel__strip[style*="filter: url"]').length })));
     check("fact reels turn and land on the true numbers", reels.length === 2 && reels.every((r) => r.reels > 0 && r.landed === r.reels && r.blurLeft === 0), reels);
     await page.screenshot({ path: path.join(shots, "desktop-home-scrolled.png") });
+    // Flight plan: one step at a time, the aircraft flies, each waypoint lights with its step, and
+    // the sky goes from sunset to night.
+    const plan = async (p) => {
+      await page.evaluate((p) => { const s = document.getElementById("home.how"); const top = s.getBoundingClientRect().top + scrollY; window.scrollTo({ top: top + p * (s.offsetHeight - innerHeight), behavior: "instant" }); }, p);
+      await sleep(300);
+      return page.evaluate(() => {
+        const s = document.getElementById("home.how");
+        const op = [...s.querySelectorAll(".c-cuestep")].map((li) => +getComputedStyle(li).opacity);
+        const lit = [...s.querySelectorAll(".c-route__dot")].filter((d) => ((c) => (c.startsWith("color(") ? +c.split(" ")[1] * 255 : +c.match(/\d+/)[0]))(getComputedStyle(d).backgroundColor) > 200).length;
+        return { shown: op.filter((o) => o > 0.5).length, step: op.findIndex((o) => o > 0.5) + 1, lit, jet: getComputedStyle(s.querySelector(".c-route__jet")).transform, sunset: +(+getComputedStyle(s.querySelector(".c-dusk__sunset")).opacity).toFixed(2), stars: +(+getComputedStyle(s.querySelector(".c-dusk__stars")).opacity).toFixed(2) };
+      });
+    };
+    const f0 = await plan(0.05);
+    const f1 = await plan(0.55);
+    await page.screenshot({ path: path.join(shots, "desktop-flightplan.png") });
+    const f2 = await plan(0.95);
+    check("flight plan: one step at a time, lit with its waypoint", [f0, f1, f2].every((f) => f.shown === 1 && f.lit === f.step) && f0.step === 1 && f1.step === 4 && f2.step === 5, { f0, f1, f2 });
+    check("flight plan: the aircraft flies the route", f0.jet !== f1.jet && f1.jet !== f2.jet, [f0.jet, f1.jet, f2.jet]);
+    check("flight plan: sunset to night", f0.sunset > 0.8 && f2.sunset < 0.1 && f0.stars === 0 && f2.stars > 0.5, { f0: [f0.sunset, f0.stars], f2: [f2.sunset, f2.stars] });
     await page.evaluate(() => window.scrollTo(0, 0));
     await sleep(400);
 
@@ -303,6 +324,8 @@ const ready = async (page) => { await page.waitForSelector("html.sc-ready", { ti
       return els.filter((el) => parseFloat(getComputedStyle(el).opacity) < 0.99).map((el) => el.className.toString().slice(0, 40));
     });
     check("rm: nothing left hidden on home", hidden.length === 0, hidden.slice(0, 6));
+    const rmPlan = await page.evaluate(() => { const s = document.getElementById("home.how"); return { steps: [...s.querySelectorAll(".c-cuestep")].filter((li) => +getComputedStyle(li).opacity > 0.99).length, lit: [...s.querySelectorAll(".c-route__dot")].filter((d) => ((c) => (c.startsWith("color(") ? +c.split(" ")[1] * 255 : +c.match(/\d+/)[0]))(getComputedStyle(d).backgroundColor) > 200).length }; });
+    check("rm: every step listed, the route shown flown", rmPlan.steps === 5 && rmPlan.lit === 5, rmPlan);
     check("rm: no console/network errors", errs.length === 0, errs.slice(0, 8));
     await ctx.close();
   } catch (e) { check("reduced-motion section completed", false, [String(e).split("\n")[0], ...errs.slice(0, 5)]); }

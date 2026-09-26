@@ -41,6 +41,7 @@
 @import "./site/wayfinding.css";
 @import "./site/boards.css";
 @import "./site/clearsky.css";
+@import "./site/flightplan.css";
 
 @custom-variant dark (&:where([data-theme="default-dark"], [data-theme="default-dark"] *));
 

@@ -36,7 +36,6 @@ html.site body {
 .c-h2,
 .c-h3,
 .c-band__title,
-.c-cuestep__title,
 .c-board__title,
 .c-footer__tagline {
   font-weight: 500;
@@ -45,8 +44,7 @@ html.site body {
 .c-h1,
 .c-h1--inner,
 .c-h2,
-.c-h2--xl,
-.c-cuesteps .c-h2 {
+.c-h2--xl {
   line-height: 1.04;
 }
 
@@ -276,9 +274,31 @@ html.site body {
 }
 .c-sky__stage {
   position: relative;
+  isolation: isolate;
   width: min(100%, 66rem);
   aspect-ratio: 2.8;
   margin: clamp(1.75rem, 1rem + 2.4vw, 3.25rem) auto 0;
+}
+/* The sunset's light spilling from the capsule onto the white page: gold where the sun floods in
+ * on the left, rose under the clouds on the right. Each glow is sized to fade out well inside this
+ * layer, so no edge of the layer ever shows. */
+.c-sky__stage::before {
+  content: "";
+  position: absolute;
+  inset: -30% -16% -36%;
+  z-index: -1;
+  background:
+    radial-gradient(
+      18% 38% at 20% 55%,
+      color-mix(in srgb, var(--color-sun) 42%, transparent),
+      transparent
+    ),
+    radial-gradient(
+      18% 36% at 80% 60%,
+      color-mix(in srgb, var(--color-rose) 32%, transparent),
+      transparent
+    );
+  pointer-events: none;
 }
 .c-sky__photo,
 .c-sky__plane {
@@ -289,8 +309,9 @@ html.site body {
   object-fit: cover;
   object-position: 50% 46%;
 }
-/* The sky is a capsule inset from the frame; the aircraft is the same photograph cut out, drawn
- * on top without the clip, so its wings run past the capsule's rounded ends. */
+/* The sky is a capsule inset from the frame and holds no aircraft; the aircraft is its own cut-out
+ * layer, drawn on top without the clip, so its wings run past the capsule's rounded ends and it can
+ * lift away from the sky with the scroll without leaving a second aircraft behind. */
 .c-sky__photo {
   clip-path: inset(0 7% round 999px);
 }

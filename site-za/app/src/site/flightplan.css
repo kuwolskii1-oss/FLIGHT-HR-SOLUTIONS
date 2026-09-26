@@ -1,0 +1,359 @@
+/* Flight plan: the pinned "how we work" act (components/site/Steps.tsx), drawn as one evening's
+ * flight from sunset to night.
+ *
+ * The stage holds a rounded sky. Every layer reads the act's progress, --sc-p, which the engine
+ * writes on the section each frame, through two values set on the sky:
+ *   --p  the act's progress, 0 to 1;
+ *   --g  the aircraft's share of the route: it reaches the last waypoint at --end, when the last
+ *        step cues in, and waits there while the sky finishes darkening.
+ * The sunset layer fades, the sun sinks below the horizon (the sky's bottom edge) and the stars
+ * come out. The route is an arc of a circle whose centre sits below the horizon, running from one
+ * horizon to the other: the waypoints spread over --sweep, the line runs --ext further at each end,
+ * and the aircraft flies --lead ahead of the waypoint it last passed, so it never covers a number
+ * and lands near the far end. The line is a dotted border masked to its span, the flown part a
+ * gold one masked to the aircraft; waypoints and the aircraft sit on it by rotation (turn, move
+ * out by the radius, turn back), so no trigonometry is needed. --sweep and --lead come from
+ * Steps.tsx, which also times each waypoint to light as the aircraft passes over it (--over).
+ * Nothing here runs on a timer; it all scrubs with the scroll, so the brief's 600 ms cap on
+ * animations does not apply to it. */
+
+.c-cuesteps {
+  background: var(--bg);
+}
+.c-cuesteps__stage {
+  display: grid;
+  box-sizing: border-box;
+  min-height: 100svh;
+  padding: 0.75rem;
+}
+
+/* ---------- the sky ---------- */
+.c-dusk {
+  --p: clamp(0, var(--sc-p, 0), 1);
+  --g: clamp(0, var(--p) / var(--end, 0.7), 1);
+  /* the arc: its radius, and how far the line runs past the first and last waypoints */
+  --R: min(36vw, 42svh, 34rem);
+  --ext: 13deg;
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  padding: calc(var(--header-height) + 0.25rem) var(--gutter) 0;
+  background: linear-gradient(
+    180deg,
+    var(--color-night) 0%,
+    var(--color-navy-mid) 55%,
+    var(--color-navy) 100%
+  );
+  color: var(--color-white);
+  text-align: center;
+}
+.c-dusk__sky,
+.c-dusk__sky > * {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.c-dusk__sky {
+  z-index: -1;
+}
+.c-dusk__sunset {
+  background: linear-gradient(
+    180deg,
+    var(--color-twilight) 0%,
+    var(--color-dusk) 38%,
+    var(--color-plum) 70%,
+    var(--color-ember) 92%,
+    var(--color-sunglow) 100%
+  );
+  opacity: clamp(0, 1 - var(--p) * 1.15, 1);
+}
+.c-dusk__stars {
+  background-image:
+    radial-gradient(1.6px 1.6px at 7% 16%, var(--color-white), transparent),
+    radial-gradient(1px 1px at 13% 34%, var(--color-white), transparent),
+    radial-gradient(1.3px 1.3px at 19% 9%, var(--color-white), transparent),
+    radial-gradient(1px 1px at 24% 47%, var(--color-white), transparent),
+    radial-gradient(1.8px 1.8px at 29% 24%, var(--color-white), transparent),
+    radial-gradient(1px 1px at 36% 6%, var(--color-white), transparent),
+    radial-gradient(1.2px 1.2px at 63% 8%, var(--color-white), transparent),
+    radial-gradient(1px 1px at 69% 41%, var(--color-white), transparent),
+    radial-gradient(1.7px 1.7px at 74% 19%, var(--color-white), transparent),
+    radial-gradient(1px 1px at 81% 31%, var(--color-white), transparent),
+    radial-gradient(1.4px 1.4px at 86% 11%, var(--color-white), transparent),
+    radial-gradient(1px 1px at 91% 44%, var(--color-white), transparent),
+    radial-gradient(1.2px 1.2px at 95% 22%, var(--color-white), transparent),
+    radial-gradient(1px 1px at 4% 52%, var(--color-white), transparent),
+    radial-gradient(1.1px 1.1px at 57% 29%, var(--color-white), transparent),
+    radial-gradient(1px 1px at 42% 38%, var(--color-white), transparent);
+  opacity: clamp(0, (var(--p) - 0.35) * 2, 0.9);
+}
+/* The sun sits on the horizon, centred under the arc, and sinks as the act plays. */
+.c-dusk__sun {
+  inset: auto;
+  left: 50%;
+  bottom: 0;
+  width: calc(var(--R) * 1.25);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  translate: -50% 50%;
+  background: radial-gradient(
+    closest-side,
+    var(--color-sun) 0%,
+    var(--color-sun) 17%,
+    color-mix(in srgb, var(--color-sunglow) 85%, transparent) 21%,
+    color-mix(in srgb, var(--color-sunglow) 35%, transparent) 44%,
+    transparent 100%
+  );
+  transform: translateY(calc(var(--p) * 30%));
+  opacity: clamp(0, 1 - var(--p) * 1.05, 1);
+}
+
+/* ---------- heading and the step being read ---------- */
+.c-dusk__head {
+  display: grid;
+  justify-items: center;
+  gap: 0.55rem;
+}
+.c-dusk__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 1.4rem + 1.8vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+.c-dusk__intro {
+  color: color-mix(in srgb, var(--color-white) 82%, transparent);
+  font-size: var(--step-0);
+}
+.c-cuesteps__list {
+  display: grid;
+  align-self: center;
+  margin-block: clamp(0.75rem, 3svh - 0.5rem, 3rem);
+}
+.c-cuestep {
+  grid-area: 1 / 1;
+  display: grid;
+  justify-items: center;
+  gap: 0.6rem;
+  pointer-events: none;
+}
+.c-cuestep__n {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--color-sun);
+  color: var(--color-ink);
+  font-size: var(--step--1);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.c-cuestep__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, min(1.5rem + 3.6vw, 9svh), 5.25rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.c-cuestep__text {
+  max-width: 44ch;
+  color: color-mix(in srgb, var(--color-white) 86%, transparent);
+  font-size: var(--step-1);
+  line-height: var(--leading-sub);
+}
+
+/* ---------- the route ---------- */
+/* The line spans 146 degrees (--sweep plus --ext at each end): its ends sit 0.708 of the radius
+ * below its top and 0.956 of the radius either side of its centre. */
+.c-route {
+  --pad: 1.4rem;
+  position: relative;
+  width: calc(var(--R) * 1.913 + 2.8rem);
+  max-width: 100%;
+  height: calc(var(--R) * 0.708 + var(--pad) * 2);
+  margin-bottom: calc(var(--R) * 0.05);
+}
+.c-route__track,
+.c-route__flown {
+  position: absolute;
+  left: 50%;
+  top: var(--pad);
+  width: calc(var(--R) * 2);
+  height: calc(var(--R) * 2);
+  translate: -50% 0;
+  border-radius: 50%;
+}
+.c-route__track {
+  border: 3px dotted color-mix(in srgb, var(--color-white) 45%, transparent);
+  -webkit-mask: conic-gradient(
+    from calc(var(--sweep) / -2 - var(--ext)),
+    black calc(var(--sweep) + var(--ext) * 2),
+    transparent 0
+  );
+  mask: conic-gradient(
+    from calc(var(--sweep) / -2 - var(--ext)),
+    black calc(var(--sweep) + var(--ext) * 2),
+    transparent 0
+  );
+}
+.c-route__flown {
+  border: 3px solid var(--color-sun);
+  -webkit-mask: conic-gradient(
+    from calc(var(--sweep) / -2 - var(--ext)),
+    black calc(var(--ext) + var(--lead) + var(--sweep) * var(--g)),
+    transparent 0
+  );
+  mask: conic-gradient(
+    from calc(var(--sweep) / -2 - var(--ext)),
+    black calc(var(--ext) + var(--lead) + var(--sweep) * var(--g)),
+    transparent 0
+  );
+}
+/* A waypoint is a zero-size anchor on the line: turned to its angle, moved out by the radius (less
+ * half the 3 px line, so it sits on the line's centre), turned back upright. */
+.c-route__wpt {
+  --th: calc(var(--sweep) * (var(--i) / (var(--n) - 1) - 0.5));
+  --lit: clamp(0, (var(--p) - var(--over)) * 60 + 0.5, 1);
+  position: absolute;
+  left: 50%;
+  top: calc(var(--pad) + var(--R));
+  transform: rotate(var(--th)) translateY(calc(1.5px - var(--R))) rotate(calc(var(--th) * -1));
+}
+.c-route__dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: color-mix(
+    in srgb,
+    var(--color-sun) calc(var(--lit) * 100%),
+    var(--color-navy-mid)
+  );
+  box-shadow:
+    0 0 0 2px
+      color-mix(
+        in srgb,
+        var(--color-sun) calc(var(--lit) * 100%),
+        color-mix(in srgb, var(--color-white) 55%, transparent)
+      ),
+    0 0 calc(var(--lit) * 22px) color-mix(in srgb, var(--color-sun) 55%, transparent);
+  color: color-mix(in srgb, var(--color-ink) calc(var(--lit) * 100%), var(--color-white));
+  font-size: var(--step--1);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+/* Labels sit outside the arc, along the waypoint's own radius: right-aligned on the left half,
+ * centred at the top, left-aligned on the right half, so none crosses the line. */
+.c-route__lbl {
+  --side: calc(var(--i) / (var(--n) - 1) - 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(var(--th)) translateY(-2.5rem) rotate(calc(var(--th) * -1))
+    translate(calc(-50% + clamp(-50%, var(--side) * 400%, 50%)), -50%);
+  white-space: nowrap;
+  color: var(--color-white);
+  font-size: var(--step--1);
+  font-weight: 500;
+}
+/* The aircraft: the same turn and move, then a quarter turn so its nose follows the line. */
+.c-route__jet {
+  --js: 2.6rem;
+  --thg: calc(var(--sweep) * (var(--g) - 0.5) + var(--lead));
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - var(--js) / 2);
+  top: calc(var(--pad) + var(--R) - var(--js) / 2);
+  width: var(--js);
+  height: var(--js);
+  transform: rotate(var(--thg)) translateY(calc(1.5px - var(--R))) rotate(90deg);
+  color: var(--color-white);
+  filter: drop-shadow(0 0 7px color-mix(in srgb, var(--color-sun) 75%, transparent));
+}
+.c-route__jet .c-picto {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.c-route__jet path {
+  fill: currentColor;
+}
+
+/* Short laptop screens: the heading may start a little under the header's lower edge, which only
+ * shows again when scrolling back up. */
+@media (min-width: 700px) and (max-height: 760px) {
+  .c-dusk {
+    padding-top: calc(var(--header-height) - 0.5rem);
+  }
+}
+
+/* ---------- phones ---------- */
+@media (max-width: 699px) {
+  .c-cuesteps__stage {
+    padding: 0.5rem;
+  }
+  .c-dusk {
+    /* half of what is left of the screen after the gutters and the end waypoints */
+    --R: min(calc((100vw - 4.5rem) * 0.5), 26svh);
+    padding-top: calc(var(--header-height) + 0.75rem);
+  }
+  .c-route {
+    --pad: 1.1rem;
+    width: calc(var(--R) * 1.913 + 2.2rem);
+  }
+  .c-route__dot {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+  .c-route__lbl {
+    display: none;
+  }
+  .c-route__jet {
+    --js: 1.9rem;
+  }
+}
+
+/* ---------- reduced motion: the act flows, the route is flown, every step is listed ---------- */
+html.sc-reduce .c-cuesteps__stage {
+  min-height: 0;
+}
+html.sc-reduce .c-dusk {
+  --p: 0.55;
+  --g: 1;
+  padding-bottom: 0;
+}
+html.sc-reduce .c-route__wpt {
+  --lit: 1;
+}
+html.sc-reduce .c-cuesteps__list {
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: var(--space-medium) var(--gutter);
+  width: 100%;
+  max-width: 72rem;
+}
+html.sc-reduce .c-cuestep {
+  grid-area: auto;
+  align-content: start;
+  pointer-events: auto;
+}
+html.sc-reduce .c-cuestep__title {
+  font-size: var(--step-3);
+}
+html.sc-reduce .c-cuestep__text {
+  font-size: var(--step-0);
+}
+html.sc-reduce .c-route {
+  margin-top: var(--space-large);
+}

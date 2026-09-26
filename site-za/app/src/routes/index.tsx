@@ -108,13 +108,14 @@ function Index() {
           </h1>
           <p className="c-sky__sub">{hero.sub}</p>
         </div>
-        {/* The sky is clipped to a capsule; the aircraft, cut out of the same photograph, is not,
-            so its wings reach past the capsule's ends. */}
+        {/* Two layers: a sunset sky with no aircraft in it, clipped to a capsule, and the aircraft
+            alone, unclipped, so its wings reach past the capsule's ends. The sky never holds a
+            second aircraft, so the two can move apart with the scroll. */}
         <div className="c-sky__stage" aria-hidden="true">
           <img
             className="c-sky__photo"
-            src="/assets/img/hero-sky-1800.webp"
-            srcSet="/assets/img/hero-sky-900.webp 900w, /assets/img/hero-sky-1800.webp 1800w, /assets/img/hero-sky-2600.webp 2600w"
+            src="/assets/img/hero-sunset-1800.webp"
+            srcSet="/assets/img/hero-sunset-900.webp 900w, /assets/img/hero-sunset-1800.webp 1800w, /assets/img/hero-sunset-2600.webp 2600w"
             sizes="(min-width: 1200px) 1100px, 100vw"
             alt=""
             width={1800}
@@ -123,8 +124,8 @@ function Index() {
           />
           <img
             className="c-sky__plane"
-            src="/assets/img/hero-plane-1800.webp"
-            srcSet="/assets/img/hero-plane-900.webp 900w, /assets/img/hero-plane-1800.webp 1800w, /assets/img/hero-plane-2600.webp 2600w"
+            src="/assets/img/hero-jet-1800.webp"
+            srcSet="/assets/img/hero-jet-900.webp 900w, /assets/img/hero-jet-1800.webp 1800w, /assets/img/hero-jet-2600.webp 2600w"
             sizes="(min-width: 1200px) 1100px, 100vw"
             alt=""
             width={1800}

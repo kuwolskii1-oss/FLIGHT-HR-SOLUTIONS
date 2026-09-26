@@ -1,7 +1,8 @@
 /* Flight Hour Solution design tokens. Generated from docs/research/08-locomotive-design-blueprint.md section 8.2,
  * with the South African wayfinding refresh (docs/website-za/ui-refresh.md): a cool cloud ground tinted
- * toward the brand navy instead of the paper cream, radius and shadow roles; and the clear-sky pass: a
- * white ground with mist sections, Jost for display, navigation and actions.
+ * toward the brand navy instead of the paper cream, radius and shadow roles; the clear-sky pass: a
+ * white ground with mist sections, Jost for display, navigation and actions; and the sunset pass: the
+ * sunset and dusk colours of the home hero and the pinned steps.
  * Fluid values run from a 390 px to a 1440 px viewport (Utopia method). Do not hand-edit the clamp() maths;
  * regenerate with the script in docs/research/data/locomotive/tools if the scale changes. */
 
@@ -28,6 +29,15 @@
   --color-data: #2f6a9e;
   --color-error: #9b2c1f;
   --color-success: #1f6b45;
+  /* sunset: sampled from the home hero's sky and deepened where white text sits on it (the dusk
+   * panel of the pinned steps keeps white text at 6.8:1 or better down to plum) */
+  --color-sun: #ffc56b;
+  --color-sunglow: #f59a45;
+  --color-ember: #cf5a4e;
+  --color-rose: #ce7e7c;
+  --color-plum: #86456f;
+  --color-dusk: #4a3a7c;
+  --color-twilight: #262b6b;
 
   /* type */
   --font-sans: "IBM Plex Sans", "Plex Sans Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;

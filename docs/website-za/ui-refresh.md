@@ -236,3 +236,83 @@ with round icon chips and a round action button; one accent colour on a white gr
 
 The stylesheets are layered: `clearsky.css` is loaded last and restyles the wayfinding and board
 layers underneath rather than rewriting them, so a later pass can still reach any earlier look.
+
+## Fourth pass: sunset (26 September 2026)
+
+The client reported that the hero aircraft was doubled, asked for the hero to be sunset themed,
+and asked for the "How we work" stepper to be spruced up, leaving the idea open.
+
+### The doubled aircraft
+
+The third pass drew the aircraft twice: once inside the capsule photograph and once as the cut-out
+on top. The cut-out moves with the scroll (it rises and grows) while the photograph drifts the
+other way, so as soon as the page moved the photograph's own aircraft showed behind the cut-out:
+two sets of wings and engines. Even at rest the two sat a few pixels apart, because the hero's
+progress is not exactly 0.5 at the top of the page.
+
+The fix is structural rather than a tweak to the motion: the capsule now holds a sky with no
+aircraft in it at all, and the aircraft exists only as its own layer. Both come from one scene so
+the light matches. The sky plate was generated first (gpt_image_2_5, 21:9, "only sky and clouds,
+no aircraft"); the aircraft was then added to that exact plate with the same model's reference
+editing, and cut out with Higgsfield's background remover. Two stray cloud fragments the remover
+kept were cleared by keeping only the aircraft's own connected shape. Laid over the plate, the
+cut-out matches the edited frame to within 4 levels in 255 across the sky, with no halo. The
+preview check "hero sky is its own plate, the aircraft its own layer" guards against the old
+combined photograph coming back.
+
+### Sunset
+
+The plate is a sunset: gold light flooding in from the left, coral and rose clouds low on the
+right, dusky blue above. The aircraft carries that light (warm on its left side, violet shade on
+its right). A soft gold and rose glow spills from the capsule onto the white page. The sunset
+colours are tokens in `tokens.css` (`--color-sun`, `--color-sunglow`, `--color-ember`,
+`--color-rose`, `--color-plum`, `--color-dusk`, `--color-twilight`), sampled from the plate and
+deepened where white text sits on them. Files: `hero-sunset-{900,1800,2600}.webp` (the plate,
+19, 45 and 65 KB) and `hero-jet-{900,1800,2600}.webp` (the aircraft with transparency, 25, 65
+and 101 KB). The old `hero-sky` and `hero-plane` files are gone.
+
+### The stepper: one evening's flight
+
+`Steps.tsx` and `src/site/flightplan.css` (the pinned variant, used by How we work on Home and
+About and the process sections of Engines and Advisory; the aircraft page's seven-step list keeps
+its flowing variant).
+
+- The pinned stage is a rounded sky panel that goes from sunset to night as the act plays: the
+  sunset layer fades, the sun sinks below the horizon and the stars come out.
+- The steps are waypoints on an arc that runs from one horizon to the other. An aircraft (the
+  Streamline Guidance "airplane-mode" pictogram, filled) flies the arc; the part flown turns
+  gold. Each waypoint lights as the aircraft passes over it, and its step's title and line
+  appear at that moment, so the line, the lit number and the words always agree. The aircraft
+  flies a few degrees ahead of the waypoint it last passed, so it never covers a number at rest,
+  and it ends its flight near the far horizon.
+- One step shows at a time. The outgoing step fades as the aircraft nears the next waypoint and
+  the next fades in as it passes it; they never overlap (measured every 2 % of the act).
+- Everything is driven by the act's progress in CSS (`--sc-p`), so it scrubs with the scroll
+  and needs no script; the preview runs it unchanged. Waypoints and the aircraft are placed on
+  the arc by rotation (turn, move out by the radius, turn back), so no trigonometric CSS is
+  needed; the arc is a dotted circle border masked to its span.
+- Reduced motion: the act flows instead of pinning, every step is listed in a grid, the route is
+  shown flown with every waypoint lit and the aircraft at its end.
+- Phones: the arc is sized from the screen's width, the labels give way to the numbered
+  waypoints, and the step sits centred between the heading and the route. Short laptop screens
+  (720 px) keep the whole route in view with the longest step copy (About).
+
+### Checked (production build served locally)
+
+| Check | Factor | Measured |
+|---|---|---|
+| Words per screen, home | 60 or fewer | 48 at 1440 px, 36 at 375 px |
+| Buttons per screen | 1 | 1 on every page |
+| Longest animation, stagger | 600 ms, 80 ms | 560 ms, 70 ms (the flight plan scrubs with the scroll and has no timed animation) |
+| Reduced motion | nothing moves, all visible | 0 pinned acts, 0 hidden cues, aircraft and counters still, every step listed |
+| axe-core, 11 routes | 0 | 0 |
+| Console errors, broken links | 0 | 0 |
+| First readable text, Fast 3G | under 2 s | home 1.90 s, other pages 1.54 to 1.75 s |
+| Weight per page | under 1 MB | 371 to 452 KB on a phone |
+| Keyboard, menu and forms | as before | all pass; the preview's 54 checks pass (5 new: the two hero layers, the flight plan's steps, aircraft, sky, and its reduced-motion state) |
+
+The home page's first text on Fast 3G moved from 1.83 s to 1.90 s. An A/B of the two builds on
+the same harness shows the stylesheet grew by under 1 KB compressed; the rest is how the
+throttled connection shares bandwidth between the stylesheet and the page's scripts, which varies
+between runs (36 ms apart on a second trace). It stays inside the 2 s budget. Raw measurements:
+`factors-sunset.json`.

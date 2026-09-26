@@ -573,133 +573,7 @@
   gap: 0.45rem;
 }
 
-/* ---------- flight plan (pinned steps) ---------- */
-.c-cuesteps {
-  background: var(--bg);
-  color: var(--fg);
-}
-.c-cuesteps__stage {
-  isolation: isolate;
-}
-[data-theme="dark"] .c-cuesteps__stage,
-[data-theme="deep"] .c-cuesteps__stage {
-  background:
-    radial-gradient(60% 50% at 90% 100%, rgb(238 114 3 / 0.12), transparent 60%),
-    linear-gradient(180deg, var(--color-navy) 0%, var(--color-navy-deep) 100%);
-}
-.c-cuesteps__inner {
-  grid-template-rows: auto auto;
-}
-.c-cuesteps .c-h2 {
-  font-size: var(--step-5);
-  line-height: 0.96;
-}
-.c-cuestep {
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 0.6rem var(--space-small);
-  max-width: 40rem;
-}
-.c-cuestep__n {
-  display: grid;
-  place-items: center;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 2px var(--color-orange);
-  color: var(--fg);
-  font-family: var(--font-display);
-  font-size: var(--step-2);
-  font-weight: 600;
-  line-height: 1;
-}
-.c-cuestep__title {
-  font-family: var(--font-display);
-  font-size: var(--step-5);
-  font-weight: 600;
-  line-height: 0.98;
-  letter-spacing: -0.01em;
-}
-.c-cuestep__text {
-  margin-top: 0.4rem;
-  font-size: var(--step-1);
-  line-height: var(--leading-sub);
-}
-/* The route runs along the bottom of the pinned stage (the sticky stage positions it), so the
- * step that cues in never passes under it. Under reduced motion the stage is not pinned and the
- * route follows the stacked steps instead. */
-.c-cuesteps__stage {
-  padding-bottom: calc(var(--space-large) + 5.5rem);
-}
-.c-fplan {
-  --p: clamp(0, var(--sc-p, 0) / 0.96, 1);
-  position: absolute;
-  left: var(--margin);
-  right: var(--margin);
-  bottom: clamp(1.5rem, 5vh, 3rem);
-}
-html.sc-reduce .c-cuesteps__stage {
-  padding-bottom: var(--space-large);
-}
-html.sc-reduce .c-fplan {
-  position: relative;
-  left: auto;
-  right: auto;
-  bottom: auto;
-  grid-column: 1 / -1;
-  margin-top: var(--space-medium);
-}
-.c-fplan__line {
-  position: absolute;
-  left: 1.1rem;
-  right: 1.1rem;
-  top: 1.1rem;
-  height: 2px;
-  background: repeating-linear-gradient(90deg, var(--line) 0 6px, transparent 6px 14px);
-}
-.c-fplan__fill {
-  position: absolute;
-  inset: 0;
-  background: var(--color-orange);
-  transform: scaleX(var(--p));
-  transform-origin: left center;
-}
-.c-fplan__wpts {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(var(--n), minmax(0, 1fr));
-}
-.c-fplan__wpt {
-  --lit: clamp(0, (var(--sc-p, 0) - var(--at)) * 40 + 1, 1);
-  display: grid;
-  justify-items: start;
-  gap: 0.7rem;
-}
-.c-fplan__wpt:last-child {
-  justify-items: end;
-  text-align: right;
-}
-.c-fplan__dot {
-  display: grid;
-  place-items: center;
-  width: 2.2rem;
-  height: 2.2rem;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--color-orange) calc(var(--lit) * 100%), var(--bg));
-  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--color-orange) calc(var(--lit) * 100%), var(--line));
-  color: color-mix(in srgb, var(--color-ink) calc(var(--lit) * 100%), var(--fg-muted));
-  font-size: var(--step--1);
-  font-weight: 600;
-}
-.c-fplan__lbl {
-  font-size: var(--step--1);
-  font-weight: 500;
-  color: color-mix(in srgb, var(--fg) calc(var(--lit) * 100%), var(--fg-muted));
-}
-@media (max-width: 699px) {
-  .c-fplan__lbl {
-    display: none;
-  }
-}
+/* Pinned steps (the flight plan): see flightplan.css. */
 /* Flow variant (more than six steps): waypoint rings on the rule. */
 .c-steps--flow .c-step::before {
   width: 1rem;
@@ -1280,12 +1154,6 @@ html.has-curtain .c-footer {
   .c-chip .c-picto {
     transition: none;
   }
-}
-html.sc-reduce .c-fplan {
-  --p: 1;
-}
-html.sc-reduce .c-fplan__wpt {
-  --lit: 1;
 }
 
 @media (min-width: 1000px) {

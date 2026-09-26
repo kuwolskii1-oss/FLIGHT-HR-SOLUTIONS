@@ -483,68 +483,7 @@ html.site body {
   margin-top: 0.2rem;
 }
 
-/* ---------- pinned steps (one idea per screen) ---------- */
-.c-cuesteps__stage {
-  display: grid;
-  align-items: center;
-  min-height: 100svh;
-  padding-block: var(--header-height) var(--space-large);
-}
-.c-cuesteps__inner {
-  display: grid;
-  gap: var(--space-large);
-}
-@media (min-width: 900px) {
-  .c-cuesteps__inner {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-    align-items: start;
-  }
-}
-.c-cuesteps__intro {
-  margin-top: var(--space-small);
-}
-.c-cuesteps__list {
-  position: relative;
-  display: grid;
-}
-.c-cuestep {
-  grid-area: 1 / 1;
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  grid-template-areas:
-    "n title"
-    "n text";
-  gap: 0.35rem var(--space-small);
-  align-content: start;
-  max-width: 34rem;
-  pointer-events: none;
-}
-.c-cuestep__n {
-  grid-area: n;
-  font-size: var(--step-4);
-  line-height: 1;
-  font-variant-numeric: tabular-nums;
-  color: var(--accent);
-  font-weight: 400;
-}
-.c-cuestep__title {
-  grid-area: title;
-  font-size: var(--step-3);
-  font-weight: 500;
-  line-height: var(--leading-sub);
-}
-.c-cuestep__text {
-  grid-area: text;
-  font-size: var(--step-1);
-  line-height: var(--leading-sub);
-  color: var(--fg-muted);
-  max-width: 40ch;
-}
-@media (max-width: 899px) {
-  .c-cuestep {
-    max-width: none;
-  }
-}
+/* Pinned steps: see flightplan.css. */
 /* Flow variant: the rule is drawn from the act's own progress. */
 .c-steps--flow .c-step {
   max-width: none;
@@ -816,17 +755,6 @@ html.sc-reduce [data-sc-in],
 html.sc-reduce [data-sc-stagger] > * {
   opacity: 1 !important;
   transform: none !important;
-}
-html.sc-reduce .c-cuesteps__stage {
-  min-height: 0;
-  padding-block: calc(var(--header-height) + var(--space-large)) var(--space-large);
-}
-html.sc-reduce .c-cuesteps__list {
-  gap: var(--space-medium);
-}
-html.sc-reduce .c-cuestep {
-  grid-area: auto;
-  pointer-events: auto;
 }
 
 /* Home chapters: one idea per screen. From tablet width up each chapter takes a full viewport
