@@ -1,0 +1,454 @@
+/* Parts: the engine families viewer (components/site/PartsViewer.tsx, src/site/parts/viewer.ts).
+ * A 20 px card holding the scene (poster, then the live canvas), a white callout with a navy
+ * leader line to a dot on the engine, the illustration caption in the top left corner and a
+ * frosted pill bar at the bottom: Back, the four family tabs on the site's sliding pill, Next.
+ * Motion: the canvas fades in once (400 ms); the callout and line hide while the camera moves
+ * and fade back in when it settles (240 ms); the pill slides (tabs tokens). Reduced motion keeps
+ * opacity changes only, at 150 ms. */
+
+.c-pv .c-stackhead {
+  margin-bottom: var(--space-medium);
+}
+
+.c-pv__stage {
+  position: relative;
+  isolation: isolate;
+  height: clamp(26rem, 64svh, 42rem);
+  border-radius: var(--radius-panel);
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.c-pv[data-pv-mode="gl"] .c-pv__stage {
+  cursor: grab;
+}
+.c-pv__stage.is-dragging {
+  cursor: grabbing;
+}
+
+/* ---------- picture layers ---------- */
+.c-pv__media,
+.c-pv__gl,
+.c-pv__lines {
+  position: absolute;
+  inset: 0;
+}
+.c-pv__media {
+  z-index: 0;
+  overflow: hidden;
+  border-radius: var(--radius-panel);
+  background: var(--pv-fog);
+}
+/* Haze over the scene's far edges, so the hall melts into the card and the eye stays on the
+   engine: stronger at the top (the racking), light at the sides. */
+.c-pv__media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(to bottom, color-mix(in srgb, var(--pv-fog) 70%, transparent), transparent 26%),
+    radial-gradient(120% 95% at 50% 58%, transparent 62%, color-mix(in srgb, var(--pv-fog) 55%, transparent));
+  pointer-events: none;
+}
+.c-pv__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px var(--color-line);
+  pointer-events: none;
+}
+.c-pv__media picture {
+  display: contents;
+}
+.c-pv__poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 150ms var(--ease-out);
+}
+.c-pv__stage.is-swapping .c-pv__poster {
+  opacity: 0.4;
+}
+.c-pv__canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 400ms var(--ease-out);
+}
+.c-pv__stage.is-live .c-pv__canvas {
+  opacity: 1;
+}
+
+/* ---------- the leader line and the dot on the engine ---------- */
+.c-pv__lines {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 150ms var(--ease-out);
+}
+.c-pv__stage.is-callout-ready:not(.is-moving) .c-pv__lines {
+  opacity: 1;
+  transition-duration: 240ms;
+  transition-delay: 60ms;
+}
+.c-pv__leader {
+  fill: none;
+  stroke: var(--color-navy);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.c-pv__leader--halo {
+  stroke: var(--color-white);
+  stroke-width: 4;
+  stroke-opacity: 0.7;
+}
+.c-pv__dot-halo {
+  fill: var(--color-glow);
+  stroke: var(--color-white);
+  stroke-opacity: 0.7;
+  stroke-width: 1;
+}
+.c-pv__dot-core {
+  fill: var(--color-orange);
+  stroke: var(--color-white);
+  stroke-width: 2;
+}
+
+/* ---------- the tab panel: the caption and the callout ---------- */
+.c-pv__panel {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+.c-pv__caption {
+  position: absolute;
+  top: 0.875rem;
+  left: 0.875rem;
+  max-width: min(36ch, calc(100% - 1.75rem));
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--color-white) 72%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: var(--color-muted);
+  font-size: var(--step--2);
+  line-height: 1.35;
+}
+
+/* Tablets and laptops: the caption sits in the bottom left corner just above the bar, so the
+   upper corners stay free for the callout. Wide screens: level with the bar, beside it. */
+@media (min-width: 700px) and (max-width: 1359px) {
+  .c-pv__caption {
+    top: auto;
+    bottom: 4.875rem;
+    left: 1rem;
+    max-width: min(48ch, calc(100% - 2rem));
+  }
+}
+@media (min-width: 1360px) {
+  .c-pv__caption {
+    top: auto;
+    bottom: 1.75rem;
+    left: 1.25rem;
+    max-width: calc(50% - 16.5rem);
+  }
+}
+
+.c-pv__callout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-height: 3.25rem;
+  padding: 0.45rem 0.45rem 0.45rem 1.1rem;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--color-white);
+  color: var(--color-ink);
+  box-shadow: var(--shadow-float), 0 0 0 1px var(--color-line);
+  text-align: left;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  translate: 0 6px;
+  transition:
+    opacity 150ms var(--ease-out),
+    translate var(--duration-ui) var(--ease-out-strong);
+  will-change: transform, opacity;
+}
+.c-pv__stage.is-callout-ready:not(.is-moving) .c-pv__callout {
+  pointer-events: auto;
+  opacity: 1;
+  translate: 0 0;
+  transition-duration: 240ms, var(--duration-ui);
+  transition-delay: 60ms, 60ms;
+}
+/* Before the module mounts (server render, no script): a resting place near the inlet. */
+.c-pv:not(.is-mounted) .c-pv__callout {
+  top: 14%;
+  left: 12%;
+  opacity: 1;
+  translate: none;
+  pointer-events: auto;
+}
+.c-pv__callout-text {
+  display: grid;
+  gap: 0.1rem;
+}
+.c-pv__callout-family {
+  font-family: var(--font-display);
+  font-size: var(--step-0);
+  font-weight: 500;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+.c-pv__callout-prompt {
+  color: var(--color-muted);
+  font-size: var(--step--1);
+  line-height: 1.3;
+  white-space: nowrap;
+}
+.c-pv__callout .c-chip {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+.c-pv__callout .c-chip .c-picto {
+  width: 1rem;
+  height: 1rem;
+}
+@media (hover: hover) {
+  .c-pv__callout:hover .c-chip__a {
+    transform: translateX(200%);
+  }
+  .c-pv__callout:hover .c-chip__b {
+    transform: none;
+  }
+}
+.c-pv__callout:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+.c-pv__callout:active {
+  transform-origin: center;
+}
+
+/* ---------- the bar: Back, the family tabs, Next ---------- */
+.c-pv__bar {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  max-width: calc(100% - 2rem);
+  padding: 0.25rem;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--color-white) 78%, transparent);
+  -webkit-backdrop-filter: blur(16px) saturate(1.3);
+  backdrop-filter: blur(16px) saturate(1.3);
+  box-shadow:
+    var(--shadow-panel),
+    inset 0 0 0 1px color-mix(in srgb, var(--color-white) 70%, transparent);
+  transform: translateX(-50%);
+}
+.c-pv__turn {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-navy);
+  cursor: pointer;
+  transition: background-color 150ms var(--ease-out);
+}
+.c-pv__turn .c-picto {
+  width: 1.15rem;
+  height: 1.15rem;
+  stroke-width: 1.9;
+}
+.c-pv__turn--prev .c-picto {
+  transform: scaleX(-1);
+}
+@media (hover: hover) {
+  .c-pv__turn:hover {
+    background: var(--color-white);
+  }
+}
+.c-pv__turn:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.c-pv__tabs.t-tabs {
+  flex-wrap: nowrap;
+  gap: 0.125rem;
+  padding: 0;
+  scrollbar-width: none;
+}
+.c-pv__tabs::-webkit-scrollbar {
+  display: none;
+}
+.c-pv__tab {
+  flex: none;
+  height: 2.75rem;
+  padding: 0 1.05rem;
+  border-radius: var(--radius-pill);
+  color: var(--color-muted);
+  font-family: var(--font-display);
+  font-size: var(--step--1);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.c-pv__tab[aria-selected="true"] {
+  color: var(--color-white);
+}
+@media (hover: hover) {
+  .c-pv__tab[aria-selected="false"]:hover {
+    color: var(--color-ink);
+  }
+}
+.c-pv__tab:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.c-pv__pill.t-tabs-pill {
+  top: 0;
+  height: 2.75rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-navy);
+  box-shadow: 0 6px 16px -8px var(--color-navy);
+}
+/* Without the module (preview before the bundle, no script) the selected tab still reads. */
+.c-pv:not(.is-mounted) .c-pv__tab[aria-selected="true"] {
+  background: var(--color-navy);
+}
+
+.c-pv__hint {
+  margin-top: var(--space-micro);
+  color: var(--fg-muted);
+  font-size: var(--step--1);
+  text-align: center;
+}
+
+/* ---------- phones: a taller-than-wide frame, the bar across the card ---------- */
+@media (max-width: 699px) {
+  .c-pv__stage {
+    height: auto;
+    min-width: 0;
+    max-height: 82svh;
+    aspect-ratio: 4 / 5;
+  }
+  .c-pv__caption {
+    top: 0.625rem;
+    left: 0.625rem;
+    max-width: calc(100% - 1.25rem);
+    border-radius: var(--radius-tile);
+  }
+  /* The family tabs sit under the card as the site's segmented pill (all four in view); Back and
+     Next are round frosted buttons in the card's bottom corners. */
+  .c-pv__stage {
+    margin-bottom: 4.5rem;
+  }
+  .c-pv__bar {
+    display: contents;
+  }
+  .c-pv__turn {
+    position: absolute;
+    bottom: 0.625rem;
+    z-index: 4;
+    background: color-mix(in srgb, var(--color-white) 80%, transparent);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-panel);
+  }
+  .c-pv__turn--prev {
+    left: 0.625rem;
+  }
+  .c-pv__turn--next {
+    right: 0.625rem;
+  }
+  .c-pv__tabs.t-tabs {
+    position: absolute;
+    top: calc(100% + 0.875rem);
+    left: 50%;
+    width: max-content;
+    max-width: 100%;
+    padding: 0.25rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    background: var(--bg-raised);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    translate: -50% 0;
+  }
+  .c-pv__pill.t-tabs-pill {
+    top: 0.25rem;
+    box-shadow: none;
+  }
+  .c-pv.is-tabs-scroll .c-pv__tabs {
+    -webkit-mask-image: linear-gradient(90deg, transparent, var(--color-ink) 0.75rem, var(--color-ink) calc(100% - 0.75rem), transparent);
+    mask-image: linear-gradient(90deg, transparent, var(--color-ink) 0.75rem, var(--color-ink) calc(100% - 0.75rem), transparent);
+  }
+  .c-pv__tab {
+    padding: 0 0.75rem;
+    font-size: 0.8125rem;
+  }
+  .c-pv__tab:focus-visible {
+    outline-offset: -2px;
+  }
+  .c-pv__callout {
+    gap: 0.6rem;
+    min-height: 2.9rem;
+    padding-left: 0.95rem;
+  }
+  .c-pv__callout .c-chip {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+  .c-pv__hint {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c-pv__callout,
+  .c-pv__stage.is-callout-ready:not(.is-moving) .c-pv__callout {
+    translate: none;
+    transition: opacity 150ms linear;
+    transition-delay: 0ms;
+  }
+  .c-pv__lines,
+  .c-pv__stage.is-callout-ready:not(.is-moving) .c-pv__lines {
+    transition: opacity 150ms linear;
+    transition-delay: 0ms;
+  }
+  .c-pv__canvas,
+  .c-pv__poster {
+    transition: opacity 150ms linear;
+  }
+  .c-pv__turn,
+  .c-pv__pill.t-tabs-pill {
+    transition: none;
+  }
+}

@@ -137,6 +137,45 @@
   :root { font-size: 112.5%; }
 }
 
+/* Parts engine viewer (src/site/parts/scene.ts reads these at runtime for three.js, so the scene's
+ * colours live here with the rest). A clean, cool warehouse that fades into the card's haze; an
+ * off-white cowl; the transport stand in the brand's safety orange. No maker colours. */
+:root {
+  --pv-fog: #e3e7ee;
+  --pv-floor: #adb3bc;
+  --pv-floor-mottle: #979ea9;
+  --pv-floor-joint: #a7adb7;
+  --pv-floor-line: #eeeadc;
+  --pv-wall: #c3c9d2;
+  --pv-wall-rib: #b9c0ca;
+  --pv-plinth: #9fa6b1;
+  --pv-rack: #56627a;
+  --pv-rack-beam: #8793a8;
+  --pv-crate: #c8bfad;
+  --pv-wrap: #eceff3;
+  --pv-bin: #6f7c96;
+  --pv-cowl: #eef0f2;
+  --pv-lip: #d7dbe0;
+  --pv-liner: #7b818a;
+  --pv-duct: #3b4048;
+  --pv-fan: #aeaca6;
+  --pv-spinner: #23272e;
+  --pv-core: #a2a9b3;
+  --pv-cavity: #07080c;
+  --pv-heat-straw: #c9b58c;
+  --pv-heat-bronze: #9b7954;
+  --pv-heat-blue: #5f6878;
+  --pv-stand: var(--color-orange);
+  --pv-zinc: #a3a9b0;
+  --pv-steel: #474c54;
+  --pv-rubber: #18191d;
+  --pv-shadow: var(--color-navy-deep);
+  --pv-light-key: #fff7ec;
+  --pv-light-fill: #e8eefa;
+  --pv-light-sky: #f3f6fb;
+  --pv-light-ground: #6a6f78;
+}
+
 /* scrollcraft engine tokens mapped to the brand. The engine's own stylesheet reads these six
  * colour roles, the two faces and its motion values; overriding them here rebrands every engine
  * device without touching the vendored files. */

@@ -12,6 +12,7 @@ import { Steps } from "./Steps";
 import { SmartLink } from "./SmartLink";
 import { ScrollCraftMount } from "@/components/site/ScrollCraftMount";
 import { Pictogram, PictoTile } from "./Pictogram";
+import { PartsViewer } from "./PartsViewer";
 import { DOOR_PICTO, ITEM_PICTO, SECTION_PICTO } from "@/site/wayfinding";
 
 /**
@@ -102,6 +103,9 @@ export function DoorPage({
           </div>
         </div>
       </header>
+
+      {/* Parts only: the engine families viewer and its part request (PartsViewer). */}
+      {door.viewer ? <PartsViewer door={door} /> : null}
 
       {/* The capabilities as one board: each row keeps its section id, so the header's dropdown
           links still land on it. */}
